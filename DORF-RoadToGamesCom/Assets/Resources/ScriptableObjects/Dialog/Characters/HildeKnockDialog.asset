@@ -1,0 +1,149 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8305521908229894378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Klopf Klopf
+  m_EditorClassIdentifier: DialogBuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 7896e49bbe59c4b9aa1088a06581e2fd
+  Position: {x: 737, y: 124.85715}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: Klopf Klopf
+  TextPreview: Klopf Klopf
+  AudioClip: {fileID: 8300000, guid: ec07fa5d83e4946df920774f15824cff, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0
+  Children:
+  - {fileID: -3793455532992717703}
+  - {fileID: 547556414938208191}
+  - {fileID: -2234221511041594909}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-3793455532992717703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: c18235191123a49cebe9d6cff7894296
+  Position: {x: 737, y: 275}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: 
+  TextPreview: '*Das Klopfen ignorieren*'
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-2234221511041594909
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "*Die T\xFCr \xF6ffnen*..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 787494c196f0b4ed1aa114529d165ead
+  Position: {x: 400.85718, y: 275}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: "*Die T\xFCr \xF6ffnen*"
+  TextPreview: "*Die T\xFCr \xF6ffnen*..."
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: HildeKnockDialog
+  m_EditorClassIdentifier: DialogBuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: -8305521908229894378}
+  nodes:
+  - {fileID: -8305521908229894378}
+  - {fileID: -3793455532992717703}
+  - {fileID: 547556414938208191}
+  - {fileID: -2234221511041594909}
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+--- !u!114 &547556414938208191
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Jetzt fick dich ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 71f524164d73746f29c37de49dc1dea6
+  Position: {x: 1069.1428, y: 275}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: Jetzt fick dich weg du Katzenficker!
+  TextPreview: Jetzt fick dich ...
+  AudioClip: {fileID: 8300000, guid: d3c774cc76b1c4b8ba404350cdc7fe08, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 2
+  _popularityModifier: -5

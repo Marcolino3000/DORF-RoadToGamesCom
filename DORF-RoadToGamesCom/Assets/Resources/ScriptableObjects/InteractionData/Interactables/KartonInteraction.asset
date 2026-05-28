@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e32a255760647d79c9e712cbffa0e42, type: 3}
+  m_Name: KartonInteraction
+  m_EditorClassIdentifier: InteractionBuilder::Runtime.Scripts.Core.InteractionData
+  _SaveStateToCurrentScene: 0
+  _sceneStateSaver: {fileID: 11400000, guid: 3e244c0560c63468bb3c97ac3de106ce, type: 2}
+  Count: 10
+  Threshold: 1
+  OneTimeUse: 0
+  successReaction: {fileID: 11400000, guid: 1ea1331714f194540a67de6066ea3da3, type: 2}
+  failureReaction: {fileID: 0}
+  ThresholdReached: 1
+  IsRunning: 0
+  IsActive: 1

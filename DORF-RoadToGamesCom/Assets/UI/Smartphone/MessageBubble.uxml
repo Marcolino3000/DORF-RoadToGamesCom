@@ -1,0 +1,22 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Smartphone/Smartphone.uss?fileID=7433441132597879392&amp;guid=72c0a90b5d9f4b0da7845aa74b3d6cff&amp;type=3#Smartphone" />
+    <ui:VisualElement name="rowWrapper" class="row-wrapper">
+        <ui:Label name="dateSeparator" class="date-separator" style="display: none;" />
+        <ui:VisualElement name="messageRow" class="message-row">
+            <ui:VisualElement name="messageBubble" class="message-bubble">
+                <ui:Label name="messageText" class="message-bubble__text" />
+                <ui:VisualElement name="voiceMemo" class="voice-memo" style="display: none;">
+                    <ui:Button name="voicePlayButton" class="voice-memo__play" style="-unity-background-image-tint-color: rgb(0, 135, 16);" />
+                    <ui:VisualElement name="voiceBars" picking-mode="Ignore" class="voice-memo__bars" />
+                    <ui:VisualElement name="voiceAvatar" picking-mode="Ignore" class="voice-memo__avatar">
+                        <ui:VisualElement name="voiceMic" picking-mode="Ignore" class="voice-memo__mic" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="messageMeta" class="message-row__meta">
+                <ui:Label name="messageTime" class="message-row__time" />
+                <ui:VisualElement name="messageStatus" picking-mode="Ignore" class="message-row__status" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

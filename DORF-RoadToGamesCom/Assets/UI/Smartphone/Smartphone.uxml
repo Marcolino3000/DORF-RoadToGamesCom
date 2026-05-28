@@ -1,0 +1,71 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Smartphone/Smartphone.uss?fileID=7433441132597879392&amp;guid=72c0a90b5d9f4b0da7845aa74b3d6cff&amp;type=3#Smartphone" />
+    <ui:VisualElement name="smartphoneRoot" picking-mode="Ignore" style="flex-grow: 1; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.6);">
+        <ui:VisualElement name="phoneContainer" style="width: 560px; height: 1038px; position: relative;">
+            <ui:VisualElement name="phoneScreen" class="phone-screen" style="position: absolute; left: 64px; top: 123px; width: 440px; height: 788px; flex-direction: column; overflow: hidden;">
+                <ui:VisualElement name="statusBar" class="status-bar">
+                    <ui:VisualElement name="statusLeft" class="status-bar__group">
+                        <ui:VisualElement name="cellularIcon" picking-mode="Ignore" style="width: 28px; height: 19px; background-image: url(&quot;project://database/Assets/UI/Smartphone/Cellular.png?fileID=2800000&amp;guid=6052542a82274761a16b3bb8bbbe0406&amp;type=3#Cellular&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Label text="3G" name="cellularLabel" class="status-bar__text" style="margin-left: 5px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="10:40" name="timeLabel" class="status-bar__time" />
+                    <ui:VisualElement name="statusRight" class="status-bar__group status-bar__group--right">
+                        <ui:VisualElement name="batteryIcon" picking-mode="Ignore" style="width: 40px; height: 19px; background-image: url(&quot;project://database/Assets/UI/Smartphone/Battery.png?fileID=2800000&amp;guid=0307685f8e3447e49f502ee0943e6be8&amp;type=3#Battery&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="screenContent" style="flex-grow: 1; flex-direction: column;">
+                    <ui:VisualElement name="chatsPage" style="flex-grow: 1; flex-direction: column;">
+                        <ui:VisualElement name="chatsHeader" style="padding-top: 5px; padding-left: 20px; padding-right: 20px; padding-bottom: 15px;">
+                            <ui:Label text="Chats" name="chatsHeadline" class="headline" />
+                            <ui:VisualElement name="searchBar" class="search-bar" picking-mode="Ignore">
+                                <ui:VisualElement name="searchIcon" picking-mode="Ignore" style="width: 20px; height: 20px; background-image: url(&quot;project://database/Assets/UI/Smartphone/SearchIcon.png?fileID=2800000&amp;guid=a5e40a7260c64a5f8173150c495c91df&amp;type=3#SearchIcon&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                                <ui:Label text="Suche" name="searchPlaceholder" class="search-bar__placeholder" />
+                            </ui:VisualElement>
+                        </ui:VisualElement>
+                        <ui:VisualElement name="chatsDivider" class="divider" />
+                        <ui:ListView name="chatListView" virtualization-method="FixedHeight" fixed-item-height="80" show-border="false" selection-type="None" style="flex-grow: 1;" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="chatPage" style="flex-grow: 1; flex-direction: column; display: none;">
+                        <ui:VisualElement name="chatViewHeader" class="chat-view__header">
+                            <ui:Button name="backButton" class="chat-view__back" />
+                            <ui:VisualElement name="chatViewAvatar" class="chat-view__avatar" picking-mode="Ignore" />
+                            <ui:Label text="" name="chatViewName" class="chat-view__name" />
+                        </ui:VisualElement>
+                        <ui:VisualElement class="divider" />
+                        <ui:ListView name="messagesListView" virtualization-method="DynamicHeight" selection-type="None" show-border="false" style="flex-grow: 1;" />
+                        <ui:VisualElement name="messageInputBar" class="input-bar" picking-mode="Ignore">
+                            <ui:VisualElement name="inputPlus" picking-mode="Ignore" class="input-bar__plus" style="background-image: url(&quot;project://database/Assets/UI/Smartphone/PlusIcon.png?fileID=2800000&amp;guid=3bda3767cb4d416eb2f46e9d14509541&amp;type=3#PlusIcon&quot;);" />
+                            <ui:VisualElement name="inputField" class="input-bar__field" picking-mode="Ignore" />
+                            <ui:VisualElement name="inputCamera" picking-mode="Ignore" class="input-bar__icon" style="background-image: url(&quot;project://database/Assets/UI/Smartphone/CameraIcon.png?fileID=2800000&amp;guid=af6979dc7e17494ab975bfb385afd6e5&amp;type=3#CameraIcon&quot;);" />
+                            <ui:VisualElement name="inputMic" picking-mode="Ignore" class="input-bar__icon" style="background-image: url(&quot;project://database/Assets/UI/Smartphone/MicIcon.png?fileID=2800000&amp;guid=c1f658b48e1f4df3bc8d9110d54cdb51&amp;type=3#MicIcon&quot;);" />
+                        </ui:VisualElement>
+                    </ui:VisualElement>
+                </ui:VisualElement>
+                <ui:VisualElement name="navBar" class="nav-bar">
+                    <ui:VisualElement name="navCalls" class="nav-bar__item">
+                        <ui:VisualElement name="callsIcon" picking-mode="Ignore" style="width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/UI/Smartphone/PhoneIcon.png?fileID=2800000&amp;guid=b523a4f706cc465cbb70a25e9f5c8d65&amp;type=3#PhoneIcon&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Label text="ANRUFE" class="nav-bar__label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="navChats" class="nav-bar__item">
+                        <ui:VisualElement name="chatsIcon" picking-mode="Ignore" style="width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/UI/Smartphone/ChatIcon.png?fileID=2800000&amp;guid=358cc703f06c4554bdeef79ea50b8381&amp;type=3#ChatIcon&quot;); -unity-background-scale-mode: scale-to-fit;" />
+                        <ui:Label text="CHATS" class="nav-bar__label" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="navProfile" class="nav-bar__item">
+                        <ui:VisualElement name="profileIcon" class="nav-bar__profile-circle" picking-mode="Ignore" />
+                        <ui:Label text="PROFIL" class="nav-bar__label" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <!--
+                Hand-painted phone shell (PhoneOverlay.png, 1406x2606).
+                phoneContainer is sized 560x1038 to match the asset's native
+                aspect, and the transparent screen cutout (image-space
+                x=[161..1265] y=[310..2287], i.e. 1105x1978) maps to
+                (left=64, top=123, width=440, height=788) in container space.
+                phoneScreen is positioned absolutely at those coordinates so
+                its edges align exactly with the cutout's edges.
+            -->
+            <ui:VisualElement name="phoneOverlay" picking-mode="Ignore" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/UI/Smartphone/PhoneOverlay.png&quot;); -unity-background-scale-mode: scale-to-fit;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

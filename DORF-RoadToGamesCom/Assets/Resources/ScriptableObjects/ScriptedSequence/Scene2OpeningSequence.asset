@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a450906dd34a441e8f7094457bbb7546, type: 3}
+  m_Name: Scene2OpeningSequence
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.ScriptedSequence
+  waypoints:
+  - rid: 4189240511190270030
+  - rid: 4189240511190270031
+  references:
+    version: 2
+    RefIds:
+    - rid: 4189240511190270030
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -3.56, y: 0, z: -11.94}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 11400000, guid: ef4c8ca54bb504bc684d2118e1437041, type: 2}
+        ReactionAtStop: {fileID: 0}
+    - rid: 4189240511190270031
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -3.44, y: 0, z: -6.25}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 0}

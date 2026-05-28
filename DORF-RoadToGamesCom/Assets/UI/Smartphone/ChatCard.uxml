@@ -1,0 +1,19 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/UI/Smartphone/Smartphone.uss?fileID=7433441132597879392&amp;guid=72c0a90b5d9f4b0da7845aa74b3d6cff&amp;type=3#Smartphone" />
+    <ui:VisualElement name="chatCard" class="chat-card">
+        <ui:VisualElement name="avatar" class="avatar" picking-mode="Ignore" />
+        <ui:VisualElement name="cardCenter" class="chat-card__center">
+            <ui:Label text="" name="cardName" class="chat-card__name" />
+            <ui:VisualElement name="cardSubrow" class="chat-card__subrow">
+                <ui:VisualElement name="statusIcon" class="chat-card__status-icon" picking-mode="Ignore" />
+                <ui:Label text="" name="cardPreview" class="chat-card__preview" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="cardRight" class="chat-card__right">
+            <ui:Label text="" name="cardTime" class="chat-card__time" />
+            <ui:VisualElement name="cardBadge" class="badge">
+                <ui:Label text="" name="cardBadgeLabel" class="badge__text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

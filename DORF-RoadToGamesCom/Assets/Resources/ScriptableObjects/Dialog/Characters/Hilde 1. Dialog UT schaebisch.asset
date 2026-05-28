@@ -1,0 +1,2308 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9120020777818067147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201ENed nua M\xFCddr.\u201C..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 77a1fd7407ecf44919494ff3ef4ed175
+  Position: {x: -750, y: 1820.0002}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Ned nur M\xFCddr."
+  TextPreview: "Ned nur M\xFCddr."
+  AudioClip: {fileID: 8300000, guid: a6b54ee9c13e941289439ef99fad450f, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -1024475288293788590}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-8799656588604963374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Noch mehr tote M...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: dcd9ea44ba80e402599bb1e6e8165f30
+  Position: {x: -750, y: 1680}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Noch mehr tote M\xFCtter?"
+  TextPreview: Noch mehr tote M...
+  AudioClip: {fileID: 8300000, guid: eab088b84b2d343bfa5f0640ee7b6390, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -9120020777818067147}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-8480787863510619017
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "Oh\u2026 \xC4h\u2026 Oh\u2026 \xC4h\u2026 ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: a691a74b39d29486ea463dc4553ecd14
+  Position: {x: -299.99997, y: 1260}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Oh\u2026 \xC4h\u2026 Oh\u2026 \xC4h\u2026 Oh. Achso, Sch\xE4tzele,
+    dai Muadr, die isch dod."
+  TextPreview: "Oh\u2026 \xC4h\u2026 Oh\u2026 \xC4h\u2026 ..."
+  AudioClip: {fileID: 8300000, guid: d8ab37fe7895c424b831e32fb9148511, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 7848441488358865178}
+  - {fileID: -597832899823588421}
+  - {fileID: 2692643109592289795}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-8413550383863190918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR \xD6FFNEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 6ef9d2c8d2074484fbd23220ccf5722c
+  Position: {x: 574.929, y: 1400.0001}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR \xD6FFNEN"
+  TextPreview: "T\xDCR \xD6FFNEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-8251307684216099777
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Holy Hilde! Dich...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: d5e507becc13c41cbb75546ca9e1c932
+  Position: {x: -150.00003, y: -112.2171}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Holy Hilde! Dich gibt's noch?
+  TextPreview: Holy Hilde!
+  AudioClip: {fileID: 8300000, guid: 97e233643b4184092af872fc9e65c618, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 2047312449197680100}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-8005325158088205723
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Hast du Lack ges...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: e3ab1cc42dc994807bde2bb786cfbb4a
+  Position: {x: -299.9999, y: 2616.2173}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Hast du Lack gesoffen?? Meine Mutter ist tot!?
+  TextPreview: Hast du Lack gesoffen??
+  AudioClip: {fileID: 8300000, guid: b78e470c9430646aaa6f8589449a4f32, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 4381417913569189506}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-7962924074311984988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Du kennsch doch ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 4e16ee1409e044be1a53df6103ba23b4
+  Position: {x: -750, y: 3072}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Du kennsch doch des Trambelpf\xE4dle zum Bergfeschdle hoch. Des am
+    Abhang. Dei Mudda wusst doch, dass man da vom Fahrr\xE4dle absteigt. Aber die
+    stand ja eh nebe sich in ledschda Dzaid."
+  TextPreview: Du kennsch doch ...
+  AudioClip: {fileID: 8300000, guid: 0eaa90e600e5a4340b26bf8168c0a2d9, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7411023734280172563}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-7500429039386227060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Ah, bevor ihs ve...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 142c233be75b642a0a9018a7db00d000
+  Position: {x: -150.00003, y: 304.78296}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Ah, bevor ihs vergess.
+  TextPreview: Ah, bevor ihs ve...
+  AudioClip: {fileID: 8300000, guid: 948163c742a02413e8537b521e45cd97, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 6941936280635674382}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-7411023734280172563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: I kohs... Ich ka...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 477bcd02bed3f4b6c9f4d1eda993b3f0
+  Position: {x: -450, y: 3223}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: I kohs... Ich kanns nicht glauben.
+  TextPreview: Ich kann's nicht glauben.
+  AudioClip: {fileID: 8300000, guid: 1afc50388ba84466593c1a33443cf225, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 3988424936484960029}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-7305648712894333190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Wieso hat mir ni...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 6069bcc85c9c947fb8c473d594f253bd
+  Position: {x: -150, y: 2935}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Wieso hat mir niemand Bescheid gesagt?
+  TextPreview: "Wieso wei\xDF ich von nichts??"
+  AudioClip: {fileID: 8300000, guid: 27ad16e97ca69402db14bf4c57ae56c3, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -6155615564252361977}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-6155615564252361977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: I hob do vsuchd ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: bac443afe3b8444319448f639fec2ce8
+  Position: {x: -150, y: 3072}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: I hob do vsuchd di anzrufa.
+  TextPreview: I hob do vsuchd ...
+  AudioClip: {fileID: 8300000, guid: c8613eb4f8f124ab3a91095bd4e852a0, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7411023734280172563}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-5611189802621453162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Also wie gsagd, ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 0e8400e36b69f4579b2d0e35c587d46f
+  Position: {x: -149.99995, y: 993.0002}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Also wie gsagd, du duschd ihn jeda dag f\xFCddern. Gibschd hald druff
+    achd, dess ned zu warm, ned zu kald isch d\xE4m Sauerdeich. Du haschd wahrscheinlich
+    no nie na Sauerdeich agsedzd vorhr gll? Also von dene Sauerdeich, des isch des
+    gudde, isch ja scho agsedzd, du musschd nur schee achd geba, dess er ned verk\xFCmmerd
+    da. Ond Wenn du Fraga haschd, du kannsch mi ja jederzeid fraga. Hab i no was
+    vergessa? Soll i's dir liebr ufschreiba? Muschdi drum k\xFCmmern wie so a, wie
+    heissetse? Damagodschi?"
+  TextPreview: Also wie gsagd, ...
+  AudioClip: {fileID: 8300000, guid: de78c991ebadf49cabefb225fd82d1dd, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 5109344498894139277}
+  - {fileID: 253161890010668870}
+  - {fileID: 6387356780758709701}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-4951794297628785569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Tja da kann man ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 0084dc690ad2045a69fb251094973e8e
+  Position: {x: 150, y: 1960}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Tja da kann man nichts machen.
+  TextPreview: Da kann man nichts machen.
+  AudioClip: {fileID: 8300000, guid: 0944ff30956574f28891d1d916b9a096, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-4718002508914717383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Wieso hast du de...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 8200446cc202f4362b27caff9020d9e6
+  Position: {x: -150, y: 840}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Wieso hast du den?
+  TextPreview: Wieso hast du de...
+  AudioClip: {fileID: 8300000, guid: f5c5ea6946e4348b1b2b3955953c4bbc, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -5611189802621453162}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-3500860890700797485
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EDes isch der vo..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: c1e0bd33350ff46fd980eaf587350b31
+  Position: {x: 1826.2494, y: 497.37024}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "\u201EDes isch der von dei Muddr.\u201C"
+  TextPreview: "\u201EDes isch der vo..."
+  AudioClip: {fileID: 8300000, guid: 060f3e2534852454db329ccf17caea29, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1876283828006792789}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-3275677644384721350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Apropos Mutter.....
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 68cc75b57f639485c93d67b0ae22c574
+  Position: {x: 184.19661, y: 840.0001}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Apropos Mutter...
+  TextPreview: Apropos Mutter...
+  AudioClip: {fileID: 8300000, guid: 4fe98eca2a86049a4b5f0101050108f0, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -5611189802621453162}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-3002170630934646968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Am Bergfeschdle....
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: a1e2584e4fa844188b07bff1d5fa8e40
+  Position: {x: -450, y: 3072}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Am Bergfeschdle. 27. Juli. Isch imma noch da.
+  TextPreview: Am Bergfeschdle....
+  AudioClip: {fileID: 8300000, guid: 726ac885c3dae4c6885c51567d08fb09, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7411023734280172563}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-2983064740772338891
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "\u201EWie kommt\u2019s, da..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 5ec1c6662f23e4ec4a7dff9f036fd235
+  Position: {x: 2326.2495, y: 1592.3701}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "\u201EWie kommt\u2019s, dass ich das jetzt erst erfahre?\u201C"
+  TextPreview: "\u201EWie kommt\u2019s, da..."
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-2923443129910843513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR ZUMACHEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: b8818a599365c48e689724f5ccbab510
+  Position: {x: 436.17273, y: 1060}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR ZUMACHEN"
+  TextPreview: "T\xDCR ZUMACHEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-2872400816319892380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "Wei\xDFt du eigentl..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 7013892b868994157b83afaf9f43ef9d
+  Position: {x: -450, y: 840}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Wei\xDFt du eigentlich wo ich meine Mutter finden kann?"
+  TextPreview: Wo ist meine Mutter?
+  AudioClip: {fileID: 8300000, guid: e3c0a0a1b527842dda192ce7fd4af8c0, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -5611189802621453162}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-2012796095399049337
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: DIALOG GEHT AN D...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 2c684190de7b24058a626f3162c2228b
+  Position: {x: 2302.2495, y: 1371.3702}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "DIALOG GEHT AN DER STELLE WEITER, AN DER MAN DIE T\xDCR GESCHLOSSEN
+    HAT"
+  TextPreview: DIALOG GEHT AN D...
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-1707212335615997356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Was ist passiert...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 574d7dbab138246ceb3df62604cbfc96
+  Position: {x: -749.9999, y: 2935}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Was ist passiert?
+  TextPreview: Was ist passiert?
+  AudioClip: {fileID: 8300000, guid: 018e7ac0ff21340229927a65be5b8205, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7962924074311984988}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-1617107198032348127
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Ne mir hat niema...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 9ea33c98a16f74eb6b256922df0fb6a0
+  Position: {x: -150, y: 1680}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Ne mir hat niemand Bescheid gesagt.
+  TextPreview: Ne mir hat niemand Bescheid gesagt.
+  AudioClip: {fileID: 8300000, guid: 6ae64a13c412f47fb8854e5fa069d76f, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 713022397189938084}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-1521559569570408335
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR ZUMACHEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 99343119f1d82475aae2c664251eeea2
+  Position: {x: 2489.2495, y: 585.3702}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR ZUMACHEN"
+  TextPreview: "T\xDCR ZUMACHEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 9206189563565285111}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-1024475288293788590
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Das war meine Mu...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 1e8461a8f943e42aa91872231c70d7a8
+  Position: {x: -750, y: 1960}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Das war meine Mutter.
+  TextPreview: Das war meine Mutter.
+  AudioClip: {fileID: 8300000, guid: 50a03991237204d9386419dee5f41b65, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 2888204035092886455}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-620175061639583468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EAlso wie gsagd,..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 1b733270bfd5f48198317d6648000357
+  Position: {x: 1760.2494, y: 911.37006}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "\u201EAlso wie gsagd, du duschd ihn jeda dag f\xFCddern. Gibsch au
+    drauf Acht, dass ned zu warm\noder zu kalt isch dem Sauerteig. Du haschd wahrscheinlich
+    no nie na\nSauerdeich agsedzd vorhr gll? Also von dene Sauerdeich, des\nisch
+    des gudde, isch ja scho agsedzd, du musschd nur schee\nachd geba, dess er ned
+    verk\xFCmmerd da. Ond Wenn du Fraga haschd, du kannsch mi ja jederzeid fraga.
+    Hab i no was vergessa? Soll i's dir liebr ufschreiba? Muschdi drum k\xFCmmern
+    wie dengs, die..\nwie hoi\xDFet se? Damagodschi?"
+  TextPreview: "\u201EAlso wie gsagd,..."
+  AudioClip: {fileID: 8300000, guid: de78c991ebadf49cabefb225fd82d1dd, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-608989089402376199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EJoa, am beschda..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 6bedac5f59e974e79898233236e785be
+  Position: {x: -299.9999, y: 2493.9128}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Joa, am beschda sind so 24 bis 28 Grad.
+  TextPreview: Joa, am beschda ...
+  AudioClip: {fileID: 8300000, guid: eb5a86b39157e4c22af8e895a550d2d6, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8005325158088205723}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-597832899823588421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "22\u2013 \u201EM\xFCtter ster..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 23a212e76a02443f8b5177d6062416a2
+  Position: {x: -149.99998, y: 1400.0001}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "M\xFCtter sterben doch nicht."
+  TextPreview: "M\xFCtter sterben d..."
+  AudioClip: {fileID: 8300000, guid: 6b793118d67e44b73ade49a83dd47fd7, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 4565432516199427377}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-578724375718534864
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EMerkur war r\xFCck..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 418ee9e064c4e4a2bb4775195c84a8b5
+  Position: {x: 150, y: 1820}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Merkur war r\xFCckl\xE4ufig."
+  TextPreview: "Merkur war r\xFCckl..."
+  AudioClip: {fileID: 8300000, guid: 9eb5e7cc56a1e424f9121597e7d8e5f6, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 299679945361648254}
+  - {fileID: -4951794297628785569}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-409789515176061760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Kindle, des tut ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: a7397eda9c6ae44ce93d55f4d7c3c78a
+  Position: {x: 449.9999, y: 1819.9998}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Kindle, des tut mir so leid.
+  TextPreview: Kindle, des tut ...
+  AudioClip: {fileID: 8300000, guid: 79233abecc54a4045bece51a3287b0cd, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-394871198780663035
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Naja - i muss no...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: ade58d372e81b4c0b96400007897f1ef
+  Position: {x: -449.9999, y: 3504.0796}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Naja - i muss noh au wiedr, schau mol beim Grab vorbei, ja? .... Weisch,
+    der Sauerdeig wird di imma mid ihr verbinda.
+  TextPreview: Naja - i muss no...
+  AudioClip: {fileID: 8300000, guid: 3ea80df7812d14bcba95638b9d34ae81, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: Hilde 1. Dialog UT schaebisch
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: 5348820743433113756}
+  nodes:
+  - {fileID: 5348820743433113756}
+  - {fileID: 289074022344142230}
+  - {fileID: -1521559569570408335}
+  - {fileID: 4128849765033710082}
+  - {fileID: 5875965313296210428}
+  - {fileID: 554277992469360030}
+  - {fileID: -620175061639583468}
+  - {fileID: 5944184601175019463}
+  - {fileID: -8480787863510619017}
+  - {fileID: 9206189563565285111}
+  - {fileID: 3104332354372458264}
+  - {fileID: 4381417913569189506}
+  - {fileID: 5109344498894139277}
+  - {fileID: 2648331091703205733}
+  - {fileID: -2012796095399049337}
+  - {fileID: 6014199163979538242}
+  - {fileID: -8005325158088205723}
+  - {fileID: -608989089402376199}
+  - {fileID: -394871198780663035}
+  - {fileID: -1707212335615997356}
+  - {fileID: -7962924074311984988}
+  - {fileID: 655563760352794597}
+  - {fileID: -7305648712894333190}
+  - {fileID: -6155615564252361977}
+  - {fileID: -3002170630934646968}
+  - {fileID: -7411023734280172563}
+  - {fileID: 3988424936484960029}
+  - {fileID: 6597508637990941781}
+  - {fileID: -3500860890700797485}
+  - {fileID: 2047312449197680100}
+  - {fileID: 5111066352495777327}
+  - {fileID: -7500429039386227060}
+  - {fileID: 6941936280635674382}
+  - {fileID: 2705850838671782894}
+  - {fileID: 3760874327249605209}
+  - {fileID: -2872400816319892380}
+  - {fileID: -5611189802621453162}
+  - {fileID: 1876283828006792789}
+  - {fileID: -3275677644384721350}
+  - {fileID: -4718002508914717383}
+  - {fileID: 253161890010668870}
+  - {fileID: 3760680100592759881}
+  - {fileID: 1302420562198250642}
+  - {fileID: -2923443129910843513}
+  - {fileID: -8413550383863190918}
+  - {fileID: 7848441488358865178}
+  - {fileID: 4565432516199427377}
+  - {fileID: -597832899823588421}
+  - {fileID: 1120968199337249716}
+  - {fileID: -1617107198032348127}
+  - {fileID: 713022397189938084}
+  - {fileID: 299679945361648254}
+  - {fileID: 2692643109592289795}
+  - {fileID: 7967868827852929551}
+  - {fileID: 259334518230148051}
+  - {fileID: -8799656588604963374}
+  - {fileID: -9120020777818067147}
+  - {fileID: 2464775526610776493}
+  - {fileID: -1024475288293788590}
+  - {fileID: 2888204035092886455}
+  - {fileID: 2962013131690210869}
+  - {fileID: -409789515176061760}
+  - {fileID: 714123724048922222}
+  - {fileID: -578724375718534864}
+  - {fileID: -4951794297628785569}
+  - {fileID: -2983064740772338891}
+  - {fileID: 1976496051577922561}
+  - {fileID: -8251307684216099777}
+  - {fileID: 6387356780758709701}
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+--- !u!114 &253161890010668870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Haben sie dich z...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 4b6ea0131f45a49b1964e1c871a0e86e
+  Position: {x: -300, y: 1120}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Haben sie dich zu lange eingelegt? Wo ist meine Mutter?
+  TextPreview: Haben sie dich zu lange eingelegt?
+  AudioClip: {fileID: 8300000, guid: 57ad0f8a120fe4c228f4a0d25841fe7f, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8480787863510619017}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &259334518230148051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EHier passiera m..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 6e43e52da42934e97827044d899aa075
+  Position: {x: -450, y: 1540}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Hier passiera merkw\xFCrdigere Dinge als du dia vorstella kannsch."
+  TextPreview: Hier passiera me...
+  AudioClip: {fileID: 8300000, guid: 5855a28e3833842c687d571a15f11940, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8799656588604963374}
+  - {fileID: 2464775526610776493}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &289074022344142230
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "Wei\xDFt du wo mein..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 1b20c4e37682142eeb89c3d1d8787d47
+  Position: {x: 614, y: -112.2171}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Wei\xDFt du wo meine Mutter ist?"
+  TextPreview: Wo ist meine Mutter?
+  AudioClip: {fileID: 8300000, guid: bd53ff8b6feb04efc8b7c9b5b6a6a9c7, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 6597508637990941781}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &299679945361648254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "Fucking S\xE4gbach ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 6a2f5305851414930ae610ed16183420
+  Position: {x: -150, y: 1960}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Fucking S\xE4gbach am Tobel."
+  TextPreview: "Fucking S\xE4gbach am Tobel."
+  AudioClip: {fileID: 8300000, guid: 862f43885a18f4771887807cae309533, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &554277992469360030
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR ZUMACHEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 977d78e8472be4efbae9a32c9140ec07
+  Position: {x: 2242.2495, y: 430.3701}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR ZUMACHEN"
+  TextPreview: "T\xDCR ZUMACHEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 9206189563565285111}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &655563760352794597
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "48\u2013 \u201EWANN?????\u201C"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 16cca64a2c2494b809ee70ee51e43ef6
+  Position: {x: -450, y: 2935}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Wann???
+  TextPreview: Wann???
+  AudioClip: {fileID: 8300000, guid: f26880dfef9544546b0527cedc790732, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -3002170630934646968}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &713022397189938084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EIch hob\u2019s bf\xFCrc..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 5b0ba00262e004cb09e3a26663f3fe34
+  Position: {x: -149.99991, y: 1820}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Ich hob\u2019s bf\xFCrchded. I hob dei aktuelle Numma ned. Nach zehn
+    Jahrn wo ned hier warschd. Tut mir leid."
+  TextPreview: "Ich hob\u2019s bf\xFCrch..."
+  AudioClip: {fileID: 8300000, guid: 500669fa1f7934fcdaebcf6a650b99c8, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &714123724048922222
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Stand nicht in m...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 489628c68879949209d4d1393e84da42
+  Position: {x: 150, y: 1680}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Stand nicht in meinem Horoskop.
+  TextPreview: Stand nicht in meinem Horoskop.
+  AudioClip: {fileID: 8300000, guid: 7db1107208b7e46138a83742168696bd, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -578724375718534864}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &1120968199337249716
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Apropos, I hab m...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: c3d9de45a8260491cb0821b0cea9498d
+  Position: {x: -450, y: 2240}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Apropos, I hab mi drum gk\xFCmmerd und jetzt musch du drauf achd gebbe:
+    Dess ned zu warm, ned zu kald isch d\xE4m Sauerdeig\u2026"
+  TextPreview: Apropos, I hab m...
+  AudioClip: {fileID: 8300000, guid: 6f439b0dfe17445e3aabf4ce02856b90, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 3104332354372458264}
+  - {fileID: 6014199163979538242}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &1302420562198250642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR ZUMACHEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 41094709401084ba58d424c2b625953f
+  Position: {x: 563.5151, y: 593.5}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xFCr schlie\xDFen"
+  TextPreview: "T\xFCr schlie\xDFen"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 3760680100592759881}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &1876283828006792789
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "13\u2013 \u201EWIESO HAST ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 83f1b03e2d7304f4487162bb36732ad5
+  Position: {x: 1708.2494, y: 652.3701}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "13\u2013 \u201EWIESO HAST DU DEN?\u201C"
+  TextPreview: "13\u2013 \u201EWIESO HAST ..."
+  AudioClip: {fileID: 8300000, guid: f5c5ea6946e4348b1b2b3955953c4bbc, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -620175061639583468}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &1976496051577922561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Unkraut. Du bist...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 1a3370bc594c947a4bbf51674dbd899b
+  Position: {x: -331, y: 167}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Unkraut. Du bist unkraut, Hilde.
+  TextPreview: Unkraut.
+  AudioClip: {fileID: 8300000, guid: adbceb709927a46b3b0e76633c6abd28, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7500429039386227060}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &2047312449197680100
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201ESauerkraut verr..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 93b971f5daeae4164b5c7c846feb7487
+  Position: {x: -150.00003, y: 24.782917}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Sauerkraut verreckt ned.
+  TextPreview: Sauerkraut verre...
+  AudioClip: {fileID: 8300000, guid: 1caa308f19751490e98710f2333e0b4a, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1976496051577922561}
+  - {fileID: 5111066352495777327}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &2464775526610776493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Ich bin Autorin,...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 65c3852899a2942a094e3bb3e0942073
+  Position: {x: -450, y: 1680}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Ich bin Autorin, ich kann mir ganz sch\xF6n viel vorstellen. Aber
+    wie sich das anf\xFChlt\u2026 Das hab ich mir nicht vorstellen k\xF6nnen."
+  TextPreview: Das kann ich mir nicht vorstellen.
+  AudioClip: {fileID: 8300000, guid: 517915d3d238a464481da973a433055d, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 2962013131690210869}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &2648331091703205733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR \xD6FFNEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: d40e1c8bc46a44f908b83cbdf2edf379
+  Position: {x: 2302.2495, y: 1249.3701}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR \xD6FFNEN"
+  TextPreview: "T\xDCR \xD6FFNEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -2012796095399049337}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &2692643109592289795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "23\u2013 \u201EMeine\u2026 Was\u2026..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 09e4b87ed220c4fb5b9a66137930ba66
+  Position: {x: 149.99995, y: 1400.5001}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Meine\u2026 Was\u2026?"
+  TextPreview: "Meine\u2026 Was\u2026?"
+  AudioClip: {fileID: 8300000, guid: afedefec2beec4cbd8774aae7f57db69, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 7967868827852929551}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &2705850838671782894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Meine Mutter wol...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 35479bcca4ed446dc88ce03d0c123421
+  Position: {x: -150, y: 560}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: 'Meine Mutter wollte mir auch immer so einen Sauerteig andrehen. '
+  TextPreview: Noch ein Sauerteig?
+  AudioClip: {fileID: 8300000, guid: a855671e4444d4c33afc4ef4991e7cb0, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 3760874327249605209}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &2888204035092886455
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201ESie hat dich se..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: e43cb99857b4e4ac9bb0d97f87dde987
+  Position: {x: -450, y: 2100}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Sie hat dich sehr geliebt.
+  TextPreview: Sie hat dich seh...
+  AudioClip: {fileID: 8300000, guid: 30bcdfafd55664ff4a97ac2536dab062, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &2962013131690210869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Des kann man sic...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 1e31e61658ef244c6b7e1705a6ccc362
+  Position: {x: -450, y: 1820}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Des kann man sich gar ned vorstella.
+  TextPreview: Des kann man sic...
+  AudioClip: {fileID: 8300000, guid: 3b0d2ab23a16742ec9b54dde3a5e5e4d, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1120968199337249716}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &3104332354372458264
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Meine Mutter ist...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: f545cce8e49c04cb284b878547034a5f
+  Position: {x: -600, y: 2382}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Meine Mutter ist tot.
+  TextPreview: Meine Mutter ist tot.
+  AudioClip: {fileID: 8300000, guid: b0a0d7ba52fba47c19ee3e8e307a3f98, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 4381417913569189506}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &3760680100592759881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Es klopft drei m...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 6e9e904737a2c47038e524b03625b604
+  Position: {x: 564.00006, y: 1260.0001}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Es klopft drei mal langsam an der T\xFCr. (Im Gegensatz zu Paul h\xF6rt
+    Hilde nicht auf zu klopfen, man kann sich zwar frei im Haus rumbewegen, aber
+    das langsame sich immer wiederholende Klopfen macht einem deutlich, dass es storyrelevant
+    ist.)"
+  TextPreview: Es klopft drei m...
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8413550383863190918}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &3760874327249605209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Des isch der von...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: cd898261f7f7e4461bca61de30893b2a
+  Position: {x: -150, y: 700}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Des isch der von deinr Muddr.
+  TextPreview: Des isch der von...
+  AudioClip: {fileID: 8300000, guid: 060f3e2534852454db329ccf17caea29, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -2872400816319892380}
+  - {fileID: -4718002508914717383}
+  - {fileID: -3275677644384721350}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &3988424936484960029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "Je mehr i dr\xFCba ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 0f0178a5ad52240f88be48339ccf12fb
+  Position: {x: -450, y: 3370}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Je mehr i dr\xFCba nachdenk deschdo weniga kann i globa, dass dei
+    Muadda dod isch. Und\u2014 Ne, des kann i ned sage. "
+  TextPreview: "Je mehr i dr\xFCba ..."
+  AudioClip: {fileID: 8300000, guid: d60cf424d08144ef6b873cb579cc3d09, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -394871198780663035}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &4128849765033710082
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EAh dahanna hat ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 588850e6f02a34cbe9f29005c60d0af8
+  Position: {x: 1860.2494, y: 145.37013}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "\u201EAh dahanna hat er sich versteckt der kloine Ganove.\""
+  TextPreview: "\u201EAh dahanna hat ..."
+  AudioClip: {fileID: 8300000, guid: 9c83846f28c0e45558c9d6b69ac7fcca, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 5875965313296210428}
+  - {fileID: 554277992469360030}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &4381417913569189506
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Ach, wusschdesch...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 9db5461dffe9c49be95e3cc532683884
+  Position: {x: -450.00006, y: 2784.3052}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Ach, wusschdesch des wirklich gar ned? Jo, die isch dod. I hadde mi
+    scho gfragd, warum du ned zu der Berdigung komma bisch. Umso wichdigr, dess du
+    den Sauerdeich bkommsd\u2026 bagg ihn am beschten ein."
+  TextPreview: Ach, wusschdesch...
+  AudioClip: {fileID: 8300000, guid: b2c5a6808431544c6a4d98166c375223, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -1707212335615997356}
+  - {fileID: 655563760352794597}
+  - {fileID: -7305648712894333190}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &4565432516199427377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Wusstesch du des...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 23d5fd6f082fc4f92939a09c7e6e353b
+  Position: {x: -150, y: 1540}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Wusstesch du des ned? \u2014 schei\xDFe."
+  TextPreview: Wusstesch du des...
+  AudioClip: {fileID: 8300000, guid: 0402aa1458f734435bdaf370b446490d, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -1617107198032348127}
+  - {fileID: 714123724048922222}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &5109344498894139277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Aber wo ist denn...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 660072f25f8604f90a340ac00f6d5638
+  Position: {x: -600, y: 1121}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Aber wo ist denn jetzt meine Mutter?
+  TextPreview: Wo ist sie denn jetzt?
+  AudioClip: {fileID: 8300000, guid: 0405ad7c23d694ba3b96ee6e86113bb1, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8480787863510619017}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &5111066352495777327
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "7\u2013 (Falsch h\xF6fli..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 379018899781740ce96918105a7e035b
+  Position: {x: -0.000061035156, y: 164.7829}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Ha ha ha.
+  TextPreview: "*H\xF6flich lachen*"
+  AudioClip: {fileID: 8300000, guid: 50c6d965c3b994a7ea9386691565bdf2, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -7500429039386227060}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &5348820743433113756
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Ha des isch a Sa...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: dcb2abafaaf0d426f9ef09e4d2b0f3da
+  Position: {x: 214.99998, y: -281.2171}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Ha des isch a Sach, dass I di glei verwisch! Hab\u2019s mr halber
+    denkt dass du dahanna bisch. Du I muss dr was gebba. Da heb mol. Libbenschdifd,
+    Schl\xFCsselbund, Gs\xE4lz f\xFCr d\u2019Oma, die Rubbellose f\xFCr de Andi\u2026
+    Also was wichtig isch, du musch den regelm\xE4\xDFig f\xFCttern, ah was sag I,
+    am beschda jeden Tag gell. Wo isch er no jetzt?"
+  TextPreview: Ha des isch a Sa...
+  AudioClip: {fileID: 8300000, guid: 25942dbed9891463cb324bab49d1813c, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8251307684216099777}
+  - {fileID: 289074022344142230}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &5875965313296210428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "11\u2013 \u201EMEINE MUTTE..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 5e3892f4f307c4417952acacb2eafd9a
+  Position: {x: 1826.2494, y: 357.3701}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "11\u2013 \u201EMEINE MUTTER WOLLTE MIR AUCH IMMER SO EINEN SAUERTEIG
+    ANDREHEN.\u201C"
+  TextPreview: "11\u2013 \u201EMEINE MUTTE..."
+  AudioClip: {fileID: 8300000, guid: a855671e4444d4c33afc4ef4991e7cb0, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -3500860890700797485}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &5944184601175019463
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "T\xDCR ZUMACHEN"
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: dec86923d0c914fe48dcec98be9b5b2f
+  Position: {x: 2225.2495, y: 997.37}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "T\xDCR ZUMACHEN"
+  TextPreview: "T\xDCR ZUMACHEN"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 9206189563565285111}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &6014199163979538242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Wieviel Grad gen...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 0b0dde99f832c46b2939ed317c4c3109
+  Position: {x: -300, y: 2382}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Wieviel Grad genau soll der Sauerteig haben?
+  TextPreview: Wieviel Grad sollte der haben?
+  AudioClip: {fileID: 8300000, guid: a44397598459f45a9b75976d9716a764, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -608989089402376199}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &6387356780758709701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Hilde? Aber du k...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: fbdaffae0a8c043d29402796bf3a37b1
+  Position: {x: 0.00012207031, y: 1120}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Hilde? Aber du kennst meine Mutter noch oder?
+  TextPreview: Hilde?
+  AudioClip: {fileID: 8300000, guid: 07e209a1fd080445a8d625a03b3e9b04, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8480787863510619017}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &6597508637990941781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "\u201EIsch des ned di..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 2bd8ed2eb0b1e4b4583ea72707a1a1a1
+  Position: {x: 614, y: 8.782927}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Isch des ned die gro\xDFe Frag. Deswegen nimm des."
+  TextPreview: Isch des ned die...
+  AudioClip: {fileID: 8300000, guid: daf3bc42f7b47468e861ca7bf71ab024, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 6941936280635674382}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &6941936280635674382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Aaaaahh dahana h...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 1d92532dcd2b747e688ad23d6944446b
+  Position: {x: -150, y: 432.2857}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Aaaaahh dahana hedd sich der kloi Ganove verschdeggd.
+  TextPreview: Aaaaahh dahana h...
+  AudioClip: {fileID: 8300000, guid: 9c83846f28c0e45558c9d6b69ac7fcca, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 2705850838671782894}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &7848441488358865178
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Tja kann man nic...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 26e9f6a1ea4344ad7b78768e66a73d19
+  Position: {x: -450, y: 1400}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Ah, komisch.
+  TextPreview: Ah, komisch.
+  AudioClip: {fileID: 8300000, guid: 0944ff30956574f28891d1d916b9a096, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 259334518230148051}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &7967868827852929551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Kindle... setz d...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 8c8f21a67c8b8411badaa4536617d20d
+  Position: {x: 149.99994, y: 1540.0001}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: Kindle... setz dich lieber mal no.
+  TextPreview: Kindle... setz d...
+  AudioClip: {fileID: 8300000, guid: c14f48de12d7b4e8ca6b83f08cbb5c09, type: 3}
+  ClipVolume: 1
+  PauseAfter: 4
+  Children:
+  - {fileID: -409789515176061760}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &9206189563565285111
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Es klopft drei m...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 24ad18c41f6d14fd29437dffbf579d48
+  Position: {x: 2302.2495, y: 1124.3702}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: "Es klopft drei mal langsam an der T\xFCr. "
+  TextPreview: Es klopft drei m...
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 2648331091703205733}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0

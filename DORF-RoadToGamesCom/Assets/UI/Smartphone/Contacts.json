@@ -1,0 +1,229 @@
+{
+  "contacts": [
+    {
+      "contact": "Mama",
+      "messages": [
+        {
+          "text": "Hey, du hast mir doch vorgeschlagen, mich finanziell zu unterstützen in Sachen Kleidung, ich bräuchte dringend neue Schuhe.",
+          "timestamp": "2026-04-11T18:00",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Kann sein.. weiß nicht genau",
+          "timestamp": "2026-04-11T19:12",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Bei mir ist grad finanziell nicht so dolle",
+          "timestamp": "2026-04-11T20:24",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Erst einmal wünsche ich dir eine schöne Zeit\nNur das beste Wetter und viel Spaß\nDann lass uns nächste Woche telefonieren",
+          "timestamp": "2026-04-11T21:36",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Bestimmt finden wir einen Weg \nGute Fahrt",
+          "timestamp": "2026-04-11T22:48",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Liebe Grüße Marianne",
+          "timestamp": "2026-04-11T22:49",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Hey, hast gar nicht angerufen.",
+          "timestamp": "2026-04-18T01:12",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Wo istn das Kindergeld?",
+          "timestamp": "2026-04-19T02:24",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Wegen der Schuhe...",
+          "timestamp": "2026-04-20T03:36",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Heute rückläufiger Merkur",
+          "timestamp": "2026-04-21T04:48",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ich hab heute herausgefunden, dass es gar keinen dritten Weltkrieg geben",
+          "timestamp": "2026-04-22T06:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ich hab wahnsinnig Durchfall, mir ist schwindelig, ich meld mich die Tage mal.",
+          "timestamp": "2026-04-23T07:12",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Wusstest du, dass wenn man „Health“ auf eine Wasserflasche schreibt, dass es dann sogar Krebs heilen kann?",
+          "timestamp": "2026-04-24T08:24",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Hi Marlene",
+          "timestamp": "2026-04-25T09:36",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Na?",
+          "timestamp": "2026-04-26T10:48",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Wie geht's dir?",
+          "timestamp": "2026-04-27T12:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Was machst du so schönes gerade?",
+          "timestamp": "2026-04-28T13:12",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Grad bin ich arbeiten",
+          "timestamp": "2026-04-29T14:24",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Sprachnachricht",
+          "timestamp": "2026-04-30T15:36",
+          "sender": "",
+          "status": "read",
+          "type": "voice"
+        },
+        {
+          "text": "Bist du schon dazu gekommen mir ds\nkindergeld von diesem Monat zu \nüberweisen?",
+          "timestamp": "2026-05-01T16:48",
+          "sender": "me",
+          "status": "delivered"
+        },
+        {
+          "text": "Mama?",
+          "timestamp": "2026-05-05T18:00",
+          "sender": "me",
+          "status": "sent"
+        }
+      ]
+    },
+    {
+      "contact": "Cory Düsel",
+      "messages": [
+        {
+          "text": "Hallo Marlene, den Standort kannst du aus der Mail entnehmen. Ich will nur sichergehen, dass alles klappt. Dieses Event ist wichtig für den Verlag. Die Konferenz beginnt um 11 Uhr, bitte sei pünktlich.",
+          "timestamp": "2026-04-30T18:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ich werde da sein",
+          "timestamp": "2026-05-01T18:00",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ruf mich an. Bin bis 15 Uhr im Call. Wir müssen reden!! Wenn es dafür keine gute Erklärung gibt bist du fristlos gekündigt",
+          "timestamp": "2026-05-05T18:00",
+          "sender": "",
+          "status": "unread"
+        }
+      ]
+    },
+    {
+      "contact": "Rabea (Besti) <3",
+      "messages": [
+        {
+          "text": "Happy Birthday <3",
+          "timestamp": "2026-05-02T14:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Happy Birthday <3",
+          "timestamp": "2026-05-02T14:48",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Happy Birthday",
+          "timestamp": "2026-05-02T15:36",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "happy birthdaay",
+          "timestamp": "2026-05-02T16:24",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Happy Birthday! :))",
+          "timestamp": "2026-05-02T17:12",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Happy Birthday!!",
+          "timestamp": "2026-05-02T18:00",
+          "sender": "",
+          "status": "read"
+        }
+      ]
+    },
+    {
+      "contact": "Guy (Turtelwerk)",
+      "messages": [
+        {
+          "text": "Hey, hier ist Guy von Turtelwerk. Hast du Lust mal aufn Kaffee?",
+          "timestamp": "2026-04-27T18:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Wollen wir uns heute um 3 im Engel treffen? :)",
+          "timestamp": "2026-04-29T10:00",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Gerne",
+          "timestamp": "2026-05-01T02:00",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Bis gleich dann :)",
+          "timestamp": "2026-05-02T18:00",
+          "sender": "",
+          "status": "read"
+        }
+      ]
+    }
+  ]
+}

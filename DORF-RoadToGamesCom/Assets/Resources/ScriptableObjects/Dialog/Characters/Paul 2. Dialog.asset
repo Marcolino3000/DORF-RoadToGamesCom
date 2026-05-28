@@ -1,0 +1,478 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8924957461961620636
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Wann hast du das...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 65466ab20b8ab43a4886861b21581a67
+  Position: {x: 757.6123, y: 143}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Wann hast du das letzte Mal meine Mutter gesehen?
+  TextPreview: Wann hast du meine Mutter gesehen?
+  AudioClip: {fileID: 8300000, guid: 72ae9aea6a07d4ee2800fad4224a27ba, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -4861597554970978132}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-8383619826154095442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Hi Marlene, und,...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 8760572c3ccfd4631b2f28e021f3e47f
+  Position: {x: 386.00003, y: -20.84999}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Hi Marlene, und, kommst du doch zur Hochzeit?
+  TextPreview: Hi Marlene, und,...
+  AudioClip: {fileID: 8300000, guid: f5b889b4ff5a0456c8841865dcc27d65, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 8373004931001235842}
+  - {fileID: -8094492157983975866}
+  - {fileID: -8924957461961620636}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-8094492157983975866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "N\xF6."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 14dd4a639fe0b4e3fb2c8ce52fbe5b64
+  Position: {x: 385.99997, y: 143.00003}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "N\xF6."
+  TextPreview: "N\xF6."
+  AudioClip: {fileID: 8300000, guid: a8f7d3f152cf94c05ac19a257b373a2e, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1539789428965958319}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-5903314951800558610
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: 'Fast: Bodo Biram...'
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 3b084c6f7c8ac4b16a8ffe698dcfb711
+  Position: {x: 78.999954, y: 518.6462}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "Fast: Bodo Biramoschd, ist doch ne lokale Legende!! Wei\xDFt du noch
+    damals beim Bergfest?"
+  TextPreview: 'Fast: Bodo Biram...'
+  AudioClip: {fileID: 8300000, guid: f46b1092f826c4de38b068c75ff5931b, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -2410867990767097544}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-5502161626789282611
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "\xC4hm, hi."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 69866274003ec410c8e80c02767db269
+  Position: {x: 385.99997, y: -155.93463}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "\xC4hm, hi."
+  TextPreview: "\xC4hm, hi."
+  AudioClip: {fileID: 8300000, guid: 895bb3c16ad7b4039b971aa58b8c216a, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -8383619826154095442}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-5161564076265627885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Danke aber nein ...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: e7257ab96063f4b2c93d416bf0b552f3
+  Position: {x: 685.99994, y: 640}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Danke aber nein danke.
+  TextPreview: Danke aber nein danke.
+  AudioClip: {fileID: 8300000, guid: e483cbcba5bc54c8ba6f1176c3bb22e8, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-4861597554970978132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Abgesehen von de...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: fe44be564a5bc46c4974e1ac3f870c21
+  Position: {x: 685.99994, y: 270.00003}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Abgesehen von der Beerdigung ist es bisschen her. Ich war mitm Andi
+    auf der Pirsch, da war sie im Wald unterwegs.
+  TextPreview: Abgesehen von de...
+  AudioClip: {fileID: 8300000, guid: 7d0124393b1a84d8489901569d0a7320, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -2376931801370679480}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &-2410867990767097544
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "\xE4h.. ne."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: b95e0c5943eac42fc8dac79c0d380f42
+  Position: {x: 78.999954, y: 640}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "\xC4h.. ne."
+  TextPreview: "\xC4h.. ne."
+  AudioClip: {fileID: 8300000, guid: cc36ed86678804282ae810359169c113, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &-2376931801370679480
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Wohin war sie un...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 6abaf513895e04c9a9385967a44e653b
+  Position: {x: 686.00006, y: 400.00012}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Wohin war sie unterwegs?
+  TextPreview: Und wohin war si...
+  AudioClip: {fileID: 8300000, guid: 6b05c90a20c344509ab5e413b1d820fd, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 272014040109222105}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: Paul 2. Dialog
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: -5502161626789282611}
+  nodes:
+  - {fileID: -5502161626789282611}
+  - {fileID: -8383619826154095442}
+  - {fileID: -8094492157983975866}
+  - {fileID: 8373004931001235842}
+  - {fileID: 5001023463297796001}
+  - {fileID: 1539789428965958319}
+  - {fileID: -8924957461961620636}
+  - {fileID: -4861597554970978132}
+  - {fileID: -2376931801370679480}
+  - {fileID: 1273943548407876329}
+  - {fileID: -5903314951800558610}
+  - {fileID: -2410867990767097544}
+  - {fileID: 272014040109222105}
+  - {fileID: -5161564076265627885}
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+--- !u!114 &272014040109222105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "Wei\xDF nicht, ich ..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 0801ffa9e358046e9927405138d77f53
+  Position: {x: 685.99994, y: 518.99994}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "Wei\xDF nicht, ich spionier hier ja niemandem nach. Soll ich die Betina
+    von dir gr\xFC\xDFen?"
+  TextPreview: "Wei\xDF nicht, ich ..."
+  AudioClip: {fileID: 8300000, guid: 4218284e66ef54deab33930d8d77773e, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -5161564076265627885}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &1273943548407876329
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Bruno Bixawursch...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 437593e5976344245b4aac192ff88b5d
+  Position: {x: 78.999954, y: 399.99994}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Bruno Bixawurschd?
+  TextPreview: Bruno Bixawurschd?
+  AudioClip: {fileID: 8300000, guid: cb91f1ea45ba04123819c75f9aa2e40f, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: -5903314951800558610}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0
+--- !u!114 &1539789428965958319
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: "Dein Verlust w\xFCr..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: a3b9c15492ead403e9be210950df7e4d
+  Position: {x: 385.99997, y: 270.00003}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "Dein Verlust w\xFCrde ich sagen."
+  TextPreview: "Dein Verlust w\xFCr..."
+  AudioClip: {fileID: 8300000, guid: 5990d7516ab3845eea1ddb52d32fd9ad, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &5001023463297796001
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Aaalso eigentlic...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 7dcbf239c39c3456197428c56433932a
+  Position: {x: 78.999954, y: 269.6593}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: "Aaalso eigentlich ist es ja geheim, aber dir konnt ich noch nie was
+    abschlagen \u2026 (singt) \u2026erkennst du ihn?"
+  TextPreview: Aaalso eigentlic...
+  AudioClip: {fileID: 8300000, guid: 2c29304a52e87400d85236a9319b1aac, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 1273943548407876329}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
+--- !u!114 &8373004931001235842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Welcher Schlager...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 59feb3aa454204741b22663a760aa48a
+  Position: {x: 78.71606, y: 143.00003}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: Welcher Schlager-Star kommt nochmal zur Hochzeit?
+  TextPreview: Wer kommt zur Hochzeit?
+  AudioClip: {fileID: 8300000, guid: 0240c6d3566714be582f2bbbd227289c, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children:
+  - {fileID: 5001023463297796001}
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 0
+  _popularityModifier: 0

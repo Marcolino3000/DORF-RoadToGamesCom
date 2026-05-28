@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a450906dd34a441e8f7094457bbb7546, type: 3}
+  m_Name: GoOutOfKitchenSequence
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.ScriptedSequence
+  waypoints:
+  - rid: 4678523685029281993
+  - rid: 4678523685029281994
+  references:
+    version: 2
+    RefIds:
+    - rid: 4678523685029281993
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -2.85, y: 4.69, z: 5.56}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 0}
+    - rid: 4678523685029281994
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -2.85, y: 4.69, z: 2.9900002}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 0}

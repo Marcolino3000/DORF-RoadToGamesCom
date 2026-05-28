@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 623fa79c384042e3bb49a575d178c3c0, type: 3}
+  m_Name: VaseSuccessReaction
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.Reaction
+  DialogTree: {fileID: 11400000, guid: a6e8aedce8b77454480cde1896e2a360, type: 2}
+  Interactable: {fileID: 11400000, guid: ff5f3ad7940304bceb7599513a2003f2, type: 2}
+  ObjectToMoveIn: {fileID: 0}
+  ObjectToMoveOut: {fileID: 0}
+  ObjectToMove: {fileID: 0}
+  TargetPosition: {x: 0, y: 0, z: 0}
+  CancelCurrentDialog: 0
+  DebugMessage: 
+  ScriptedSequence: {fileID: 0}
+  InteractableToShow: {fileID: 0}

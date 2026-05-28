@@ -1,0 +1,50 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a450906dd34a441e8f7094457bbb7546, type: 3}
+  m_Name: OpenDoorHildeSequence
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.ScriptedSequence
+  waypoints:
+  - rid: 4678523756269011144
+  - rid: 4678523756269011145
+  - rid: 4678523756269011146
+  - rid: 4678523756269011147
+  references:
+    version: 2
+    RefIds:
+    - rid: 4678523756269011144
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -2.9315, y: 3.82414, z: 4.57798}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 0}
+    - rid: 4678523756269011145
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -2.6845, y: 3.82414, z: 3.77898}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 0}
+    - rid: 4678523756269011146
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -3.1785, y: 3.0041401, z: -1.3510201}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 11400000, guid: 99b2901db596a46c29ebb00e795ce847, type: 2}
+    - rid: 4678523756269011147
+      type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Position: {x: -2.8785, y: 3.82414, z: -3.41102}
+        WaitTime: 0
+        ReactionAtStart: {fileID: 0}
+        ReactionAtStop: {fileID: 11400000, guid: 59fb07c5e0604433ea7c2766cc685051, type: 2}

@@ -1,0 +1,10 @@
+:root {
+}
+
+Label {
+    -unity-font-definition: url("project://database/Assets/Fonts/Fancy-Regular.otf?fileID=12800000&guid=37567676b964d4408b499bb1e061114a&type=3#Fancy-Regular");
+    font-size: 36px;
+    -unity-font-style: normal;
+    -unity-text-align: upper-center;
+    color: rgb(255, 255, 255);
+}

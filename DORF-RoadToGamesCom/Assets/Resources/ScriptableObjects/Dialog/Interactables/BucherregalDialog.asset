@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: BucherregalDialog
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: 8033581911145014560}
+  nodes:
+  - {fileID: 8033581911145014560}
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+--- !u!114 &8033581911145014560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: "\u201EMein Kind ist u..."
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: ee2371a5244354a64a7802aee928bc73
+  Position: {x: 1052, y: 746}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: "\u201EMein Kind ist ungeschickt\u201C, \u201EDas schlaffe Kind\u201C,
+    \u201EDas steife Kind\u201C, \u201EDas verspannte Kind\u201C, \u201EDas zappelige
+    Kind\u201C ... Kein Wunder dass ich so geworden bin."
+  TextPreview: "\u201EMein Kind ist u..."
+  AudioClip: {fileID: 8300000, guid: 1ae7e25ad459f4c9f9e89cc2c4331215, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 4
+  _popularityModifier: 0

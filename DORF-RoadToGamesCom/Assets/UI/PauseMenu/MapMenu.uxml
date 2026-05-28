@@ -1,0 +1,4 @@
+<ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=e8fecb0beda7148afa390dcdd8f4db62&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="mapMenu" style="flex-grow: 1; display: flex; background-image: url(&quot;project://database/Assets/UI/Questlog/Map.png?fileID=2800000&amp;guid=9e9a3b6f03ca94fe7a80e326de6be10f&amp;type=3#Map&quot;); background-color: rgba(0, 0, 0, 0);" />
+</ui:UXML>
