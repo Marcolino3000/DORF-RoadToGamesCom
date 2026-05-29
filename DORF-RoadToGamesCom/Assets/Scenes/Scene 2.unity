@@ -30961,7 +30961,7 @@ PrefabInstance:
       objectReference: {fileID: 2100000, guid: c840a2e20874048b9811f665436c88d0, type: 2}
     - target: {fileID: 919132149155446097, guid: 975bca0b83dab46a388d65c539300b73, type: 3}
       propertyPath: m_Name
-      value: stair_test (1)
+      value: Hallway Stairs
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 975bca0b83dab46a388d65c539300b73, type: 3}
       propertyPath: m_IsActive
@@ -33764,11 +33764,6 @@ SpriteRenderer:
 Transform:
   m_CorrespondingSourceObject: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
   m_PrefabInstance: {fileID: 1301839313}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &1159326476 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 362900808026290562, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
-  m_PrefabInstance: {fileID: 2218845415969507348}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1164703183
 GameObject:
@@ -51385,6 +51380,11 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1217169734943085702, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
   m_PrefabInstance: {fileID: 2218845415969507348}
   m_PrefabAsset: {fileID: 0}
+--- !u!4 &1829168495 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4810824117537372597, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
+  m_PrefabInstance: {fileID: 2218845415969507348}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1829716592
 GameObject:
   m_ObjectHideFlags: 0
@@ -55911,7 +55911,7 @@ Transform:
   - {fileID: 707221408}
   - {fileID: 299402486}
   - {fileID: 102805910}
-  - {fileID: 1159326476}
+  - {fileID: 1829168495}
   - {fileID: 512783976}
   m_Father: {fileID: 1451757449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
