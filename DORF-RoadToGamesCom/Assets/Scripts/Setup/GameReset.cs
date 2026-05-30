@@ -17,6 +17,7 @@ namespace DefaultNamespace
         private void OnGUI()
         {
             // if(GUI.Button())
+            //actually einfach nur scene 1 neu laden?
         }
     }
 }
