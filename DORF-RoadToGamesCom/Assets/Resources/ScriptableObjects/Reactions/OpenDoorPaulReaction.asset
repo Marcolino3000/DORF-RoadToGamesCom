@@ -14,11 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: InteractionBuilder::Runtime.Scripts.Core.Reaction
   DialogTree: {fileID: 0}
   Interactable: {fileID: 0}
+  TriggerInteractableAfterReactionFinished: 0
   ObjectToMoveIn: {fileID: 0}
   ObjectToMoveOut: {fileID: 0}
   ObjectToMove: {fileID: 0}
   TargetPosition: {x: 0, y: 0, z: 0}
   CancelCurrentDialog: 0
-  DebugMessage: 
   ScriptedSequence: {fileID: 11400000, guid: c524843a1d8504b94b138d8cce1f9126, type: 2}
   InteractableToShow: {fileID: 0}
+  InteractableDisappearsAutomatically: 0
+  SceneToLoad: 

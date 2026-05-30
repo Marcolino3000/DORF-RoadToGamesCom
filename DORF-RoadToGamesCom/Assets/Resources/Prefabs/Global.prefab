@@ -3042,7 +3042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: logHits
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: cursorSize
