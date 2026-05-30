@@ -694,7 +694,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: InteractionBuilder::Runtime.Scripts.Interactables.SceneSetup
   countdownDuration: 1
   UseCountdownTrigger: 1
-  showDebugButtons: 0
+  showDebugButtons: 1
 --- !u!1 &2494613028022421066
 GameObject:
   m_ObjectHideFlags: 0
@@ -3549,7 +3549,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1505215982733416512, guid: 60f64bdf8e6e9415882c1841cb8eb32f, type: 3}
       propertyPath: showDebugButtons
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2062893418243403057, guid: 60f64bdf8e6e9415882c1841cb8eb32f, type: 3}
       propertyPath: Tree
