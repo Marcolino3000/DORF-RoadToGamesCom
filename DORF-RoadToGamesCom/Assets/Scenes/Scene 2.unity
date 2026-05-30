@@ -5725,7 +5725,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &140033862
 Transform:
   m_ObjectHideFlags: 0
@@ -11471,7 +11471,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!108 &410087040
 Light:
   m_ObjectHideFlags: 0
@@ -24688,12 +24688,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 748172743}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -4.43238, y: 2.79405, z: 9.08019}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1703641331}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &749233528
 GameObject:
@@ -26533,7 +26533,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &832575518
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -28060,7 +28060,7 @@ GameObject:
   - component: {fileID: 927555060}
   - component: {fileID: 927555061}
   m_Layer: 0
-  m_Name: Kitchen_neu
+  m_Name: Kitchen
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -46570,6 +46570,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 748172745}
   - {fileID: 1442785551}
   - {fileID: 416970003}
   - {fileID: 8576854}
@@ -50047,7 +50048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1865751729}
   m_Layer: 0
-  m_Name: Hallway_neu
+  m_Name: Hallway
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -53226,7 +53227,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1949900058}
   m_Layer: 0
-  m_Name: outside
+  m_Name: Garden
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58957,7 +58958,6 @@ SceneRoots:
   - {fileID: 506018236}
   - {fileID: 440715357}
   - {fileID: 1897425144}
-  - {fileID: 748172745}
   - {fileID: 497828461}
   - {fileID: 667984824}
   - {fileID: 1703641331}
