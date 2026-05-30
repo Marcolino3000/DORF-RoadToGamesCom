@@ -42,7 +42,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: (AWKWARD PAUSE)
+  m_Name: '*schweigt*'
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 5a96dbf70abea457297ec5b94868ed8d
   Position: {x: 326.82742, y: 931.04364}
@@ -590,7 +590,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: (Nickt stolz.)
+  m_Name: Mh-hmm.
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 9d77a596a49014890b6d9feba2bf0b00
   Position: {x: 971.8274, y: 651.0436}
@@ -788,7 +788,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: "\u201EBist du dir sic..."
+  m_Name: Bist du dir sich...
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: a12f5da514af9454cb1c9afbc0153746
   Position: {x: 900, y: 2378.348}
@@ -985,7 +985,7 @@ MonoBehaviour:
   m_Name: Ich heirate jetz...
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 4bf45eebe0a604c198901ffeb350e7a8
-  Position: {x: 1027, y: 1499.2996}
+  Position: {x: 1022, y: 1500.4286}
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
@@ -1190,8 +1190,8 @@ MonoBehaviour:
   ClipVolume: 1
   PauseAfter: 0.5
   Children:
-  - {fileID: 6875389852493755261}
   - {fileID: 7850994930647803619}
+  - {fileID: 6875389852493755261}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -1241,7 +1241,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: "\u201EHa haha.\u201C"
+  m_Name: Ha haha.
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 83b7bd3a300d54f12a882317b81d640a
   Position: {x: 26.827332, y: 931.04364}
