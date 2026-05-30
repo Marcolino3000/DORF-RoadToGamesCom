@@ -215,8 +215,7 @@ MonoBehaviour:
   AudioClip: {fileID: 0}
   ClipVolume: 1
   PauseAfter: 0.5
-  Children:
-  - {fileID: -4077077817702142517}
+  Children: []
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -559,7 +558,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
-  m_Name: '*Reingehen und T...'
+  m_Name: 
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
   Guid: 48bbb01b25fd6493aa9944052765da54
   Position: {x: 899.9999, y: 3365.5}

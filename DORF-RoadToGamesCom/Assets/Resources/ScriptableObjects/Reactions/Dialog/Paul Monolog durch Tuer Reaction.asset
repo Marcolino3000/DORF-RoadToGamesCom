@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 623fa79c384042e3bb49a575d178c3c0, type: 3}
-  m_Name: SlamTheDoorSuccessReaction
+  m_Name: Paul Monolog durch Tuer Reaction
   m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.Reaction
   DialogTree: {fileID: 11400000, guid: 9efec556c11764fa9951a541d87f58b2, type: 2}
   Interactable: {fileID: 0}
@@ -20,7 +20,7 @@ MonoBehaviour:
   ObjectToMove: {fileID: 0}
   TargetPosition: {x: 0, y: 0, z: 0}
   CancelCurrentDialog: 0
-  ScriptedSequence: {fileID: 11400000, guid: 840450afbb18d43a7a420745640d29dd, type: 2}
+  ScriptedSequence: {fileID: 0}
   InteractableToShow: {fileID: 0}
   InteractableDisappearsAutomatically: 0
   SceneToLoad: 
