@@ -38203,7 +38203,7 @@ Transform:
   m_GameObject: {fileID: 1383865792}
   serializedVersion: 2
   m_LocalRotation: {x: 0.009353669, y: -0.005801313, z: 0.03342324, w: 0.9993807}
-  m_LocalPosition: {x: -5.6438, y: 3.914, z: -3.7497}
+  m_LocalPosition: {x: -5.94, y: 3.914, z: -3.7497}
   m_LocalScale: {x: 0.6485263, y: 6.825335, z: 12.09398}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -42739,7 +42739,7 @@ GameObject:
   - component: {fileID: 1563554069}
   - component: {fileID: 1563554068}
   m_Layer: 0
-  m_Name: Aussenwand links (1)
+  m_Name: Funadment Aussenwand links
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
