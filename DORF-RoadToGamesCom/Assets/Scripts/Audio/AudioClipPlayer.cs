@@ -88,6 +88,8 @@ namespace DefaultNamespace
             DialogTreeRunner.DialogNodeSelected += PlayClip;
             audioSettings.OnDialogVolumeChanged += SetDialogVolume;
             // markerManager.OnMarkerReached += OnMarkerReached;
+
+            Debug.Log(AudioSettings.GetConfiguration().sampleRate);
         }
 
         private void SetDialogVolume(float volume)
