@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: "\xC4hh... Marlene? ..."
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 774406e73294345cc9d8a7e5b4a2bd61
-  Position: {x: 950.8572, y: 521.6571}
+  Position: {x: 951, y: 522}
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
@@ -47,12 +47,12 @@ MonoBehaviour:
   m_Name: Paul Monolog durch Tuer
   m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
   StartNodes:
-  - {fileID: 721597022716387915}
+  - {fileID: -4077077817702142517}
   nodes:
   - {fileID: -4077077817702142517}
   - {fileID: 721597022716387915}
   Blackboard:
-    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
 --- !u!114 &721597022716387915
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -74,9 +74,8 @@ MonoBehaviour:
   TextPreview: ...
   AudioClip: {fileID: 0}
   ClipVolume: 1
-  PauseAfter: 5
-  Children:
-  - {fileID: -4077077817702142517}
+  PauseAfter: 0.5
+  Children: []
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
