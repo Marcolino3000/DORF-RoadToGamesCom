@@ -7,9 +7,11 @@ namespace UI
 {
     public class SettingsMenu : MonoBehaviour
     {
+        public bool IsVisible => root.visible;
+        
         [Header("References")]
         [SerializeField] InGameAudioSettings audioSettings;
-        [SerializeField] private Raycaster raycaster;
+        // [SerializeField] private Raycaster raycaster;
         
         private Slider masterVolume;
         private Slider dialogVolume;
@@ -19,40 +21,39 @@ namespace UI
         private UIDocument uiDocument;
         private VisualElement root;
 
-        public void ToggleMenu()
-        {
-            if (root.visible)
-            {
-                HideMenu();
-            }
-            else
-            {
-                ShowMenu();
-            }
-        }
+        // public void ToggleMenu()
+        // {
+        //     if (root.visible)
+        //     {
+        //         HideMenu();
+        //     }
+        //     else
+        //     {
+        //         ShowMenu();
+        //     }
+        // }
         
         #region Helpers
-        private void ShowMenu()
-        {
-            root.visible = true;
-            raycaster.isDialogRunning = true;
-        }
-        private void HideMenu()
-        {
-            root.visible = false;
-            raycaster.isDialogRunning = false;
-        }
+        // private void ShowMenu()
+        // {
+        //     root.visible = true;
+        //     // raycaster.isDialogRunning = true;
+        // }
+        // private void HideMenu()
+        // {
+        //     root.visible = false;
+        //     // raycaster.isDialogRunning = false;
+        // }
         
         #endregion
         
         #region Setup
         
-        private void Start()
+        public void Setup()
         {
             GetElements();
             SetupEvents();
-            SetSlidersToCurrentValues();
-            HideMenu();
+            // SetSlidersToCurrentValues();
         }
 
         private void GetElements()
@@ -95,6 +96,8 @@ namespace UI
         
         private void SetSlidersToCurrentValues()
         {
+            if (audioSettings == null) return;
+            
             masterVolume.value = audioSettings.masterVolume;
             dialogVolume.value = audioSettings.dialogVolume;
             musicVolume.value = audioSettings.musicVolume;
@@ -102,5 +105,16 @@ namespace UI
         }
         
         #endregion
+
+        public void Hide()
+        {
+            root.visible = false;
+        }
+
+        public void Show()
+        {
+            root.visible = true;
+            SetSlidersToCurrentValues();
+        }
     }
 }

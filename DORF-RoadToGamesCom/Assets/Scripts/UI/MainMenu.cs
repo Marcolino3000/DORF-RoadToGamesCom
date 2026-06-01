@@ -1,5 +1,6 @@
 using System;
-using Runtime.Scripts.Interactables;
+using SceneManagement;
+using UI;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,14 +8,17 @@ public class MainMenu : MonoBehaviour
 {
     public event Action OnStartGame;
     public event Action OnResumeGame;
+    public event Action OpenSettingsMenu;
     public bool IsVisible => root.visible;
     
     private Button startButton;
     private Button resumeButton;
     private Button exitButton;
+    private Button settingsButton;
     
     private UIDocument uiDocument;
     private VisualElement root;
+    private bool gameStarted;
     
     public void Setup()
     {
@@ -30,17 +34,32 @@ public class MainMenu : MonoBehaviour
         startButton = root.Q<Button>("Start");
         resumeButton = root.Q<Button>("Resume");
         exitButton = root.Q<Button>("Exit");
+        settingsButton = root.Q<Button>("Settings");
         
         startButton.clicked += StartGame;
         resumeButton.clicked += ResumeGame;
         exitButton.clicked += ExitGame;
+        settingsButton.clicked += OpenSettings;
+    }
+
+    private void OpenSettings()
+    {
+        OpenSettingsMenu?.Invoke();
     }
 
     private void StartGame()
     {
-        startButton.SetEnabled(false);
-        startButton.pickingMode = PickingMode.Ignore;
-        OnStartGame?.Invoke();
+        if(!gameStarted)
+        {
+            gameStarted = true;
+            OnStartGame?.Invoke();
+        }
+
+        else
+        {
+            gameStarted = false;
+            SceneSwapManager.ChangeScene("Scene 1");
+        }
     }
 
     private void ResumeGame()

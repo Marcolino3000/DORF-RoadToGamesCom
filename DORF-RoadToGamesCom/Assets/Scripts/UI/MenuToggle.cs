@@ -8,6 +8,7 @@ namespace UI
         [SerializeField] private MainMenu mainMenu;
         [SerializeField] private JournalMenu journalMenu;
         [SerializeField] private MapMenu mapMenu;
+        [SerializeField] private SettingsMenu settingsMenu;
         
         [SerializeField] private Raycaster raycaster;
         
@@ -22,6 +23,7 @@ namespace UI
             mainMenu.Setup();
             journalMenu.Setup();
             mapMenu.Setup();
+            settingsMenu.Setup();
 
             SetupMainMenuEvents();
         }
@@ -30,11 +32,17 @@ namespace UI
         {
             mainMenu.OnStartGame += HideAllMenus;
             mainMenu.OnResumeGame += HideAllMenus;
+            mainMenu.OpenSettingsMenu += OpenSettings;
+        }
+
+        private void OpenSettings()
+        {
+            ToggleSettingsMenu();
         }
 
         public void ToggleMenus()
         {
-            if(mainMenu.IsVisible || journalMenu.IsVisible || mapMenu.IsVisible)
+            if(mainMenu.IsVisible || journalMenu.IsVisible || mapMenu.IsVisible || settingsMenu.IsVisible)
             {
                 HideAllMenus();
             }
@@ -50,6 +58,7 @@ namespace UI
             mainMenu.Hide();
             journalMenu.Hide();
             mapMenu.Hide();
+            settingsMenu.Hide();
             
             raycaster.isDialogRunning = false;
         }
@@ -85,6 +94,19 @@ namespace UI
             HideAllMenus();
             mapMenu.Show();
             raycaster.isDialogRunning = true;
+        }
+
+        public void ToggleSettingsMenu()
+        {
+            if (settingsMenu.IsVisible)
+            {
+                HideAllMenus();
+                return;
+            }
+            
+            HideAllMenus();
+            settingsMenu.Show();
+            raycaster.isDialogRunning = true;   
         }
     }
     
