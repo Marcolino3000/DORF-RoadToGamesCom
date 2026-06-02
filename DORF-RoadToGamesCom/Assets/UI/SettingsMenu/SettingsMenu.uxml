@@ -8,5 +8,6 @@
             <ui:Slider label="Music" value="100" high-value="1" name="musicVolume" />
             <ui:Slider label="SFX" value="100" high-value="1" name="sfxVolume" />
         </ui:VisualElement>
+        <ui:Button text="Resume" name="resumeButton" />
     </ui:VisualElement>
 </ui:UXML>

@@ -25,14 +25,16 @@ namespace UI
             mapMenu.Setup();
             settingsMenu.Setup();
 
-            SetupMainMenuEvents();
+            SetupMenuEvents();
         }
 
-        private void SetupMainMenuEvents()
+        private void SetupMenuEvents()
         {
             mainMenu.OnStartGame += HideAllMenus;
             mainMenu.OnResumeGame += HideAllMenus;
             mainMenu.OpenSettingsMenu += OpenSettings;
+            
+            settingsMenu.OnResume += HideAllMenus;
         }
 
         private void OpenSettings()

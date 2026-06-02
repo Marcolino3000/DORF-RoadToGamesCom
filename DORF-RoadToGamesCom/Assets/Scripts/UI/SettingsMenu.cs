@@ -1,5 +1,5 @@
+using System;
 using Audio;
-using Runtime.Scripts.Interactables;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -7,6 +7,7 @@ namespace UI
 {
     public class SettingsMenu : MonoBehaviour
     {
+        public event Action OnResume;
         public bool IsVisible => root.visible;
         
         [Header("References")]
@@ -17,21 +18,11 @@ namespace UI
         private Slider dialogVolume;
         private Slider musicVolume;
         private Slider sfxVolume;
+        private Button resumeButton;
         
         private UIDocument uiDocument;
         private VisualElement root;
-
-        // public void ToggleMenu()
-        // {
-        //     if (root.visible)
-        //     {
-        //         HideMenu();
-        //     }
-        //     else
-        //     {
-        //         ShowMenu();
-        //     }
-        // }
+        
         
         #region Helpers
         // private void ShowMenu()
@@ -65,6 +56,7 @@ namespace UI
             dialogVolume = root.Q<Slider>("dialogVolume");
             musicVolume = root.Q<Slider>("musicVolume");
             sfxVolume = root.Q<Slider>("sfxVolume");
+            resumeButton = root.Q<Button>("resumeButton");
         }
 
         private void SetupEvents()
@@ -92,6 +84,8 @@ namespace UI
                 {
                     audioSettings.SetSfxVolume(evt.newValue);
                 });
+            
+            resumeButton.clicked += () => { OnResume?.Invoke(); };
         }
         
         private void SetSlidersToCurrentValues()
