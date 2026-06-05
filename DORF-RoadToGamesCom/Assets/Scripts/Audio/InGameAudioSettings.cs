@@ -19,6 +19,8 @@ namespace Audio
         
         [Range(0f, 1f)]
         public float dialogVolume = 1f;
+
+        public int inactivityThresholdSeconds;
         
         public float GetDialogVolume()
         {

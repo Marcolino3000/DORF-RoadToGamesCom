@@ -1,5 +1,6 @@
 using System;
 using Audio;
+using Runtime.Scripts.PlayerInput;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -12,12 +13,13 @@ namespace UI
         
         [Header("References")]
         [SerializeField] InGameAudioSettings audioSettings;
-        // [SerializeField] private Raycaster raycaster;
+        [SerializeField] private InputDispatcher inputDispatcher;
         
         private Slider masterVolume;
         private Slider dialogVolume;
         private Slider musicVolume;
         private Slider sfxVolume;
+        private Slider inactivityThreshold;
         private Button resumeButton;
         
         private UIDocument uiDocument;
@@ -56,6 +58,8 @@ namespace UI
             dialogVolume = root.Q<Slider>("dialogVolume");
             musicVolume = root.Q<Slider>("musicVolume");
             sfxVolume = root.Q<Slider>("sfxVolume");
+            inactivityThreshold = root.Q<Slider>("inactivityThreshold");
+            
             resumeButton = root.Q<Button>("resumeButton");
         }
 
@@ -83,6 +87,13 @@ namespace UI
                 evt =>
                 {
                     audioSettings.SetSfxVolume(evt.newValue);
+                });
+            
+            inactivityThreshold.RegisterValueChangedCallback(
+                evt =>
+                {
+                    audioSettings.inactivityThresholdSeconds = (int)evt.newValue;
+                    inputDispatcher.secondsUntilGameReset = (int)evt.newValue;
                 });
             
             resumeButton.clicked += () => { OnResume?.Invoke(); };
