@@ -8145,6 +8145,72 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &250880152
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1884911798}
+    m_Modifications:
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6223779332585130471, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: Data
+      value: 
+      objectReference: {fileID: 11400000, guid: 5f281a29e142d496586cdbf5469d637b, type: 2}
+    - target: {fileID: 8873758076070795167, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: m_Name
+      value: Interactable
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: af10d5b363b08468082fb93188628d24, type: 3}
+--- !u!4 &250880153 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
+  m_PrefabInstance: {fileID: 250880152}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &256346430
 GameObject:
   m_ObjectHideFlags: 0
@@ -8574,7 +8640,6 @@ Transform:
   - {fileID: 1284417585}
   - {fileID: 2007673830}
   - {fileID: 1002024961}
-  - {fileID: 1884911798}
   - {fileID: 1644550978}
   - {fileID: 418389531}
   m_Father: {fileID: 927555060}
@@ -55341,6 +55406,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1884911798}
   - {fileID: 1931493138}
   - {fileID: 78699110}
   - {fileID: 68925179}
@@ -55983,6 +56049,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1884911798}
   - component: {fileID: 1884911799}
+  - component: {fileID: 1884911800}
   m_Layer: 0
   m_Name: Brotbox
   m_TagString: Untagged
@@ -55999,12 +56066,13 @@ Transform:
   m_GameObject: {fileID: 1884911797}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.1090994, y: 1.9806199, z: 2.3695803}
+  m_LocalPosition: {x: -1.4099998, y: 1.115, z: 6.718}
   m_LocalScale: {x: 0.15, y: 0.15, z: 0.15}
   m_ConstrainProportionsScale: 1
   m_Children:
+  - {fileID: 250880153}
   - {fileID: 1326350899}
-  m_Father: {fileID: 277112453}
+  m_Father: {fileID: 1857850041}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1884911799
 SpriteRenderer:
@@ -56064,6 +56132,85 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!60 &1884911800
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1884911797}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 4.36, y: 2.5}
+    newSize: {x: 4.36, y: 2.5}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.1699998, y: 0.45}
+      - {x: 2.1499999, y: 0.78}
+      - {x: 2.1399999, y: 0.88}
+      - {x: 2.12, y: 1.1999999}
+      - {x: 2.09, y: 1.62}
+      - {x: 2.08, y: 1.67}
+      - {x: 1.9399999, y: 1.88}
+      - {x: 1.67, y: 2.25}
+      - {x: 1.56, y: 2.31}
+      - {x: 1.25, y: 2.4199998}
+      - {x: 1.05, y: 2.5}
+      - {x: 0.91999996, y: 2.5}
+      - {x: 0.84999996, y: 2.4099998}
+      - {x: -1.43, y: 2.25}
+      - {x: -1.61, y: 2.27}
+      - {x: -1.7099999, y: 2.33}
+      - {x: -1.81, y: 2.33}
+      - {x: -2.1599998, y: 2.3}
+      - {x: -2.18, y: 2.29}
+      - {x: -2.18, y: 2.12}
+      - {x: -2.1699998, y: 1.9499999}
+      - {x: -2.1299999, y: 1.64}
+      - {x: -2.11, y: 1.39}
+      - {x: -2.09, y: 1.1999999}
+      - {x: -2.07, y: 0.95}
+      - {x: -2.04, y: 0.63}
+      - {x: -2.03, y: 0.48999998}
+      - {x: -2.02, y: 0.48}
+      - {x: -2.02, y: 0.02}
+      - {x: -2, y: 0}
+      - {x: 2.18, y: 0}
+      - {x: 2.18, y: 0.29}
+  m_UseDelaunayMesh: 0
 --- !u!1 &1885303495
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: BrotBoxDialog
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes: []
+  nodes: []
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
