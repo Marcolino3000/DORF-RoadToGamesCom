@@ -1,0 +1,85 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1544306479",
+    "Type": "User",
+    "GUID": "{E082CD5E-571C-4604-A83D-DE76F42380B4}",
+    "Language": "SFX",
+    "Hash": "{EFB96822-696B-9224-B8E6-F1A8D22120D5}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Scene2",
+    "ShortName": "Scene2",
+    "Path": "Scene2.bnk",
+    "Media": [
+     {
+      "Id": "185022841",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\260110_CoD_Szene 02A_cut01.wav",
+      "CachePath": "81/{81B59B2B-20B9-0C7A-9B4D-0D0DB653F801}.wem"
+     },
+     {
+      "Id": "392156279",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\260110_CoD_Szene 02B_cut01.wav",
+      "CachePath": "11/{11DB505A-740E-CB53-B0AD-33C172CB34EE}.wem"
+     },
+     {
+      "Id": "417646144",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\260118_CoD_Szene 02C_cut01.wav",
+      "CachePath": "94/{94FBE51B-5CCE-F5AF-4008-1F6FC0F92D77}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2007948846",
+      "Name": "MUS_Scene2_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_Scene2_Start",
+      "GUID": "{A964252D-C827-4884-A10D-FEFE4E525345}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "185022841"
+       },
+       {
+        "Id": "392156279"
+       },
+       {
+        "Id": "417646144"
+       }
+      ]
+     },
+     {
+      "Id": "281579790",
+      "Name": "MUS_Scene2_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_Scene2_Stop",
+      "GUID": "{E23DC368-D35A-44E4-8A82-E19FFFB57A01}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "185022841"
+       },
+       {
+        "Id": "392156279"
+       },
+       {
+        "Id": "417646144"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{A85113B1-737F-D738-2D91-641C63AEC564}"
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1355168291",
+    "Type": "User",
+    "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
+    "Language": "SFX",
+    "Hash": "{5906E19F-CCE5-9267-B7DB-D3C169B31C2A}",
+    "ObjectPath": "Init",
+    "ShortName": "Init",
+    "Path": "Init.bnk",
+    "Plugins": {
+     "AudioDevices": [
+      {
+       "Id": "2317455096",
+       "Name": "No_Output",
+       "ObjectPath": "\\Devices\\Default Work Unit\\No_Output",
+       "GUID": "{D7F88138-61DD-4E91-9EC7-0E55E1AD3552}",
+       "LibName": "No Output",
+       "LibId": "11862023"
+      },
+      {
+       "Id": "3859886410",
+       "Name": "System",
+       "ObjectPath": "\\Devices\\Default Work Unit\\System",
+       "GUID": "{910EDD81-2869-42A5-827A-983F931C6ABC}",
+       "LibName": "System",
+       "LibId": "11403271"
+      }
+     ]
+    },
+    "Busses": [
+     {
+      "Id": "393239870",
+      "Name": "SFX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX",
+      "GUID": "{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}"
+     },
+     {
+      "Id": "2246998526",
+      "Name": "Main Audio Bus",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
+      "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
+     },
+     {
+      "Id": "3991942870",
+      "Name": "Music",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
+      "GUID": "{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}"
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1004648580",
+      "Name": "VOL_Music",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SETTINGS\\VOL_Music",
+      "GUID": "{63409800-B887-4C9E-BA4F-B5E1CBECF40B}"
+     },
+     {
+      "Id": "1166628669",
+      "Name": "Dough_Rise_n_Sink",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PROPS\\Dough_Rise_n_Sink",
+      "GUID": "{EE1B24A1-1F63-448F-9701-76C456883E13}"
+     },
+     {
+      "Id": "3273357900",
+      "Name": "VOL_SFX",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SETTINGS\\VOL_SFX",
+      "GUID": "{01A87EFA-4C9E-42C7-9232-21000F808BE7}"
+     },
+     {
+      "Id": "3391499625",
+      "Name": "VOL_Master",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SETTINGS\\VOL_Master",
+      "GUID": "{EE20CFC9-D64D-4E20-A6D0-FF2AD54FBD8A}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{05045D50-0AD9-A7B4-F0E8-04A5179D953E}"
+ }
+}

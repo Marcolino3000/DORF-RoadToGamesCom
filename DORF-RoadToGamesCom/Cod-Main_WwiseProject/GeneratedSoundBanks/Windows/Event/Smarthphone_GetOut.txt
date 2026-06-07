@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	3881560519	Smarthphone_GetOut			\Default Work Unit\Props\Smarthphone_GetOut	
+

@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3881560519",
+    "Type": "Event",
+    "GUID": "{25AD7D59-7E46-4E01-A7EA-8B2EA9312D7E}",
+    "Language": "SFX",
+    "Hash": "{57146EFB-C7F7-C2F6-B327-BAD307F4C0D3}",
+    "ObjectPath": "Smarthphone_GetOut",
+    "ShortName": "Smarthphone_GetOut",
+    "Path": "Event/Smarthphone_GetOut.bnk",
+    "Media": [
+     {
+      "Id": "36562100",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-02_TS.wav",
+      "Path": "Media/36562100.wem",
+      "CachePath": "36/{36713C74-882A-0A4B-341E-20BD33ED5D19}.wem"
+     },
+     {
+      "Id": "837748890",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-03_TS.wav",
+      "Path": "Media/837748890.wem",
+      "CachePath": "61/{6146A81E-CBEA-07C0-6A9E-BB9E1A91EE8D}.wem"
+     },
+     {
+      "Id": "888694663",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-01_TS.wav",
+      "Path": "Media/888694663.wem",
+      "CachePath": "9D/{9D7D7EB5-0077-D5A7-3639-28A58892BAE0}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3881560519",
+      "Name": "Smarthphone_GetOut",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Smarthphone_GetOut",
+      "GUID": "{25AD7D59-7E46-4E01-A7EA-8B2EA9312D7E}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.2828125",
+      "DurationMax": "0.40125",
+      "MediaRefs": [
+       {
+        "Id": "36562100"
+       },
+       {
+        "Id": "837748890"
+       },
+       {
+        "Id": "888694663"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{35D72A6D-5C04-7DC9-A551-9D9083CFEE18}"
+ }
+}

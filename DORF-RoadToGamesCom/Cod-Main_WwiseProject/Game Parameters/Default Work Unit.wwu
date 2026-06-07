@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}" SchemaVersion="133">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}" PersistMode="Standalone">
+			<ChildrenList>
+				<Folder Name="SETTINGS" ID="{D1D07B29-08B4-4259-B69B-C9555EB87C5E}" ShortID="683483204">
+					<ChildrenList>
+						<GameParameter Name="VOL_Music" ID="{63409800-B887-4C9E-BA4F-B5E1CBECF40B}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="VOL_Master" ID="{EE20CFC9-D64D-4E20-A6D0-FF2AD54FBD8A}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+						<GameParameter Name="VOL_SFX" ID="{01A87EFA-4C9E-42C7-9232-21000F808BE7}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="100"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="PROPS" ID="{41FC85CA-2EEF-40DE-8B8E-1310A216EB7F}" ShortID="367483727">
+					<ChildrenList>
+						<GameParameter Name="Dough_Rise_n_Sink" ID="{EE1B24A1-1F63-448F-9701-76C456883E13}">
+							<PropertyList>
+								<Property Name="InitialValue" Type="Real64" Value="0"/>
+							</PropertyList>
+						</GameParameter>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>

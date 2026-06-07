@@ -1,0 +1,55 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1548734028",
+    "Type": "User",
+    "GUID": "{F19AAAE0-26A4-434F-A406-BAB060808F79}",
+    "Language": "SFX",
+    "Hash": "{D358BF40-10F0-9FDE-FE1A-56780DF4E75F}",
+    "ObjectPath": "\\SoundBanks\\Default Work Unit\\Placeholder",
+    "ShortName": "Placeholder",
+    "Path": "Placeholder.bnk",
+    "Media": [
+     {
+      "Id": "445229569",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Music\\260111_CoD_Schlager V01.wav",
+      "CachePath": "F3/{F3AD3AFA-3A30-D591-DCBF-19A74ECAEBC3}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "951148415",
+      "Name": "MUS_Schlager_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_Schlager_Start",
+      "GUID": "{AA70A239-103A-441C-B2A6-E893606E66D9}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "445229569"
+       }
+      ]
+     },
+     {
+      "Id": "2690086085",
+      "Name": "MUS_Schlager_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\MUS_Schlager_Stop",
+      "GUID": "{6C70B354-A73F-47E4-84EA-2324234B9581}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{D9E184AD-23E0-749A-8C7C-9DADEA0B1DED}"
+ }
+}

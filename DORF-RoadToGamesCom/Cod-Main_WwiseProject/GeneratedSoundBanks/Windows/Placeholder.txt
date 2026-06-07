@@ -1,0 +1,7 @@
+Event	ID	Name			Wwise Object Path	Notes
+	951148415	MUS_Schlager_Start			\Default Work Unit\MUS_Schlager_Start	
+	2690086085	MUS_Schlager_Stop			\Default Work Unit\MUS_Schlager_Stop	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	445229569	260111_CoD_Schlager V01	.cache\F3\{F3AD3AFA-3A30-D591-DCBF-19A74ECAEBC3}.wem		\Containers\Default Work Unit\Schlager\260111_CoD_Schlager V01\260111_CoD_Schlager V01		12629432
+

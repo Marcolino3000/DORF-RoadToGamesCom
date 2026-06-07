@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}" SchemaVersion="133">
+	<Busses>
+		<WorkUnit Name="Default Work Unit" ID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}" PersistMode="Standalone">
+			<ChildrenList>
+				<Bus Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}">
+					<ReferenceList>
+						<Reference Name="AudioDevice" PluginName="System" CompanyID="0" PluginID="174" PluginType="7">
+							<ObjectRef Name="System" ID="{910EDD81-2869-42A5-827A-983F931C6ABC}" WorkUnitID="{9FABAB0C-9D79-4220-86E5-97768AF7A4EE}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<Bus Name="Music" ID="{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{1D5F64D8-0F28-4458-9331-7F4E0D05134E}" ShortID="770760863">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="VOL_Music" ID="{63409800-B887-4C9E-BA4F-B5E1CBECF40B}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{0CC86CFC-3706-4CF1-8CC3-79FB64507E8A}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+						<Bus Name="SFX" ID="{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}">
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{FB072A1D-FDF5-49B6-BF02-A6B28089292B}" ShortID="741331">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="VOL_SFX" ID="{01A87EFA-4C9E-42C7-9232-21000F808BE7}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{7789E7D5-52CC-4359-9929-672D7E24429F}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="3"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-200</YPos>
+																<Flags>5</Flags>
+																<SegmentShape>Log2</SegmentShape>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>0</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+						</Bus>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="RTPC">
+							<RTPC Name="" ID="{B42B6468-55E0-4527-922F-F742F12AE376}" ShortID="568455248">
+								<PropertyList>
+									<Property Name="PropertyName" Type="string" Value="BusVolume"/>
+								</PropertyList>
+								<ReferenceList>
+									<Reference Name="ControlInput">
+										<ObjectRef Name="VOL_Master" ID="{EE20CFC9-D64D-4E20-A6D0-FF2AD54FBD8A}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+									</Reference>
+									<Reference Name="Curve">
+										<Custom>
+											<Curve Name="" ID="{E3488A3E-8909-4CAB-8EF8-F16582EE6A8F}">
+												<PropertyList>
+													<Property Name="Flags" Type="int32" Value="3"/>
+												</PropertyList>
+												<PointList>
+													<Point>
+														<XPos>0</XPos>
+														<YPos>-200</YPos>
+														<Flags>5</Flags>
+														<SegmentShape>Log2</SegmentShape>
+													</Point>
+													<Point>
+														<XPos>100</XPos>
+														<YPos>0</YPos>
+														<Flags>37</Flags>
+													</Point>
+												</PointList>
+											</Curve>
+										</Custom>
+									</Reference>
+								</ReferenceList>
+							</RTPC>
+						</ObjectList>
+					</ObjectLists>
+				</Bus>
+			</ChildrenList>
+		</WorkUnit>
+	</Busses>
+</WwiseDocument>

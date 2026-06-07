@@ -1,0 +1,54 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1205543049",
+    "Type": "Event",
+    "GUID": "{FEAE63F9-0198-4DA8-805B-DE3BEFF47925}",
+    "Language": "SFX",
+    "Hash": "{D89E047E-0772-0E0C-CEB2-82E02AB7D2B0}",
+    "ObjectPath": "Dough_React_Grow_Start",
+    "ShortName": "Dough_React_Grow_Start",
+    "Path": "Event/Dough_React_Grow_Start.bnk",
+    "Media": [
+     {
+      "Id": "558568173",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Dough_React_Grow-01_TS.wav",
+      "Path": "Media/558568173.wem",
+      "CachePath": "4B/{4BE15CD7-960A-8D22-F8AE-B555449AFDE7}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "1205543049",
+      "Name": "Dough_React_Grow_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Dough\\Dough_React_Grow_Start",
+      "GUID": "{FEAE63F9-0198-4DA8-805B-DE3BEFF47925}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "558568173"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1166628669",
+      "Name": "Dough_Rise_n_Sink",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PROPS\\Dough_Rise_n_Sink",
+      "GUID": "{EE1B24A1-1F63-448F-9701-76C456883E13}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{954A45C8-F503-1464-A205-32350AD23EC3}"
+ }
+}

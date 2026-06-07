@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Tristan" ID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}" PersistMode="Standalone">
+			<PropertyList>
+				<Property Name="Color" Type="int16" Value="2"/>
+				<Property Name="OverrideColor" Type="bool" Value="True"/>
+			</PropertyList>
+			<ChildrenList>
+				<PropertyContainer Name="Props" ID="{9083F75B-3212-4E18-8520-4926C9A51F3F}" ShortID="337147775">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="SFX" ID="{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<RandomSequenceContainer Name="PROP_Bike_Click" ID="{D8B44428-E9BD-4A4F-AB37-89B390B47B73}" ShortID="255538414">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Bike_Click-01_TS" ID="{AB7F70E2-1B13-422E-A741-D3CA1858B1C7}" ShortID="1027412977">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Bike_Click-01_TS" ID="{A0765517-A12E-42DE-9B39-FB60F1326582}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Bike_Click\PROP_Bike_Click-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417471246"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Bike_Click-01_TS" ID="{A0765517-A12E-42DE-9B39-FB60F1326582}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Bike_Click-02_TS" ID="{6616075B-5965-469A-8035-2B33282AE996}" ShortID="980571587">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Bike_Click-02_TS" ID="{F5519BE8-370F-48AC-9495-E7DD6FE1D77D}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Bike_Click\PROP_Bike_Click-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="563776362"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Bike_Click-02_TS" ID="{F5519BE8-370F-48AC-9495-E7DD6FE1D77D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Bike_Click-03_TS" ID="{61523684-FFB9-4EEA-8D8B-24B141DDC8F5}" ShortID="841054191">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Bike_Click-03_TS" ID="{AAA4A125-2AA3-4C5C-9BCE-C1E31D31CEBC}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Bike_Click\PROP_Bike_Click-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="910407773"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Bike_Click-03_TS" ID="{AAA4A125-2AA3-4C5C-9BCE-C1E31D31CEBC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Bike_Click-04_TS" ID="{51F90911-3799-47A7-B90B-1FEE563D9C0E}" ShortID="810825104">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Bike_Click-04_TS" ID="{27E7A6D8-F7B3-4B7F-A21E-82218E50C9DC}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Bike_Click\PROP_Bike_Click-04_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="428562537"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Bike_Click-04_TS" ID="{27E7A6D8-F7B3-4B7F-A21E-82218E50C9DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Door_House_Inside_Close" ID="{C42F2BA0-6D27-4850-8442-1A69B5BE1C90}" ShortID="69641146">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Door_House_Inside_Close-01_TS" ID="{F336C627-5921-4490-AC3B-B2E2340DC98B}" ShortID="1033639545">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Close-01_TS" ID="{444C692D-D233-4E85-AB96-A04150966ABC}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="306826646"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Close-01_TS" ID="{444C692D-D233-4E85-AB96-A04150966ABC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Inside_Close-02_TS" ID="{12CC33FF-CC3D-4231-AB41-79238A9B6F33}" ShortID="526367856">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Close-02_TS" ID="{0ABB7575-94A0-4E1D-AD82-33A192C15905}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="667562955"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Close-02_TS" ID="{0ABB7575-94A0-4E1D-AD82-33A192C15905}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Inside_Close-03_TS" ID="{E8A291DD-D427-4ECC-8676-4BC7CAAAB476}" ShortID="541127772">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Close-03_TS" ID="{E8B57AE7-05B7-402E-9082-B2915408BB53}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="1039632174"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Close-03_TS" ID="{E8B57AE7-05B7-402E-9082-B2915408BB53}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Door_House_Inside_Open" ID="{3CA53669-0B03-4681-AFC5-DA3FE4D10C91}" ShortID="411180531">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Door_House_Inside_Open-01_TS" ID="{1665F462-2451-4B77-9420-07549C654754}" ShortID="880909842">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Open-01_TS" ID="{21B76668-568B-4F73-99D1-07A73B5061FF}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="533745290"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Open-01_TS" ID="{21B76668-568B-4F73-99D1-07A73B5061FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Inside_Open-02_TS" ID="{81AAEA4B-0F17-4AAF-9767-8AB324CC93F4}" ShortID="606755966">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Open-02_TS" ID="{3E0AB90A-EF48-4A2D-B06D-B02DEFD5103A}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="882469003"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Open-02_TS" ID="{3E0AB90A-EF48-4A2D-B06D-B02DEFD5103A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Inside_Open-03_TS" ID="{5BC37E1D-174D-49B3-B002-BF51AC64345F}" ShortID="147172620">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Inside_Open-03_TS" ID="{DA4EE4C6-4EA8-430C-9212-934A5515FC1B}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="869974642"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Inside_Open-03_TS" ID="{DA4EE4C6-4EA8-430C-9212-934A5515FC1B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Door_House_Outside_Close" ID="{E2AB1EAC-6DA6-429E-818C-76549CE2DE80}" ShortID="372962982">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Door_House_Outside_Close-01_TS" ID="{EA853FA7-F31D-44CB-A37F-C936BAB2706D}" ShortID="193278976">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Close-01_TS" ID="{D45A6629-52BC-4153-BAAA-BCEF89658D4C}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Close\PROP_Door_House_Outside_Close-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="935716141"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Close-01_TS" ID="{D45A6629-52BC-4153-BAAA-BCEF89658D4C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Outside_Close-02_TS" ID="{05234F55-713D-4E63-A7A0-6329BDF049B4}" ShortID="383160977">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Close-02_TS" ID="{99F20E9B-FAC1-4F69-B53C-62CB9F0B1954}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Close\PROP_Door_House_Outside_Close-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="904683675"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Close-02_TS" ID="{99F20E9B-FAC1-4F69-B53C-62CB9F0B1954}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Outside_Close-03_TS" ID="{DD132A54-37D8-47A3-BB0A-1F752B3F4CF0}" ShortID="296136807">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Close-03_TS" ID="{5F2F6FCF-39C1-400E-BBB7-03540293A755}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Close\PROP_Door_House_Outside_Close-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="225013524"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Close-03_TS" ID="{5F2F6FCF-39C1-400E-BBB7-03540293A755}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Door_House_Outside_Open" ID="{0FD3B6B1-6EFD-4D0A-924C-744267459D42}" ShortID="181761547">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>4</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Door_House_Outside_Open-01_TS" ID="{3E92C2ED-D8B4-45FA-B12B-FCCA64D31131}" ShortID="114231436">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Open-01_TS" ID="{736FE568-3B1B-4997-988A-9E23AA2B9772}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Open\PROP_Door_House_Outside_Open-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="404719519"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Open-01_TS" ID="{736FE568-3B1B-4997-988A-9E23AA2B9772}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Outside_Open-02_TS" ID="{F8F9AEE9-86F5-462C-968C-CCD1124526B2}" ShortID="357256138">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Open-02_TS" ID="{ABF7A283-84C3-4394-9AB4-0736BA57ED8F}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Open\PROP_Door_House_Outside_Open-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="415473060"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Open-02_TS" ID="{ABF7A283-84C3-4394-9AB4-0736BA57ED8F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Door_House_Outside_Open-03_TS" ID="{9A7DAC5D-1D43-49B0-A5D6-C233E4FE62C0}" ShortID="122712122">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Door_House_Outside_Open-03_TS" ID="{A9F77382-AE76-4C74-8E09-105913BCCD1A}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_House_Outside_Open\PROP_Door_House_Outside_Open-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="61310738"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Door_House_Outside_Open-03_TS" ID="{A9F77382-AE76-4C74-8E09-105913BCCD1A}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Smartphone_Click" ID="{C7BE4369-CA1E-4C51-BC0D-3CB8B639B6F5}" ShortID="486714793">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Smartphone_Click-01_TS" ID="{43CAA1B7-1B20-4530-B65F-5D7A5EC4FDE8}" ShortID="106502350">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Click-01_TS" ID="{EEDF2722-45ED-4E20-9815-D69D3E24BC0B}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Click\PROP_Smartphone_Click-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="938844291"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Click-01_TS" ID="{EEDF2722-45ED-4E20-9815-D69D3E24BC0B}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_Click-02_TS" ID="{5CC4DC0C-D854-4EEC-8A5B-88F14BF81C34}" ShortID="352182063">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Click-02_TS" ID="{44ED58CF-5AF1-45E2-B500-DE4195AB408E}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Click\PROP_Smartphone_Click-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="102658884"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Click-02_TS" ID="{44ED58CF-5AF1-45E2-B500-DE4195AB408E}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_Click-03_TS" ID="{ABC45E96-ACE4-43F0-A16F-F3E1E78D1026}" ShortID="525844197">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Click-03_TS" ID="{8411CADF-4553-4071-897C-A06ACF55D7DC}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Click\PROP_Smartphone_Click-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="640226488"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Click-03_TS" ID="{8411CADF-4553-4071-897C-A06ACF55D7DC}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_Click-04_TS" ID="{DEA524F9-B931-414B-9BD9-FD1C9D8AC32A}" ShortID="737735738">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Click-04_TS" ID="{41FF653E-7F52-4044-BFFB-27EAED8BB2B1}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Click\PROP_Smartphone_Click-04_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="483512497"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Click-04_TS" ID="{41FF653E-7F52-4044-BFFB-27EAED8BB2B1}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Smartphone_GetOut" ID="{EB1B1792-516C-47C8-9790-B976D0B0DF86}" ShortID="880346143">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Smartphone_GetOut-01_TS" ID="{2D0F3382-F17F-4C7F-9CAD-C08520601523}" ShortID="464935661">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_GetOut-01_TS" ID="{2AFB8224-AE3E-4888-B0D6-D24A3A79A927}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="888694663"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_GetOut-01_TS" ID="{2AFB8224-AE3E-4888-B0D6-D24A3A79A927}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_GetOut-02_TS" ID="{CB129DB4-5BD4-4E6C-9E61-F15D96F21C3F}" ShortID="544401757">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_GetOut-02_TS" ID="{05228E0D-4B69-406E-85A8-0CD9218FE60C}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="36562100"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_GetOut-02_TS" ID="{05228E0D-4B69-406E-85A8-0CD9218FE60C}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_GetOut-03_TS" ID="{63EEF911-B5D9-441A-B68B-C0E6C4E41A7A}" ShortID="501868024">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_GetOut-03_TS" ID="{B1C43272-7D1F-4C87-8F41-CA7CB9D76997}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="837748890"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_GetOut-03_TS" ID="{B1C43272-7D1F-4C87-8F41-CA7CB9D76997}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<RandomSequenceContainer Name="PROP_Smartphone_Putback" ID="{F2DD6CDA-E95D-4316-9816-07B157B6DA54}" ShortID="240873511">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="PROP_Smartphone_Putback-01_TS" ID="{6F53394C-CCED-470B-B14B-1CC69C4CC749}" ShortID="196493938">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Putback-01_TS" ID="{EEE8FBAF-4761-4686-BDBA-7AF4CC4B0E6F}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Putback\PROP_Smartphone_Putback-01_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="503337552"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Putback-01_TS" ID="{EEE8FBAF-4761-4686-BDBA-7AF4CC4B0E6F}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_Putback-02_TS" ID="{24D3BBAB-E0E8-4992-8CF7-B40AF008CC80}" ShortID="703056521">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Putback-02_TS" ID="{F5DB2B86-7361-43A6-A6A3-4F81EAB40050}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Putback\PROP_Smartphone_Putback-02_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="926741885"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Putback-02_TS" ID="{F5DB2B86-7361-43A6-A6A3-4F81EAB40050}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="PROP_Smartphone_Putback-03_TS" ID="{A7585821-3F0F-4AB1-9F43-4248B78D0438}" ShortID="983444049">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="PROP_Smartphone_Putback-03_TS" ID="{87EDD2AF-6573-4787-8EEB-574CE76E07DB}">
+											<Language>SFX</Language>
+											<AudioFile>PROP_Smartphone_Putback\PROP_Smartphone_Putback-03_TS.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="17809938"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="PROP_Smartphone_Putback-03_TS" ID="{87EDD2AF-6573-4787-8EEB-574CE76E07DB}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+						</RandomSequenceContainer>
+						<Sound Name="PROP_Door_Slam-01_TS" ID="{8D1563C6-2F4D-4222-852B-33BB8C27F4DD}" ShortID="202285198">
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROP_Door_Slam-01_TS" ID="{17D83719-8F1A-4A79-BC17-DE6D4589F3D8}">
+									<Language>SFX</Language>
+									<AudioFile>PROP_Door_Slam-01_TS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="72473378"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PROP_Door_Slam-01_TS" ID="{17D83719-8F1A-4A79-BC17-DE6D4589F3D8}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROP_Dough_React_Grow-01_TS" ID="{293CD770-58A6-47E0-A784-822F808E2BFF}" ShortID="867039781">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROP_Dough_React_Grow-01_TS" ID="{5282AA2C-333C-43C7-9680-1C8DEAAD126C}">
+									<Language>SFX</Language>
+									<AudioFile>PROP_Dough_React_Grow-01_TS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="558568173"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{7535D91C-14D8-4D5E-9E2D-C393AEF2883E}" ShortID="244874795">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Dough_Rise_n_Sink" ID="{EE1B24A1-1F63-448F-9701-76C456883E13}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{67FCF7B3-AE9A-4673-B41F-1D538F8818CF}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-953</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1143</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="PROP_Dough_React_Grow-01_TS" ID="{5282AA2C-333C-43C7-9680-1C8DEAAD126C}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROP_Dough_React_Shrink-01_TS" ID="{FD08E43C-C6D3-4788-8CC9-EF9C249B21A5}" ShortID="9752885">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROP_Dough_React_Shrink-01_TS" ID="{0405F263-7BBD-45DA-8310-766F2FC9A3A5}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="164.063"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.143783783783784"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.89405405405405"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PROP_Dough_React_Shrink-01_TS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="479635857"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<RTPC Name="" ID="{E3E155FA-0730-428D-BE63-2A8701353518}" ShortID="770793409">
+										<PropertyList>
+											<Property Name="PropertyName" Type="string" Value="Pitch"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="ControlInput">
+												<ObjectRef Name="Dough_Rise_n_Sink" ID="{EE1B24A1-1F63-448F-9701-76C456883E13}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+											</Reference>
+											<Reference Name="Curve">
+												<Custom>
+													<Curve Name="" ID="{FD576EC7-EB3C-4D39-9C29-B5AE9D88CBD1}">
+														<PropertyList>
+															<Property Name="Flags" Type="int32" Value="65537"/>
+														</PropertyList>
+														<PointList>
+															<Point>
+																<XPos>0</XPos>
+																<YPos>-1028</YPos>
+																<Flags>5</Flags>
+															</Point>
+															<Point>
+																<XPos>100</XPos>
+																<YPos>1066</YPos>
+																<Flags>37</Flags>
+															</Point>
+														</PointList>
+													</Curve>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</RTPC>
+								</ObjectList>
+							</ObjectLists>
+							<ActiveSourceList>
+								<ActiveSource Name="PROP_Dough_React_Shrink-01_TS" ID="{0405F263-7BBD-45DA-8310-766F2FC9A3A5}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+						<Sound Name="PROP_Dough_React_Steady-01_TS" ID="{E581C437-B98F-4017-910A-60DE435592BD}" ShortID="857119729">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>7</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="PROP_Dough_React_Steady-01_TS" ID="{72425678-11EB-4409-8964-53B50D4B162E}">
+									<PropertyList>
+										<Property Name="CrossfadeDuration" Type="Real64" Value="145.833"/>
+										<Property Name="LoopBegin" Type="Real64" Value="0.151351351351351"/>
+										<Property Name="LoopEnd" Type="Real64" Value="6.90918918918919"/>
+										<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+									</PropertyList>
+									<Language>SFX</Language>
+									<AudioFile>PROP_Dough_React_Steady-01_TS.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1016399115"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ActiveSourceList>
+								<ActiveSource Name="PROP_Dough_React_Steady-01_TS" ID="{72425678-11EB-4409-8964-53B50D4B162E}" Platform="Linked"/>
+							</ActiveSourceList>
+						</Sound>
+					</ChildrenList>
+				</PropertyContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

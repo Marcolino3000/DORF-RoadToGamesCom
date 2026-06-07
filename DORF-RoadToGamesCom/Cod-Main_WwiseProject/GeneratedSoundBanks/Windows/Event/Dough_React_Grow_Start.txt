@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1205543049	Dough_React_Grow_Start			\Default Work Unit\Props\Dough\Dough_React_Grow_Start	
+
+Game Parameter	ID	Name			Wwise Object Path	Notes
+	1166628669	Dough_Rise_n_Sink			\Default Work Unit\PROPS\Dough_Rise_n_Sink	
+
