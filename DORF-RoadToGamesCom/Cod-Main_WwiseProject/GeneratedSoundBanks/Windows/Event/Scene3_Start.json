@@ -1,0 +1,33 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "1559837319",
+    "Type": "Event",
+    "GUID": "{B9D63BF1-9006-44D3-8EAC-7C38C0D66E41}",
+    "Language": "SFX",
+    "Hash": "{C31D58EA-C17F-69B3-1F23-8C33DE3A4C62}",
+    "ObjectPath": "Scene3_Start",
+    "ShortName": "Scene3_Start",
+    "Path": "Event/Scene3_Start.bnk",
+    "Events": [
+     {
+      "Id": "1559837319",
+      "Name": "Scene3_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\Scene3_Start",
+      "GUID": "{B9D63BF1-9006-44D3-8EAC-7C38C0D66E41}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{F24FDBBF-7FAA-E288-8139-5322AB126DC8}"
+ }
+}

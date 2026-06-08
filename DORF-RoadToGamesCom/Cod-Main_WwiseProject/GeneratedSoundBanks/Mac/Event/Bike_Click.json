@@ -1,0 +1,84 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2930347891",
+    "Type": "Event",
+    "GUID": "{7DA9D715-ACF8-4486-A05A-D3EE95E5E03D}",
+    "Language": "SFX",
+    "Hash": "{544FA966-2F4E-1DCD-FB0D-89F0FEDEB651}",
+    "ObjectPath": "Bike_Click",
+    "ShortName": "Bike_Click",
+    "Path": "Event/Bike_Click.bnk",
+    "Media": [
+     {
+      "Id": "417471246",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-01_TS.wav",
+      "Path": "Media/417471246.wem",
+      "CachePath": "30/{303A6CF9-1F44-B3AD-6D6C-3DEE7673942C}.wem"
+     },
+     {
+      "Id": "428562537",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-04_TS.wav",
+      "Path": "Media/428562537.wem",
+      "CachePath": "62/{62A10832-AA3A-97C1-1CEC-94BD97470097}.wem"
+     },
+     {
+      "Id": "563776362",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-02_TS.wav",
+      "Path": "Media/563776362.wem",
+      "CachePath": "21/{216CBF34-7FEF-7EB0-C300-18CB7C84BE74}.wem"
+     },
+     {
+      "Id": "910407773",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-03_TS.wav",
+      "Path": "Media/910407773.wem",
+      "CachePath": "3E/{3E44E9F4-D2FD-F6F1-F2F7-0C149DB43429}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2930347891",
+      "Name": "Bike_Click",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Bike_Click",
+      "GUID": "{7DA9D715-ACF8-4486-A05A-D3EE95E5E03D}",
+      "DurationType": "OneShot",
+      "DurationMin": "1",
+      "DurationMax": "1",
+      "MediaRefs": [
+       {
+        "Id": "417471246"
+       },
+       {
+        "Id": "428562537"
+       },
+       {
+        "Id": "563776362"
+       },
+       {
+        "Id": "910407773"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{07614694-F727-72E7-3E42-3436FBF9B4F0}"
+ }
+}

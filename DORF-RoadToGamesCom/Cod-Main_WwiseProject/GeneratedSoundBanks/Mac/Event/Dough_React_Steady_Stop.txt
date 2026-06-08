@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	2558363198	Dough_React_Steady_Stop			\Default Work Unit\Props\Dough\Dough_React_Steady_Stop	
+

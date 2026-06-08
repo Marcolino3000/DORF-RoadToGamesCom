@@ -1,0 +1,72 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2909751214",
+    "Type": "Event",
+    "GUID": "{4E85AFD3-82EB-48E1-97CD-FD61A6D254A2}",
+    "Language": "SFX",
+    "Hash": "{49260E97-9286-2820-5981-E400E7715B67}",
+    "ObjectPath": "Door_House_Inside_Open",
+    "ShortName": "Door_House_Inside_Open",
+    "Path": "Event/Door_House_Inside_Open.bnk",
+    "Media": [
+     {
+      "Id": "533745290",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-01_TS.wav",
+      "Path": "Media/533745290.wem",
+      "CachePath": "4C/{4C3A768E-D40C-B4B9-C6BF-736C76DBBCF0}.wem"
+     },
+     {
+      "Id": "869974642",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-03_TS.wav",
+      "Path": "Media/869974642.wem",
+      "CachePath": "8E/{8E47068B-61AB-210D-974F-0D8AD5BDFFDA}.wem"
+     },
+     {
+      "Id": "882469003",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-02_TS.wav",
+      "Path": "Media/882469003.wem",
+      "CachePath": "E3/{E3F70A7F-9733-8E0E-D1AF-B040DFF1F49F}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2909751214",
+      "Name": "Door_House_Inside_Open",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Door_House_Inside_Open",
+      "GUID": "{4E85AFD3-82EB-48E1-97CD-FD61A6D254A2}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.5",
+      "DurationMax": "0.5901667",
+      "MediaRefs": [
+       {
+        "Id": "533745290"
+       },
+       {
+        "Id": "869974642"
+       },
+       {
+        "Id": "882469003"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{5F405001-AF6C-9F26-9BB3-148090557E5F}"
+ }
+}

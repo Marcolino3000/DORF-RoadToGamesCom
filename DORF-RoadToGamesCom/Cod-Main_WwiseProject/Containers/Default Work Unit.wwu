@@ -1,0 +1,796 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}" SchemaVersion="133">
+	<Containers>
+		<WorkUnit Name="Default Work Unit" ID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}" PersistMode="Standalone">
+			<ChildrenList>
+				<MusicSegment Name="251004_CoD_MX_03" ID="{71DD8481-6A53-49F6-998D-94FD0771E49F}" ShortID="609553975">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="58626.3541666667"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="251004_CoD_MX_03" ID="{808D727E-B8C9-4380-9CAD-A29193F45E7B}" ShortID="265182324">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{7B7871A2-C929-416B-9D02-3455A793EDC6}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="251004_CoD_MX_03" ID="{03547A3A-7D8E-4523-AA01-77867F22BD2B}">
+									<Language>SFX</Language>
+									<AudioFile>Music\251004_CoD_MX_03.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="1028417904"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<MusicTrackSequence Name="" ID="{B77F1149-68AF-4B4A-905E-E59462E1138A}">
+										<ObjectLists>
+											<ObjectList Name="Clips">
+												<MusicClip Name="251004_CoD_MX_03" ID="{02CCDC6C-C7B5-4F66-B811-3659DC2A0F46}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="58626.3541666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="251004_CoD_MX_03" ID="{03547A3A-7D8E-4523-AA01-77867F22BD2B}"/>
+												</MusicClip>
+											</ObjectList>
+										</ObjectLists>
+									</MusicTrackSequence>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{BDE2D884-06A8-4272-8A92-EBAB1CEE5852}"/>
+							<MusicCue Name="Exit Cue" ID="{68807E99-FEDE-486C-B8E2-812BA792896D}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="58626.3541666667"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="251004_CoD_MX_04" ID="{E7A9A72E-03FA-4613-B67D-7AEAEF846863}" ShortID="779735588">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="157142.875"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="251004_CoD_MX_04" ID="{5C37B0B8-DB6B-4163-A968-23FED429039A}" ShortID="449515266">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{4061B50B-F895-4879-9F42-3FB6FD561E45}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="251004_CoD_MX_04" ID="{A15EF256-8CD6-4267-81F8-786A5798DB46}">
+									<Language>SFX</Language>
+									<AudioFile>Music\251004_CoD_MX_04.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="625317492"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<MusicTrackSequence Name="" ID="{A1DC4E4E-A115-4635-BDC3-30D513DA15F7}">
+										<ObjectLists>
+											<ObjectList Name="Clips">
+												<MusicClip Name="251004_CoD_MX_04" ID="{E2D326D4-2086-4373-ABD0-B550ED48880E}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="157142.875"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="251004_CoD_MX_04" ID="{A15EF256-8CD6-4267-81F8-786A5798DB46}"/>
+												</MusicClip>
+											</ObjectList>
+										</ObjectLists>
+									</MusicTrackSequence>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{D5BA2A5C-DE04-4B1D-9BAA-8703D9CB97EA}"/>
+							<MusicCue Name="Exit Cue" ID="{DC9F9D81-6391-456E-8649-56EBBAA28044}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="157142.875"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="251004_CoD_MX_05" ID="{79D65E6F-B6E3-4FF9-92D1-A82834F1E662}" ShortID="707605530">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="59230.7916666667"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="251004_CoD_MX_05" ID="{256C5C1E-7F27-48A5-AFF4-E2CB91432681}" ShortID="282689000">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{3335E621-1C88-4587-8896-580C4A654A84}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="251004_CoD_MX_05" ID="{836A492E-ED33-45D6-B397-A1F0AC26CC21}">
+									<Language>SFX</Language>
+									<AudioFile>Music\251004_CoD_MX_05.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="572010594"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<MusicTrackSequence Name="" ID="{6A70C983-8CD8-4241-A4B5-4422C8D9309A}">
+										<ObjectLists>
+											<ObjectList Name="Clips">
+												<MusicClip Name="251004_CoD_MX_05" ID="{16944A6C-7985-415E-B058-29FA4F91E900}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="59230.7916666667"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="251004_CoD_MX_05" ID="{836A492E-ED33-45D6-B397-A1F0AC26CC21}"/>
+												</MusicClip>
+											</ObjectList>
+										</ObjectLists>
+									</MusicTrackSequence>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{1050899F-1F04-493F-8846-328A2E1614DC}"/>
+							<MusicCue Name="Exit Cue" ID="{3DF7187C-F439-436A-AA69-EEA1CEC42283}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="59230.7916666667"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="251003_CoD_MX_01" ID="{FABC1485-BB00-4C2E-BBA2-DBAFFE441681}" ShortID="798649280">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="94377.9583333333"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="251003_CoD_MX_01" ID="{BAAB9774-7E3C-4309-AE70-7724BFEF5B57}" ShortID="80180887">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{3DDE8CE7-7721-4BF0-A9F1-1F1C4B68EE59}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="251003_CoD_MX_01" ID="{1712C7EE-DAC6-4F52-9013-FE4C7715126D}">
+									<Language>SFX</Language>
+									<AudioFile>Music\251003_CoD_MX_01.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="153572010"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<MusicTrackSequence Name="" ID="{ECABCBB1-9D20-40EB-A549-357688021DDB}">
+										<ObjectLists>
+											<ObjectList Name="Clips">
+												<MusicClip Name="251003_CoD_MX_01" ID="{9EC66D7D-386D-44AF-BCC1-E09F30BBCC00}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="94377.9583333333"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="251003_CoD_MX_01" ID="{1712C7EE-DAC6-4F52-9013-FE4C7715126D}"/>
+												</MusicClip>
+											</ObjectList>
+										</ObjectLists>
+									</MusicTrackSequence>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{EBEE34AB-0FA4-4AAA-8F06-34D92E3955E9}"/>
+							<MusicCue Name="Exit Cue" ID="{42864BF7-101F-4B54-A661-CC9D4FA5EBFD}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="94377.9583333333"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicSegment Name="251003_CoD_MX_02" ID="{B07C901A-3E36-40CD-A3A2-DBD7E32A6148}" ShortID="890138210">
+					<PropertyList>
+						<Property Name="EndPosition" Type="Real64" Value="71379.3125"/>
+						<Property Name="Inclusion" Type="bool">
+							<ValueList>
+								<Value>False</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicTrack Name="251003_CoD_MX_02" ID="{4A786DD6-DAB9-4CEB-9179-8023B9419557}" ShortID="914681253">
+							<ReferenceList>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="TransitionRoot">
+									<Custom>
+										<MusicTransition Name="Root" ID="{52FA7337-7EEC-4358-BD94-350767FEA030}">
+											<PropertyList>
+												<Property Name="IsFolder" Type="bool" Value="True"/>
+											</PropertyList>
+											<TransitionInfo/>
+										</MusicTransition>
+									</Custom>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<AudioFileSource Name="251003_CoD_MX_02" ID="{E8053912-3AB2-4FBB-ACFE-C4B8D94ADC65}">
+									<Language>SFX</Language>
+									<AudioFile>Music\251003_CoD_MX_02.wav</AudioFile>
+									<MediaIDList>
+										<MediaID ID="315071643"/>
+									</MediaIDList>
+								</AudioFileSource>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Sequences">
+									<MusicTrackSequence Name="" ID="{CE390DA5-9362-4094-A5ED-2AD2D29FAFC1}">
+										<ObjectLists>
+											<ObjectList Name="Clips">
+												<MusicClip Name="251003_CoD_MX_02" ID="{53E5ED2F-762A-4F1F-8D34-3EA4E5D97A71}">
+													<PropertyList>
+														<Property Name="EndTrimOffset" Type="Real64" Value="71379.3125"/>
+														<Property Name="FadeInMode" Type="int16" Value="0"/>
+														<Property Name="FadeOutMode" Type="int16" Value="0"/>
+													</PropertyList>
+													<AudioSourceRef Name="251003_CoD_MX_02" ID="{E8053912-3AB2-4FBB-ACFE-C4B8D94ADC65}"/>
+												</MusicClip>
+											</ObjectList>
+										</ObjectLists>
+									</MusicTrackSequence>
+								</ObjectList>
+							</ObjectLists>
+						</MusicTrack>
+					</ChildrenList>
+					<ObjectLists>
+						<ObjectList Name="Cues">
+							<MusicCue Name="Entry Cue" ID="{BF8B5D8C-A5C8-4220-BCA5-7FD859558559}"/>
+							<MusicCue Name="Exit Cue" ID="{F7DA22E5-952F-49FF-AD6A-DBDBD0B19C17}">
+								<PropertyList>
+									<Property Name="CueType" Type="int16" Value="1"/>
+									<Property Name="TimeMs" Type="Real64" Value="71379.3125"/>
+								</PropertyList>
+							</MusicCue>
+						</ObjectList>
+					</ObjectLists>
+				</MusicSegment>
+				<MusicPlaylistContainer Name="Schlager" ID="{5AEFFB16-71D0-4438-9DCC-ABC5789685DD}" ShortID="789213375">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{64DCDECB-C744-42CE-9A3F-5C316C00918D}" ShortID="860540075">
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{3C878BF2-C1D8-4898-ACB9-82A89DA72387}" ShortID="758737024">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="260111_CoD_Schlager V01" ID="{9D6471F5-C9A0-4D7B-B941-6F0D7A1CB867}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{E3E7C74A-45F8-4D82-8A42-72A35CBD7279}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{487433F3-F312-4DF7-AD68-C61A529FBA07}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="260111_CoD_Schlager V01" ID="{9D6471F5-C9A0-4D7B-B941-6F0D7A1CB867}" ShortID="217420535">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="65777.7916666667"/>
+								<Property Name="Tempo" Type="Real64" Value="135"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="260111_CoD_Schlager V01" ID="{2AF6DA86-37DF-4654-8FCF-FD9692942D4B}" ShortID="141367689">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{2EEB273A-2152-4DA2-A669-311A35A12472}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="260111_CoD_Schlager V01" ID="{3B2E89C0-D640-4005-9BA2-01307CB4371B}">
+											<Language>SFX</Language>
+											<AudioFile>Music\260111_CoD_Schlager V01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="445229569"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<MusicTrackSequence Name="" ID="{5BE12F38-B75B-4577-9579-0385445CA192}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="260111_CoD_Schlager V01" ID="{7B8D1D3B-A91C-4D46-A550-E14BD6C484D5}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="65777.7916666667"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutMode" Type="int16" Value="0"/>
+															</PropertyList>
+															<AudioSourceRef Name="260111_CoD_Schlager V01" ID="{3B2E89C0-D640-4005-9BA2-01307CB4371B}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<MusicCue Name="Entry Cue" ID="{16CD324F-86B3-46F5-9B68-7393FC80A282}"/>
+									<MusicCue Name="Exit Cue" ID="{74AE39F3-70CA-4930-AD0E-A57EB032367A}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="56888.8888888889"/>
+										</PropertyList>
+									</MusicCue>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
+				<MusicPlaylistContainer Name="Scene2" ID="{050D3736-0615-4CCA-B1DD-10625137C0A2}" ShortID="171394693">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Music" ID="{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+						</Reference>
+						<Reference Name="PlaylistRoot">
+							<Custom>
+								<MusicPlaylistItem Name="" ID="{F806A1A1-1463-4E82-B319-F68434904A53}" ShortID="1058610804">
+									<PropertyList>
+										<Property Name="LoopCount" Type="int16" Value="0"/>
+										<Property Name="PlayMode" Type="int16" Value="2"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicPlaylistItem Name="" ID="{D0FB1F01-91FC-4EB5-BF8C-E2DE173E1B34}" ShortID="41256233">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="260110_CoD_Szene 02A_cut01" ID="{248F62BE-EF0A-4FE4-AB3C-77262670DA76}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{97BB45FF-FFBA-49B5-8654-60E493DF178F}" ShortID="660716079">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="260110_CoD_Szene 02B_cut01" ID="{151B15A8-FA60-40CE-8854-6256EE5B13ED}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+										<MusicPlaylistItem Name="" ID="{74A70507-83BB-442D-A0AB-CA1C057D0A62}" ShortID="466247879">
+											<PropertyList>
+												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Segment">
+													<ObjectRef Name="260118_CoD_Szene 02C_cut01" ID="{79D3F39F-3283-46A1-A1D7-5A043A523167}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+												</Reference>
+											</ReferenceList>
+										</MusicPlaylistItem>
+									</ChildrenList>
+								</MusicPlaylistItem>
+							</Custom>
+						</Reference>
+						<Reference Name="TransitionRoot">
+							<Custom>
+								<MusicTransition Name="Root" ID="{93567133-3162-4CD8-A978-77FA963CF1EC}">
+									<PropertyList>
+										<Property Name="IsFolder" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<MusicTransition Name="Transition" ID="{8A6848A6-44D6-45EE-B51A-CB2B3D66AECB}">
+											<TransitionInfo/>
+										</MusicTransition>
+									</ChildrenList>
+									<TransitionInfo/>
+								</MusicTransition>
+							</Custom>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<MusicSegment Name="260110_CoD_Szene 02A_cut01" ID="{248F62BE-EF0A-4FE4-AB3C-77262670DA76}" ShortID="965544655">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="275213.256382085"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="260110_CoD_Szene 02A_cut01" ID="{3B50A1C1-7F72-4DB3-90F5-9DAE17DF32BE}" ShortID="371916198">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{A94CF93A-6E21-4661-A0EC-59CB3700FD32}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="260110_CoD_Szene 02A_cut01" ID="{7C384C14-9C66-44C6-B343-9D85B33BA33D}">
+											<Language>SFX</Language>
+											<AudioFile>Music\260110_CoD_Szene 02A_cut01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="185022841"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<MusicTrackSequence Name="" ID="{69093AC2-284B-484A-A9E2-8BC6DB3E328E}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="260110_CoD_Szene 02A_cut01" ID="{E04DB561-1D4D-4769-9667-75DB17D3FB06}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="242000.020833333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="11866.9256288492"/>
+															</PropertyList>
+															<AudioSourceRef Name="260110_CoD_Szene 02A_cut01" ID="{7C384C14-9C66-44C6-B343-9D85B33BA33D}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<MusicCue Name="Entry Cue" ID="{D3C51BA3-BE6B-4EEB-9F51-AE4DC13836E8}">
+										<PropertyList>
+											<Property Name="TimeMs" Type="Real64" Value="2000"/>
+										</PropertyList>
+									</MusicCue>
+									<MusicCue Name="Exit Cue" ID="{D867534C-5614-4C50-8CE6-6F4C62A8998D}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="242000"/>
+										</PropertyList>
+									</MusicCue>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="260110_CoD_Szene 02B_cut01" ID="{151B15A8-FA60-40CE-8854-6256EE5B13ED}" ShortID="541408668">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="131538.458333333"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="156"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="260110_CoD_Szene 02B_cut01" ID="{3DD8349A-9A12-4A47-B03C-1526CD7401E9}" ShortID="303497640">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{C5886952-51DC-49B3-8A2F-D19B43C99155}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="260110_CoD_Szene 02B_cut01" ID="{2EAB0B7B-E433-4A17-84D7-7EBBC8E0FA32}">
+											<Language>SFX</Language>
+											<AudioFile>Music\260110_CoD_Szene 02B_cut01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="392156279"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<MusicTrackSequence Name="" ID="{2376DC91-9FA4-4747-9CD4-F8FE95BBF324}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="260110_CoD_Szene 02B_cut01" ID="{74560E1F-BC02-443F-B4CB-CD187440A535}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="131538.458333333"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="3436.10399626258"/>
+															</PropertyList>
+															<AudioSourceRef Name="260110_CoD_Szene 02B_cut01" ID="{2EAB0B7B-E433-4A17-84D7-7EBBC8E0FA32}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<MusicCue Name="Entry Cue" ID="{1255D48F-AC6D-4B03-9874-1CCF61EF26A5}">
+										<PropertyList>
+											<Property Name="TimeMs" Type="Real64" Value="6153.84615384615"/>
+										</PropertyList>
+									</MusicCue>
+									<MusicCue Name="Exit Cue" ID="{7436B06C-FB81-4378-8DF6-139E4B5AAF00}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="126153.846153846"/>
+										</PropertyList>
+									</MusicCue>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+						<MusicSegment Name="260118_CoD_Szene 02C_cut01" ID="{79D3F39F-3283-46A1-A1D7-5A043A523167}" ShortID="807068980">
+							<PropertyList>
+								<Property Name="EndPosition" Type="Real64" Value="141538.471153846"/>
+								<Property Name="OverrideClockSettings" Type="bool" Value="True"/>
+								<Property Name="Tempo" Type="Real64" Value="156"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<MusicTrack Name="260118_CoD_Szene 02C_cut01" ID="{AAE7F20A-CEDF-48E4-B07A-85FD364C69B5}" ShortID="865987276">
+									<ReferenceList>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+										<Reference Name="TransitionRoot">
+											<Custom>
+												<MusicTransition Name="Root" ID="{A529E5B1-3B07-4933-8AA5-A176C151F77A}">
+													<PropertyList>
+														<Property Name="IsFolder" Type="bool" Value="True"/>
+													</PropertyList>
+													<TransitionInfo/>
+												</MusicTransition>
+											</Custom>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="260118_CoD_Szene 02C_cut01" ID="{373E5522-C1CB-40B3-A1AA-B860F29FFF74}">
+											<Language>SFX</Language>
+											<AudioFile>Music\260118_CoD_Szene 02C_cut01.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="417646144"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Sequences">
+											<MusicTrackSequence Name="" ID="{1BF5B573-642B-43E0-A1C4-849243C30692}">
+												<ObjectLists>
+													<ObjectList Name="Clips">
+														<MusicClip Name="260118_CoD_Szene 02C_cut01" ID="{BADAC17C-D339-43CE-A48C-CCE8BA43FB89}">
+															<PropertyList>
+																<Property Name="EndTrimOffset" Type="Real64" Value="135384.625"/>
+																<Property Name="FadeInMode" Type="int16" Value="0"/>
+																<Property Name="FadeOutDuration" Type="Real64" Value="2602.67458322115"/>
+															</PropertyList>
+															<AudioSourceRef Name="260118_CoD_Szene 02C_cut01" ID="{373E5522-C1CB-40B3-A1AA-B860F29FFF74}"/>
+														</MusicClip>
+													</ObjectList>
+												</ObjectLists>
+											</MusicTrackSequence>
+										</ObjectList>
+									</ObjectLists>
+								</MusicTrack>
+							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="Cues">
+									<MusicCue Name="Entry Cue" ID="{4DA07E17-E59A-4D82-96D5-80C56058986E}">
+										<PropertyList>
+											<Property Name="TimeMs" Type="Real64" Value="6153.84615384615"/>
+										</PropertyList>
+									</MusicCue>
+									<MusicCue Name="Exit Cue" ID="{9820D8D8-B521-4398-BE0F-1B3B2F9BD99E}">
+										<PropertyList>
+											<Property Name="CueType" Type="int16" Value="1"/>
+											<Property Name="TimeMs" Type="Real64" Value="129230.769230769"/>
+										</PropertyList>
+									</MusicCue>
+								</ObjectList>
+							</ObjectLists>
+						</MusicSegment>
+					</ChildrenList>
+				</MusicPlaylistContainer>
+			</ChildrenList>
+		</WorkUnit>
+	</Containers>
+</WwiseDocument>

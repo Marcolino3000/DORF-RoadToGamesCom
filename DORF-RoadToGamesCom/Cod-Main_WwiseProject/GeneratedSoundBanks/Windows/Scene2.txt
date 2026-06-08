@@ -1,0 +1,9 @@
+Event	ID	Name			Wwise Object Path	Notes
+	281579790	MUS_Scene2_Stop			\Default Work Unit\MUS_Scene2_Stop	
+	2007948846	MUS_Scene2_Start			\Default Work Unit\MUS_Scene2_Start	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	185022841	260110_CoD_Szene 02A_cut01	.cache\81\{81B59B2B-20B9-0C7A-9B4D-0D0DB653F801}.wem		\Containers\Default Work Unit\Scene2\260110_CoD_Szene 02A_cut01\260110_CoD_Szene 02A_cut01		46464100
+	392156279	260110_CoD_Szene 02B_cut01	.cache\11\{11DB505A-740E-CB53-B0AD-33C172CB34EE}.wem		\Containers\Default Work Unit\Scene2\260110_CoD_Szene 02B_cut01\260110_CoD_Szene 02B_cut01		25255480
+	417646144	260118_CoD_Szene 02C_cut01	.cache\94\{94FBE51B-5CCE-F5AF-4008-1F6FC0F92D77}.wem		\Containers\Default Work Unit\Scene2\260118_CoD_Szene 02C_cut01\260118_CoD_Szene 02C_cut01		25993944
+

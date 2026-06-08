@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" SchemaVersion="133">
+	<Events>
+		<WorkUnit Name="Default Work Unit" ID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" PersistMode="Standalone">
+			<ChildrenList>
+				<Event Name="MUS_Scene2_Start" ID="{A964252D-C827-4884-A10D-FEFE4E525345}">
+					<ChildrenList>
+						<Action Name="" ID="{9C87C7DB-3070-4AA6-AFAF-8C27FEE91F4C}" ShortID="145103231">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scene2" ID="{050D3736-0615-4CCA-B1DD-10625137C0A2}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Scene3_Start" ID="{B9D63BF1-9006-44D3-8EAC-7C38C0D66E41}"/>
+				<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
+					<ChildrenList>
+						<Action Name="" ID="{2462F1D7-9C55-4A4D-93EC-E6D03E5E4D0C}" ShortID="761316141">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Schlager" ID="{5AEFFB16-71D0-4438-9DCC-ABC5789685DD}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}">
+					<ChildrenList>
+						<Action Name="" ID="{14BE6678-6A28-49F7-8F7F-4C9D1ACE1A9D}" ShortID="107401847">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Schlager" ID="{5AEFFB16-71D0-4438-9DCC-ABC5789685DD}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="MUS_Scene2_Stop" ID="{E23DC368-D35A-44E4-8A82-E19FFFB57A01}">
+					<ChildrenList>
+						<Action Name="" ID="{A5435EE9-F701-4962-978F-CEA0331F78F7}" ShortID="597970933">
+							<PropertyList>
+								<Property Name="FadeTime" Type="Real64" Value="3"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Scene2" ID="{050D3736-0615-4CCA-B1DD-10625137C0A2}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Folder Name="Props" ID="{36CA404B-A737-4A1F-804D-E76D679A60F6}" ShortID="611142267">
+					<ChildrenList>
+						<Event Name="Smarthphone_GetOut" ID="{25AD7D59-7E46-4E01-A7EA-8B2EA9312D7E}">
+							<ChildrenList>
+								<Action Name="" ID="{D31E3439-5E95-493C-A9C0-F6CB5C46B7A5}" ShortID="1005392823">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Smartphone_GetOut" ID="{EB1B1792-516C-47C8-9790-B976D0B0DF86}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Smartphone_PutBack" ID="{CEAD1687-5D3A-4CFE-8DB0-0901FF4EAD47}">
+							<ChildrenList>
+								<Action Name="" ID="{D7FAAC39-5F93-425A-B777-17E307C76971}" ShortID="326860166">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Smartphone_Putback" ID="{F2DD6CDA-E95D-4316-9816-07B157B6DA54}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Bike_Click" ID="{7DA9D715-ACF8-4486-A05A-D3EE95E5E03D}">
+							<ChildrenList>
+								<Action Name="" ID="{00F08162-B27C-43EC-BE24-E9026C189332}" ShortID="409067134">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Bike_Click" ID="{D8B44428-E9BD-4A4F-AB37-89B390B47B73}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_House_Inside_Open" ID="{4E85AFD3-82EB-48E1-97CD-FD61A6D254A2}">
+							<ChildrenList>
+								<Action Name="" ID="{E72DD636-C498-4E68-B8BD-9E61A04883A9}" ShortID="384601892">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Door_House_Inside_Open" ID="{3CA53669-0B03-4681-AFC5-DA3FE4D10C91}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_House_Inside_Close" ID="{2CE00665-F076-4B71-9981-FA468FA118FF}">
+							<ChildrenList>
+								<Action Name="" ID="{E4E4EA19-8672-468C-B055-99CC5DED7BCC}" ShortID="277167464">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Door_House_Inside_Close" ID="{C42F2BA0-6D27-4850-8442-1A69B5BE1C90}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_House_Outside_Open" ID="{F3DB310D-1110-41E7-84F7-CD727088E2CD}">
+							<ChildrenList>
+								<Action Name="" ID="{B2EE9CE0-376B-4D66-8D6F-B55F8787B943}" ShortID="515805388">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Door_House_Outside_Open" ID="{0FD3B6B1-6EFD-4D0A-924C-744267459D42}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_House_Outside_Close" ID="{79C2E9B9-DF4B-461B-80A6-9D7AC93A76F6}">
+							<ChildrenList>
+								<Action Name="" ID="{5092CE92-431D-47A3-A27D-69EA98EBC656}" ShortID="642239576">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Door_House_Outside_Close" ID="{E2AB1EAC-6DA6-429E-818C-76549CE2DE80}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Smartphone_Click" ID="{B1B4FE68-0A95-4386-9EDE-A5578B0BC3D8}">
+							<ChildrenList>
+								<Action Name="" ID="{2F0A43E1-9131-42CC-9D7F-947287520B84}" ShortID="501230114">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Smartphone_Click" ID="{C7BE4369-CA1E-4C51-BC0D-3CB8B639B6F5}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="Door_Slam" ID="{E3E13360-7549-49F4-8F1C-0EBA3EE2AD3D}">
+							<ChildrenList>
+								<Action Name="" ID="{584FA66C-7F8D-44C5-B1AC-DA0AAB6FD850}" ShortID="995986370">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="PROP_Door_Slam-01_TS" ID="{8D1563C6-2F4D-4222-852B-33BB8C27F4DD}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Folder Name="Dough" ID="{434E07E3-FC3E-4D2F-B8C3-A14320A7AC42}" ShortID="157044960">
+							<ChildrenList>
+								<Event Name="Dough_React_Grow_Start" ID="{FEAE63F9-0198-4DA8-805B-DE3BEFF47925}">
+									<ChildrenList>
+										<Action Name="" ID="{C15574BD-0B4E-477E-B7EE-12A5ED50C7A9}" ShortID="276267395">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Grow-01_TS" ID="{293CD770-58A6-47E0-A784-822F808E2BFF}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dough_React_Shrink_Start" ID="{B4A879D7-A21E-46A6-A118-3714EB3BCE4F}">
+									<ChildrenList>
+										<Action Name="" ID="{7EC46A74-2026-426F-BAA4-E726692E6FB4}" ShortID="643447280">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Shrink-01_TS" ID="{FD08E43C-C6D3-4788-8CC9-EF9C249B21A5}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dough_React_Steady_Start" ID="{7B4725E3-1122-4B06-AF99-AFA34382A99E}">
+									<ChildrenList>
+										<Action Name="" ID="{69D5E07A-3011-4BC0-9008-B0E1D23E78D2}" ShortID="55484717">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Steady-01_TS" ID="{E581C437-B98F-4017-910A-60DE435592BD}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dough_React_Grow_Stop" ID="{34C2903E-B224-4CD2-833E-272E1ADBEB75}">
+									<ChildrenList>
+										<Action Name="" ID="{A780AE55-DEED-4DD3-BC27-DAAF6A955E0A}" ShortID="139184487">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Grow-01_TS" ID="{293CD770-58A6-47E0-A784-822F808E2BFF}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dough_React_Shrink_Stop" ID="{BB359EC5-B2C0-4430-843F-66A3F72E08C5}">
+									<ChildrenList>
+										<Action Name="" ID="{869EA109-00CD-4483-95A5-113ACDBD4C5C}" ShortID="983097514">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Shrink-01_TS" ID="{FD08E43C-C6D3-4788-8CC9-EF9C249B21A5}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="Dough_React_Steady_Stop" ID="{43AC6BE3-6FA8-480A-A42E-0475FF2942D8}">
+									<ChildrenList>
+										<Action Name="" ID="{F2ADA027-529F-42AA-AB38-FA0981619057}" ShortID="19997885">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="PROP_Dough_React_Steady-01_TS" ID="{E581C437-B98F-4017-910A-60DE435592BD}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+							</ChildrenList>
+						</Folder>
+					</ChildrenList>
+				</Folder>
+			</ChildrenList>
+		</WorkUnit>
+	</Events>
+</WwiseDocument>

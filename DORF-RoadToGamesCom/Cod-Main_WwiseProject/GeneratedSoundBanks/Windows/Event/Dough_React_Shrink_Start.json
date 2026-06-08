@@ -1,0 +1,54 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Windows",
+  "BasePlatform": "Windows",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "2755388175",
+    "Type": "Event",
+    "GUID": "{B4A879D7-A21E-46A6-A118-3714EB3BCE4F}",
+    "Language": "SFX",
+    "Hash": "{2EBFE5A0-C1FF-7933-B94A-F55B700F28C7}",
+    "ObjectPath": "Dough_React_Shrink_Start",
+    "ShortName": "Dough_React_Shrink_Start",
+    "Path": "Event/Dough_React_Shrink_Start.bnk",
+    "Media": [
+     {
+      "Id": "479635857",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Dough_React_Shrink-01_TS.wav",
+      "Path": "Media/479635857.wem",
+      "CachePath": "C9/{C9C73E1E-DEE0-7094-6377-F28036E91E9D}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "2755388175",
+      "Name": "Dough_React_Shrink_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Dough\\Dough_React_Shrink_Start",
+      "GUID": "{B4A879D7-A21E-46A6-A118-3714EB3BCE4F}",
+      "DurationType": "Infinite",
+      "MediaRefs": [
+       {
+        "Id": "479635857"
+       }
+      ]
+     }
+    ],
+    "GameParameters": [
+     {
+      "Id": "1166628669",
+      "Name": "Dough_Rise_n_Sink",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\PROPS\\Dough_Rise_n_Sink",
+      "GUID": "{EE1B24A1-1F63-448F-9701-76C456883E13}"
+     }
+    ]
+   }
+  ],
+  "FileHash": "{133427DA-F470-58D6-1F17-87C5BC6E5E8F}"
+ }
+}

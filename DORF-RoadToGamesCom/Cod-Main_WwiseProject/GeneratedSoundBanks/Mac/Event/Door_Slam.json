@@ -1,0 +1,48 @@
+{
+ "SoundBanksInfo": {
+  "Platform": "Mac",
+  "BasePlatform": "Mac",
+  "SchemaVersion": "16",
+  "SoundBankVersion": "172",
+  "SoundBanks": [
+   {
+    "Id": "3678466239",
+    "Type": "Event",
+    "GUID": "{E3E13360-7549-49F4-8F1C-0EBA3EE2AD3D}",
+    "Language": "SFX",
+    "Hash": "{D06A2E9C-5F96-0F8C-B489-5FF2318A75B1}",
+    "ObjectPath": "Door_Slam",
+    "ShortName": "Door_Slam",
+    "Path": "Event/Door_Slam.bnk",
+    "Media": [
+     {
+      "Id": "72473378",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Loose",
+      "ShortName": "PROP_Door_Slam-01_TS.wav",
+      "Path": "Media/72473378.wem",
+      "CachePath": "81/{81726142-947C-6416-5382-AD98500A1B55}.wem"
+     }
+    ],
+    "Events": [
+     {
+      "Id": "3678466239",
+      "Name": "Door_Slam",
+      "ObjectPath": "\\Events\\Default Work Unit\\Props\\Door_Slam",
+      "GUID": "{E3E13360-7549-49F4-8F1C-0EBA3EE2AD3D}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.74929166",
+      "DurationMax": "0.74929166",
+      "MediaRefs": [
+       {
+        "Id": "72473378"
+       }
+      ]
+     }
+    ]
+   }
+  ],
+  "FileHash": "{05B3E918-4893-4628-EB08-7682BC5CD939}"
+ }
+}
