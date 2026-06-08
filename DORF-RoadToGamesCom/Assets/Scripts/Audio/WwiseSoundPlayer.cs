@@ -19,7 +19,7 @@ namespace Audio
 
         private void Setup()
         {
-            raycaster.OnClick += () => Play(clickEvent);
+            // raycaster.OnClick += () => Play(clickEvent);
         }
 
         private void Play(AK.Wwise.Event eventToPlay)

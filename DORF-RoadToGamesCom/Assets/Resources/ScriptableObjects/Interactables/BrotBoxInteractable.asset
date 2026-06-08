@@ -22,5 +22,7 @@ MonoBehaviour:
   StatusDescription: 
   StatusOn: 
   StatusOff: 
-  StatusOnSprite: {fileID: 21300000, guid: 7bc33822944e54d49be8f8bd2c6a2930, type: 3}
-  StatusOffSprite: {fileID: 21300000, guid: 1ded30001723545188dd704ed5d68ad6, type: 3}
+  StatusSpriteOn: {fileID: 21300000, guid: 7bc33822944e54d49be8f8bd2c6a2930, type: 3}
+  StatusSpriteOff: {fileID: 21300000, guid: 1ded30001723545188dd704ed5d68ad6, type: 3}
+  SpriteRotationOn: {x: 15.64, y: 11.61, z: 7.59}
+  SpriteRotationOff: {x: 11.32, y: 54, z: 7.26}
