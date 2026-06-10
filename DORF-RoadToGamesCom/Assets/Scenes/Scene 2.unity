@@ -64199,6 +64199,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8d4f2d6aed1c849529d827ebbbc7256a, type: 2}
     - target: {fileID: 4258280740727861856, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
+      propertyPath: triggerAreaRadius
+      value: 1.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 4258280740727861856, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: MarkAsFoundWhenClicked
       value: 0
       objectReference: {fileID: 0}
@@ -64208,7 +64212,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5376342234665635635, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: m_Radius
-      value: 10
+      value: 1.65
       objectReference: {fileID: 0}
     - target: {fileID: 5721676862055115558, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: m_LocalScale.x
