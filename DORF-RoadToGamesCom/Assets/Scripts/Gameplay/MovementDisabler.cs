@@ -1,4 +1,3 @@
-using System;
 using Runtime.Scripts.PlayerInput;
 using Tree;
 using UnityEngine;

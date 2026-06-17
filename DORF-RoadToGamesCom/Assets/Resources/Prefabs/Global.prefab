@@ -481,7 +481,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &3073940004212380121
 Transform:
   m_ObjectHideFlags: 0
@@ -506,7 +506,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618922703460164710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 4e5598b8174aec0439a7f825b5675ab5, type: 3}
   m_Name: 
@@ -531,7 +531,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1618922703460164710}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76c09be8967557245aa8cd10faa94e50, type: 3}
   m_Name: 
@@ -629,7 +629,7 @@ Transform:
   m_GameObject: {fileID: 2042505021471656511}
   serializedVersion: 2
   m_LocalRotation: {x: 0.17622578, y: -0, z: -0, w: 0.9843498}
-  m_LocalPosition: {x: 3.090503, y: 1008.0356, z: 0.19184327}
+  m_LocalPosition: {x: -2.04143, y: 1007.82, z: -19.65567}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4346,7 +4346,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: logHits
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: cursorSize
@@ -4360,6 +4360,10 @@ PrefabInstance:
       propertyPath: cursorSetter
       value: 
       objectReference: {fileID: 5329439205216209059}
+    - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
+      propertyPath: logClickHits
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8088561924093029570, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: standardCursor
       value: 
@@ -4485,7 +4489,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.ExpressionTrigger
   serializationData:
-    SerializedFormat: 0
+    SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -4527,9 +4531,6 @@ MonoBehaviour:
   standardStoppingDistance: 0.5
   playerController: {fileID: 860814231863369485}
   navMeshAgent: {fileID: 5341875135353417208}
-  groundLayer:
-    serializedVersion: 2
-    m_Bits: 128
 --- !u!195 &5341875135353417208
 NavMeshAgent:
   m_ObjectHideFlags: 0
