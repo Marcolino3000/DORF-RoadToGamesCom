@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9756407c407f4b9a9b243577bb46da86, type: 3}
   m_Name: In Game Audio Settings
   m_EditorClassIdentifier: Assembly-CSharp::Audio.InGameAudioSettings
-  masterVolume: 0.852
-  musicVolume: 0.791
-  sfxVolume: 0.127
-  dialogVolume: 0.989
+  masterVolume: 0.829
+  musicVolume: 0.92
+  sfxVolume: 0.734
+  dialogVolume: 0.874
+  inactivityThresholdSeconds: 206

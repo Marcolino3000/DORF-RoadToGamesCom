@@ -53,7 +53,7 @@ namespace DefaultNamespace
             
             // marlene?.SetActive(true);
             
-            SceneSwapManager.ChangeScene("Scene 2 from package");
+            SceneSwapManager.ChangeScene("Scene 2");
         }
     }
 }
