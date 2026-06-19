@@ -5271,7 +5271,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7230633856241153375, guid: 65f468906282d42c591efd5861655e23, type: 3}
       propertyPath: m_Name
-      value: Paul Variant
+      value: Paul
       objectReference: {fileID: 0}
     - target: {fileID: 7230633856241153375, guid: 65f468906282d42c591efd5861655e23, type: 3}
       propertyPath: m_IsActive
@@ -67001,9 +67001,13 @@ PrefabInstance:
       propertyPath: m_LocalRotation.z
       value: 0.9978319
       objectReference: {fileID: 0}
+    - target: {fileID: 1650356632311951333, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
+      propertyPath: serializationData.Prefab
+      value: 
+      objectReference: {fileID: 1650356632311951333, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
     - target: {fileID: 2001524181334015627, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
       propertyPath: m_Name
-      value: Hilde Variant
+      value: Hilde
       objectReference: {fileID: 0}
     - target: {fileID: 2927972761153836388, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
       propertyPath: m_LocalRotation.w
@@ -67110,8 +67114,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8490463308936631024, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8490463308936631024, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0.0000049620853
+      value: -0.0000050260096
       objectReference: {fileID: 0}
     - target: {fileID: 8767735803809838839, guid: 2c9be93860cae4c48b82e92b429d1f89, type: 3}
       propertyPath: m_LocalRotation.w
