@@ -6415,7 +6415,7 @@ Transform:
   m_GameObject: {fileID: 161006860}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.9, y: 0.84198, z: 5.85}
+  m_LocalPosition: {x: 1.9, y: 0.84198, z: 5.447}
   m_LocalScale: {x: 0.21, y: 0.25, z: 0.21}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9027,7 +9027,7 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 10.015
+  m_Radius: 15.25
   m_Center: {x: -0.0000019073486, y: 0, z: 0}
 --- !u!114 &278125344
 MonoBehaviour:
@@ -9059,7 +9059,7 @@ MonoBehaviour:
   player: {fileID: 0}
   playerIsNear: 0
   collider: {fileID: 3120014489397698645}
-  triggerArea: {fileID: 0}
+  triggerArea: {fileID: 278125344}
   doorRenderer: {fileID: 0}
 --- !u!1 &278709500
 GameObject:
@@ -67212,7 +67212,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 8d4f2d6aed1c849529d827ebbbc7256a, type: 2}
     - target: {fileID: 4258280740727861856, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: triggerAreaRadius
-      value: 1.65
+      value: 10.95
       objectReference: {fileID: 0}
     - target: {fileID: 4258280740727861856, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: MarkAsFoundWhenClicked
@@ -67224,7 +67224,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5376342234665635635, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: m_Radius
-      value: 1.65
+      value: 10.95
       objectReference: {fileID: 0}
     - target: {fileID: 5721676862055115558, guid: abdfc0e5b45334364ae696e093f04c7d, type: 3}
       propertyPath: m_LocalScale.x
@@ -67368,7 +67368,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: e41323d3ed61b4e3a93c1d727a1bf133, type: 2}
+  - {fileID: 2100000, guid: 8199f35df8d8948c4ae1e5f30de0ba76, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
