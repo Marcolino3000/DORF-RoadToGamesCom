@@ -62,14 +62,14 @@ namespace UI
             mapMenu.Hide();
             settingsMenu.Hide();
             
-            raycaster.isDialogRunning = false;
+            raycaster.IsMenuOpen = false;
         }
 
         private void ShowMainMenu()
         {
             HideAllMenus();
             mainMenu.Show();
-            raycaster.isDialogRunning = true;
+            raycaster.IsMenuOpen = true;
         }
 
         public void ToggleJournalMenu()
@@ -82,7 +82,7 @@ namespace UI
             
             HideAllMenus();
             journalMenu.Show();
-            raycaster.isDialogRunning = true;
+            raycaster.IsMenuOpen = true;
         }
         
         public void ToggleMapMenu()
@@ -95,7 +95,7 @@ namespace UI
             
             HideAllMenus();
             mapMenu.Show();
-            raycaster.isDialogRunning = true;
+            raycaster.IsMenuOpen = true;
         }
 
         public void ToggleSettingsMenu()
@@ -108,7 +108,7 @@ namespace UI
             
             HideAllMenus();
             settingsMenu.Show();
-            raycaster.isDialogRunning = true;   
+            raycaster.IsMenuOpen = true;   
         }
     }
     

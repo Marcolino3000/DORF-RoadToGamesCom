@@ -4020,7 +4020,7 @@ NavMeshAgent:
   m_Height: 2
   m_BaseOffset: 2.5
   m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
+  m_ObstacleAvoidanceType: 0
 --- !u!114 &2898388513868393969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
