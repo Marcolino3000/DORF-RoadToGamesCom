@@ -28,7 +28,7 @@ MonoBehaviour:
     - rid: 4678523685029281992
       type: {class: Waypoint, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
       data:
-        Position: {x: -2.85, y: 4.69, z: 8.42}
+        Position: {x: -2.85, y: 4.69, z: 5.86}
         WaitTime: 0
         ReactionAtStart: {fileID: 0}
         ReactionAtStop: {fileID: 0}

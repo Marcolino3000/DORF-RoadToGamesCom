@@ -14,11 +14,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.InteractionData
   _SaveStateToCurrentScene: 0
   _sceneStateSaver: {fileID: 11400000, guid: 3e244c0560c63468bb3c97ac3de106ce, type: 2}
-  Count: 1
+  Count: 0
   Threshold: 1
   OneTimeUse: 1
   successReaction: {fileID: 11400000, guid: b522947b0e08844728c7ee4018298299, type: 2}
   failureReaction: {fileID: 0}
-  ThresholdReached: 1
+  ThresholdReached: 0
   IsRunning: 0
   IsActive: 1

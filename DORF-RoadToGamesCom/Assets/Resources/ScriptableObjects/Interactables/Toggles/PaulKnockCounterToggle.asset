@@ -22,3 +22,7 @@ MonoBehaviour:
   StatusDescription: 
   StatusOn: 
   StatusOff: 
+  StatusSpriteOn: {fileID: 0}
+  StatusSpriteOff: {fileID: 0}
+  SpriteRotationOn: {x: 0, y: 0, z: 0}
+  SpriteRotationOff: {x: 0, y: 0, z: 0}
