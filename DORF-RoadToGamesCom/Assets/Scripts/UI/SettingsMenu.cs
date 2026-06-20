@@ -46,7 +46,7 @@ namespace UI
         {
             GetElements();
             SetupEvents();
-            // SetSlidersToCurrentValues();
+            SetSlidersToCurrentValues();
         }
 
         private void GetElements()

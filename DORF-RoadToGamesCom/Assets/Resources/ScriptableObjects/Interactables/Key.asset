@@ -17,7 +17,12 @@ MonoBehaviour:
   Interactable: {fileID: 0}
   Sprite: {fileID: 2800000, guid: d185fa3a8f90a4d2d994186fe2b4e4b9, type: 3}
   AwarenessLevel: 0
+  InteractionType: 2
   ToggleState: 1
   StatusDescription: Key found
   StatusOn: Key found
   StatusOff: Key not found
+  StatusSpriteOn: {fileID: 0}
+  StatusSpriteOff: {fileID: 0}
+  SpriteRotationOn: {x: 0, y: 0, z: 0}
+  SpriteRotationOff: {x: 0, y: 0, z: 0}
