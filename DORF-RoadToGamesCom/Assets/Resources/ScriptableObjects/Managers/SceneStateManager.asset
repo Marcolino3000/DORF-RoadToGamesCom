@@ -42,6 +42,7 @@ MonoBehaviour:
   - rid: 4189240645975802014
   - rid: 7761151777347993687
   - rid: 7761151780059087160
+  - rid: 7761151819821613269
   references:
     version: 2
     RefIds:
@@ -207,3 +208,8 @@ MonoBehaviour:
       data:
         Owner: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
         ToggleState: 0
+    - rid: 7761151819821613269
+      type: {class: SauerteigState/SauerteigStateData, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        AwarenessLevel: 1

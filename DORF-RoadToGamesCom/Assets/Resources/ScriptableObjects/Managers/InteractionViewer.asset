@@ -29,16 +29,55 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: da8bf1620221d4f8ca7e6d70d8390836, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 69e8f799e9789455d8532d0cb78bbba1, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 296f68881e5044022b94fdb92f26a855, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 46d39e3dd3ade404a98a1a81b3cd6dae, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: da8bf1620221d4f8ca7e6d70d8390836, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: 69e8f799e9789455d8532d0cb78bbba1, type: 2}
         Conditions: []
-      Name: OpenDoorHilde
+      Name: BildGottesanbeterin
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 84afd06f395c242f3a0f75bed3fab1ce, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: ca2f24cf789734e5389d8ea2f2d7bdd8, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 84afd06f395c242f3a0f75bed3fab1ce, type: 2}
+        Conditions: []
+      Name: BildPapa
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: a14b4a3781a2544079181dc125c638c6, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 4180a82feecb64907929d6466cc458ed, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: a14b4a3781a2544079181dc125c638c6, type: 2}
+        Conditions: []
+      Name: Birkenstocks
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 5f281a29e142d496586cdbf5469d637b, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 7b20973609ce54e9ba0416923211847b, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 5f281a29e142d496586cdbf5469d637b, type: 2}
+        Conditions: []
+      Name: BrotBox
       HighPriority: 0
   - Trigger:
       TriggerType: 2
@@ -54,20 +93,17 @@ MonoBehaviour:
       Name: Bucherregal
       HighPriority: 0
   - Trigger:
-      TriggerType: 0
-      TriggeringInteractable: {fileID: 11400000, guid: 6608d22e932254857895ba4eb7486241, type: 2}
+      TriggerType: 3
+      TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 1331616b5087e4602ab255f87cb59d15, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: da159c790547c467bba8889760a0adc4, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 0
-        TriggeringInteractable: {fileID: 11400000, guid: 6608d22e932254857895ba4eb7486241, type: 2}
-        Conditions:
-        - RecordedState:
-            rid: 1719061268152975618
-          IsHardCondition: 0
-      Name: 
+        TriggerType: 3
+        TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
+        Conditions: []
+      Name: PostVeranda
       HighPriority: 0
   - Trigger:
       TriggerType: 2
@@ -87,68 +123,182 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 9810d7ca9d74a4f0092458b0fb09840d, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 7b87c47c8b1924c2f8f38e4df5b52c0c, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: a992264c6d00946c09471ec5bac50e7a, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 9a21579d7d6484660980d917cff667a8, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 0}
-        Conditions: []
-      Name: Sessel
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: ff5f3ad7940304bceb7599513a2003f2, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 3a896a1aff38c4897895d86492890330, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 0}
+        TriggeringInteractable: {fileID: 11400000, guid: 7b87c47c8b1924c2f8f38e4df5b52c0c, type: 2}
         Conditions: []
       Name: Vase
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: ae952bd7923244814b167be36c192abd, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 5aae98a92bca449d093082eac43fdf29, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 35f4cbee3361840e489643980292c7b5, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: ae952bd7923244814b167be36c192abd, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
         Conditions: []
-      Name: Schaukasten
+      Name: Gartentur
       HighPriority: 0
   - Trigger:
-      TriggerType: 4
-      TriggeringInteractable: {fileID: 0}
-      TriggeringDialogOption: {fileID: 6941936280635674382, guid: bc689ba2b132b4afc86f49dbb9efefbd, type: 2}
+      TriggerType: 0
+      TriggeringInteractable: {fileID: 11400000, guid: 6608d22e932254857895ba4eb7486241, type: 2}
+      TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 2538794dad9c34608a794974275dbd92, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 1331616b5087e4602ab255f87cb59d15, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 4
-        TriggeringInteractable: {fileID: 0}
-        Conditions: []
+        TriggerType: 0
+        TriggeringInteractable: {fileID: 11400000, guid: 6608d22e932254857895ba4eb7486241, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 1719061268152975618
+          IsHardCondition: 0
       Name: 
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: ecfff73d9a6014cd0b9f7da111376c5b, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: da8bf1620221d4f8ca7e6d70d8390836, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: f46924d2ef42644dbac857c95ac58cbf, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 296f68881e5044022b94fdb92f26a855, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: ecfff73d9a6014cd0b9f7da111376c5b, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: da8bf1620221d4f8ca7e6d70d8390836, type: 2}
         Conditions: []
-      Name: PostVeranda
+      Name: OpenDoorHilde
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 3cccce6c0c50e4ae2abf5322f6c19ce6, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: f3bbc6cd7bf3d402cad647550d928260, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 3cccce6c0c50e4ae2abf5322f6c19ce6, type: 2}
+        Conditions: []
+      Name: Scene 2 - FirstDialogWithHilde
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 1
+      TriggeringInteractable: {fileID: 11400000, guid: 043fed759a4f8451d9f92cff673b9826, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: f02efa3331e97424fba40e1db527ac8f, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 1
+        TriggeringInteractable: {fileID: 11400000, guid: 043fed759a4f8451d9f92cff673b9826, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 4189240612524130608
+          IsHardCondition: 0
+        - RecordedState:
+            rid: 4189240612524130609
+          IsHardCondition: 0
+        - RecordedState:
+            rid: 4189240612524130610
+          IsHardCondition: 0
+      Name: 
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: cb623e9ae54d945c1bb32c5aac54c52a, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
+        Conditions: []
+      Name: WontGoOutside
+      HighPriority: 0
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: cb623e9ae54d945c1bb32c5aac54c52a, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
+        Conditions: []
+      Name: WontGoOutside
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: f1055e3e4d52345d7b5ad0eab3067a03, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 7734685230184530355
+          IsHardCondition: 0
+      Name: Key
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 35656eb03906d4acdbd8255122b20982, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 60404f0c0001742fe964f9fb5fdff7fc, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 0}
+        Conditions: []
+      Name: Kuhlschrank
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 6ead5ed78d7c04ae99d905203f7aec6e, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 3f0356dcef3644ad9a6a5827660775c9, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 6ead5ed78d7c04ae99d905203f7aec6e, type: 2}
+        Conditions: []
+      Name: Marmeladenbrot
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: ac5e0186876554065b9b611e8efc7f22, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: e341fd663eb364673842fb9b424fb861, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 0}
+        Conditions: []
+      Name: Pakete
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 39113deee2da14ef980feadf3041ab39, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 051377556450546dd9756f2d3fb66dd2, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 39113deee2da14ef980feadf3041ab39, type: 2}
+        Conditions: []
+      Name: UnlockSauerteig
       HighPriority: 0
   - Trigger:
       TriggerType: 2
@@ -196,70 +346,55 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: ecfff73d9a6014cd0b9f7da111376c5b, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: f1055e3e4d52345d7b5ad0eab3067a03, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: f46924d2ef42644dbac857c95ac58cbf, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
-        Conditions:
-        - RecordedState:
-            rid: 7734685230184530355
-          IsHardCondition: 0
-      Name: Key
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 1
-      TriggeringInteractable: {fileID: 11400000, guid: 69eecbeb3b3fb406482237d5e608525f, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 9dd141f348f7c45079a109d61f59e072, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 1
-        TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
-        Conditions:
-        - RecordedState:
-            rid: 4189240511475745083
-          IsHardCondition: 0
-      Name: 
+        TriggeringInteractable: {fileID: 11400000, guid: ecfff73d9a6014cd0b9f7da111376c5b, type: 2}
+        Conditions: []
+      Name: PostVeranda
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: ae952bd7923244814b167be36c192abd, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 35f4cbee3361840e489643980292c7b5, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 5aae98a92bca449d093082eac43fdf29, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: ae952bd7923244814b167be36c192abd, type: 2}
         Conditions: []
-      Name: Gartentur
+      Name: Schaukasten
       HighPriority: 0
   - Trigger:
-      TriggerType: 1
-      TriggeringInteractable: {fileID: 11400000, guid: ddc53cfdf069d42579ca66de8e3a08e9, type: 2}
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 31bbaa1d4963b433eaf50b28b594e86d, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: da159c790547c467bba8889760a0adc4, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 451526fc10c6747a895ffb1c8f45d728, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 1
-        TriggeringInteractable: {fileID: 11400000, guid: ddc53cfdf069d42579ca66de8e3a08e9, type: 2}
-        Conditions:
-        - RecordedState:
-            rid: 4189240612524130597
-          IsHardCondition: 0
-        - RecordedState:
-            rid: 4189240612524130598
-          IsHardCondition: 0
-        - RecordedState:
-            rid: 4189240612524130599
-          IsHardCondition: 0
-      Name: 
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 31bbaa1d4963b433eaf50b28b594e86d, type: 2}
+        Conditions: []
+      Name: Schild
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 52ee2bd9e8711467181b43907f9a9c3c, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 5fcc5ffcf09e34d2ca57aa76fb7ef618, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 52ee2bd9e8711467181b43907f9a9c3c, type: 2}
+        Conditions: []
+      Name: Schlusselloch
       HighPriority: 0
   - Trigger:
       TriggerType: 2
@@ -289,128 +424,29 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 35656eb03906d4acdbd8255122b20982, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 9810d7ca9d74a4f0092458b0fb09840d, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 60404f0c0001742fe964f9fb5fdff7fc, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: a992264c6d00946c09471ec5bac50e7a, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
         TriggeringInteractable: {fileID: 0}
         Conditions: []
-      Name: Kuhlschrank
+      Name: Sessel
       HighPriority: 0
   - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 52ee2bd9e8711467181b43907f9a9c3c, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 4550c03a10a624d6596fa2a2ae410d28, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 5fcc5ffcf09e34d2ca57aa76fb7ef618, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: de33e6777c48c4a8e8661b46e198ae7d, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 52ee2bd9e8711467181b43907f9a9c3c, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: 4550c03a10a624d6596fa2a2ae410d28, type: 2}
         Conditions: []
-      Name: Schlusselloch
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 6ead5ed78d7c04ae99d905203f7aec6e, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 3f0356dcef3644ad9a6a5827660775c9, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 6ead5ed78d7c04ae99d905203f7aec6e, type: 2}
-        Conditions: []
-      Name: Marmeladenbrot
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 7b87c47c8b1924c2f8f38e4df5b52c0c, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 9a21579d7d6484660980d917cff667a8, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 7b87c47c8b1924c2f8f38e4df5b52c0c, type: 2}
-        Conditions: []
-      Name: Vase
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 4
-      TriggeringInteractable: {fileID: 0}
-      TriggeringDialogOption: {fileID: -394871198780663035, guid: 5250981cff96342089d694c7abc1691c, type: 2}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 4
-        TriggeringInteractable: {fileID: 0}
-        Conditions: []
-      Name: 
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 3cccce6c0c50e4ae2abf5322f6c19ce6, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: f3bbc6cd7bf3d402cad647550d928260, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 3cccce6c0c50e4ae2abf5322f6c19ce6, type: 2}
-        Conditions: []
-      Name: Scene 2 - FirstDialogWithHilde
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 39113deee2da14ef980feadf3041ab39, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 051377556450546dd9756f2d3fb66dd2, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 39113deee2da14ef980feadf3041ab39, type: 2}
-        Conditions: []
-      Name: UnlockSauerteig
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: cb623e9ae54d945c1bb32c5aac54c52a, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
-        Conditions: []
-      Name: WontGoOutside
-      HighPriority: 0
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: cb623e9ae54d945c1bb32c5aac54c52a, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 88b3f975295dc49359d9e5681490041c, type: 2}
-        Conditions: []
-      Name: WontGoOutside
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 4a5c2571028894b74ae1e9fd998beed3, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: ea87d249659db4d1995090f37f8c1add, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 4a5c2571028894b74ae1e9fd998beed3, type: 2}
-        Conditions: []
-      Name: Tee
+      Name: Spiegel
       HighPriority: 0
   - Trigger:
       TriggerType: 2
@@ -441,6 +477,54 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 4a5c2571028894b74ae1e9fd998beed3, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: ea87d249659db4d1995090f37f8c1add, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 4a5c2571028894b74ae1e9fd998beed3, type: 2}
+        Conditions: []
+      Name: Tee
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 1
+      TriggeringInteractable: {fileID: 11400000, guid: ddc53cfdf069d42579ca66de8e3a08e9, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: da159c790547c467bba8889760a0adc4, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 1
+        TriggeringInteractable: {fileID: 11400000, guid: ddc53cfdf069d42579ca66de8e3a08e9, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 4189240612524130597
+          IsHardCondition: 0
+        - RecordedState:
+            rid: 4189240612524130598
+          IsHardCondition: 0
+        - RecordedState:
+            rid: 4189240612524130599
+          IsHardCondition: 0
+      Name: 
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: ff5f3ad7940304bceb7599513a2003f2, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 3a896a1aff38c4897895d86492890330, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 0}
+        Conditions: []
+      Name: Vase
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
       TriggeringInteractable: {fileID: 11400000, guid: 2701b3698c6354b3e9b6de4ac676fe49, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
@@ -453,82 +537,43 @@ MonoBehaviour:
       Name: Zigaretten
       HighPriority: 0
   - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: ac5e0186876554065b9b611e8efc7f22, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: e341fd663eb364673842fb9b424fb861, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 0}
-        Conditions: []
-      Name: Pakete
-      HighPriority: 0
-  - Trigger:
       TriggerType: 4
       TriggeringInteractable: {fileID: 0}
-      TriggeringDialogOption: {fileID: -6774432438998130026, guid: 4bbb15ab7f96d4c5f8467318a439d8bc, type: 2}
+      TriggeringDialogOption: {fileID: -1096461864694491758, guid: 4bbb15ab7f96d4c5f8467318a439d8bc, type: 2}
     Prerequisites:
     - Record:
         InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
+        TriggerType: 4
         TriggeringInteractable: {fileID: 0}
         Conditions: []
-      Name: Vase
+      Name: TEST3
       HighPriority: 0
   - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 5f281a29e142d496586cdbf5469d637b, type: 2}
+      TriggerType: 0
+      TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 7b20973609ce54e9ba0416923211847b, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: d8be7d5221d304268ade4f92f1248f1c, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 5f281a29e142d496586cdbf5469d637b, type: 2}
+        TriggerType: 0
+        TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
         Conditions: []
-      Name: BrotBox
+      Name: Scene2Trigger
       HighPriority: 0
   - Trigger:
-      TriggerType: 3
-      TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
-      TriggeringDialogOption: {fileID: 0}
+      TriggerType: 4
+      TriggeringInteractable: {fileID: 0}
+      TriggeringDialogOption: {fileID: -394871198780663035, guid: 5250981cff96342089d694c7abc1691c, type: 2}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: da159c790547c467bba8889760a0adc4, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 3
-        TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
+        TriggerType: 4
+        TriggeringInteractable: {fileID: 0}
         Conditions: []
-      Name: PostVeranda
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 69e8f799e9789455d8532d0cb78bbba1, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 46d39e3dd3ade404a98a1a81b3cd6dae, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 69e8f799e9789455d8532d0cb78bbba1, type: 2}
-        Conditions: []
-      Name: BildGottesanbeterin
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 84afd06f395c242f3a0f75bed3fab1ce, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: ca2f24cf789734e5389d8ea2f2d7bdd8, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 84afd06f395c242f3a0f75bed3fab1ce, type: 2}
-        Conditions: []
-      Name: BildPapa
+      Name: 
       HighPriority: 0
   - Trigger:
       TriggerType: 4
@@ -552,17 +597,46 @@ MonoBehaviour:
       Name: OpenDoorHilde
       HighPriority: 0
   - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: a14b4a3781a2544079181dc125c638c6, type: 2}
+      TriggerType: 4
+      TriggeringInteractable: {fileID: 0}
+      TriggeringDialogOption: {fileID: -6774432438998130026, guid: 4bbb15ab7f96d4c5f8467318a439d8bc, type: 2}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 0}
+        Conditions: []
+      Name: Vase
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 1
+      TriggeringInteractable: {fileID: 11400000, guid: 69eecbeb3b3fb406482237d5e608525f, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 4180a82feecb64907929d6466cc458ed, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 9dd141f348f7c45079a109d61f59e072, type: 2}
         DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: a14b4a3781a2544079181dc125c638c6, type: 2}
+        TriggerType: 1
+        TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 4189240511475745083
+          IsHardCondition: 0
+      Name: 
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 4
+      TriggeringInteractable: {fileID: 0}
+      TriggeringDialogOption: {fileID: 6941936280635674382, guid: bc689ba2b132b4afc86f49dbb9efefbd, type: 2}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 2538794dad9c34608a794974275dbd92, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 4
+        TriggeringInteractable: {fileID: 0}
         Conditions: []
-      Name: Birkenstocks
+      Name: 
       HighPriority: 0
   - Trigger:
       TriggerType: 4
@@ -589,78 +663,31 @@ MonoBehaviour:
       Name: Marmeladenbrot
       HighPriority: 0
   - Trigger:
-      TriggerType: 0
-      TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: d8be7d5221d304268ade4f92f1248f1c, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 0
-        TriggeringInteractable: {fileID: 11400000, guid: 2ce23844655b74ce8a1fcb216e893722, type: 2}
-        Conditions: []
-      Name: Scene2Trigger
-      HighPriority: 0
-  - Trigger:
       TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 4550c03a10a624d6596fa2a2ae410d28, type: 2}
+      TriggeringInteractable: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: de33e6777c48c4a8e8661b46e198ae7d, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: 23cc4b3310c4247398a7bd2715fd84ce, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 4550c03a10a624d6596fa2a2ae410d28, type: 2}
-        Conditions: []
-      Name: Spiegel
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 1
-      TriggeringInteractable: {fileID: 11400000, guid: 043fed759a4f8451d9f92cff673b9826, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: f02efa3331e97424fba40e1db527ac8f, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 1
-        TriggeringInteractable: {fileID: 11400000, guid: 043fed759a4f8451d9f92cff673b9826, type: 2}
+        TriggeringInteractable: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
         Conditions:
         - RecordedState:
-            rid: 4189240612524130608
-          IsHardCondition: 0
-        - RecordedState:
-            rid: 4189240612524130609
-          IsHardCondition: 0
-        - RecordedState:
-            rid: 4189240612524130610
-          IsHardCondition: 0
-      Name: 
+            rid: 7761151824013819989
+          IsHardCondition: 1
+      Name: SauerteigBasicActivity
       HighPriority: 0
-  - Trigger:
-      TriggerType: 4
-      TriggeringInteractable: {fileID: 0}
-      TriggeringDialogOption: {fileID: -1096461864694491758, guid: 4bbb15ab7f96d4c5f8467318a439d8bc, type: 2}
-    Prerequisites:
     - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 4
-        TriggeringInteractable: {fileID: 0}
-        Conditions: []
-      Name: TEST3
-      HighPriority: 0
-  - Trigger:
-      TriggerType: 2
-      TriggeringInteractable: {fileID: 11400000, guid: 31bbaa1d4963b433eaf50b28b594e86d, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: 451526fc10c6747a895ffb1c8f45d728, type: 2}
+        InteractionToExecute: {fileID: 11400000, guid: b866e3fe81be64310bf07b5fd4e68682, type: 2}
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
-        TriggeringInteractable: {fileID: 11400000, guid: 31bbaa1d4963b433eaf50b28b594e86d, type: 2}
-        Conditions: []
-      Name: Schild
+        TriggeringInteractable: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 7761151824013819990
+          IsHardCondition: 1
+      Name: SauerteigBasicActivity
       HighPriority: 0
   references:
     version: 2
@@ -767,3 +794,13 @@ MonoBehaviour:
       data:
         Owner: {fileID: 11400000, guid: cd65d02928ae34289a4830c8f72b6446, type: 2}
         ToggleState: 0
+    - rid: 7761151824013819989
+      type: {class: SauerteigState/SauerteigStateData, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        AwarenessLevel: 1
+    - rid: 7761151824013819990
+      type: {class: SauerteigState/SauerteigStateData, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        AwarenessLevel: 0

@@ -1,0 +1,51 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: SauerteigMinimumActivityDialog
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: 2745934988794677832}
+  nodes:
+  - {fileID: 2745934988794677832}
+  Blackboard:
+    CharacterData: {fileID: 0}
+--- !u!114 &2745934988794677832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: Sauerteig MINIMU...
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 9d35d3cf3ffbe43b19c77db1e0fbac98
+  Position: {x: 980, y: 796}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 0}
+  DialogLine: Sauerteig MINIMUM Activity
+  TextPreview: Sauerteig MINIMU...
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 4
+  _popularityModifier: 0

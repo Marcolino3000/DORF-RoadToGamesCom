@@ -9,15 +9,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799bdc7289364c2b97004e28c80a81c6, type: 3}
-  m_Name: Sauerteig
-  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.Toggleable
+  m_Script: {fileID: 11500000, guid: ff2313e5e8074a198d91d099d9a537f5, type: 3}
+  m_Name: SauerteigAwarenessStatus
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.SauerteigState
   _SaveStateToCurrentScene: 0
   _sceneStateSaver: {fileID: 11400000, guid: 3e244c0560c63468bb3c97ac3de106ce, type: 2}
   Interactable: {fileID: 0}
-  Sprite: {fileID: 2800000, guid: c84c6c075fceb40fbb6eb9bf7fc8e61e, type: 3}
+  Sprite: {fileID: 0}
   AwarenessLevel: 0
-  ToggleState: 0
-  StatusDescription: 
-  StatusOn: 
-  StatusOff: 
+  InteractionType: 2
+  CurrentLevel: 1
