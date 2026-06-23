@@ -1,4 +1,3 @@
-using System;
 using System.Collections;
 using Runtime.Scripts.Core;
 using SceneManagement;
@@ -25,8 +24,6 @@ namespace DefaultNamespace
         
         private void Awake()
         {
-            // marianneSprachiReaction.OnStartDialog += TogglePlayButton;
-            // marianneSprachiReaction.OnStopDialog += TogglePlayButton;
             marianneSprachiReaction.OnReactionFinished += OnSprachiFinished;
         }
 

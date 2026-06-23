@@ -3206,7 +3206,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1294223278235625508, guid: 578396c0d0ba34c7dadfb2b0e6d3b8e7, type: 3}
       propertyPath: fadeSpeed
-      value: 1.9
+      value: 3.45
       objectReference: {fileID: 0}
     - target: {fileID: 1294223278235625508, guid: 578396c0d0ba34c7dadfb2b0e6d3b8e7, type: 3}
       propertyPath: fadeColor.b
