@@ -59114,9 +59114,11 @@ MonoBehaviour:
   spriteRenderer: {fileID: 1895037933}
   triggerArea: {fileID: 910116915}
   interactionCollider: {fileID: 1895037934}
+  doorToggleable: {fileID: 11400000, guid: 6c661981f39bd48d4aca24cd5a422230, type: 2}
   currentAlpha: 0
   player: {fileID: 0}
   playerIsNear: 0
+  isActive: 0
 --- !u!1 &1897425143
 GameObject:
   m_ObjectHideFlags: 0

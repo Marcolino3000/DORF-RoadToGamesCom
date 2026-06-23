@@ -17,11 +17,13 @@ public class ProximitySpriteReveal : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private TriggerArea triggerArea;
     [SerializeField] private Collider2D interactionCollider;
+    [SerializeField] private Toggleable doorToggleable;
 
     [Header("Debug")]
     [SerializeField] private float currentAlpha;
     [SerializeField] private PlayerController player;
     [SerializeField] private bool playerIsNear;
+    [SerializeField] private bool isActive;
 
     private SphereCollider triggerCollider;
     private Color baseColor;
@@ -47,7 +49,7 @@ public class ProximitySpriteReveal : MonoBehaviour
         // keep the renderer's rgb, we only drive the alpha
         baseColor = spriteRenderer.color;
 
-        ApplyAlpha(farAlpha); // start hidden until the player approaches
+        ApplyAlpha(closeAlpha);
     }
 
     private void OnEnable()
@@ -56,6 +58,13 @@ public class ProximitySpriteReveal : MonoBehaviour
 
         triggerArea.OnPlayerEntered += HandlePlayerEntered;
         triggerArea.OnPlayerExited += HandlePlayerExited;
+
+        doorToggleable.OnInteractionFeedback += SetActive;
+    }
+
+    private void SetActive()
+    {
+        isActive = !doorToggleable.ToggleState;
     }
 
     private void OnDisable()
@@ -76,12 +85,16 @@ public class ProximitySpriteReveal : MonoBehaviour
     {
         player = null;
         playerIsNear = false;
-        ApplyAlpha(farAlpha); // fully faded once the player leaves the area
+        ApplyAlpha(closeAlpha);
     }
 
     private void Update()
     {
-        if (!playerIsNear) return;
+        if (!isActive)
+            return;
+        
+        if (!playerIsNear) 
+            return;
 
         // measure horizontal distance only (ignore Y), matching the gameplay plane
         float distance = Vector2.Distance(
@@ -104,9 +117,7 @@ public class ProximitySpriteReveal : MonoBehaviour
     private void ApplyAlpha(float alpha)
     {
         currentAlpha = alpha;
-
-        // this outline sprite shader has no _Color property; it reads alpha from the
-        // vertex color, which the SpriteRenderer feeds from its own color
+        
         Color color = baseColor;
         color.a = alpha;
         spriteRenderer.color = color;
