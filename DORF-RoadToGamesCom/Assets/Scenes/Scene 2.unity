@@ -1083,72 +1083,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &54159203
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 54159204}
-  - component: {fileID: 54159205}
-  - component: {fileID: 54159206}
-  m_Layer: 0
-  m_Name: TransparenyTrigger
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &54159204
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54159203}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 1
-  m_Children: []
-  m_Father: {fileID: 1895037932}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &54159205
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54159203}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 03148bf44efdf424ea64768b95c8012c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.TriggerArea
---- !u!135 &54159206
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 54159203}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 1
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Radius: 6.56
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &56986174
 GameObject:
   m_ObjectHideFlags: 0
@@ -33502,6 +33436,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &910116915 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1617824163739068085, guid: af10d5b363b08468082fb93188628d24, type: 3}
+  m_PrefabInstance: {fileID: 1634383657}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03148bf44efdf424ea64768b95c8012c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TriggerArea
 --- !u!1 &914732448
 GameObject:
   m_ObjectHideFlags: 0
@@ -52495,12 +52440,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2872073155054400692, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_Radius
-      value: 0.5
+      value: 1.71
       objectReference: {fileID: 0}
     - target: {fileID: 6223779332585130471, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: Data
       value: 
       objectReference: {fileID: 11400000, guid: 6c661981f39bd48d4aca24cd5a422230, type: 2}
+    - target: {fileID: 6223779332585130471, guid: af10d5b363b08468082fb93188628d24, type: 3}
+      propertyPath: triggerAreaRadius
+      value: 1.71
+      objectReference: {fileID: 0}
     - target: {fileID: 6772914947027453193, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: spriteRenderer
       value: 
@@ -59041,7 +58990,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1634383658}
-  - {fileID: 54159204}
   m_Father: {fileID: 1451757449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1895037933
@@ -59155,19 +59103,20 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1895037931}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17f2320cc3cba4cc78b9cb2a0e44847f, type: 3}
+  m_Script: {fileID: 11500000, guid: d428f0242ca014e7db3e801b26923a2d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::TransparencyPerDistance
-  objectFadesWhenClose: 0
+  m_EditorClassIdentifier: Assembly-CSharp::ProximitySpriteReveal
+  closeAlpha: 1
+  farAlpha: 0
   colliderEnabledThreshold: 0.1
-  currentTransparency: 0
+  spriteRenderer: {fileID: 1895037933}
+  triggerArea: {fileID: 910116915}
+  interactionCollider: {fileID: 1895037934}
+  currentAlpha: 0
   player: {fileID: 0}
   playerIsNear: 0
-  collider: {fileID: 0}
-  triggerArea: {fileID: 54159205}
-  doorRenderer: {fileID: 1895037933}
 --- !u!1 &1897425143
 GameObject:
   m_ObjectHideFlags: 0
