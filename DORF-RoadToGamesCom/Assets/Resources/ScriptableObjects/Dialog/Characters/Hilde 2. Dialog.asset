@@ -20,6 +20,7 @@ MonoBehaviour:
   DialogLine: "\xC4hm, mach ich."
   TextPreview: "\xC4hm, mach ich."
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 7979622907754217921}
@@ -51,6 +52,7 @@ MonoBehaviour:
   DialogLine: Warst du nach Mamas Beerdigung nochmal im Haus?
   TextPreview: Warst du nach Ma...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 5121026701170002156}
@@ -82,6 +84,7 @@ MonoBehaviour:
   DialogLine: "Ah d\u2019Marlene! Wie goht\u2019s m Sauerteig?"
   TextPreview: "Ah d\u2019Marlene! Wi..."
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -1063300526775792725}
@@ -113,6 +116,7 @@ MonoBehaviour:
   DialogLine: Holy Hilde?
   TextPreview: Holy Hilde?
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -4130740260088942212}
@@ -144,6 +148,7 @@ MonoBehaviour:
   DialogLine: "K\xE4psele, des soll r au sei."
   TextPreview: "K\xE4psele, des sol..."
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -1686729809979104195}
@@ -174,6 +179,7 @@ MonoBehaviour:
   DialogLine: Wieder was dazugelernt.
   TextPreview: Wieder was dazug...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 7979622907754217921}
@@ -205,6 +211,7 @@ MonoBehaviour:
   DialogLine: "Ist\u2026 sauer?"
   TextPreview: "Ist\u2026 sauer?"
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -2113876676547400643}
@@ -262,6 +269,7 @@ MonoBehaviour:
     de Pflanze guggsch.
   TextPreview: Noi, was soll i ...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -7148313184976302486}
@@ -292,6 +300,7 @@ MonoBehaviour:
   DialogLine: "Gang a mole zum Friedhof wenns dr neilauft gell? I muss dann au wiedr\u2026"
   TextPreview: Gang a mole zum ...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0

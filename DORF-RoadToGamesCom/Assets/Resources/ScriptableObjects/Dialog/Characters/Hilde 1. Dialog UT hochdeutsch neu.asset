@@ -916,9 +916,8 @@ MonoBehaviour:
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
-  DialogLine: "Na ja \u2013 ich muss jetzt auch wieder los. Schau mal beim Grab vorbei,
-    ja? \u2026 Wei\xDFt du, der Sauerteig wird dich immer mit ihr verbinden."
-  TextPreview: "Na ja \u2013 ich muss..."
+  DialogLine: "\t"
+  TextPreview: 
   AudioClip: {fileID: 8300000, guid: 3ea80df7812d14bcba95638b9d34ae81, type: 3}
   ClipVolume: 1
   PauseAfter: 2

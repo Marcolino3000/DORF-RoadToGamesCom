@@ -21,6 +21,7 @@ MonoBehaviour:
     dei Oma ahgsetzt.
   TextPreview: War ihr oifach w...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 515414829000640503}
@@ -41,7 +42,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: NpcDialogOption
+  m_Name: Ha no isch recht...
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: a7d77ea2257874c86a5b2ece6f1fc332
   Position: {x: 509, y: 415.4286}
@@ -51,6 +52,7 @@ MonoBehaviour:
   DialogLine: Ha no isch recht.
   TextPreview: Ha no isch recht...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 8721225980567710558}
@@ -81,6 +83,7 @@ MonoBehaviour:
   DialogLine: "\xD6h\u2026 sauer sein?"
   TextPreview: "\xD6h\u2026 sauer sein?"
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -4721424336548687629}
@@ -138,6 +141,7 @@ MonoBehaviour:
   DialogLine: "Uhh\u2026 wird der nicht nach Jahrzehnten mal schlecht?"
   TextPreview: "Uhh\u2026 wird der ni..."
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 4269666932579113674}
@@ -169,6 +173,7 @@ MonoBehaviour:
   DialogLine: "Joa, der chillt mit mir\u2026 Hat Mama irgendwas zu dem Ding erz\xE4hlt?"
   TextPreview: Joa, der chillt ...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -6655526683521927664}
@@ -201,6 +206,7 @@ MonoBehaviour:
     rom. I muss dann au los gell?"
   TextPreview: Warsch scho am G...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0
@@ -231,6 +237,7 @@ MonoBehaviour:
     verbraucha. I muss dann au los gell?"
   TextPreview: Nicht wenn man i...
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0
@@ -260,6 +267,7 @@ MonoBehaviour:
   DialogLine: "Aha. D\u2019Marlene! Was macht dr Sauerteig?"
   TextPreview: "Aha. D\u2019Marlene! ..."
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: -1407961596000995794}
@@ -291,6 +299,7 @@ MonoBehaviour:
   DialogLine: "Ho- \xE4hm Hilde?"
   TextPreview: "Ho- \xE4hm Hilde?"
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 5087699780152944202}
@@ -322,6 +331,7 @@ MonoBehaviour:
   DialogLine: Ha wa. Subbr.
   TextPreview: Ha wa. Subbr.
   AudioClip: {fileID: 0}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children:
   - {fileID: 2339893224738211951}
