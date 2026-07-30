@@ -93,19 +93,6 @@ MonoBehaviour:
       Name: Bucherregal
       HighPriority: 0
   - Trigger:
-      TriggerType: 3
-      TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
-      TriggeringDialogOption: {fileID: 0}
-    Prerequisites:
-    - Record:
-        InteractionToExecute: {fileID: 11400000, guid: da159c790547c467bba8889760a0adc4, type: 2}
-        DialogOptionToUnlock: {fileID: 0}
-        TriggerType: 3
-        TriggeringInteractable: {fileID: 11400000, guid: 70be6851395f94bedb55f0b047b6af29, type: 2}
-        Conditions: []
-      Name: PostVeranda
-      HighPriority: 0
-  - Trigger:
       TriggerType: 2
       TriggeringInteractable: {fileID: 11400000, guid: 6c661981f39bd48d4aca24cd5a422230, type: 2}
       TriggeringDialogOption: {fileID: 0}

@@ -18,7 +18,7 @@ MonoBehaviour:
   Sprite: {fileID: 0}
   AwarenessLevel: 0
   InteractionType: 2
-  ToggleState: 1
+  ToggleState: 0
   StatusDescription: 
   StatusOn: 
   StatusOff: 

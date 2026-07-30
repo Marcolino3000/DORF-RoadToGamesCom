@@ -16823,7 +16823,7 @@ GameObject:
   - component: {fileID: 396608484}
   - component: {fileID: 396608483}
   - component: {fileID: 396608482}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blocker Wand Wohnzimmer l (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -40641,7 +40641,7 @@ GameObject:
   - component: {fileID: 1185792211}
   - component: {fileID: 1185792210}
   - component: {fileID: 1185792209}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Boden Hallway blocker
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44934,35 +44934,35 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 1477536936}
+    m_TransformParent: {fileID: 1451757449}
     m_Modifications:
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.98
+      value: 0.13863975
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.98
+      value: 0.137152
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.98
+      value: 0.15668581
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.93
+      value: -6.67
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: 4.55
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.73
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.71410626
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalRotation.x
@@ -44970,7 +44970,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.70003736
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalRotation.z
@@ -44982,7 +44982,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -88.86
       objectReference: {fileID: 0}
     - target: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -45016,17 +45016,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
   m_PrefabInstance: {fileID: 1328700451}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1328700453 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6223779332585130471, guid: af10d5b363b08468082fb93188628d24, type: 3}
-  m_PrefabInstance: {fileID: 1328700451}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 517548956}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c94469ca64091b54ead736c09d096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interactable.Interactable
 --- !u!212 &1328700454
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -46810,7 +46799,7 @@ GameObject:
   - component: {fileID: 1401842420}
   - component: {fileID: 1401842419}
   - component: {fileID: 1401842418}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Blocker Wand Wohnzimmer l
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -48225,6 +48214,7 @@ Transform:
   - {fileID: 1491185785}
   - {fileID: 1640483175}
   - {fileID: 1051846537}
+  - {fileID: 1328700452}
   - {fileID: 1477536936}
   - {fileID: 1577358954}
   - {fileID: 1895037932}
@@ -48819,7 +48809,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1477536936}
-  - component: {fileID: 1477536937}
   m_Layer: 0
   m_Name: Pivot Bathroom Door
   m_TagString: Untagged
@@ -48835,38 +48824,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477536935}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0.6958128, z: -0, w: 0.71822315}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -6.6685705, y: 4.5131598, z: 1.1589513}
   m_LocalScale: {x: 0.14146912, y: 0.13995102, z: 0.15988348}
   m_ConstrainProportionsScale: 1
-  m_Children:
-  - {fileID: 1328700452}
+  m_Children: []
   m_Father: {fileID: 1451757449}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1477536937
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477536935}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 351d1f0650874c55b5c335d4b2304a4e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Animation.Rotator
-  disableColliderWhileRotating: 0
-  duration: 0.4
-  angle: 75
-  pivot: {fileID: 1477536936}
-  interactable: {fileID: 1328700453}
-  _collider: {fileID: 0}
-  audioSource: {fileID: 0}
-  openSound: {fileID: 0}
-  closeSound: {fileID: 0}
-  isOpen: 0
-  _progress: 0
-  _isRunning: 0
 --- !u!1 &1478143489
 GameObject:
   m_ObjectHideFlags: 0

@@ -85,7 +85,7 @@ public class ProximitySpriteReveal : MonoBehaviour
     {
         player = null;
         playerIsNear = false;
-        ApplyAlpha(closeAlpha);
+        ApplyAlpha(farAlpha);
     }
 
     private void Update()
