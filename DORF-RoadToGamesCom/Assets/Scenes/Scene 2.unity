@@ -60297,7 +60297,7 @@ MonoBehaviour:
   triggerArea: {fileID: 910116915}
   interactionCollider: {fileID: 1895037934}
   doorToggleable: {fileID: 11400000, guid: 6c661981f39bd48d4aca24cd5a422230, type: 2}
-  currentAlpha: 0
+  currentAlpha: 1
   player: {fileID: 0}
   playerIsNear: 0
   isActive: 0
