@@ -887,6 +887,7 @@ Transform:
   m_Children:
   - {fileID: 751612957056793668}
   - {fileID: 2416748962983224745}
+  - {fileID: 2612541725876116789}
   m_Father: {fileID: 3930300917096145597}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &7517081902591483814
@@ -1995,6 +1996,61 @@ MonoBehaviour:
   videoOverlay: {fileID: 8903988717574316952}
   videoPlayer: {fileID: 6495774995428573584}
   videoImage: {fileID: 9206203254090142502}
+--- !u!1 &6514766490998521859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2612541725876116789}
+  - component: {fileID: 5923407886800207072}
+  m_Layer: 0
+  m_Name: StartSplash
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2612541725876116789
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514766490998521859}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1409293258689518385}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5923407886800207072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6514766490998521859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3645fdd43ac3408fb2c899cd0dcc233e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScenesSwitches.StartSplash
+  firstSceneName: Scene 1
+  fadeOutDuration: 1
+  inputDelay: 0.5
+  dismissOnAnyButton: 1
+  fit: 0
+  backgroundColor: {r: 0, g: 0, b: 0, a: 1}
+  sortingOrder: 999
+  debugLogs: 0
+  image: {fileID: 21300000, guid: 0b196edc3a01142908dbefd658b39592, type: 3}
+  resourcePath: UI/StartSplash
+  usePlaceholderWhenMissing: 1
 --- !u!1 &7498440266372536708
 GameObject:
   m_ObjectHideFlags: 0

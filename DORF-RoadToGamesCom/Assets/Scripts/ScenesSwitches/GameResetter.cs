@@ -44,6 +44,12 @@ namespace ScenesSwitches
             if (_resetRunning)
                 return;
 
+            // Nobody has started a game yet: the start image is the attract screen already, and a
+            // reset behind it would make the next press restart the game and skip the start screen
+            // in one go. Leave it up and let the dispatcher fire again after the next timeout.
+            if (StartSplash.IsShowing)
+                return;
+
             _resetRunning = true;
 
             if (debugLogs)
