@@ -2,117 +2,137 @@
   "contacts": [
     {
       "contact": "Mama",
+      "contactEn": "Mom",
       "messages": [
         {
           "text": "Hey, du hast mir doch vorgeschlagen, mich finanziell zu unterstützen in Sachen Kleidung, ich bräuchte dringend neue Schuhe.",
+          "textEn": "Hey, you were the one who offered to help me out with money for clothes, I really need new shoes.",
           "timestamp": "2026-04-11T18:00",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Kann sein.. weiß nicht genau",
+          "textEn": "Could be.. not sure",
           "timestamp": "2026-04-11T19:12",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Bei mir ist grad finanziell nicht so dolle",
+          "textEn": "Money's not great on my end right now",
           "timestamp": "2026-04-11T20:24",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Erst einmal wünsche ich dir eine schöne Zeit\nNur das beste Wetter und viel Spaß\nDann lass uns nächste Woche telefonieren",
+          "textEn": "First of all I hope you have a lovely time\nNothing but the best weather and lots of fun\nThen let's talk on the phone next week",
           "timestamp": "2026-04-11T21:36",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Bestimmt finden wir einen Weg \nGute Fahrt",
+          "textEn": "I'm sure we'll find a way \nSafe travels",
           "timestamp": "2026-04-11T22:48",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Liebe Grüße Marianne",
+          "textEn": "Love, Marianne",
           "timestamp": "2026-04-11T22:49",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Hey, hast gar nicht angerufen.",
+          "textEn": "Hey, you never called.",
           "timestamp": "2026-04-18T01:12",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Wo istn das Kindergeld?",
+          "textEn": "So where's the child benefit?",
           "timestamp": "2026-04-19T02:24",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Wegen der Schuhe...",
+          "textEn": "About the shoes...",
           "timestamp": "2026-04-20T03:36",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Heute rückläufiger Merkur",
+          "textEn": "Mercury is in retrograde today",
           "timestamp": "2026-04-21T04:48",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Ich hab heute herausgefunden, dass es gar keinen dritten Weltkrieg geben",
+          "textEn": "I found out today that there isn't even going to be a third world",
           "timestamp": "2026-04-22T06:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Ich hab wahnsinnig Durchfall, mir ist schwindelig, ich meld mich die Tage mal.",
+          "textEn": "I've got awful diarrhoea, I'm dizzy, I'll get in touch one of these days.",
           "timestamp": "2026-04-23T07:12",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Wusstest du, dass wenn man „Health“ auf eine Wasserflasche schreibt, dass es dann sogar Krebs heilen kann?",
+          "textEn": "Did you know that if you write “Health” on a water bottle it can even cure cancer?",
           "timestamp": "2026-04-24T08:24",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Hi Marlene",
+          "textEn": "Hi Marlene",
           "timestamp": "2026-04-25T09:36",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Na?",
+          "textEn": "So?",
           "timestamp": "2026-04-26T10:48",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Wie geht's dir?",
+          "textEn": "How are you doing?",
           "timestamp": "2026-04-27T12:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Was machst du so schönes gerade?",
+          "textEn": "What are you up to right now?",
           "timestamp": "2026-04-28T13:12",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Grad bin ich arbeiten",
+          "textEn": "I'm at work right now",
           "timestamp": "2026-04-29T14:24",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Sprachnachricht",
+          "textEn": "Voice message",
           "timestamp": "2026-04-30T15:36",
           "sender": "",
           "status": "read",
@@ -120,12 +140,14 @@
         },
         {
           "text": "Bist du schon dazu gekommen mir ds\nkindergeld von diesem Monat zu \nüberweisen?",
+          "textEn": "Did you get round to transferring me ths\nchild benefit for this month\nyet?",
           "timestamp": "2026-05-01T16:48",
           "sender": "me",
           "status": "delivered"
         },
         {
           "text": "Mama?",
+          "textEn": "Mom?",
           "timestamp": "2026-05-05T18:00",
           "sender": "me",
           "status": "sent"
@@ -134,21 +156,25 @@
     },
     {
       "contact": "Cory Düsel",
+      "contactEn": "Cory Düsel",
       "messages": [
         {
           "text": "Hallo Marlene, den Standort kannst du aus der Mail entnehmen. Ich will nur sichergehen, dass alles klappt. Dieses Event ist wichtig für den Verlag. Die Konferenz beginnt um 11 Uhr, bitte sei pünktlich.",
+          "textEn": "Hello Marlene, you can find the location in the email. I just want to be sure everything works out. This event matters to the publishing house. The conference starts at 11, please be on time.",
           "timestamp": "2026-04-30T18:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Ich werde da sein",
+          "textEn": "I'll be there",
           "timestamp": "2026-05-01T18:00",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Ruf mich an. Bin bis 15 Uhr im Call. Wir müssen reden!! Wenn es dafür keine gute Erklärung gibt bist du fristlos gekündigt",
+          "textEn": "Call me. I'm on a call until 3. We need to talk!! If there is no good explanation for this you are dismissed without notice",
           "timestamp": "2026-05-05T18:00",
           "sender": "",
           "status": "unread"
@@ -157,39 +183,46 @@
     },
     {
       "contact": "Rabea (Besti) <3",
+      "contactEn": "Rabea (Bestie) <3",
       "messages": [
         {
           "text": "Happy Birthday <3",
+          "textEn": "Happy Birthday <3",
           "timestamp": "2026-05-02T14:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Happy Birthday <3",
+          "textEn": "Happy Birthday <3",
           "timestamp": "2026-05-02T14:48",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Happy Birthday",
+          "textEn": "Happy Birthday",
           "timestamp": "2026-05-02T15:36",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "happy birthdaay",
+          "textEn": "happy birthdaay",
           "timestamp": "2026-05-02T16:24",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Happy Birthday! :))",
+          "textEn": "Happy Birthday! :))",
           "timestamp": "2026-05-02T17:12",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Happy Birthday!!",
+          "textEn": "Happy Birthday!!",
           "timestamp": "2026-05-02T18:00",
           "sender": "",
           "status": "read"
@@ -198,27 +231,32 @@
     },
     {
       "contact": "Guy (Turtelwerk)",
+      "contactEn": "Guy (Turtelwerk)",
       "messages": [
         {
           "text": "Hey, hier ist Guy von Turtelwerk. Hast du Lust mal aufn Kaffee?",
+          "textEn": "Hey, this is Guy from Turtelwerk. Fancy grabbing a coffee sometime?",
           "timestamp": "2026-04-27T18:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Wollen wir uns heute um 3 im Engel treffen? :)",
+          "textEn": "Want to meet at the Engel today at 3? :)",
           "timestamp": "2026-04-29T10:00",
           "sender": "me",
           "status": "read"
         },
         {
           "text": "Gerne",
+          "textEn": "Sounds good",
           "timestamp": "2026-05-01T02:00",
           "sender": "",
           "status": "read"
         },
         {
           "text": "Bis gleich dann :)",
+          "textEn": "See you soon then :)",
           "timestamp": "2026-05-02T18:00",
           "sender": "",
           "status": "read"

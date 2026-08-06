@@ -37,6 +37,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: xxx
+  DialogLineEn: 
   TextPreview: xxx
   AudioClip: {fileID: 8300000, guid: ded349968e3f946ed9d894a6e7a2c9d9, type: 3}
   ClipVolume: 0.5
@@ -68,6 +69,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: xxx
+  DialogLineEn: 
   TextPreview: xxx
   AudioClip: {fileID: 8300000, guid: f0725d6c0c1ec47f9b5459f5d8aa2802, type: 3}
   ClipVolume: 0.5

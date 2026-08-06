@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using DefaultNamespace;
+using Nodes;
 using Runtime.Scripts.Core;
 using Runtime.Scripts.Interactables;
 using UnityEngine;
@@ -95,6 +96,7 @@ namespace UI
             }
 
             ApplyStatusBar();
+            ApplyChromeLanguage();
             BindChatList();
 
             // After a hot reload, restore the conversation if one was open.
@@ -128,6 +130,10 @@ namespace UI
         {
             SetVisible(true);
             if (raycaster != null) raycaster.isDialogRunning = true;
+            // BindRoot ran in Start, while the start screen was still up and the visitor had not
+            // picked a language yet. Opening the phone is always later than that, so the language
+            // is settled by now and both the chrome and the bound rows are redone here.
+            ApplyChromeLanguage();
             // ListView in a hidden panel has a 0x0 viewport and won't
             // create rows. Refresh once visible so cards appear.
             chatListView?.RefreshItems();
@@ -143,6 +149,31 @@ namespace UI
         {
             if (timeLabelEl != null) timeLabelEl.text = time;
             if (cellularLabelEl != null) cellularLabelEl.text = cellularLabel;
+        }
+
+        /// <summary>
+        /// The labels the phone owns itself rather than reading from Contacts.json — headline,
+        /// search placeholder and nav bar. They sit in the UXML in German, so both languages are
+        /// written out here: the German branch has to restore them when a visitor picks German
+        /// after one who picked English.
+        /// </summary>
+        private void ApplyChromeLanguage()
+        {
+            if (root == null) return;
+
+            var english = IsEnglish;
+
+            SetLabel("chatsHeadline", "Chats");
+            SetLabel("searchPlaceholder", english ? "Search" : "Suche");
+            SetLabel("navCallsLabel", english ? "CALLS" : "ANRUFE");
+            SetLabel("navChatsLabel", "CHATS");
+            SetLabel("navProfileLabel", english ? "PROFILE" : "PROFIL");
+        }
+
+        private void SetLabel(string elementName, string value)
+        {
+            var label = root.Q<Label>(elementName);
+            if (label != null) label.text = value;
         }
 
         private void SetVisible(bool visible)
@@ -215,7 +246,7 @@ namespace UI
                 var c = contacts[index];
                 refs.CurrentContact = c;
 
-                refs.Name.text = c.contact;
+                refs.Name.text = c.LocalizedName;
 
                 var (preview, timeStr) = LastMessage(c);
                 refs.Preview.text = preview;
@@ -313,7 +344,7 @@ namespace UI
             var timeStr = string.Empty;
             if (DateTime.TryParse(last.timestamp, out var dt))
                 timeStr = FormatDayHeader(dt);
-            var preview = last.text?.Replace("\n", " ").Trim() ?? string.Empty;
+            var preview = last.LocalizedText?.Replace("\n", " ").Trim() ?? string.Empty;
             return (preview, timeStr);
         }
 
@@ -324,7 +355,7 @@ namespace UI
             if (chatsPage != null) chatsPage.style.display = DisplayStyle.None;
             if (chatPage != null) chatPage.style.display = DisplayStyle.Flex;
             if (navBar != null) navBar.style.display = DisplayStyle.None;
-            if (chatViewName != null) chatViewName.text = c.contact;
+            if (chatViewName != null) chatViewName.text = c.LocalizedName;
             BindMessagesList();
         }
 
@@ -393,7 +424,7 @@ namespace UI
                 var msg = messages[index];
                 var isVoice = msg.type == "voice";
                 refs.Text.style.display = isVoice ? DisplayStyle.None : DisplayStyle.Flex;
-                refs.Text.text = isVoice ? string.Empty : (msg.text?.Trim() ?? string.Empty);
+                refs.Text.text = isVoice ? string.Empty : (msg.LocalizedText?.Trim() ?? string.Empty);
                 refs.CurrentVoiceKey = isVoice ? msg.timestamp : null;
                 if (refs.VoiceMemo != null)
                 {
@@ -499,10 +530,27 @@ namespace UI
             "Juli", "August", "September", "Oktober", "November", "Dezember",
         };
 
+        private static readonly string[] EnglishMonths =
+        {
+            "January", "February", "March", "April", "May", "June",
+            "July", "August", "September", "October", "November", "December",
+        };
+
+        private static bool IsEnglish => Node.CurrentLanguage == Language.En;
+
         private static string FormatDayHeader(DateTime when)
         {
             var msg = when.Date;
             var today = DateTime.Now.Date;
+
+            if (IsEnglish)
+            {
+                if (msg == today) return "Today";
+                if (msg == today.AddDays(-1)) return "Yesterday";
+                // Day and month swap around in English, and the day loses its ordinal dot.
+                return $"{EnglishMonths[msg.Month - 1]} {msg.Day}, {msg.Year}";
+            }
+
             if (msg == today) return "Heute";
             if (msg == today.AddDays(-1)) return "Gestern";
             return $"{msg.Day:D2}. {GermanMonths[msg.Month - 1]} {msg.Year}";
@@ -518,17 +566,33 @@ namespace UI
         private class Contact
         {
             public string contact;
+            public string contactEn;
             public List<ContactMessage> messages;
+
+            /// <summary>
+            /// Falls back to the German name while no translation is in the JSON, same as the
+            /// dialog lines do — a nameless chat card must never reach the kiosk.
+            /// </summary>
+            public string LocalizedName =>
+                Node.CurrentLanguage == Language.En && !string.IsNullOrWhiteSpace(contactEn)
+                    ? contactEn
+                    : contact;
         }
 
         [Serializable]
         private class ContactMessage
         {
             public string text;
+            public string textEn;
             public string timestamp;
             public string sender; // "me" → right-aligned blue bubble; anything else → received
             public string status; // sent: "sent" | "delivered" | "read". received: "read" | "unread".
             public string type;   // "" (text) | "voice"
+
+            public string LocalizedText =>
+                Node.CurrentLanguage == Language.En && !string.IsNullOrWhiteSpace(textEn)
+                    ? textEn
+                    : text;
         }
     }
 }

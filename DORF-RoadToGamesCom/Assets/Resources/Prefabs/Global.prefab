@@ -1959,7 +1959,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2416748962983224745
 Transform:
   m_ObjectHideFlags: 0
@@ -3640,7 +3640,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1631956721632107451, guid: e0b4eddf2360e4685afe2089038a143e, type: 3}
       propertyPath: secondsUntilGameReset
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 1631956721632107451, guid: e0b4eddf2360e4685afe2089038a143e, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size

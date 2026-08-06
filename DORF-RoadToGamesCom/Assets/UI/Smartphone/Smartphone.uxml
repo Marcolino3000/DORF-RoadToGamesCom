@@ -44,15 +44,15 @@
                 <ui:VisualElement name="navBar" class="nav-bar">
                     <ui:VisualElement name="navCalls" class="nav-bar__item">
                         <ui:VisualElement name="callsIcon" picking-mode="Ignore" style="width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/UI/Smartphone/PhoneIcon.png?fileID=2800000&amp;guid=b523a4f706cc465cbb70a25e9f5c8d65&amp;type=3#PhoneIcon&quot;); -unity-background-scale-mode: scale-to-fit;" />
-                        <ui:Label text="ANRUFE" class="nav-bar__label" />
+                        <ui:Label text="ANRUFE" name="navCallsLabel" class="nav-bar__label" />
                     </ui:VisualElement>
                     <ui:VisualElement name="navChats" class="nav-bar__item">
                         <ui:VisualElement name="chatsIcon" picking-mode="Ignore" style="width: 35px; height: 35px; background-image: url(&quot;project://database/Assets/UI/Smartphone/ChatIcon.png?fileID=2800000&amp;guid=358cc703f06c4554bdeef79ea50b8381&amp;type=3#ChatIcon&quot;); -unity-background-scale-mode: scale-to-fit;" />
-                        <ui:Label text="CHATS" class="nav-bar__label" />
+                        <ui:Label text="CHATS" name="navChatsLabel" class="nav-bar__label" />
                     </ui:VisualElement>
                     <ui:VisualElement name="navProfile" class="nav-bar__item">
                         <ui:VisualElement name="profileIcon" class="nav-bar__profile-circle" picking-mode="Ignore" />
-                        <ui:Label text="PROFIL" class="nav-bar__label" />
+                        <ui:Label text="PROFIL" name="navProfileLabel" class="nav-bar__label" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>
