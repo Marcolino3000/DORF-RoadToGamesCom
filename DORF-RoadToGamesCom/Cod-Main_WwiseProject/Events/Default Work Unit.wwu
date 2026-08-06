@@ -243,6 +243,13 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}"/>
+				<Event Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}"/>
+				<Event Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}"/>
+				<Event Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}"/>
+				<Event Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}"/>
+				<Event Name="MUS_Menu_Start" ID="{61203A67-85B1-4FEB-A2E1-DB821E4A15D6}"/>
+				<Event Name="MUS_DorffestJingle_Start" ID="{5A5F0D16-A39F-4377-8EE4-914C9F721303}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
