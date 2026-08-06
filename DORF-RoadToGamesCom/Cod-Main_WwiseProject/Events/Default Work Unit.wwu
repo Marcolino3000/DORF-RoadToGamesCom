@@ -17,7 +17,6 @@
 						</Action>
 					</ChildrenList>
 				</Event>
-				<Event Name="Scene3_Start" ID="{B9D63BF1-9006-44D3-8EAC-7C38C0D66E41}"/>
 				<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
 					<ChildrenList>
 						<Action Name="" ID="{2462F1D7-9C55-4A4D-93EC-E6D03E5E4D0C}" ShortID="761316141">
