@@ -1,9 +1,9 @@
-using System;
 using System.Collections;
+using System.Collections.Generic;
+using Nodes;
 using Runtime.Scripts.PlayerInput;
+using TMPro;
 using UnityEngine;
-using UnityEngine.InputSystem;
-using UnityEngine.InputSystem.Utilities;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
@@ -11,9 +11,13 @@ namespace ScenesSwitches
 {
     /// <summary>
     /// Full screen image that covers the game whenever the first scene starts — on launch and on
-    /// every restart GameResetter triggers — and fades out to reveal the scene as soon as a visitor
-    /// clicks. Lives on the Global prefab, which the Bootstrapper spawns before the first scene
+    /// every restart GameResetter triggers — and fades out to reveal the scene once a visitor picks
+    /// a language. Lives on the Global prefab, which the Bootstrapper spawns before the first scene
     /// loads, so the image is already up on frame one.
+    ///
+    /// The language buttons are the only way past this screen: picking one is what sets
+    /// <see cref="Node.CurrentLanguage"/>, and that assignment is what builds the dialog paragraphs
+    /// for the play-through. No visitor can end up in a language they did not choose.
     ///
     /// The canvas is built in code: only the image itself has to be delivered, either dropped onto
     /// the Image field or into Assets/Resources under <see cref="resourcePath"/>.
@@ -33,10 +37,8 @@ namespace ScenesSwitches
         [Header("Settings")]
         [SerializeField] private string firstSceneName = "Scene 1";
         [SerializeField] private float fadeOutDuration = 1f;
-        [Tooltip("Presses within this many seconds of the image appearing are ignored, so the click that restarted the game cannot skip the start screen along with it.")]
+        [Tooltip("The buttons stay dead for this long after the image appears, so the click that restarted the game cannot pick a language along with it.")]
         [SerializeField] private float inputDelay = 0.5f;
-        [Tooltip("On: any key, mouse or controller button starts the game. Off: only mouse buttons do.")]
-        [SerializeField] private bool dismissOnAnyButton = true;
         [SerializeField] private ImageFit fit = ImageFit.Cover;
         [Tooltip("Fills whatever the image does not cover — the running scene must never show through.")]
         [SerializeField] private Color backgroundColor = Color.black;
@@ -52,6 +54,21 @@ namespace ScenesSwitches
         [Tooltip("Until the artwork is delivered, show a generated placeholder so the flow can be tested. Off: no image found means no start screen at all.")]
         [SerializeField] private bool usePlaceholderWhenMissing = true;
 
+        [Header("Language")]
+        [SerializeField] private Language startingLanguage = Language.De;
+        [Tooltip("Leave empty to get a plain plate with the label written on it instead.")]
+        [SerializeField] private Sprite germanButtonImage;
+        [SerializeField] private Sprite englishButtonImage;
+        [SerializeField] private string germanLabel = "Deutsch";
+        [SerializeField] private string englishLabel = "English";
+        [SerializeField] private Vector2 buttonSize = new(320f, 120f);
+        [Tooltip("Gap between the two buttons, in pixels.")]
+        [SerializeField] private float buttonSpacing = 60f;
+        [Tooltip("Distance from the bottom edge of the screen, in pixels.")]
+        [SerializeField] private float buttonBottomMargin = 140f;
+        [SerializeField] private Color buttonColor = new(0.09f, 0.09f, 0.11f, 0.85f);
+        [SerializeField] private Color buttonTextColor = Color.white;
+
         /// <summary>
         /// True while the start image covers the screen. GameResetter reads this to stay out of the
         /// way: the start screen is the attract screen already, and the click that starts the game
@@ -61,12 +78,18 @@ namespace ScenesSwitches
 
         private GameObject overlay;
         private CanvasGroup canvasGroup;
-        private IDisposable inputListener;
         private Coroutine armRoutine;
         private Coroutine fadeRoutine;
 
+        private readonly List<Button> languageButtons = new();
+
         private void Awake()
         {
+            // Runs before the first scene loads, so the game has a defined language from frame one
+            // even on the paths where nobody ever picks one — the start screen skipped in the
+            // editor, or no start image to show it on. A button press overrides it.
+            Node.CurrentLanguage = startingLanguage;
+
             BuildOverlay();
 
             SceneManager.sceneLoaded += HandleSceneLoaded;
@@ -87,8 +110,6 @@ namespace ScenesSwitches
         private void OnDestroy()
         {
             SceneManager.sceneLoaded -= HandleSceneLoaded;
-
-            StopListening();
 
             // Never leave GameResetter thinking a start image it can no longer see is still up.
             IsShowing = false;
@@ -125,10 +146,10 @@ namespace ScenesSwitches
             if (armRoutine != null)
                 StopCoroutine(armRoutine);
 
-            armRoutine = StartCoroutine(ArmInputAfterDelay());
+            armRoutine = StartCoroutine(ArmButtonsAfterDelay());
 
             if (debugLogs)
-                Debug.Log("StartSplash: start image is up");
+                Debug.Log("StartSplash: start image is up, waiting for a language");
         }
 
         [ContextMenu("Hide")]
@@ -144,7 +165,7 @@ namespace ScenesSwitches
 
             IsShowing = false;
 
-            StopListening();
+            SetButtonsInteractable(false);
 
             if (armRoutine != null)
             {
@@ -158,27 +179,40 @@ namespace ScenesSwitches
             fadeRoutine = StartCoroutine(FadeOutRoutine(instant ? 0f : fadeOutDuration));
         }
 
-        private IEnumerator ArmInputAfterDelay()
+        private IEnumerator ArmButtonsAfterDelay()
         {
+            SetButtonsInteractable(false);
+
             if (inputDelay > 0f)
                 yield return new WaitForSecondsRealtime(inputDelay);
 
+            SetButtonsInteractable(true);
+
             armRoutine = null;
-
-            inputListener?.Dispose();
-
-            // Sees every key, mouse button and gamepad button on any connected device, no matter
-            // which action map is active. HandleButtonPress narrows that down again if needed.
-            inputListener = InputSystem.onAnyButtonPress.Call(HandleButtonPress);
         }
 
-        private void HandleButtonPress(InputControl control)
+        private void SetButtonsInteractable(bool interactable)
         {
-            if (!dismissOnAnyButton && control.device is not Mouse)
+            foreach (var button in languageButtons)
+            {
+                if (button != null)
+                    button.interactable = interactable;
+            }
+        }
+
+        private void SelectLanguage(Language language)
+        {
+            // The fade has already started: the visitor got their language, a second press must not
+            // change it out from under the play-through that is starting.
+            if (!IsShowing)
                 return;
 
+            // Assigning is what builds the dialog paragraphs for this run, so it happens on every
+            // start — also when the language matches what the previous visitor picked.
+            Node.CurrentLanguage = language;
+
             if (debugLogs)
-                Debug.Log($"StartSplash: starting the game after press on {control.path}");
+                Debug.Log($"StartSplash: starting the game in {language}");
 
             Hide(instant: false);
         }
@@ -206,12 +240,6 @@ namespace ScenesSwitches
 
             if (debugLogs)
                 Debug.Log("StartSplash: start image is gone, scene is playable");
-        }
-
-        private void StopListening()
-        {
-            inputListener?.Dispose();
-            inputListener = null;
         }
 
         private void BuildOverlay()
@@ -252,6 +280,77 @@ namespace ScenesSwitches
                     : AspectRatioFitter.AspectMode.FitInParent;
                 fitter.aspectRatio = sprite.rect.width / sprite.rect.height;
             }
+
+            // Added last so they sit on top of the artwork.
+            BuildLanguageButtons(overlay.transform);
+        }
+
+        private void BuildLanguageButtons(Transform parent)
+        {
+            languageButtons.Clear();
+
+            // Offsets are in half-widths from the centre, so the pair stays centred whatever the
+            // button size and spacing are set to.
+            languageButtons.Add(BuildLanguageButton(parent, "GermanButton", germanButtonImage, germanLabel, -0.5f, Language.De));
+            languageButtons.Add(BuildLanguageButton(parent, "EnglishButton", englishButtonImage, englishLabel, 0.5f, Language.En));
+
+            SetButtonsInteractable(false);
+        }
+
+        private Button BuildLanguageButton(Transform parent, string name, Sprite sprite, string label, float side, Language language)
+        {
+            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
+
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(parent, false);
+            rect.anchorMin = new Vector2(0.5f, 0f);
+            rect.anchorMax = new Vector2(0.5f, 0f);
+            rect.pivot = new Vector2(0.5f, 0f);
+            rect.sizeDelta = buttonSize;
+            rect.anchoredPosition = new Vector2(side * (buttonSize.x + buttonSpacing), buttonBottomMargin);
+
+            var image = go.GetComponent<Image>();
+
+            if (sprite != null)
+            {
+                image.sprite = sprite;
+            }
+            else
+            {
+                // No artwork yet: a plain plate with the language written on it, so the screen can
+                // be walked through before the flags are delivered.
+                image.color = buttonColor;
+                BuildButtonLabel(rect, label);
+            }
+
+            var button = go.GetComponent<Button>();
+            button.targetGraphic = image;
+            button.onClick.AddListener(() => SelectLanguage(language));
+
+            return button;
+        }
+
+        private void BuildButtonLabel(Transform parent, string label)
+        {
+            var go = new GameObject("Label", typeof(RectTransform));
+
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(parent, false);
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            var text = go.AddComponent<TextMeshProUGUI>();
+            text.text = label;
+            text.color = buttonTextColor;
+            text.alignment = TextAlignmentOptions.Center;
+            text.enableAutoSizing = true;
+            text.fontSizeMin = 12f;
+            text.fontSizeMax = 64f;
+
+            // The button underneath has to get the click, not the label on top of it.
+            text.raycastTarget = false;
         }
 
         private static Image CreateStretchedImage(string name, Transform parent)

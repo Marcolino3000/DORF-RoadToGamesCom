@@ -24,7 +24,7 @@
       "dependencies": {
         "com.unity.textmeshpro": "3.0.6"
       },
-      "hash": "60e88d27c3d90a03083b0652cf97f6b01a572ea9"
+      "hash": "590bb5c90889a7d143f7ca151b43ad33ccff7014"
     },
     "com.cod.interactionbuilder": {
       "version": "https://github.com/Marcolino3000/InteractionBuilder-Package.git",

@@ -2043,7 +2043,6 @@ MonoBehaviour:
   firstSceneName: Scene 1
   fadeOutDuration: 1
   inputDelay: 0.5
-  dismissOnAnyButton: 1
   fit: 0
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   sortingOrder: 999
@@ -2051,6 +2050,16 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 0b196edc3a01142908dbefd658b39592, type: 3}
   resourcePath: UI/StartSplash
   usePlaceholderWhenMissing: 1
+  startingLanguage: 1
+  germanButtonImage: {fileID: 0}
+  englishButtonImage: {fileID: 0}
+  germanLabel: Deutsch
+  englishLabel: English
+  buttonSize: {x: 320, y: 120}
+  buttonSpacing: 60
+  buttonBottomMargin: 140
+  buttonColor: {r: 0.09, g: 0.09, b: 0.11, a: 0.85}
+  buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &7498440266372536708
 GameObject:
   m_ObjectHideFlags: 0
