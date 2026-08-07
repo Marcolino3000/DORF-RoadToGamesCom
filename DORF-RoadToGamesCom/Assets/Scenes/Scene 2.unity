@@ -18319,6 +18319,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 416871202}
+  - component: {fileID: 416871203}
   m_Layer: 0
   m_Name: "B\xE4ume und B\xFCsche"
   m_TagString: Untagged
@@ -18358,6 +18359,21 @@ Transform:
   - {fileID: 293567376}
   m_Father: {fileID: 1949900058}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416871203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416871201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 51e370f80d7a4a61a8229e8ac005c28e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::CutoutOccluder
+  includeChildren: 1
+  occluderMaterial: {fileID: 2100000, guid: c15c8b985c7d47abadbb532ff632b009, type: 2}
+  switchedRenderers: 0
 --- !u!4 &416970003 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3488428349942084929, guid: e1160dd7f84584da8b150244f91fcfa9, type: 3}
