@@ -2,7 +2,7 @@
   "contacts": [
     {
       "contact": "Mama",
-      "contactEn": "Mom",
+      "contactEn": "Mum",
       "messages": [
         {
           "text": "Hey, du hast mir doch vorgeschlagen, mich finanziell zu unterstützen in Sachen Kleidung, ich bräuchte dringend neue Schuhe.",
@@ -147,7 +147,7 @@
         },
         {
           "text": "Mama?",
-          "textEn": "Mom?",
+          "textEn": "Mum?",
           "timestamp": "2026-05-05T18:00",
           "sender": "me",
           "status": "sent"

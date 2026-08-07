@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Was ging denn bei dir ab in letzter Zeit?
+  DialogLineEn: So what have you been up to lately?
   TextPreview: Was ging denn be...
   AudioClip: {fileID: 8300000, guid: d17f814beb7e44b5b89f9ec4d57b1060, type: 3}
   ClipVolume: 1

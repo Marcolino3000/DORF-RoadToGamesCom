@@ -38,6 +38,7 @@ MonoBehaviour:
   DialogLine: "\u201EMarianne H\xE4berle! Liest du ungefragt mein altes Tagebuch!
     \nIch hab immer wieder Seiten rausgerissen und wollte nochmal neu anfangen zu
     schreiben. Irgendwann hab ich\u2019s dann gelassen.\u201C"
+  DialogLineEn: "\u201cMarianne H\u00e4berle! Are you reading my old diary without asking! \nI kept tearing pages out and wanting to start writing again. At some point I just gave up.\u201d"
   TextPreview: "\u201EMarianne H\xE4berl..."
   AudioClip: {fileID: 8300000, guid: 0f1ba8c5d3874495fbc5b6b973d25f73, type: 3}
   ClipVolume: 1

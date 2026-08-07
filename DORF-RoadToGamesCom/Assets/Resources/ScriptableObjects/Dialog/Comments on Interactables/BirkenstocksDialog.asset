@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 0}
   DialogLine: Die Birkenstocks verfolgen mich.
+  DialogLineEn: The Birkenstocks are following me.
   TextPreview: Die Birkenstocks...
   AudioClip: {fileID: 8300000, guid: 89635da44bb1944c1817652e344cebff, type: 3}
   ClipVolume: 1

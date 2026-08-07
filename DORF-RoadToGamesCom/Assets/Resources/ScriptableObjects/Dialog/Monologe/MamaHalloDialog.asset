@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Mama? Halloo?
+  DialogLineEn: Mum? Helloo?
   TextPreview: Mama? Halloo?
   AudioClip: {fileID: 8300000, guid: 1b16445b10f3e49d6887b92e324239dc, type: 3}
   ClipVolume: 1.5

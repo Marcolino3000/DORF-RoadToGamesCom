@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wann hast du das letzte Mal meine Mutter gesehen?
+  DialogLineEn: When did you last see my mother?
   TextPreview: Wann hast du meine Mutter gesehen?
   AudioClip: {fileID: 8300000, guid: 72ae9aea6a07d4ee2800fad4224a27ba, type: 3}
   ClipVolume: 1
@@ -50,6 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Hi Marlene, und, kommst du doch zur Hochzeit?
+  DialogLineEn: Hi Marlene, so, are you coming to the wedding after all?
   TextPreview: Hi Marlene, und,...
   AudioClip: {fileID: 8300000, guid: f5b889b4ff5a0456c8841865dcc27d65, type: 3}
   ClipVolume: 1
@@ -83,6 +85,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "N\xF6."
+  DialogLineEn: Nope.
   TextPreview: "N\xF6."
   AudioClip: {fileID: 8300000, guid: a8f7d3f152cf94c05ac19a257b373a2e, type: 3}
   ClipVolume: 1
@@ -116,6 +119,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Fast: Bodo Biramoschd, ist doch ne lokale Legende!! Wei\xDFt du noch
     damals beim Bergfest?"
+  DialogLineEn: "Close: Bodo Biramoschd, he's a local legend!! Remember back at the Bergfest?"
   TextPreview: 'Fast: Bodo Biram...'
   AudioClip: {fileID: 8300000, guid: f46b1092f826c4de38b068c75ff5931b, type: 3}
   ClipVolume: 1
@@ -147,6 +151,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "\xC4hm, hi."
+  DialogLineEn: Um, hi.
   TextPreview: "\xC4hm, hi."
   AudioClip: {fileID: 8300000, guid: 895bb3c16ad7b4039b971aa58b8c216a, type: 3}
   ClipVolume: 1
@@ -179,6 +184,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Danke aber nein danke.
+  DialogLineEn: Thanks but no thanks.
   TextPreview: Danke aber nein danke.
   AudioClip: {fileID: 8300000, guid: e483cbcba5bc54c8ba6f1176c3bb22e8, type: 3}
   ClipVolume: 1
@@ -211,6 +217,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Abgesehen von der Beerdigung ist es bisschen her. Ich war mitm Andi
     auf der Pirsch, da war sie im Wald unterwegs.
+  DialogLineEn: Apart from the funeral it's been a while. I was out stalking with Andi, she was walking in the woods.
   TextPreview: Abgesehen von de...
   AudioClip: {fileID: 8300000, guid: 7d0124393b1a84d8489901569d0a7320, type: 3}
   ClipVolume: 1
@@ -242,6 +249,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "\xC4h.. ne."
+  DialogLineEn: Uh.. no.
   TextPreview: "\xC4h.. ne."
   AudioClip: {fileID: 8300000, guid: cc36ed86678804282ae810359169c113, type: 3}
   ClipVolume: 1
@@ -273,6 +281,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wohin war sie unterwegs?
+  DialogLineEn: Where was she heading?
   TextPreview: Und wohin war si...
   AudioClip: {fileID: 8300000, guid: 6b05c90a20c344509ab5e413b1d820fd, type: 3}
   ClipVolume: 1
@@ -337,6 +346,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Wei\xDF nicht, ich spionier hier ja niemandem nach. Soll ich die Betina
     von dir gr\xFC\xDFen?"
+  DialogLineEn: Don't know, I don't go spying on anyone round here. Shall I say hello to Betina from you?
   TextPreview: "Wei\xDF nicht, ich ..."
   AudioClip: {fileID: 8300000, guid: 4218284e66ef54deab33930d8d77773e, type: 3}
   ClipVolume: 1
@@ -368,6 +378,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Bruno Bixawurschd?
+  DialogLineEn: Bruno Bixawurschd?
   TextPreview: Bruno Bixawurschd?
   AudioClip: {fileID: 8300000, guid: cb91f1ea45ba04123819c75f9aa2e40f, type: 3}
   ClipVolume: 1
@@ -400,6 +411,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Dein Verlust w\xFCrde ich sagen."
+  DialogLineEn: Your loss, I'd say.
   TextPreview: "Dein Verlust w\xFCr..."
   AudioClip: {fileID: 8300000, guid: 5990d7516ab3845eea1ddb52d32fd9ad, type: 3}
   ClipVolume: 1
@@ -431,6 +443,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Aaalso eigentlich ist es ja geheim, aber dir konnt ich noch nie was
     abschlagen \u2026 (singt) \u2026erkennst du ihn?"
+  DialogLineEn: "Weeell, it's actually a secret, but I could never refuse you anything \u2026 (sings) \u2026do you recognise him?"
   TextPreview: Aaalso eigentlic...
   AudioClip: {fileID: 8300000, guid: 2c29304a52e87400d85236a9319b1aac, type: 3}
   ClipVolume: 1
@@ -462,6 +475,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Welcher Schlager-Star kommt nochmal zur Hochzeit?
+  DialogLineEn: Which Schlager star is coming to the wedding again?
   TextPreview: Wer kommt zur Hochzeit?
   AudioClip: {fileID: 8300000, guid: 0240c6d3566714be582f2bbbd227289c, type: 3}
   ClipVolume: 1

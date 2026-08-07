@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: "Wie wir Schwaben sagen: das will ich nicht abstauben m\xFCssen."
+  DialogLineEn: "As we Swabians say: I wouldn't want to have to dust that."
   TextPreview: Wie wir Schwaben...
   AudioClip: {fileID: 8300000, guid: 2f1e66d177c4e44dbbc4363f6db828f7, type: 3}
   ClipVolume: 1

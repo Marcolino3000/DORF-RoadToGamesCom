@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 0}
   DialogLine: sauerteig BASIC Activity
+  DialogLineEn: sourdough BASIC Activity
   TextPreview: sauerteig BASIC ...
   AudioClip: {fileID: 0}
   ClipVolume: 1

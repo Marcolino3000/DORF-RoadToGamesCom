@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Positive Affirmationen zahlen auch keine Miete.
+  DialogLineEn: Positive affirmations don't pay rent either.
   TextPreview: Positive Affirma...
   AudioClip: {fileID: 8300000, guid: f00baf1255cf84b3585edb9f8cbf4fad, type: 3}
   ClipVolume: 1

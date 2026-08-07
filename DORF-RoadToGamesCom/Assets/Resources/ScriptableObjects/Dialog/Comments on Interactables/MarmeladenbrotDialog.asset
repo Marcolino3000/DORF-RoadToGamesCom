@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Das riecht mindestens eine Woche alt.
+  DialogLineEn: That smells at least a week old.
   TextPreview: Das riecht mindestens eine Woche alt.
   AudioClip: {fileID: 8300000, guid: de68a698298c149609db0c1fff258001, type: 3}
   PauseAfter: 0.5

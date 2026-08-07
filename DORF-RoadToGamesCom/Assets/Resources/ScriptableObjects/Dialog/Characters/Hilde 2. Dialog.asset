@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "\xC4hm, mach ich."
+  DialogLineEn: Um, will do.
   TextPreview: "\xC4hm, mach ich."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -50,6 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Warst du nach Mamas Beerdigung nochmal im Haus?
+  DialogLineEn: Were you in the house again after Mum's funeral?
   TextPreview: Warst du nach Ma...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -82,6 +84,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ah d\u2019Marlene! Wie goht\u2019s m Sauerteig?"
+  DialogLineEn: Ah, Marlene! How's the sourdough doing?
   TextPreview: "Ah d\u2019Marlene! Wi..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -114,6 +117,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Holy Hilde?
+  DialogLineEn: Holy Hilde?
   TextPreview: Holy Hilde?
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -146,6 +150,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "K\xE4psele, des soll r au sei."
+  DialogLineEn: Clever girl, that's how he should be.
   TextPreview: "K\xE4psele, des sol..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -177,6 +182,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Wieder was dazugelernt.
+  DialogLineEn: Learned something new again.
   TextPreview: Wieder was dazug...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -209,6 +215,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ist\u2026 sauer?"
+  DialogLineEn: "Is\u2026 sour?"
   TextPreview: "Ist\u2026 sauer?"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -267,6 +274,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Noi, was soll i da au? Hab ja denkt dass du vorbeikommsch und mal nach
     de Pflanze guggsch.
+  DialogLineEn: No, what would I do there? I thought you'd come by and look after the plants.
   TextPreview: Noi, was soll i ...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -298,6 +306,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Gang a mole zum Friedhof wenns dr neilauft gell? I muss dann au wiedr\u2026"
+  DialogLineEn: "Go by the cemetery sometime if you get the chance, yeah? I have to be off again\u2026"
   TextPreview: Gang a mole zum ...
   AudioClip: {fileID: 0}
   ClipVolume: 1

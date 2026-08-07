@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Was zur...?
+  DialogLineEn: What the...?
   TextPreview: Was zur...?
   AudioClip: {fileID: 8300000, guid: 4733cac9be8904993a7902177138d8fd, type: 3}
   ClipVolume: 1

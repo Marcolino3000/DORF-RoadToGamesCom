@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: "Der Sessel sieht aus als w\xFCrde er mit mir leiden."
+  DialogLineEn: The armchair looks like it's suffering along with me.
   TextPreview: Der Sessel sieht...
   AudioClip: {fileID: 8300000, guid: 85f9a2d7b1a744d1db00112f6bee4c6b, type: 3}
   ClipVolume: 1

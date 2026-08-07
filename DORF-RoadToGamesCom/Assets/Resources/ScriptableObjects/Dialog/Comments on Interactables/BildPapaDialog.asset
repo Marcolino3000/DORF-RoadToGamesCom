@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 0}
   DialogLine: Ich hab schon fast vergessen wie er aussieht.
+  DialogLineEn: I'd almost forgotten what he looks like.
   TextPreview: Ich hab schon fa...
   AudioClip: {fileID: 8300000, guid: 200c6a9be1a924b1db2b51b6a4920dd2, type: 3}
   ClipVolume: 1
