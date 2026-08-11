@@ -2053,6 +2053,10 @@ MonoBehaviour:
   startingLanguage: 1
   germanButtonImage: {fileID: 0}
   englishButtonImage: {fileID: 0}
+  buttonFrame: {fileID: 21300000, guid: 3fa0bf35b0eab42a8bb02f87726c1f4e, type: 3}
+  buttonFrameGlow: {fileID: 21300000, guid: d0d9db7690b63424ba643976bcd7edff, type: 3}
+  labelFont: {fileID: 11400000, guid: b921d71bfd04f4e19b06d52ed0238157, type: 2}
+  labelFontSize: 64
   germanLabel: Deutsch
   englishLabel: English
   buttonSize: {x: 320, y: 120}
