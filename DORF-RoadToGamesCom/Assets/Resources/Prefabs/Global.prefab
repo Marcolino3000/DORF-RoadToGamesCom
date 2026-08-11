@@ -8495,11 +8495,11 @@ PrefabInstance:
       objectReference: {fileID: 2070886167436908142}
     - target: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: Activity
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: IsUnlocked
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       propertyPath: treeRunner
@@ -9038,7 +9038,7 @@ PrefabInstance:
       objectReference: {fileID: 9197481963319205126, guid: d1bd1b51aedbb4725bbabad192f9603c, type: 3}
     - target: {fileID: 6450482133553684738, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6525337069195439546, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_SizeDelta.y

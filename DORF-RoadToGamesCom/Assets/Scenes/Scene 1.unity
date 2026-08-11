@@ -1535,6 +1535,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1552280895}
   - component: {fileID: 1552280894}
+  - component: {fileID: 1552280896}
   m_Layer: 0
   m_Name: SceneTransitionManager
   m_TagString: Untagged
@@ -1562,6 +1563,18 @@ MonoBehaviour:
   marianneSprachiReaction: {fileID: 11400000, guid: 42b8291c75a954e01bded361270bcc98, type: 2}
   sceneSwapManager: {fileID: 0}
   landscape: {fileID: 163643663}
+--- !u!114 &1552280896
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552280893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69e1810a6fc44d4ea44994c4bf484bcd, type: 3}
+  m_Name:
+  m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.DialogClickSkipDisabler
 --- !u!4 &1552280895
 Transform:
   m_ObjectHideFlags: 0

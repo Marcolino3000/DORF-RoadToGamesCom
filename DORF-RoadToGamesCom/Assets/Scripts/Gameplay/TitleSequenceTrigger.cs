@@ -24,7 +24,7 @@ namespace DefaultNamespace
         
         private void Awake()
         {
-            marianneSprachiReaction.OnReactionFinished += OnSprachiFinished;
+            // marianneSprachiReaction.OnReactionFinished += OnSprachiFinished;
         }
 
         private void OnSprachiFinished(bool completed)
