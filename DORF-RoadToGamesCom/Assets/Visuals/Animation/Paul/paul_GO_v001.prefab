@@ -1003,6 +1003,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: b25aea31f41360c47b14d416abe01f50, type: 3}
       insertIndex: -1
       addedObject: {fileID: 8603433733650190221}
+    - targetCorrespondingSourceObject: {fileID: -8653719598885068355, guid: b25aea31f41360c47b14d416abe01f50, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6802554713099428317}
   m_SourcePrefab: {fileID: 4843985084834002234, guid: b25aea31f41360c47b14d416abe01f50, type: 3}
 --- !u!4 &1014447829705089158 stripped
 Transform:
@@ -1039,6 +1042,18 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: -8653719598885068355, guid: b25aea31f41360c47b14d416abe01f50, type: 3}
   m_PrefabInstance: {fileID: 6199037945487274128}
   m_PrefabAsset: {fileID: 0}
+--- !u!210 &6802554713099428317
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5899900183293006125}
+  m_Enabled: 1
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_SortAtRoot: 0
 --- !u!95 &6444007585526258742
 Animator:
   serializedVersion: 7
