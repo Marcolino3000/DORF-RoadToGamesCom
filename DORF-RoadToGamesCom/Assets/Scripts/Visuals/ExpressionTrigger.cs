@@ -17,6 +17,12 @@ namespace DefaultNamespace
             characterName = name;
         }
 
+        private void OnDisable()
+        {
+            markerManager.OnMarkerReached -= TriggerExpression;
+            AudioClipPlayer.FinishedPlaying -= ResetExpressionToDefault;
+        }
+
         private void ResetExpressionToDefault()
         {
             animator.SetInteger("expState", 1);

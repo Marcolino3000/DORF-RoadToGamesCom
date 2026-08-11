@@ -51,7 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: '*schweigt*'
-  DialogLineEn: "*stays silent*"
+  DialogLineEn: '*stays silent*'
   TextPreview: '*schweigt*'
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -185,7 +185,10 @@ MonoBehaviour:
 
     ODER IST ALLES NOCH SCHLIMMER
     GEWORDEN?'
-  DialogLineEn: "(When you go into another room.)\nOR HAS EVERYTHING GOTTEN EVEN WORSE?"
+  DialogLineEn: '(When you go into another room.)
+
+    OR HAS EVERYTHING GOTTEN EVEN
+    WORSE?'
   TextPreview: (Wenn man in ein...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -244,7 +247,7 @@ MonoBehaviour:
   m_Name: Ne.
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
   Guid: de6f09c7e0a3c499295433079ea7bdec
-  Position: {x: 523.8274, y: 231.04355}
+  Position: {x: 521.99994, y: 230.99994}
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
@@ -316,7 +319,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Ich h\xE4tte gedacht, dass es mindestens 30Jahre, 6 Monate und 8 Tage
     dauern w\xFCrde. "
-  DialogLineEn: "I'd have thought it would take at least 30 years, 6 months and 8 days. "
+  DialogLineEn: 'I''d have thought it would take at least 30 years, 6 months and
+    8 days. '
   TextPreview: "Ich h\xE4tte mehr gesch\xE4tzt."
   AudioClip: {fileID: 8300000, guid: 15178d314285245c99c9ecd8dea061eb, type: 3}
   ClipVolume: 1
@@ -353,7 +357,10 @@ MonoBehaviour:
     Hat ja eh gerade genug Probleme gerade. \nVielleicht h\xE4tte ich ihr sagen sollen
     wer bei der Hochzeit singt. Ich mein zu Bodo Bieramoschd hat ja noch kein nein
     gesagt.\n"
-  DialogLineEn: "Uhh... Marlene? Yeah, let's just chat some other time, no problem.\nMaybe I shouldn't have said that about Bettina. She's got enough problems right now anyway. \nMaybe I should have told her who's singing at the wedding. I mean, nobody has ever said no to Bodo Bieramoschd.\n"
+  DialogLineEn: "Uhh... Marlene? Yeah, let's just chat some other time, no problem.\nMaybe
+    I shouldn't have said that about Bettina. She's got enough problems right now
+    anyway. \nMaybe I should have told her who's singing at the wedding. I mean,
+    nobody has ever said no to Bodo Bieramoschd.\n"
   TextPreview: "\xC4hh... Marlene? ..."
   AudioClip: {fileID: 8300000, guid: 14551678a11cc4ee78912e5f4cbd7a02, type: 3}
   ClipVolume: 1
@@ -749,7 +756,9 @@ MonoBehaviour:
   DialogLine: "Wenn ich irgendwas f\xFCr dich tun kann, sag Bescheid. Du kannst ja
     trotzdem zur Hochzeit kommen wenn du eh schon da bist. Der Pastor fragt ja immer
     ob jemand Einw\xE4nde hat."
-  DialogLineEn: If there's anything I can do for you, let me know. You can still come to the wedding since you're here anyway. The pastor always asks if anyone has any objections.
+  DialogLineEn: If there's anything I can do for you, let me know. You can still
+    come to the wedding since you're here anyway. The pastor always asks if anyone
+    has any objections.
   TextPreview: Wenn ich irgendw...
   AudioClip: {fileID: 8300000, guid: 0e6952438bccb4ae5a6396918a18d430, type: 3}
   ClipVolume: 1
@@ -819,7 +828,8 @@ MonoBehaviour:
   DialogLine: "Bist du dir sicher? Ich war immer f\xFCr dich da, auch wenn du es
     nicht wusstest. Du erinnerst mich so an deine Mutter\u2026 Ich hatte immer ein
     Auge auf sie."
-  DialogLineEn: "Are you sure? I was always there for you, even when you didn't know it. You remind me so much of your mother\u2026 I always had an eye on her."
+  DialogLineEn: "Are you sure? I was always there for you, even when you didn't know
+    it. You remind me so much of your mother\u2026 I always had an eye on her."
   TextPreview: Bist du dir sich...
   AudioClip: {fileID: 8300000, guid: 4b3f5e310154140628c8c5fe3a734fcb, type: 3}
   ClipVolume: 1
@@ -918,7 +928,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "\xC4h\u2026 also ich hab jetzt schon die Betina gefragt und die hat
     \u201EJa\u201C gesagt\u2026."
-  DialogLineEn: "Uh\u2026 well, I've already asked Betina and she said \u201cyes\u201d\u2026."
+  DialogLineEn: "Uh\u2026 well, I've already asked Betina and she said \u201Cyes\u201D\u2026."
   TextPreview: "\xC4h\u2026 also ich hab..."
   AudioClip: {fileID: 8300000, guid: e6fa9e8f09c4340c29bc3c20969b8a0d, type: 3}
   ClipVolume: 1
@@ -952,7 +962,9 @@ MonoBehaviour:
   DialogLine: "Die Betina ist ja auch Autorin. \u201EVerloren im Kuss der Sehnsucht\u201C
     vielleicht hast du davon schon mal geh\xF6rt.\nGibt\u2019s sogar im L\xE4dle.
     Wie l\xE4uft\u2019s bei dir?"
-  DialogLineEn: "Betina is a writer too. \u201cLost in the Kiss of Longing\u201d, maybe you've heard of it.\nThey even stock it in the village shop. How are things with you?"
+  DialogLineEn: "Betina is a writer too. \u201CLost in the Kiss of Longing\u201D,
+    maybe you've heard of it.\nThey even stock it in the village shop. How are things
+    with you?"
   TextPreview: Die Betina ist j...
   AudioClip: {fileID: 8300000, guid: 2274a1ad3cc824affbb523812fcf31e3, type: 3}
   ClipVolume: 1
@@ -1151,7 +1163,9 @@ MonoBehaviour:
   DialogLine: DIE LAMPE STARRT MICH AN.  DIE BIRKENSTOCKS LAUFEN AUF MICH ZU. HAT
     SICH DIE ZIGARETTE GERADE ZU MIR UMGEDREHT? DIE DIELE KNARZT DIE GANZE ZEIT ALS
     OB NOCH JEMAND HIER IST.
-  DialogLineEn: THE LAMP IS STARING AT ME.  THE BIRKENSTOCKS ARE WALKING TOWARDS ME. DID THE CIGARETTE JUST TURN AROUND TO FACE ME? THE FLOORBOARDS KEEP CREAKING AS IF SOMEONE ELSE IS STILL HERE.
+  DialogLineEn: THE LAMP IS STARING AT ME.  THE BIRKENSTOCKS ARE WALKING TOWARDS
+    ME. DID THE CIGARETTE JUST TURN AROUND TO FACE ME? THE FLOORBOARDS KEEP CREAKING
+    AS IF SOMEONE ELSE IS STILL HERE.
   TextPreview: DIE LAMPE STARRT...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1184,7 +1198,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Schade, dass du nicht nur wegen mir gekommen bist. Ich bin jetzt sogar
     Programmierer geworden.
-  DialogLineEn: Shame that you didn't come just for me. I've even become a programmer now.
+  DialogLineEn: Shame that you didn't come just for me. I've even become a programmer
+    now.
   TextPreview: Schade, dass du ...
   AudioClip: {fileID: 8300000, guid: e7b1ad30bd24c456fbd279349eba8dd2, type: 3}
   ClipVolume: 1
@@ -1218,14 +1233,16 @@ MonoBehaviour:
   DialogLine: "Du kannst immer zu mir kommen, das wei\xDFt du. Wir haben \xFCbrigens
     ne S\xE4ngerin engagiert \u2013 ich darf noch nicht verraten wer. Nur so viel:
     Es wird Schlager! Boa, du tust mir echt so leid."
-  DialogLineEn: "You can always come to me, you know that. We've hired a singer, by the way \u2013 I'm not allowed to say who yet. Just this much: it'll be Schlager! Boy, I really do feel sorry for you."
+  DialogLineEn: "You can always come to me, you know that. We've hired a singer,
+    by the way \u2013 I'm not allowed to say who yet. Just this much: it'll be Schlager!
+    Boy, I really do feel sorry for you."
   TextPreview: Du kannst immer ...
   AudioClip: {fileID: 8300000, guid: 5e220faf2a1b04232b1c41fa71566906, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5
   Children:
-  - {fileID: 7850994930647803619}
   - {fileID: 6875389852493755261}
+  - {fileID: 7850994930647803619}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -1317,7 +1334,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Ja also ich hab son \xDCberwachungsprogramm geschrieben. \nDas erkennt
     dein Gesicht und verfolgt dich mit den Kameras in der Stadt."
-  DialogLineEn: "Yeah so I wrote this surveillance program. \nIt recognises your face and follows you with the cameras around town."
+  DialogLineEn: "Yeah so I wrote this surveillance program. \nIt recognises your
+    face and follows you with the cameras around town."
   TextPreview: Ja also ich hab ...
   AudioClip: {fileID: 8300000, guid: 578a24a1eebee43bc88b4f091283c90c, type: 3}
   ClipVolume: 1
@@ -1517,7 +1535,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Bist du jetzt Autorin geworden, wie du immer gesagt hast? Das Intellektuelle
     macht dich bisschen s\xFC\xDF."
-  DialogLineEn: So did you become a writer, like you always said you would? The intellectual thing makes you kind of cute.
+  DialogLineEn: So did you become a writer, like you always said you would? The intellectual
+    thing makes you kind of cute.
   TextPreview: Bist du jetzt Au...
   AudioClip: {fileID: 8300000, guid: bb04b006eb7a743e5bdc4a6ed7ce8fd3, type: 3}
   ClipVolume: 1
