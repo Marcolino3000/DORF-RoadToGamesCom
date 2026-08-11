@@ -1,19 +1,27 @@
 :root {
 }
 
+/* Die Rahmen-Sprites sind leer, die Beschriftung kommt als echter Text in der
+   Fancy-Schrift dazu. Jeder Button ist so gross wie sein glow-Sprite; im
+   Normalzustand wird das kleinere Sprite mit seiner Originalgroesse zentriert
+   hineingelegt, damit der Rahmen beim Hover nicht springt, sondern nur das
+   Leuchten dazukommt. Die Buttongroessen sind so gerundet, dass der Rand
+   ringsum ganzzahlig ist - sonst wuerden die duennen Striche verwaschen. */
 .button {
-    width: 250px;
-    height: 80px;
     align-self: center;
-    margin-top: -10px;
+    flex-shrink: 0;
+    margin-top: 0;
     margin-right: 0;
-    margin-bottom: -10px;
+    margin-bottom: 0;
     margin-left: 0;
-    align-content: flex-end;
-    justify-content: flex-end;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 0;
     background-image: none;
     background-color: rgba(255, 255, 255, 0);
-    flex-shrink: 0;
+    background-position: center center;
+    background-repeat: no-repeat;
     border-top-width: 0;
     border-right-width: 0;
     border-bottom-width: 0;
@@ -22,31 +30,61 @@
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 0;
+    -unity-font-definition: url("project://database/Assets/Visuals/Fonts/Fancy-Regular.otf?fileID=12800000&guid=37567676b964d4408b499bb1e061114a&type=3#Fancy-Regular");
+    -unity-text-align: middle-center;
+    font-size: 64px;
+    color: rgb(255, 255, 255);
+    white-space: nowrap;
+}
+
+.button:hover {
+    scale: 1.02 1.02;
 }
 
 .startButton {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Start_Button_lay01.png?fileID=2800000&guid=604767b36116a4ecba92c012a80a6799&type=3#UI_Main_Menu_abs_v02_Start_Button_lay01");
+    width: 275px;
+    height: 106px;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01.png?fileID=2800000&guid=3fa0bf35b0eab42a8bb02f87726c1f4e&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01");
+    background-size: 259px 92px;
 }
 
 .startButton:hover {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Start_Button_lay02_glow.png?fileID=2800000&guid=299e866b9fba94074a87a877bfa648c5&type=3#UI_Main_Menu_abs_v02_Start_Button_lay02_glow");
-    scale: 1.02 1.02;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow.png?fileID=2800000&guid=d0d9db7690b63424ba643976bcd7edff&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow");
+    background-size: 100% 100%;
 }
 
 .resumeButton {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Fortsetzen_Button_lay01.png?fileID=2800000&guid=57f26e8c1684740a784d6b87eb4bf0b8&type=3#UI_Main_Menu_abs_v02_Fortsetzen_Button_lay01");
+    width: 275px;
+    height: 106px;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01.png?fileID=2800000&guid=3fa0bf35b0eab42a8bb02f87726c1f4e&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01");
+    background-size: 259px 92px;
 }
 
 .resumeButton:hover {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Fortsetzen_Button_lay02_glow.png?fileID=2800000&guid=f1915121eae6e429e8a82d3d97759e18&type=3#UI_Main_Menu_abs_v02_Fortsetzen_Button_lay02_glow");
-    scale: 1.02 1.02;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow.png?fileID=2800000&guid=d0d9db7690b63424ba643976bcd7edff&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow");
+    background-size: 100% 100%;
 }
 
 .exitButton {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Beenden_Button_lay01.png?fileID=2800000&guid=1218737e98b104a699e89a673ed0b0b0&type=3#UI_Main_Menu_abs_v02_Beenden_Button_lay01");
+    width: 293px;
+    height: 113px;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_03_lay01.png?fileID=2800000&guid=fd193e0c298a2467b80d45f1db21ab39&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_03_lay01");
+    background-size: 275px 95px;
 }
 
 .exitButton:hover {
-    background-image: url("project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v02_Beenden_Button_lay02_glow.png?fileID=2800000&guid=6b03cd253d5564df4922a31aafc382cc&type=3#UI_Main_Menu_abs_v02_Beenden_Button_lay02_glow");
-    scale: 1.02 1.02;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_03_lay02_glow.png?fileID=2800000&guid=1533244bc9dba439e8cb26ebe59b6670&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_03_lay02_glow");
+    background-size: 100% 100%;
+}
+
+.settingsButton {
+    width: 275px;
+    height: 106px;
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01.png?fileID=2800000&guid=3fa0bf35b0eab42a8bb02f87726c1f4e&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay01");
+    background-size: 259px 92px;
+}
+
+.settingsButton:hover {
+    background-image: url("project://database/Assets/UI/Images/Buttons/UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow.png?fileID=2800000&guid=d0d9db7690b63424ba643976bcd7edff&type=3#UI_Main_Menu_abs_v01_Rahmen_Button_01_lay02_glow");
+    background-size: 100% 100%;
 }
