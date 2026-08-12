@@ -1,7 +1,7 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/Smartphone/Smartphone.uss?fileID=7433441132597879392&amp;guid=72c0a90b5d9f4b0da7845aa74b3d6cff&amp;type=3#Smartphone" />
     <ui:VisualElement name="smartphoneRoot" picking-mode="Ignore" style="flex-grow: 1; align-items: center; justify-content: center; background-color: rgba(0, 0, 0, 0.6);">
-        <ui:VisualElement name="phoneContainer" style="width: 560px; height: 1038px; position: relative;">
+        <ui:VisualElement name="phoneContainer" style="width: 560px; height: 1038px; position: relative; flex-shrink: 0;">
             <ui:VisualElement name="phoneScreen" class="phone-screen" style="position: absolute; left: 64px; top: 123px; width: 440px; height: 788px; flex-direction: column; overflow: hidden;">
                 <ui:VisualElement name="statusBar" class="status-bar">
                     <ui:VisualElement name="statusLeft" class="status-bar__group">
