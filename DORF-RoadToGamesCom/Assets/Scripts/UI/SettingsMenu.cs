@@ -1,16 +1,24 @@
 using System;
 using Audio;
+using Runtime.Scripts.Interactables;
 using Runtime.Scripts.PlayerInput;
 using UnityEngine;
 using UnityEngine.UIElements;
 
 namespace UI
 {
-    public class SettingsMenu : MonoBehaviour
+    public class SettingsMenu : MonoBehaviour, ISceneSetupCallbackReceiver
     {
         public event Action OnResume;
-        public bool IsVisible => root.visible;
-        
+
+        /// <summary>
+        /// Tracked here rather than read back from the root element: after the UIDocument rebuilds
+        /// its tree the cached root is a detached leftover, and the fresh one is visible because
+        /// that is how the UXML authors it. See <see cref="Update"/>.
+        /// </summary>
+        public bool IsVisible { get; private set; }
+
+
         [Header("References")]
         [SerializeField] InGameAudioSettings audioSettings;
         [SerializeField] private InputDispatcher inputDispatcher;
@@ -47,6 +55,31 @@ namespace UI
             GetElements();
             SetupEvents();
             SetSlidersToCurrentValues();
+        }
+
+        /// <summary>
+        /// UIDocument throws away its visual tree and builds a new one whenever the source UXML or
+        /// a USS it pulls in reimports during Play mode, and whenever the document is disabled and
+        /// re-enabled. Every element cached in GetElements is detached at that point — which is why
+        /// editing a stylesheet while playing used to leave this menu on screen with a Resume button
+        /// wired to an element nobody can see. Detect it by the root swapping out, then re-acquire
+        /// the elements, re-register their callbacks and restore the visibility we last set.
+        /// </summary>
+        private void Update()
+        {
+            // Re-fetched rather than trusted: uiDocument is not serialized, so a script recompile
+            // in Play mode wipes it and Setup never runs again — the menu would be dead for the
+            // session. A disabled UIDocument reports a null root, which must not count as changed.
+            if (uiDocument == null) uiDocument = GetComponent<UIDocument>();
+            if (uiDocument == null) return;
+
+            var current = uiDocument.rootVisualElement;
+            if (current == null || current == root) return;
+
+            var wasVisible = IsVisible;
+            Setup();
+            if (wasVisible) Show();
+            else Hide();
         }
 
         private void GetElements()
@@ -99,25 +132,55 @@ namespace UI
             resumeButton.clicked += () => { OnResume?.Invoke(); };
         }
         
+        /// <summary>
+        /// Runs on every scene load and on the inactivity reset. InGameAudioSettings restores its own
+        /// fields from the same callback, but the reset timeout also lives as a plain int on the
+        /// InputDispatcher — which sits on the DontDestroyOnLoad Global prefab and is therefore never
+        /// recreated. Read from the authored default rather than the restored field, so it does not
+        /// matter which of the two receivers ran first.
+        /// </summary>
+        public void OnSceneSetup()
+        {
+            if (audioSettings == null) return;
+
+            audioSettings.RestoreDefaults();
+
+            if (inputDispatcher != null)
+                inputDispatcher.secondsUntilGameReset = audioSettings.DefaultInactivityThresholdSeconds;
+
+            if (root != null) SetSlidersToCurrentValues();
+        }
+
         private void SetSlidersToCurrentValues()
         {
             if (audioSettings == null) return;
-            
-            masterVolume.value = audioSettings.masterVolume;
-            dialogVolume.value = audioSettings.dialogVolume;
-            musicVolume.value = audioSettings.musicVolume;
-            sfxVolume.value = audioSettings.sfxVolume;
+
+            // SetValueWithoutNotify, not .value: assigning the value raises a ChangeEvent that runs
+            // the setters below and writes straight back into the ScriptableObject — which in the
+            // Editor means seeding the sliders dirties the asset on disk.
+            masterVolume.SetValueWithoutNotify(audioSettings.masterVolume);
+            dialogVolume.SetValueWithoutNotify(audioSettings.dialogVolume);
+            musicVolume.SetValueWithoutNotify(audioSettings.musicVolume);
+            sfxVolume.SetValueWithoutNotify(audioSettings.sfxVolume);
+
+            // Was registered but never seeded, so it always showed the UXML default while the live
+            // timeout was something else — and the next nudge jumped the reset time to that default.
+            if (inactivityThreshold != null && inputDispatcher != null)
+                inactivityThreshold.SetValueWithoutNotify(inputDispatcher.secondsUntilGameReset);
         }
         
         #endregion
 
         public void Hide()
         {
-            root.visible = false;
+            IsVisible = false;
+            if (root != null) root.visible = false;
         }
 
         public void Show()
         {
+            IsVisible = true;
+            if (root == null) return;
             root.visible = true;
             SetSlidersToCurrentValues();
         }

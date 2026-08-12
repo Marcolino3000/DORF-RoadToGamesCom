@@ -17,3 +17,8 @@ MonoBehaviour:
   sfxVolume: 0.734
   dialogVolume: 1
   inactivityThresholdSeconds: 206
+  defaultMasterVolume: 1
+  defaultMusicVolume: 0.144
+  defaultSfxVolume: 0.734
+  defaultDialogVolume: 1
+  defaultInactivityThresholdSeconds: 206

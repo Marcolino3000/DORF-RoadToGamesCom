@@ -985,6 +985,7 @@ GameObject:
   - component: {fileID: 843732848}
   - component: {fileID: 843732847}
   - component: {fileID: 843732846}
+  - component: {fileID: 843732849}
   m_Layer: 5
   m_Name: Smartphone
   m_TagString: Untagged
@@ -1010,8 +1011,120 @@ MonoBehaviour:
   contactsJson: {fileID: 4900000, guid: 10b127a9b371c43cf9d4c2dca6678b31, type: 3}
   chatCardTemplate: {fileID: 9197481963319205126, guid: f5ee971144d3f4471b8c80e965353c22, type: 3}
   messageBubbleTemplate: {fileID: 9197481963319205126, guid: 88d7931ed5f74a1a9200efafa0e23f7b, type: 3}
-  titleSequenceTrigger: {fileID: 1992901854}
-  sprachiWasTriggered: 0
+  voiceAudioSource: {fileID: 843732849}
+  audioSettings: {fileID: 11400000, guid: 5685ad64b194a4618a4b1997bb6806c3, type: 2}
+  contactAvatars:
+  - avatarId: marianne
+    picture: {fileID: 2800000, guid: fae814bb7bcb4965a1bcd77e931f8415, type: 3}
+  - avatarId: cory
+    picture: {fileID: 2800000, guid: aaa31453645a4b398c48db3da8a484b6, type: 3}
+  - avatarId: rabea
+    picture: {fileID: 2800000, guid: 437308bebd7d49edb34308302462097f, type: 3}
+  - avatarId: guy
+    picture: {fileID: 2800000, guid: 60f2b39b16b145f5bc2c85b4edd9ea6a, type: 3}
+  selfAvatar: {fileID: 2800000, guid: 2800385dfd114f14855dbb655bf912eb, type: 3}
+  voiceMemos:
+  - voiceId: marianne-sprachi-1
+    clip: {fileID: 8300000, guid: f0725d6c0c1ec47f9b5459f5d8aa2802, type: 3}
+  - voiceId: marianne-sprachi-2
+    clip: {fileID: 8300000, guid: ded349968e3f946ed9d894a6e7a2c9d9, type: 3}
+--- !u!82 &843732849
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843732845}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: -3184569306143580629, guid: 39708bea6aa144f9bacffac7d9e55828, type: 2}
+  m_audioClip: {fileID: 0}
+  m_Resource: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!114 &843732847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1559,7 +1672,6 @@ MonoBehaviour:
   trainMover: {fileID: 612082048}
   titleFadeIn: {fileID: 2073291138}
   smartphone: {fileID: 843732846}
-  marianneSprachiReaction: {fileID: 11400000, guid: 42b8291c75a954e01bded361270bcc98, type: 2}
   sceneSwapManager: {fileID: 0}
   landscape: {fileID: 163643663}
 --- !u!4 &1552280895
@@ -1788,31 +1900,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1992901855}
-  - component: {fileID: 1992901854}
   m_Layer: 0
-  m_Name: TitleSequenceTrigger
+  m_Name: TitleSequence
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1992901854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1992901853}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 230a86b0c55f48aa935b28136a7faa3e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.TitleSequenceTrigger
-  durationBeforeTitleScreen: 2
-  titleScreenDuration: 2
-  marianneSprachiReaction: {fileID: 11400000, guid: 42b8291c75a954e01bded361270bcc98, type: 2}
-  titleScreenImage: {fileID: 0}
-  smartphone: {fileID: 843732846}
 --- !u!4 &1992901855
 Transform:
   m_ObjectHideFlags: 0
