@@ -2050,7 +2050,7 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 0b196edc3a01142908dbefd658b39592, type: 3}
   resourcePath: UI/StartSplash
   usePlaceholderWhenMissing: 1
-  startingLanguage: 1
+  startingLanguage: 0
   germanButtonImage: {fileID: 0}
   englishButtonImage: {fileID: 0}
   buttonFrame: {fileID: 21300000, guid: 3fa0bf35b0eab42a8bb02f87726c1f4e, type: 3}
