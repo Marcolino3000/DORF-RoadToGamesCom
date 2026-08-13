@@ -2,6 +2,7 @@
   "contacts": [
     {
       "contact": "Mama",
+      "avatarId": "marianne",
       "contactEn": "Mum",
       "messages": [
         {
@@ -136,7 +137,17 @@
           "timestamp": "2026-04-30T15:36",
           "sender": "",
           "status": "read",
-          "type": "voice"
+          "type": "voice",
+          "voiceId": "marianne-sprachi-1"
+        },
+        {
+          "text": "Sprachnachricht",
+          "textEn": "Voice message",
+          "timestamp": "2026-04-30T15:38",
+          "sender": "",
+          "status": "read",
+          "type": "voice",
+          "voiceId": "marianne-sprachi-2"
         },
         {
           "text": "Bist du schon dazu gekommen mir ds\nkindergeld von diesem Monat zu \nüberweisen?",
@@ -156,6 +167,7 @@
     },
     {
       "contact": "Cory Düsel",
+      "avatarId": "cory",
       "contactEn": "Cory Düsel",
       "messages": [
         {
@@ -183,6 +195,7 @@
     },
     {
       "contact": "Rabea (Besti) <3",
+      "avatarId": "rabea",
       "contactEn": "Rabea (Bestie) <3",
       "messages": [
         {
@@ -231,6 +244,7 @@
     },
     {
       "contact": "Guy (Turtelwerk)",
+      "avatarId": "guy",
       "contactEn": "Guy (Turtelwerk)",
       "messages": [
         {
