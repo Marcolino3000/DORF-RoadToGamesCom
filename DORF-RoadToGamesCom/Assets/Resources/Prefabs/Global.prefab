@@ -8818,8 +8818,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CharacterCutout
   padding: 0.9
-  minRadius: 0.02
-  smoothing: 0.05
+  minRadius: 0.028
+  smoothing: 0.3
   character: {fileID: 8358654186091227997}
   characterRenderers: []
   cam: {fileID: 3729439901761782113}
@@ -9050,7 +9050,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6858347490965529025, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6875154685759714686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: wiggleCount
