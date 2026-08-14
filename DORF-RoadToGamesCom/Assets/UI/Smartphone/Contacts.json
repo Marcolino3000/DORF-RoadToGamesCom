@@ -6,162 +6,344 @@
       "contactEn": "Mum",
       "messages": [
         {
-          "text": "Hey, du hast mir doch vorgeschlagen, mich finanziell zu unterstützen in Sachen Kleidung, ich bräuchte dringend neue Schuhe.",
-          "textEn": "Hey, you were the one who offered to help me out with money for clothes, I really need new shoes.",
-          "timestamp": "2026-04-11T18:00",
+          "text": "Hey Mama das ist meine neue Nummer. 🙄",
+          "textEn": "Hey Mum this is my new number. 🙄",
+          "timestamp": "2026-03-11T03:44",
           "sender": "me",
           "status": "read"
         },
         {
-          "text": "Kann sein.. weiß nicht genau",
-          "textEn": "Could be.. not sure",
-          "timestamp": "2026-04-11T19:12",
+          "text": "Na endlich!",
+          "textEn": "Finally!",
+          "timestamp": "2026-03-11T07:44",
           "sender": "",
           "status": "read"
         },
         {
-          "text": "Bei mir ist grad finanziell nicht so dolle",
-          "textEn": "Money's not great on my end right now",
-          "timestamp": "2026-04-11T20:24",
+          "text": "Ich sag dir ja schon die ganze Zeit das ist sicherer. Die Abeles konnten vielleicht mitlesen...",
+          "textEn": "I keep telling you it's safer. The Abeles might have been reading along...",
+          "timestamp": "2026-03-11T07:45",
           "sender": "",
           "status": "read"
         },
         {
-          "text": "Erst einmal wünsche ich dir eine schöne Zeit\nNur das beste Wetter und viel Spaß\nDann lass uns nächste Woche telefonieren",
-          "textEn": "First of all I hope you have a lovely time\nNothing but the best weather and lots of fun\nThen let's talk on the phone next week",
-          "timestamp": "2026-04-11T21:36",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Bestimmt finden wir einen Weg \nGute Fahrt",
-          "textEn": "I'm sure we'll find a way \nSafe travels",
-          "timestamp": "2026-04-11T22:48",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Liebe Grüße Marianne",
-          "textEn": "Love, Marianne",
-          "timestamp": "2026-04-11T22:49",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Hey, hast gar nicht angerufen.",
-          "textEn": "Hey, you never called.",
-          "timestamp": "2026-04-18T01:12",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Wo istn das Kindergeld?",
-          "textEn": "So where's the child benefit?",
-          "timestamp": "2026-04-19T02:24",
+          "text": "Mama...",
+          "textEn": "Mum...",
+          "timestamp": "2026-03-11T10:45",
           "sender": "me",
           "status": "read"
         },
         {
-          "text": "Wegen der Schuhe...",
-          "textEn": "About the shoes...",
-          "timestamp": "2026-04-20T03:36",
+          "text": "bin mir nicht sicher ob das echt so notwendig ist",
+          "textEn": "not sure that's really necessary",
+          "timestamp": "2026-03-11T10:46",
           "sender": "me",
           "status": "read"
         },
         {
-          "text": "Heute rückläufiger Merkur",
-          "textEn": "Mercury is in retrograde today",
-          "timestamp": "2026-04-21T04:48",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Ich hab heute herausgefunden, dass es gar keinen dritten Weltkrieg geben",
-          "textEn": "I found out today that there isn't even going to be a third world",
-          "timestamp": "2026-04-22T06:00",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Ich hab wahnsinnig Durchfall, mir ist schwindelig, ich meld mich die Tage mal.",
-          "textEn": "I've got awful diarrhoea, I'm dizzy, I'll get in touch one of these days.",
-          "timestamp": "2026-04-23T07:12",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Wusstest du, dass wenn man „Health“ auf eine Wasserflasche schreibt, dass es dann sogar Krebs heilen kann?",
-          "textEn": "Did you know that if you write “Health” on a water bottle it can even cure cancer?",
-          "timestamp": "2026-04-24T08:24",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Hi Marlene",
-          "textEn": "Hi Marlene",
-          "timestamp": "2026-04-25T09:36",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Na?",
-          "textEn": "So?",
-          "timestamp": "2026-04-26T10:48",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Wie geht's dir?",
-          "textEn": "How are you doing?",
-          "timestamp": "2026-04-27T12:00",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Was machst du so schönes gerade?",
-          "textEn": "What are you up to right now?",
-          "timestamp": "2026-04-28T13:12",
-          "sender": "",
-          "status": "read"
-        },
-        {
-          "text": "Grad bin ich arbeiten",
-          "textEn": "I'm at work right now",
-          "timestamp": "2026-04-29T14:24",
+          "text": "Hast du eigentlich das Kindergeld für diesen Monat schon?",
+          "textEn": "Have you actually got this month's child benefit yet?",
+          "timestamp": "2026-03-11T10:47",
           "sender": "me",
           "status": "read"
+        },
+        {
+          "text": "ist gerade echt knapp bei mir",
+          "textEn": "things are really tight for me right now",
+          "timestamp": "2026-03-11T10:48",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ich hab jetzt ein neues Fernglas. Das war aber teurer als gedacht.",
+          "textEn": "I've got new binoculars now. They were pricier than I thought though.",
+          "timestamp": "2026-03-12T10:48",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Der Sohn von den Abeles lungert immer am Waldrand rum.",
+          "textEn": "The Abeles' son is always loitering at the edge of the woods.",
+          "timestamp": "2026-03-12T10:49",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "lass doch mal die Abeles in ruhe",
+          "textEn": "just leave the Abeles alone",
+          "timestamp": "2026-03-12T12:49",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "hast du das Geld jetzt wirklich fürn Fernrohr ausgegeben??",
+          "textEn": "did you really spend the money on a telescope??",
+          "timestamp": "2026-03-13T08:49",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Mama??",
+          "textEn": "Mum??",
+          "timestamp": "2026-03-14T12:49",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Die letzten drei Tage sind sie immer früh aus dem Haus gegangen.",
+          "textEn": "The last three days they've left the house early every time.",
+          "timestamp": "2026-03-17T12:49",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ohne zu frühstücken!!",
+          "textEn": "Without any breakfast!!",
+          "timestamp": "2026-03-17T12:50",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "ist doch egal",
+          "textEn": "who cares",
+          "timestamp": "2026-03-17T14:50",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Wer nicht frühstückt der führt was im Schilde",
+          "textEn": "Anyone who skips breakfast is up to something",
+          "timestamp": "2026-03-17T17:50",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "und wegen dem Geld?",
+          "textEn": "and what about the money?",
+          "timestamp": "2026-03-17T18:50",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "hab echt nix mehr",
+          "textEn": "I've really got nothing left",
+          "timestamp": "2026-03-17T18:51",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ich hab dir was überwiesen.",
+          "textEn": "I've transferred you something.",
+          "timestamp": "2026-03-17T20:51",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Der Sohn läuft seit drei Tagen nur in Gummistiefeln rum.",
+          "textEn": "The son has been going around in wellies for three days straight.",
+          "timestamp": "2026-03-29T20:51",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Und das im Sommer!",
+          "textEn": "And in summer!",
+          "timestamp": "2026-03-29T20:52",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Hab in letzter Zeit keine Wildschweine mehr gesehen...",
+          "textEn": "Haven't seen any wild boar lately...",
+          "timestamp": "2026-04-03T20:52",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "ich fand die eh immer gruselig",
+          "textEn": "I always found them creepy anyway",
+          "timestamp": "2026-04-03T20:53",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Hey Mama...wie geht's?",
+          "textEn": "Hey Mum...how are you?",
+          "timestamp": "2026-04-13T20:53",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ich war heute im Garten.",
+          "textEn": "I was in the garden today.",
+          "timestamp": "2026-04-14T20:53",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Die Sonnenblumen gehen dieses Jahr früh ein",
+          "textEn": "The sunflowers are dying off early this year",
+          "timestamp": "2026-04-14T20:54",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ich frage mich warum.",
+          "textEn": "I wonder why.",
+          "timestamp": "2026-04-14T20:55",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Die haben mir heute gekündigt",
+          "textEn": "They fired me today",
+          "timestamp": "2026-04-14T20:56",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "kann doch nicht sein!",
+          "textEn": "that can't be!",
+          "timestamp": "2026-04-14T20:57",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "und was machst dujetzt??",
+          "textEn": "and what will you do now??",
+          "timestamp": "2026-04-14T20:58",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "vielleicht muss ich wieder nach Hause",
+          "textEn": "maybe I have to come back home",
+          "timestamp": "2026-04-15T20:58",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ja wenn du meinst",
+          "textEn": "Well if you think so",
+          "timestamp": "2026-04-16T01:58",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Und Geld brauch ich auch",
+          "textEn": "And I need money too",
+          "timestamp": "2026-04-16T03:58",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Mama?",
+          "textEn": "Mum?",
+          "timestamp": "2026-04-20T03:58",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Ich schicke dir was.",
+          "textEn": "I'll send you something.",
+          "timestamp": "2026-04-22T03:58",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Es ist noch nichts angekommen",
+          "textEn": "Nothing has arrived yet",
+          "timestamp": "2026-04-25T03:58",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Das Fernrohr ist kaputt gegangen.",
+          "textEn": "The telescope broke.",
+          "timestamp": "2026-04-25T07:58",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "Ich glaub die haben mich entdeckt.",
+          "textEn": "I think they've spotted me.",
+          "timestamp": "2026-04-25T07:59",
+          "sender": "",
+          "status": "read"
+        },
+        {
+          "text": "hör doch mal auf mit diesem scheiß fernglas!",
+          "textEn": "will you stop with those bloody binoculars!",
+          "timestamp": "2026-04-25T08:59",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "und wem spionierst du überhaupt hinterher??",
+          "textEn": "and who are you even spying on??",
+          "timestamp": "2026-04-26T08:59",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Was ist eigentlich mit dem Geld?",
+          "textEn": "What's actually going on with the money?",
+          "timestamp": "2026-04-27T08:59",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Bin hier am verhungern.",
+          "textEn": "I'm starving over here.",
+          "timestamp": "2026-04-27T09:00",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Mama?",
+          "textEn": "Mum?",
+          "timestamp": "2026-04-29T09:00",
+          "sender": "me",
+          "status": "read"
+        },
+        {
+          "text": "Geht's dir gut?",
+          "textEn": "Are you okay?",
+          "timestamp": "2026-05-01T09:00",
+          "sender": "me",
+          "status": "delivered"
+        },
+        {
+          "text": "Ich komm nächste Woche nach Hause",
+          "textEn": "I'm coming home next week",
+          "timestamp": "2026-05-02T09:00",
+          "sender": "me",
+          "status": "delivered"
+        },
+        {
+          "text": "Ich sitze jetzt im Zug",
+          "textEn": "I'm on the train now",
+          "timestamp": "2026-05-05T09:00",
+          "sender": "me",
+          "status": "sent"
         },
         {
           "text": "Sprachnachricht",
           "textEn": "Voice message",
-          "timestamp": "2026-04-30T15:36",
+          "timestamp": "2026-05-05T09:12",
           "sender": "",
-          "status": "read",
+          "status": "unread",
           "type": "voice",
           "voiceId": "marianne-sprachi-1"
         },
         {
           "text": "Sprachnachricht",
           "textEn": "Voice message",
-          "timestamp": "2026-04-30T15:38",
+          "timestamp": "2026-05-05T09:14",
           "sender": "",
-          "status": "read",
+          "status": "unread",
           "type": "voice",
           "voiceId": "marianne-sprachi-2"
-        },
-        {
-          "text": "Bist du schon dazu gekommen mir ds\nkindergeld von diesem Monat zu \nüberweisen?",
-          "textEn": "Did you get round to transferring me ths\nchild benefit for this month\nyet?",
-          "timestamp": "2026-05-01T16:48",
-          "sender": "me",
-          "status": "delivered"
-        },
-        {
-          "text": "Mama?",
-          "textEn": "Mum?",
-          "timestamp": "2026-05-05T18:00",
-          "sender": "me",
-          "status": "sent"
         }
       ]
     },
