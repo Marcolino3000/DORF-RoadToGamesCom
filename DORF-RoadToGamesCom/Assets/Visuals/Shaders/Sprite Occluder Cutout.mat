@@ -19,7 +19,7 @@ Material:
   m_CustomRenderQueue: 3000
   stringTagMap: {}
   disabledShaderPasses: []
-  m_LockedProperties:
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -45,8 +45,8 @@ Material:
     - _CutoutEdgeTiling: 6
     - _CutoutMaxDepthSlope: 0.005
     - _CutoutMinAlpha: 0
-    - _CutoutRimWidth: 0.18
-    - _CutoutSoftness: 0.6
+    - _CutoutRimWidth: 0
+    - _CutoutSoftness: 0.3
     - _DstBlend: 10
     - _QueueOffset: 0
     - _SampleGI: 0

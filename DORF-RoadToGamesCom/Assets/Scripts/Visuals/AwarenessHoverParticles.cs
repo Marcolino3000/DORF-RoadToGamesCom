@@ -21,8 +21,9 @@ public class AwarenessHoverParticles : MonoBehaviour, ISceneSetupCallbackReceive
     [SerializeField] private Vector3 emitOffset;
     [Tooltip("Pulls the spawn point this far towards the camera, so the particles sit in front of the interactable's sprite instead of inside it.")]
     [SerializeField] private float distanceTowardsCamera = 0.5f;
-    [Tooltip("Defaults mirror the Raycaster on the Global prefab: it keeps hovering during dialog, but not during sequences.")]
+    [Tooltip("Defaults mirror the Raycaster on the Global prefab: it keeps hovering during a comment on an interactable, but not during a conversation with another character or during sequences.")]
     [SerializeField] private bool suppressDuringDialog;
+    [SerializeField] private bool suppressDuringCharacterDialog = true;
     [SerializeField] private bool suppressDuringSequences = true;
 
     [Header("References")]
@@ -248,6 +249,7 @@ public class AwarenessHoverParticles : MonoBehaviour, ISceneSetupCallbackReceive
         inputSuppressed = raycaster != null &&
                           (raycaster.IsMenuOpen ||
                            (suppressDuringDialog && raycaster.isDialogRunning) ||
+                           (suppressDuringCharacterDialog && raycaster.isCharacterDialogRunning) ||
                            (suppressDuringSequences && raycaster.isSequenceRunning));
 
         interactableUnderMouse = GetHoveredInteractable();
