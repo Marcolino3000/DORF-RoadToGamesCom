@@ -9,6 +9,9 @@ namespace ScenesSwitches
     public class SceneTransitionManager : MonoBehaviour
     {
         [Header("Settings")]
+        [Tooltip("Pause between the last voice memo ending and the transition starting. The phone " +
+                 "stays open and usable for it. 0 keeps the transition immediate.")]
+        [SerializeField] private float secondsBeforeTransitionStarts;
         [SerializeField] private float secondsBeforeTitleFadeIn;
         [SerializeField] private float titleScreenDuration;
 
@@ -27,6 +30,13 @@ namespace ScenesSwitches
 
         private IEnumerator Transition()
         {
+            // A beat between the second memo ending and the train pulling away, so the visitor is
+            // not yanked out of the chat the moment the audio stops. Nothing has moved yet, so the
+            // phone is still open here — closing it is the first thing the transition itself does.
+            // Guarded rather than always yielded: WaitForSeconds(0) still costs a frame.
+            if (secondsBeforeTransitionStarts > 0f)
+                yield return new WaitForSeconds(secondsBeforeTransitionStarts);
+
             landscape.SlowDown();
 
             smartphone.Close();
