@@ -7303,6 +7303,7 @@ MonoBehaviour:
   emitOffset: {x: 0, y: 0, z: 0}
   distanceTowardsCamera: 0.5
   suppressDuringDialog: 0
+  suppressDuringCharacterDialog: 1
   suppressDuringSequences: 1
   sauerteigParticles: {fileID: 0}
   interactableParticles: {fileID: 0}
@@ -8761,6 +8762,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2589033447177786605, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5108664372930118447}
+    - targetCorrespondingSourceObject: {fileID: 2589033447177786605, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7753245565521891131}
     - targetCorrespondingSourceObject: {fileID: 3384056884880199686, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5329439205216209059}
@@ -8795,6 +8799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.CursorSetter
   standardCursorSize: 32
   interactionCursorSize: 36
+  scene2Name: Scene 2
   standardCursor: {fileID: 2800000, guid: ecea31359dab04503a91a3234e96f376, type: 3}
   handCursor: {fileID: 2800000, guid: 9f66a8fabf32141d4965479afd898e5b, type: 3}
   inspectCursor: {fileID: 2800000, guid: 0c76c44aa47fc4416875263f95401074, type: 3}
@@ -8915,6 +8920,22 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &7753245565521891131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2047475649783191184}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075415cad12647e39dec28bc01ff04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationSoundTrigger
+  stepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 8e9bb9361d1e2418fb71ac3ff620194b, type: 2}
 --- !u!114 &2898388513868393969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
@@ -9050,7 +9071,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6858347490965529025, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6875154685759714686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: wiggleCount

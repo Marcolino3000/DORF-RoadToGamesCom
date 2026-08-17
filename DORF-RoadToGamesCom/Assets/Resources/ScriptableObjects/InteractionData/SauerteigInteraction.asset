@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0e32a255760647d79c9e712cbffa0e42, type: 3}
-  m_Name: SauerteigBasicActivityInteraction
+  m_Name: SauerteigInteraction
   m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Core.InteractionData
   _SaveStateToCurrentScene: 0
   _sceneStateSaver: {fileID: 11400000, guid: 3e244c0560c63468bb3c97ac3de106ce, type: 2}
