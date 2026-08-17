@@ -262,13 +262,17 @@ namespace UI
             chatListView = root.Q<ListView>("chatListView");
 
             if (phoneRoot != null)
+            {
                 phoneRoot.UnregisterCallback<GeometryChangedEvent>(OnPhoneRootGeometryChanged);
+                phoneRoot.UnregisterCallback<ClickEvent>(OnBackdropClicked);
+            }
             phoneRoot = root.Q<VisualElement>("smartphoneRoot");
             phoneContainer = root.Q<VisualElement>("phoneContainer");
             appliedPhoneScale = -1f;
             if (phoneRoot != null)
             {
                 phoneRoot.RegisterCallback<GeometryChangedEvent>(OnPhoneRootGeometryChanged);
+                phoneRoot.RegisterCallback<ClickEvent>(OnBackdropClicked);
                 FitPhoneToPanel();
             }
 
@@ -337,6 +341,28 @@ namespace UI
         {
             SetVisible(false);
             SetWorldInputBlocked(false);
+        }
+
+        /// <summary>
+        /// Closes the phone when the click landed next to it, the way tapping outside a modal does.
+        /// ClickEvent bubbles, so clicks from inside the phone arrive here too — anything within
+        /// phoneContainer is left alone, bezel included, since the overlay above it does not pick
+        /// and the container is what the shell's own pixels resolve to.
+        ///
+        /// On the click rather than on the press: the Raycaster reads the world click on press,
+        /// while IsMenuOpen still blocks it, so the click that closes the phone cannot also send
+        /// Marlene walking. Never closes a chat instead — the back button is what backs out of one.
+        /// </summary>
+        private void OnBackdropClicked(ClickEvent evt)
+        {
+            if (!isOpen) return;
+
+            // Walked by hand rather than through VisualElement.Contains: a click on the bezel
+            // targets phoneContainer itself, and the element must count as its own ancestor here.
+            for (var element = evt.target as VisualElement; element != null; element = element.hierarchy.parent)
+                if (element == phoneContainer) return;
+
+            Close();
         }
 
         /// <summary>
