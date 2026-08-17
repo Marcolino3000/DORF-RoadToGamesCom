@@ -33,6 +33,16 @@ namespace DefaultNamespace
         [SerializeField] private float scrollSpeed;
         [SerializeField] private float slowDownDuration;
 
+        [Header("Offset cues")]
+        [Tooltip("Panorama pixels per world unit — the scale the layer quads are sized at. Only " +
+                 "used so offset cues can be stated in the painting's own pixels rather than in " +
+                 "world units or UV.")]
+        [SerializeField] private float pixelsPerUnit = 38f;
+
+        [Tooltip("Layer whose scroll position OffsetPixels reports, indexed into the list below. " +
+                 "1 is the village layer, the one that reads as the train's position.")]
+        [SerializeField] private int cueLayerIndex = 1;
+
         [Header("Layers, near to far")]
         [SerializeField] private Layer[] layers;
 
@@ -92,6 +102,70 @@ namespace DefaultNamespace
 
                 materials[i].mainTextureOffset = offset;
             }
+        }
+
+        private bool CueLayerReady =>
+            materials != null && cueLayerIndex >= 0 && cueLayerIndex < materials.Length
+            && materials[cueLayerIndex] != null && offsetsPerUnit[cueLayerIndex] > 0f;
+
+        /// <summary>Width of the cue layer's panorama in its own pixels — the offset wraps here.</summary>
+        public float PanoramaWidthPixels =>
+            CueLayerReady ? pixelsPerUnit / offsetsPerUnit[cueLayerIndex] : 0f;
+
+        /// <summary>
+        /// How far the cue layer's panorama has scrolled, in panorama pixels counted from its left
+        /// edge. Wraps back to 0 at <see cref="PanoramaWidthPixels"/>.
+        /// </summary>
+        public float OffsetPixels =>
+            CueLayerReady
+                ? materials[cueLayerIndex].mainTextureOffset.x * PanoramaWidthPixels
+                : 0f;
+
+        /// <summary>
+        /// Waits until the cue layer has scrolled to <paramref name="targetPixels"/>. Always waits
+        /// forwards: a mark the panorama has just gone past costs a full lap rather than passing
+        /// straight through, so the landscape is reliably at the same place afterwards.
+        /// </summary>
+        /// <param name="timeoutSeconds">
+        /// Gives up and returns after this long. The kiosk must not hang on a mark it cannot reach
+        /// — if the scroll has been stopped, the mark never arrives. 0 waits indefinitely.
+        /// </param>
+        public IEnumerator WaitForOffsetPixels(float targetPixels, float timeoutSeconds)
+        {
+            float width = PanoramaWidthPixels;
+            if (width <= 0f)
+            {
+                Debug.LogWarning($"Landscape has no usable cue layer at index {cueLayerIndex}, " +
+                                 $"not waiting for offset {targetPixels}px.");
+                yield break;
+            }
+
+            float remaining = Mathf.Repeat(targetPixels - OffsetPixels, width);
+            float waited = 0f;
+
+            while (remaining > 0f)
+            {
+                float before = OffsetPixels;
+                yield return null;
+
+                waited += Time.deltaTime;
+                if (timeoutSeconds > 0f && waited >= timeoutSeconds)
+                {
+                    Debug.LogWarning($"Landscape did not reach offset {targetPixels}px within " +
+                                     $"{timeoutSeconds}s ({remaining:F0}px short); continuing.");
+                    yield break;
+                }
+
+                // Repeat, so the frame the offset wraps on still counts as forward progress.
+                remaining -= Mathf.Repeat(OffsetPixels - before, width);
+            }
+        }
+
+        [ContextMenu("Log Offset")]
+        private void LogOffset()
+        {
+            Debug.Log($"Landscape offset: {OffsetPixels:F0} of {PanoramaWidthPixels:F0} px " +
+                      $"(layer {cueLayerIndex}). Only meaningful in play mode.");
         }
 
         [ContextMenu("Slow Down")]

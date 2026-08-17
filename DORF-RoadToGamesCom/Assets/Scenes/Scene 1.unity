@@ -145,7 +145,7 @@ Transform:
   m_GameObject: {fileID: 34980255}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 24.32, y: 0, z: 0.88}
+  m_LocalPosition: {x: 24.32, y: 0, z: 1.3}
   m_LocalScale: {x: 1.1, y: 3.8, z: 3.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -290,6 +290,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.Landscape
   scrollSpeed: 4.45
   slowDownDuration: 3
+  pixelsPerUnit: 38
+  cueLayerIndex: 1
   layers:
   - meshRenderer: {fileID: 1700000015}
     parallaxFactor: 2.2
@@ -1451,7 +1453,7 @@ Transform:
   m_GameObject: {fileID: 1441842413}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.92, y: 0, z: 0.79}
+  m_LocalPosition: {x: -21.92, y: 0, z: 1}
   m_LocalScale: {x: 0.73, y: 3.8, z: 3.8}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1623,11 +1625,18 @@ MonoBehaviour:
   secondsBeforeTransitionStarts: 10
   secondsBeforeTitleFadeIn: 5
   titleScreenDuration: 5
+  transitionOffsetPixels: 1000
+  musicCueLeadPixels: 500
+  maxOffsetWaitSeconds: 90
   trainMover: {fileID: 612082048}
   titleFadeIn: {fileID: 2073291138}
   smartphone: {fileID: 843732846}
   sceneSwapManager: {fileID: 0}
   landscape: {fileID: 163643663}
+  musicCue:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 9f6d8d55a791a7943a43693d5b43c776, type: 2}
 --- !u!4 &1552280895
 Transform:
   m_ObjectHideFlags: 0
@@ -1985,7 +1994,7 @@ Transform:
   m_GameObject: {fileID: 1700000024}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 84.2895, y: 286.1, z: -17.8}
+  m_LocalPosition: {x: 84.2895, y: 286.1, z: -0.3}
   m_LocalScale: {x: 279.9474, y: 30.6842, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
