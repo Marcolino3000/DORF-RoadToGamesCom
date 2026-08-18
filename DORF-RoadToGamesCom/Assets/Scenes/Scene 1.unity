@@ -1626,8 +1626,8 @@ MonoBehaviour:
   secondsBeforeTitleFadeIn: 5
   titleScreenDuration: 5
   transitionOffsetPixels: 1000
-  musicCueLeadPixels: 500
-  maxOffsetWaitSeconds: 90
+  musicCueLeadPixels: 3000
+  maxOffsetWaitSeconds: 3000
   trainMover: {fileID: 612082048}
   titleFadeIn: {fileID: 2073291138}
   smartphone: {fileID: 843732846}
@@ -1636,7 +1636,7 @@ MonoBehaviour:
   musicCue:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 9f6d8d55a791a7943a43693d5b43c776, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: ed6ff9009cb9f4e9bb65336c848f9692, type: 2}
 --- !u!4 &1552280895
 Transform:
   m_ObjectHideFlags: 0
