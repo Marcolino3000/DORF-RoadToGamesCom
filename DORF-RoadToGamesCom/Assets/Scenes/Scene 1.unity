@@ -940,6 +940,7 @@ GameObject:
   - component: {fileID: 843732847}
   - component: {fileID: 843732846}
   - component: {fileID: 843732849}
+  - component: {fileID: 843732850}
   m_Layer: 5
   m_Name: Smartphone
   m_TagString: Untagged
@@ -1119,6 +1120,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &843732850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 843732845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d2f746a3ab0049248907fe528043ef4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UI.SmartphoneClock
+  secondsPerMinute: 60
+  startTimeOverride: 
 --- !u!1 &994502847
 GameObject:
   m_ObjectHideFlags: 0

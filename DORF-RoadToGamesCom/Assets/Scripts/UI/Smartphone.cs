@@ -306,6 +306,9 @@ namespace UI
             SetVisible(initial ? false : isOpen);
         }
 
+        /// <summary>Time the status bar shows, as it is written there ("10:40").</summary>
+        public string StatusBarTime => time;
+
         public void SetTime(string value)
         {
             time = value;

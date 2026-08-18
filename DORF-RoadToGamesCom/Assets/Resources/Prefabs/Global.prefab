@@ -2090,9 +2090,21 @@ MonoBehaviour:
   backgroundColor: {r: 0, g: 0, b: 0, a: 1}
   sortingOrder: 999
   debugLogs: 0
-  image: {fileID: 21300000, guid: 0b196edc3a01142908dbefd658b39592, type: 3}
+  skyLayer: {fileID: 21300000, guid: 56fae19cf211744f3ad8e076030515f9, type: 3}
+  cloudLayer: {fileID: 21300000, guid: 58878dc3496df4013b936920c06a92ec, type: 3}
+  foregroundLayers:
+  - {fileID: 21300000, guid: 165004d24b9f044aabc4492749ee7501, type: 3}
+  dustLayer: {fileID: 21300000, guid: 771d104d43418427fb297e4a7af7ee13, type: 3}
+  lightLayer: {fileID: 21300000, guid: 3cdbbf007c35e4df88cb5130164d922d, type: 3}
   resourcePath: UI/StartSplash
   usePlaceholderWhenMissing: 1
+  cloudDriftSeconds: 90
+  cloudBandTop: 0
+  cloudBandBottom: 0.565
+  dustDrift: {x: 0.02, y: 0.012}
+  dustDriftSeconds: {x: 37, y: 23}
+  lightPulse: 0.2
+  lightPulseSeconds: 16
   startingLanguage: 0
   germanButtonImage: {fileID: 0}
   englishButtonImage: {fileID: 0}
@@ -9028,6 +9040,38 @@ PrefabInstance:
       propertyPath: raycaster
       value: 
       objectReference: {fileID: 5747816080230149823}
+    - target: {fileID: 103405315606252239, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.99998134
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0.0061086393
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 195.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 229089906552950098, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 332210648412357402, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: verticalOffset
+      value: -33
+      objectReference: {fileID: 0}
     - target: {fileID: 332210648412357402, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: frames.Array.size
       value: 10
@@ -9145,6 +9189,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4841918610819786129, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4841918610819786129, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
@@ -9192,6 +9240,10 @@ PrefabInstance:
       propertyPath: inputDispatcher
       value: 
       objectReference: {fileID: 2440381798090726151}
+    - target: {fileID: 7522490867226700350, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: scaleFactor
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 7592358812985851016, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: raycaster
       value: 

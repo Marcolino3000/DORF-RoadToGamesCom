@@ -15,16 +15,12 @@ public class SauerteigDoughAnimation : MonoBehaviour
     [Tooltip("Sauerteig-1 .. Sauerteig-10, in that order.")]
     [SerializeField] private Sprite[] frames;
     [SerializeField] private float framesPerSecond = 12f;
-    [Tooltip("How much localScale.y the dough image keeps once a run of the animation is through - " +
-             "it is taken off again when the run was a shrink. 0 leaves the height to " +
-             "SauerteigStatusDisplay alone.")]
-    [SerializeField] private float growthPerAnimation;
     [Tooltip("Below this much change in the dough's localScale.y per frame it counts as standing still.")]
     [SerializeField] private float scaleEpsilon = 0.0001f;
 
     [Header("References")]
-    [Tooltip("The dough image that stretches. Its top edge is what this animation follows, and it " +
-             "is what growthPerAnimation scales.")]
+    [Tooltip("The dough image that stretches. Its top edge is what this animation follows. It is " +
+             "only ever read, never moved - its height belongs to SauerteigStatusDisplay.")]
     [SerializeField] private RectTransform dough;
 
     [Header("Placement")]
@@ -46,7 +42,6 @@ public class SauerteigDoughAnimation : MonoBehaviour
     private Image image;
     private float lastScaleY;
     private float frameTimer;
-    private int direction = 1;
 
     private void Awake()
     {
@@ -80,19 +75,13 @@ public class SauerteigDoughAnimation : MonoBehaviour
 
         FollowDoughTop();
 
-        var wasPlaying = isPlaying;
         isPlaying = Mathf.Abs(delta) > scaleEpsilon;
 
         if (!isPlaying)
-        {
-            if (wasPlaying)
-                ApplyGrowthStep();
-
             return;
-        }
 
         // growing runs the rise forwards, shrinking plays it back down
-        direction = delta > 0 ? 1 : -1;
+        var direction = delta > 0 ? 1 : -1;
 
         frameTimer += Time.deltaTime * framesPerSecond;
 
@@ -115,27 +104,6 @@ public class SauerteigDoughAnimation : MonoBehaviour
         var position = rectTransform.anchoredPosition;
         position.y = doughTop + verticalOffset;
         rectTransform.anchoredPosition = position;
-    }
-
-    /// <summary>
-    /// Adds the per-run step to the dough once the scale tween in
-    /// <see cref="SauerteigStatusDisplay"/> has come to rest. Doing it any earlier is pointless -
-    /// the tween writes localScale.y every frame while it runs and would overwrite the step. It
-    /// survives until the next activity change, when the tween picks its own target again.
-    /// </summary>
-    private void ApplyGrowthStep()
-    {
-        if (Mathf.Approximately(growthPerAnimation, 0f))
-            return;
-
-        var scale = dough.localScale;
-
-        // a floor, so a run of shrinks cannot flip the dough inside out
-        scale.y = Mathf.Max(0.01f, scale.y + growthPerAnimation * direction);
-        dough.localScale = scale;
-
-        // the step is ours, it must not read back as movement and retrigger the flipbook
-        lastScaleY = scale.y;
     }
 
     private void ShowFrame(int index)

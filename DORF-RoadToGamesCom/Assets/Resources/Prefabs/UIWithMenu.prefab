@@ -980,7 +980,6 @@ MonoBehaviour:
   - {fileID: 21300000, guid: de41f62665f744061a4cb24a26e5a743, type: 3}
   - {fileID: 21300000, guid: ba82f975d8ee440269c3f8fc1b09de49, type: 3}
   framesPerSecond: 12
-  growthPerAnimation: 0
   scaleEpsilon: 0.0001
   dough: {fileID: 798993365025142998}
   verticalOffset: -64.1
