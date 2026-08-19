@@ -7753,17 +7753,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2459043860723191969, guid: af10d5b363b08468082fb93188628d24, type: 3}
   m_PrefabInstance: {fileID: 2584957035776005245}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &8466999199810248090 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6223779332585130471, guid: af10d5b363b08468082fb93188628d24, type: 3}
-  m_PrefabInstance: {fileID: 2584957035776005245}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bd0c94469ca64091b54ead736c09d096, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Interactable.Interactable
 --- !u!1001 &2666410557561383750
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9332,31 +9321,10 @@ PrefabInstance:
       insertIndex: 1
       addedObject: {fileID: 4731830617468774722}
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4903742585581656042, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 3365696897085142091}
     - targetCorrespondingSourceObject: {fileID: 9122371395666607529, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1779434609364065509}
   m_SourcePrefab: {fileID: 100100000, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
---- !u!1 &565660092738172154 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4903742585581656042, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
-  m_PrefabInstance: {fileID: 4887592234910294800}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3365696897085142091
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565660092738172154}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c62a53b82761411991bff3d2943b918c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.UiInteractionTrigger
-  interactable: {fileID: 8466999199810248090}
 --- !u!114 &2070886167436908142 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6875154685759714686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}

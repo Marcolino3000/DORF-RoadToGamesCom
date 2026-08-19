@@ -13,7 +13,7 @@
   <ShowSpatialAudioWarningMsg>true</ShowSpatialAudioWarningMsg>
   <WwiseInstallationPathMac />
   <WwiseInstallationPathWindows>C:\Program Files (x86)\Audiokinetic\Wwise2025.1.4.9062</WwiseInstallationPathWindows>
-  <WwiseProjectPath>../../DORF-RoadToGamesCom/Cod-Main_WwiseProject/Cod-Main_WwiseProject.wproj</WwiseProjectPath>
+  <WwiseProjectPath>../Cod-Main_WwiseProject/Cod-Main_WwiseProject.wproj</WwiseProjectPath>
   <UseWaapi>true</UseWaapi>
   <WaapiPort>8080</WaapiPort>
   <WaapiIP>127.0.0.1</WaapiIP>

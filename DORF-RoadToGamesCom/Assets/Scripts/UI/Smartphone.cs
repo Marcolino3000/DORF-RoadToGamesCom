@@ -68,6 +68,12 @@ namespace UI
         private VisualElement chatViewAvatar;
         private ListView messagesListView;
 
+        // Untertitelleiste. Sie hängt in smartphoneRoot und ist damit zusammen mit dem Handy
+        // weg — eine Sprachnachricht läuft bei geschlossenem Handy zwar weiter, aber dann ist
+        // die Nachricht selbst samt Wellenform ebenso wenig zu sehen.
+        private VisualElement subtitleBar;
+        private Label subtitleTextEl;
+
         private readonly List<Contact> contacts = new();
         private readonly Dictionary<string, VoiceMemoEntry> memosByVoiceId = new();
         private readonly Dictionary<string, Texture2D> avatarsById = new();
@@ -91,6 +97,13 @@ namespace UI
         // Which of the entry's takes the AudioSource currently holds. Each take is a different
         // length, so the playhead only travels between them as a fraction.
         private int loadedTakeIndex;
+
+        // Der Cue, der gerade auf der Leiste steht. Gemerkt, damit der Label-Text nur beim
+        // Wechsel neu gesetzt wird statt in jedem Frame — ein Label neu zu betexten macht das
+        // Layout schmutzig, und die Leiste steht bei der längsten Nachricht über eine Minute.
+        // -1 heißt: nichts angezeigt.
+        private ContactMessage shownCueMessage;
+        private int shownCueIndex = -1;
 
         private void Start()
         {
@@ -284,6 +297,13 @@ namespace UI
             chatViewAvatar = root.Q<VisualElement>("chatViewAvatar");
             messagesListView = root.Q<ListView>("messagesListView");
 
+            // Frisch aus dem Baum geholt, also unbetextet und unsichtbar — der Merker muss mit.
+            // Läuft gerade eine Nachricht, setzt UpdateSubtitle die Zeile im nächsten Frame
+            // wieder auf.
+            subtitleBar = root.Q<VisualElement>("subtitleBar");
+            subtitleTextEl = root.Q<Label>("subtitleText");
+            HideSubtitle();
+
             // Marlene's own picture on the Profile tab never changes, so it is set once per bind.
             ApplyAvatar(root.Q<VisualElement>("profileIcon"), selfAvatar);
 
@@ -407,6 +427,11 @@ namespace UI
             SetLabel("navCallsLabel", english ? "CALLS" : "ANRUFE");
             SetLabel("navChatsLabel", "CHATS");
             SetLabel("navProfileLabel", english ? "PROFILE" : "PROFIL");
+
+            // Nach einem Sprachwechsel steht die laufende Zeile noch in der alten Sprache da.
+            // Der zurückgesetzte Merker zwingt UpdateSubtitle, sie neu zu setzen.
+            shownCueMessage = null;
+            shownCueIndex = -1;
         }
 
         private void SetLabel(string elementName, string value)
@@ -789,6 +814,7 @@ namespace UI
             playingRefs = null;
             isPaused = false;
             loadedTakeIndex = 0;
+            HideSubtitle();
         }
 
         private void PauseVoice()
@@ -816,6 +842,7 @@ namespace UI
 
             SyncLoadedTake();
             UpdateVoiceProgress();
+            UpdateSubtitle();
         }
 
         /// <summary>
@@ -836,6 +863,7 @@ namespace UI
                 return;
             }
 
+            HideSubtitle();
             messagesListView?.RefreshItems();
 
             if (voiceChainFinished) return;
@@ -1014,6 +1042,87 @@ namespace UI
                 bar.style.height = 4f + rng.Next(0, 18);
                 bars.Add(bar);
             }
+        }
+
+        #endregion
+
+        #region Untertitel
+
+        /// <summary>
+        /// Setzt die Zeile, die zum Stand der laufenden Sprachnachricht gehört. Läuft in jedem
+        /// Frame mit, in dem gespielt wird; angefasst wird die Leiste aber nur beim Cue-Wechsel.
+        ///
+        /// Pausiert bleibt die Zeile stehen, weil <see cref="UpdateVoicePlayback"/> dann gar nicht
+        /// erst hierher kommt — genau wie die Wellenform, die ebenso stehen bleibt.
+        /// </summary>
+        private void UpdateSubtitle()
+        {
+            if (subtitleBar == null) return;
+
+            var message = playingMessage;
+            var cues = message?.subtitles;
+            if (cues == null || cues.Count == 0)
+            {
+                HideSubtitle();
+                return;
+            }
+
+            // Gegen die Nachricht wie gesprochen, nicht gegen den geladenen Take: die Zeiten
+            // stehen einmal für 1x in der JSON, und bei 1,5x und 2x läuft der Zähler von selbst
+            // schneller. Ohne das müsste jede Zeile pro Geschwindigkeit noch einmal getimt werden.
+            ShowCue(message, cues, CueIndexAt(cues, ElapsedAsSpoken(message)));
+        }
+
+        /// <summary>
+        /// Der letzte Cue, dessen Startzeit erreicht ist, oder -1 vor dem ersten. Setzt voraus,
+        /// dass die Cues nach <c>t</c> aufsteigend in der JSON stehen — was für Untertitel ohnehin
+        /// die einzig sinnvolle Reihenfolge ist.
+        /// </summary>
+        private static int CueIndexAt(List<SubtitleCue> cues, float seconds)
+        {
+            var index = -1;
+            for (var i = 0; i < cues.Count; i++)
+            {
+                if (cues[i] == null) continue;
+                if (cues[i].t > seconds) break;
+                index = i;
+            }
+            return index;
+        }
+
+        /// <summary>
+        /// Ein Cue steht, bis der nächste anfängt; der letzte steht bis zum Ende der Nachricht.
+        /// Eine längere Pause mittendrin bekommt deshalb einen Cue mit leerem Text — der räumt die
+        /// Leiste, statt die vorige Zeile über der Stille stehen zu lassen.
+        /// </summary>
+        private void ShowCue(ContactMessage message, List<SubtitleCue> cues, int index)
+        {
+            if (message == shownCueMessage && index == shownCueIndex) return;
+
+            shownCueMessage = message;
+            shownCueIndex = index;
+
+            var line = index >= 0 ? cues[index]?.LocalizedText?.Trim() : null;
+            if (string.IsNullOrEmpty(line))
+            {
+                subtitleBar.style.display = DisplayStyle.None;
+                return;
+            }
+
+            if (subtitleTextEl != null) subtitleTextEl.text = line;
+            subtitleBar.style.display = DisplayStyle.Flex;
+        }
+
+        /// <summary>
+        /// Räumt die Leiste und vergisst den Cue, sodass dieselbe Zeile danach wieder gesetzt
+        /// werden kann. Gehört zu jedem Weg, auf dem eine Nachricht endet: abgebrochen
+        /// (<see cref="StopVoice"/>) wie ausgehört (<see cref="HandleVoiceFinished"/>).
+        /// </summary>
+        private void HideSubtitle()
+        {
+            shownCueMessage = null;
+            shownCueIndex = -1;
+            if (subtitleBar != null) subtitleBar.style.display = DisplayStyle.None;
         }
 
         #endregion
@@ -1329,6 +1438,30 @@ namespace UI
                     : contact;
         }
 
+        /// <summary>
+        /// Eine Untertitelzeile einer Sprachnachricht. <c>t</c> ist ihr Anfang in Sekunden,
+        /// gemessen an der Aufnahme wie gesprochen (1x) — die schnelleren Takes rechnet
+        /// <see cref="ElapsedAsSpoken"/> darauf zurück. Die Zeile steht, bis der nächste Cue
+        /// anfängt; ein Cue mit leerem Text räumt die Leiste wieder.
+        /// </summary>
+        [Serializable]
+        private class SubtitleCue
+        {
+            public float t;
+            public string text;
+            public string textEn;
+
+            /// <summary>
+            /// Fällt auf Deutsch zurück, solange keine Übersetzung in der JSON steht — dieselbe
+            /// Regel wie bei den Chatnachrichten. Leerer Text ist dabei kein Fehlen, sondern die
+            /// gewollte Pause, und bleibt deshalb in beiden Sprachen leer.
+            /// </summary>
+            public string LocalizedText =>
+                Node.CurrentLanguage == Language.En && !string.IsNullOrWhiteSpace(textEn)
+                    ? textEn
+                    : text;
+        }
+
         [Serializable]
         private class ContactMessage
         {
@@ -1339,6 +1472,7 @@ namespace UI
             public string status; // sent: "sent" | "delivered" | "read". received: "read" | "unread".
             public string type;   // "" (text) | "voice"
             public string voiceId; // "voice" only: key into the Voice Memo Clips list on Smartphone
+            public List<SubtitleCue> subtitles; // "voice" only: Untertitel, nach t aufsteigend
 
             public bool IsVoice => type == "voice";
 

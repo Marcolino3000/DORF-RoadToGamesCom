@@ -73,5 +73,19 @@
             -->
             <ui:VisualElement name="phoneOverlay" picking-mode="Ignore" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0; background-image: url(&quot;project://database/Assets/UI/Smartphone/PhoneOverlay.png&quot;); -unity-background-scale-mode: scale-to-fit;" />
         </ui:VisualElement>
+        <!--
+            Untertitel für die Sprachnachrichten. Absolut und an der Unterkante des
+            Panels verankert, liegt die Leiste also über dem unteren Ende des Handys
+            statt ihm Platz wegzunehmen: das Handy beansprucht bei 16:9 schon 1038 der
+            1080 logischen Pixel, auf einem Ultrawide sogar den ganzen Rest. Darunter
+            liegen nur Eingabe- und Navigationsleiste, die beide reine Deko sind.
+            picking-mode Ignore, damit Klicks in diesem Streifen weiterhin beim
+            Hintergrund landen — der ist es, der das Handy schließt.
+        -->
+        <ui:VisualElement name="subtitleBar" picking-mode="Ignore" class="subtitle-bar" style="display: none;">
+            <ui:VisualElement name="subtitleBox" picking-mode="Ignore" class="subtitle-bar__box">
+                <ui:Label name="subtitleText" picking-mode="Ignore" class="subtitle-bar__text" />
+            </ui:VisualElement>
+        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
