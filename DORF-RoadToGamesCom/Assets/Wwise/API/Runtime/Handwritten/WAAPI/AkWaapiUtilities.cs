@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
@@ -394,6 +394,11 @@ private static async void Loop()
 	{
 		try
 		{
+			var projectAvailable = await IsProjectAvailable();
+			if (!projectAvailable)
+			{
+				return false;
+			}
 			var result = await GetProjectInfo();
 			if (result.Count == 0)
 			{
@@ -563,6 +568,12 @@ private static async void Loop()
 		var ret = UnityEngine.JsonUtility.FromJson<ReturnWwiseObjects>(result).@return;
 
 		return ParseObjectInfo(ret);
+	}
+	
+	private static async Task<bool> IsProjectAvailable()
+	{
+		var result = await WaapiClient.Call(ak.wwise.core.@object.ping, null, null);
+		return UnityEngine.JsonUtility.FromJson<PingWwiseObject>(result).isAvailable;
 	}
 
 	/// <summary>

@@ -16,7 +16,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 [UnityEditor.CanEditMultipleObjects]
@@ -55,7 +55,7 @@ public class AkAudioListenerInspector : UnityEditor.Editor
 				else
 				{
 					AkAudioListener selectedTarget = (AkAudioListener)target;
-					if (selectedTarget.gameObject.GetComponent<AkGameObj>().enabled)
+					if (selectedTarget.gameObject && selectedTarget.gameObject.activeInHierarchy)
 					{
 						AkUnitySoundEngine.SetScalingFactor(m_Listener.gameObject, m_Listener.ScalingFactor);
 					}

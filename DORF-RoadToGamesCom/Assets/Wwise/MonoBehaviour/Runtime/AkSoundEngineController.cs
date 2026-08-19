@@ -14,7 +14,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using AK.Wwise.Unity.Logging;
@@ -118,7 +118,7 @@ public class AkSoundEngineController
 		var arguments = System.Environment.GetCommandLineArgs();
 		if (UnityEngine.Application.isBatchMode && System.Array.IndexOf(arguments, "-wwiseEnableWithNoGraphics") < 0)
 		{
-			WwiseLogger.Warning("Sound engine will not be initialized in batch/nographics mode. To override, specify -wwiseEnableWithNoGraphics");
+			WwiseLogger.Log("Sound engine will not be initialized in batch/nographics mode. To override, specify -wwiseEnableWithNoGraphics");
 			return;
 		}
 #endif
@@ -215,6 +215,9 @@ public class AkSoundEngineController
 
 	public void OnApplicationFocus(bool focus)
 	{
+#if UNITY_EDITOR
+		ActivateAudio(focus,AkWwiseInitializationSettings.Instance.RenderDuringFocusLoss);
+#endif
 	}
 #elif UNITY_WEBGL
 	// On WebGL, allow background audio when browser is un-focused in development builds to make the Wwise Profiler usable.

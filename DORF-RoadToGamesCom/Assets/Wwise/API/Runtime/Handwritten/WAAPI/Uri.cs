@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 /// <summary>URI strings to use in WAAPI calls. For a complete description, refer to the official Wwise SDK documentation.</summary>
@@ -190,6 +190,8 @@ public class ak
 				public const string getPropertyAndReferenceNames = "ak.wwise.core.object.getPropertyAndReferenceNames";
 				/// <summary>Retrieves the list of operation made to objects.</summary>
 				public const string structureChanged = "ak.wwise.core.object.structureChanged";
+				/// <summary>Verify if WAAPI is currently available.</summary>
+				public const string ping = "ak.wwise.core.ping";
 			}
 			public class undo
 			{

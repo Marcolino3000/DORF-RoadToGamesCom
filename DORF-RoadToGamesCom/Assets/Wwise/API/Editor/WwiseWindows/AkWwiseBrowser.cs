@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
@@ -20,10 +20,16 @@ using UnityEditor;
 using UnityEngine;
 using AK.Wwise.Unity.Logging;
 
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
+#else
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState;
+#endif
+
 #if UNITY_EDITOR
 public class AkWwiseBrowser : UnityEditor.EditorWindow
 {
-	[UnityEngine.SerializeField] UnityEditor.IMGUI.Controls.TreeViewState m_treeViewState;
+	[UnityEngine.SerializeField] WwiseTreeViewState m_treeViewState;
 
 	public static AkWwiseTreeView m_treeView;
 	UnityEditor.IMGUI.Controls.SearchField m_SearchField;
@@ -49,6 +55,13 @@ public class AkWwiseBrowser : UnityEditor.EditorWindow
 			window = GetWindow<AkWwiseBrowser>("Wwise Browser", true,typeof(EditorWindow).Assembly.GetType("UnityEditor.ConsoleWindow"));
 		}
 
+		LoadWindowTexture(window);
+
+		window.Show();
+	}
+
+	private static void LoadWindowTexture(AkWwiseBrowser window)
+	{
 		Texture2D originalIcon = EditorGUIUtility.Load("Assets/Wwise/API/Editor/WwiseWindows/BrowserIcon.png") as Texture2D;
 
 		if (originalIcon != null)
@@ -64,10 +77,9 @@ public class AkWwiseBrowser : UnityEditor.EditorWindow
 		{
 			window.titleContent = new GUIContent("Wwise Browser");
 		}
-    
-		window.Show();
 	}
-	
+
+
 	private static Texture2D ScaleTexture(Texture2D source, int targetWidth, int targetHeight)
 	{
 		RenderTexture rt = RenderTexture.GetTemporary(targetWidth, targetHeight);
@@ -85,7 +97,13 @@ public class AkWwiseBrowser : UnityEditor.EditorWindow
 	{
 		if (m_treeViewState == null)
 		{
-			m_treeViewState = new UnityEditor.IMGUI.Controls.TreeViewState();
+			m_treeViewState = new WwiseTreeViewState();
+		}
+		
+		AkWwiseBrowser window = (AkWwiseBrowser)EditorWindow.GetWindow(typeof(AkWwiseBrowser));
+		if (window != null)
+		{
+			LoadWindowTexture(window);
 		}
 
 		var multiColumnHeaderState = AkWwiseTreeView.CreateDefaultMultiColumnHeaderState();

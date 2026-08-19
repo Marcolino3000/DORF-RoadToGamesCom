@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System.Linq;
@@ -21,6 +21,14 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEditor.IMGUI.Controls;
 using AK.Wwise.Unity.Logging;
+
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
+#else
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState;
+#endif
 
 public enum BrowserFilter
 {
@@ -163,7 +171,7 @@ public abstract class AkWwiseTreeDataSource
 		ProjectRoot = CreateProjectRootItem();
 	}
 	
-	public TreeViewItem FindByIdRecursive(TreeViewItem item, int id)
+	public WwiseTreeViewItem FindByIdRecursive(WwiseTreeViewItem item, int id)
 	{
 		if (item.id == id)
 		{
@@ -199,7 +207,7 @@ public abstract class AkWwiseTreeDataSource
 		return Data.ItemDict.Values.FirstOrDefault(element => element.id == id);
 	}
 	
-	public TreeViewItem FindByNameRecursive(TreeViewItem item, string name, WwiseObjectType objectType)
+	public WwiseTreeViewItem FindByNameRecursive(WwiseTreeViewItem item, string name, WwiseObjectType objectType)
 	{
 		if ( (item as AkWwiseTreeViewItem).objectType == objectType && item.displayName == name)
 		{
@@ -252,7 +260,7 @@ public abstract class AkWwiseTreeDataSource
 	public IList<int> GetAncestors(int id)
 	{
 		var parents = new List<int>();
-		TreeViewItem el = FindById(id);
+		WwiseTreeViewItem el = FindById(id);
 		if (el != null)
 		{
 			while (el.parent != null)
@@ -304,7 +312,7 @@ public abstract class AkWwiseTreeDataSource
 		modelChanged?.Invoke();
 	}
 
-	public bool IsExpanded(TreeViewState state, int id)
+	public bool IsExpanded(WwiseTreeViewState state, int id)
 	{
 		if (ProjectRoot != null && id == ProjectRoot.id)
 		{

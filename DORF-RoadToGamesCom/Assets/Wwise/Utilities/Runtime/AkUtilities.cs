@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 #if !(UNITY_QNX) // Disable under unsupported platforms.
@@ -312,6 +312,13 @@ public partial class AkUtilities
 					return;
 				}
 			}
+			
+			var lastWriteTime = System.IO.File.GetLastWriteTime(WwiseProjectPath);
+			if (s_ProjectBankPaths.Count > 0 && lastWriteTime <= s_LastBankPathUpdate)
+			{
+				return;
+			}
+			s_LastBankPathUpdate = lastWriteTime;
 
 			s_ProjectBankPaths.Clear();
 			var doc = new System.Xml.XmlDocument();
@@ -767,14 +774,16 @@ public partial class AkUtilities
 
 		var wrongSeparatorChar = System.IO.Path.DirectorySeparatorChar == '/' ? '\\' : '/';
 
+		BasePath = BasePath.Replace(wrongSeparatorChar, System.IO.Path.DirectorySeparatorChar);
 		if (string.IsNullOrEmpty(RelativePath))
 		{
-			return BasePath.Replace(wrongSeparatorChar, System.IO.Path.DirectorySeparatorChar);
+			return BasePath;
 		}
 
+ 		RelativePath = RelativePath.Replace(wrongSeparatorChar, System.IO.Path.DirectorySeparatorChar);
 		if (System.IO.Path.GetPathRoot(RelativePath) != "")
 		{
-			return RelativePath.Replace(wrongSeparatorChar, System.IO.Path.DirectorySeparatorChar);
+			return RelativePath;
 		}
 
 		return System.IO.Path.GetFullPath(System.IO.Path.Combine(BasePath, RelativePath));
@@ -1097,9 +1106,14 @@ public partial class AkUtilities
 	
 	public static void FixSlashes(ref string path)
 	{
+		FixSlashes(ref path, true);
+	}
+
+	public static void FixSlashes(ref string path, bool addTrailingSlash)
+	{
 		var separatorChar = System.IO.Path.DirectorySeparatorChar;
 		var badChar = separatorChar == '\\' ? '/' : '\\';
-		FixSlashes(ref path, separatorChar, badChar, true);
+		FixSlashes(ref path, separatorChar, badChar, addTrailingSlash);
 	}
 
 	public static string GetPathInPackage(string relativePath)

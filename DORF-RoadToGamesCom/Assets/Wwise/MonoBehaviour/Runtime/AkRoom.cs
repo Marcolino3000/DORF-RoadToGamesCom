@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using AK.Wwise.Unity.Logging;
@@ -30,6 +30,8 @@ public enum AkRoomDistanceBehaviorLabel
 [UnityEngine.DisallowMultipleComponent]
 /// @brief An AkRoom is an enclosed environment that can only communicate to the outside/other rooms with AkRoomPortals
 /// @details The AkRoom component uses its required Collider component to determine when AkRoomAwareObjects enter and exit the room using the OnTriggerEnter and OnTriggerExit callbacks.
+/// When using Spatial Audio Rooms and Portals, a default Room is automatically created to contain game objects that are currently not in a Room. This Room is typically used for the outdoors and is therefore called the Outdoors Room.
+/// Because the Outdoors Room is automatically created, you do not have to add it to a scene, but you can customize it by using static functions in the AkRoom class.
 public class AkRoom : AkTriggerHandler
 {
 	public static ulong INVALID_ROOM_ID = unchecked((ulong)(-1));
@@ -755,9 +757,16 @@ public class AkRoom : AkTriggerHandler
 	private static ulong INVALID_ROOM_GAMEOBJECT_ID = unchecked((ulong)(-4));
 	private static AkRoom.OutdoorsRoomParameters _currentOutdoorsRoomParameters = AkRoom.OutdoorsRoomParameters.Default;
 
-	static public AkRoom.OutdoorsRoomParameters currentOutdoorsRoomParameters { get { return _currentOutdoorsRoomParameters; } }
+    /// <summary>
+    /// The current Outdoors Room parameters.
+    /// </summary>
+    static public AkRoom.OutdoorsRoomParameters currentOutdoorsRoomParameters { get { return _currentOutdoorsRoomParameters; } }
 
-	public struct OutdoorsRoomParameters
+    /// <summary>
+    /// Structure containing the parameters of the Outdoors Room.
+	/// When using the Spatial Audio Rooms and Portal feature, a default Room is automatically created to place game objects that are currently not in a Room. This Room is typically used for outdoors and is therefore nicknamed the Outdoors Room.
+    /// </summary>
+    public struct OutdoorsRoomParameters
 	{
 		public OutdoorsRoomParameters(AK.Wwise.AuxBus in_reverbAuxBus, float in_reverbLevel, float in_transmissionLoss, float in_auxSendLevel, bool in_keepRegistered)
 		{
@@ -768,19 +777,38 @@ public class AkRoom : AkTriggerHandler
 			keepRegistered = in_keepRegistered;
 		}
 
-		public AK.Wwise.AuxBus reverbAuxBus;
-		public float reverbLevel;
-		public float transmissionLoss;
-		public float auxSendLevel;
-		public bool keepRegistered;
+        /// The reverb auxiliary bus used by the Outdoors Room.
+        public AK.Wwise.AuxBus reverbAuxBus;
 
-		public static OutdoorsRoomParameters Default
+        /// The reverb control value for the send to the reverb aux bus. Valid range: (0.f-1.f). Default value is 1.
+        public float reverbLevel;
+
+        /// Loss value modeling transmission through the outdoors room volume. Valid range: (0.f-1.f). Default value is 0.
+        public float transmissionLoss;
+
+        /// Send level for sounds that are posted on the outdoors room game object. This property adds reverb to ambience and room tones. Valid range: (0.f-1.f). A value of 0 disables the aux send. Default value is 0.
+        public float auxSendLevel;
+
+        /// If set to false, Spatial Audio registers the room object only when it is needed by the sound propagation system for the purposes of reverb,
+		/// and unregisters the game object when all reverb tails are finished.
+		/// We recommend that you set this property to true if you call PostEvent() for the purpose of ambience or room tones.
+        /// Default value is false.
+        public bool keepRegistered;
+
+        /// <summary>
+        /// Gets an OutdoorsRoomParameters structure with all parameters set to their Default values.
+        /// </summary>
+        public static OutdoorsRoomParameters Default
 		{
 			get { return new OutdoorsRoomParameters(null, 1.0f, .0f, .0f, false); }
 		}
 	}
 
-	static public void SetOutdoorsRoomParameters(OutdoorsRoomParameters in_outdoorsRoomParameters)
+    /// <summary>
+    /// Sets the parameters of the defaut Outdoors Room.
+    /// </summary>
+    /// <param name="in_outdoorsRoomParameters">Structure containing the new parameters of the Outdoors Room.</param>
+    static public void SetOutdoorsRoomParameters(OutdoorsRoomParameters in_outdoorsRoomParameters)
 	{
 		_currentOutdoorsRoomParameters = in_outdoorsRoomParameters;
 
@@ -811,6 +839,11 @@ public class AkRoom : AkTriggerHandler
 		AkUnitySoundEngine.SetRoom(AkRoom.INVALID_ROOM_ID, roomParams, AkSurfaceReflector.INVALID_GEOMETRY_ID, "Outdoors");
 	}
 
+	/// <summary>
+	/// Posts an Event on the Outdoors Room.
+	/// </summary>
+	/// <param name="in_event">Envent to play.</param>
+	/// <returns></returns>
 	static public uint PostEventOutdoors(AK.Wwise.Event in_event)
 	{
 		if (!in_event.IsValid())
@@ -827,6 +860,9 @@ public class AkRoom : AkTriggerHandler
 		return in_event.Post(AkRoom.INVALID_ROOM_GAMEOBJECT_ID);
 	}
 
+	/// <summary>
+	/// Stops all sounds for the Outdoors Room.
+	/// </summary>
 	static public void StopOutdoors()
 	{
 		AkUnitySoundEngine.StopAll(AkRoom.INVALID_ROOM_GAMEOBJECT_ID);

@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 
@@ -143,6 +143,7 @@ public class WwiseEventReference : WwiseObjectReference
 		if (AutoBank != null)
 		{
 			AutoBank.IsAutoBank = !IsInUserDefinedSoundBank;
+			AutoBank.BankType = (uint)AkBankTypeEnum.AkBankType_Event;
 			AkAddressableBankManager.Instance.LoadBank(AutoBank, false, false, loadAsync:true);
 			WwiseEventReferencesManager.Instance.AddReference(this);
 		}
@@ -327,8 +328,8 @@ public class WwiseEventReference : WwiseObjectReference
 			AkBankManager.UnloadBank(DisplayName);
 #endif
 			m_BankID = AkUnitySoundEngine.AK_INVALID_UNIQUE_ID;
+			WwiseEventReferencesManager.Instance.RemoveReference(this);
 		}
-		WwiseEventReferencesManager.Instance.RemoveReference(this);
 		IsAutoBankLoaded = false;
 		yield return null;
 	}

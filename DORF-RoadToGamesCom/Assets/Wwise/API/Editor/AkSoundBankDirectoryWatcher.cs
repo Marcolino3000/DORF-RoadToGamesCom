@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
@@ -112,7 +112,7 @@ namespace Wwise.API.Editor.SoundBankDirectoryWatcher.Common
 					}
 					else
 					{
-						userWarning = "Ensure that the SoundBanks Path in the Integration Settings matches the Root Output Path in the Wwise Project Settings on the SoundBanks tab, then regenerate the SoundBanks.";
+						userWarning = "Ensure that the Root Output Path in the Integration Settings matches the Root Output Path in the Wwise Project Settings on the SoundBanks tab, then regenerate the SoundBanks.";
 					}
 
 					WwiseLogger.Error("Cannot find ProjectInfo.json at " + filename + ". " + userWarning);

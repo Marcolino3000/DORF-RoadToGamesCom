@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System.Linq;
@@ -21,7 +21,13 @@ using System.Collections.Generic;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 
-public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeViewItem>
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+#else
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem;
+#endif
+
+public class AkWwiseTreeViewItem : WwiseTreeViewItem, System.IEquatable<AkWwiseTreeViewItem>
 {
 	public bool IsUpToDate
 	{
@@ -159,7 +165,7 @@ public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeVi
 			numChildren = 0;
 		}
 
-		children = new List<TreeViewItem>();
+		children = new List<WwiseTreeViewItem>();
 		this.depth = depth;
 
 	}
@@ -169,7 +175,7 @@ public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeVi
 		objectGuid = objGuid;
 		objectType = objType;
 
-		children = new List<TreeViewItem>();
+		children = new List<WwiseTreeViewItem>();
 		this.depth = depth;
 	}
 
@@ -177,7 +183,7 @@ public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeVi
 	{
 		objectGuid = System.Guid.Empty;
 		objectType = WwiseObjectType.None;
-		children = new List<TreeViewItem>();
+		children = new List<WwiseTreeViewItem>();
 	}
 
 	public AkWwiseTreeViewItem(AkWwiseTreeViewItem other) : base(other.id, other.depth, other.displayName)
@@ -189,7 +195,7 @@ public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeVi
 		waapiName = other.waapiName;
 		bDifferentGuid = other.bDifferentGuid;
 		bNewInWwise = other.bNewInWwise;
-		children = new List<TreeViewItem>();
+		children = new List<WwiseTreeViewItem>();
 		this.depth = other.depth;
 	}
 
@@ -212,7 +218,7 @@ public class AkWwiseTreeViewItem : TreeViewItem, System.IEquatable<AkWwiseTreeVi
 		isSorted = true;
 	}
 
-	public override int CompareTo(TreeViewItem B)
+	public override int CompareTo(WwiseTreeViewItem B)
 	{
 		return CompareTo(this, B as AkWwiseTreeViewItem);
 	}

@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System;
@@ -22,6 +22,12 @@ using System.Collections.Generic;
 using UnityEditor.IMGUI.Controls;
 using UnityEngine;
 using AK.Wwise.Unity.Logging;
+
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+#else
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem;
+#endif
 
 public class AkWwiseTreeMergedDataSource : AkWwiseTreeDataSource
 {
@@ -34,6 +40,10 @@ public class AkWwiseTreeMergedDataSource : AkWwiseTreeDataSource
 		AkWwiseJSONBuilder.Populate();
 		SoundBanksDataSource = AkWwiseProjectInfo.ProjectPickerData;
 		WaapiDataSource = AkWwiseProjectInfo.WaapiBrowserData;
+		if (!SoundBanksDataSource.ProjectRoot.hasChildren)
+		{
+			FetchData();
+		}
 		WaapiDataSource.ObjectInfoLoaded+=OnWaapiDataLoaded;
 		SoundBanksDataSource.modelChanged+=MergeDataSources;
 		WaapiDataSource.modelChanged+=MergeDataSources;
@@ -193,7 +203,7 @@ public class AkWwiseTreeMergedDataSource : AkWwiseTreeDataSource
 		}
 	}
 
-	void UpdateIds(TreeViewItem Item, ref int Id)
+	void UpdateIds(WwiseTreeViewItem Item, ref int Id)
 	{
 		Item.id = Id;
 		foreach (var child in Item.children)

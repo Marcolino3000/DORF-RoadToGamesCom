@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 #if UNITY_EDITOR
@@ -38,7 +38,7 @@ public class WwiseSetupWizard
 	};
 	
 	//Change this when an API change is introduced that would break older version of the addrerssables package
-	private static string WwiseAddressableAPIDefine = "ADDRESSABLES_API_2025_DEFAULT";
+	private static string WwiseAddressableAPIDefine = "ADDRESSABLES_API_BREAK_AK_UTILITIES_WWISE_LOGGER";
 
 	public static void RunModify()
 	{
@@ -805,7 +805,7 @@ public class WwiseSetupWizard
 
 		if (logWarning)
 		{
-			UnityEngine.Debug.LogWarning("Automatically added AkAudioListener to Main Camera. Go to \"Edit > Wwise Settings...\" to disable this functionality.");
+			UnityEngine.Debug.Log("Automatically added AkAudioListener to Main Camera. Go to \"Edit > Wwise Settings...\" to disable this functionality.");
 		}
 	}
 	
@@ -834,12 +834,13 @@ public class WwiseSetupWizard
 				continue;
 			}
 #endif
-			if (PlayerSettings.GetScriptingDefineSymbolsForGroup(targetGroup).Contains(WwiseAddressableAPIDefine))
+			var namedTarget = UnityEditor.Build.NamedBuildTarget.FromBuildTargetGroup(targetGroup);
+			if (PlayerSettings.GetScriptingDefineSymbols(namedTarget).Contains(WwiseAddressableAPIDefine))
 			{
-				return;
+				continue;
 			}
 			
-			string currentDefines = PlayerSettings.GetScriptingDefineSymbolsForGroup(targetGroup);
+			string currentDefines = PlayerSettings.GetScriptingDefineSymbols(namedTarget);
 			var currentDefineList = currentDefines.Split(';').ToList();
 
 			const string wwiseAddressablePrefix = "ADDRESSABLES_API";
@@ -848,7 +849,7 @@ public class WwiseSetupWizard
 			currentDefineList.Add(WwiseAddressableAPIDefine);
 
 			string newDefinesString = string.Join(";", currentDefineList.Distinct());
-			PlayerSettings.SetScriptingDefineSymbolsForGroup(targetGroup, newDefinesString);
+			PlayerSettings.SetScriptingDefineSymbols(namedTarget, newDefinesString);
 		}
 	}
 

@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System.Linq;
@@ -21,7 +21,17 @@ using System.Collections.Generic;
 using UnityEditor.IMGUI.Controls;
 using AK.Wwise.Unity.Logging;
 
-public class AkWwiseTreeView : TreeView
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeView = UnityEditor.IMGUI.Controls.TreeView<int>;
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
+#else
+using WwiseTreeView = UnityEditor.IMGUI.Controls.TreeView;
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState;
+#endif
+
+public class AkWwiseTreeView : WwiseTreeView
 {
 
 	public enum PickerMode
@@ -69,7 +79,7 @@ public class AkWwiseTreeView : TreeView
 		};
 
 
-	public AkWwiseTreeView(TreeViewState treeViewState,
+	public AkWwiseTreeView(WwiseTreeViewState treeViewState,
 		MultiColumnHeader multiColumnHeader, AkWwiseTreeDataSource data)
 		: base(treeViewState, multiColumnHeader)
 	{
@@ -78,7 +88,7 @@ public class AkWwiseTreeView : TreeView
 		Reload();
 	}
 
-	public AkWwiseTreeView(TreeViewState treeViewState,
+	public AkWwiseTreeView(WwiseTreeViewState treeViewState,
 		AkWwiseTreeDataSource data, WwiseObjectType componentType)
 	: base(treeViewState)
 
@@ -215,7 +225,7 @@ public class AkWwiseTreeView : TreeView
 		base.OnGUI(rect);
 	}
 
-	protected override TreeViewItem BuildRoot()
+	protected override WwiseTreeViewItem BuildRoot()
 	{ 
 		return m_dataSource.CreateProjectRootItem();
 	}
@@ -225,8 +235,8 @@ public class AkWwiseTreeView : TreeView
 		BuildRows(new AkWwiseTreeViewItem());
 	}
 
-	protected override IList<TreeViewItem> BuildRows(
-		TreeViewItem root)
+	protected override IList<WwiseTreeViewItem> BuildRows(
+		WwiseTreeViewItem root)
 	{
 		m_Rows.Clear();
 
@@ -244,7 +254,7 @@ public class AkWwiseTreeView : TreeView
 		TreeUtility.SortTreeIfNecessary(dataRoot);
 		AddChildrenRecursive(dataRoot, m_Rows);
 		searchString = "";
-		return m_Rows.Cast<TreeViewItem>().ToList();
+		return m_Rows.Cast<WwiseTreeViewItem>().ToList();
 	}
 
 
@@ -509,7 +519,7 @@ public class AkWwiseTreeView : TreeView
 		}
 	}
 
-	public void SetExpandedUpwardsRecursive(TreeViewItem item)
+	public void SetExpandedUpwardsRecursive(WwiseTreeViewItem item)
 	{
 		if (item == null)
 		{
@@ -528,7 +538,7 @@ public class AkWwiseTreeView : TreeView
 	#endregion
 
 	#region click and drag/drop
-	protected override bool CanMultiSelect(TreeViewItem item)
+	protected override bool CanMultiSelect(WwiseTreeViewItem item)
 	{
 		return true;
 	}
@@ -647,11 +657,11 @@ public class AkWwiseTreeView : TreeView
 	private void CreateExpansionOptions(UnityEditor.GenericMenu menu, List<AkWwiseTreeViewItem> selectedItems)
 	{
 		List<AkWwiseTreeViewItem> expandableItems = selectedItems
-			.Where((item) => CanExpandItem(item))
+			.Where((item) => CanExpandOrCollapseRecursive(item, true))
 			.ToList();
 
 		List<AkWwiseTreeViewItem> collapsableItems = selectedItems
-			.Where((item) => CanCollapseItem(item))
+			.Where((item) => CanExpandOrCollapseRecursive(item, false))
 			.ToList();
 
 		if (expandableItems.Any())
@@ -781,7 +791,7 @@ public class AkWwiseTreeView : TreeView
 		}
 	}
 
-	protected bool CanPlay(TreeViewItem item)
+	protected bool CanPlay(WwiseTreeViewItem item)
 	{
 		if (!CheckWaapi()) return false;
 
@@ -791,23 +801,36 @@ public class AkWwiseTreeView : TreeView
 		return false;
 	}
 
-	protected bool CanExpandItem(TreeViewItem item)
+	protected bool CanExpandOrCollapseRecursive(WwiseTreeViewItem item, bool shouldExpand)
 	{
-		return item.children.Count > 0 && !IsExpanded(item.id);
+		if (item.children.Count > 0)
+		{
+			if (IsExpanded(item.id) != shouldExpand)
+			{
+				return true;
+			}
+			else
+			{
+				foreach (WwiseTreeViewItem child in item.children)
+				{
+					if (CanExpandOrCollapseRecursive(child, shouldExpand))
+					{
+						return true;
+					}
+				}
+				return false;
+			}
+		}
+		return false;
 	}
 
-	protected bool CanCollapseItem(TreeViewItem item)
-	{
-		return item.children.Count > 0 && IsExpanded(item.id);
-	}
-
-	protected bool CanSelect(TreeViewItem item)
+	protected bool CanSelect(WwiseTreeViewItem item)
 	{
 		if (!CheckWaapi()) return false;
 		return true;
 	}
 
-	protected bool CanOpen(TreeViewItem item)
+	protected bool CanOpen(WwiseTreeViewItem item)
 	{
 		if (!CheckWaapi()) return false;
 		return true;

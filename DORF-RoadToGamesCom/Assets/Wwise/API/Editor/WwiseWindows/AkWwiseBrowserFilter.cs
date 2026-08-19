@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using UnityEditor;
@@ -38,9 +38,6 @@ public class AkWwiseBrowserFilter : EditorWindow
 	BrowserFilterInfo [] statusInfos = new BrowserFilterInfo[6];
 	BrowserFilterInfo [] typeInfos = new BrowserFilterInfo[8];
 
-	private bool allStatusSelected = false;
-	private bool allTypeSelected = false;
-	
 	private bool m_close = false;
 
 	void InitBrowserFilterInfos()
@@ -79,23 +76,6 @@ public class AkWwiseBrowserFilter : EditorWindow
 
 	void AllSelectedCheck()
 	{
-		allStatusSelected = true;
-		foreach (var status in statusInfos)
-		{
-			if (!status.Checked)
-			{
-				allStatusSelected = false;
-			}
-		}
-
-		allTypeSelected = true;
-		foreach (var type in typeInfos)
-		{
-			if (!type.Checked)
-			{
-				allTypeSelected = false;
-			}
-		}
 		ApplyFilters();
 	}
 	
@@ -207,7 +187,6 @@ public class AkWwiseBrowserFilter : EditorWindow
 				Style.contentOffset = new Vector2(32, 5);
 				if (GUILayout.Button(content, Style, GUILayout.Height(20)))
 				{
-					allStatusSelected = true;
 					foreach (var status in statusInfos)
 					{
 						if (status.Filter != BrowserFilter.SoundBanksUpToDate)

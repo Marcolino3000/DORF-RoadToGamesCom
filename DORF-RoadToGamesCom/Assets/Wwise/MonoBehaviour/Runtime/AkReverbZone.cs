@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using AK.Wwise.Unity.Logging;
@@ -44,7 +44,9 @@ public class AkReverbZone : UnityEngine.MonoBehaviour
 	/// Width of the transition region between the Reverb Zone and its parent. The transition zone is centered around the Reverb Zone geometry. It only applies where triangle transmission loss is set to 0.
 	public float TransitionRegionWidth = 1.0f;
 
+#if UNITY_EDITOR
 	private bool needsUpdate = false;
+#endif
 
 	#endregion
 
@@ -96,7 +98,9 @@ public class AkReverbZone : UnityEngine.MonoBehaviour
 	public void SetReverbZone()
 	{
 		SetReverbZone(ReverbZone, ParentRoom, TransitionRegionWidth);
+#if UNITY_EDITOR
 		needsUpdate = false;
+#endif
 	}
 
 	/// <summary>
@@ -117,7 +121,9 @@ public class AkReverbZone : UnityEngine.MonoBehaviour
 		RemoveReverbZone();
 	}
 
+#if UNITY_EDITOR
 	// editor only function
+	// putting this in #if UNITY_EDITOR because of needsUpdate
 	private void OnValidate()
 	{
 		if (ReverbZone == null)
@@ -136,7 +142,6 @@ public class AkReverbZone : UnityEngine.MonoBehaviour
 	}
 
 	// needsUpdate is only set to true in editor. No need to update in non-editor
-#if UNITY_EDITOR
 	private void Update()
 	{
 		if (!UnityEditor.EditorApplication.isPlaying)

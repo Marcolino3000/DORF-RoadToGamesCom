@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using AK.Wwise.Unity.Logging;
@@ -61,6 +61,7 @@ public class AkBasePlatformSettings : UnityEngine.ScriptableObject
 	public virtual bool SuspendAudioDuringFocusLoss
 	{
 		get { return true; }
+		set { }
 	}
 
 	public virtual bool RenderDuringFocusLoss
@@ -303,7 +304,7 @@ public partial class AkCommonUserSettings
 	[UnityEngine.Tooltip("Multiplication factor for all streaming look-ahead heuristic values.")]
 	[UnityEngine.Range(0, 1)]
 	public float m_StreamingLookAheadRatio = 1.0f;
-	
+
 	public void CopyTo(AkStreamMgrSettings settings)
 	{
 	}
@@ -567,10 +568,10 @@ public class AkCommonAdvancedSettings
 
 	public virtual void CopyTo(AkPlatformInitSettings settings) { }
 
-	[UnityEngine.Tooltip("Whether to suspend the Wwise SoundEngine when the application loses focus.")]
+	[UnityEngine.Tooltip("Determines whether to suspend audio during loss of focus of the editor or game.")]
 	public bool m_SuspendAudioDuringFocusLoss = true;
 
-	[UnityEngine.Tooltip("Only used when \"Suspend Audio During Focus Loss\" is enabled. The state of the \"in_bRenderAnyway\" argument passed to the AkUnitySoundEngine.Suspend() function when the \"OnApplicationFocus\" Unity callback is received with \"false\" as its argument.")]
+	[UnityEngine.Tooltip("Determines whether to continue rendering audio while audio is suspended during focus loss. Only applicable if <b>Suspend Audio During Focus Loss</b> is enabled.")]
 	public bool m_RenderDuringFocusLoss;
 
 	[UnityEngine.Tooltip("Sets the sub-folder underneath UnityEngine.Application.persistentDataPath that will be used as the SoundBank base path. This is useful when the Init.bnk needs to be downloaded. Setting this to an empty string uses the typical SoundBank base path resolution. Setting this to \".\" uses UnityEngine.Application.persistentDataPath.")]
@@ -741,6 +742,7 @@ public abstract class AkCommonPlatformSettings : AkBasePlatformSettings
 	public override bool SuspendAudioDuringFocusLoss
 	{
 		get { return GetAdvancedSettings().m_SuspendAudioDuringFocusLoss; }
+		set { GetAdvancedSettings().m_SuspendAudioDuringFocusLoss = value; }
 	}
 
 	public override bool RenderDuringFocusLoss

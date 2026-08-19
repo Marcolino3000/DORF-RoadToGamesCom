@@ -13,7 +13,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 using System.Linq;
@@ -22,6 +22,15 @@ using System.Collections.Concurrent;
 using System.Collections.ObjectModel;
 using UnityEditor.IMGUI.Controls;
 using AK.Wwise.Unity.Logging;
+
+#if UNITY_6000_2_OR_NEWER
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem<int>;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState<int>;
+#else
+using WwiseTreeViewItem = UnityEditor.IMGUI.Controls.TreeViewItem;
+using WwiseTreeViewState = UnityEditor.IMGUI.Controls.TreeViewState;
+#endif
+
 
 /// <summary>
 /// This class communicates with Wwise Authoring via AkWaapiUtilities to keep track of the Wwise object hierarchy in the project.
@@ -755,7 +764,7 @@ public class AkWwiseTreeWAAPIDataSource : AkWwiseTreeDataSource
 		}
 	}
 
-	void Preload(AkWwiseTreeViewItem parent, TreeViewState treeState)
+	void Preload(AkWwiseTreeViewItem parent, WwiseTreeViewState treeState)
 	{
 		if (parent == null)
 		{
@@ -812,7 +821,7 @@ public class AkWwiseTreeWAAPIDataSource : AkWwiseTreeDataSource
 	{
 		this.treeviewCommandQueue = new ConcurrentQueue<TreeViewCommand>();
 		if (ProjectRoot != null)
-			ProjectRoot.children = new List<TreeViewItem>();
+			ProjectRoot.children = new List<WwiseTreeViewItem>();
 		if (still_connected)
 		{
 			UnsubscribeTopics();

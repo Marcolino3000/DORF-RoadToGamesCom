@@ -12,7 +12,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 #if !(UNITY_QNX) // Disable under unsupported platforms.
@@ -301,7 +301,7 @@ public class AkWwiseEditorSettings
 			public static string AddressableInstallerSection = "Wwise Addressable Installer";
 			public static UnityEngine.GUIContent UseGitRepository = new UnityEngine.GUIContent("Install Addressable from a git repository", "If true, will expect a git repository link to import the package, if false will install from a local folder.");
 			public static UnityEngine.GUIContent PackageSource = new UnityEngine.GUIContent("Package Source Path", "Can be a git repository link or a local folder depending on the setting above.");
-			public static UnityEngine.GUIContent AddressableBankFolder = new UnityEngine.GUIContent("Addressable SoundBanks Path", "Where the banks will be generated. The path should be relative to the Asset Folder");
+			public static UnityEngine.GUIContent AddressableBankFolder = new UnityEngine.GUIContent("Addressable Root Output Path", "Where the banks will be generated. The path should be relative to the Asset Folder");
 			public static UnityEngine.GUIContent UseCustomBuildScript = new UnityEngine.GUIContent("Use Custom Build Script", "If toggled on, specify a path to the custom build script in the AddressableAssetBuilderPath field. Otherwise the default Wwise Build script will be automatically created during the installation.");
 			public static UnityEngine.GUIContent AddressableAssetBuilderPath = new UnityEngine.GUIContent("Addressable Asset Build Path", "Where the custom asset builder is located.");
 			public static UnityEngine.GUIContent AutomaticallyUpdateExternalSourcesPath = new UnityEngine.GUIContent("Automatically Update External Sources Path", "If toggled on, the external sources path will be updated during the installation.");

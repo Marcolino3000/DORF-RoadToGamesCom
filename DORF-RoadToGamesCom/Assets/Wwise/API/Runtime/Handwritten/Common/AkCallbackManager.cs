@@ -18,7 +18,7 @@ Licensees holding valid licenses to the AUDIOKINETIC Wwise Technology may use
 this file in accordance with the end user license agreement provided with the
 software or, alternatively, in accordance with the terms contained
 in a written agreement between you and Audiokinetic Inc.
-Copyright (c) 2025 Audiokinetic Inc.
+Copyright (c) 2026 Audiokinetic Inc.
 *******************************************************************************/
 
 /// <summary>
@@ -310,12 +310,11 @@ public static class AkCallbackManager
 	}
 	
 #if UNITY_EDITOR
-	private static void FreeXMLFileHandle()
+	private static void FreeXMLFileHandle(uint xmlTimeout)
 	{
-		uint XmlTimeout = uint.Parse(AkWwiseEditorSettings.Instance.XMLTranslatorTimeout);
 		string baseSoundBankPath = AkBasePathGetter.GetPlatformBasePath();
 		baseSoundBankPath += "SoundbanksInfo.xml";
-		AkCallbackSerializer.FreeXmlTranslatorHandle(baseSoundBankPath, XmlTimeout);
+		AkCallbackSerializer.FreeXmlTranslatorHandle(baseSoundBankPath, xmlTimeout);
 	}
 #endif
 
@@ -370,9 +369,15 @@ public static class AkCallbackManager
 #if UNITY_EDITOR
 				if (gId != AkUnitySoundEngine.AK_INVALID_GAME_OBJECT)
 				{
+#if UNITY_6000_3_OR_NEWER
+					var obj =
+						UnityEditor.EditorUtility.EntityIdToObject((int)AkMonitoringCallbackInfo.gameObjID) as
+							UnityEngine.GameObject;
+#else
 					var obj =
 						UnityEditor.EditorUtility.InstanceIDToObject((int)AkMonitoringCallbackInfo.gameObjID) as
 							UnityEngine.GameObject;
+#endif
 					if (obj != null)
 					{
 						in_message = in_message.Replace(in_message.Substring(currentPos, idStringSize + 2), obj.name);
@@ -545,9 +550,10 @@ public static class AkCallbackManager
 			}
 			
 #if UNITY_EDITOR
-			if (atLeastOneMonitoringCallback)
+			uint xmlTimeout = uint.Parse(AkWwiseEditorSettings.Instance.XMLTranslatorTimeout);
+			if (atLeastOneMonitoringCallback && xmlTimeout > 0)
 			{
-				FreeXMLFileHandle();
+				FreeXMLFileHandle(xmlTimeout);
 			}
 #endif
 			return numCallbacks;
