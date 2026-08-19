@@ -258,7 +258,7 @@ MonoBehaviour:
   ClipVolume: 1
   PauseAfter: 0.5
   Children:
-  - {fileID: -2013252312785916954}
+  - {fileID: 881381899927406145}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -440,39 +440,6 @@ MonoBehaviour:
   RequiredNodes: []
   BlockerNodes: []
   PopularityValue: 0
---- !u!114 &-2013252312785916954
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: Ich heirate jetz...
-  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
-  Guid: 6030516efb14a491da55d161f3e0549f
-  Position: {x: 671.8273, y: 651.0436}
-  customPreview: 0
-  Blackboard:
-    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
-  DialogLine: Ich heirate jetzt die Betina.
-  DialogLineEn: I'm marrying Betina now.
-  TextPreview: Ich heirate jetz...
-  AudioClip: {fileID: 8300000, guid: 8a9c8154b97bc46bdae477197276dfa1, type: 3}
-  ClipVolume: 1
-  PauseAfter: 0.5
-  Children:
-  - {fileID: -275529220216256865}
-  - {fileID: -6774432438998130026}
-  FallThrough: 0
-  IsAvailable: 1
-  IsTrustOption: 0
-  IsBondingOption: 0
-  RequiredNodes: []
-  BlockerNodes: []
-  PopularityValue: 0
 --- !u!114 &-1637245266694845215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -636,39 +603,6 @@ MonoBehaviour:
   RequiredNodes: []
   BlockerNodes: []
   PopularityValue: 0
---- !u!114 &-275529220216256865
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
-  m_Name: Wow.
-  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
-  Guid: ec29f7c7905554769945af7b206f5dfc
-  Position: {x: 671.8273, y: 791.0436}
-  customPreview: 0
-  Blackboard:
-    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
-  DialogLine: Wow.
-  DialogLineEn: Wow.
-  TextPreview: Wow.
-  AudioClip: {fileID: 8300000, guid: 6f82101e5724f488dbffe7098123af67, type: 3}
-  ClipVolume: 1
-  PauseAfter: 0.5
-  Children:
-  - {fileID: 881381899927406145}
-  FallThrough: 0
-  IsAvailable: 1
-  IsTrustOption: 0
-  IsBondingOption: 0
-  RequiredNodes: []
-  BlockerNodes: []
-  answerType: 2
-  _popularityModifier: -5
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -725,9 +659,7 @@ MonoBehaviour:
   - {fileID: 6196282135479607636}
   - {fileID: 6360827891949690812}
   - {fileID: 7490700113216988996}
-  - {fileID: -2013252312785916954}
   - {fileID: -1637245266694845215}
-  - {fileID: -275529220216256865}
   - {fileID: 881381899927406145}
   - {fileID: 4953375580226594808}
   - {fileID: 1495247353798713498}
@@ -900,7 +832,7 @@ MonoBehaviour:
   ClipVolume: 1
   PauseAfter: 0.5
   Children:
-  - {fileID: -2013252312785916954}
+  - {fileID: 881381899927406145}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0

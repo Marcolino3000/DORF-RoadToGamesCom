@@ -39,7 +39,7 @@ MonoBehaviour:
   DialogLineEn: Nope.
   TextPreview: Nope.
   AudioClip: {fileID: 8300000, guid: d50c34bae789844e191ef3d6d12e3d3e, type: 3}
-  ClipVolume: 0.5
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0

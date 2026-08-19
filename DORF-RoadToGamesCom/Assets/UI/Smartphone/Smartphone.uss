@@ -106,6 +106,9 @@
 }
 
 .nav-bar__profile-circle {
+    /* Filled by Smartphone.cs; the grey stays visible for a contact without a picture.
+       scale-and-crop because the delivered art is full bleed, not pre-cut to a circle. */
+    -unity-background-scale-mode: scale-and-crop;
     width: 35px;
     height: 35px;
     background-color: rgb(72, 72, 74);
@@ -129,6 +132,9 @@
 }
 
 .avatar {
+    /* Filled by Smartphone.cs; the grey stays visible for a contact without a picture.
+       scale-and-crop because the delivered art is full bleed, not pre-cut to a circle. */
+    -unity-background-scale-mode: scale-and-crop;
     width: 55px;
     height: 55px;
     border-top-left-radius: 28px;
@@ -271,6 +277,9 @@
 }
 
 .chat-view__avatar {
+    /* Filled by Smartphone.cs; the grey stays visible for a contact without a picture.
+       scale-and-crop because the delivered art is full bleed, not pre-cut to a circle. */
+    -unity-background-scale-mode: scale-and-crop;
     width: 40px;
     height: 40px;
     border-top-left-radius: 20px;
@@ -363,14 +372,33 @@
 }
 
 /* ---------- Voice memo bubble ---------- */
+/* One centred row of play button, waveform and avatar — unchanged from before the duration
+   caption existed. The caption is absolute, so it takes no part in this layout and needs no
+   space reserved for it: equal padding top and bottom is all it takes for the wave to sit
+   centred, because the row's own slack over and under the 28px wave is symmetric too.
+       above = 4 (bubble) + 12 (padding) + 6 (row slack over the wave)  = 22
+       below = 6 (row slack) + 12 (padding) + 4 (bubble)                = 22
+   The caption hangs 14px under the wave (see .voice-memo__time), so the 22 below has to clear
+   that too — it does, with 8px to spare. Raise both padding values together for more air. */
 .voice-memo {
     flex-direction: row;
     align-items: center;
-    padding-top: 6px;
-    padding-bottom: 6px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 4px;
     padding-right: 4px;
     min-width: 280px;
+}
+
+/* Holds the wave and hosts its caption. Deliberately without padding: USS does not define
+   whether absolute offsets count from the padding box or the border box — the CSS spec says
+   padding edge, Yoga only aligned with that in 3.0 — so anchoring against a padded parent
+   would be a guess. With no padding both boxes coincide and left: 0 is exact either way. */
+.voice-memo__wave {
+    flex-grow: 1;
+    min-width: 0;
+    margin-left: 14px;
+    margin-right: 10px;
 }
 
 .voice-memo__play {
@@ -402,15 +430,14 @@
 .voice-memo__bars {
     flex-direction: row;
     align-items: center;
-    flex-grow: 1;
     height: 28px;
-    margin-left: 14px;
-    margin-right: 14px;
 }
 
+/* Unplayed part of the waveform. The played part is lifted to full white by
+   --played, which Smartphone.cs adds bar by bar as the playhead advances. */
 .voice-memo__bar {
     width: 3px;
-    background-color: rgb(199, 199, 204);
+    background-color: rgb(99, 99, 104);
     border-top-left-radius: 1px;
     border-top-right-radius: 1px;
     border-bottom-left-radius: 1px;
@@ -418,7 +445,68 @@
     margin-right: 2px;
 }
 
+.voice-memo__bar--played {
+    background-color: rgb(245, 245, 247);
+}
+
+/* Caption under the wave. Absolute, so it neither moves the wave off the row's midline nor
+   makes the row taller. left: 0 puts it flush with the wave's left edge. top is measured from
+   the top of the 28px .voice-memo__bars band; at 24 the caption starts just inside its lower
+   edge, which is empty anyway because the tallest bar is 21px and the bars sit centred. */
+.voice-memo__time {
+    position: absolute;
+    left: 0;
+    top: 24px;
+    height: 18px;
+    font-size: 14px;
+    color: rgb(142, 142, 147);
+    letter-spacing: 1px;
+    -unity-text-align: middle-left;
+}
+
+/* Holds the avatar and the speed pill, only ever one of them visible. Height is pinned to the
+   avatar's so that swapping them cannot change the row height — otherwise every bubble in the
+   list would jump the moment playback starts. The pill is kept within the avatar's width for
+   the same reason: the waveform has about 10px of slack at the bubble's min-width, no more. */
+.voice-memo__trailing {
+    height: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.voice-memo__speed {
+    min-width: 40px;
+    height: 26px;
+    border-radius: 13px;
+    background-color: rgb(72, 72, 74);
+    color: rgb(245, 245, 247);
+    font-size: 13px;
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    letter-spacing: 1px;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-bottom-width: 0;
+    border-left-width: 0;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 6px;
+    padding-bottom: 0;
+    padding-left: 6px;
+}
+
+.voice-memo__speed:hover {
+    background-color: rgb(99, 99, 104);
+}
+
 .voice-memo__avatar {
+    /* Filled by Smartphone.cs; the grey stays visible for a contact without a picture.
+       scale-and-crop because the delivered art is full bleed, not pre-cut to a circle. */
+    -unity-background-scale-mode: scale-and-crop;
     width: 40px;
     height: 40px;
     border-top-left-radius: 20px;

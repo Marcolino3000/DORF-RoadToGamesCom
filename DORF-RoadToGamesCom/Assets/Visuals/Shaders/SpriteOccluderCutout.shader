@@ -1,6 +1,9 @@
 // Same as UnlitSprite.shader, plus a hole around the character so foreground sprites never hide
-// her completely. Driven by CharacterCutout.cs. Because the sprites blend One Zero, the hole has to
-// be cut with clip() - lowering the alpha would not reveal anything behind them.
+// her completely. Driven by CharacterCutout.cs.
+//
+// Unlike UnlitSprite.shader this one ALPHA BLENDS and does not write depth. It has to: with the
+// One Zero blend the hole could only ever be a hard clip(), and the blurred edge needs real
+// transparency. The sprite body itself is kept fully solid below so it still looks the same.
 Shader "Coming of Dorf/Sprite Occluder Cutout"
 {
     Properties
@@ -13,18 +16,20 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
         [NoScaleOffset] _CutoutEdgeTex("Edge Break Up (R)", 2D) = "grey" {}
         _CutoutEdgeTiling("Edge Break Up Tiling", Float) = 6
         _CutoutEdgeStrength("Edge Break Up Strength", Range(0.0, 1.0)) = 0
-        _CutoutSoftness("Edge Softness", Range(0.01, 1.0)) = 0.6
+        _CutoutSoftness("Edge Softness (blur)", Range(0.01, 1.0)) = 0.6
+        _CutoutMinAlpha("Alpha inside the hole", Range(0.0, 1.0)) = 0.0
         _CutoutRimWidth("Rim Width", Range(0.0, 1.0)) = 0.18
         _CutoutRimColor("Rim Color (A = strength)", Color) = (0.16, 0.13, 0.11, 0.85)
         _CutoutDepthFade("Depth Fade (world units)", Float) = 1.0
         _CutoutMaxDepthSlope("Max Depth Slope (skips ground planes)", Float) = 0.005
 
         // BlendMode
-        [HideInInspector] _Surface("__surface", Float) = 0.0
+        [HideInInspector] _Surface("__surface", Float) = 1.0
         [HideInInspector] _Blend("__blend", Float) = 0.0
         [HideInInspector] _AlphaClip("__clip", Float) = 0.0
-        [HideInInspector] _SrcBlend("Src", Float) = 1.0
-        [HideInInspector] _DstBlend("Dst", Float) = 0.0
+        [HideInInspector] _SrcBlend("Src", Float) = 5.0
+        [HideInInspector] _DstBlend("Dst", Float) = 10.0
+        [HideInInspector] _ZWrite("ZWrite", Float) = 0.0
 
         // Editmode props
         [HideInInspector] _QueueOffset("Queue offset", Float) = 0.0
@@ -34,7 +39,8 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
     {
         Tags
         {
-            "RenderType" = "Opaque"
+            "Queue" = "Transparent"
+            "RenderType" = "Transparent"
             "IgnoreProjector" = "True"
             "RenderPipeline" = "UniversalPipeline"
             "PreviewType" = "Plane"
@@ -43,7 +49,7 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
         LOD 100
 
         Blend [_SrcBlend][_DstBlend]
-        ZWrite On
+        ZWrite [_ZWrite]
         Cull Off
 
         Pass
@@ -118,8 +124,15 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
                 half alpha = texColor.a * input.color.a;
                 clip(alpha - _Cutoff);
 
-                half rim = CutCharacterHole(input.screenPos.xy / max(input.screenPos.w, 1e-5), input.positionWS.z);
+                // Whatever survived the cutoff used to be fully opaque under the One Zero blend.
+                // Keep it that way, so alpha blending only ever shows up in the hole itself.
+                alpha = input.color.a;
+
+                half rim;
+                half hole = CharacterHole(input.screenPos.xy / max(input.screenPos.w, 1e-5), input.positionWS.z, rim);
+                alpha *= lerp(1.0, _CutoutMinAlpha, hole);
                 color = lerp(color, _CutoutRimColor.rgb, rim * _CutoutRimColor.a);
+                clip(alpha - 0.002);
 
                 #ifdef _ALPHAPREMULTIPLY_ON
                 color *= alpha;
@@ -136,7 +149,8 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
     {
         Tags
         {
-            "RenderType" = "Opaque"
+            "Queue" = "Transparent"
+            "RenderType" = "Transparent"
             "IgnoreProjector" = "True"
             "RenderPipeline" = "UniversalPipeline"
             "PreviewType" = "Plane"
@@ -145,7 +159,7 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
         LOD 100
 
         Blend [_SrcBlend][_DstBlend]
-        ZWrite On
+        ZWrite [_ZWrite]
         Cull Off
 
         Pass
@@ -218,8 +232,15 @@ Shader "Coming of Dorf/Sprite Occluder Cutout"
                 half alpha = texColor.a * input.color.a;
                 clip(alpha - _Cutoff);
 
-                half rim = CutCharacterHole(input.screenPos.xy / max(input.screenPos.w, 1e-5), input.positionWS.z);
+                // Whatever survived the cutoff used to be fully opaque under the One Zero blend.
+                // Keep it that way, so alpha blending only ever shows up in the hole itself.
+                alpha = input.color.a;
+
+                half rim;
+                half hole = CharacterHole(input.screenPos.xy / max(input.screenPos.w, 1e-5), input.positionWS.z, rim);
+                alpha *= lerp(1.0, _CutoutMinAlpha, hole);
                 color = lerp(color, _CutoutRimColor.rgb, rim * _CutoutRimColor.a);
+                clip(alpha - 0.002);
 
                 #ifdef _ALPHAPREMULTIPLY_ON
                 color *= alpha;

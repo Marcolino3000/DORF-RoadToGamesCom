@@ -17,6 +17,7 @@ public class ProximitySpriteReveal : MonoBehaviour
     [SerializeField] private SpriteRenderer spriteRenderer;
     [SerializeField] private TriggerArea triggerArea;
     [SerializeField] private Collider2D interactionCollider;
+    [Tooltip("Optional. While this door is toggled open the outline stays hidden - the collider is not affected.")]
     [SerializeField] private Toggleable doorToggleable;
 
     [Header("Debug")]
@@ -49,7 +50,7 @@ public class ProximitySpriteReveal : MonoBehaviour
         // keep the renderer's rgb, we only drive the alpha
         baseColor = spriteRenderer.color;
 
-        ApplyAlpha(closeAlpha);
+        Refresh();
     }
 
     private void OnEnable()
@@ -58,13 +59,6 @@ public class ProximitySpriteReveal : MonoBehaviour
 
         triggerArea.OnPlayerEntered += HandlePlayerEntered;
         triggerArea.OnPlayerExited += HandlePlayerExited;
-
-        doorToggleable.OnInteractionFeedback += SetActive;
-    }
-
-    private void SetActive()
-    {
-        isActive = !doorToggleable.ToggleState;
     }
 
     private void OnDisable()
@@ -85,16 +79,40 @@ public class ProximitySpriteReveal : MonoBehaviour
     {
         player = null;
         playerIsNear = false;
-        ApplyAlpha(farAlpha);
     }
 
+    // everything is derived from the current state every frame, so neither a missed
+    // callback nor an unlucky event order can leave the sprite stuck at a stale alpha
     private void Update()
     {
-        if (!isActive)
-            return;
-        
-        if (!playerIsNear) 
-            return;
+        Refresh();
+    }
+
+    private void Refresh()
+    {
+        float proximityAlpha = GetProximityAlpha();
+
+        // the outline is only a hint for the closed door. Read the toggle live: InteractableState
+        // raises OnInteractionFeedback *before* Toggleable.Toggle() flips ToggleState, so caching
+        // it in an event handler always yields the previous state.
+        isActive = doorToggleable == null || !doorToggleable.ToggleState;
+
+        currentAlpha = isActive ? proximityAlpha : farAlpha;
+
+        Color color = baseColor;
+        color.a = currentAlpha;
+        spriteRenderer.color = color;
+
+        // the collider follows the distance only, never the toggle: this sprite is the door's
+        // only clickable surface, so hiding the outline must never lock the player out of it
+        if (interactionCollider != null)
+            interactionCollider.enabled = proximityAlpha >= colliderEnabledThreshold;
+    }
+
+    private float GetProximityAlpha()
+    {
+        if (!playerIsNear || player == null || triggerCollider == null)
+            return farAlpha;
 
         // measure horizontal distance only (ignore Y), matching the gameplay plane
         float distance = Vector2.Distance(
@@ -109,21 +127,7 @@ public class ProximitySpriteReveal : MonoBehaviour
 
         // 0 at the centre, 1 at the edge -> closer means more visible
         float normalized = Mathf.InverseLerp(0f, worldRadius, distance);
-        float alpha = Mathf.Lerp(closeAlpha, farAlpha, normalized);
 
-        ApplyAlpha(alpha);
-    }
-
-    private void ApplyAlpha(float alpha)
-    {
-        currentAlpha = alpha;
-        
-        Color color = baseColor;
-        color.a = alpha;
-        spriteRenderer.color = color;
-
-        // drop the collider once the sprite has faded past the threshold
-        if (interactionCollider != null)
-            interactionCollider.enabled = alpha >= colliderEnabledThreshold;
+        return Mathf.Lerp(closeAlpha, farAlpha, normalized);
     }
 }
