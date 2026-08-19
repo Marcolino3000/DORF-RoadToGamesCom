@@ -31,9 +31,18 @@
 						</GameParameter>
 					</ChildrenList>
 				</Folder>
-				<GameParameter Name="Dorffest_SC" ID="{00A16A60-51B8-4453-97F5-22FF1027555F}">
+				<GameParameter Name="SC_Scene02" ID="{00A16A60-51B8-4453-97F5-22FF1027555F}">
 					<PropertyList>
-						<Property Name="InitialValue" Type="Real64" Value="0"/>
+						<Property Name="InitialValue" Type="Real64" Value="-50"/>
+						<Property Name="Max" Type="Real64" Value="-20"/>
+						<Property Name="Min" Type="Real64" Value="-50"/>
+					</PropertyList>
+				</GameParameter>
+				<GameParameter Name="SC_Sauerteig" ID="{538CE76D-A8B1-4ED0-8C47-B7BD29A58CFE}">
+					<PropertyList>
+						<Property Name="InitialValue" Type="Real64" Value="-50"/>
+						<Property Name="Max" Type="Real64" Value="-20"/>
+						<Property Name="Min" Type="Real64" Value="-50"/>
 					</PropertyList>
 				</GameParameter>
 			</ChildrenList>

@@ -14,12 +14,59 @@
 					<PropertyList>
 						<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
 						<Property Name="Max" Type="Real32" Value="-20"/>
+						<Property Name="Min" Type="Real32" Value="-50"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="2.5"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="GameParameter">
-							<ObjectRef Name="Dorffest_SC" ID="{00A16A60-51B8-4453-97F5-22FF1027555F}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+							<ObjectRef Name="SC_Scene02" ID="{00A16A60-51B8-4453-97F5-22FF1027555F}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
 						</Reference>
 					</ReferenceList>
+				</Effect>
+				<Effect Name="SC_Sauerteig" ID="{BEA5CCF7-40BF-4585-B2A7-5986A93372E8}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="Max" Type="Real32" Value="-20"/>
+						<Property Name="Min" Type="Real32" Value="-50"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="GameParameter">
+							<ObjectRef Name="SC_Sauerteig" ID="{538CE76D-A8B1-4ED0-8C47-B7BD29A58CFE}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
+				<Effect Name="New_Recorder" ID="{90978899-2486-4F30-A3DC-A36B555DD1FD}" PluginName="Wwise Recorder" CompanyID="0" PluginID="132" PluginType="3"/>
+				<Effect Name="New_Guitar_Distortion" ID="{336FD3AE-3194-4525-9A70-9C4A0072FCC7}" PluginName="Wwise Guitar Distortion" CompanyID="0" PluginID="126" PluginType="3">
+					<PropertyList>
+						<Property Name="DistortionDrive" Type="Real32" Value="7"/>
+						<Property Name="DistortionTone" Type="Real32" Value="24"/>
+						<Property Name="DistortionType" Type="int32" Value="1"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_Parametric_EQ" ID="{E6EAC021-A3AD-4743-AABA-3997C9C9D8C6}" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+					<PropertyList>
+						<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+						<Property Name="FrequencyBand1" Type="Real32" Value="113"/>
+						<Property Name="FrequencyBand2" Type="Real32" Value="1050"/>
+						<Property Name="FrequencyBand3" Type="Real32" Value="4796"/>
+						<Property Name="GainBand1" Type="Real32" Value="-24"/>
+						<Property Name="GainBand2" Type="Real32" Value="7"/>
+						<Property Name="OnOffBand3" Type="bool" Value="True"/>
+					</PropertyList>
+				</Effect>
+				<Effect Name="New_RoomVerb" ID="{88CA9B93-5A10-4A01-97A7-B221415B80D6}" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+					<PropertyList>
+						<Property Name="DecayTime" Type="Real32" Value="0.2"/>
+						<Property Name="Density" Type="Real32" Value="6"/>
+						<Property Name="Diffusion" Type="Real32" Value="1"/>
+						<Property Name="DryLevel" Type="Real32" Value="-6.3"/>
+						<Property Name="ERPattern" Type="int32" Value="22"/>
+						<Property Name="HFDamping" Type="Real32" Value="1.65"/>
+						<Property Name="PreDelay" Type="Real32" Value="0"/>
+						<Property Name="ReverbLevel" Type="Real32" Value="-38"/>
+						<Property Name="RoomShape" Type="Real32" Value="3"/>
+						<Property Name="RoomSize" Type="Real32" Value="-76"/>
+						<Property Name="StereoWidth" Type="Real32" Value="24"/>
+					</PropertyList>
 				</Effect>
 			</ChildrenList>
 		</WorkUnit>

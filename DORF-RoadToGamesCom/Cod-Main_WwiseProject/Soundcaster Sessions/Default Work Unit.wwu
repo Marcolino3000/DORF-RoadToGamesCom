@@ -10,8 +10,36 @@
 							<Position X="0" Y="0"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MX_Dialog_Neutral_PL" ID="{1B053861-BA06-44EA-9496-C1813767DA71}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Dialog_End" ID="{012FFF47-A75D-4BE3-96D2-82BA303D6626}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="4" Y="0"/>
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>
