@@ -975,6 +975,28 @@ MonoBehaviour:
           IsHardCondition: 1
       Name: SauerteigBasicActivity
       HighPriority: 0
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 4ee6957a4e3166e3ef9bfc80ce7818cf, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 7761151824013819991
+          IsHardCondition: 1
+      Name: SauerteigSuperActivity
+      HighPriority: 0
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 6c610f5d4b98ec0c91001f758a3716be, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 7761151824013819992
+          IsHardCondition: 1
+      Name: SauerteigOverflowActivity
+      HighPriority: 0
   references:
     version: 2
     RefIds:
@@ -1090,3 +1112,13 @@ MonoBehaviour:
       data:
         Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
         AwarenessLevel: 0
+    - rid: 7761151824013819991
+      type: {class: SauerteigState/SauerteigStateData, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        AwarenessLevel: 2
+    - rid: 7761151824013819992
+      type: {class: SauerteigState/SauerteigStateData, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 3ef692db3a0364d63994518f4e11cf50, type: 2}
+        AwarenessLevel: 3

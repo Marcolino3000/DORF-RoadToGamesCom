@@ -1983,7 +1983,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 500, y: 500}
+  m_AnchoredPosition: {x: 500, y: 362.5}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &6432000213413505565
@@ -7675,6 +7675,10 @@ MonoBehaviour:
   logRectTransform: {fileID: 8280045125670234244}
   reaction: {fileID: 11400000, guid: ae831742708ff4d70887ec2ce01ba256, type: 2}
   text: {fileID: 3594901078840807428}
+  skipHintText: Press "Space" to skip dialogue
+  skipHintOffset: {x: 0, y: 0}
+  skipHintReaction: {fileID: 0}
+  skipHintReactionResourcePath: ScriptableObjects/Reactions/Dialog/Scene 2 - DialogWithPaulReaction
 --- !u!1001 &2584957035776005245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9136,9 +9140,29 @@ PrefabInstance:
       propertyPath: m_RaycastTarget
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2093935301451068929, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494646076055704974, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494646076055704974, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2494646076055704974, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.7
+      objectReference: {fileID: 0}
     - target: {fileID: 2598616340023176700, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2876230376818354611, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3167727172074049827, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -9188,6 +9212,30 @@ PrefabInstance:
       propertyPath: interactablesThatDontTriggerWiggle.Array.size
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4652357635800369686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652357635800369686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4652357635800369686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808205526857508215, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808205526857508215, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4808205526857508215, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.z
+      value: 0.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4841918610819786129, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -9195,6 +9243,10 @@ PrefabInstance:
     - target: {fileID: 4841918610819786129, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: m_RaycastTarget
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5878869038213211113, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 319.3
       objectReference: {fileID: 0}
     - target: {fileID: 6113233982237030535, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: sourceAsset
@@ -9231,6 +9283,18 @@ PrefabInstance:
     - target: {fileID: 6875154685759714686, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: interactablesThatDontTriggerWiggle.Array.size
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050893738205808739, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050893738205808739, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7050893738205808739, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
+      propertyPath: m_targetScale.z
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 7059845053671320328, guid: 64b6dc8575f3049adad4db834ebcc55f, type: 3}
       propertyPath: raycaster
