@@ -11,6 +11,142 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Bus Name="Music" ID="{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}">
+							<ChildrenList>
+								<Bus Name="MX_LAY 01" ID="{4806E040-9DAE-4926-9A48-3C32402D5EA0}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="ST_MX_Context" ID="{FD47DEF4-31B3-446C-A5A3-2CF8A918A5C4}"/>
+												<StateGroupInfo Name="" ID="{7E2E6E2F-5DF6-434C-8EBF-19B44F609A07}" ShortID="1061423968"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+												<CustomState Name="" ID="{2E6AB427-DBC2-41E9-890D-076D4B2F3BE6}" ShortID="915230013">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+												<CustomState Name="" ID="{BF25FDBE-80BF-4AB2-8935-88E160DBE38B}" ShortID="816472947">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+												<CustomState Name="" ID="{D481F989-5690-4149-B3A3-E0DAD4A4B07D}" ShortID="645063432"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+												<CustomState Name="" ID="{48EBAEB4-6D49-43B3-B921-BBB16873644B}" ShortID="829775402"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="MX_LAY 02" ID="{FBE3291B-FB63-4502-84A6-560A8D0E02A6}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="ST_MX_Context" ID="{FD47DEF4-31B3-446C-A5A3-2CF8A918A5C4}"/>
+												<StateGroupInfo Name="" ID="{D247AF68-0DB6-485F-A59E-E5971F0CB8F7}" ShortID="899067910"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+												<CustomState Name="" ID="{614EAD70-5F4E-4E31-B57C-F530015C4C77}" ShortID="277972088"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+												<CustomState Name="" ID="{D5BB1436-4704-427A-A3F1-E02269388837}" ShortID="1024852633">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+												<CustomState Name="" ID="{E938EA00-F822-4874-8FFB-44EB482419BD}" ShortID="902702683">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+												<CustomState Name="" ID="{D9EF4122-85E0-4692-A177-3DF9D0EBCD3F}" ShortID="486104416"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+								<Bus Name="MX_LAY 03" ID="{9DA680D6-D97F-4709-BA24-CA0C29D23284}">
+									<StateInfo>
+										<StateGroupList>
+											<StateGroupInfo>
+												<StateGroupRef Name="ST_MX_Context" ID="{FD47DEF4-31B3-446C-A5A3-2CF8A918A5C4}"/>
+												<StateGroupInfo Name="" ID="{1F0856A6-63AB-43B2-B6AE-3F013B9C025D}" ShortID="372658979"/>
+											</StateGroupInfo>
+										</StateGroupList>
+										<CustomStateList>
+											<CustomState>
+												<StateRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+												<CustomState Name="" ID="{BC1D4F0A-A861-461F-BD74-8EED048224D0}" ShortID="50430158">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+												<CustomState Name="" ID="{C1C18A1E-0A67-45F7-9D7C-32340B433CAC}" ShortID="917723360"/>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+												<CustomState Name="" ID="{60616B0B-D994-4817-9628-8E3422B2746D}" ShortID="401725742">
+													<PropertyList>
+														<Property Name="BusVolume" Type="Real64" Value="-400"/>
+													</PropertyList>
+												</CustomState>
+											</CustomState>
+											<CustomState>
+												<StateRef Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+												<CustomState Name="" ID="{DDC14C4E-D6F9-49C5-81F2-FA2372C3D87E}" ShortID="132131233"/>
+											</CustomState>
+										</CustomStateList>
+									</StateInfo>
+								</Bus>
+							</ChildrenList>
+							<StateInfo>
+								<StateGroupList>
+									<StateGroupInfo>
+										<StateGroupRef Name="ST_MX_Context" ID="{FD47DEF4-31B3-446C-A5A3-2CF8A918A5C4}"/>
+										<StateGroupInfo Name="" ID="{107D3CDE-A319-4AF8-B95C-4C7318BA6AC7}" ShortID="860634932"/>
+									</StateGroupInfo>
+								</StateGroupList>
+								<CustomStateList>
+									<CustomState>
+										<StateRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+										<CustomState Name="" ID="{DDA92D2D-27A6-4911-BDFF-11983F956B7C}" ShortID="490611035"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+										<CustomState Name="" ID="{564C77E0-61BD-4449-935B-C7C154A0603C}" ShortID="23148252"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+										<CustomState Name="" ID="{D9C1FE6B-F894-4548-962C-A1164B45B88D}" ShortID="1068918351"/>
+									</CustomState>
+									<CustomState>
+										<StateRef Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+										<CustomState Name="" ID="{1DEB2878-28C6-4E52-A42E-AC4D69987917}" ShortID="803889215"/>
+									</CustomState>
+								</CustomStateList>
+							</StateInfo>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{1D5F64D8-0F28-4458-9331-7F4E0D05134E}" ShortID="770760863">

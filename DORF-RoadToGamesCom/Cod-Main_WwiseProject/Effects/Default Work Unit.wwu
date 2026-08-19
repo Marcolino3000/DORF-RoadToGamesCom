@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{E6EB9F87-60CC-4B59-A9F4-44BEB8EC0B59}" SchemaVersion="133">
 	<Effects>
-		<WorkUnit Name="Default Work Unit" ID="{E6EB9F87-60CC-4B59-A9F4-44BEB8EC0B59}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{E6EB9F87-60CC-4B59-A9F4-44BEB8EC0B59}" PersistMode="Standalone">
+			<ChildrenList>
+				<Effect Name="Dorffest_SC" ID="{BDF84313-16BA-4D1D-A793-C728D704EFFE}" PluginName="Ak Sidechain Receive" CompanyID="0" PluginID="194" PluginType="3">
+					<ReferenceList>
+						<Reference Name="SidechainRef">
+							<ObjectRef Name="Dorffest_SC_SOURCE" ID="{57D27403-C9FE-4124-BCF9-BD3A602E46D3}" WorkUnitID="{FF2381AE-A2E9-4565-81CD-7922A014825F}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
+				<Effect Name="New_Meter" ID="{84DFA714-C935-4B26-B26B-5AB821C22616}" PluginName="Wwise Meter" CompanyID="0" PluginID="129" PluginType="3">
+					<PropertyList>
+						<Property Name="ApplyDownstreamVolume" Type="bool" Value="True"/>
+						<Property Name="Max" Type="Real32" Value="-20"/>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="GameParameter">
+							<ObjectRef Name="Dorffest_SC" ID="{00A16A60-51B8-4453-97F5-22FF1027555F}" WorkUnitID="{1B39809D-A942-45E7-A1A4-4A8261CAB32C}"/>
+						</Reference>
+					</ReferenceList>
+				</Effect>
+			</ChildrenList>
+		</WorkUnit>
 	</Effects>
 </WwiseDocument>

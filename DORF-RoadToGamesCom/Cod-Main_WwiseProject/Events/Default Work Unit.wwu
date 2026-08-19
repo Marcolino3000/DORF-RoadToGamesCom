@@ -242,13 +242,45 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}"/>
+				<Event Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}">
+					<ChildrenList>
+						<Action Name="" ID="{FDFE5CF4-CE0F-42DB-92FE-B21492C945A5}" ShortID="203280437">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{31E74E14-9B90-43EA-A887-D64513AAD61A}" ShortID="303249443">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="7"/>
+								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+								<Property Name="FadeTime" Type="Real64" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_Dialog_traurig" ID="{81A02863-707C-4EC0-9903-AE7AA9594ECC}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 				<Event Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}"/>
 				<Event Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}"/>
 				<Event Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}"/>
 				<Event Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}"/>
 				<Event Name="MUS_Menu_Start" ID="{61203A67-85B1-4FEB-A2E1-DB821E4A15D6}"/>
-				<Event Name="MUS_DorffestJingle_Start" ID="{5A5F0D16-A39F-4377-8EE4-914C9F721303}"/>
+				<Event Name="MUS_DorffestJingle_Start" ID="{5A5F0D16-A39F-4377-8EE4-914C9F721303}">
+					<ChildrenList>
+						<Action Name="" ID="{B0B54BF4-971B-48B5-BCDA-1EFF7DF63720}" ShortID="788777369">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

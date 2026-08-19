@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{2823DAE1-C011-463A-B7A8-BD8DDFD768C2}" SchemaVersion="133">
 	<SoundcasterSessions>
-		<WorkUnit Name="Default Work Unit" ID="{2823DAE1-C011-463A-B7A8-BD8DDFD768C2}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{2823DAE1-C011-463A-B7A8-BD8DDFD768C2}" PersistMode="Standalone">
+			<ChildrenList>
+				<SoundcasterSession Name="New Soundcaster Session" ID="{4B5C8219-0757-4D80-84A4-ABA14C1FD143}">
+					<ModuleList>
+						<Module>
+							<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+					</ModuleList>
+				</SoundcasterSession>
+			</ChildrenList>
+		</WorkUnit>
 	</SoundcasterSessions>
 </WwiseDocument>

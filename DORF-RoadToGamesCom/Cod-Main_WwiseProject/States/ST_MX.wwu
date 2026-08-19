@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}" SchemaVersion="133">
+	<States>
+		<WorkUnit Name="ST_MX" ID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}" PersistMode="Standalone">
+			<ChildrenList>
+				<StateGroup Name="ST_MX_Context" ID="{FD47DEF4-31B3-446C-A5A3-2CF8A918A5C4}">
+					<ChildrenList>
+						<State Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+						<State Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+						<State Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+						<State Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+							<EndState Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+							<EndState Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+							<EndState Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+							<EndState Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+							<EndState Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+							<EndState Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
+				</StateGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</States>
+</WwiseDocument>
