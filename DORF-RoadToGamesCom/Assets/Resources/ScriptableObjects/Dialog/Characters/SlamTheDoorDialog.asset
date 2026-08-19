@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 0}
   DialogLine: '*Goes inside and slams door*'
+  DialogLineEn: "*Goes inside and slams door*"
   TextPreview: '*Goes inside and...'
   Children: []
   FallThrough: 0

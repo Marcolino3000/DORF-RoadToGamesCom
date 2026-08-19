@@ -22,6 +22,7 @@ MonoBehaviour:
     Hat ja eh gerade genug Probleme gerade. \nVielleicht h\xE4tte ich ihr sagen sollen
     wer bei der Hochzeit singt. Ich mein zu Bodo Bieramoschd hat ja noch kein nein
     gesagt.\n"
+  DialogLineEn: "Uhh... Marlene? Yeah, let's just chat some other time, no problem.\nMaybe I shouldn't have said that about Bettina. She's got enough problems right now anyway. \nMaybe I should have told her who's singing at the wedding. I mean, nobody has ever said no to Bodo Bieramoschd.\n"
   TextPreview: "\xC4hh... Marlene? ..."
   AudioClip: {fileID: 8300000, guid: 14551678a11cc4ee78912e5f4cbd7a02, type: 3}
   ClipVolume: 1
@@ -71,6 +72,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: ...
+  DialogLineEn: ...
   TextPreview: ...
   AudioClip: {fileID: 0}
   ClipVolume: 1

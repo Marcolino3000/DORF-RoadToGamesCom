@@ -39,6 +39,7 @@ MonoBehaviour:
     gemacht.\nNachdem Papa und sie sich getrennt haben, hat sie sehr auf ihren M\xE4dchennamen
     bestanden und alles \xFCberklebt, was nur ging.\nDabei ist \u201AH\xE4berle\u2018
     ja irgendwie auch nicht besser als \u201AHuber\u2018."
+  DialogLineEn: "I haven't seen this in ages. \nMum and I made it back then.\nAfter she and Dad split up, she was very insistent about her maiden name and covered up everything she possibly could.\nThough \u2018H\u00e4berle\u2019 isn't really any better than \u2018Huber\u2019 either."
   TextPreview: Das hab ich ja e...
   AudioClip: {fileID: 8300000, guid: 9c6d4bdd4448044199c392ccc8cf2e70, type: 3}
   ClipVolume: 1

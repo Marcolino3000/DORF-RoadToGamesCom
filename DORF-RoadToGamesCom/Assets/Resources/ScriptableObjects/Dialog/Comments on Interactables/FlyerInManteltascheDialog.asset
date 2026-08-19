@@ -19,6 +19,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: "Oh mein Gott, das Bergfest, was f\xFCr schreckliche Erinnerungen.
     Stichwort: Bierwindel"
+  DialogLineEn: "Oh my god, the Bergfest, what horrible memories. Keyword: beer nappy"
   TextPreview: Oh mein Gott, da...
   AudioClip: {fileID: 8300000, guid: be19cba2fac5246e6af3be01d5e89bc2, type: 3}
   ClipVolume: 1

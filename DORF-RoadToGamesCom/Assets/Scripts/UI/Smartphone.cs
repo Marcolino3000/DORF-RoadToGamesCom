@@ -32,6 +32,15 @@ namespace UI
         private Label cellularLabelEl;
         private ListView chatListView;
 
+        // Phone shell. phoneScreen sits at fixed offsets inside phoneContainer
+        // and the bezel PNG is scale-to-fit, so the two only line up while the
+        // container keeps exactly these proportions.
+        private const float PhoneDesignWidth = 560f;
+        private const float PhoneDesignHeight = 1038f;
+        private VisualElement phoneRoot;
+        private VisualElement phoneContainer;
+        private float appliedPhoneScale = -1f;
+
         // Conversation page elements.
         private VisualElement chatsPage;
         private VisualElement chatPage;
@@ -81,6 +90,17 @@ namespace UI
             timeLabelEl = root.Q<Label>("timeLabel");
             cellularLabelEl = root.Q<Label>("cellularLabel");
             chatListView = root.Q<ListView>("chatListView");
+
+            if (phoneRoot != null)
+                phoneRoot.UnregisterCallback<GeometryChangedEvent>(OnPhoneRootGeometryChanged);
+            phoneRoot = root.Q<VisualElement>("smartphoneRoot");
+            phoneContainer = root.Q<VisualElement>("phoneContainer");
+            appliedPhoneScale = -1f;
+            if (phoneRoot != null)
+            {
+                phoneRoot.RegisterCallback<GeometryChangedEvent>(OnPhoneRootGeometryChanged);
+                FitPhoneToPanel();
+            }
 
             chatsPage = root.Q<VisualElement>("chatsPage");
             chatPage = root.Q<VisualElement>("chatPage");
@@ -181,6 +201,33 @@ namespace UI
             isOpen = visible;
             if (root == null) return;
             root.style.display = visible ? DisplayStyle.Flex : DisplayStyle.None;
+        }
+
+        private void OnPhoneRootGeometryChanged(GeometryChangedEvent _) => FitPhoneToPanel();
+
+        // "Menu PanelSettings" scales with screen WIDTH (match = 0), so the panel's
+        // logical height is 1920 / aspect: 1080 at 16:9, only ~804 on a 21:9
+        // ultrawide. The phone needs 1038 of that — flex would squash the container,
+        // the scale-to-fit bezel then letterboxes inside the squashed box while
+        // phoneScreen keeps its fixed pixel offsets, and the screen slides out from
+        // under the bezel. phoneContainer is flex-shrink: 0 so its box always stays
+        // 560x1038; scale the whole phone uniformly instead, which keeps the design
+        // pixel-exact including the text inside the screen.
+        private void FitPhoneToPanel()
+        {
+            if (phoneRoot == null || phoneContainer == null) return;
+
+            var available = phoneRoot.contentRect;
+            if (available.width <= 0f || available.height <= 0f) return;
+
+            // Never larger than designed — at 16:9 this leaves the phone untouched.
+            const float margin = 0.98f;
+            var scale = Mathf.Min(available.width * margin / PhoneDesignWidth,
+                                  available.height * margin / PhoneDesignHeight,
+                                  1f);
+            if (Mathf.Approximately(scale, appliedPhoneScale)) return;
+            appliedPhoneScale = scale;
+            phoneContainer.style.scale = new StyleScale(new Scale(new Vector2(scale, scale)));
         }
 
         private void LoadContacts()

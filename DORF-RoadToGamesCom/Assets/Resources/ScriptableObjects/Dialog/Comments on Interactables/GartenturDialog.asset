@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Nope.
+  DialogLineEn: Nope.
   TextPreview: Nope.
   AudioClip: {fileID: 8300000, guid: d50c34bae789844e191ef3d6d12e3d3e, type: 3}
   ClipVolume: 0.5

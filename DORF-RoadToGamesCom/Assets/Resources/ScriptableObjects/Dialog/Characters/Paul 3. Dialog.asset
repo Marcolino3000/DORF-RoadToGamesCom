@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wer nicht will der hat schon.
+  DialogLineEn: Suit yourself.
   TextPreview: Wer nicht will d...
   AudioClip: {fileID: 8300000, guid: 997cfd849152f4ffc953af7672f6adb5, type: 3}
   PauseAfter: 0.5
@@ -47,6 +48,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wer nicht will der hat schon.
+  DialogLineEn: Suit yourself.
   TextPreview: Wer nicht will d...
   AudioClip: {fileID: 8300000, guid: 997cfd849152f4ffc953af7672f6adb5, type: 3}
   PauseAfter: 0.5
@@ -76,6 +78,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Hi.
+  DialogLineEn: Hi.
   TextPreview: Hi.
   AudioClip: {fileID: 8300000, guid: 97eb904df1048448598ef243723be0ef, type: 3}
   PauseAfter: 0.5
@@ -107,6 +110,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Hi Marlene, hast du\u2019s dir doch noch mal \xFCberlegt?"
+  DialogLineEn: Hi Marlene, did you change your mind after all?
   TextPreview: Hi Marlene, hast...
   AudioClip: {fileID: 8300000, guid: e4a1ee4caaf67417c9f380b99dee320e, type: 3}
   PauseAfter: 0.5
@@ -138,6 +142,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Lass mich \xFCberlegen\u2026N\xF6."
+  DialogLineEn: "Let me think\u2026Nope."
   TextPreview: "Lass mich \xFCberle..."
   AudioClip: {fileID: 8300000, guid: af37f67e44c6949b7ad7fdce41530777, type: 3}
   PauseAfter: 0.5
@@ -169,6 +174,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "(singt)\u2026 (awkward Lachen)"
+  DialogLineEn: "(sings)\u2026 (awkward laughter)"
   TextPreview: "(singt)\u2026 (awkwar..."
   AudioClip: {fileID: 8300000, guid: 4d7c950f67575443ab76dbbe66ec5c97, type: 3}
   PauseAfter: 0.5
@@ -225,6 +231,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Welche regionale Legende kommt nochmal zur Hochzeit?
+  DialogLineEn: Which regional legend is coming to the wedding again?
   TextPreview: Welche regionale...
   AudioClip: {fileID: 8300000, guid: 485d01d4fbc8d4d22b297f7964a34413, type: 3}
   PauseAfter: 0.5
@@ -256,6 +263,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ja hau raus.
+  DialogLineEn: Go on then.
   TextPreview: Ja hau raus.
   AudioClip: {fileID: 8300000, guid: ac7baf834d86144b9999f0aa4c595b22, type: 3}
   PauseAfter: 0.5
@@ -287,6 +295,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Auf gar keinen Fall.
+  DialogLineEn: Absolutely not.
   TextPreview: Auf gar keinen F...
   AudioClip: {fileID: 8300000, guid: 0c0262391f79b40da9bc4f9bc0c31a71, type: 3}
   PauseAfter: 0.5
@@ -318,6 +327,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ich kanns dir gerne nochmal vorsingen, ja?
+  DialogLineEn: I'm happy to sing it for you again, yeah?
   TextPreview: Ich kanns dir ge...
   AudioClip: {fileID: 8300000, guid: e7c0b62f5b36749f89f996436e3cd869, type: 3}
   PauseAfter: 0.5

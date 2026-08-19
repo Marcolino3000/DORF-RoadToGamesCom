@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Ich bin mal so nett und bringe die 20.000 Briefe mit rein.
+  DialogLineEn: I'll be nice and bring the 20,000 letters in with me.
   TextPreview: Ich bin mal so n...
   AudioClip: {fileID: 8300000, guid: 112bb0c6a5af54977a21b08b2e4ee89c, type: 3}
   ClipVolume: 1

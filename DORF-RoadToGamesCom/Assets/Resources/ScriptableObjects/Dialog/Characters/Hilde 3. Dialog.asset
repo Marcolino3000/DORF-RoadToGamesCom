@@ -19,6 +19,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: War ihr oifach wichtig dass du den hasch. Ich glaub den hat damals
     dei Oma ahgsetzt.
+  DialogLineEn: It just mattered to her that you have him. I think your granny started him back in the day.
   TextPreview: War ihr oifach w...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -50,6 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ha no isch recht.
+  DialogLineEn: Well, that's all right then.
   TextPreview: Ha no isch recht...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -81,6 +83,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "\xD6h\u2026 sauer sein?"
+  DialogLineEn: "Uh\u2026 be sour?"
   TextPreview: "\xD6h\u2026 sauer sein?"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -139,6 +142,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Uhh\u2026 wird der nicht nach Jahrzehnten mal schlecht?"
+  DialogLineEn: "Uhh\u2026 doesn't it go off after a few decades?"
   TextPreview: "Uhh\u2026 wird der ni..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -171,6 +175,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Joa, der chillt mit mir\u2026 Hat Mama irgendwas zu dem Ding erz\xE4hlt?"
+  DialogLineEn: "Yeah, he's chilling with me\u2026 Did Mum ever say anything about the thing?"
   TextPreview: Joa, der chillt ...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -204,6 +209,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Warsch scho am Grab? D\u2019 Gisela sagt da h\xE4ngat komische Weibr
     rom. I muss dann au los gell?"
+  DialogLineEn: Been to the grave yet? Gisela says there's odd women hanging about there. I have to get going, all right?
   TextPreview: Warsch scho am G...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -235,6 +241,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Nicht wenn man ihn regelm\xE4\xDFig f\xFCttert. Muss mr dann abr au
     verbraucha. I muss dann au los gell?"
+  DialogLineEn: Not if you feed him regularly. But then you have to use him up too. I have to get going, all right?
   TextPreview: Nicht wenn man i...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -265,6 +272,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Aha. D\u2019Marlene! Was macht dr Sauerteig?"
+  DialogLineEn: Aha. Marlene! How's the sourdough?
   TextPreview: "Aha. D\u2019Marlene! ..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -297,6 +305,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ho- \xE4hm Hilde?"
+  DialogLineEn: Ho- um, Hilde?
   TextPreview: "Ho- \xE4hm Hilde?"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -329,6 +338,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ha wa. Subbr.
+  DialogLineEn: Well there you go. Super.
   TextPreview: Ha wa. Subbr.
   AudioClip: {fileID: 0}
   ClipVolume: 1

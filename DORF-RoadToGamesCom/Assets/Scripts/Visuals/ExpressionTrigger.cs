@@ -17,22 +17,29 @@ namespace DefaultNamespace
             characterName = name;
         }
 
+        private void OnDisable()
+        {
+            markerManager.OnMarkerReached -= TriggerExpression;
+            AudioClipPlayer.FinishedPlaying -= ResetExpressionToDefault;
+        }
+
         private void ResetExpressionToDefault()
         {
             animator.SetInteger("expState", 1);
         }
 
-        private void TriggerExpression(MarkerManager.MarkerType type, string characterName)
+        private void TriggerExpression(int expressionState, string characterNameArg)
         {
-            // Debug.Log("triggered expression: " + type);
-            if (type == MarkerManager.MarkerType.Paragraph)
+            Debug.Log($"[Expression] Frame {Time.frameCount}: state {expressionState} für " +
+                      $"'{characterNameArg}' (dieses Objekt: '{characterName}')");
+
+            if (expressionState == MarkerManager.ParagraphState)
                 return;
 
-            if (!CheckForCharacter(characterName))
+            if (!CheckForCharacter(characterNameArg))
                 return;
-            
-            animator.SetInteger("expState", (int)type);
-            
+
+            animator.SetInteger("expState", expressionState);
         }
 
         private bool CheckForCharacter(string characterNameArg)

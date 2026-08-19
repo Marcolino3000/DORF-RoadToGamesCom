@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Nix zu sehen. Leider.
+  DialogLineEn: Nothing to see. Sadly.
   TextPreview: Nix zu sehen. Leider.
   AudioClip: {fileID: 8300000, guid: 3fcaea4ce58d5481dae5fe636b0b49d8, type: 3}
   ClipVolume: 1

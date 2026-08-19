@@ -40,6 +40,7 @@ MonoBehaviour:
     mich und dann l\xE4sst du mich allein. \nMuss ich dir hinterherreisen damit du
     eine Mutter bist? Du zwingst mich hier her zur\xFCckzukommen?!! \nWeil ich sonst
     meine Miete nicht bezahlen kann."
+  DialogLineEn: "My weird retrograde-Mercury mother stops answering the moment Saturn lines up with Venus. \nYou bring me into the world, traumatise me and then you leave me on my own. \nDo I have to travel after you for you to be a mother? You're forcing me to come back here?!! \nBecause otherwise I can't pay my rent."
   TextPreview: "Meine weirde r\xFCc..."
   AudioClip: {fileID: 8300000, guid: c59fd9fa6311f4b12bb942fb57fd3e3e, type: 3}
   ClipVolume: 1

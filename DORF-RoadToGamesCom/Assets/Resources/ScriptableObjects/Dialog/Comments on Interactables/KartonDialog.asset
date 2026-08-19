@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Noch mehr Sauerteig.
+  DialogLineEn: Even more sourdough.
   TextPreview: Noch mehr Sauert...
   AudioClip: {fileID: 8300000, guid: 2d293a400b66948c4a36f2003cf540f9, type: 3}
   ClipVolume: 1

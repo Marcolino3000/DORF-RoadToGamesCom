@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: "Verschlossen, aber wei\xDF ja jeder im Dorf wo der Schl\xFCssel ist."
+  DialogLineEn: Locked, but everyone in the village knows where the key is.
   TextPreview: Verschlossen, ab...
   AudioClip: {fileID: 8300000, guid: 9c6d4bdd4448044199c392ccc8cf2e70, type: 3}
   ClipVolume: 1

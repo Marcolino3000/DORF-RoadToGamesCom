@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 0}
   DialogLine: Verschlossen.
+  DialogLineEn: Locked.
   TextPreview: Verschlossen.
   AudioClip: {fileID: 8300000, guid: d0d78d034e9f24f5f84d88c409497eb9, type: 3}
   ClipVolume: 1

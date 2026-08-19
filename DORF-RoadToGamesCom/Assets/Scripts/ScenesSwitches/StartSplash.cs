@@ -59,8 +59,16 @@ namespace ScenesSwitches
         [Tooltip("Leave empty to get a plain plate with the label written on it instead.")]
         [SerializeField] private Sprite germanButtonImage;
         [SerializeField] private Sprite englishButtonImage;
+        [Tooltip("Empty hand drawn frame, same look as the main menu. Set this and both buttons get the frame with the label written into it, whatever the two sprites above say.")]
+        [SerializeField] private Sprite buttonFrame;
+        [Tooltip("The same frame with the glow painted around it. Fades in under the pointer.")]
+        [SerializeField] private Sprite buttonFrameGlow;
+        [Tooltip("Font for the labels. Leave empty for the TextMeshPro default.")]
+        [SerializeField] private TMP_FontAsset labelFont;
+        [SerializeField] private float labelFontSize = 64f;
         [SerializeField] private string germanLabel = "Deutsch";
         [SerializeField] private string englishLabel = "English";
+        [Tooltip("Only used for the plain plate — with a frame the button is exactly as big as the glow sprite, so the strokes stay sharp.")]
         [SerializeField] private Vector2 buttonSize = new(320f, 120f);
         [Tooltip("Gap between the two buttons, in pixels.")]
         [SerializeField] private float buttonSpacing = 60f;
@@ -299,6 +307,9 @@ namespace ScenesSwitches
 
         private Button BuildLanguageButton(Transform parent, string name, Sprite sprite, string label, float side, Language language)
         {
+            var framed = buttonFrame != null;
+            var size = framed ? NativeSize(buttonFrameGlow != null ? buttonFrameGlow : buttonFrame) : buttonSize;
+
             var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
 
             var rect = (RectTransform)go.transform;
@@ -306,14 +317,36 @@ namespace ScenesSwitches
             rect.anchorMin = new Vector2(0.5f, 0f);
             rect.anchorMax = new Vector2(0.5f, 0f);
             rect.pivot = new Vector2(0.5f, 0f);
-            rect.sizeDelta = buttonSize;
-            rect.anchoredPosition = new Vector2(side * (buttonSize.x + buttonSpacing), buttonBottomMargin);
+            rect.sizeDelta = size;
+            rect.anchoredPosition = new Vector2(side * (size.x + buttonSpacing), buttonBottomMargin);
 
             var image = go.GetComponent<Image>();
+            var button = go.GetComponent<Button>();
 
-            if (sprite != null)
+            if (framed)
+            {
+                // The plate itself stays invisible and only catches the click — the look is the two
+                // sprite layers below it.
+                image.color = Color.clear;
+
+                // Both layers sit at their own native size, centred. The glow file is the same frame
+                // with the light painted around it, which is why it is the bigger of the two: giving
+                // each its own rect is what keeps the frame from jumping when the glow comes in.
+                AddSpriteLayer(rect, "Frame", buttonFrame);
+                var glow = AddSpriteLayer(rect, "Glow", buttonFrameGlow != null ? buttonFrameGlow : buttonFrame);
+
+                // Only the glow layer is tinted: invisible at rest, opaque under the pointer. The
+                // frame underneath is a separate graphic, so it never changes.
+                button.targetGraphic = glow;
+                button.transition = Selectable.Transition.ColorTint;
+                button.colors = GlowOnHover();
+
+                BuildButtonLabel(rect, label);
+            }
+            else if (sprite != null)
             {
                 image.sprite = sprite;
+                button.targetGraphic = image;
             }
             else
             {
@@ -321,13 +354,58 @@ namespace ScenesSwitches
                 // be walked through before the flags are delivered.
                 image.color = buttonColor;
                 BuildButtonLabel(rect, label);
+                button.targetGraphic = image;
             }
 
-            var button = go.GetComponent<Button>();
-            button.targetGraphic = image;
             button.onClick.AddListener(() => SelectLanguage(language));
 
             return button;
+        }
+
+        private static Vector2 NativeSize(Sprite sprite)
+        {
+            return new Vector2(sprite.rect.width, sprite.rect.height);
+        }
+
+        private static Image AddSpriteLayer(RectTransform parent, string name, Sprite sprite)
+        {
+            var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image));
+
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(parent, false);
+            rect.anchorMin = new Vector2(0.5f, 0.5f);
+            rect.anchorMax = new Vector2(0.5f, 0.5f);
+            rect.pivot = new Vector2(0.5f, 0.5f);
+            rect.anchoredPosition = Vector2.zero;
+            rect.sizeDelta = NativeSize(sprite);
+
+            var image = go.GetComponent<Image>();
+            image.sprite = sprite;
+
+            // The plate above has to get the click, not the artwork on top of it.
+            image.raycastTarget = false;
+
+            return image;
+        }
+
+        /// <summary>
+        /// Tint block for the glow layer: transparent in every state except while the pointer is on
+        /// the button. Disabled is transparent too, so nothing lights up during the input delay.
+        /// </summary>
+        private static ColorBlock GlowOnHover()
+        {
+            var hidden = new Color(1f, 1f, 1f, 0f);
+
+            var colors = ColorBlock.defaultColorBlock;
+            colors.normalColor = hidden;
+            colors.highlightedColor = Color.white;
+            colors.pressedColor = Color.white;
+            colors.selectedColor = hidden;
+            colors.disabledColor = hidden;
+            colors.colorMultiplier = 1f;
+            colors.fadeDuration = 0.1f;
+
+            return colors;
         }
 
         private void BuildButtonLabel(Transform parent, string label)
@@ -345,9 +423,21 @@ namespace ScenesSwitches
             text.text = label;
             text.color = buttonTextColor;
             text.alignment = TextAlignmentOptions.Center;
-            text.enableAutoSizing = true;
-            text.fontSizeMin = 12f;
-            text.fontSizeMax = 64f;
+
+            if (labelFont != null)
+            {
+                // Fixed size rather than auto sizing, so both buttons read at exactly the size the
+                // main menu uses instead of each shrinking to its own label.
+                text.font = labelFont;
+                text.fontSize = labelFontSize;
+                text.enableAutoSizing = false;
+            }
+            else
+            {
+                text.enableAutoSizing = true;
+                text.fontSizeMin = 12f;
+                text.fontSizeMax = 64f;
+            }
 
             // The button underneath has to get the click, not the label on top of it.
             text.raycastTarget = false;

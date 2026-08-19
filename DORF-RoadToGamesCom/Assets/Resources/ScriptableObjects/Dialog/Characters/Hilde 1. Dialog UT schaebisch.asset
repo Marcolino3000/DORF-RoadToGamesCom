@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ned nur M\xFCddr."
+  DialogLineEn: Not just mothers.
   TextPreview: "Ned nur M\xFCddr."
   AudioClip: {fileID: 8300000, guid: a6b54ee9c13e941289439ef99fad450f, type: 3}
   ClipVolume: 1
@@ -49,6 +50,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Noch mehr tote M\xFCtter?"
+  DialogLineEn: Even more dead mothers?
   TextPreview: Noch mehr tote M...
   AudioClip: {fileID: 8300000, guid: eab088b84b2d343bfa5f0640ee7b6390, type: 3}
   ClipVolume: 1
@@ -82,6 +84,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Oh\u2026 \xC4h\u2026 Oh\u2026 \xC4h\u2026 Oh. Achso, Sch\xE4tzele,
     dai Muadr, die isch dod."
+  DialogLineEn: "Oh\u2026 Uh\u2026 Oh\u2026 Uh\u2026 Oh. Right, love, your mum, she's dead."
   TextPreview: "Oh\u2026 \xC4h\u2026 Oh\u2026 \xC4h\u2026 ..."
   AudioClip: {fileID: 8300000, guid: d8ab37fe7895c424b831e32fb9148511, type: 3}
   ClipVolume: 1
@@ -115,6 +118,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR \xD6FFNEN"
+  DialogLineEn: OPEN DOOR
   TextPreview: "T\xDCR \xD6FFNEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -146,6 +150,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Holy Hilde! Dich gibt's noch?
+  DialogLineEn: Holy Hilde! You're still around?
   TextPreview: Holy Hilde!
   AudioClip: {fileID: 8300000, guid: 97e233643b4184092af872fc9e65c618, type: 3}
   ClipVolume: 1
@@ -178,6 +183,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Hast du Lack gesoffen?? Meine Mutter ist tot!?
+  DialogLineEn: Have you lost your mind?? My mother is dead!?
   TextPreview: Hast du Lack gesoffen??
   AudioClip: {fileID: 8300000, guid: b78e470c9430646aaa6f8589449a4f32, type: 3}
   ClipVolume: 1
@@ -212,6 +218,7 @@ MonoBehaviour:
   DialogLine: "Du kennsch doch des Trambelpf\xE4dle zum Bergfeschdle hoch. Des am
     Abhang. Dei Mudda wusst doch, dass man da vom Fahrr\xE4dle absteigt. Aber die
     stand ja eh nebe sich in ledschda Dzaid."
+  DialogLineEn: You know that little dirt path up to the Bergfest. The one on the slope. Your mum knew fine well you get off your bike there. But she'd been beside herself lately anyway.
   TextPreview: Du kennsch doch ...
   AudioClip: {fileID: 8300000, guid: 0eaa90e600e5a4340b26bf8168c0a2d9, type: 3}
   ClipVolume: 1
@@ -243,6 +250,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ah, bevor ihs vergess.
+  DialogLineEn: Ah, before I forget.
   TextPreview: Ah, bevor ihs ve...
   AudioClip: {fileID: 8300000, guid: 948163c742a02413e8537b521e45cd97, type: 3}
   ClipVolume: 1
@@ -274,6 +282,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: I kohs... Ich kanns nicht glauben.
+  DialogLineEn: I cah... I can't believe it.
   TextPreview: Ich kann's nicht glauben.
   AudioClip: {fileID: 8300000, guid: 1afc50388ba84466593c1a33443cf225, type: 3}
   ClipVolume: 1
@@ -306,6 +315,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Wieso hat mir niemand Bescheid gesagt?
+  DialogLineEn: Why did nobody tell me?
   TextPreview: "Wieso wei\xDF ich von nichts??"
   AudioClip: {fileID: 8300000, guid: 27ad16e97ca69402db14bf4c57ae56c3, type: 3}
   ClipVolume: 1
@@ -338,6 +348,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: I hob do vsuchd di anzrufa.
+  DialogLineEn: I did try to ring you.
   TextPreview: I hob do vsuchd ...
   AudioClip: {fileID: 8300000, guid: c8613eb4f8f124ab3a91095bd4e852a0, type: 3}
   ClipVolume: 1
@@ -375,6 +386,7 @@ MonoBehaviour:
     da. Ond Wenn du Fraga haschd, du kannsch mi ja jederzeid fraga. Hab i no was
     vergessa? Soll i's dir liebr ufschreiba? Muschdi drum k\xFCmmern wie so a, wie
     heissetse? Damagodschi?"
+  DialogLineEn: So like I said, you feed him every day. Just mind it isn't too warm, not too cold for the sourdough. You've likely never started a sourdough before, right? Well, with these sourdoughs, that's the good bit, he's already started, you just have to keep a close eye that he doesn't waste away. And if you've got questions, you can ask me any time. Have I forgotten owt? Should I write it down for you? You've to look after him like one of them, what do they call them? Tamagotchi?
   TextPreview: Also wie gsagd, ...
   AudioClip: {fileID: 8300000, guid: de78c991ebadf49cabefb225fd82d1dd, type: 3}
   ClipVolume: 1
@@ -408,6 +420,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Tja da kann man nichts machen.
+  DialogLineEn: Well, nothing to be done about it.
   TextPreview: Da kann man nichts machen.
   AudioClip: {fileID: 8300000, guid: 0944ff30956574f28891d1d916b9a096, type: 3}
   ClipVolume: 1
@@ -440,6 +453,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Wieso hast du den?
+  DialogLineEn: Why do you have it?
   TextPreview: Wieso hast du de...
   AudioClip: {fileID: 8300000, guid: f5c5ea6946e4348b1b2b3955953c4bbc, type: 3}
   ClipVolume: 1
@@ -472,6 +486,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "\u201EDes isch der von dei Muddr.\u201C"
+  DialogLineEn: "\u201cThat one's your mum's.\u201d"
   TextPreview: "\u201EDes isch der vo..."
   AudioClip: {fileID: 8300000, guid: 060f3e2534852454db329ccf17caea29, type: 3}
   ClipVolume: 1
@@ -503,6 +518,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Apropos Mutter...
+  DialogLineEn: Speaking of mother...
   TextPreview: Apropos Mutter...
   AudioClip: {fileID: 8300000, guid: 4fe98eca2a86049a4b5f0101050108f0, type: 3}
   ClipVolume: 1
@@ -535,6 +551,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Am Bergfeschdle. 27. Juli. Isch imma noch da.
+  DialogLineEn: At the Bergfest. 27th of July. Still there.
   TextPreview: Am Bergfeschdle....
   AudioClip: {fileID: 8300000, guid: 726ac885c3dae4c6885c51567d08fb09, type: 3}
   ClipVolume: 1
@@ -566,6 +583,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "\u201EWie kommt\u2019s, dass ich das jetzt erst erfahre?\u201C"
+  DialogLineEn: "\u201cHow come I'm only finding out about this now?\u201d"
   TextPreview: "\u201EWie kommt\u2019s, da..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -597,6 +615,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR ZUMACHEN"
+  DialogLineEn: CLOSE DOOR
   TextPreview: "T\xDCR ZUMACHEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -628,6 +647,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Wei\xDFt du eigentlich wo ich meine Mutter finden kann?"
+  DialogLineEn: Do you actually know where I can find my mother?
   TextPreview: Wo ist meine Mutter?
   AudioClip: {fileID: 8300000, guid: e3c0a0a1b527842dda192ce7fd4af8c0, type: 3}
   ClipVolume: 1
@@ -661,6 +681,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "DIALOG GEHT AN DER STELLE WEITER, AN DER MAN DIE T\xDCR GESCHLOSSEN
     HAT"
+  DialogLineEn: DIALOG CONTINUES FROM THE POINT WHERE THE DOOR WAS CLOSED
   TextPreview: DIALOG GEHT AN D...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -692,6 +713,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Was ist passiert?
+  DialogLineEn: What happened?
   TextPreview: Was ist passiert?
   AudioClip: {fileID: 8300000, guid: 018e7ac0ff21340229927a65be5b8205, type: 3}
   ClipVolume: 1
@@ -724,6 +746,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ne mir hat niemand Bescheid gesagt.
+  DialogLineEn: No, nobody told me.
   TextPreview: Ne mir hat niemand Bescheid gesagt.
   AudioClip: {fileID: 8300000, guid: 6ae64a13c412f47fb8854e5fa069d76f, type: 3}
   ClipVolume: 1
@@ -756,6 +779,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR ZUMACHEN"
+  DialogLineEn: CLOSE DOOR
   TextPreview: "T\xDCR ZUMACHEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -788,6 +812,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Das war meine Mutter.
+  DialogLineEn: That was my mother.
   TextPreview: Das war meine Mutter.
   AudioClip: {fileID: 8300000, guid: 50a03991237204d9386419dee5f41b65, type: 3}
   ClipVolume: 1
@@ -826,6 +851,7 @@ MonoBehaviour:
     verk\xFCmmerd da. Ond Wenn du Fraga haschd, du kannsch mi ja jederzeid fraga.
     Hab i no was vergessa? Soll i's dir liebr ufschreiba? Muschdi drum k\xFCmmern
     wie dengs, die..\nwie hoi\xDFet se? Damagodschi?"
+  DialogLineEn: "So like I said, you feed him every day. And mind that it isn't too warm\nor too cold for the sourdough. You've likely never started a\nsourdough before, right? Well, with these sourdoughs, that's\nthe good bit, he's already started, you just have to keep a\nclose eye that he doesn't waste away. And if you've got questions, you can ask me any time. Have I forgotten owt? Should I write it down for you? You've to look after him like one of them..\nwhat do they call them? Tamagotchi?"
   TextPreview: "\u201EAlso wie gsagd,..."
   AudioClip: {fileID: 8300000, guid: de78c991ebadf49cabefb225fd82d1dd, type: 3}
   ClipVolume: 1
@@ -856,6 +882,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Joa, am beschda sind so 24 bis 28 Grad.
+  DialogLineEn: Aye, 24 to 28 degrees is best.
   TextPreview: Joa, am beschda ...
   AudioClip: {fileID: 8300000, guid: eb5a86b39157e4c22af8e895a550d2d6, type: 3}
   ClipVolume: 1
@@ -887,6 +914,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "M\xFCtter sterben doch nicht."
+  DialogLineEn: But mothers don't die.
   TextPreview: "M\xFCtter sterben d..."
   AudioClip: {fileID: 8300000, guid: 6b793118d67e44b73ade49a83dd47fd7, type: 3}
   ClipVolume: 1
@@ -919,6 +947,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Merkur war r\xFCckl\xE4ufig."
+  DialogLineEn: Mercury was in retrograde.
   TextPreview: "Merkur war r\xFCckl..."
   AudioClip: {fileID: 8300000, guid: 9eb5e7cc56a1e424f9121597e7d8e5f6, type: 3}
   ClipVolume: 1
@@ -951,6 +980,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Kindle, des tut mir so leid.
+  DialogLineEn: Love, I'm so sorry.
   TextPreview: Kindle, des tut ...
   AudioClip: {fileID: 8300000, guid: 79233abecc54a4045bece51a3287b0cd, type: 3}
   ClipVolume: 1
@@ -983,6 +1013,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Naja - i muss noh au wiedr, schau mol beim Grab vorbei, ja? .... Weisch,
     der Sauerdeig wird di imma mid ihr verbinda.
+  DialogLineEn: Well - I have to be off again, stop by the grave sometime, yeah? .... You know, the sourdough will always connect you to her.
   TextPreview: Naja - i muss no...
   AudioClip: {fileID: 8300000, guid: 3ea80df7812d14bcba95638b9d34ae81, type: 3}
   ClipVolume: 1
@@ -1099,6 +1130,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Haben sie dich zu lange eingelegt? Wo ist meine Mutter?
+  DialogLineEn: Did they pickle you for too long? Where is my mother?
   TextPreview: Haben sie dich zu lange eingelegt?
   AudioClip: {fileID: 8300000, guid: 57ad0f8a120fe4c228f4a0d25841fe7f, type: 3}
   ClipVolume: 1
@@ -1131,6 +1163,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Hier passiera merkw\xFCrdigere Dinge als du dia vorstella kannsch."
+  DialogLineEn: Stranger things happen round here than you can imagine.
   TextPreview: Hier passiera me...
   AudioClip: {fileID: 8300000, guid: 5855a28e3833842c687d571a15f11940, type: 3}
   ClipVolume: 1
@@ -1163,6 +1196,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Wei\xDFt du wo meine Mutter ist?"
+  DialogLineEn: Do you know where my mother is?
   TextPreview: Wo ist meine Mutter?
   AudioClip: {fileID: 8300000, guid: bd53ff8b6feb04efc8b7c9b5b6a6a9c7, type: 3}
   ClipVolume: 1
@@ -1195,6 +1229,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Fucking S\xE4gbach am Tobel."
+  DialogLineEn: "Fucking S\u00e4gbach am Tobel."
   TextPreview: "Fucking S\xE4gbach am Tobel."
   AudioClip: {fileID: 8300000, guid: 862f43885a18f4771887807cae309533, type: 3}
   ClipVolume: 1
@@ -1227,6 +1262,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR ZUMACHEN"
+  DialogLineEn: CLOSE DOOR
   TextPreview: "T\xDCR ZUMACHEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1259,6 +1295,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Wann???
+  DialogLineEn: When???
   TextPreview: Wann???
   AudioClip: {fileID: 8300000, guid: f26880dfef9544546b0527cedc790732, type: 3}
   ClipVolume: 1
@@ -1292,6 +1329,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ich hob\u2019s bf\xFCrchded. I hob dei aktuelle Numma ned. Nach zehn
     Jahrn wo ned hier warschd. Tut mir leid."
+  DialogLineEn: I was afraid of that. I've not got your current number. After ten years where you weren't here. I'm sorry.
   TextPreview: "Ich hob\u2019s bf\xFCrch..."
   AudioClip: {fileID: 8300000, guid: 500669fa1f7934fcdaebcf6a650b99c8, type: 3}
   ClipVolume: 1
@@ -1323,6 +1361,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Stand nicht in meinem Horoskop.
+  DialogLineEn: It wasn't in my horoscope.
   TextPreview: Stand nicht in meinem Horoskop.
   AudioClip: {fileID: 8300000, guid: 7db1107208b7e46138a83742168696bd, type: 3}
   ClipVolume: 1
@@ -1356,6 +1395,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Apropos, I hab mi drum gk\xFCmmerd und jetzt musch du drauf achd gebbe:
     Dess ned zu warm, ned zu kald isch d\xE4m Sauerdeig\u2026"
+  DialogLineEn: "Speaking of which, I've looked after him and now you have to mind: that it isn't too warm, not too cold for the sourdough\u2026"
   TextPreview: Apropos, I hab m...
   AudioClip: {fileID: 8300000, guid: 6f439b0dfe17445e3aabf4ce02856b90, type: 3}
   ClipVolume: 1
@@ -1388,6 +1428,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xFCr schlie\xDFen"
+  DialogLineEn: Close door
   TextPreview: "T\xFCr schlie\xDFen"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1420,6 +1461,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "13\u2013 \u201EWIESO HAST DU DEN?\u201C"
+  DialogLineEn: "13\u2013 \u201cWHY DO YOU HAVE IT?\u201d"
   TextPreview: "13\u2013 \u201EWIESO HAST ..."
   AudioClip: {fileID: 8300000, guid: f5c5ea6946e4348b1b2b3955953c4bbc, type: 3}
   ClipVolume: 1
@@ -1452,6 +1494,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Unkraut. Du bist unkraut, Hilde.
+  DialogLineEn: A weed. You're a weed, Hilde.
   TextPreview: Unkraut.
   AudioClip: {fileID: 8300000, guid: adbceb709927a46b3b0e76633c6abd28, type: 3}
   ClipVolume: 1
@@ -1484,6 +1527,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Sauerkraut verreckt ned.
+  DialogLineEn: Sauerkraut never dies.
   TextPreview: Sauerkraut verre...
   AudioClip: {fileID: 8300000, guid: 1caa308f19751490e98710f2333e0b4a, type: 3}
   ClipVolume: 1
@@ -1517,6 +1561,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Ich bin Autorin, ich kann mir ganz sch\xF6n viel vorstellen. Aber
     wie sich das anf\xFChlt\u2026 Das hab ich mir nicht vorstellen k\xF6nnen."
+  DialogLineEn: "I'm a writer, I can imagine an awful lot. But what it feels like\u2026 That I couldn't imagine."
   TextPreview: Das kann ich mir nicht vorstellen.
   AudioClip: {fileID: 8300000, guid: 517915d3d238a464481da973a433055d, type: 3}
   ClipVolume: 1
@@ -1549,6 +1594,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR \xD6FFNEN"
+  DialogLineEn: OPEN DOOR
   TextPreview: "T\xDCR \xD6FFNEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1581,6 +1627,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Meine\u2026 Was\u2026?"
+  DialogLineEn: "My\u2026 What\u2026?"
   TextPreview: "Meine\u2026 Was\u2026?"
   AudioClip: {fileID: 8300000, guid: afedefec2beec4cbd8774aae7f57db69, type: 3}
   ClipVolume: 1
@@ -1613,6 +1660,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: 'Meine Mutter wollte mir auch immer so einen Sauerteig andrehen. '
+  DialogLineEn: "My mother was always trying to palm a sourdough off on me too. "
   TextPreview: Noch ein Sauerteig?
   AudioClip: {fileID: 8300000, guid: a855671e4444d4c33afc4ef4991e7cb0, type: 3}
   ClipVolume: 1
@@ -1645,6 +1693,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Sie hat dich sehr geliebt.
+  DialogLineEn: She loved you very much.
   TextPreview: Sie hat dich seh...
   AudioClip: {fileID: 8300000, guid: 30bcdfafd55664ff4a97ac2536dab062, type: 3}
   ClipVolume: 1
@@ -1676,6 +1725,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Des kann man sich gar ned vorstella.
+  DialogLineEn: You really can't imagine it.
   TextPreview: Des kann man sic...
   AudioClip: {fileID: 8300000, guid: 3b0d2ab23a16742ec9b54dde3a5e5e4d, type: 3}
   ClipVolume: 1
@@ -1707,6 +1757,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Meine Mutter ist tot.
+  DialogLineEn: My mother is dead.
   TextPreview: Meine Mutter ist tot.
   AudioClip: {fileID: 8300000, guid: b0a0d7ba52fba47c19ee3e8e307a3f98, type: 3}
   ClipVolume: 1
@@ -1742,6 +1793,7 @@ MonoBehaviour:
     Hilde nicht auf zu klopfen, man kann sich zwar frei im Haus rumbewegen, aber
     das langsame sich immer wiederholende Klopfen macht einem deutlich, dass es storyrelevant
     ist.)"
+  DialogLineEn: There are three slow knocks at the door. (Unlike Paul, Hilde does not stop knocking; you can move around the house freely, but the slow, endlessly repeating knocking makes it clear that this is story-relevant.)
   TextPreview: Es klopft drei m...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1774,6 +1826,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Des isch der von deinr Muddr.
+  DialogLineEn: That one is your mum's.
   TextPreview: Des isch der von...
   AudioClip: {fileID: 8300000, guid: 060f3e2534852454db329ccf17caea29, type: 3}
   ClipVolume: 1
@@ -1808,6 +1861,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Je mehr i dr\xFCba nachdenk deschdo weniga kann i globa, dass dei
     Muadda dod isch. Und\u2014 Ne, des kann i ned sage. "
+  DialogLineEn: "The more I think on it, the less I can believe that your mum is dead. And\u2014 No, I can't say that. "
   TextPreview: "Je mehr i dr\xFCba ..."
   AudioClip: {fileID: 8300000, guid: d60cf424d08144ef6b873cb579cc3d09, type: 3}
   ClipVolume: 1
@@ -1839,6 +1893,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "\u201EAh dahanna hat er sich versteckt der kloine Ganove.\""
+  DialogLineEn: "\u201cAh, that's where he was hiding, the little rascal.\u201d"
   TextPreview: "\u201EAh dahanna hat ..."
   AudioClip: {fileID: 8300000, guid: 9c83846f28c0e45558c9d6b69ac7fcca, type: 3}
   ClipVolume: 1
@@ -1873,6 +1928,7 @@ MonoBehaviour:
   DialogLine: "Ach, wusschdesch des wirklich gar ned? Jo, die isch dod. I hadde mi
     scho gfragd, warum du ned zu der Berdigung komma bisch. Umso wichdigr, dess du
     den Sauerdeich bkommsd\u2026 bagg ihn am beschten ein."
+  DialogLineEn: "Oh, did you really not know? Aye, she's dead. I'd wondered why you didn't come to the funeral. All the more reason for you to get the sourdough\u2026 best pack him up."
   TextPreview: Ach, wusschdesch...
   AudioClip: {fileID: 8300000, guid: b2c5a6808431544c6a4d98166c375223, type: 3}
   ClipVolume: 1
@@ -1906,6 +1962,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Wusstesch du des ned? \u2014 schei\xDFe."
+  DialogLineEn: "You didn't know? \u2014 shit."
   TextPreview: Wusstesch du des...
   AudioClip: {fileID: 8300000, guid: 0402aa1458f734435bdaf370b446490d, type: 3}
   ClipVolume: 1
@@ -1938,6 +1995,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Aber wo ist denn jetzt meine Mutter?
+  DialogLineEn: But where is my mother now?
   TextPreview: Wo ist sie denn jetzt?
   AudioClip: {fileID: 8300000, guid: 0405ad7c23d694ba3b96ee6e86113bb1, type: 3}
   ClipVolume: 1
@@ -1970,6 +2028,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ha ha ha.
+  DialogLineEn: Ha ha ha.
   TextPreview: "*H\xF6flich lachen*"
   AudioClip: {fileID: 8300000, guid: 50c6d965c3b994a7ea9386691565bdf2, type: 3}
   ClipVolume: 1
@@ -2006,6 +2065,7 @@ MonoBehaviour:
     Schl\xFCsselbund, Gs\xE4lz f\xFCr d\u2019Oma, die Rubbellose f\xFCr de Andi\u2026
     Also was wichtig isch, du musch den regelm\xE4\xDFig f\xFCttern, ah was sag I,
     am beschda jeden Tag gell. Wo isch er no jetzt?"
+  DialogLineEn: "Ha, what a thing that I catch you right off! Half thought you'd be here. Listen, I have to give you something. Here, hold this. Lipstick, keyring, jam for granny, the scratch cards for Andi\u2026 So what's important, you have to feed him regularly, ah what am I saying, every day is best, right. Where's he got to now?"
   TextPreview: Ha des isch a Sa...
   AudioClip: {fileID: 8300000, guid: 25942dbed9891463cb324bab49d1813c, type: 3}
   ClipVolume: 1
@@ -2039,6 +2099,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "11\u2013 \u201EMEINE MUTTER WOLLTE MIR AUCH IMMER SO EINEN SAUERTEIG
     ANDREHEN.\u201C"
+  DialogLineEn: "11\u2013 \u201cMY MOTHER WAS ALWAYS TRYING TO PALM A SOURDOUGH OFF ON ME TOO.\u201d"
   TextPreview: "11\u2013 \u201EMEINE MUTTE..."
   AudioClip: {fileID: 8300000, guid: a855671e4444d4c33afc4ef4991e7cb0, type: 3}
   ClipVolume: 1
@@ -2071,6 +2132,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "T\xDCR ZUMACHEN"
+  DialogLineEn: CLOSE DOOR
   TextPreview: "T\xDCR ZUMACHEN"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -2103,6 +2165,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Wieviel Grad genau soll der Sauerteig haben?
+  DialogLineEn: What temperature exactly should the sourdough be?
   TextPreview: Wieviel Grad sollte der haben?
   AudioClip: {fileID: 8300000, guid: a44397598459f45a9b75976d9716a764, type: 3}
   ClipVolume: 1
@@ -2135,6 +2198,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Hilde? Aber du kennst meine Mutter noch oder?
+  DialogLineEn: Hilde? But you still know my mother, right?
   TextPreview: Hilde?
   AudioClip: {fileID: 8300000, guid: 07e209a1fd080445a8d625a03b3e9b04, type: 3}
   ClipVolume: 1
@@ -2167,6 +2231,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Isch des ned die gro\xDFe Frag. Deswegen nimm des."
+  DialogLineEn: Isn't that the big question. That's why you take this.
   TextPreview: Isch des ned die...
   AudioClip: {fileID: 8300000, guid: daf3bc42f7b47468e861ca7bf71ab024, type: 3}
   ClipVolume: 1
@@ -2198,6 +2263,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Aaaaahh dahana hedd sich der kloi Ganove verschdeggd.
+  DialogLineEn: Aaaaahh, that's where the little rascal had been hiding.
   TextPreview: Aaaaahh dahana h...
   AudioClip: {fileID: 8300000, guid: 9c83846f28c0e45558c9d6b69ac7fcca, type: 3}
   ClipVolume: 1
@@ -2229,6 +2295,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Ah, komisch.
+  DialogLineEn: Ah, strange.
   TextPreview: Ah, komisch.
   AudioClip: {fileID: 8300000, guid: 0944ff30956574f28891d1d916b9a096, type: 3}
   ClipVolume: 1
@@ -2261,6 +2328,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: Kindle... setz dich lieber mal no.
+  DialogLineEn: Love... you'd best sit down.
   TextPreview: Kindle... setz d...
   AudioClip: {fileID: 8300000, guid: c14f48de12d7b4e8ca6b83f08cbb5c09, type: 3}
   ClipVolume: 1
@@ -2292,6 +2360,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
   DialogLine: "Es klopft drei mal langsam an der T\xFCr. "
+  DialogLineEn: "There are three slow knocks at the door. "
   TextPreview: Es klopft drei m...
   AudioClip: {fileID: 0}
   ClipVolume: 1

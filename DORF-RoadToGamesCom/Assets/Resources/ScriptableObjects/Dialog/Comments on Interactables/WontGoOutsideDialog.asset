@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: "Daf\xFCr bin ich absolut nicht bereit."
+  DialogLineEn: I am absolutely not ready for that.
   TextPreview: "Daf\xFCr bin ich ab..."
   AudioClip: {fileID: 8300000, guid: f59405cbde40949278a974af9f5867a7, type: 3}
   PauseAfter: 0.5

@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Das ist mein altes Fahrrad. Was ist mit Mamas passiert?
+  DialogLineEn: That's my old bike. What happened to Mum's?
   TextPreview: Das ist mein alt...
   AudioClip: {fileID: 8300000, guid: 61be99962eb6349ac8f851d0ed2e0266, type: 3}
   ClipVolume: 1

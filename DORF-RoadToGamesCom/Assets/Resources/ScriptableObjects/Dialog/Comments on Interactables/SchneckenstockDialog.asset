@@ -36,6 +36,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: Ach ja, die hab ich mit Kim gebastelt. Ich glaub ich war gut als Babysitterin.
+  DialogLineEn: Oh right, I made those with Kim. I think I was good as a babysitter.
   TextPreview: Ach ja, die hab ...
   AudioClip: {fileID: 8300000, guid: 019c9c3b1d8a54129a8200a83d355ca9, type: 3}
   ClipVolume: 1

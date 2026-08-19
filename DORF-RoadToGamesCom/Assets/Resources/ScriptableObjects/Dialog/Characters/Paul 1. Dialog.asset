@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Also ja oder ja?
+  DialogLineEn: So, yes or yes?
   TextPreview: Also ja oder ja?
   AudioClip: {fileID: 8300000, guid: 87264863974264fafaa1dc368eccaab8, type: 3}
   ClipVolume: 1
@@ -50,6 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: '*schweigt*'
+  DialogLineEn: '*stays silent*'
   TextPreview: '*schweigt*'
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -81,6 +83,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ist es nicht schade, dass es mit uns damals nicht geklappt hat?
+  DialogLineEn: Isn't it a shame that it never worked out between us back then?
   TextPreview: Ist es nicht sch...
   AudioClip: {fileID: 8300000, guid: 423226309dfdb4810ad92d03b37db095, type: 3}
   ClipVolume: 1
@@ -114,6 +117,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Hey Marlene, sch\xF6n dich zu sehen."
+  DialogLineEn: Hey Marlene, good to see you.
   TextPreview: Hey Marlene, sch...
   AudioClip: {fileID: 8300000, guid: b2c591320716c429ba7053626b310b98, type: 3}
   ClipVolume: 1
@@ -145,6 +149,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Du warst schon immer gut in Mathe.
+  DialogLineEn: You were always good at maths.
   TextPreview: Du warst schon immer gut in Mathe.
   AudioClip: {fileID: 8300000, guid: d067cde39ad8e46b59f8b9c66537ed6f, type: 3}
   ClipVolume: 1
@@ -180,6 +185,10 @@ MonoBehaviour:
 
     ODER IST ALLES NOCH SCHLIMMER
     GEWORDEN?'
+  DialogLineEn: '(When you go into another room.)
+
+    OR HAS EVERYTHING GOTTEN EVEN
+    WORSE?'
   TextPreview: (Wenn man in ein...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -211,6 +220,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "T\xFCr zuknallen"
+  DialogLineEn: Slam door
   TextPreview: "T\xFCr zuknallen"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -237,11 +247,12 @@ MonoBehaviour:
   m_Name: Ne.
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
   Guid: de6f09c7e0a3c499295433079ea7bdec
-  Position: {x: 523.8274, y: 231.04355}
+  Position: {x: 521.99994, y: 230.99994}
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ne.
+  DialogLineEn: Nope.
   TextPreview: Ne.
   AudioClip: {fileID: 8300000, guid: cb05be0cd8e5d41db9ffda7959f03b6f, type: 3}
   ClipVolume: 1
@@ -274,6 +285,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "N\xE4."
+  DialogLineEn: Nah.
   TextPreview: "N\xE4."
   AudioClip: {fileID: 8300000, guid: 1d3bf9dab66254afba080739bfe6fd89, type: 3}
   ClipVolume: 1
@@ -307,6 +319,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Ich h\xE4tte gedacht, dass es mindestens 30Jahre, 6 Monate und 8 Tage
     dauern w\xFCrde. "
+  DialogLineEn: 'I''d have thought it would take at least 30 years, 6 months and
+    8 days. '
   TextPreview: "Ich h\xE4tte mehr gesch\xE4tzt."
   AudioClip: {fileID: 8300000, guid: 15178d314285245c99c9ecd8dea061eb, type: 3}
   ClipVolume: 1
@@ -343,6 +357,10 @@ MonoBehaviour:
     Hat ja eh gerade genug Probleme gerade. \nVielleicht h\xE4tte ich ihr sagen sollen
     wer bei der Hochzeit singt. Ich mein zu Bodo Bieramoschd hat ja noch kein nein
     gesagt.\n"
+  DialogLineEn: "Uhh... Marlene? Yeah, let's just chat some other time, no problem.\nMaybe
+    I shouldn't have said that about Bettina. She's got enough problems right now
+    anyway. \nMaybe I should have told her who's singing at the wedding. I mean,
+    nobody has ever said no to Bodo Bieramoschd.\n"
   TextPreview: "\xC4hh... Marlene? ..."
   AudioClip: {fileID: 8300000, guid: 14551678a11cc4ee78912e5f4cbd7a02, type: 3}
   ClipVolume: 1
@@ -373,6 +391,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Genau. Ja. Autorin, genau.
+  DialogLineEn: Exactly. Yes. Writer, exactly.
   TextPreview: 'Genau. '
   AudioClip: {fileID: 8300000, guid: 62c991c2d2975472bad8f7a57c72e67a, type: 3}
   ClipVolume: 1
@@ -405,6 +424,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: 10 Jahre, 4 Monate und 6 Tage.
+  DialogLineEn: 10 years, 4 months and 6 days.
   TextPreview: 10 Jahre, 4 Mona...
   AudioClip: {fileID: 8300000, guid: 301bdf1b5d5364c0c8bcc210633709e7, type: 3}
   ClipVolume: 1
@@ -438,6 +458,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ich heirate jetzt die Betina.
+  DialogLineEn: I'm marrying Betina now.
   TextPreview: Ich heirate jetz...
   AudioClip: {fileID: 8300000, guid: 8a9c8154b97bc46bdae477197276dfa1, type: 3}
   ClipVolume: 1
@@ -470,6 +491,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Und ich wollte dich einladen!! Zur Hochzeit.
+  DialogLineEn: And I wanted to invite you!! To the wedding.
   TextPreview: Und ich wollte d...
   AudioClip: {fileID: 8300000, guid: 7a28e339c5c8541028a01ee0ed1026c3, type: 3}
   ClipVolume: 1
@@ -502,6 +524,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Bitte gib mir noch eine Chance!
+  DialogLineEn: Please give me one more chance!
   TextPreview: Gib mir noch ne Chance!
   AudioClip: {fileID: 8300000, guid: 9912876ca6539498a969b1d63066976f, type: 3}
   ClipVolume: 1
@@ -534,6 +557,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Hat sich ja gar nicht so viel ver\xE4ndert hier."
+  DialogLineEn: Not that much has changed around here.
   TextPreview: "Hat sich nicht viel ver\xE4ndert."
   AudioClip: {fileID: 8300000, guid: 4a22deb68f7f640f6ba0f5b186966a95, type: 3}
   ClipVolume: 1
@@ -566,6 +590,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: 
+  DialogLineEn: 
   TextPreview: "*T\xFCr schlie\xDFen*"
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -597,6 +622,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Mh-hmm.
+  DialogLineEn: Mh-hmm.
   TextPreview: Mh-hmm.
   AudioClip: {fileID: 8300000, guid: adcdc9dcb7b4844eaaa520d7b1019c9a, type: 3}
   ClipVolume: 1
@@ -628,6 +654,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wow.
+  DialogLineEn: Wow.
   TextPreview: Wow.
   AudioClip: {fileID: 8300000, guid: 6f82101e5724f488dbffe7098123af67, type: 3}
   ClipVolume: 1
@@ -729,6 +756,9 @@ MonoBehaviour:
   DialogLine: "Wenn ich irgendwas f\xFCr dich tun kann, sag Bescheid. Du kannst ja
     trotzdem zur Hochzeit kommen wenn du eh schon da bist. Der Pastor fragt ja immer
     ob jemand Einw\xE4nde hat."
+  DialogLineEn: If there's anything I can do for you, let me know. You can still
+    come to the wedding since you're here anyway. The pastor always asks if anyone
+    has any objections.
   TextPreview: Wenn ich irgendw...
   AudioClip: {fileID: 8300000, guid: 0e6952438bccb4ae5a6396918a18d430, type: 3}
   ClipVolume: 1
@@ -762,6 +792,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Du hast doch fr\xFCher immer so gerne Computerspiele gespielt. Ich
     bin Programmierer geworden."
+  DialogLineEn: You always used to love playing computer games. I became a programmer.
   TextPreview: "Du hast doch fr\xFC..."
   AudioClip: {fileID: 8300000, guid: 13faef967b298403aa5f6ad761adf84e, type: 3}
   ClipVolume: 1
@@ -797,6 +828,8 @@ MonoBehaviour:
   DialogLine: "Bist du dir sicher? Ich war immer f\xFCr dich da, auch wenn du es
     nicht wusstest. Du erinnerst mich so an deine Mutter\u2026 Ich hatte immer ein
     Auge auf sie."
+  DialogLineEn: "Are you sure? I was always there for you, even when you didn't know
+    it. You remind me so much of your mother\u2026 I always had an eye on her."
   TextPreview: Bist du dir sich...
   AudioClip: {fileID: 8300000, guid: 4b3f5e310154140628c8c5fe3a734fcb, type: 3}
   ClipVolume: 1
@@ -828,6 +861,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "DAS W\xC4RE ICH WENN ICH HIER GEBLIEBEN W\xC4RE"
+  DialogLineEn: THAT'S WHAT I'D BE IF I HAD STAYED HERE
   TextPreview: "DAS W\xC4RE ICH WEN..."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -860,6 +894,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Okay. Cool.
+  DialogLineEn: Okay. Cool.
   TextPreview: Okay. Cool.
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -893,6 +928,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "\xC4h\u2026 also ich hab jetzt schon die Betina gefragt und die hat
     \u201EJa\u201C gesagt\u2026."
+  DialogLineEn: "Uh\u2026 well, I've already asked Betina and she said \u201Cyes\u201D\u2026."
   TextPreview: "\xC4h\u2026 also ich hab..."
   AudioClip: {fileID: 8300000, guid: e6fa9e8f09c4340c29bc3c20969b8a0d, type: 3}
   ClipVolume: 1
@@ -926,6 +962,9 @@ MonoBehaviour:
   DialogLine: "Die Betina ist ja auch Autorin. \u201EVerloren im Kuss der Sehnsucht\u201C
     vielleicht hast du davon schon mal geh\xF6rt.\nGibt\u2019s sogar im L\xE4dle.
     Wie l\xE4uft\u2019s bei dir?"
+  DialogLineEn: "Betina is a writer too. \u201CLost in the Kiss of Longing\u201D,
+    maybe you've heard of it.\nThey even stock it in the village shop. How are things
+    with you?"
   TextPreview: Die Betina ist j...
   AudioClip: {fileID: 8300000, guid: 2274a1ad3cc824affbb523812fcf31e3, type: 3}
   ClipVolume: 1
@@ -957,6 +996,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: O-kay.
+  DialogLineEn: O-kay.
   TextPreview: O-kay.
   AudioClip: {fileID: 8300000, guid: 2d56cf64eb49e448e92ad3252fbd7bec, type: 3}
   ClipVolume: 1
@@ -989,6 +1029,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ich heirate jetzt die Betina.
+  DialogLineEn: I'm marrying Betina now.
   TextPreview: Ich heirate jetz...
   AudioClip: {fileID: 8300000, guid: 8a9c8154b97bc46bdae477197276dfa1, type: 3}
   ClipVolume: 1
@@ -1021,6 +1062,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Willst du Betina... oder soll ich?
+  DialogLineEn: Do you want Betina... or shall I?
   TextPreview: Betina muss weg.
   AudioClip: {fileID: 8300000, guid: 00f0041cde2ad4652a5a7d603a39ba19, type: 3}
   ClipVolume: 1
@@ -1053,6 +1095,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Da hast du aber ganz genau mitgez\xE4hlt."
+  DialogLineEn: You counted along very precisely there.
   TextPreview: "Da hast du ganz genau mitgez\xE4hlt."
   AudioClip: {fileID: 8300000, guid: e1ac2e9d11b3c4f798b4f6f84c822d81, type: 3}
   ClipVolume: 1
@@ -1085,6 +1128,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ah.
+  DialogLineEn: Ah.
   TextPreview: Ah.
   AudioClip: {fileID: 8300000, guid: 252261dfa269c4f21a57c3fcdf0556c3, type: 3}
   ClipVolume: 1
@@ -1119,6 +1163,9 @@ MonoBehaviour:
   DialogLine: DIE LAMPE STARRT MICH AN.  DIE BIRKENSTOCKS LAUFEN AUF MICH ZU. HAT
     SICH DIE ZIGARETTE GERADE ZU MIR UMGEDREHT? DIE DIELE KNARZT DIE GANZE ZEIT ALS
     OB NOCH JEMAND HIER IST.
+  DialogLineEn: THE LAMP IS STARING AT ME.  THE BIRKENSTOCKS ARE WALKING TOWARDS
+    ME. DID THE CIGARETTE JUST TURN AROUND TO FACE ME? THE FLOORBOARDS KEEP CREAKING
+    AS IF SOMEONE ELSE IS STILL HERE.
   TextPreview: DIE LAMPE STARRT...
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -1151,6 +1198,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Schade, dass du nicht nur wegen mir gekommen bist. Ich bin jetzt sogar
     Programmierer geworden.
+  DialogLineEn: Shame that you didn't come just for me. I've even become a programmer
+    now.
   TextPreview: Schade, dass du ...
   AudioClip: {fileID: 8300000, guid: e7b1ad30bd24c456fbd279349eba8dd2, type: 3}
   ClipVolume: 1
@@ -1184,13 +1233,16 @@ MonoBehaviour:
   DialogLine: "Du kannst immer zu mir kommen, das wei\xDFt du. Wir haben \xFCbrigens
     ne S\xE4ngerin engagiert \u2013 ich darf noch nicht verraten wer. Nur so viel:
     Es wird Schlager! Boa, du tust mir echt so leid."
+  DialogLineEn: "You can always come to me, you know that. We've hired a singer,
+    by the way \u2013 I'm not allowed to say who yet. Just this much: it'll be Schlager!
+    Boy, I really do feel sorry for you."
   TextPreview: Du kannst immer ...
   AudioClip: {fileID: 8300000, guid: 5e220faf2a1b04232b1c41fa71566906, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5
   Children:
-  - {fileID: 7850994930647803619}
   - {fileID: 6875389852493755261}
+  - {fileID: 7850994930647803619}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -1216,6 +1268,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "W\xFCrg."
+  DialogLineEn: Gag.
   TextPreview: "W\xFCrg."
   AudioClip: {fileID: 8300000, guid: adf693a40cd314ba6ba2d6ac2184cfa1, type: 3}
   ClipVolume: 1
@@ -1248,6 +1301,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ha haha.
+  DialogLineEn: Ha haha.
   TextPreview: Ha haha.
   AudioClip: {fileID: 8300000, guid: 1cc8a19540cc5405c802da09e2c681f8, type: 3}
   ClipVolume: 1
@@ -1280,6 +1334,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Ja also ich hab son \xDCberwachungsprogramm geschrieben. \nDas erkennt
     dein Gesicht und verfolgt dich mit den Kameras in der Stadt."
+  DialogLineEn: "Yeah so I wrote this surveillance program. \nIt recognises your
+    face and follows you with the cameras around town."
   TextPreview: Ja also ich hab ...
   AudioClip: {fileID: 8300000, guid: 578a24a1eebee43bc88b4f091283c90c, type: 3}
   ClipVolume: 1
@@ -1311,6 +1367,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Das war nur ironisch... also das...
+  DialogLineEn: That was only ironic... I mean that...
   TextPreview: Das war ironisch.
   AudioClip: {fileID: 8300000, guid: 46043729620aa423a9be1ba817a9abfb, type: 3}
   ClipVolume: 1
@@ -1343,6 +1400,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ich wollte dich einladen!!
+  DialogLineEn: I wanted to invite you!!
   TextPreview: Ich wollte dich ...
   AudioClip: {fileID: 8300000, guid: 29d56212354ed492a8ab176de5fcdbee, type: 3}
   ClipVolume: 1
@@ -1376,6 +1434,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Wenn ich irgendwas f\xFCr dich tun kann sag Bescheid."
+  DialogLineEn: If there's anything I can do for you, let me know.
   TextPreview: Wenn ich irgendw...
   AudioClip: {fileID: 8300000, guid: 3c8742920aff44a4ba09ea389d1c9105, type: 3}
   ClipVolume: 1
@@ -1409,6 +1468,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Passt.
+  DialogLineEn: Works for me.
   TextPreview: Passt.
   AudioClip: {fileID: 8300000, guid: 6c3a9a6da0cf64676924f6c37f2cd9a8, type: 3}
   ClipVolume: 1
@@ -1441,6 +1501,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Mensch Paul. Wie lange haben wir uns jetzt nicht gesehen?
+  DialogLineEn: Blimey, Paul. How long has it been since we last saw each other?
   TextPreview: Wie lang ist es her?
   AudioClip: {fileID: 8300000, guid: c004af6f089f444e1ad2f09003ad4407, type: 3}
   ClipVolume: 1
@@ -1474,6 +1535,8 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Bist du jetzt Autorin geworden, wie du immer gesagt hast? Das Intellektuelle
     macht dich bisschen s\xFC\xDF."
+  DialogLineEn: So did you become a writer, like you always said you would? The intellectual
+    thing makes you kind of cute.
   TextPreview: Bist du jetzt Au...
   AudioClip: {fileID: 8300000, guid: bb04b006eb7a743e5bdc4a6ed7ce8fd3, type: 3}
   ClipVolume: 1
@@ -1506,6 +1569,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Woher wei\xDFt du eigentlich, dass ich in der Stadt bin?"
+  DialogLineEn: How do you even know that I'm in town?
   TextPreview: "Woher wei\xDFt du, dass ich hier bin?"
   AudioClip: {fileID: 8300000, guid: 8f2459a51ceb14197beb1c1955b7579d, type: 3}
   ClipVolume: 1
@@ -1538,6 +1602,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Ich wei\xDF gar nicht warum ich dich damals so unangenehm fand."
+  DialogLineEn: I don't even know why I found you so off-putting back then.
   TextPreview: Unangenehm.
   AudioClip: {fileID: 8300000, guid: a1a376f89f5324964a8637870c5c76fa, type: 3}
   ClipVolume: 1
@@ -1571,6 +1636,7 @@ MonoBehaviour:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Ich hab da so nen nervigen Nachbarn, der ist Programmierer, kannnste
     den mal...
+  DialogLineEn: I've got this annoying neighbour, he's a programmer, could you maybe...
   TextPreview: Ich hab da so nen nervigen Nachbarn...
   AudioClip: {fileID: 8300000, guid: c424d4245bb274f0f814e83f003d2758, type: 3}
   ClipVolume: 1
@@ -1603,6 +1669,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "\xC4h, geht schon."
+  DialogLineEn: Uh, I'm fine.
   TextPreview: Geht schon.
   AudioClip: {fileID: 8300000, guid: 10796f3135c294170b9643c8e79c9675, type: 3}
   ClipVolume: 1
@@ -1635,6 +1702,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: "Haha Hahaha... Ha \u2013"
+  DialogLineEn: "Haha Hahaha... Ha \u2013"
   TextPreview: Haha Hahaha... H...
   AudioClip: {fileID: 8300000, guid: 8cf363dd1cebf423184ac13c131cd7da, type: 3}
   ClipVolume: 1
@@ -1665,6 +1733,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
   DialogLine: Wow.
+  DialogLineEn: Wow.
   TextPreview: Wow.
   AudioClip: {fileID: 8300000, guid: 6f82101e5724f488dbffe7098123af67, type: 3}
   ClipVolume: 1

@@ -18,6 +18,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: '*Klopf* *Klopf*'
+  DialogLineEn: "*Knock* *Knock*"
   TextPreview: '*Klopf* *Klopf*'
   AudioClip: {fileID: 8300000, guid: ec07fa5d83e4946df920774f15824cff, type: 3}
   ClipVolume: 1
@@ -50,6 +51,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: 
+  DialogLineEn: 
   TextPreview: "T\xFCr \xF6ffnen."
   AudioClip: {fileID: 0}
   ClipVolume: 1
@@ -101,6 +103,7 @@ MonoBehaviour:
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
   DialogLine: 
+  DialogLineEn: 
   TextPreview: Klopfen ignorieren.
   AudioClip: {fileID: 0}
   ClipVolume: 1

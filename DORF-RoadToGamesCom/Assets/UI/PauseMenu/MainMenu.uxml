@@ -2,13 +2,13 @@
     <Style src="project://database/Assets/UI/PauseMenu/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=e8fecb0beda7148afa390dcdd8f4db62&amp;type=3#MainMenuStyle" />
     <ui:VisualElement name="startMenu" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0.95); flex-shrink: 0; flex-direction: column;">
         <ui:VisualElement name="logoContainer" style="flex-grow: 3;">
-            <ui:VisualElement name="logo" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI/PauseMenu/Menu%20Sprites/UI_Main_Menu_abs_v01_Title_lay01.png?fileID=2800000&amp;guid=a938a40db018b44b2ab49ed7078ca01a&amp;type=3#UI_Main_Menu_abs_v01_Title_lay01&quot;); width: 486px; height: 304px; -unity-text-align: upper-left; align-items: stretch; align-self: center; opacity: 1; flex-shrink: 0; min-width: 486px; min-height: 304px; margin-top: 239px;" />
+            <ui:VisualElement name="logo" style="flex-grow: 0; background-image: url(&quot;project://database/Assets/UI/Images/UI_Main_Menu_abs_v01_LOGO_Brot_und_Tod_lay01.png?fileID=2800000&amp;guid=95b096d4bf8d942e38f91037108b3e40&amp;type=3#UI_Main_Menu_abs_v01_LOGO_Brot_und_Tod_lay01&quot;); width: 486px; height: 304px; -unity-text-align: upper-left; align-items: stretch; align-self: center; opacity: 1; flex-shrink: 0; min-width: 486px; min-height: 304px; margin-top: 239px;" />
         </ui:VisualElement>
         <ui:VisualElement name="buttons" style="flex-grow: 1; justify-content: flex-end; margin-bottom: 77px; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
-            <ui:Button name="Start" enabled="true" class="startButton button" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; width: 366px; height: 168px; margin-bottom: -31px;" />
-            <ui:Button name="Resume" class="button resumeButton" style="width: 416px; height: 152px;" />
-            <ui:Button name="Exit" class="button exitButton" style="width: 340px; height: 130px;" />
-            <ui:Button name="Settings" class="button exitButton" style="width: 340px; height: 130px;" />
+            <ui:Button text="RESTART" name="Start" enabled="true" class="startButton button" />
+            <ui:Button text="RESUME" name="Resume" class="button resumeButton" />
+            <ui:Button text="SETTINGS" name="Settings" class="button settingsButton" />
+            <ui:Button text="EXIT" name="Exit" class="button exitButton" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

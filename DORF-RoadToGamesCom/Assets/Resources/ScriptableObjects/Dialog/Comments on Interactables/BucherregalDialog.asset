@@ -38,6 +38,7 @@ MonoBehaviour:
   DialogLine: "\u201EMein Kind ist ungeschickt\u201C, \u201EDas schlaffe Kind\u201C,
     \u201EDas steife Kind\u201C, \u201EDas verspannte Kind\u201C, \u201EDas zappelige
     Kind\u201C ... Kein Wunder dass ich so geworden bin."
+  DialogLineEn: "\u201cMy Child Is Clumsy\u201d, \u201cThe Limp Child\u201d, \u201cThe Stiff Child\u201d, \u201cThe Tense Child\u201d, \u201cThe Fidgety Child\u201d ... No wonder I turned out like this."
   TextPreview: "\u201EMein Kind ist u..."
   AudioClip: {fileID: 8300000, guid: 1ae7e25ad459f4c9f9e89cc2c4331215, type: 3}
   ClipVolume: 1
