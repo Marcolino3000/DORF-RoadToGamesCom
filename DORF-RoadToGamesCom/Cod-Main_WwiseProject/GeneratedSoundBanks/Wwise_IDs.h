@@ -25,18 +25,73 @@ namespace AK
         static const AkUniqueID DOUGH_REACT_SHRINK_STOP = 1822647189U;
         static const AkUniqueID DOUGH_REACT_STEADY_START = 1233864094U;
         static const AkUniqueID DOUGH_REACT_STEADY_STOP = 2558363198U;
+        static const AkUniqueID MUS_DIALOG_START = 797527444U;
+        static const AkUniqueID MUS_DIALOGTRAURIG_START = 4294454276U;
+        static const AkUniqueID MUS_DORFFESTJINGLE_START = 1555599282U;
+        static const AkUniqueID MUS_MENU_START = 1195524065U;
+        static const AkUniqueID MUS_SAUERTEIG_START_2C = 2061060223U;
+        static const AkUniqueID MUS_SCENE1_START = 4204145805U;
         static const AkUniqueID MUS_SCENE2_START = 2007948846U;
         static const AkUniqueID MUS_SCENE2_STOP = 281579790U;
         static const AkUniqueID MUS_SCHLAGER_START = 951148415U;
         static const AkUniqueID MUS_SCHLAGER_STOP = 2690086085U;
-        static const AkUniqueID SCENE3_START = 1559837319U;
+        static const AkUniqueID MUS_STARTSCREEN_START = 843151098U;
         static const AkUniqueID SMARTHPHONE_GETOUT = 3881560519U;
         static const AkUniqueID SMARTPHONE_CLICK = 1360862177U;
         static const AkUniqueID SMARTPHONE_PUTBACK = 4211178899U;
     } // namespace EVENTS
 
+    namespace STATES
+    {
+        namespace ST_MX_CONTEXT
+        {
+            static const AkUniqueID GROUP = 3782072948U;
+
+            namespace STATE
+            {
+                static const AkUniqueID GAMEPLAY = 89505537U;
+                static const AkUniqueID HANDY = 1696692335U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID SUBMENU = 4000949516U;
+            } // namespace STATE
+        } // namespace ST_MX_CONTEXT
+
+    } // namespace STATES
+
+    namespace SWITCHES
+    {
+        namespace MX_LAY_01
+        {
+            static const AkUniqueID GROUP = 987549725U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace MX_LAY_01
+
+        namespace MX_LAY_02
+        {
+            static const AkUniqueID GROUP = 987549726U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace MX_LAY_02
+
+        namespace MX_LAY_03
+        {
+            static const AkUniqueID GROUP = 987549727U;
+
+            namespace SWITCH
+            {
+            } // namespace SWITCH
+        } // namespace MX_LAY_03
+
+    } // namespace SWITCHES
+
     namespace GAME_PARAMETERS
     {
+        static const AkUniqueID DORFFEST_SC = 529554013U;
         static const AkUniqueID DOUGH_RISE_N_SINK = 1166628669U;
         static const AkUniqueID VOL_MASTER = 3391499625U;
         static const AkUniqueID VOL_MUSIC = 1004648580U;
@@ -46,14 +101,16 @@ namespace AK
     namespace BANKS
     {
         static const AkUniqueID INIT = 1355168291U;
-        static const AkUniqueID PLACEHOLDER = 1548734028U;
-        static const AkUniqueID SCENE2 = 1544306479U;
+        static const AkUniqueID MAIN = 3161908922U;
     } // namespace BANKS
 
     namespace BUSSES
     {
         static const AkUniqueID MAIN_AUDIO_BUS = 2246998526U;
         static const AkUniqueID MUSIC = 3991942870U;
+        static const AkUniqueID MX_LAY_01 = 3314336634U;
+        static const AkUniqueID MX_LAY_02 = 3314336633U;
+        static const AkUniqueID MX_LAY_03 = 3314336632U;
         static const AkUniqueID SFX = 393239870U;
     } // namespace BUSSES
 

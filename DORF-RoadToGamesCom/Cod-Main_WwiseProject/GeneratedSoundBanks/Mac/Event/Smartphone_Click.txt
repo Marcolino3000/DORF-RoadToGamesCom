@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	1360862177	Smartphone_Click			\Default Work Unit\Props\Smartphone_Click	
-

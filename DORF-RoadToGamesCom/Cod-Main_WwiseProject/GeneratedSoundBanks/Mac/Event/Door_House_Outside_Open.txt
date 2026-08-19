@@ -1,3 +1,0 @@
-Event	ID	Name			Wwise Object Path	Notes
-	509453139	Door_House_Outside_Open			\Default Work Unit\Props\Door_House_Outside_Open	
-

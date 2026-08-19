@@ -1,3 +1,12 @@
+State Group	ID	Name			Wwise Object Path	Notes
+	3782072948	ST_MX_Context			\ST_MX\ST_MX_Context	
+
+State	ID	Name	State Group			Notes
+	89505537	GAMEPLAY	ST_MX_Context			
+	748895195	None	ST_MX_Context			
+	1696692335	HANDY	ST_MX_Context			
+	4000949516	SUBMENU	ST_MX_Context			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
 	1004648580	VOL_Music			\Default Work Unit\SETTINGS\VOL_Music	
 	3273357900	VOL_SFX			\Default Work Unit\SETTINGS\VOL_SFX	
@@ -6,6 +15,9 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
+	3314336632	MX_LAY 03			\Default Work Unit\Main Audio Bus\Music\MX_LAY 03	
+	3314336633	MX_LAY 02			\Default Work Unit\Main Audio Bus\Music\MX_LAY 02	
+	3314336634	MX_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_LAY 01	
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes
