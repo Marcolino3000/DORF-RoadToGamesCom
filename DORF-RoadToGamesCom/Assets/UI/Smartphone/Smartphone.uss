@@ -659,3 +659,40 @@
     margin-left: 0;
     margin-right: 0;
 }
+
+/* ---------- Sprachnachricht-Untertitel ---------- */
+/* Liegt über dem unteren Ende des Handys statt darunter: bei 16:9 füllt das Handy 1038 der
+   1080 logischen Pixel des Panels, auf einem Ultrawide skaliert es herunter und bleibt trotzdem
+   fast randlos — Platz unterhalb gibt es also in keinem Seitenverhältnis. Verdeckt werden nur
+   Eingabe- und Navigationsleiste des Handys, die beide nichts können.
+   Die Leiste selbst ist nur ein zentrierender Rahmen ohne eigene Fläche; sichtbar ist die Box,
+   und die ist so breit wie ihr Text. */
+.subtitle-bar {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 24px;
+    align-items: center;
+    display: none;
+}
+
+.subtitle-bar__box {
+    max-width: 1280px;
+    background-color: rgba(0, 0, 0, 0.82);
+    border-radius: 16px;
+    padding-top: 14px;
+    padding-right: 34px;
+    padding-bottom: 16px;
+    padding-left: 34px;
+}
+
+/* Die Schrift steht hier noch einmal: -unity-font-definition erbt zwar, aber nur von
+   .phone-screen abwärts, und die Leiste hängt bewusst außerhalb des Handy-Displays. */
+.subtitle-bar__text {
+    -unity-font-definition: url("project://database/Assets/Visuals/Fonts/Fancy-Regular.otf?fileID=12800000&guid=37567676b964d4408b499bb1e061114a&type=3#Fancy-Regular");
+    font-size: 40px;
+    color: rgb(245, 245, 247);
+    white-space: normal;
+    -unity-text-align: middle-center;
+    letter-spacing: 1px;
+}

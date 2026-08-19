@@ -28,7 +28,7 @@
 				</Property>
 				<Property Name="LicenseKey" Type="string" Value="PHByb2plY3QgaWQ9IjIxODA3IiBtYXNrPSJGSUdCNjYzNiIgZW5jPSIwIj48bGlj ZW5zZSBpZD0iMSIgbmFtZT0iV3dpc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwx MCwxNCIgZXhwaXJlcz0iMjAyNi0wOC0wMSIgIC8+PGxpY2Vuc2UgaWQ9IjIxIiBu YW1lPSJNYWludGVuYW5jZSIgdHlwZT0iMyIgcGxhdGZvcm1zPSI0LDEwLDE0IiBl eHBpcmVzPSIyMDI2LTA4LTAxIiAgLz48bGljZW5zZSBpZD0iNzAiIG5hbWU9Iklu ZGllIExpY2Vuc2UiIHR5cGU9IjMiIHBsYXRmb3Jtcz0iNCwxMCwxNCIgZXhwaXJl cz0iMjAyNi0wOC0wMSIgIC8+PC9wcm9qZWN0Pg==|vhHyoQ9mJzhzRXOgysL2xEj 10QYtkmB0mJOwtg5hvwWxPyvl1DtDgtGSsDC/o50qZbnQKjj+JVUQ0SZbR2sABWA NxlM/FtB8wDOmvg+BSDJvC85Ec93hRJVlzUbAa/dOFXhQr9yjZtNwyxo6lk9PUcN LSGY4Pv71QQmZEMwLex7PiQQYdZxO+b2Pyp8nEsGhaKoh+j3r8426Lcpv6x/CMs4 WgBOTGZic6DI5PsU3L8A16hFfh+BBnyI5skaJmmDjZr2j8x5+aYJh0lKdv/U8lxD T7q+V9DqB70+Qk6Dd+vZD3EWcMogy7RhQd+hQCXHWgTn6Ye2UPiDWDIO9Rs1JIA= = " />
 				<Property Name="SoundBankGenerateHeaderFile" Type="bool" Value="True" />
-				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="GenerateSoundBankXML" Type="bool" Value="False" /><Property Name="SoundBankGenerateMaxAttenuationInfo" Type="bool" Value="True" /><Property Name="GenerateSoundBankJSON" Type="bool" Value="True" /><Property Name="SoundBankGeneratePrintGUID" Type="bool" Value="True" /><Property Name="SoundBankGeneratePrintPath" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks" />
+				<Property Name="SoundBankGenerateEstimatedDuration" Type="bool" Value="True" /><Property Name="SoundBankHeaderFilePath" Type="string" Value="GeneratedSoundBanks" />
 				<Property Name="SoundBankPaths" Type="string">
 					<ValueList>
 						<Value Platform="Mac">GeneratedSoundBanks\Mac\</Value>

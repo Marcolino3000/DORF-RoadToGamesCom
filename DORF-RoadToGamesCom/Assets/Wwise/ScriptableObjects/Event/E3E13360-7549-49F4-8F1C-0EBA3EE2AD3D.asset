@@ -15,4 +15,4 @@ MonoBehaviour:
   objectName: Door_Slam
   id: 3678466239
   guid: E3E13360-7549-49F4-8F1C-0EBA3EE2AD3D
-  IsInUserDefinedSoundBank: 0
+  IsInUserDefinedSoundBank: 1
