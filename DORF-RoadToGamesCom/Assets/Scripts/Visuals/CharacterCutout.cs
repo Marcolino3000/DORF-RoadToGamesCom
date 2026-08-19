@@ -78,10 +78,15 @@ public class CharacterCutout : MonoBehaviour
         Vector3 side = cam.WorldToViewportPoint(bounds.center + Vector3.right * bounds.extents.x);
         Vector3 top = cam.WorldToViewportPoint(bounds.center + Vector3.up * bounds.extents.y);
 
+        // One radius for both axes, taken from whichever of the two is bigger on screen, so the
+        // hole is a circle that still encloses her completely. Viewport units are not square, so
+        // the horizontal one is divided by the aspect to come out round in pixels.
+        float aspect = Mathf.Max(cam.aspect, 0.0001f);
+        float radius = Mathf.Max(Mathf.Abs(side.x - center.x) * aspect, Mathf.Abs(top.y - center.y));
+        radius = Mathf.Max(radius * (1f + padding), minRadius);
+
         Vector2 targetCenter = new Vector2(center.x, center.y);
-        Vector2 targetRadius = new Vector2(
-            Mathf.Max(Mathf.Abs(side.x - center.x) * (1f + padding), minRadius),
-            Mathf.Max(Mathf.Abs(top.y - center.y) * (1f + padding), minRadius));
+        Vector2 targetRadius = new Vector2(radius / aspect, radius);
 
         if (isFollowing && smoothing > 0f)
         {

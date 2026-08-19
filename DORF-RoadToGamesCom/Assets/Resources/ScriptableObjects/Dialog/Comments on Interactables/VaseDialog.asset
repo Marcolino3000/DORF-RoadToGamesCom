@@ -39,7 +39,7 @@ MonoBehaviour:
   DialogLineEn: Granny was definitely more talented at art than me.
   TextPreview: Oma war definiti...
   AudioClip: {fileID: 8300000, guid: cc4772f83f9e04f40a3fcd339acb89ed, type: 3}
-  ClipVolume: 0.5
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0

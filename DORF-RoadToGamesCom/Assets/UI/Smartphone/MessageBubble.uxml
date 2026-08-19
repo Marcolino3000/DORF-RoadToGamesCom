@@ -6,10 +6,16 @@
             <ui:VisualElement name="messageBubble" class="message-bubble">
                 <ui:Label name="messageText" class="message-bubble__text" />
                 <ui:VisualElement name="voiceMemo" class="voice-memo" style="display: none;">
-                    <ui:Button name="voicePlayButton" class="voice-memo__play" style="-unity-background-image-tint-color: rgb(0, 135, 16);" />
-                    <ui:VisualElement name="voiceBars" picking-mode="Ignore" class="voice-memo__bars" />
-                    <ui:VisualElement name="voiceAvatar" picking-mode="Ignore" class="voice-memo__avatar">
-                        <ui:VisualElement name="voiceMic" picking-mode="Ignore" class="voice-memo__mic" />
+                    <ui:Button name="voicePlayButton" class="voice-memo__play" />
+                    <ui:VisualElement name="voiceWave" picking-mode="Ignore" class="voice-memo__wave">
+                        <ui:VisualElement name="voiceBars" picking-mode="Ignore" class="voice-memo__bars" />
+                        <ui:Label name="voiceTime" picking-mode="Ignore" class="voice-memo__time" />
+                    </ui:VisualElement>
+                    <ui:VisualElement name="voiceTrailing" class="voice-memo__trailing">
+                        <ui:VisualElement name="voiceAvatar" picking-mode="Ignore" class="voice-memo__avatar">
+                            <ui:VisualElement name="voiceMic" picking-mode="Ignore" class="voice-memo__mic" />
+                        </ui:VisualElement>
+                        <ui:Button name="voiceSpeedButton" class="voice-memo__speed" style="display: none;" />
                     </ui:VisualElement>
                 </ui:VisualElement>
             </ui:VisualElement>

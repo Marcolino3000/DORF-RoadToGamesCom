@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e86e6013fb5415d9fc88ab06a37cd42, type: 3}
+  m_Name: KinderbildBreiDialog
+  m_EditorClassIdentifier: cod.dialogbuilder::Tree.DialogTree
+  StartNodes:
+  - {fileID: 5482853707196133724}
+  nodes:
+  - {fileID: 5482853707196133724}
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+--- !u!114 &5482853707196133724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Name: TODO KinderbildBrei
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  Guid: 00bafd9d53cc4c3a9a400d60e390b09e
+  Position: {x: 544.8572, y: 414.5714}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
+  DialogLine: 'TODO: Text fuer KinderbildBrei eintragen'
+  DialogLineEn: 
+  TextPreview: TODO KinderbildBrei
+  AudioClip: {fileID: 8300000, guid: 2a9e20b00e84e431494c4a86eb2eb12d, type: 3}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  answerType: 4
+  _popularityModifier: 0

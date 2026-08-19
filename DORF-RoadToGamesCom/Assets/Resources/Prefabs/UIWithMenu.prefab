@@ -859,8 +859,144 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 520566714749597361, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}
       insertIndex: -1
       addedObject: {fileID: 143306425706133658}
+    - targetCorrespondingSourceObject: {fileID: 7693628905760827513, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 229089906552950098}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}
+--- !u!1 &878524142921163597
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 229089906552950098}
+  - component: {fileID: 191749182532531216}
+  - component: {fileID: 476735003302531362}
+  - component: {fileID: 332210648412357402}
+  - component: {fileID: 103405315606252239}
+  m_Layer: 0
+  m_Name: SauerteigAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &229089906552950098
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878524142921163597}
+  m_LocalRotation: {x: -0, y: -0, z: 0.027834445, w: 0.99961257}
+  m_LocalPosition: {x: 0, y: 0, z: -1314.74}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 819850616225184622}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 3.19}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 199.8, y: 158.99}
+  m_SizeDelta: {x: 174.76, y: 116.51}
+  m_Pivot: {x: 0.5014, y: 0.2194}
+--- !u!222 &191749182532531216
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878524142921163597}
+  m_CullTransparentMesh: 1
+--- !u!114 &476735003302531362
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878524142921163597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 90320e9ecb0584adf8f9fac4a3733266, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!114 &103405315606252239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878524142921163597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c5195b6e5994b6ba31dda46c3223aa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::UiVerticalFade
+  fadeStart: 0.2194
+  fadeEnd: 0.4119
+  slices: 16
+--- !u!114 &332210648412357402
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 878524142921163597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 265dd9ec46534414bbfe7bfb8c37fa03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SauerteigDoughAnimation
+  frames:
+  - {fileID: 21300000, guid: 90320e9ecb0584adf8f9fac4a3733266, type: 3}
+  - {fileID: 21300000, guid: d636f6db4e1ab4b04bc35662a7e4373a, type: 3}
+  - {fileID: 21300000, guid: fe72bc013f01644e0a9605ae2cb66efd, type: 3}
+  - {fileID: 21300000, guid: 0a63710fce41d4a7383bb33afa8b04ad, type: 3}
+  - {fileID: 21300000, guid: a206e0cb992734d7aa041b5941efff82, type: 3}
+  - {fileID: 21300000, guid: 162e10ccb761246dda53b8c05a51f525, type: 3}
+  - {fileID: 21300000, guid: c885a0764bbf84f0d8b635b83aa2e33e, type: 3}
+  - {fileID: 21300000, guid: f5fa884766867496dabe250cc9a3369c, type: 3}
+  - {fileID: 21300000, guid: de41f62665f744061a4cb24a26e5a743, type: 3}
+  - {fileID: 21300000, guid: ba82f975d8ee440269c3f8fc1b09de49, type: 3}
+  framesPerSecond: 12
+  scaleEpsilon: 0.0001
+  dough: {fileID: 798993365025142998}
+  verticalOffset: -64.1
+  previewLoops: 2
+  previewAnimation: 0
+  frameIndex: 0
+  isPlaying: 0
+--- !u!224 &819850616225184622 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 7693628905760827513, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}
+  m_PrefabInstance: {fileID: 6737752517104332065}
+  m_PrefabAsset: {fileID: 0}
+--- !u!224 &798993365025142998 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 508881790030200987, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}
+  m_PrefabInstance: {fileID: 6737752517104332065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &3167727172074049827 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 8536372034226945026, guid: 6dc746a2d8ee745d591b915989764b1d, type: 3}

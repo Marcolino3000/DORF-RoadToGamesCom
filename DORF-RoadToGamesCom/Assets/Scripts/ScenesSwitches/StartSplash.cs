@@ -19,8 +19,11 @@ namespace ScenesSwitches
     /// <see cref="Node.CurrentLanguage"/>, and that assignment is what builds the dialog paragraphs
     /// for the play-through. No visitor can end up in a language they did not choose.
     ///
-    /// The canvas is built in code: only the image itself has to be delivered, either dropped onto
-    /// the Image field or into Assets/Resources under <see cref="resourcePath"/>.
+    /// The canvas is built in code: only the artwork has to be delivered. It comes as a stack of
+    /// layers painted on one canvas — sky, clouds, landscape, dust, light — which are sized as a
+    /// single block so they stay registered with each other on any screen. Three of them carry the
+    /// movement — the cloud strip drifts sideways and wraps around forever, the dust sways inside a
+    /// margin of its own, and the light rays fade up and down. The rest stands still.
     /// </summary>
     public class StartSplash : MonoBehaviour
     {
@@ -47,12 +50,40 @@ namespace ScenesSwitches
         [SerializeField] private bool debugLogs;
 
         [Header("Image")]
-        [Tooltip("Leave empty to load the image from Resources instead — see Resource Path.")]
-        [SerializeField] private Sprite image;
-        [Tooltip("Used when no image is assigned above: drop the artwork into Assets/Resources/ under this path. The file extension does not matter.")]
+        [Tooltip("Drawn first, behind the clouds — the empty sky.")]
+        [SerializeField] private Sprite skyLayer;
+        [Tooltip("The one layer that moves. Painted wider than the screen and scrolled sideways, so it has to be set to Repeat in its import settings.")]
+        [SerializeField] private Sprite cloudLayer;
+        [Tooltip("Standing layers drawn over the clouds, first entry lowest — the landscape.")]
+        [SerializeField] private Sprite[] foregroundLayers;
+        [Tooltip("Drawn over the landscape and drifting slowly. Sized a little larger than the picture, so the drift cannot pull an empty edge into frame.")]
+        [SerializeField] private Sprite dustLayer;
+        [Tooltip("Drawn last, over everything, and fading up and down on its own.")]
+        [SerializeField] private Sprite lightLayer;
+        [Tooltip("Used only when no layer above is assigned: a single image from Assets/Resources/ under this path. The file extension does not matter.")]
         [SerializeField] private string resourcePath = "UI/StartSplash";
         [Tooltip("Until the artwork is delivered, show a generated placeholder so the flow can be tested. Off: no image found means no start screen at all.")]
         [SerializeField] private bool usePlaceholderWhenMissing = true;
+
+        [Header("Clouds")]
+        [Tooltip("Seconds a cloud needs to drift across the width of the picture. Higher is slower; a negative value turns the drift around. Zero holds the clouds still.")]
+        [SerializeField] private float cloudDriftSeconds = 90f;
+        [Tooltip("Top edge of the cloud band, as a fraction of the artwork measured from its top. The strip is delivered cropped to the clouds, so where it hangs in the sky is set here.")]
+        [SerializeField] private float cloudBandTop;
+        [Tooltip("Bottom edge of the same band. Reaches past the horizon, so the clouds pass behind the landscape instead of ending in mid air.")]
+        [SerializeField] private float cloudBandBottom = 0.565f;
+
+        [Header("Dust")]
+        [Tooltip("How far the dust drifts either side of its resting place, as a fraction of the picture. The layer is oversized to match, so no amount of drift can show an edge.")]
+        [SerializeField] private Vector2 dustDrift = new(0.02f, 0.012f);
+        [Tooltip("Seconds for one full round trip, per axis. Two lengths that do not divide into each other, so the pair never settles into a straight back and forth.")]
+        [SerializeField] private Vector2 dustDriftSeconds = new(37f, 23f);
+
+        [Header("Light")]
+        [Tooltip("How far the light fades back at its dimmest, as a fraction of what was painted. Zero holds it steady.")]
+        [SerializeField] private float lightPulse = 0.2f;
+        [Tooltip("Seconds for one full fade down and back up.")]
+        [SerializeField] private float lightPulseSeconds = 16f;
 
         [Header("Language")]
         [SerializeField] private Language startingLanguage = Language.De;
@@ -86,6 +117,13 @@ namespace ScenesSwitches
 
         private GameObject overlay;
         private CanvasGroup canvasGroup;
+        private RectTransform stage;
+        private RawImage clouds;
+        private Image dust;
+        private Image lightRays;
+        private float cloudScroll;
+        private Vector2 dustPhase;
+        private float lightPhase;
         private Coroutine armRoutine;
         private Coroutine fadeRoutine;
 
@@ -113,6 +151,97 @@ namespace ScenesSwitches
             // start image sitting on top of it.
             if (SceneManager.GetActiveScene().name != firstSceneName)
                 Hide(instant: true);
+        }
+
+        private void Update()
+        {
+            // Kept running through the fade out — freezing the picture the moment a language is
+            // picked would show as a hitch on the way into the game.
+            if (overlay == null || !overlay.activeSelf)
+                return;
+
+            DriftClouds();
+            DriftDust();
+            PulseLight();
+        }
+
+        /// <summary>
+        /// Slides the uv window along the strip. Everything is read back off the rect on screen
+        /// rather than counted in pixels, so the clouds stay at their painted size on any screen
+        /// and the importer is free to scale the strip down.
+        /// </summary>
+        private void DriftClouds()
+        {
+            if (clouds == null)
+                return;
+
+            var rect = clouds.rectTransform.rect;
+            var texture = clouds.texture;
+
+            if (rect.height <= 0f || texture == null || texture.width <= 0)
+                return;
+
+            // How much of the strip fits across the picture: the same ratio however large the
+            // screen is, and unaffected by the strip being imported at a smaller size.
+            var window = rect.width / rect.height * texture.height / (float)texture.width;
+
+            // A cloud crosses the picture in cloudDriftSeconds, and the picture is exactly one
+            // window wide — so a whole strip takes that long divided by the window.
+            cloudScroll = Advance(cloudScroll, cloudDriftSeconds / window);
+
+            clouds.uvRect = new Rect(cloudScroll, 0f, window, 1f);
+        }
+
+        /// <summary>
+        /// Sways the dust about its resting place. Two axes on lengths that do not divide into each
+        /// other, so the motes wander instead of sliding back and forth on one line.
+        /// </summary>
+        private void DriftDust()
+        {
+            if (dust == null || stage == null)
+                return;
+
+            dustPhase = new Vector2(
+                Advance(dustPhase.x, dustDriftSeconds.x),
+                Advance(dustPhase.y, dustDriftSeconds.y));
+
+            // Against the stage rather than the screen, so the sway keeps its size in the picture
+            // whatever is cropped off the edges.
+            var size = stage.rect.size;
+
+            dust.rectTransform.anchoredPosition = new Vector2(
+                dustDrift.x * size.x * Mathf.Sin(dustPhase.x * Mathf.PI * 2f),
+                dustDrift.y * size.y * Mathf.Sin(dustPhase.y * Mathf.PI * 2f));
+        }
+
+        /// <summary>
+        /// Fades the light rays up and down. The pulse only ever takes light away from what was
+        /// painted: alpha stops at 1, so pushing past it would hold the rays flat at full for part
+        /// of every cycle instead of brightening them.
+        /// </summary>
+        private void PulseLight()
+        {
+            if (lightRays == null)
+                return;
+
+            lightPhase = Advance(lightPhase, lightPulseSeconds);
+
+            // Starts the cycle at full strength, so the screen comes up on the artwork as painted.
+            var color = lightRays.color;
+            color.a = 1f - lightPulse * 0.5f * (1f - Mathf.Cos(lightPhase * Mathf.PI * 2f));
+            lightRays.color = color;
+        }
+
+        /// <summary>
+        /// Moves a 0..1 phase on by one frame and wraps it, so a kiosk day of drifting cannot run
+        /// any of these out of float precision. A length of zero parks the phase where it is, which
+        /// is what holds a layer still.
+        /// </summary>
+        private static float Advance(float phase, float seconds)
+        {
+            return seconds == 0f
+                ? phase
+                : Mathf.Repeat(phase + Time.unscaledDeltaTime / seconds, 1f);
         }
 
         private void OnDestroy()
@@ -147,6 +276,12 @@ namespace ScenesSwitches
             overlay.SetActive(true);
             canvasGroup.alpha = 1f;
             canvasGroup.blocksRaycasts = true;
+
+            // The aspect fitter only sizes the stage in the canvas rebuild, which runs after Update
+            // — without this the clouds would be measured against an unfitted stage and show up at
+            // the wrong size for the first frame the screen is up.
+            if (stage != null)
+                LayoutRebuilder.ForceRebuildLayoutImmediate(stage);
 
             // Nothing may move behind the image while the visitor has not started yet.
             PlayerController.EnableMovement(false);
@@ -252,11 +387,16 @@ namespace ScenesSwitches
 
         private void BuildOverlay()
         {
-            var sprite = ResolveSprite();
+            // Nothing but the layered artwork is expected here; the single image is what the screen
+            // ran on before the layers existed and is kept as the way to walk the language flow
+            // through without any art at all.
+            var hasLayers = skyLayer != null || cloudLayer != null || dustLayer != null
+                            || lightLayer != null || FirstForegroundLayer() != null;
+            var singleImage = hasLayers ? null : ResolveSprite();
 
-            if (sprite == null)
+            if (!hasLayers && singleImage == null)
             {
-                Debug.LogWarning($"StartSplash: no image assigned and none found at Resources/{resourcePath} — the game starts without a start screen.", this);
+                Debug.LogWarning($"StartSplash: no artwork assigned and none found at Resources/{resourcePath} — the game starts without a start screen.", this);
                 return;
             }
 
@@ -276,21 +416,158 @@ namespace ScenesSwitches
             var background = CreateStretchedImage("Background", overlay.transform);
             background.color = backgroundColor;
 
-            var splash = CreateStretchedImage("Image", overlay.transform);
-            splash.sprite = sprite;
+            stage = CreateStage(hasLayers ? StageSprite() : singleImage);
+
+            if (hasLayers)
+                BuildLayers();
+            else
+                AddLayer("Image", stage).sprite = singleImage;
+
+            // Added to the canvas rather than to the stage, so cropping the artwork on a narrow
+            // screen cannot push them off the edge. Added last so they sit on top of it.
+            BuildLanguageButtons(overlay.transform);
+        }
+
+        /// <summary>
+        /// The rect the whole stack is drawn into. Fitting the stack once instead of every layer on
+        /// its own is what keeps the layers registered with each other: each one fitted separately
+        /// would land at its own scale on any screen that is not the aspect the artwork was painted
+        /// at, and the clouds would drift off the horizon.
+        /// </summary>
+        private RectTransform CreateStage(Sprite reference)
+        {
+            var go = new GameObject("Stage", typeof(RectTransform));
+
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(overlay.transform, false);
+            rect.anchorMin = Vector2.zero;
+            rect.anchorMax = Vector2.one;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
 
             if (fit != ImageFit.Stretch)
             {
                 // EnvelopeParent fills the screen and crops, FitInParent letterboxes onto the backdrop.
-                var fitter = splash.gameObject.AddComponent<AspectRatioFitter>();
+                var fitter = go.AddComponent<AspectRatioFitter>();
                 fitter.aspectMode = fit == ImageFit.Cover
                     ? AspectRatioFitter.AspectMode.EnvelopeParent
                     : AspectRatioFitter.AspectMode.FitInParent;
-                fitter.aspectRatio = sprite.rect.width / sprite.rect.height;
+                fitter.aspectRatio = reference.rect.width / reference.rect.height;
             }
 
-            // Added last so they sit on top of the artwork.
-            BuildLanguageButtons(overlay.transform);
+            return rect;
+        }
+
+        /// <summary>
+        /// The layer the stage takes its shape from. The cloud strip is delivered cropped to the
+        /// clouds and says nothing about the frame, so a full canvas layer is asked first.
+        /// </summary>
+        private Sprite StageSprite()
+        {
+            var foreground = FirstForegroundLayer();
+
+            if (foreground != null)
+                return foreground;
+
+            return skyLayer != null ? skyLayer : cloudLayer;
+        }
+
+        private Sprite FirstForegroundLayer()
+        {
+            if (foregroundLayers == null)
+                return null;
+
+            foreach (var layer in foregroundLayers)
+            {
+                if (layer != null)
+                    return layer;
+            }
+
+            return null;
+        }
+
+        private void BuildLayers()
+        {
+            if (skyLayer != null)
+                AddLayer(skyLayer.name, stage).sprite = skyLayer;
+
+            if (cloudLayer != null)
+                clouds = AddCloudBand();
+
+            if (foregroundLayers != null)
+            {
+                foreach (var layer in foregroundLayers)
+                {
+                    if (layer != null)
+                        AddLayer(layer.name, stage).sprite = layer;
+                }
+            }
+
+            if (dustLayer != null)
+                dust = AddDustLayer();
+
+            if (lightLayer != null)
+            {
+                lightRays = AddLayer(lightLayer.name, stage);
+                lightRays.sprite = lightLayer;
+            }
+        }
+
+        /// <summary>
+        /// The swaying layer. Its anchors reach past the stage far enough to cover the drift, so at
+        /// the far end of every sway the layer's own edge lands on the edge of the picture at worst
+        /// and never inside it. Anchors rather than pixels, so that holds at any screen size, and
+        /// the same fraction on both axes, so the layer is not stretched out of shape to get it.
+        /// </summary>
+        private Image AddDustLayer()
+        {
+            var margin = Mathf.Max(Mathf.Abs(dustDrift.x), Mathf.Abs(dustDrift.y)) * Vector2.one;
+
+            var layer = AddLayer(dustLayer.name, stage);
+            layer.sprite = dustLayer;
+
+            var rect = layer.rectTransform;
+            rect.anchorMin = -margin;
+            rect.anchorMax = Vector2.one + margin;
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            return layer;
+        }
+
+        /// <summary>
+        /// The scrolling strip. It is drawn through a RawImage rather than an Image because that is
+        /// what lets the uv window be moved: the strip is set to repeat, so sliding the window is the
+        /// whole loop — no seam to jump back over and no second copy to keep in step.
+        /// </summary>
+        private RawImage AddCloudBand()
+        {
+            var go = new GameObject("Clouds", typeof(RectTransform), typeof(CanvasRenderer), typeof(RawImage));
+
+            // Anchored in fractions of the stage rather than in pixels, so the band keeps its place
+            // in the picture at every screen size without anything being recomputed when it changes.
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(stage, false);
+            rect.anchorMin = new Vector2(0f, 1f - Mathf.Max(cloudBandTop, cloudBandBottom));
+            rect.anchorMax = new Vector2(1f, 1f - Mathf.Min(cloudBandTop, cloudBandBottom));
+            rect.offsetMin = Vector2.zero;
+            rect.offsetMax = Vector2.zero;
+
+            var raw = go.GetComponent<RawImage>();
+            raw.texture = cloudLayer.texture;
+            raw.raycastTarget = false;
+
+            return raw;
+        }
+
+        private static Image AddLayer(string name, Transform parent)
+        {
+            var layer = CreateStretchedImage(name, parent);
+
+            // The buttons on top have to get the click, not the artwork.
+            layer.raycastTarget = false;
+
+            return layer;
         }
 
         private void BuildLanguageButtons(Transform parent)
@@ -459,9 +736,6 @@ namespace ScenesSwitches
 
         private Sprite ResolveSprite()
         {
-            if (image != null)
-                return image;
-
             if (!string.IsNullOrEmpty(resourcePath))
             {
                 var loaded = Resources.Load<Sprite>(resourcePath);

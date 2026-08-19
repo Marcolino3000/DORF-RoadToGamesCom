@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 799bdc7289364c2b97004e28c80a81c6, type: 3}
+  m_Name: VogeltraenkeInteractable
+  m_EditorClassIdentifier: cod.interactionbuilder::Runtime.Scripts.Interactables.Toggleable
+  _SaveStateToCurrentScene: 0
+  _sceneStateSaver: {fileID: 11400000, guid: 3e244c0560c63468bb3c97ac3de106ce, type: 2}
+  Interactable: {fileID: 0}
+  Sprite: {fileID: 0}
+  AwarenessLevel: 0
+  ToggleState: 0
+  StatusDescription: 
+  StatusOn: 
+  StatusOff: 
