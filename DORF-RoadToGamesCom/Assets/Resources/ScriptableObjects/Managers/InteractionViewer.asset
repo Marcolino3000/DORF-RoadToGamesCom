@@ -16,6 +16,19 @@ MonoBehaviour:
   triggerToPrerequisites:
   - Trigger:
       TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 0c202b620c474bfcacf05eae47f0d68f, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: c876ee28ae7d4f128c68b37bb67f49ef, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 0c202b620c474bfcacf05eae47f0d68f, type: 2}
+        Conditions: []
+      Name: Axt
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
       TriggeringInteractable: {fileID: 11400000, guid: f9afb1753248f494aa5d5acfd32def78, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:
