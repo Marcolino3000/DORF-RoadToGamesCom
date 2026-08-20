@@ -43,6 +43,11 @@ namespace DefaultNamespace
                  "1 is the village layer, the one that reads as the train's position.")]
         [SerializeField] private int cueLayerIndex = 1;
 
+        [Header("Sorting")]
+        [Tooltip("Order in Layer written to every layer's MeshRenderer. Everything else in the " +
+                 "scene sits at order 0, so anything below that keeps the panorama behind it.")]
+        [SerializeField] private int sortingOrder = -1;
+
         [Header("Layers, near to far")]
         [SerializeField] private Layer[] layers;
 
@@ -57,6 +62,8 @@ namespace DefaultNamespace
 
         private void Start()
         {
+            ApplySortingOrder();
+
             materials = new Material[layers.Length];
             offsetsPerUnit = new float[layers.Length];
 
@@ -78,6 +85,36 @@ namespace DefaultNamespace
                     ? materials[i].mainTextureScale.x / quadWidth
                     : 0f;
             }
+        }
+
+        /// <summary>
+        /// Puts the whole panorama behind everything else in the scene, once and for good.
+        ///
+        /// The Scene 1 camera is perspective and left on the default transparency sort, so Unity
+        /// orders transparent renderers by straight-line distance from the camera position rather
+        /// than by depth. A window mask sitting far out to the side therefore counts as *further
+        /// away* than the landscape it is meant to cover, even when it is metres nearer in Z, and
+        /// the panorama paints over it. Sorting layer and order are compared before that distance,
+        /// so a negative order settles the question wherever the camera ends up.
+        /// </summary>
+        private void ApplySortingOrder()
+        {
+            if (layers == null) return;
+
+            foreach (Layer layer in layers)
+            {
+                if (layer?.meshRenderer == null) continue;
+                if (layer.meshRenderer.sortingOrder == sortingOrder) continue;
+
+                layer.meshRenderer.sortingOrder = sortingOrder;
+            }
+        }
+
+        // Also from OnValidate, so the Game view matches a build without entering play mode. The
+        // order is serialised on the renderers, so it sticks once the scene is saved.
+        private void OnValidate()
+        {
+            ApplySortingOrder();
         }
 
         private void Update()
