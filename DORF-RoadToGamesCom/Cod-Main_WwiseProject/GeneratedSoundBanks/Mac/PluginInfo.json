@@ -47,8 +47,15 @@
     "LibName": "No Output",
     "LibId": "11862023",
     "Type": "AudioDevice"
+   },
+   {
+    "LibName": "Ak Sidechain Send",
+    "LibId": "12648451",
+    "Type": "Effect",
+    "DLL": "AkSidechain",
+    "StaticLib": "AkSidechainFX"
    }
   ],
-  "FileHash": "{88D45FF6-DA98-B017-4F62-B879AA2E8CB7}"
+  "FileHash": "{45571B6D-8254-4FFB-26B8-145931AFAF9B}"
  }
 }

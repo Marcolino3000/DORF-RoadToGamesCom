@@ -4,6 +4,7 @@
 		<WorkUnit Name="Default Work Unit" ID="{FF2381AE-A2E9-4565-81CD-7922A014825F}" PersistMode="Standalone">
 			<ChildrenList>
 				<SidechainMix Name="Dorffest_SC_SOURCE" ID="{57D27403-C9FE-4124-BCF9-BD3A602E46D3}"/>
+				<SidechainMix Name="VoiceSC" ID="{33801F58-126E-426D-B317-B77BC78E5CBD}"/>
 			</ChildrenList>
 		</WorkUnit>
 	</SidechainMixes>

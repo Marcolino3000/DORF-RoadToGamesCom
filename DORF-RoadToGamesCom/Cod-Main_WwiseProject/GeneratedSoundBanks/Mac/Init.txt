@@ -37,6 +37,10 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	3314336634	MX_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 01	
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
+Effect plug-ins	ID	Name	Type				Notes
+	268282154	Sidechain Send (Custom)	Ak Sidechain Send			
+	473893222	Parametric EQ (Custom)	Wwise Parametric EQ			
+
 Audio Devices	ID	Name	Type				Notes
 	2317455096	No_Output	No Output			
 	3859886410	System	System			

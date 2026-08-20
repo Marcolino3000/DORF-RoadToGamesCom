@@ -905,9 +905,11 @@
 										<Value>20</Value>
 									</ValueList>
 								</Property>
+								<Property Name="OverrideEffect" Type="bool" Value="True"/>
+								<Property Name="OverridePositioning" Type="bool" Value="True"/>
 								<Property Name="Volume" Type="Real64">
 									<ValueList>
-										<Value>7</Value>
+										<Value>10</Value>
 									</ValueList>
 								</Property>
 							</PropertyList>
@@ -928,6 +930,53 @@
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<PositioningInfo>
+								<Panner Name="" ID="{D9186B7A-E597-44F9-9EA0-18E66E01AA60}">
+									<PropertyList>
+										<Property Name="PanX" Type="Real64" Value="-78.5834738617201"/>
+										<Property Name="PanY" Type="Real64" Value="0.361663652802894"/>
+									</PropertyList>
+								</Panner>
+							</PositioningInfo>
+							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{BBB6F54D-18AE-461B-8D16-9B7081842738}" ShortID="88930311">
+										<PropertyList>
+											<Property Name="Render" Type="bool" Value="True"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="RoomVerb (Custom)" ID="{96B43D83-45B3-401B-8109-77C53BA9AD84}" ShortID="983547274" PluginName="Wwise RoomVerb" CompanyID="0" PluginID="118" PluginType="3">
+														<PropertyList>
+															<Property Name="DecayTime" Type="Real32" Value="0.6"/>
+															<Property Name="DryLevel" Type="Real32" Value="-0.3"/>
+															<Property Name="ERPattern" Type="int32" Value="22"/>
+															<Property Name="ReverbLevel" Type="Real32" Value="-22"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+									<EffectSlot Name="" ID="{5B141D79-3EC1-4619-9548-3AC44674616D}" ShortID="823390778">
+										<PropertyList>
+											<Property Name="Render" Type="bool" Value="True"/>
+										</PropertyList>
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Peak Limiter (Custom)" ID="{E80ABC8F-5991-4D85-83B3-E0FBE65B2A1A}" ShortID="379122418" PluginName="Wwise Peak Limiter" CompanyID="0" PluginID="110" PluginType="3">
+														<PropertyList>
+															<Property Name="Threshold" Type="Real32" Value="-29.6"/>
+														</PropertyList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+									</EffectSlot>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="AMB_Train_Announcement-02_TS" ID="{35EC2ECA-3192-41D5-83E7-B9D3FBAAD923}" Platform="Linked"/>
 							</ActiveSourceList>

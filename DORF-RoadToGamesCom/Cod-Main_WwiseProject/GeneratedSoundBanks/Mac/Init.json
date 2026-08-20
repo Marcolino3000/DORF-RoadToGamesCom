@@ -10,11 +10,29 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{983AE4D2-1033-6585-682E-D5ECD7E81D4D}",
+    "Hash": "{6CFE5AEF-FB51-7400-AB73-D769772BBB87}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "268282154",
+       "Name": "Sidechain Send (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Voice\\[Effect Slot [0]: (Sidechain Send)]\\Sidechain Send (Custom)",
+       "GUID": "{393C5DA1-D7DF-4BDE-95DC-F7F247692130}",
+       "LibName": "Ak Sidechain Send",
+       "LibId": "12648451"
+      },
+      {
+       "Id": "473893222",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{75AB2174-5AC9-4A3A-921B-C2540670EDAF}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      }
+     ],
      "AudioDevices": [
       {
        "Id": "2317455096",
@@ -75,7 +93,14 @@
       "Id": "3170124113",
       "Name": "Voice",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Voice",
-      "GUID": "{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}"
+      "GUID": "{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "268282154"
+        }
+       ]
+      }
      },
      {
       "Id": "3314336632",
@@ -99,7 +124,14 @@
       "Id": "3991942870",
       "Name": "Music",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music",
-      "GUID": "{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}"
+      "GUID": "{18A25F56-EF6D-45DB-BEE1-BE5BFDD97610}",
+      "PluginRefs": {
+       "Custom": [
+        {
+         "Id": "473893222"
+        }
+       ]
+      }
      }
     ],
     "GameParameters": [
@@ -277,6 +309,6 @@
     ]
    }
   ],
-  "FileHash": "{1BC891D4-379D-73E9-B48A-5AC591B1F599}"
+  "FileHash": "{03C2FCED-0164-1623-5E34-2E75B8ECB20D}"
  }
 }

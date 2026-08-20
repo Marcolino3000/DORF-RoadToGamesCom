@@ -280,6 +280,60 @@
 								</CustomStateList>
 							</StateInfo>
 							<ObjectLists>
+								<ObjectList Name="Effects">
+									<EffectSlot Name="" ID="{69F25E4E-0579-45DE-BEFA-C2523712C21A}" ShortID="556357771">
+										<ReferenceList>
+											<Reference Name="Effect">
+												<Custom>
+													<Effect Name="Parametric EQ (Custom)" ID="{75AB2174-5AC9-4A3A-921B-C2540670EDAF}" ShortID="473893222" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+														<PropertyList>
+															<Property Name="AttackTimeBand2" Type="Real32" Value="0.05"/>
+															<Property Name="AttackTimeBand3" Type="Real32" Value="0.05"/>
+															<Property Name="DynamicsEnableBand2" Type="bool" Value="True"/>
+															<Property Name="DynamicsEnableBand3" Type="bool" Value="True"/>
+															<Property Name="FrequencyBand2" Type="Real32" Value="380"/>
+															<Property Name="FrequencyBand3" Type="Real32" Value="1936.539"/>
+															<Property Name="OnOffBand3" Type="bool" Value="True"/>
+															<Property Name="QFactorBand2" Type="Real32" Value="0.6"/>
+															<Property Name="QFactorBand3" Type="Real32" Value="0.6"/>
+															<Property Name="RangeBand2" Type="Real32" Value="-6"/>
+															<Property Name="RangeBand3" Type="Real32" Value="-6"/>
+															<Property Name="ReleaseTimeBand2" Type="Real32" Value="0.15"/>
+															<Property Name="ReleaseTimeBand3" Type="Real32" Value="0.15"/>
+															<Property Name="ThresholdBand2" Type="Real32" Value="-30"/>
+															<Property Name="ThresholdBand3" Type="Real32" Value="-45.6"/>
+														</PropertyList>
+														<ReferenceList>
+															<Reference Name="DynamicsSidechainRef">
+																<ObjectRef Name="VoiceSC" ID="{33801F58-126E-426D-B317-B77BC78E5CBD}" WorkUnitID="{FF2381AE-A2E9-4565-81CD-7922A014825F}"/>
+															</Reference>
+														</ReferenceList>
+													</Effect>
+												</Custom>
+											</Reference>
+										</ReferenceList>
+										<StateInfo>
+											<CustomStateList>
+												<CustomState>
+													<StateRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}"/>
+													<CustomState Name="" ID="{D0A08A1D-826A-4520-94A0-1E10FFB6F009}" ShortID="14141145"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}"/>
+													<CustomState Name="" ID="{E712DF26-DD57-4EE5-A9AC-E9FB9D76F8F8}" ShortID="986572013"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}"/>
+													<CustomState Name="" ID="{8D4DF5C8-B96C-408D-A9CC-72881BE6D762}" ShortID="741131282"/>
+												</CustomState>
+												<CustomState>
+													<StateRef Name="None" ID="{9B6CB3E2-C3BE-4DA9-AB3C-2E046BE37874}"/>
+													<CustomState Name="" ID="{3B065F3A-3ADF-4029-B044-4CAE24C8BB51}" ShortID="289227831"/>
+												</CustomState>
+											</CustomStateList>
+										</StateInfo>
+									</EffectSlot>
+								</ObjectList>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{1D5F64D8-0F28-4458-9331-7F4E0D05134E}" ShortID="770760863">
 										<PropertyList>
@@ -318,7 +372,39 @@
 						</Bus>
 						<Bus Name="SFX" ID="{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}">
 							<ChildrenList>
-								<Bus Name="Voice" ID="{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}"/>
+								<Bus Name="Voice" ID="{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}">
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{842DEA8B-D273-4FAC-9225-DCD993F3BFF2}" ShortID="299194736">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Sidechain Send (Custom)" ID="{393C5DA1-D7DF-4BDE-95DC-F7F247692130}" ShortID="268282154" PluginName="Ak Sidechain Send" CompanyID="0" PluginID="193" PluginType="3">
+																<PropertyList>
+																	<Property Name="HPF" Type="int16">
+																		<ValueList>
+																			<Value>20</Value>
+																		</ValueList>
+																	</Property>
+																	<Property Name="LPF" Type="int16">
+																		<ValueList>
+																			<Value>20</Value>
+																		</ValueList>
+																	</Property>
+																</PropertyList>
+																<ReferenceList>
+																	<Reference Name="SidechainRef">
+																		<ObjectRef Name="VoiceSC" ID="{33801F58-126E-426D-B317-B77BC78E5CBD}" WorkUnitID="{FF2381AE-A2E9-4565-81CD-7922A014825F}"/>
+																	</Reference>
+																</ReferenceList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</Bus>
 							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
