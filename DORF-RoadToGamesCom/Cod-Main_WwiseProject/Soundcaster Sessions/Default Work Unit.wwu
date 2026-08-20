@@ -6,12 +6,64 @@
 				<SoundcasterSession Name="New Soundcaster Session" ID="{4B5C8219-0757-4D80-84A4-ABA14C1FD143}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<ObjectRef Name="MUS_Scene2_Start" ID="{A964252D-C827-4884-A10D-FEFE4E525345}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_Dialog_Neutral_PL" ID="{1B053861-BA06-44EA-9496-C1813767DA71}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="0" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_SWITCH_SUBMENU" ID="{940263A1-BE4F-4875-BFD2-2FD7EC529361}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="0" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_SWITCH_HANDY" ID="{83BC667E-95FC-4166-BA4F-39803F388A42}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="0" Y="3"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
 							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Dialog_End" ID="{012FFF47-A75D-4BE3-96D2-82BA303D6626}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="4" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="4" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MUS_SWITCH_GAMEPLAY" ID="{38683CBD-8671-4ADC-926C-8EFEA3077F87}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="4" Y="2"/>
 						</Module>
 					</ModuleList>
 				</SoundcasterSession>

@@ -3,18 +3,10 @@
 	<SoundBanks>
 		<WorkUnit Name="Default Work Unit" ID="{402969B9-AB1B-4E48-9EC6-449568D09F6A}" PersistMode="Standalone">
 			<ChildrenList>
-				<SoundBank Name="Scene2" ID="{E082CD5E-571C-4604-A83D-DE76F42380B4}">
+				<SoundBank Name="MAIN" ID="{B19D08E1-C54F-413C-92F9-3EE56640B868}">
 					<ObjectInclusionList>
-						<ObjectRef Name="MUS_Scene2_Stop" ID="{E23DC368-D35A-44E4-8A82-E19FFFB57A01}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="MUS_Scene2_Start" ID="{A964252D-C827-4884-A10D-FEFE4E525345}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
-					</ObjectInclusionList>
-					<ObjectExclusionList/>
-					<GameSyncExclusionList/>
-				</SoundBank>
-				<SoundBank Name="Placeholder" ID="{F19AAAE0-26A4-434F-A406-BAB060808F79}">
-					<ObjectInclusionList>
-						<ObjectRef Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
-						<ObjectRef Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="MX" ID="{35C49681-F2AD-429C-A9BB-1D914D5EBD6D}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Props" ID="{36CA404B-A737-4A1F-804D-E76D679A60F6}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>
 					<ObjectExclusionList/>
 					<GameSyncExclusionList/>

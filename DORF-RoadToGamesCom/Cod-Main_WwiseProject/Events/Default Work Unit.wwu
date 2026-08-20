@@ -3,63 +3,6 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{6C5FC797-15DD-460F-90E9-38AA8309780D}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="MUS_Scene2_Start" ID="{A964252D-C827-4884-A10D-FEFE4E525345}">
-					<ChildrenList>
-						<Action Name="" ID="{9C87C7DB-3070-4AA6-AFAF-8C27FEE91F4C}" ShortID="145103231">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Scene2" ID="{050D3736-0615-4CCA-B1DD-10625137C0A2}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
-					<ChildrenList>
-						<Action Name="" ID="{2462F1D7-9C55-4A4D-93EC-E6D03E5E4D0C}" ShortID="761316141">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Schlager" ID="{5AEFFB16-71D0-4438-9DCC-ABC5789685DD}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}">
-					<ChildrenList>
-						<Action Name="" ID="{14BE6678-6A28-49F7-8F7F-4C9D1ACE1A9D}" ShortID="107401847">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="2"/>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Schlager" ID="{5AEFFB16-71D0-4438-9DCC-ABC5789685DD}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
-				<Event Name="MUS_Scene2_Stop" ID="{E23DC368-D35A-44E4-8A82-E19FFFB57A01}">
-					<ChildrenList>
-						<Action Name="" ID="{A5435EE9-F701-4962-978F-CEA0331F78F7}" ShortID="597970933">
-							<PropertyList>
-								<Property Name="FadeTime" Type="Real64" Value="3"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="Scene2" ID="{050D3736-0615-4CCA-B1DD-10625137C0A2}" WorkUnitID="{C42DC31B-C996-4612-B80B-1F68D4D6ABE5}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
 				<Folder Name="Props" ID="{36CA404B-A737-4A1F-804D-E76D679A60F6}" ShortID="611142267">
 					<ChildrenList>
 						<Event Name="Smarthphone_GetOut" ID="{25AD7D59-7E46-4E01-A7EA-8B2EA9312D7E}">
@@ -242,45 +185,476 @@
 						</Folder>
 					</ChildrenList>
 				</Folder>
-				<Event Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}">
+				<Folder Name="MX" ID="{35C49681-F2AD-429C-A9BB-1D914D5EBD6D}" ShortID="233769401">
 					<ChildrenList>
-						<Action Name="" ID="{FDFE5CF4-CE0F-42DB-92FE-B21492C945A5}" ShortID="203280437">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-						<Action Name="" ID="{31E74E14-9B90-43EA-A887-D64513AAD61A}" ShortID="303249443">
-							<PropertyList>
-								<Property Name="ActionType" Type="int16" Value="7"/>
-								<Property Name="FadeOutCurve" Type="int16" Value="1"/>
-								<Property Name="FadeTime" Type="Real64" Value="1"/>
-							</PropertyList>
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MX_Dialog_traurig" ID="{81A02863-707C-4EC0-9903-AE7AA9594ECC}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
+						<Event Name="MUS_Scene2_Start" ID="{A964252D-C827-4884-A10D-FEFE4E525345}">
+							<ChildrenList>
+								<Action Name="" ID="{9C87C7DB-3070-4AA6-AFAF-8C27FEE91F4C}" ShortID="145103231">
+									<PropertyList>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{FB1FA27F-489F-4B13-85F2-A7643FF38A52}" ShortID="756589293">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Sauerteig" ID="{000BDD5D-A2FA-43C3-92ED-8920244E1662}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5A482DB0-A951-4EF4-A1A5-7108580169DC}" ShortID="819023414">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{1CB7AE3D-B15D-4752-8595-04168388EF9E}" ShortID="41702290">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 00_STARTSCREEN" ID="{955C0655-908E-4227-AB47-2A016B50ED53}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{A20C928B-489D-4D7F-9F3D-D1C9D4FCE570}" ShortID="250436695">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{569D21A3-D9D3-4B83-AB0B-CD02DA1E983E}" ShortID="255310400">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{97C0DB0F-EF8F-452E-A9EF-F8E78F127B5B}" ShortID="1005413286">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Schlager" ID="{1B871284-0B4D-4386-AFB3-1924E960CC2B}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{316493E3-C45F-4717-BB29-5C925E50B693}" ShortID="1058512492">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+										<Property Name="Delay" Type="Real64" Value="0.2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_SWITCH_GAMEPLAY" ID="{38683CBD-8671-4ADC-926C-8EFEA3077F87}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
+							<ChildrenList>
+								<Action Name="" ID="{99E6E1E6-673E-4C68-867E-D4C8BA7A5216}" ShortID="747484394">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.4"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Schlager" ID="{1B871284-0B4D-4386-AFB3-1924E960CC2B}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{8EF6FD6E-201D-4563-A566-CCAA1AA5E29B}" ShortID="650130335">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Schlager ON" ID="{B9FC5B7D-2651-433B-9BE3-73D06FED64A5}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}">
+							<ChildrenList>
+								<Action Name="" ID="{14BE6678-6A28-49F7-8F7F-4C9D1ACE1A9D}" ShortID="107401847">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="0.3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Schlager" ID="{1B871284-0B4D-4386-AFB3-1924E960CC2B}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C8CB6E05-E218-42D1-B822-867DA122A6D3}" ShortID="714411958">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Schlager OFF" ID="{3D349C31-07D6-411A-BE89-83842C704B16}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Scene1_Start" ID="{35B85807-130F-469A-80E8-FB46AF206943}">
+							<ChildrenList>
+								<Action Name="" ID="{FDFE5CF4-CE0F-42DB-92FE-B21492C945A5}" ShortID="203280437">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{647EAC08-4C44-46E5-8265-E5649BE31376}" ShortID="461526716">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Schlager" ID="{1B871284-0B4D-4386-AFB3-1924E960CC2B}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{251C655A-7871-40E7-99EC-50775A9BD612}" ShortID="576059000">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Sauerteig" ID="{000BDD5D-A2FA-43C3-92ED-8920244E1662}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E1A3138B-A761-4B77-B67B-E47A5945FF29}" ShortID="777653112">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 00_STARTSCREEN" ID="{955C0655-908E-4227-AB47-2A016B50ED53}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{381C3F89-68FE-402A-A85F-576FD955C1E6}" ShortID="381686466">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{56E96962-5C5E-42E5-B874-8BF0733A567E}" ShortID="1049836118">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{BA56E9AF-ACB5-4AB5-8FCE-8FBA880FA824}" ShortID="223235394">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}">
+							<ChildrenList>
+								<Action Name="" ID="{6490179E-159B-4AE0-B14A-3BB69415E850}" ShortID="482669635">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Sauerteig" ID="{000BDD5D-A2FA-43C3-92ED-8920244E1662}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{CD702FB8-86AA-4ECD-9900-5FA77E449A7F}" ShortID="77308608">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="8"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}">
+							<ChildrenList>
+								<Action Name="" ID="{793AC6C9-A7CF-4FD3-AB38-82A3704352D6}" ShortID="885434401">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="3"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 00_STARTSCREEN" ID="{955C0655-908E-4227-AB47-2A016B50ED53}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{4442C7B7-752D-42DC-B823-5852836A242D}" ShortID="939009499">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Sauerteig" ID="{000BDD5D-A2FA-43C3-92ED-8920244E1662}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{F99671AD-4291-464F-862C-ACDF98B8F6A0}" ShortID="63968769">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{C577C8A6-2DCA-40B3-ACE5-52BE7A78B8EC}" ShortID="363951441">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{6DAD79BE-FBF6-4D26-A795-1311395EDBD4}" ShortID="599054679">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{130AF983-E907-47FF-9A42-FB046133FBA1}" ShortID="987633130">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{EA89FDEE-78B7-454A-AB53-4DDC3C1E8999}" ShortID="1067266518">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Schlager" ID="{1B871284-0B4D-4386-AFB3-1924E960CC2B}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5625FC62-DC65-4CCE-8C15-CD1C645FD5D3}" ShortID="712629578">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MUS_SWITCH_GAMEPLAY" ID="{38683CBD-8671-4ADC-926C-8EFEA3077F87}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}">
+							<ChildrenList>
+								<Action Name="" ID="{48F9D2B1-AE3F-4E0C-AF8C-5B1ED05D4472}" ShortID="1053932019">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{5EED1BDD-0A15-4E8D-8AB4-06C7B12A528F}" ShortID="21540269">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DX" ID="{DE28D3F4-D5C5-477C-A9C4-9A3C8FE5C7D1}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{D88A5E4F-329B-483D-9BCD-A3FEEE142A59}" ShortID="448983783">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}">
+							<ChildrenList>
+								<Action Name="" ID="{4390E688-69BA-4DA2-94A3-AE69D1A71E5A}" ShortID="210577743">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_DorffestJingle_Start" ID="{5A5F0D16-A39F-4377-8EE4-914C9F721303}">
+							<ChildrenList>
+								<Action Name="" ID="{B0B54BF4-971B-48B5-BCDA-1EFF7DF63720}" ShortID="788777369">
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_Dialog_End" ID="{012FFF47-A75D-4BE3-96D2-82BA303D6626}">
+							<ChildrenList>
+								<Action Name="" ID="{9EF18875-33F3-414D-9441-7A77235CC9CD}" ShortID="183653716">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeTime" Type="Real64" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="MX_DIALOG" ID="{1AEBBDC9-567A-472F-9D97-AF18733BBA68}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{3A94DFC6-2022-4682-9AEE-785F65E38397}" ShortID="270998302">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_SWITCH_GAMEPLAY" ID="{38683CBD-8671-4ADC-926C-8EFEA3077F87}">
+							<ChildrenList>
+								<Action Name="" ID="{E806028F-A33F-4BAE-9391-0E7CD412CC2C}" ShortID="107545364">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="GAMEPLAY" ID="{AAAF6E0E-C4DF-4D6F-B217-39A2EC23B3A1}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_SWITCH_SUBMENU" ID="{940263A1-BE4F-4875-BFD2-2FD7EC529361}">
+							<ChildrenList>
+								<Action Name="" ID="{807408D1-AB18-4A5D-BB93-EA9BF167C0F3}" ShortID="599731726">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="SUBMENU" ID="{CEE1A3EC-0532-44DC-8617-2F4775DB75EE}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="MUS_SWITCH_HANDY" ID="{83BC667E-95FC-4166-BA4F-39803F388A42}">
+							<ChildrenList>
+								<Action Name="" ID="{BA455189-BCAC-4A1C-ADA6-59F6A1B15150}" ShortID="55042230">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
 					</ChildrenList>
-				</Event>
-				<Event Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}"/>
-				<Event Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}"/>
-				<Event Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}"/>
-				<Event Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}"/>
-				<Event Name="MUS_Menu_Start" ID="{61203A67-85B1-4FEB-A2E1-DB821E4A15D6}"/>
-				<Event Name="MUS_DorffestJingle_Start" ID="{5A5F0D16-A39F-4377-8EE4-914C9F721303}">
-					<ChildrenList>
-						<Action Name="" ID="{B0B54BF4-971B-48B5-BCDA-1EFF7DF63720}" ShortID="788777369">
-							<ReferenceList>
-								<Reference Name="Target">
-									<ObjectRef Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-								</Reference>
-							</ReferenceList>
-						</Action>
-					</ChildrenList>
-				</Event>
+				</Folder>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>
