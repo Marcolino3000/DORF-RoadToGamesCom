@@ -22,9 +22,10 @@ namespace Audio
             // raycaster.OnClick += () => Play(clickEvent);
         }
 
-        private void Play(AK.Wwise.Event eventToPlay)
+        [ContextMenu("Play Event")]
+        private void Play()
         {
-            // eventToPlay.Post(gameObject);
+            clickEvent.Post(gameObject);
         }
     }
 }

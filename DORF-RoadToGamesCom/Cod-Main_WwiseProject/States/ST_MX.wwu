@@ -50,11 +50,22 @@
 					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="ST_MX_DX" ID="{96BCE6E4-8875-46D1-801E-569B740C0BB9}">
+					<PropertyList>
+						<Property Name="DefaultTransitionTime" Type="Real64" Value="4"/>
+					</PropertyList>
 					<ChildrenList>
 						<State Name="None" ID="{AD383E92-C158-42A8-B254-DEC42B3C9DF3}"/>
 						<State Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}"/>
 						<State Name="DX" ID="{DE28D3F4-D5C5-477C-A9C4-9A3C8FE5C7D1}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}"/>
+							<EndState Name="DX" ID="{DE28D3F4-D5C5-477C-A9C4-9A3C8FE5C7D1}"/>
+							<Time>2</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 				<StateGroup Name="ST_MX_DX_LEVEL" ID="{DA64B52A-63AE-45E9-BC48-AF1D775CA154}">
 					<ChildrenList>
@@ -62,6 +73,44 @@
 						<State Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}"/>
 						<State Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"/>
 					</ChildrenList>
+					<TransitionList>
+						<Transition>
+							<StartState Name="None" ID="{D0D59F34-1348-41C6-8061-A411CB6F541F}"/>
+							<EndState Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="None" ID="{D0D59F34-1348-41C6-8061-A411CB6F541F}"/>
+							<EndState Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}"/>
+							<EndState Name="None" ID="{D0D59F34-1348-41C6-8061-A411CB6F541F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}"/>
+							<EndState Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"/>
+							<EndState Name="None" ID="{D0D59F34-1348-41C6-8061-A411CB6F541F}"/>
+							<Time>1</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+						<Transition>
+							<StartState Name="DX_SAD" ID="{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"/>
+							<EndState Name="DX_Neutral" ID="{B55185B8-74F8-4407-BFF4-63064067A061}"/>
+							<Time>0</Time>
+							<IsShared>false</IsShared>
+						</Transition>
+					</TransitionList>
 				</StateGroup>
 			</ChildrenList>
 		</WorkUnit>
