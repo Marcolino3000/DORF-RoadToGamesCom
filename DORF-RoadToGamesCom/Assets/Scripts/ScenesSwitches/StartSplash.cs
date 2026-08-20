@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Nodes;
@@ -114,6 +115,15 @@ namespace ScenesSwitches
         /// must not be consumed by both.
         /// </summary>
         public static bool IsShowing { get; private set; }
+
+        /// <summary>
+        /// Raised when the start image goes up and when it starts fading away. MusicDirector hangs
+        /// the start screen music off these — the screen is a scene object nothing on Global can
+        /// hold a reference to, so it announces itself instead.
+        /// </summary>
+        public static event Action OnShown;
+
+        public static event Action OnHidden;
 
         private GameObject overlay;
         private CanvasGroup canvasGroup;
@@ -293,6 +303,8 @@ namespace ScenesSwitches
 
             if (debugLogs)
                 Debug.Log("StartSplash: start image is up, waiting for a language");
+
+            OnShown?.Invoke();
         }
 
         [ContextMenu("Hide")]
@@ -307,6 +319,8 @@ namespace ScenesSwitches
                 return;
 
             IsShowing = false;
+
+            OnHidden?.Invoke();
 
             SetButtonsInteractable(false);
 

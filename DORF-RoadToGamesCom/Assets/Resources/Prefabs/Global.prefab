@@ -498,7 +498,7 @@ MonoBehaviour:
   data:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: bca9f0ba3889d5d4d8f5953eea1199cf, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 07e7e3d26c39f49f8adac6cac3ed5a30, type: 2}
   decodeBank: 0
   overrideLoadSetting: 0
   loadAsynchronous: 0
@@ -1182,6 +1182,7 @@ GameObject:
   - component: {fileID: 9055130043323329370}
   - component: {fileID: 5821378638088452983}
   - component: {fileID: 7893956763618450122}
+  - component: {fileID: 5021891731233699906}
   m_Layer: 0
   m_Name: Music
   m_TagString: Untagged
@@ -1257,6 +1258,98 @@ MonoBehaviour:
   eventIdInternal: 0
   valueGuidInternal: 
   m_callbackDataInternal: {fileID: 0}
+--- !u!114 &5021891731233699906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4491965312810609901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf50d0cc505f47f9aaf61dd05ee661dd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startScreen:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 45936fa424496466bb41db09415d2f3d, type: 2}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  scenes:
+  - sceneName: Scene 1
+    cue:
+      wwiseEvent:
+        idInternal: 0
+        valueGuidInternal: 
+        WwiseObjectReference: {fileID: 0}
+      state:
+        idInternal: 0
+        valueGuidInternal: 
+        groupIdInternal: 0
+        groupGuidInternal: 
+        WwiseObjectReference: {fileID: 11400000, guid: 20d742af00d5e4ae0bc8c92019b3cdb9, type: 2}
+  anyOtherScene:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 20d742af00d5e4ae0bc8c92019b3cdb9, type: 2}
+  dialogStarted:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: b5ac510045b9f4af493f5122018bb11e, type: 2}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  dialogEnded:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  smartphoneOpened:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 11400000, guid: 9309c23e30b66490cab86a07c15fe1d3, type: 2}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  smartphoneClosed:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  debugLogs: 0
 --- !u!1 &4629316433298895278
 GameObject:
   m_ObjectHideFlags: 0

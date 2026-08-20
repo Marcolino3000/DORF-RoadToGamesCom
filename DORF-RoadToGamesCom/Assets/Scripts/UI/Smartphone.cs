@@ -21,6 +21,14 @@ namespace UI
         /// </summary>
         public event Action OnVoiceChainFinished;
 
+        /// <summary>
+        /// Raised whenever the phone opens (true) or closes (false), no matter what triggered it —
+        /// the menu button, a click next to the phone, or the reset closing it in OnSceneSetup.
+        /// Static because the phone lives in the scene and MusicDirector on the persistent Global
+        /// prefab cannot be handed a reference to it.
+        /// </summary>
+        public static event Action<bool> OnOpenStateChanged;
+
         [SerializeField] private Raycaster raycaster;
 
         [Header("Status Bar")]
@@ -442,9 +450,17 @@ namespace UI
 
         private void SetVisible(bool visible)
         {
+            // Only on the actual change: BindRoot re-applies the current value after a UI Toolkit
+            // hot reload, and that must not read as the visitor opening the phone again.
+            var changed = isOpen != visible;
+
             isOpen = visible;
-            if (root == null) return;
-            root.style.display = visible ? DisplayStyle.Flex : DisplayStyle.None;
+
+            if (root != null)
+                root.style.display = visible ? DisplayStyle.Flex : DisplayStyle.None;
+
+            if (changed)
+                OnOpenStateChanged?.Invoke(visible);
         }
 
         private void OnPhoneRootGeometryChanged(GeometryChangedEvent _) => FitPhoneToPanel();
