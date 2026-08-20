@@ -5,7 +5,13 @@ using System.Collections.Generic;
 public class RoomManager : MonoBehaviour
 {
     public static event Action<bool> OnRoomChanged;
-    
+
+    /// <summary>
+    /// Wo Marlene gerade ist, true heißt draußen. Für alle, die erst nach dem Wechsel dazukommen
+    /// und <see cref="OnRoomChanged"/> deshalb nicht mehr hören konnten.
+    /// </summary>
+    public static bool IsOutside { get; private set; } = true;
+
     public GameObject outside;
     public List<GameObject> indoorRooms; // Hallway, Kitchen, Bathroom
 
@@ -13,6 +19,13 @@ public class RoomManager : MonoBehaviour
     public GameObject kitchenOnlyObject; // Boden Hallway blocker
 
     private GameObject currentRoom;
+
+    void Awake()
+    {
+        // IsOutside ist static und überlebt den Szenenwechsel. Scene 2 fängt immer draußen an,
+        // also hier zurücksetzen, damit ein zweiter Besuch nicht mit dem alten Wert startet.
+        IsOutside = true;
+    }
 
     void Start()
     {
@@ -32,6 +45,7 @@ public class RoomManager : MonoBehaviour
                 room.SetActive(true);
 
             kitchenOnlyObject.SetActive(false);
+            IsOutside = true;
             OnRoomChanged?.Invoke(true);
         }
         else
@@ -44,6 +58,7 @@ public class RoomManager : MonoBehaviour
 
             // 🔥 Nur wenn Kitchen aktiv ist
             kitchenOnlyObject.SetActive(newRoom == kitchen);
+            IsOutside = false;
             OnRoomChanged?.Invoke(false);
         }
 

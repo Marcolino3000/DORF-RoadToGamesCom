@@ -1898,6 +1898,10 @@ MonoBehaviour:
     idInternal: 0
     valueGuidInternal: 
     WwiseObjectReference: {fileID: 11400000, guid: 9f6d8d55a791a7943a43693d5b43c776, type: 2}
+  additionalCue:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 0}
 --- !u!4 &1552280895
 Transform:
   m_ObjectHideFlags: 0

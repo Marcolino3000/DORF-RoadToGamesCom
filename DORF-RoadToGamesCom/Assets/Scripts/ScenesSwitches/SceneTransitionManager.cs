@@ -40,6 +40,11 @@ namespace ScenesSwitches
         [Tooltip("Posted as soon as the voice memos have finished. MUS_Scene2_Start.")]
         [SerializeField] private AK.Wwise.Event musicCue;
 
+        [Tooltip("Optional second event, posted in the same frame as the music. For anything that " +
+                 "has to start with it — an ambience switch, a stinger, a state change. Leave " +
+                 "empty if not needed.")]
+        [SerializeField] private AK.Wwise.Event additionalCue;
+
         [ContextMenu("Start Transition")]
         public void StartTransition()
         {
@@ -50,6 +55,9 @@ namespace ScenesSwitches
         {
             if (musicCue != null)
                 musicCue.Post(gameObject);
+
+            if (additionalCue != null)
+                additionalCue.Post(gameObject);
 
             // The wait everything hangs off: the train does not brake until the music has had its
             // run-up, so moving this moves the whole ending.
