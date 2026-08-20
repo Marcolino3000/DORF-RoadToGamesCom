@@ -121,6 +121,921 @@
 								</Sound>
 							</ChildrenList>
 						</PropertyContainer>
+						<SwitchContainer Name="Scene02" ID="{4BB35BA2-D7FA-41F8-993F-6B32A7B00D67}" ShortID="592713455">
+							<PropertyList>
+								<Property Name="SwitchBehavior" Type="int16" Value="1"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Conversion">
+									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+								</Reference>
+								<Reference Name="DefaultSwitchOrState">
+									<ObjectRef Name="None" ID="{A385B9C6-4636-4A16-904C-A461215D4AF9}" WorkUnitID="{2C2C0BD8-CD96-4310-8BC7-3F61FD7F2826}"/>
+								</Reference>
+								<Reference Name="OutputBus">
+									<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+								</Reference>
+								<Reference Name="SwitchGroupOrStateGroup">
+									<ObjectRef Name="SCENE02_location" ID="{6950E15E-66CF-4BEF-8764-340D0CE63EC4}" WorkUnitID="{2C2C0BD8-CD96-4310-8BC7-3F61FD7F2826}"/>
+								</Reference>
+							</ReferenceList>
+							<ChildrenList>
+								<Sound Name="Ambience, Room Tone, Bedroom A SND103923" ID="{55211EB0-121B-4EBA-92A9-982578FAC593}" ShortID="324846716">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-6</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Room Tone, Bedroom A SND103923" ID="{55621A72-83C0-4854-B545-1ACCD3331C3D}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="713.449"/>
+												<Property Name="LoopBegin" Type="Real64" Value="0.49512"/>
+												<Property Name="LoopEnd" Type="Real64" Value="20.61227"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Room Tone, Bedroom A SND103923.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="735398847"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Room Tone, Bedroom A SND103923" ID="{55621A72-83C0-4854-B545-1ACCD3331C3D}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713" ID="{D98C9B2D-2650-4DF0-B114-7AA57D7123DE}" ShortID="82931022">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-19</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713" ID="{5A2D0E94-C210-4CB8-8701-BA38099936FF}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2435.154"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.52535"/>
+												<Property Name="LoopEnd" Type="Real64" Value="24.82296"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="970529583"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713" ID="{5A2D0E94-C210-4CB8-8701-BA38099936FF}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Birds" ID="{4E225594-ADC8-4BAE-A7AE-548F6395F090}" ShortID="952387232">
+									<PropertyList>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="2.5">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{169CC59D-0437-4DA5-A50A-066D20D19F39}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="1"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="RandomAvoidRepeating" Type="bool" Value="False"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-21</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1" ID="{00C3E24C-ECDF-4092-A0EA-5DAC89AB95E4}" ShortID="542906354">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{1986A820-6028-41FF-84B8-D66B0C037731}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="125"/>
+																	<Property Name="Min" Type="Real64" Value="-175"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{BAD7B839-F9B0-4913-BD10-3325ED191649}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1" ID="{8B5BA85C-080A-45A7-B78F-B619573B8342}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.0822"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="257248478"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1" ID="{8B5BA85C-080A-45A7-B78F-B619573B8342}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2" ID="{5AA29C40-C373-46A7-B7A9-5E21316013B2}" ShortID="269580834">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{725B5E3B-434E-4C34-B320-5C0B5EBC0F1D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2" ID="{6F73FB44-16A6-4677-A430-BAA3E3060724}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.06557"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="717190081"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2" ID="{6F73FB44-16A6-4677-A430-BAA3E3060724}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3" ID="{09BEE5B3-810A-4BE2-B7CA-9BB6F2C4FFE8}" ShortID="371991069">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{29F11505-8189-436A-B85F-9B7BDD91A163}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3" ID="{1D151653-FC66-41D7-BD76-B9EB4E9E34C9}">
+													<PropertyList>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.12755"/>
+														<Property Name="LoopBegin" Type="Real64" Value="0"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="400564186"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3" ID="{1D151653-FC66-41D7-BD76-B9EB4E9E34C9}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510" ID="{1EB66CDB-97C2-41C4-8D12-A3CEFD4F27DC}" ShortID="821543843">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{62CF3011-6E3A-4769-9326-EB1A048BE697}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510" ID="{A6D81BC7-A20F-4840-A5A4-25217136580B}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.20785"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.36102"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="507115265"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510" ID="{A6D81BC7-A20F-4840-A5A4-25217136580B}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1" ID="{71555C8F-2F3E-43B6-AD42-6D3889CEA504}" ShortID="345198062">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{51E6000F-86ED-4D8C-AA36-404D60349A20}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1" ID="{138C2F00-3E7E-46A1-AD32-3D1FF1029F67}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="0.81891"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="0.58408"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="104939962"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1" ID="{138C2F00-3E7E-46A1-AD32-3D1FF1029F67}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2" ID="{9A00B4F4-56A1-4B63-BB5E-B514A92D92F4}" ShortID="494175990">
+											<PropertyList>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{21AE6AC8-CE3E-4610-AB92-E55AAC0900EE}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-4"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>18</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2" ID="{6118EF5D-A9E9-4B52-A999-80CAE57C78AA}">
+													<PropertyList>
+														<Property Name="FadeInDuration" Type="Real64" Value="1.37977"/>
+														<Property Name="FadeOutDuration" Type="Real64" Value="1.40225"/>
+														<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+													</PropertyList>
+													<Language>SFX</Language>
+													<AudioFile>Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="937429967"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2" ID="{6118EF5D-A9E9-4B52-A999-80CAE57C78AA}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New Silence" ID="{0124866C-7546-45A9-90D4-50D6A3300909}" ShortID="727524318">
+											<PropertyList>
+												<Property Name="Weight" Type="Real64">
+													<ValueList>
+														<Value>88</Value>
+													</ValueList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{EC57C5D9-0A67-40A5-BF86-630B209DB3F6}" ShortID="954580968" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="6"/>
+														<Property Name="LengthMax" Type="Real32" Value="4"/>
+														<Property Name="LengthMin" Type="Real32" Value="-2"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{EC57C5D9-0A67-40A5-BF86-630B209DB3F6}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+								</RandomSequenceContainer>
+								<Sound Name="Wind, Vegetation, Trees, Leaves, Rustling SND52155" ID="{F4F8D4EE-14D1-4E1E-A911-951118D93208}" ShortID="908731384">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-16</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Wind, Vegetation, Trees, Leaves, Rustling SND52155" ID="{077CA2B6-A7EE-42CA-B64F-F88FF8E4C1E4}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="2087.451"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.31172"/>
+												<Property Name="LoopEnd" Type="Real64" Value="22.92004"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Wind, Vegetation, Trees, Leaves, Rustling SND52155.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="458839438"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{F1F9802F-0996-4C49-B2F9-0BFF6B5ACCD9}" ShortID="779188448">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Random_Mod" ID="{F0D76BAC-0122-417F-87CA-C52A194807F1}" WorkUnitID="{CE1C4F40-50D8-4220-BDD9-67D477B1C668}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{8BC5C7E8-FD98-4586-9D98-AA4986A1798D}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Wind, Vegetation, Trees, Leaves, Rustling SND52155" ID="{077CA2B6-A7EE-42CA-B64F-F88FF8E4C1E4}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<RandomSequenceContainer Name="Creak" ID="{229FF5E6-A87F-403D-94AF-968232811EC7}" ShortID="851098568">
+									<PropertyList>
+										<Property Name="OverrideEffect" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismLoop" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitions" Type="bool" Value="True"/>
+										<Property Name="PlayMechanismSpecialTransitionsType" Type="int16" Value="3"/>
+										<Property Name="PlayMechanismSpecialTransitionsValue" Type="Real64" Value="6">
+											<ModifierList>
+												<ModifierInfo>
+													<Modifier Name="" ID="{4E9E3447-5368-4660-A233-A104F037A0E4}">
+														<PropertyList>
+															<Property Name="Enabled" Type="bool" Value="True"/>
+															<Property Name="Max" Type="Real64" Value="8"/>
+														</PropertyList>
+													</Modifier>
+												</ModifierInfo>
+											</ModifierList>
+										</Property>
+										<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
+										<Property Name="Volume" Type="Real64">
+											<ValueList>
+												<Value>-15</Value>
+											</ValueList>
+										</Property>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<Sound Name="WNDWWood_Log Cabin Wooden Window Creak 01" ID="{FACC4D7C-BD3A-4B09-9E01-3469FDF7B31E}" ShortID="40782333">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{951FDD33-0BE3-4B55-8C7C-080B9847ED9F}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{C78700CB-1897-4CDC-95F0-48DF5170891E}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WNDWWood_Log Cabin Wooden Window Creak 01" ID="{C551D987-8C8E-4EA8-A329-981A2828145C}">
+													<Language>SFX</Language>
+													<AudioFile>WNDWWood_Log Cabin Wooden Window Creak 01.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="49086049"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WNDWWood_Log Cabin Wooden Window Creak 01" ID="{C551D987-8C8E-4EA8-A329-981A2828145C}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WNDWWood_Log Cabin Wooden Window Creak 02" ID="{7A7A533A-5B91-41D8-944C-A4C87F2C2C05}" ShortID="1046994844">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{AB1E68EF-FEB3-43A2-A51B-29B1037C9F37}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{6B228B68-F42F-43AF-B076-017B4B168780}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WNDWWood_Log Cabin Wooden Window Creak 02" ID="{EF5D23F6-59C6-41DC-8E83-387CFB406540}">
+													<Language>SFX</Language>
+													<AudioFile>WNDWWood_Log Cabin Wooden Window Creak 02.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="879600974"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WNDWWood_Log Cabin Wooden Window Creak 02" ID="{EF5D23F6-59C6-41DC-8E83-387CFB406540}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="WNDWWood_Log Cabin Wooden Window Creak 03" ID="{81EBDF79-D687-4A80-A018-5E31B295E0F5}" ShortID="1040996589">
+											<PropertyList>
+												<Property Name="Pitch" Type="int32">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{901EA73E-880E-49B1-A299-3B2A64C8C79D}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Max" Type="Real64" Value="200"/>
+																	<Property Name="Min" Type="Real64" Value="-200"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+												<Property Name="Volume" Type="Real64">
+													<ModifierList>
+														<ModifierInfo>
+															<Modifier Name="" ID="{050A5285-E5B9-411B-8909-7BD063F441D4}">
+																<PropertyList>
+																	<Property Name="Enabled" Type="bool" Value="True"/>
+																	<Property Name="Min" Type="Real64" Value="-6"/>
+																</PropertyList>
+															</Modifier>
+														</ModifierInfo>
+													</ModifierList>
+												</Property>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="AMB_Conversion" ID="{6B5DCCB8-53C9-4FB3-B76F-833B0ADBAF82}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<AudioFileSource Name="WNDWWood_Log Cabin Wooden Window Creak 03" ID="{158CBFFB-D1D9-4C43-B69F-056F0DAA27C3}">
+													<Language>SFX</Language>
+													<AudioFile>WNDWWood_Log Cabin Wooden Window Creak 03.wav</AudioFile>
+													<MediaIDList>
+														<MediaID ID="617041906"/>
+													</MediaIDList>
+												</AudioFileSource>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="WNDWWood_Log Cabin Wooden Window Creak 03" ID="{158CBFFB-D1D9-4C43-B69F-056F0DAA27C3}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+										<Sound Name="New Silence" ID="{A1E7929C-151B-4B7D-8DBA-E8C427D71DE5}" ShortID="257257456">
+											<ReferenceList>
+												<Reference Name="Conversion">
+													<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+												</Reference>
+												<Reference Name="OutputBus">
+													<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+												</Reference>
+											</ReferenceList>
+											<ChildrenList>
+												<SourcePlugin Name="Silence" ID="{FC20F1C1-3283-4050-974A-70FC52D0A20A}" ShortID="314059273" PluginName="Wwise Silence" CompanyID="0" PluginID="101">
+													<PropertyList>
+														<Property Name="Length" Type="Real32" Value="2"/>
+														<Property Name="LengthMax" Type="Real32" Value="3.5"/>
+													</PropertyList>
+													<Language>SFX</Language>
+												</SourcePlugin>
+											</ChildrenList>
+											<ActiveSourceList>
+												<ActiveSource Name="Silence" ID="{FC20F1C1-3283-4050-974A-70FC52D0A20A}" Platform="Linked"/>
+											</ActiveSourceList>
+										</Sound>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="Effects">
+											<EffectSlot Name="" ID="{45DC2FFB-5C28-4C1F-AFED-323034089E80}" ShortID="668951559">
+												<ReferenceList>
+													<Reference Name="Effect">
+														<Custom>
+															<Effect Name="Parametric EQ (Custom)" ID="{48C45CD6-C38C-4F8B-A549-6C16BB544C3A}" ShortID="244980797" PluginName="Wwise Parametric EQ" CompanyID="0" PluginID="105" PluginType="3">
+																<PropertyList>
+																	<Property Name="FilterTypeBand1" Type="int32" Value="1"/>
+																	<Property Name="FilterTypeBand3" Type="int32" Value="0"/>
+																	<Property Name="FrequencyBand1" Type="Real32" Value="107.2758"/>
+																	<Property Name="FrequencyBand3" Type="Real32" Value="476.2775"/>
+																	<Property Name="GainBand1" Type="Real32" Value="-6.725275"/>
+																	<Property Name="OnOffBand3" Type="bool" Value="True"/>
+																	<Property Name="RolloffRateBand1" Type="int32" Value="24"/>
+																	<Property Name="RolloffRateBand3" Type="int32" Value="24"/>
+																</PropertyList>
+															</Effect>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</EffectSlot>
+										</ObjectList>
+									</ObjectLists>
+								</RandomSequenceContainer>
+								<Sound Name="Machines, Appliance, Fridge, Hum, Close Up SND1827" ID="{8D72AE54-1720-470B-98F9-CAEE4538EABF}" ShortID="968891230">
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Machines, Appliance, Fridge, Hum, Close Up SND1827" ID="{D9404B5E-D93A-414E-AB6D-E0EAC48C0EAA}">
+											<Language>SFX</Language>
+											<AudioFile>Machines, Appliance, Fridge, Hum, Close Up SND1827.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="196141498"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ActiveSourceList>
+										<ActiveSource Name="Machines, Appliance, Fridge, Hum, Close Up SND1827" ID="{D9404B5E-D93A-414E-AB6D-E0EAC48C0EAA}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+								<Sound Name="Water, Plumbing, Water Running, Plastic Pipes 02 SND123822" ID="{C3296077-B5AF-4244-A944-986C38A3E81E}" ShortID="1060253693">
+									<PropertyList>
+										<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Conversion">
+											<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
+										</Reference>
+										<Reference Name="OutputBus">
+											<ObjectRef Name="Main Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EC92CC9D-A8F6-411F-8068-0FB1D8936D77}"/>
+										</Reference>
+									</ReferenceList>
+									<ChildrenList>
+										<AudioFileSource Name="Water, Plumbing, Water Running, Plastic Pipes 02 SND123822" ID="{04FBACB1-03C6-4924-B5B8-84826928F1B7}">
+											<PropertyList>
+												<Property Name="CrossfadeDuration" Type="Real64" Value="995.917"/>
+												<Property Name="FadeInDuration" Type="Real64" Value="0.51433"/>
+												<Property Name="LoopBegin" Type="Real64" Value="1.13548"/>
+												<Property Name="LoopEnd" Type="Real64" Value="19.33221"/>
+												<Property Name="OverrideWavLoop" Type="bool" Value="True"/>
+											</PropertyList>
+											<Language>SFX</Language>
+											<AudioFile>Water, Plumbing, Water Running, Plastic Pipes 02 SND123822.wav</AudioFile>
+											<MediaIDList>
+												<MediaID ID="705000866"/>
+											</MediaIDList>
+										</AudioFileSource>
+									</ChildrenList>
+									<ObjectLists>
+										<ObjectList Name="RTPC">
+											<RTPC Name="" ID="{B8B13A80-E8E7-4562-A7D9-3284C598DD27}" ShortID="438974787">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="Random_Mod" ID="{F0D76BAC-0122-417F-87CA-C52A194807F1}" WorkUnitID="{CE1C4F40-50D8-4220-BDD9-67D477B1C668}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{9D8B9BE1-1B64-409E-9928-B2287872F451}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>21</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>1</XPos>
+																		<YPos>0</YPos>
+																		<Flags>53</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</ObjectList>
+									</ObjectLists>
+									<ActiveSourceList>
+										<ActiveSource Name="Water, Plumbing, Water Running, Plastic Pipes 02 SND123822" ID="{04FBACB1-03C6-4924-B5B8-84826928F1B7}" Platform="Linked"/>
+									</ActiveSourceList>
+								</Sound>
+							</ChildrenList>
+							<GroupingInfo>
+								<GroupingBehaviorList>
+									<GroupingBehavior>
+										<ItemRef Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713" ID="{D98C9B2D-2650-4DF0-B114-7AA57D7123DE}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Machines, Appliance, Fridge, Hum, Close Up SND1827" ID="{8D72AE54-1720-470B-98F9-CAEE4538EABF}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Water, Plumbing, Water Running, Plastic Pipes 02 SND123822" ID="{C3296077-B5AF-4244-A944-986C38A3E81E}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Birds" ID="{4E225594-ADC8-4BAE-A7AE-548F6395F090}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Ambience, Room Tone, Bedroom A SND103923" ID="{55211EB0-121B-4EBA-92A9-982578FAC593}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Creak" ID="{229FF5E6-A87F-403D-94AF-968232811EC7}"/>
+									</GroupingBehavior>
+									<GroupingBehavior>
+										<ItemRef Name="Wind, Vegetation, Trees, Leaves, Rustling SND52155" ID="{F4F8D4EE-14D1-4E1E-A911-951118D93208}"/>
+										<PropertyList>
+											<Property Name="FadeInTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+											<Property Name="FadeOutTime" Type="Real64">
+												<ValueList>
+													<Value>2</Value>
+												</ValueList>
+											</Property>
+										</PropertyList>
+									</GroupingBehavior>
+								</GroupingBehaviorList>
+								<GroupingList>
+									<Grouping>
+										<SwitchRef Name="indoor" ID="{99189C36-4F73-40E7-9208-2295B1D3E3C3}"/>
+										<ItemList>
+											<ItemRef Name="Water, Plumbing, Water Running, Plastic Pipes 02 SND123822" ID="{C3296077-B5AF-4244-A944-986C38A3E81E}"/>
+											<ItemRef Name="Creak" ID="{229FF5E6-A87F-403D-94AF-968232811EC7}"/>
+											<ItemRef Name="Ambience, Room Tone, Bedroom A SND103923" ID="{55211EB0-121B-4EBA-92A9-982578FAC593}"/>
+										</ItemList>
+									</Grouping>
+									<Grouping>
+										<SwitchRef Name="outdoor" ID="{14C9B8B0-1172-48AD-A3E9-AB3B2EA8B7EB}"/>
+										<ItemList>
+											<ItemRef Name="Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713" ID="{D98C9B2D-2650-4DF0-B114-7AA57D7123DE}"/>
+											<ItemRef Name="Wind, Vegetation, Trees, Leaves, Rustling SND52155" ID="{F4F8D4EE-14D1-4E1E-A911-951118D93208}"/>
+											<ItemRef Name="Birds" ID="{4E225594-ADC8-4BAE-A7AE-548F6395F090}"/>
+										</ItemList>
+									</Grouping>
+								</GroupingList>
+							</GroupingInfo>
+						</SwitchContainer>
 					</ChildrenList>
 				</PropertyContainer>
 			</ChildrenList>
