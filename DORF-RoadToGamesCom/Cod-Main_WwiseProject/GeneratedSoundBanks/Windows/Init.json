@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{3C12B2D0-0040-BC15-45A9-3EFD977AFAAE}",
+    "Hash": "{D56588B1-B428-2597-AEC2-6F5344B2E659}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -42,27 +42,51 @@
       "GUID": "{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}"
      },
      {
+      "Id": "1947001772",
+      "Name": "MX_DIALOG_LAY 02",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_DX\\MX_DIALOG_LAY 02",
+      "GUID": "{61DE9435-1702-4661-882F-DB516A1771B4}"
+     },
+     {
+      "Id": "1947001775",
+      "Name": "MX_Dialog_LAY 01",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_DX\\MX_Dialog_LAY 01",
+      "GUID": "{C14F3D6D-8626-4A23-B177-04AE342C83A4}"
+     },
+     {
+      "Id": "2171211849",
+      "Name": "MX_DX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_DX",
+      "GUID": "{1F27110F-ECC8-4669-8FCC-6C40DF7ECC75}"
+     },
+     {
       "Id": "2246998526",
       "Name": "Main Audio Bus",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus",
       "GUID": "{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"
      },
      {
+      "Id": "2543366352",
+      "Name": "MX_NO DX",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_NO DX",
+      "GUID": "{27DC0D20-34AA-4833-B833-CD317D6F7D65}"
+     },
+     {
       "Id": "3314336632",
       "Name": "MX_LAY 03",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_LAY 03",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_NO DX\\MX_LAY 03",
       "GUID": "{9DA680D6-D97F-4709-BA24-CA0C29D23284}"
      },
      {
       "Id": "3314336633",
       "Name": "MX_LAY 02",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_LAY 02",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_NO DX\\MX_LAY 02",
       "GUID": "{FBE3291B-FB63-4502-84A6-560A8D0E02A6}"
      },
      {
       "Id": "3314336634",
       "Name": "MX_LAY 01",
-      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_LAY 01",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_NO DX\\MX_LAY 01",
       "GUID": "{4806E040-9DAE-4926-9A48-3C32402D5EA0}"
      },
      {
@@ -74,9 +98,15 @@
     ],
     "GameParameters": [
      {
-      "Id": "529554013",
-      "Name": "Dorffest_SC",
-      "ObjectPath": "\\Game Parameters\\Default Work Unit\\Dorffest_SC",
+      "Id": "592785239",
+      "Name": "SC_Sauerteig",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SC_Sauerteig",
+      "GUID": "{538CE76D-A8B1-4ED0-8C47-B7BD29A58CFE}"
+     },
+     {
+      "Id": "928078696",
+      "Name": "SC_Scene02",
+      "ObjectPath": "\\Game Parameters\\Default Work Unit\\SC_Scene02",
       "GUID": "{00A16A60-51B8-4453-97F5-22FF1027555F}"
      },
      {
@@ -105,6 +135,58 @@
      }
     ],
     "StateGroups": [
+     {
+      "Id": "1071146488",
+      "Name": "ST_MX_DX_LEVEL",
+      "ObjectPath": "\\States\\ST_MX\\ST_MX_DX_LEVEL",
+      "GUID": "{DA64B52A-63AE-45E9-BC48-AF1D775CA154}",
+      "States": [
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX_LEVEL\\None",
+        "GUID": "{D0D59F34-1348-41C6-8061-A411CB6F541F}"
+       },
+       {
+        "Id": "844249216",
+        "Name": "DX_SAD",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX_LEVEL\\DX_SAD",
+        "GUID": "{C06B7AFC-5C90-4ACE-8FD7-C3256854954D}"
+       },
+       {
+        "Id": "900128073",
+        "Name": "DX_Neutral",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX_LEVEL\\DX_Neutral",
+        "GUID": "{B55185B8-74F8-4407-BFF4-63064067A061}"
+       }
+      ]
+     },
+     {
+      "Id": "2631721963",
+      "Name": "ST_MX_DX",
+      "ObjectPath": "\\States\\ST_MX\\ST_MX_DX",
+      "GUID": "{96BCE6E4-8875-46D1-801E-569B740C0BB9}",
+      "States": [
+       {
+        "Id": "581119096",
+        "Name": "NODX",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX\\NODX",
+        "GUID": "{45A061BB-2CA2-452B-85A5-AF3F93079E01}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX\\None",
+        "GUID": "{AD383E92-C158-42A8-B254-DEC42B3C9DF3}"
+       },
+       {
+        "Id": "1836525785",
+        "Name": "DX",
+        "ObjectPath": "\\States\\ST_MX\\ST_MX_DX\\DX",
+        "GUID": "{DE28D3F4-D5C5-477C-A9C4-9A3C8FE5C7D1}"
+       }
+      ]
+     },
      {
       "Id": "3782072948",
       "Name": "ST_MX_Context",
@@ -163,6 +245,6 @@
     ]
    }
   ],
-  "FileHash": "{C22F7D1D-48BE-D5D0-C485-6593F8638CC5}"
+  "FileHash": "{2011805F-967E-6FDE-3BEC-D1776B5ECEB0}"
  }
 }

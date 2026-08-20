@@ -1,7 +1,15 @@
 State Group	ID	Name			Wwise Object Path	Notes
+	1071146488	ST_MX_DX_LEVEL			\ST_MX\ST_MX_DX_LEVEL	
+	2631721963	ST_MX_DX			\ST_MX\ST_MX_DX	
 	3782072948	ST_MX_Context			\ST_MX\ST_MX_Context	
 
 State	ID	Name	State Group			Notes
+	748895195	None	ST_MX_DX_LEVEL			
+	844249216	DX_SAD	ST_MX_DX_LEVEL			
+	900128073	DX_Neutral	ST_MX_DX_LEVEL			
+	581119096	NODX	ST_MX_DX			
+	748895195	None	ST_MX_DX			
+	1836525785	DX	ST_MX_DX			
 	89505537	GAMEPLAY	ST_MX_Context			
 	748895195	None	ST_MX_Context			
 	1696692335	HANDY	ST_MX_Context			
@@ -14,10 +22,14 @@ Game Parameter	ID	Name			Wwise Object Path	Notes
 
 Audio Bus	ID	Name			Wwise Object Path	Notes
 	393239870	SFX			\Default Work Unit\Main Audio Bus\SFX	
+	1947001772	MX_DIALOG_LAY 02			\Default Work Unit\Main Audio Bus\Music\MX_DX\MX_DIALOG_LAY 02	
+	1947001775	MX_Dialog_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_DX\MX_Dialog_LAY 01	
+	2171211849	MX_DX			\Default Work Unit\Main Audio Bus\Music\MX_DX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
-	3314336632	MX_LAY 03			\Default Work Unit\Main Audio Bus\Music\MX_LAY 03	
-	3314336633	MX_LAY 02			\Default Work Unit\Main Audio Bus\Music\MX_LAY 02	
-	3314336634	MX_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_LAY 01	
+	2543366352	MX_NO DX			\Default Work Unit\Main Audio Bus\Music\MX_NO DX	
+	3314336632	MX_LAY 03			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 03	
+	3314336633	MX_LAY 02			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 02	
+	3314336634	MX_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 01	
 	3991942870	Music			\Default Work Unit\Main Audio Bus\Music	
 
 Audio Devices	ID	Name	Type				Notes

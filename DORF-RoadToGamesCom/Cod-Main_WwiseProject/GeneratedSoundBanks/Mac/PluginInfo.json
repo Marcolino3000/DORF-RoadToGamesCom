@@ -4,6 +4,27 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Parametric EQ",
+    "LibId": "6881283",
+    "Type": "Effect",
+    "DLL": "AkParametricEQ",
+    "StaticLib": "AkParametricEQFX"
+   },
+   {
+    "LibName": "Wwise RoomVerb",
+    "LibId": "7733251",
+    "Type": "Effect",
+    "DLL": "AkRoomVerb",
+    "StaticLib": "AkRoomVerbFX"
+   },
+   {
+    "LibName": "Wwise Guitar Distortion",
+    "LibId": "8257539",
+    "Type": "Effect",
+    "DLL": "AkGuitarDistortion",
+    "StaticLib": "AkGuitarDistortionFX"
+   },
+   {
     "LibName": "Wwise Meter",
     "LibId": "8454147",
     "Type": "Effect",
@@ -21,6 +42,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{F1CE410D-C0BD-C0B4-5B06-BECB7D9C1937}"
+  "FileHash": "{FAB08853-EF16-53B9-E96B-650DEF5CA56D}"
  }
 }

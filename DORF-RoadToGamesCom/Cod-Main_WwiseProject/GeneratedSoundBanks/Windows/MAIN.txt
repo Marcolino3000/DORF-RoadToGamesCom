@@ -1,16 +1,15 @@
 Event	ID	Name			Wwise Object Path	Notes
-	281579790	MUS_Scene2_Stop			\Default Work Unit\MX\MUS_Scene2_Stop	
 	509453139	Door_House_Outside_Open			\Default Work Unit\Props\Door_House_Outside_Open	
 	597432099	Dough_React_Grow_Stop			\Default Work Unit\Props\Dough\Dough_React_Grow_Stop	
 	797527444	MUS_Dialog_Start			\Default Work Unit\MX\MUS_Dialog_Start	
 	843151098	MUS_StartScreen_Start			\Default Work Unit\MX\MUS_StartScreen_Start	
 	951148415	MUS_Schlager_Start			\Default Work Unit\MX\MUS_Schlager_Start	
-	1195524065	MUS_Menu_Start			\Default Work Unit\MX\MUS_Menu_Start	
 	1205543049	Dough_React_Grow_Start			\Default Work Unit\Props\Dough\Dough_React_Grow_Start	
 	1233864094	Dough_React_Steady_Start			\Default Work Unit\Props\Dough\Dough_React_Steady_Start	
 	1360862177	Smartphone_Click			\Default Work Unit\Props\Smartphone_Click	
 	1555599282	MUS_DorffestJingle_Start			\Default Work Unit\MX\MUS_DorffestJingle_Start	
 	1822647189	Dough_React_Shrink_Stop			\Default Work Unit\Props\Dough\Dough_React_Shrink_Stop	
+	1886026323	MUS_SWITCH_SUBMENU			\Default Work Unit\MX\MUS_SWITCH_SUBMENU	
 	2007948846	MUS_Scene2_Start			\Default Work Unit\MX\MUS_Scene2_Start	
 	2061060223	MUS_Sauerteig_Start_2C			\Default Work Unit\MX\MUS_Sauerteig_Start_2C	
 	2371375953	Door_House_Outside_Close			\Default Work Unit\Props\Door_House_Outside_Close	
@@ -20,49 +19,85 @@ Event	ID	Name			Wwise Object Path	Notes
 	2909751214	Door_House_Inside_Open			\Default Work Unit\Props\Door_House_Inside_Open	
 	2930347891	Bike_Click			\Default Work Unit\Props\Bike_Click	
 	3073992842	Door_House_Inside_Close			\Default Work Unit\Props\Door_House_Inside_Close	
+	3298014119	MUS_Dialog_End			\Default Work Unit\MX\MUS_Dialog_End	
 	3678466239	Door_Slam			\Default Work Unit\Props\Door_Slam	
+	3713231792	MUS_SWITCH_GAMEPLAY			\Default Work Unit\MX\MUS_SWITCH_GAMEPLAY	
+	3723145900	MUS_SWITCH_HANDY			\Default Work Unit\MX\MUS_SWITCH_HANDY	
 	3881560519	Smarthphone_GetOut			\Default Work Unit\Props\Smarthphone_GetOut	
 	4204145805	MUS_Scene1_Start			\Default Work Unit\MX\MUS_Scene1_Start	
 	4211178899	Smartphone_PutBack			\Default Work Unit\Props\Smartphone_PutBack	
 	4294454276	MUS_DialogTraurig_Start			\Default Work Unit\MX\MUS_DialogTraurig_Start	
 
+State Group	ID	Name			Wwise Object Path	Notes
+	1071146488	ST_MX_DX_LEVEL			\ST_MX\ST_MX_DX_LEVEL	
+
+State	ID	Name	State Group			Notes
+	748895195	None	ST_MX_DX_LEVEL			
+	844249216	DX_SAD	ST_MX_DX_LEVEL			
+	900128073	DX_Neutral	ST_MX_DX_LEVEL			
+
 Game Parameter	ID	Name			Wwise Object Path	Notes
+	592785239	SC_Sauerteig			\Default Work Unit\SC_Sauerteig	
+	928078696	SC_Scene02			\Default Work Unit\SC_Scene02	
 	1166628669	Dough_Rise_n_Sink			\Default Work Unit\PROPS\Dough_Rise_n_Sink	
 
 Effect plug-ins	ID	Name	Type				Notes
+	592785239	SC_Sauerteig	Wwise Meter			
+	1259256166	New_RoomVerb	Wwise RoomVerb			
 	1763592331	New_Meter	Wwise Meter			
+	3435419520	New_Guitar_Distortion	Wwise Guitar Distortion			
+	3657550167	New_Parametric_EQ	Wwise Parametric EQ			
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	15548303	TRK_MX_MENU_Loop	.cache\6D\{6D479B64-A489-CC0C-2D93-A94C90E6D994}.wem		\Containers\MX\MX_Scene 00_STARTSCREEN\MX_Scene_00_Menu_Loop\TRK_MX_MENU_Loop		12288096
 	17809938	PROP_Smartphone_Putback-03_TS	.cache\71\{71EF22B9-BE02-5618-B103-C1248C966EE7}.wem		\Containers\Tristan\Props\PROP_Smartphone_Putback\PROP_Smartphone_Putback-03_TS		37508
 	36562100	PROP_Smartphone_GetOut-02_TS	.cache\36\{36713C74-882A-0A4B-341E-20BD33ED5D19}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-02_TS		38616
+	47533369	LAY 01	.cache\9F\{9F3A5A8A-4B70-0C67-2A21-F0284619068B}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_LOOP\LAY 01		24576096
+	48143552	TRK_Scene 01_LAY 02	.cache\9D\{9DE0560F-365F-151B-CFB0-742445FA0C2F}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_LOOP\TRK_Scene 01_LAY 02		19200100
+	51939227	LAY 02	.cache\E9\{E95C0AAC-18F5-E94A-D6C1-EA592D27BAB7}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_Intro\LAY 02		2352100
 	61310738	PROP_Door_House_Outside_Open-03_TS	.cache\EC\{ECBC9C47-9A05-A34B-D8DA-4F93D671C545}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Open\PROP_Door_House_Outside_Open-03_TS		78402
 	65537474	LAY 02	.cache\FE\{FECDC71E-FD23-CECF-0E53-C8A0F6F70533}.wem		\Containers\MX\MX_Dorffest\MX_Dorffest_Seg\LAY 02		3034488
+	68453810	LAY 01	.cache\F3\{F3AD3AFA-3A30-D591-DCBF-19A74ECAEBC3}.wem		\Containers\MX\MX_Schlager\MX_Schlager_Seg\LAY 01		12629432
 	72473378	PROP_Door_Slam-01_TS	.cache\81\{81726142-947C-6416-5382-AD98500A1B55}.wem		\Containers\Tristan\Props\PROP_Door_Slam-01_TS		72028
+	73445871	LAY 01	.cache\BB\{BBFCA8A6-8A52-6D72-E390-A1A895665B93}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_B_LOOP 01\LAY 01		36864100
 	102658884	PROP_Smartphone_Click-02_TS	.cache\0E\{0E79E502-D94D-C30E-400B-BF2EF61715D6}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-02_TS		25724
+	150833971	TRK_MX_Scene 00_Menu_Intro	.cache\1D\{1DB62053-42CC-EF50-364E-5278CB7D0FE9}.wem		\Containers\MX\MX_Scene 00_STARTSCREEN\MX_Scene_00_Menu_Intro\TRK_MX_Scene 00_Menu_Intro		2496096
 	157993529	TRK_Scene 01_LAY 03	.cache\D0\{D0CD45AA-BEC8-ADEA-A602-ED1ED84CEEA3}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 03		24576096
-	185022841	260110_CoD_Szene 02A_cut01	.cache\81\{81B59B2B-20B9-0C7A-9B4D-0D0DB653F801}.wem		\Containers\Default Work Unit\Scene2\260110_CoD_Szene 02A_cut01\260110_CoD_Szene 02A_cut01		46464100
+	181891423	LAY 02	.cache\32\{324212E1-C892-957B-BB60-E051C7FF9B4D}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_D_LOOP\LAY 02		17723172
+	191428204	LAY 02	.cache\86\{86DC7516-B9A2-4A9C-0F36-C77C66CA91A5}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_B_LOOP 01\LAY 02		36864096
+	211809288	TRK_Scene 01_LAY 01	.cache\63\{63CCBB5B-E531-595E-E8C9-57AEB16DA1FE}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_Intro\TRK_Scene 01_LAY 01		2067792
 	225013524	PROP_Door_House_Outside_Close-03_TS	.cache\82\{8207ED9C-0F10-E39B-F761-287225901744}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Close\PROP_Door_House_Outside_Close-03_TS		89324
+	260953660	LAY 02	.cache\B5\{B5B22503-FB1E-5243-CF68-63E220C9D8AD}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_A_Intro\LAY 02		10274092
 	300077198	TRK_Scene 01_LAY 02	.cache\31\{31B2194B-EB8B-70BD-355E-741CC8C8739E}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 02		2352096
 	306826646	PROP_Door_House_Inside_Close-01_TS	.cache\32\{32BAB0E0-7A98-85AB-2564-A6E927EC2049}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-01_TS		63790
-	392156279	260110_CoD_Szene 02B_cut01	.cache\11\{11DB505A-740E-CB53-B0AD-33C172CB34EE}.wem		\Containers\Default Work Unit\Scene2\260110_CoD_Szene 02B_cut01\260110_CoD_Szene 02B_cut01		25255480
+	329418303	LAY 01	.cache\8A\{8A599E80-8E06-D5E8-27D8-E015A1B38F0D}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_A_Intro\LAY 01		10274096
 	404719519	PROP_Door_House_Outside_Open-01_TS	.cache\14\{1404C6E5-7268-4907-DD19-071A0A171FFF}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Open\PROP_Door_House_Outside_Open-01_TS		92402
 	415473060	PROP_Door_House_Outside_Open-02_TS	.cache\99\{99630C60-6B20-83D0-59FF-C557E02343D1}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Open\PROP_Door_House_Outside_Open-02_TS		91724
 	417471246	PROP_Bike_Click-01_TS	.cache\30\{303A6CF9-1F44-B3AD-6D6C-3DEE7673942C}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-01_TS		96096
-	417646144	260118_CoD_Szene 02C_cut01	.cache\94\{94FBE51B-5CCE-F5AF-4008-1F6FC0F92D77}.wem		\Containers\Default Work Unit\Scene2\260118_CoD_Szene 02C_cut01\260118_CoD_Szene 02C_cut01		25993944
 	428562537	PROP_Bike_Click-04_TS	.cache\62\{62A10832-AA3A-97C1-1CEC-94BD97470097}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-04_TS		96096
-	445229569	260111_CoD_Schlager V01	.cache\F3\{F3AD3AFA-3A30-D591-DCBF-19A74ECAEBC3}.wem		\Containers\Default Work Unit\Schlager\260111_CoD_Schlager V01\260111_CoD_Schlager V01		12629432
+	428836298	LAY 01	.cache\D2\{D2035D48-36EA-A162-249B-B78BBC4FDAE5}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_C_T\LAY 01		9582424
 	479635857	PROP_Dough_React_Shrink-01_TS	.cache\C9\{C9C73E1E-DEE0-7094-6377-F28036E91E9D}.wem		\Containers\Tristan\Props\PROP_Dough_React_Shrink-01_TS		672144
 	483512497	PROP_Smartphone_Click-04_TS	.cache\A4\{A496AA64-DA33-DD31-D56C-31F86258DD1C}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-04_TS		25724
+	496018900	LAY 02	.cache\DF\{DF0B9B88-B126-D560-1B74-321C22DBC228}.wem		\Containers\MX\MX_Schlager\MX_Schlager_Seg\LAY 02		12629436
+	502037400	LAY 02	.cache\3D\{3DBF353B-4282-CF12-F951-9C561EAC7C3D}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_C_T\LAY 02		9582424
 	503337552	PROP_Smartphone_Putback-01_TS	.cache\5F\{5FAD83F5-5C8C-0973-5B85-525E3165A052}.wem		\Containers\Tristan\Props\PROP_Smartphone_Putback\PROP_Smartphone_Putback-01_TS		41378
 	505835401	TRK_Scene 01_LAY 01	.cache\41\{41714BE4-1F40-9CF6-09E2-6FCCF69670CC}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 01		2352096
+	517659329	LAY 02	.cache\5E\{5EE48027-6BF2-5C03-3E78-09FDC0B13442}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_E_T\LAY 02		3635368
 	533745290	PROP_Door_House_Inside_Open-01_TS	.cache\4C\{4C3A768E-D40C-B4B9-C6BF-736C76DBBCF0}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-01_TS		55484
 	558568173	PROP_Dough_React_Grow-01_TS	.cache\4B\{4BE15CD7-960A-8D22-F8AE-B555449AFDE7}.wem		\Containers\Tristan\Props\PROP_Dough_React_Grow-01_TS		672096
 	563776362	PROP_Bike_Click-02_TS	.cache\21\{216CBF34-7FEF-7EB0-C300-18CB7C84BE74}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-02_TS		96096
+	563789316	MX	.cache\8F\{8F254C9B-4614-B79E-9744-4B8DDE86214D}.wem		\Containers\MX\MX_Schlager\Schlager OFF\MX		120008
+	596546381	LAY 01	.cache\31\{31B2194B-EB8B-70BD-355E-741CC8C8739E}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_Intro\LAY 01		2352096
 	640226488	PROP_Smartphone_Click-03_TS	.cache\43\{43C45118-29C4-2A0C-8551-3E5CC9EE7C00}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-03_TS		25724
+	640322252	MX	.cache\14\{144FC639-66D5-789E-82CE-1DB3529618DE}.wem		\Containers\MX\MX_Schlager\Schlager ON\MX		110688
+	640594092	LAY 01	.cache\94\{94FBE51B-5CCE-F5AF-4008-1F6FC0F92D77}.wem		\Containers\MX\MX_Sauerteig\MX_Sauerteig_SEG\LAY 01		25993944
 	667562955	PROP_Door_House_Inside_Close-02_TS	.cache\83\{838BFA1E-41BB-BDA3-F19D-754BC19244D9}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-02_TS		68742
 	727775959	TRK_Scene 01_LAY 01	.cache\EA\{EA358D4C-3645-3ABD-E266-33D83DCE1ED4}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 01		24576096
+	776297992	LAY 02	.cache\64\{646B9CF7-D547-53A8-FB98-AAD69A8EC812}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_LOOP\LAY 02		24576100
 	800972599	LAY 01	.cache\6E\{6E036537-B447-3ADB-7974-80766A71E506}.wem		\Containers\MX\MX_Dorffest\MX_Dorffest_Seg\LAY 01		3034492
+	809434168	LAY 01	.cache\C5\{C5009640-3C4F-5856-F2F0-310B13DF6E84}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_E_T\LAY 01		3635364
 	837748890	PROP_Smartphone_GetOut-03_TS	.cache\61\{6146A81E-CBEA-07C0-6A9E-BB9E1A91EE8D}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-03_TS		36064
+	852356171	LAY 02	.cache\71\{716E745F-C7FB-4023-7BDD-744F5897DE29}.wem		\Containers\MX\MX_Sauerteig\MX_Sauerteig_SEG\LAY 02		25993948
 	869974642	PROP_Door_House_Inside_Open-03_TS	.cache\8E\{8E47068B-61AB-210D-974F-0D8AD5BDFFDA}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-03_TS		48096
 	882469003	PROP_Door_House_Inside_Open-02_TS	.cache\E3\{E3F70A7F-9733-8E0E-D1AF-B040DFF1F49F}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-02_TS		56752
 	888694663	PROP_Smartphone_GetOut-01_TS	.cache\9D\{9D7D7EB5-0077-D5A7-3639-28A58892BAE0}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-01_TS		27246
@@ -72,7 +107,10 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	935716141	PROP_Door_House_Outside_Close-01_TS	.cache\FA\{FA319CB4-808B-2675-8045-785AC8681528}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Close\PROP_Door_House_Outside_Close-01_TS		95778
 	938844291	PROP_Smartphone_Click-01_TS	.cache\FE\{FE90BABE-0EC4-188C-9952-27874C9AF41C}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-01_TS		21706
 	968318302	TRK_Scene 01_LAY 02	.cache\9F\{9F3A5A8A-4B70-0C67-2A21-F0284619068B}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 02		24576096
+	972905932	LAY 01	.cache\DD\{DD25F835-7CA6-E5A8-F63B-AA01464663A9}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_D_LOOP\LAY 01		17723168
 	977082520	TRK_Scene 01_LAY 03	.cache\BF\{BF1D8941-B0D5-7131-0CC8-6BC96F9ACA0E}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 03		2352096
 	1016399115	PROP_Dough_React_Steady-01_TS	.cache\F8\{F840F32A-0AFC-6B62-8E16-EAE6C7DD7E95}.wem		\Containers\Tristan\Props\PROP_Dough_React_Steady-01_TS		672144
 	1039632174	PROP_Door_House_Inside_Close-03_TS	.cache\9F\{9FBA5DBB-3551-56D8-8BC0-94C9A7654461}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-03_TS		69884
+	1045615547	TRK_Scene 01_LAY 01	.cache\2E\{2E72C435-304F-96D5-D599-B908197DB6D3}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_LOOP\TRK_Scene 01_LAY 01		19200096
+	1046350457	TRK_Scene 01_LAY 02	.cache\DC\{DC8BDAD7-067A-86C7-EDCF-883A2D5B5FC6}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_Intro\TRK_Scene 01_LAY 02		2067792
 
