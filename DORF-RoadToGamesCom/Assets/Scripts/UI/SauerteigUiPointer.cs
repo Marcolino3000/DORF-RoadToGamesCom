@@ -259,7 +259,7 @@ namespace UI
                   $"{interactable.OnInteractionStarted?.GetInvocationList().Length ?? 0} " +
                   "(0 means InteractionHandler.FindClients never reached it)");
 
-            Debug.Log(report.ToString(), this);
+            // Debug.Log(report.ToString(), this);
         }
     }
 }
