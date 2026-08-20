@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{00BFC5CF-1F84-F51B-A12A-407162BD0169}",
+    "Hash": "{08376E99-D0A0-A33F-2289-B5933811213D}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
@@ -46,6 +46,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260808_COD_DIALOG TRAURIG_LAY 02_LOOP_V03.wav",
       "CachePath": "B8/{B8193E30-7D89-C48A-365F-380CD20A5FF3}.wem"
+     },
+     {
+      "Id": "49086049",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WNDWWood_Log Cabin Wooden Window Creak 01.wav",
+      "CachePath": "FE/{FEE5CC52-6D18-E280-773F-C1AAD70F2365}.wem"
      },
      {
       "Id": "51939228",
@@ -113,6 +121,14 @@
       "CachePath": "39/{39386B50-5D11-7943-32BB-3D7E42A19D9D}.wem"
      },
      {
+      "Id": "104939962",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1.wav",
+      "CachePath": "02/{022EABB5-F365-73D5-9935-F50BF7AF20AB}.wem"
+     },
+     {
       "Id": "157993530",
       "Language": "SFX",
       "Streaming": "false",
@@ -161,6 +177,14 @@
       "CachePath": "9A/{9A81A82A-713D-CDC8-BFCA-254A632B82A2}.wem"
      },
      {
+      "Id": "257248478",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1.wav",
+      "CachePath": "AF/{AF9B7EC1-A3DF-E63A-A88C-9C06230A3623}.wem"
+     },
+     {
       "Id": "260953661",
       "Language": "SFX",
       "Streaming": "false",
@@ -191,6 +215,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260809_CoD_Scene 02_LAY 01_A_INTRO_V01.wav",
       "CachePath": "B6/{B6996808-46CC-2606-3AEF-3A683721B6D1}.wem"
+     },
+     {
+      "Id": "400564186",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3.wav",
+      "CachePath": "22/{22A59D78-9FDF-71B6-DB98-B1E6587C4AEF}.wem"
      },
      {
       "Id": "404719519",
@@ -231,6 +263,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260809_CoD_Scene 02_LAY 01_C_Transition zu D_V01.wav",
       "CachePath": "06/{06B9CDCC-1E31-B8D6-9E98-92E76FEBA8F6}.wem"
+     },
+     {
+      "Id": "458839438",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Wind, Vegetation, Trees, Leaves, Rustling SND52155.wav",
+      "CachePath": "E8/{E8A8112E-D5DF-B66C-C77F-8D02267F6471}.wem"
      },
      {
       "Id": "479635857",
@@ -279,6 +319,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260806_CoD_Scene 01_LAY 01_INTRO_V01.wav",
       "CachePath": "DB/{DBD99F38-6EE4-DBD7-E4E4-C023BB2944EC}.wem"
+     },
+     {
+      "Id": "507115265",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510.wav",
+      "CachePath": "96/{96CFCA2B-D314-57A0-1C68-64CDCD25B6A8}.wem"
      },
      {
       "Id": "517659330",
@@ -338,6 +386,14 @@
       "CachePath": "E7/{E7266B31-44CF-24C2-04C8-2C32F058E518}.wem"
      },
      {
+      "Id": "617041906",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WNDWWood_Log Cabin Wooden Window Creak 03.wav",
+      "CachePath": "71/{71BC384B-6637-764B-D047-09D6079922BD}.wem"
+     },
+     {
       "Id": "625184066",
       "Language": "SFX",
       "Streaming": "false",
@@ -378,12 +434,36 @@
       "CachePath": "B2/{B2F50C4A-2DB0-C4A8-922F-6C4AFD21FB69}.wem"
      },
      {
+      "Id": "705000866",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Water, Plumbing, Water Running, Plastic Pipes 02 SND123822.wav",
+      "CachePath": "A9/{A9C21496-62F9-2DCD-2ACE-97F3780F8008}.wem"
+     },
+     {
+      "Id": "717190081",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2.wav",
+      "CachePath": "D2/{D2C90AE3-7E5B-66B8-59A2-DE567FE073C5}.wem"
+     },
+     {
       "Id": "727775960",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Music_Leon\\260806_CoD_Scene 01_LAY 01_LOOP_V01.wav",
       "CachePath": "17/{17F8A951-F8CF-9045-F128-A43E2DFE7EBA}.wem"
+     },
+     {
+      "Id": "735398847",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Room Tone, Bedroom A SND103923.wav",
+      "CachePath": "D7/{D7BE143D-1E90-FD06-0C40-00E655237102}.wem"
      },
      {
       "Id": "776297993",
@@ -434,6 +514,14 @@
       "CachePath": "E9/{E9C698C9-B047-4736-538B-1F2E311DD8DA}.wem"
      },
      {
+      "Id": "879600974",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "WNDWWood_Log Cabin Wooden Window Creak 02.wav",
+      "CachePath": "44/{445DE17B-E632-F95C-D840-F7C2EDEBF038}.wem"
+     },
+     {
       "Id": "882469003",
       "Language": "SFX",
       "Streaming": "false",
@@ -482,6 +570,14 @@
       "CachePath": "17/{17795456-9F0A-FE98-0E1F-0F2FA9CE305F}.wem"
      },
      {
+      "Id": "937429967",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2.wav",
+      "CachePath": "F6/{F678124B-F35A-7273-6E14-C2B6F894FA3E}.wem"
+     },
+     {
       "Id": "938844291",
       "Language": "SFX",
       "Streaming": "false",
@@ -496,6 +592,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260806_CoD_Scene 01_LAY 02_LOOP_V01.wav",
       "CachePath": "A3/{A3E3E30A-F61B-9FA4-4F46-998924C61DB0}.wem"
+     },
+     {
+      "Id": "970529583",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713.wav",
+      "CachePath": "E2/{E23937EC-C699-083A-94BC-A9F2A02A7570}.wem"
      },
      {
       "Id": "972905933",
@@ -547,6 +651,34 @@
      }
     ],
     "Plugins": {
+     "Custom": [
+      {
+       "Id": "244980797",
+       "Name": "Parametric EQ (Custom)",
+       "ObjectPath": "\\Containers\\JOSHI\\AMB\\Scene02\\Creak\\[Effect Slot [0]: (Parametric EQ)]\\Parametric EQ (Custom)",
+       "GUID": "{48C45CD6-C38C-4F8B-A549-6C16BB544C3A}",
+       "LibName": "Wwise Parametric EQ",
+       "LibId": "6881283"
+      },
+      {
+       "Id": "314059273",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\JOSHI\\AMB\\Scene02\\Creak\\New Silence\\Silence",
+       "GUID": "{FC20F1C1-3283-4050-974A-70FC52D0A20A}",
+       "Color": "20",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      },
+      {
+       "Id": "954580968",
+       "Name": "Silence",
+       "ObjectPath": "\\Containers\\JOSHI\\AMB\\Scene02\\Birds\\New Silence\\Silence",
+       "GUID": "{EC57C5D9-0A67-40A5-BF86-630B209DB3F6}",
+       "Color": "20",
+       "LibName": "Wwise Silence",
+       "LibId": "6619138"
+      }
+     ],
      "ShareSets": [
       {
        "Id": "592785239",
@@ -591,6 +723,91 @@
      ]
     },
     "Events": [
+     {
+      "Id": "312587073",
+      "Name": "AMB_Scene2_Start",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Scene2_Start",
+      "GUID": "{1FD1F34E-7457-4502-BEB3-8FF19ABCA371}",
+      "DurationType": "Infinite",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1275572957",
+         "Id": "340398852",
+         "GUID": "{99189C36-4F73-40E7-9208-2295B1D3E3C3}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "49086049"
+         },
+         {
+          "Id": "617041906"
+         },
+         {
+          "Id": "705000866"
+         },
+         {
+          "Id": "735398847"
+         },
+         {
+          "Id": "879600974"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "244980797"
+          },
+          {
+           "Id": "314059273"
+          }
+         ]
+        }
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "State",
+         "GroupId": "1275572957",
+         "Id": "144697359",
+         "GUID": "{14C9B8B0-1172-48AD-A3E9-AB3B2EA8B7EB}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "104939962"
+         },
+         {
+          "Id": "257248478"
+         },
+         {
+          "Id": "400564186"
+         },
+         {
+          "Id": "458839438"
+         },
+         {
+          "Id": "507115265"
+         },
+         {
+          "Id": "717190081"
+         },
+         {
+          "Id": "937429967"
+         },
+         {
+          "Id": "970529583"
+         }
+        ],
+        "PluginRefs": {
+         "Custom": [
+          {
+           "Id": "954580968"
+          }
+         ]
+        }
+       }
+      ]
+     },
      {
       "Id": "2535910433",
       "Name": "AMB_Train_Start",
@@ -1034,6 +1251,12 @@
       ],
       "ActionPostEvent": [
        {
+        "Id": "312587073",
+        "Name": "AMB_Scene2_Start",
+        "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Scene2_Start",
+        "GUID": "{1FD1F34E-7457-4502-BEB3-8FF19ABCA371}"
+       },
+       {
         "Id": "2049158747",
         "Name": "AMB_Train_Stop",
         "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Train_Stop",
@@ -1332,6 +1555,32 @@
       ]
      },
      {
+      "Id": "1275572957",
+      "Name": "SCENE02_location",
+      "ObjectPath": "\\States\\Default Work Unit\\SCENE02_location",
+      "GUID": "{6950E15E-66CF-4BEF-8764-340D0CE63EC4}",
+      "States": [
+       {
+        "Id": "144697359",
+        "Name": "outdoor",
+        "ObjectPath": "\\States\\Default Work Unit\\SCENE02_location\\outdoor",
+        "GUID": "{14C9B8B0-1172-48AD-A3E9-AB3B2EA8B7EB}"
+       },
+       {
+        "Id": "340398852",
+        "Name": "indoor",
+        "ObjectPath": "\\States\\Default Work Unit\\SCENE02_location\\indoor",
+        "GUID": "{99189C36-4F73-40E7-9208-2295B1D3E3C3}"
+       },
+       {
+        "Id": "748895195",
+        "Name": "None",
+        "ObjectPath": "\\States\\Default Work Unit\\SCENE02_location\\None",
+        "GUID": "{A385B9C6-4636-4A16-904C-A461215D4AF9}"
+       }
+      ]
+     },
+     {
       "Id": "2631721963",
       "Name": "ST_MX_DX",
       "ObjectPath": "\\States\\ST_MX\\ST_MX_DX",
@@ -1392,6 +1641,6 @@
     ]
    }
   ],
-  "FileHash": "{E0D48B39-3111-19DF-52D6-AD109EB33E6E}"
+  "FileHash": "{903763AB-8A7C-69EF-BDAB-9020CD7F55BD}"
  }
 }
