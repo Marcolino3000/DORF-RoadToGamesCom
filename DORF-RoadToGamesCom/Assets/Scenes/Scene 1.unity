@@ -1653,7 +1653,7 @@ MonoBehaviour:
   musicCue:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ed6ff9009cb9f4e9bb65336c848f9692, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 9f6d8d55a791a7943a43693d5b43c776, type: 2}
 --- !u!4 &1552280895
 Transform:
   m_ObjectHideFlags: 0
@@ -2790,8 +2790,8 @@ SceneRoots:
   - {fileID: 843732848}
   - {fileID: 163643662}
   - {fileID: 1700000011}
+  - {fileID: 1552280895}
   - {fileID: 1992901855}
   - {fileID: 1953207528}
   - {fileID: 41233204}
-  - {fileID: 1552280895}
   - {fileID: 1209228977}

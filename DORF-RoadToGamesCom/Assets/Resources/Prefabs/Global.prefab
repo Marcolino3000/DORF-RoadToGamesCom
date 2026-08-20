@@ -7337,7 +7337,7 @@ MonoBehaviour:
   clickEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 64f8ddfb1b9e1402eb22e2da70e6acda, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 45936fa424496466bb41db09415d2f3d, type: 2}
   raycaster: {fileID: 5747816080230149823}
 --- !u!1 &8834404616728328332
 GameObject:
