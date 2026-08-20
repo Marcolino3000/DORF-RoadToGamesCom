@@ -1,0 +1,3 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1791858939	AMB_Scene2_Stop			\Default Work Unit\AMB\AMB_Scene2_Stop	
+

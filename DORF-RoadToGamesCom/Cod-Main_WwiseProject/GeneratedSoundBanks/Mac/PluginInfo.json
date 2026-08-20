@@ -4,6 +4,13 @@
   "BasePlatform": "Mac",
   "PluginLibs": [
    {
+    "LibName": "Wwise Silence",
+    "LibId": "6619138",
+    "Type": "Source",
+    "DLL": "AkSilenceGenerator",
+    "StaticLib": "AkSilenceSource"
+   },
+   {
     "LibName": "Wwise Parametric EQ",
     "LibId": "6881283",
     "Type": "Effect",
@@ -42,6 +49,6 @@
     "Type": "AudioDevice"
    }
   ],
-  "FileHash": "{FAB08853-EF16-53B9-E96B-650DEF5CA56D}"
+  "FileHash": "{88D45FF6-DA98-B017-4F62-B879AA2E8CB7}"
  }
 }

@@ -308,6 +308,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{7E1D4DE8-E645-4442-AAA0-16765AA831E6}" ShortID="188503290">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Scene2_Start" ID="{1FD1F34E-7457-4502-BEB3-8FF19ABCA371}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
@@ -777,6 +787,35 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Train_INT_Amb" ID="{61563637-455E-4B2E-A75D-34F3BBF417DA}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Scene2_Start" ID="{1FD1F34E-7457-4502-BEB3-8FF19ABCA371}">
+							<ChildrenList>
+								<Action Name="" ID="{974936CF-4752-416E-9A26-15E2507A230E}" ShortID="601792367">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Scene02" ID="{4BB35BA2-D7FA-41F8-993F-6B32A7B00D67}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Scene2_Stop" ID="{37738BBB-8EBB-4509-998D-FC7055E8799D}">
+							<ChildrenList>
+								<Action Name="" ID="{C530B1CB-8E2C-4C26-A49D-40535AC0DBA4}" ShortID="146805670">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Scene02" ID="{4BB35BA2-D7FA-41F8-993F-6B32A7B00D67}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

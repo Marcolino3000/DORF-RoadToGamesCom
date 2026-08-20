@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CE1C4F40-50D8-4220-BDD9-67D477B1C668}" SchemaVersion="133">
 	<Modulators>
-		<WorkUnit Name="Default Work Unit" ID="{CE1C4F40-50D8-4220-BDD9-67D477B1C668}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CE1C4F40-50D8-4220-BDD9-67D477B1C668}" PersistMode="Standalone">
+			<ChildrenList>
+				<ModulatorLfo Name="Random_Mod" ID="{F0D76BAC-0122-417F-87CA-C52A194807F1}" ShortID="547335998">
+					<PropertyList>
+						<Property Name="LfoAttack" Type="Real64" Value="1.46"/>
+						<Property Name="LfoFrequency" Type="Real64" Value="0.7"/>
+						<Property Name="LfoSmoothing" Type="Real64" Value="89"/>
+						<Property Name="LfoWaveform" Type="int32" Value="5"/>
+						<Property Name="ModulatorScope" Type="int32" Value="0"/>
+					</PropertyList>
+				</ModulatorLfo>
+			</ChildrenList>
+		</WorkUnit>
 	</Modulators>
 </WwiseDocument>
