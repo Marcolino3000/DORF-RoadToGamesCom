@@ -14,8 +14,8 @@ namespace Audio
     /// überlebt damit jeden Szenenwechsel und den Kiosk-Reset. Sie hört zu, statt gerufen zu werden:
     /// kein anderes Skript muss wissen, dass es Musik gibt.
     ///
-    /// Fünf Momente sind verdrahtet — Startbildschirm erscheint, Scene 1 startet, irgendeine andere
-    /// Szene startet, ein Dialog beginnt, das Smartphone wird geöffnet. Jeder ist ein
+    /// Sechs Momente sind verdrahtet — Startbildschirm erscheint, Scene 1 startet, irgendeine andere
+    /// Szene startet, ein Dialog beginnt, das Smartphone wird geöffnet, ein Menü geht auf. Jeder ist ein
     /// <see cref="MusicCue"/>, der ein Wwise-Event posten, einen Wwise-State setzen (im
     /// Wwise-Projekt ist das die Gruppe ST_MX_Context) oder beides tun kann. Ein leerer Slot tut
     /// nichts — so lässt sich genau so viel verdrahten, wie das Wwise-Projekt gerade hergibt.
@@ -83,6 +83,14 @@ namespace Audio
         [Tooltip("Optional: wenn das Handy wieder zugeht.")]
         [SerializeField] private MusicCue smartphoneClosed;
 
+        [Header("Menü")]
+        [Tooltip("Wenn ein Menü aufgeht — Hauptmenü, Journal, Karte oder Einstellungen. Umschalten " +
+                 "zwischen zwei Menüs zählt nicht als neues Aufgehen.")]
+        [SerializeField] private MusicCue menuOpened;
+
+        [Tooltip("Optional: wenn das letzte Menü wieder zugeht. Leer lassen, damit die Menümusik weiterläuft.")]
+        [SerializeField] private MusicCue menuClosed;
+
         [Header("Debug")]
         [SerializeField] private bool debugLogs;
 
@@ -104,6 +112,7 @@ namespace Audio
             StartSplash.OnHidden += HandleStartScreenHidden;
             DialogTreeRunner.OnDialogRunningStatusChanged += HandleDialogRunningChanged;
             Smartphone.OnOpenStateChanged += HandleSmartphoneOpenChanged;
+            MenuToggle.OnMenuOpenStateChanged += HandleMenuOpenChanged;
         }
 
         private void OnDisable()
@@ -113,6 +122,7 @@ namespace Audio
             StartSplash.OnHidden -= HandleStartScreenHidden;
             DialogTreeRunner.OnDialogRunningStatusChanged -= HandleDialogRunningChanged;
             Smartphone.OnOpenStateChanged -= HandleSmartphoneOpenChanged;
+            MenuToggle.OnMenuOpenStateChanged -= HandleMenuOpenChanged;
         }
 
         private void Start()
@@ -211,6 +221,20 @@ namespace Audio
         private void HandleSmartphoneOpenChanged(bool isOpen)
         {
             Apply(isOpen ? smartphoneOpened : smartphoneClosed, isOpen ? "Smartphone auf" : "Smartphone zu");
+        }
+
+        /// <summary>
+        /// MenuToggle feuert nur auf den echten Wechsel, ein Sprung vom Journal in die Karte kommt
+        /// hier also nicht an — die Menümusik läuft durch. Beim Kiosk-Reset räumt MenuToggle die
+        /// offenen Menüs weg, während das Startbild hochkommt: das "zu" käme dann als Letztes und
+        /// überschriebe die Startbild-Cue, darum gewinnt das Startbild wie überall sonst auch.
+        /// </summary>
+        private void HandleMenuOpenChanged(bool isOpen)
+        {
+            if (StartSplash.IsShowing)
+                return;
+
+            Apply(isOpen ? menuOpened : menuClosed, isOpen ? "Menü auf" : "Menü zu");
         }
 
         private void Apply(MusicCue cue, string reason)

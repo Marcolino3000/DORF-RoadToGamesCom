@@ -1,3 +1,4 @@
+using System;
 using Runtime.Scripts.Interactables;
 using ScenesSwitches;
 using UnityEngine;
@@ -12,6 +13,15 @@ namespace UI
         [SerializeField] private SettingsMenu settingsMenu;
         
         [SerializeField] private Raycaster raycaster;
+
+        /// <summary>
+        /// Raised when a menu comes up and when the last one goes away. Static because this lives
+        /// on the Global prefab and MusicDirector wants to listen without either knowing the other.
+        /// Switching straight from one menu to another does not raise — see <see cref="SetMenusOpen"/>.
+        /// </summary>
+        public static event Action<bool> OnMenuOpenStateChanged;
+
+        private bool menusOpen;
 
         /// <summary>
         /// The start image owns the screen, but the toggle keys keep firing behind it — whatever
@@ -83,19 +93,43 @@ namespace UI
 
         private void HideAllMenus()
         {
+            HideAllPanels();
+            SetMenusOpen(false);
+        }
+
+        /// <summary>
+        /// Just the panels. The open state stays as it is, so the show paths below can clear the
+        /// screen before putting their own menu up without the state flicking closed in between.
+        /// </summary>
+        private void HideAllPanels()
+        {
             mainMenu.Hide();
             journalMenu.Hide();
             mapMenu.Hide();
             settingsMenu.Hide();
-            
-            raycaster.IsMenuOpen = false;
+        }
+
+        /// <summary>
+        /// Only on the actual change. Every show path hides the others first, so without this a
+        /// visitor tabbing from the journal to the map would close and reopen the menus as far as
+        /// anyone listening is concerned — and the menu music would restart on each switch.
+        /// </summary>
+        private void SetMenusOpen(bool open)
+        {
+            raycaster.IsMenuOpen = open;
+
+            if (menusOpen == open)
+                return;
+
+            menusOpen = open;
+            OnMenuOpenStateChanged?.Invoke(open);
         }
 
         private void ShowMainMenu()
         {
-            HideAllMenus();
+            HideAllPanels();
             mainMenu.Show();
-            raycaster.IsMenuOpen = true;
+            SetMenusOpen(true);
         }
 
         public void ToggleJournalMenu()
@@ -109,9 +143,9 @@ namespace UI
                 return;
             }
             
-            HideAllMenus();
+            HideAllPanels();
             journalMenu.Show();
-            raycaster.IsMenuOpen = true;
+            SetMenusOpen(true);
         }
         
         public void ToggleMapMenu()
@@ -125,9 +159,9 @@ namespace UI
                 return;
             }
             
-            HideAllMenus();
+            HideAllPanels();
             mapMenu.Show();
-            raycaster.IsMenuOpen = true;
+            SetMenusOpen(true);
         }
 
         public void ToggleSettingsMenu()
@@ -141,9 +175,9 @@ namespace UI
                 return;
             }
             
-            HideAllMenus();
+            HideAllPanels();
             settingsMenu.Show();
-            raycaster.IsMenuOpen = true;   
+            SetMenusOpen(true);
         }
     }
     
