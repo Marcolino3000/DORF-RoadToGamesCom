@@ -6,30 +6,29 @@ using UnityEngine;
 
 namespace ScenesSwitches
 {
+    /// <summary>
+    /// Runs Scene 1 out: music, the camera move through the train window, the title, Scene 2.
+    ///
+    /// The music is the clock. It is posted the moment the last voice memo has played out, and
+    /// every step after it is timed off that post. Nothing waits for the landscape any more — the
+    /// painting scrolls where it scrolls, and the camera always leaves the window the same distance
+    /// into the music.
+    /// </summary>
     public class SceneTransitionManager : MonoBehaviour
     {
         [Header("Settings")]
-        [Tooltip("Pause between the last voice memo ending and the transition starting. The phone " +
-                 "stays open and usable for it. 0 keeps the transition immediate.")]
-        [SerializeField] private float secondsBeforeTransitionStarts;
+        [Tooltip("From the music starting to the train braking. The phone stays open and usable " +
+                 "for it, so this is also the beat the visitor gets after the last memo. " +
+                 "0 brakes immediately.")]
+        [SerializeField] private float secondsBetweenMusicAndCameraZoom = 10f;
+
+        [Tooltip("From the train braking to the camera zooming through the window. Give the " +
+                 "landscape time to actually come to a stop before the camera leaves. 0 zooms " +
+                 "straight after the brake.")]
+        [SerializeField] private float secondsBetweenSlowDownAndCameraZoom = 2f;
+
         [SerializeField] private float secondsBeforeTitleFadeIn;
         [SerializeField] private float titleScreenDuration;
-
-        [Header("Landscape cue")]
-        [Tooltip("The train does not pull away until the landscape has scrolled this far, so it " +
-                 "always stops at the same place in the painting. Panorama pixels on the " +
-                 "Landscape's cue layer; the mark comes round once per lap.")]
-        [SerializeField] private float transitionOffsetPixels;
-
-        [Tooltip("How far ahead of that mark the music is posted, so it is already running when " +
-                 "the title and Scene 2 arrive. Panorama pixels — at the default scroll speed " +
-                 "169px is one second.")]
-        [SerializeField] private float musicCueLeadPixels;
-
-        [Tooltip("Run the transition anyway if the landscape has not reached the mark after this " +
-                 "long, so the kiosk cannot sit on a chat that has already finished. 0 waits " +
-                 "indefinitely.")]
-        [SerializeField] private float maxOffsetWaitSeconds;
 
         [Header("References")]
         [SerializeField] private TrainMover trainMover;
@@ -38,7 +37,7 @@ namespace ScenesSwitches
         [SerializeField] private SceneSwapManager sceneSwapManager;
         [SerializeField] private Landscape landscape;
 
-        [Tooltip("Posted at the music cue offset. MUS_Scene2_Start.")]
+        [Tooltip("Posted as soon as the voice memos have finished. MUS_Scene2_Start.")]
         [SerializeField] private AK.Wwise.Event musicCue;
 
         [ContextMenu("Start Transition")]
@@ -49,29 +48,22 @@ namespace ScenesSwitches
 
         private IEnumerator Transition()
         {
-            // A beat between the second memo ending and the train pulling away, so the visitor is
-            // not yanked out of the chat the moment the audio stops. Nothing has moved yet, so the
-            // phone is still open here — closing it is the first thing the transition itself does.
-            // Guarded rather than always yielded: WaitForSeconds(0) still costs a frame.
-            if (secondsBeforeTransitionStarts > 0f)
-                yield return new WaitForSeconds(secondsBeforeTransitionStarts);
-
-            // From here the train keeps riding until the painting is at the agreed spot, so the
-            // title always comes up over the same piece of landscape however long the chat took.
-            // The music goes first, a stretch of landscape earlier, because it needs a run-up to
-            // be in time — that lead is what fixes the gap between the two marks.
-            yield return landscape.WaitForOffsetPixels(transitionOffsetPixels - musicCueLeadPixels,
-                                                       maxOffsetWaitSeconds);
-
             if (musicCue != null)
                 musicCue.Post(gameObject);
 
-            yield return landscape.WaitForOffsetPixels(transitionOffsetPixels,
-                                                       maxOffsetWaitSeconds);
+            // The wait everything hangs off: the train does not brake until the music has had its
+            // run-up, so moving this moves the whole ending.
+            if (secondsBetweenMusicAndCameraZoom > 0f)
+                yield return new WaitForSeconds(secondsBetweenMusicAndCameraZoom);
 
             landscape.SlowDown();
 
             smartphone.Close();
+
+            // The brake is a ramp, not a cut. Leaving the window while the panorama is still
+            // sliding reads as the train never having stopped, so wait it out.
+            if (secondsBetweenSlowDownAndCameraZoom > 0f)
+                yield return new WaitForSeconds(secondsBetweenSlowDownAndCameraZoom);
 
             trainMover.MoveTowardsCamera();
 

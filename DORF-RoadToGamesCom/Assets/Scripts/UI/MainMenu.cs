@@ -24,7 +24,6 @@ public class MainMenu : MonoBehaviour
 
     private UIDocument uiDocument;
     private VisualElement root;
-    private bool gameStarted;
 
     public void Setup()
     {
@@ -77,19 +76,15 @@ public class MainMenu : MonoBehaviour
         OpenSettingsMenu?.Invoke();
     }
 
+    /// <summary>
+    /// The start screen is StartSplash, and it is already gone by the time this menu can be opened
+    /// — so Start here always means "start over", never "leave the start screen". Going back to the
+    /// first scene puts the start image up again, so the next visitor picks their language.
+    /// </summary>
     private void StartGame()
     {
-        if(!gameStarted)
-        {
-            gameStarted = true;
-            OnStartGame?.Invoke();
-        }
-
-        else
-        {
-            gameStarted = false;
-            SceneSwapManager.ChangeScene("Scene 1");
-        }
+        OnStartGame?.Invoke();
+        SceneSwapManager.ChangeScene("Scene 1");
     }
 
     private void ResumeGame()
