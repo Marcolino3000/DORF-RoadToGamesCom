@@ -2927,6 +2927,25 @@
 					</ObjectLists>
 				</MusicPlaylistContainer>
 				<MusicPlaylistContainer Name="MX_Dorffest" ID="{21DBD586-6252-44A4-BBBE-DA91466EE837}" ShortID="104265422">
+					<PropertyList>
+						<Property Name="IgnoreParentMaxSoundInstance" Type="bool" Value="True"/>
+						<Property Name="MaxReachedBehavior" Type="int16" Value="1"/>
+						<Property Name="MaxSoundPerInstance" Type="int16">
+							<ValueList>
+								<Value>1</Value>
+							</ValueList>
+						</Property>
+						<Property Name="UseMaxSoundPerInstance" Type="bool">
+							<ValueList>
+								<Value>True</Value>
+							</ValueList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-6</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{FC8C3FD2-3676-4122-94FC-894608C0FAB7}"/>
