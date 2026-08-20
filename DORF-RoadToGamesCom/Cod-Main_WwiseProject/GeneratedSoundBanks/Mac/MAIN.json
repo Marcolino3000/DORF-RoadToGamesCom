@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{57B6CA83-9CDB-12D5-79CB-BD00349A5583}",
+    "Hash": "{A1FB64F9-18CB-AD2A-8D05-5079051BA291}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
@@ -21,7 +21,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 00_MENU Start_LOOP_V01.wav",
-      "CachePath": "6D/{6D479B64-A489-CC0C-2D93-A94C90E6D994}.wem"
+      "CachePath": "14/{14B95E93-278E-D718-B567-98FB189D7101}.wem"
      },
      {
       "Id": "17809938",
@@ -29,7 +29,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Putback\\PROP_Smartphone_Putback-03_TS.wav",
-      "CachePath": "71/{71EF22B9-BE02-5618-B103-C1248C966EE7}.wem"
+      "CachePath": "2C/{2C23BE9C-9E9A-865D-2F53-D3D184120396}.wem"
      },
      {
       "Id": "36562100",
@@ -37,7 +37,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-02_TS.wav",
-      "CachePath": "36/{36713C74-882A-0A4B-341E-20BD33ED5D19}.wem"
+      "CachePath": "C1/{C1BCEE72-F015-A4C1-020D-5EBACF84C047}.wem"
      },
      {
       "Id": "47533369",
@@ -45,7 +45,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_CoD_DIALOG Neutral_LAY 01_LOOP_V01.wav",
-      "CachePath": "9F/{9F3A5A8A-4B70-0C67-2A21-F0284619068B}.wem"
+      "CachePath": "A3/{A3E3E30A-F61B-9FA4-4F46-998924C61DB0}.wem"
      },
      {
       "Id": "48143552",
@@ -53,7 +53,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_COD_DIALOG TRAURIG_LAY 02_LOOP_V03.wav",
-      "CachePath": "9D/{9DE0560F-365F-151B-CFB0-742445FA0C2F}.wem"
+      "CachePath": "B8/{B8193E30-7D89-C48A-365F-380CD20A5FF3}.wem"
      },
      {
       "Id": "51939227",
@@ -61,7 +61,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_CoD_DIALOG Neutral_LAY 02_INTRO_V01.wav",
-      "CachePath": "E9/{E95C0AAC-18F5-E94A-D6C1-EA592D27BAB7}.wem"
+      "CachePath": "09/{0998DB3F-3DE2-CD17-B5AD-EAFC39CAF79C}.wem"
      },
      {
       "Id": "61310738",
@@ -69,7 +69,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Open\\PROP_Door_House_Outside_Open-03_TS.wav",
-      "CachePath": "EC/{ECBC9C47-9A05-A34B-D8DA-4F93D671C545}.wem"
+      "CachePath": "C5/{C560C8F7-02FC-51E7-3782-59393F338BD2}.wem"
      },
      {
       "Id": "65537474",
@@ -77,7 +77,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_DORFFEST_LAY 02_V01.wav",
-      "CachePath": "FE/{FECDC71E-FD23-CECF-0E53-C8A0F6F70533}.wem"
+      "CachePath": "91/{91FADE62-F70C-CF69-461E-93851DFA2DB9}.wem"
      },
      {
       "Id": "68453810",
@@ -85,7 +85,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260819_CoD_SCHLAGER_LAY 01.wav",
-      "CachePath": "F3/{F3AD3AFA-3A30-D591-DCBF-19A74ECAEBC3}.wem"
+      "CachePath": "A1/{A1EB104C-B441-8012-955C-24870122F45D}.wem"
      },
      {
       "Id": "72473378",
@@ -93,7 +93,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_Slam-01_TS.wav",
-      "CachePath": "81/{81726142-947C-6416-5382-AD98500A1B55}.wem"
+      "CachePath": "0C/{0C74032F-AD0B-BE94-7321-073BD8C9E419}.wem"
      },
      {
       "Id": "73445871",
@@ -101,7 +101,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 01_B_Loopbereich 01_V01.wav",
-      "CachePath": "BB/{BBFCA8A6-8A52-6D72-E390-A1A895665B93}.wem"
+      "CachePath": "37/{37FA1E86-2C4D-3EA5-32A4-C0A4EE39EE3E}.wem"
      },
      {
       "Id": "102658884",
@@ -109,7 +109,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Click\\PROP_Smartphone_Click-02_TS.wav",
-      "CachePath": "0E/{0E79E502-D94D-C30E-400B-BF2EF61715D6}.wem"
+      "CachePath": "39/{39386B50-5D11-7943-32BB-3D7E42A19D9D}.wem"
      },
      {
       "Id": "150833971",
@@ -117,7 +117,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 00_MENU Start_INTRO_V01.wav",
-      "CachePath": "1D/{1DB62053-42CC-EF50-364E-5278CB7D0FE9}.wem"
+      "CachePath": "FC/{FC57F4D2-3870-33EF-216A-A3B22BFF8FEA}.wem"
      },
      {
       "Id": "157993529",
@@ -125,7 +125,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 03_LOOP_V01.wav",
-      "CachePath": "D0/{D0CD45AA-BEC8-ADEA-A602-ED1ED84CEEA3}.wem"
+      "CachePath": "15/{15CDEA33-CED5-992C-7EE2-4CA892FB2E71}.wem"
      },
      {
       "Id": "181891423",
@@ -133,7 +133,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 02_D_Loopbereich 02_V01.wav",
-      "CachePath": "32/{324212E1-C892-957B-BB60-E051C7FF9B4D}.wem"
+      "CachePath": "29/{290FF24D-4D59-1AAE-6542-84F6E7D159CC}.wem"
      },
      {
       "Id": "191428204",
@@ -141,7 +141,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 02_B_Loopbereich 01_V01.wav",
-      "CachePath": "86/{86DC7516-B9A2-4A9C-0F36-C77C66CA91A5}.wem"
+      "CachePath": "CE/{CEA11772-C7F7-2585-6C9B-BAD27445F395}.wem"
      },
      {
       "Id": "211809288",
@@ -149,7 +149,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_COD_DIALOG TRAURIG_LAY 01_INTRO_V03.wav",
-      "CachePath": "63/{63CCBB5B-E531-595E-E8C9-57AEB16DA1FE}.wem"
+      "CachePath": "FB/{FB793A24-92E4-606B-F9C2-0A552BD28613}.wem"
      },
      {
       "Id": "225013524",
@@ -157,7 +157,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Close\\PROP_Door_House_Outside_Close-03_TS.wav",
-      "CachePath": "82/{8207ED9C-0F10-E39B-F761-287225901744}.wem"
+      "CachePath": "9A/{9A81A82A-713D-CDC8-BFCA-254A632B82A2}.wem"
      },
      {
       "Id": "260953660",
@@ -165,7 +165,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 02_A_INTRO_V01.wav",
-      "CachePath": "B5/{B5B22503-FB1E-5243-CF68-63E220C9D8AD}.wem"
+      "CachePath": "66/{6604D68E-C211-200F-2D27-3592500714C9}.wem"
      },
      {
       "Id": "300077198",
@@ -173,7 +173,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 02_INTRO_V01.wav",
-      "CachePath": "31/{31B2194B-EB8B-70BD-355E-741CC8C8739E}.wem"
+      "CachePath": "E7/{E7266B31-44CF-24C2-04C8-2C32F058E518}.wem"
      },
      {
       "Id": "306826646",
@@ -181,7 +181,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Close\\PROP_Door_House_Inside_Close-01_TS.wav",
-      "CachePath": "32/{32BAB0E0-7A98-85AB-2564-A6E927EC2049}.wem"
+      "CachePath": "8E/{8E45E066-6D19-27BC-EBCE-A667B9520E58}.wem"
      },
      {
       "Id": "329418303",
@@ -189,7 +189,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 01_A_INTRO_V01.wav",
-      "CachePath": "8A/{8A599E80-8E06-D5E8-27D8-E015A1B38F0D}.wem"
+      "CachePath": "B6/{B6996808-46CC-2606-3AEF-3A683721B6D1}.wem"
      },
      {
       "Id": "404719519",
@@ -197,7 +197,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Open\\PROP_Door_House_Outside_Open-01_TS.wav",
-      "CachePath": "14/{1404C6E5-7268-4907-DD19-071A0A171FFF}.wem"
+      "CachePath": "D3/{D3A5F9D8-2CB7-E341-9072-1E0A882EA829}.wem"
      },
      {
       "Id": "415473060",
@@ -205,7 +205,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Open\\PROP_Door_House_Outside_Open-02_TS.wav",
-      "CachePath": "99/{99630C60-6B20-83D0-59FF-C557E02343D1}.wem"
+      "CachePath": "F6/{F6D6C300-7ED3-3CAB-B9C6-13C81DA8F3E1}.wem"
      },
      {
       "Id": "417471246",
@@ -213,7 +213,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-01_TS.wav",
-      "CachePath": "30/{303A6CF9-1F44-B3AD-6D6C-3DEE7673942C}.wem"
+      "CachePath": "89/{89670DAE-3205-C2BC-73B0-EBA40BB1D540}.wem"
      },
      {
       "Id": "428562537",
@@ -221,7 +221,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-04_TS.wav",
-      "CachePath": "62/{62A10832-AA3A-97C1-1CEC-94BD97470097}.wem"
+      "CachePath": "76/{7698403A-A171-B9AD-2524-AEA4CA7B1B21}.wem"
      },
      {
       "Id": "428836298",
@@ -229,7 +229,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 01_C_Transition zu D_V01.wav",
-      "CachePath": "D2/{D2035D48-36EA-A162-249B-B78BBC4FDAE5}.wem"
+      "CachePath": "06/{06B9CDCC-1E31-B8D6-9E98-92E76FEBA8F6}.wem"
      },
      {
       "Id": "479635857",
@@ -237,7 +237,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Dough_React_Shrink-01_TS.wav",
-      "CachePath": "C9/{C9C73E1E-DEE0-7094-6377-F28036E91E9D}.wem"
+      "CachePath": "96/{960BC3A2-A377-0BAE-4C4C-C27266A0F7FB}.wem"
      },
      {
       "Id": "483512497",
@@ -245,7 +245,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Click\\PROP_Smartphone_Click-04_TS.wav",
-      "CachePath": "A4/{A496AA64-DA33-DD31-D56C-31F86258DD1C}.wem"
+      "CachePath": "2B/{2BFC39BC-5131-1F71-BB74-F27D18A0BA32}.wem"
      },
      {
       "Id": "496018900",
@@ -253,7 +253,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260819_CoD_SCHLAGER_LAY 02.wav",
-      "CachePath": "DF/{DF0B9B88-B126-D560-1B74-321C22DBC228}.wem"
+      "CachePath": "C7/{C7CB5A74-345D-6715-4D86-C7A5CBC65666}.wem"
      },
      {
       "Id": "502037400",
@@ -261,7 +261,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 02_C_Transition zu D_V01.wav",
-      "CachePath": "3D/{3DBF353B-4282-CF12-F951-9C561EAC7C3D}.wem"
+      "CachePath": "AF/{AF2A861C-C682-5346-8DE3-D4146A38F016}.wem"
      },
      {
       "Id": "503337552",
@@ -269,7 +269,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Putback\\PROP_Smartphone_Putback-01_TS.wav",
-      "CachePath": "5F/{5FAD83F5-5C8C-0973-5B85-525E3165A052}.wem"
+      "CachePath": "A7/{A7969C20-ADA0-A2BD-D97E-BF16FE6FEC90}.wem"
      },
      {
       "Id": "505835401",
@@ -277,7 +277,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 01_INTRO_V01.wav",
-      "CachePath": "41/{41714BE4-1F40-9CF6-09E2-6FCCF69670CC}.wem"
+      "CachePath": "DB/{DBD99F38-6EE4-DBD7-E4E4-C023BB2944EC}.wem"
      },
      {
       "Id": "517659329",
@@ -285,7 +285,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 02_E_Transition back zu B_V01.wav",
-      "CachePath": "5E/{5EE48027-6BF2-5C03-3E78-09FDC0B13442}.wem"
+      "CachePath": "49/{4913F44B-793F-7B0F-C111-A721B8219345}.wem"
      },
      {
       "Id": "533745290",
@@ -293,7 +293,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-01_TS.wav",
-      "CachePath": "4C/{4C3A768E-D40C-B4B9-C6BF-736C76DBBCF0}.wem"
+      "CachePath": "B3/{B3C9598E-88CF-B81A-39F3-105C1BC7FC21}.wem"
      },
      {
       "Id": "558568173",
@@ -301,7 +301,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Dough_React_Grow-01_TS.wav",
-      "CachePath": "4B/{4BE15CD7-960A-8D22-F8AE-B555449AFDE7}.wem"
+      "CachePath": "54/{54C79EDF-FAEC-836C-73CC-BAECE6AD1E0E}.wem"
      },
      {
       "Id": "563776362",
@@ -309,7 +309,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-02_TS.wav",
-      "CachePath": "21/{216CBF34-7FEF-7EB0-C300-18CB7C84BE74}.wem"
+      "CachePath": "D1/{D1865306-E812-5CA6-EBE0-62D0F2A8586A}.wem"
      },
      {
       "Id": "563789316",
@@ -317,7 +317,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vehicles, Mechanism, Mercedes W108 1970, Button Radio, Select SND165003.wav",
-      "CachePath": "8F/{8F254C9B-4614-B79E-9744-4B8DDE86214D}.wem"
+      "CachePath": "0A/{0A337514-5A7A-1F31-BF48-0CF4042F8B40}.wem"
      },
      {
       "Id": "596546381",
@@ -325,7 +325,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_CoD_DIALOG Neutral_LAY 01_INTRO_V01.wav",
-      "CachePath": "31/{31B2194B-EB8B-70BD-355E-741CC8C8739E}.wem"
+      "CachePath": "E7/{E7266B31-44CF-24C2-04C8-2C32F058E518}.wem"
      },
      {
       "Id": "640226488",
@@ -333,7 +333,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Click\\PROP_Smartphone_Click-03_TS.wav",
-      "CachePath": "43/{43C45118-29C4-2A0C-8551-3E5CC9EE7C00}.wem"
+      "CachePath": "40/{4066F29B-F1B5-485E-9C5C-497411FCF328}.wem"
      },
      {
       "Id": "640322252",
@@ -341,7 +341,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Vehicles, Mechanism, Mercedes W108 1970, Button Radio, Select SND165003 1.wav",
-      "CachePath": "14/{144FC639-66D5-789E-82CE-1DB3529618DE}.wem"
+      "CachePath": "0B/{0B95FEC8-B320-C892-2CA0-9D64C88EF610}.wem"
      },
      {
       "Id": "640594092",
@@ -349,7 +349,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_SAUERTEIG_LAY 01_V01.wav",
-      "CachePath": "94/{94FBE51B-5CCE-F5AF-4008-1F6FC0F92D77}.wem"
+      "CachePath": "10/{105F0E1F-5510-1664-A649-D333DC1C25FF}.wem"
      },
      {
       "Id": "667562955",
@@ -357,7 +357,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Close\\PROP_Door_House_Inside_Close-02_TS.wav",
-      "CachePath": "83/{838BFA1E-41BB-BDA3-F19D-754BC19244D9}.wem"
+      "CachePath": "B2/{B2F50C4A-2DB0-C4A8-922F-6C4AFD21FB69}.wem"
      },
      {
       "Id": "727775959",
@@ -365,7 +365,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 01_LOOP_V01.wav",
-      "CachePath": "EA/{EA358D4C-3645-3ABD-E266-33D83DCE1ED4}.wem"
+      "CachePath": "17/{17F8A951-F8CF-9045-F128-A43E2DFE7EBA}.wem"
      },
      {
       "Id": "776297992",
@@ -373,7 +373,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_CoD_DIALOG Neutral_LAY 02_LOOP_V01.wav",
-      "CachePath": "64/{646B9CF7-D547-53A8-FB98-AAD69A8EC812}.wem"
+      "CachePath": "96/{9629E882-6B8F-26F1-2A71-27433C82FAEE}.wem"
      },
      {
       "Id": "800972599",
@@ -381,7 +381,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_DORFFEST_LAY 01_V01.wav",
-      "CachePath": "6E/{6E036537-B447-3ADB-7974-80766A71E506}.wem"
+      "CachePath": "BF/{BFF5BA4E-0DA6-1F7E-5DAB-770A0C5E50EA}.wem"
      },
      {
       "Id": "809434168",
@@ -389,7 +389,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 01_E_Transition back zu B_V01.wav",
-      "CachePath": "C5/{C5009640-3C4F-5856-F2F0-310B13DF6E84}.wem"
+      "CachePath": "5D/{5D6405D5-2118-6419-B0F5-8A1587A01B08}.wem"
      },
      {
       "Id": "837748890",
@@ -397,7 +397,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-03_TS.wav",
-      "CachePath": "61/{6146A81E-CBEA-07C0-6A9E-BB9E1A91EE8D}.wem"
+      "CachePath": "0B/{0B316115-AB44-267E-9EA2-CAB0640EF06E}.wem"
      },
      {
       "Id": "852356171",
@@ -405,7 +405,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_SAUERTEIG_LAY 02_V01.wav",
-      "CachePath": "71/{716E745F-C7FB-4023-7BDD-744F5897DE29}.wem"
+      "CachePath": "DB/{DBB3461C-AC6D-DE0E-4592-44BC47BAB3CE}.wem"
      },
      {
       "Id": "869974642",
@@ -413,7 +413,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-03_TS.wav",
-      "CachePath": "8E/{8E47068B-61AB-210D-974F-0D8AD5BDFFDA}.wem"
+      "CachePath": "E9/{E9C698C9-B047-4736-538B-1F2E311DD8DA}.wem"
      },
      {
       "Id": "882469003",
@@ -421,7 +421,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-02_TS.wav",
-      "CachePath": "E3/{E3F70A7F-9733-8E0E-D1AF-B040DFF1F49F}.wem"
+      "CachePath": "8A/{8ABAA319-6F8A-47B7-539D-3EA609784DBF}.wem"
      },
      {
       "Id": "888694663",
@@ -429,7 +429,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-01_TS.wav",
-      "CachePath": "9D/{9D7D7EB5-0077-D5A7-3639-28A58892BAE0}.wem"
+      "CachePath": "43/{43B14B89-2F67-410F-CEC0-9AA830434A4D}.wem"
      },
      {
       "Id": "904683675",
@@ -437,7 +437,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Close\\PROP_Door_House_Outside_Close-02_TS.wav",
-      "CachePath": "5E/{5E88186B-39C7-4F63-93FA-71BF6246BDED}.wem"
+      "CachePath": "64/{64BE0DE5-A37E-B957-D0EA-CB07F94A53BA}.wem"
      },
      {
       "Id": "910407773",
@@ -445,7 +445,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Bike_Click\\PROP_Bike_Click-03_TS.wav",
-      "CachePath": "3E/{3E44E9F4-D2FD-F6F1-F2F7-0C149DB43429}.wem"
+      "CachePath": "A4/{A4E88F81-F143-3B14-8D45-5EA318907D72}.wem"
      },
      {
       "Id": "926741885",
@@ -453,7 +453,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Putback\\PROP_Smartphone_Putback-02_TS.wav",
-      "CachePath": "31/{31CE082B-88D1-CA24-82C5-B225011D0CDA}.wem"
+      "CachePath": "ED/{ED61A933-11AC-B59E-696A-461D2674C158}.wem"
      },
      {
       "Id": "935716141",
@@ -461,7 +461,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_House_Outside_Close\\PROP_Door_House_Outside_Close-01_TS.wav",
-      "CachePath": "FA/{FA319CB4-808B-2675-8045-785AC8681528}.wem"
+      "CachePath": "17/{17795456-9F0A-FE98-0E1F-0F2FA9CE305F}.wem"
      },
      {
       "Id": "938844291",
@@ -469,7 +469,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Click\\PROP_Smartphone_Click-01_TS.wav",
-      "CachePath": "FE/{FE90BABE-0EC4-188C-9952-27874C9AF41C}.wem"
+      "CachePath": "26/{269AADD5-2AED-B131-6443-0E055E508975}.wem"
      },
      {
       "Id": "968318302",
@@ -477,7 +477,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 02_LOOP_V01.wav",
-      "CachePath": "9F/{9F3A5A8A-4B70-0C67-2A21-F0284619068B}.wem"
+      "CachePath": "A3/{A3E3E30A-F61B-9FA4-4F46-998924C61DB0}.wem"
      },
      {
       "Id": "972905932",
@@ -485,7 +485,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260809_CoD_Scene 02_LAY 01_D_Loopbereich 02_V01.wav",
-      "CachePath": "DD/{DD25F835-7CA6-E5A8-F63B-AA01464663A9}.wem"
+      "CachePath": "85/{8565D5C0-9ECC-168B-7775-A033BF874786}.wem"
      },
      {
       "Id": "977082520",
@@ -493,7 +493,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260806_CoD_Scene 01_LAY 03_INTRO_V01.wav",
-      "CachePath": "BF/{BF1D8941-B0D5-7131-0CC8-6BC96F9ACA0E}.wem"
+      "CachePath": "BC/{BCE48DA3-F4A3-F382-4969-8D16AFEFD56E}.wem"
      },
      {
       "Id": "1016399115",
@@ -501,7 +501,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Dough_React_Steady-01_TS.wav",
-      "CachePath": "F8/{F840F32A-0AFC-6B62-8E16-EAE6C7DD7E95}.wem"
+      "CachePath": "FB/{FB20DAA6-B202-F55C-4735-395B9B33B68F}.wem"
      },
      {
       "Id": "1039632174",
@@ -509,7 +509,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Close\\PROP_Door_House_Inside_Close-03_TS.wav",
-      "CachePath": "9F/{9FBA5DBB-3551-56D8-8BC0-94C9A7654461}.wem"
+      "CachePath": "68/{68DDC0BA-9D6A-FE4E-C6DD-0C6E21F8FDE6}.wem"
      },
      {
       "Id": "1045615547",
@@ -517,7 +517,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_COD_DIALOG TRAURIG_LAY 01_LOOP_V03.wav",
-      "CachePath": "2E/{2E72C435-304F-96D5-D599-B908197DB6D3}.wem"
+      "CachePath": "F8/{F8D7B987-020F-CB99-8C17-DB35570275C2}.wem"
      },
      {
       "Id": "1046350457",
@@ -525,7 +525,7 @@
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "260808_COD_DIALOG TRAURIG_LAY 02_INTRO_V03.wav",
-      "CachePath": "DC/{DC8BDAD7-067A-86C7-EDCF-883A2D5B5FC6}.wem"
+      "CachePath": "6D/{6DB89FF9-266E-1C59-3146-0E72566DE13F}.wem"
      }
     ],
     "Plugins": {
@@ -1335,6 +1335,6 @@
     ]
    }
   ],
-  "FileHash": "{BD2A2AF4-64A2-0992-B6DF-521E32E4FCD5}"
+  "FileHash": "{7B968DAB-F0B9-D3F4-6634-AE258DC742AD}"
  }
 }
