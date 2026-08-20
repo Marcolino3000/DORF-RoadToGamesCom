@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{CD33BAB3-3CFE-4567-A250-45FD13CC970E}" SchemaVersion="133">
 	<MixingSessions>
-		<WorkUnit Name="Default Work Unit" ID="{CD33BAB3-3CFE-4567-A250-45FD13CC970E}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{CD33BAB3-3CFE-4567-A250-45FD13CC970E}" PersistMode="Standalone">
+			<ChildrenList>
+				<MixingSession Name="New Mixing Session" ID="{914C0689-1959-4F00-93B5-747AAA95A6C1}">
+					<ObjectList>
+						<ObjectRef Name="MX_Scene02" ID="{FE93ED77-998F-4FCC-8A66-03BB2E447490}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+						<ObjectRef Name="MX_Scene 01" ID="{D01E5586-8583-4A6C-AFED-1ABFC39BBEE4}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+					</ObjectList>
+				</MixingSession>
+			</ChildrenList>
+		</WorkUnit>
 	</MixingSessions>
 </WwiseDocument>
