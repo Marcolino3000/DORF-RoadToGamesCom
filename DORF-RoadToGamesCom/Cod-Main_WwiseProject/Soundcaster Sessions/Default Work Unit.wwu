@@ -46,12 +46,20 @@
 							<Position X="2" Y="2"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="MUS_StartScreen_Start" ID="{7BE06B1E-1838-445E-8EA6-B4D4386D2015}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+							<Position X="2" Y="3"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 							<Position X="3" Y="0"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="MUS_Schlager_Stop" ID="{6C70B354-A73F-47E4-84EA-2324234B9581}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="MX_Scene 02_B_LOOP 01" ID="{6ECE4306-FAC0-4FEF-8BE9-85B519D09A8D}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+							<Position X="3" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>

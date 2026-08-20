@@ -90,6 +90,10 @@ namespace UI
 
         // The memo that is loaded — playing or paused. Null means nothing is loaded.
         private ContactMessage playingMessage;
+        // The conversation the loaded memo came from. A memo keeps running when the visitor backs
+        // out to the chat list or opens another chat, so the autoplay chain has to be followed
+        // against this list rather than against whatever conversation happens to be on screen.
+        private Contact playingContact;
         private bool isPaused;
         // The realised row of the playing memo, so the progress fill can be updated without a
         // rebind. ListView recycles rows, so bindItem is what keeps this honest.
@@ -711,10 +715,14 @@ namespace UI
                 return;
             }
 
-            PlayVoice(message);
+            PlayVoice(message, currentContact);
         }
 
-        private void PlayVoice(ContactMessage message)
+        /// <param name="owner">
+        /// The conversation <paramref name="message"/> sits in. Held for as long as the memo runs,
+        /// so leaving the chat does not cut it off or lose the rest of its run.
+        /// </param>
+        private void PlayVoice(ContactMessage message, Contact owner)
         {
             var entry = ResolveEntry(message);
             if (entry == null)
@@ -746,6 +754,7 @@ namespace UI
                 voiceAudioSource.volume = audioSettings != null ? audioSettings.GetDialogVolume() : 1f;
                 voiceAudioSource.Play();
                 playingMessage = message;
+                playingContact = owner;
             }
 
             isPaused = false;
@@ -827,6 +836,7 @@ namespace UI
         {
             if (voiceAudioSource != null) voiceAudioSource.Stop();
             playingMessage = null;
+            playingContact = null;
             playingRefs = null;
             isPaused = false;
             loadedTakeIndex = 0;
@@ -875,7 +885,7 @@ namespace UI
             var next = NextMessage(finished);
             if (next != null && next.IsVoice && next.sender == finished.sender && ResolveEntry(next) != null)
             {
-                PlayVoice(next);
+                PlayVoice(next, playingContact);
                 return;
             }
 
@@ -892,12 +902,13 @@ namespace UI
         /// True once every memo of the run that <paramref name="last"/> closes has played to its end.
         /// Both of Marianne's memos sit on screen together, so a visitor can start with the second
         /// one — and the title sequence must not carry them off before they have heard the first.
-        /// Also false for a memo that no longer belongs to the open conversation, which is what
-        /// keeps an abandoned memo from ever reaching the event.
+        /// Read against the memo's own conversation, not the open one, so a run that plays out
+        /// while the visitor is back on the chat list still counts as heard. Only <see cref="StopVoice"/>
+        /// drops that conversation, which is what keeps an abandoned memo from reaching the event.
         /// </summary>
         private bool RunFullyHeard(ContactMessage last)
         {
-            var messages = currentContact?.messages;
+            var messages = playingContact?.messages;
             if (messages == null) return false;
 
             var index = messages.IndexOf(last);
@@ -919,7 +930,7 @@ namespace UI
 
         private ContactMessage NextMessage(ContactMessage message)
         {
-            var messages = currentContact?.messages;
+            var messages = playingContact?.messages;
             if (messages == null) return null;
             var index = messages.IndexOf(message);
             if (index < 0 || index + 1 >= messages.Count) return null;
@@ -1168,9 +1179,9 @@ namespace UI
 
         private void ShowChatPage(Contact c)
         {
-            // Same reasoning as CloseChat: a memo from the previous conversation must not keep the
-            // state machine pointed at a message this contact's list does not contain.
-            if (currentContact != c) StopVoice();
+            // A memo from the previous conversation keeps playing; it belongs to playingContact,
+            // not to the page on screen. BindMessagesList drops playingRefs with the row pool, and
+            // the bind on the way back re-attaches it.
             currentContact = c;
             MarkIncomingAsRead(c);
             if (chatsPage != null) chatsPage.style.display = DisplayStyle.None;
@@ -1201,10 +1212,9 @@ namespace UI
 
         private void CloseChat()
         {
-            // Backing out abandons the memo. Leaving it running would strand playingMessage on a
-            // conversation that is no longer open, and NextMessage would then find nothing and
-            // report the run as finished — sending the visitor to Scene 2 mid-story.
-            StopVoice();
+            // Backing out leaves the memo running, the way a messenger keeps playing when the
+            // conversation is closed. The run stays on its own conversation via playingContact,
+            // so it still finishes properly and hands over to the title sequence.
             currentContact = null;
             if (chatsPage != null) chatsPage.style.display = DisplayStyle.Flex;
             if (chatPage != null) chatPage.style.display = DisplayStyle.None;
