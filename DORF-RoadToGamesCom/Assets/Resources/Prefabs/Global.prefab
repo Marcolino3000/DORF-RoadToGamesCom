@@ -1319,6 +1319,28 @@ MonoBehaviour:
       groupIdInternal: 0
       groupGuidInternal: 
       WwiseObjectReference: {fileID: 0}
+  menuOpened:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+  menuClosed:
+    wwiseEvent:
+      idInternal: 0
+      valueGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
+    state:
+      idInternal: 0
+      valueGuidInternal: 
+      groupIdInternal: 0
+      groupGuidInternal: 
+      WwiseObjectReference: {fileID: 0}
   debugLogs: 1
 --- !u!1 &4629316433298895278
 GameObject:

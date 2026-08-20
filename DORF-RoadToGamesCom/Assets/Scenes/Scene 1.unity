@@ -962,6 +962,11 @@ MonoBehaviour:
     WwiseObjectReference: {fileID: 0}
   clip: {fileID: 8300000, guid: 8d01ff57537944a919a1100e078ac91e, type: 3}
   audioSource: {fileID: 530899148}
+  blinkSprite: {fileID: 0}
+  blinkCount: 2
+  fadeOutDuration: 0.15
+  fadeInDuration: 0.15
+  pauseBetweenBlinks: 0.1
   debugLogs: 1
 --- !u!1 &842933715
 GameObject:
@@ -1440,8 +1445,8 @@ Transform:
   m_GameObject: {fileID: 1196388396}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 103.38, y: 250.96922, z: -6.3172693}
-  m_LocalScale: {x: 0.7, y: 0.7, z: 0.7}
+  m_LocalPosition: {x: 103.47, y: 248.42, z: -1.66}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 912237559}
@@ -2724,7 +2729,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5006207499298608966, guid: 32e79fbbada77d94e83cf6c98293e36a, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6174864888769040165, guid: 32e79fbbada77d94e83cf6c98293e36a, type: 3}
       propertyPath: m_LocalScale.x

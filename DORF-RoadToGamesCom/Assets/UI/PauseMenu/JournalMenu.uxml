@@ -1,4 +1,4 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=e8fecb0beda7148afa390dcdd8f4db62&amp;type=3#MainMenuStyle" />
-    <ui:VisualElement name="journalMenu" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/Questlog/Quest_Log_vorher.png?fileID=2800000&amp;guid=89fc21fd55b3649ca9421347f4409b57&amp;type=3#Quest_Log_vorher&quot;); background-color: rgba(0, 0, 0, 0);" />
+    <Style src="project://database/Assets/UI/PauseMenu/MainMenuStyle.uss?fileID=7433441132597879392&amp;guid=e8fecb0beda7148afa390dcdd8f4db62&amp;type=3#MainMenuStyle" />
+    <ui:VisualElement name="journalMenu" style="flex-grow: 1; background-image: url(&quot;project://database/Assets/UI/PauseMenu/UI_Game_over_Gamescom_Screen_abs_v01.png?fileID=2800000&amp;guid=01f968eb427e848ee8e2f9780c51cdef&amp;type=3#UI_Game_over_Gamescom_Screen_abs_v01&quot;); background-color: rgba(0, 0, 0, 0);" />
 </ui:UXML>
