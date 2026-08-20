@@ -821,7 +821,6 @@
 								</Action>
 							</ChildrenList>
 						</Event>
-						<Event Name="AMB_Train_Announcement" ID="{9234FE90-DD3C-451E-BE73-9B6999A44DDB}"/>
 						<Event Name="AMB_Train_Announcement_Play" ID="{511EAD47-48BF-4998-B46E-93D2C2441D42}">
 							<ChildrenList>
 								<Action Name="" ID="{C450857A-078C-4943-B9FE-DEBD03B2FC30}" ShortID="1001523584">

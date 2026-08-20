@@ -15,7 +15,6 @@ namespace AK
     {
         static const AkUniqueID AMB_SCENE2_START = 312587073U;
         static const AkUniqueID AMB_SCENE2_STOP = 1791858939U;
-        static const AkUniqueID AMB_TRAIN_ANNOUNCEMENT = 2405870914U;
         static const AkUniqueID AMB_TRAIN_ANNOUNCEMENT_PLAY = 2248201771U;
         static const AkUniqueID AMB_TRAIN_START = 2535910433U;
         static const AkUniqueID AMB_TRAIN_STOP = 2049158747U;

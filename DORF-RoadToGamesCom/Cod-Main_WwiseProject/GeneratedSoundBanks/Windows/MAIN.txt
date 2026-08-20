@@ -17,7 +17,6 @@ Event	ID	Name			Wwise Object Path	Notes
 	2061060223	MUS_Sauerteig_Start_2C			\Default Work Unit\MX\MUS_Sauerteig_Start_2C	
 	2248201771	AMB_Train_Announcement_Play			\Default Work Unit\AMB\AMB_Train_Announcement_Play	
 	2371375953	Door_House_Outside_Close			\Default Work Unit\Props\Door_House_Outside_Close	
-	2405870914	AMB_Train_Announcement			\Default Work Unit\AMB\AMB_Train_Announcement	
 	2535910433	AMB_Train_Start			\Default Work Unit\AMB\AMB_Train_Start	
 	2558363198	Dough_React_Steady_Stop			\Default Work Unit\Props\Dough\Dough_React_Steady_Stop	
 	2690086085	MUS_Schlager_Stop			\Default Work Unit\MX\MUS_Schlager_Stop	

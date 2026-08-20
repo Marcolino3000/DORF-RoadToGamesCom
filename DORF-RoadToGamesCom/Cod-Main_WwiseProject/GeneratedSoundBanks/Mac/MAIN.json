@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{D3C1304C-B3F5-1AB7-93DB-C9524F08D569}",
+    "Hash": "{DEF79AA5-9D5C-C069-BC7F-F3F021346D04}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
@@ -821,16 +821,6 @@
       "Name": "AMB_Scene2_Stop",
       "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Scene2_Stop",
       "GUID": "{37738BBB-8EBB-4509-998D-FC7055E8799D}",
-      "MaxAttenuation": "0",
-      "DurationType": "OneShot",
-      "DurationMin": "0",
-      "DurationMax": "0"
-     },
-     {
-      "Id": "2405870914",
-      "Name": "AMB_Train_Announcement",
-      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Train_Announcement",
-      "GUID": "{9234FE90-DD3C-451E-BE73-9B6999A44DDB}",
       "MaxAttenuation": "0",
       "DurationType": "OneShot",
       "DurationMin": "0",
@@ -1683,6 +1673,6 @@
     ]
    }
   ],
-  "FileHash": "{42AFDDFC-6A6B-7BF6-FD3A-0843965E55FE}"
+  "FileHash": "{473E954F-5BB4-C672-8D29-EEE091821BC0}"
  }
 }
