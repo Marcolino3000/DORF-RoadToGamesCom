@@ -15,6 +15,8 @@ namespace AK
     {
         static const AkUniqueID AMB_SCENE2_START = 312587073U;
         static const AkUniqueID AMB_SCENE2_STOP = 1791858939U;
+        static const AkUniqueID AMB_TRAIN_ANNOUNCEMENT = 2405870914U;
+        static const AkUniqueID AMB_TRAIN_ANNOUNCEMENT_PLAY = 2248201771U;
         static const AkUniqueID AMB_TRAIN_START = 2535910433U;
         static const AkUniqueID AMB_TRAIN_STOP = 2049158747U;
         static const AkUniqueID BIKE_CLICK = 2930347891U;
@@ -159,6 +161,7 @@ namespace AK
         static const AkUniqueID MX_LAY_03 = 3314336632U;
         static const AkUniqueID MX_NO_DX = 2543366352U;
         static const AkUniqueID SFX = 393239870U;
+        static const AkUniqueID VOICE = 3170124113U;
     } // namespace BUSSES
 
     namespace AUDIO_DEVICES

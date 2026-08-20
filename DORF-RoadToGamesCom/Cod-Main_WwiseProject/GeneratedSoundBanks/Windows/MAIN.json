@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{08376E99-D0A0-A33F-2289-B5933811213D}",
+    "Hash": "{31A892DB-AC01-BE96-4A99-3D92F536DAF7}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
@@ -343,6 +343,14 @@
       "Location": "Memory",
       "ShortName": "PROP_Door_House_Inside_Open\\PROP_Door_House_Inside_Open-01_TS.wav",
       "CachePath": "B3/{B3C9598E-88CF-B81A-39F3-105C1BC7FC21}.wem"
+     },
+     {
+      "Id": "534685987",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "AMB_Train_Announcement-02_TS.wav",
+      "CachePath": "F0/{F04332BB-32A4-D629-210C-1B9B91AA4346}.wem"
      },
      {
       "Id": "558568173",
@@ -805,6 +813,40 @@
           }
          ]
         }
+       }
+      ]
+     },
+     {
+      "Id": "1791858939",
+      "Name": "AMB_Scene2_Stop",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Scene2_Stop",
+      "GUID": "{37738BBB-8EBB-4509-998D-FC7055E8799D}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2405870914",
+      "Name": "AMB_Train_Announcement",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Train_Announcement",
+      "GUID": "{9234FE90-DD3C-451E-BE73-9B6999A44DDB}",
+      "MaxAttenuation": "0",
+      "DurationType": "OneShot",
+      "DurationMin": "0",
+      "DurationMax": "0"
+     },
+     {
+      "Id": "2248201771",
+      "Name": "AMB_Train_Announcement_Play",
+      "ObjectPath": "\\Events\\Default Work Unit\\AMB\\AMB_Train_Announcement_Play",
+      "GUID": "{511EAD47-48BF-4998-B46E-93D2C2441D42}",
+      "DurationType": "OneShot",
+      "DurationMin": "7.462375",
+      "DurationMax": "7.462375",
+      "MediaRefs": [
+       {
+        "Id": "534685987"
        }
       ]
      },
@@ -1641,6 +1683,6 @@
     ]
    }
   ],
-  "FileHash": "{464AC9FD-92F8-ED6B-C884-72DF7243169C}"
+  "FileHash": "{1D4C7902-5916-525F-4427-A3B1B58997B7}"
  }
 }

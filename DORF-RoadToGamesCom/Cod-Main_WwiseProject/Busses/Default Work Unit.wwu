@@ -317,6 +317,9 @@
 							</ObjectLists>
 						</Bus>
 						<Bus Name="SFX" ID="{FECD4348-B230-4BB9-9FE4-DD2AEA7CBD8D}">
+							<ChildrenList>
+								<Bus Name="Voice" ID="{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}"/>
+							</ChildrenList>
 							<ObjectLists>
 								<ObjectList Name="RTPC">
 									<RTPC Name="" ID="{FB072A1D-FDF5-49B6-BF02-A6B28089292B}" ShortID="741331">

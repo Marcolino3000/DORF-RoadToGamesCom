@@ -31,6 +31,7 @@ Audio Bus	ID	Name			Wwise Object Path	Notes
 	2171211849	MX_DX			\Default Work Unit\Main Audio Bus\Music\MX_DX	
 	2246998526	Main Audio Bus			\Default Work Unit\Main Audio Bus	
 	2543366352	MX_NO DX			\Default Work Unit\Main Audio Bus\Music\MX_NO DX	
+	3170124113	Voice			\Default Work Unit\Main Audio Bus\SFX\Voice	
 	3314336632	MX_LAY 03			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 03	
 	3314336633	MX_LAY 02			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 02	
 	3314336634	MX_LAY 01			\Default Work Unit\Main Audio Bus\Music\MX_NO DX\MX_LAY 01	

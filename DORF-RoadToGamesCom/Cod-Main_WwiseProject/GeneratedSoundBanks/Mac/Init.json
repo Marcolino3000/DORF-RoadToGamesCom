@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{701ECBBD-9C7B-4030-8CDB-749EE5D1C7B9}",
     "Language": "SFX",
-    "Hash": "{8DF305A0-97B5-7477-EFAE-BAA16AFED4AE}",
+    "Hash": "{983AE4D2-1033-6585-682E-D5ECD7E81D4D}",
     "ObjectPath": "Init",
     "ShortName": "Init",
     "Path": "Init.bnk",
@@ -70,6 +70,12 @@
       "Name": "MX_NO DX",
       "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\Music\\MX_NO DX",
       "GUID": "{27DC0D20-34AA-4833-B833-CD317D6F7D65}"
+     },
+     {
+      "Id": "3170124113",
+      "Name": "Voice",
+      "ObjectPath": "\\Busses\\Default Work Unit\\Main Audio Bus\\SFX\\Voice",
+      "GUID": "{5A409E4D-8A3E-4A52-ABD1-89CF8685E784}"
      },
      {
       "Id": "3314336632",
@@ -271,6 +277,6 @@
     ]
    }
   ],
-  "FileHash": "{578624E0-7A9A-959D-302F-EC7DA01C92EE}"
+  "FileHash": "{1BC891D4-379D-73E9-B48A-5AC591B1F599}"
  }
 }

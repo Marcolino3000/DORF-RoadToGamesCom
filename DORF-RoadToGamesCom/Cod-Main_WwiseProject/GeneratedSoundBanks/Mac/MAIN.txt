@@ -9,12 +9,15 @@ Event	ID	Name			Wwise Object Path	Notes
 	1233864094	Dough_React_Steady_Start			\Default Work Unit\Props\Dough\Dough_React_Steady_Start	
 	1360862177	Smartphone_Click			\Default Work Unit\Props\Smartphone_Click	
 	1555599282	MUS_DorffestJingle_Start			\Default Work Unit\MX\MUS_DorffestJingle_Start	
+	1791858939	AMB_Scene2_Stop			\Default Work Unit\AMB\AMB_Scene2_Stop	
 	1822647189	Dough_React_Shrink_Stop			\Default Work Unit\Props\Dough\Dough_React_Shrink_Stop	
 	1886026323	MUS_SWITCH_SUBMENU			\Default Work Unit\MX\MUS_SWITCH_SUBMENU	
 	2007948846	MUS_Scene2_Start			\Default Work Unit\MX\MUS_Scene2_Start	
 	2049158747	AMB_Train_Stop			\Default Work Unit\AMB\AMB_Train_Stop	
 	2061060223	MUS_Sauerteig_Start_2C			\Default Work Unit\MX\MUS_Sauerteig_Start_2C	
+	2248201771	AMB_Train_Announcement_Play			\Default Work Unit\AMB\AMB_Train_Announcement_Play	
 	2371375953	Door_House_Outside_Close			\Default Work Unit\Props\Door_House_Outside_Close	
+	2405870914	AMB_Train_Announcement			\Default Work Unit\AMB\AMB_Train_Announcement	
 	2535910433	AMB_Train_Start			\Default Work Unit\AMB\AMB_Train_Start	
 	2558363198	Dough_React_Steady_Stop			\Default Work Unit\Props\Dough\Dough_React_Steady_Stop	
 	2690086085	MUS_Schlager_Stop			\Default Work Unit\MX\MUS_Schlager_Stop	
@@ -104,6 +107,7 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	507115265	Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510	.cache\96\{96CFCA2B-D314-57A0-1C68-64CDCD25B6A8}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510		100449
 	517659330	LAY 02	.cache\49\{4913F44B-793F-7B0F-C111-A721B8219345}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_E_T\LAY 02		75287
 	533745290	PROP_Door_House_Inside_Open-01_TS	.cache\B3\{B3C9598E-88CF-B81A-39F3-105C1BC7FC21}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-01_TS		7023
+	534685987	AMB_Train_Announcement-02_TS	.cache\F0\{F04332BB-32A4-D629-210C-1B9B91AA4346}.wem		\Containers\Tristan\Voice\AMB_Train_Announcement-02_TS		39579
 	558568173	PROP_Dough_React_Grow-01_TS	.cache\54\{54C79EDF-FAEC-836C-73CC-BAECE6AD1E0E}.wem		\Containers\Tristan\Props\PROP_Dough_React_Grow-01_TS		105359
 	563776362	PROP_Bike_Click-02_TS	.cache\D1\{D1865306-E812-5CA6-EBE0-62D0F2A8586A}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-02_TS		18226
 	563789316	MX	.cache\0A\{0A337514-5A7A-1F31-BF48-0CF4042F8B40}.wem		\Containers\MX\MX_Schlager\Schlager OFF\MX		10818

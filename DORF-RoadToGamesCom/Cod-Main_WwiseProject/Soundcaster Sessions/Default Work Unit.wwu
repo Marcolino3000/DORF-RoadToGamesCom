@@ -38,6 +38,10 @@
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="AMB_Train_Announcement-02_TS" ID="{8827C936-2685-4B90-91D8-37229D4828A8}" WorkUnitID="{186C3CE4-EAD0-467C-99B8-9ED99785DCB9}"/>
+							<Position X="1" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="MUS_Dialog_Start" ID="{B202DD63-A5D5-4D15-9DD4-B8A47C1C2287}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 							<Position X="2" Y="0"/>
 						</Module>
