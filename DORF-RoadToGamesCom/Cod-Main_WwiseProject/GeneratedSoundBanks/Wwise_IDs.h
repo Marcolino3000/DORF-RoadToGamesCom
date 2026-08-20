@@ -13,6 +13,8 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID AMB_TRAIN_START = 2535910433U;
+        static const AkUniqueID AMB_TRAIN_STOP = 2049158747U;
         static const AkUniqueID BIKE_CLICK = 2930347891U;
         static const AkUniqueID DOOR_HOUSE_INSIDE_CLOSE = 3073992842U;
         static const AkUniqueID DOOR_HOUSE_INSIDE_OPEN = 2909751214U;
@@ -45,6 +47,18 @@ namespace AK
 
     namespace STATES
     {
+        namespace SCENE02_LOCATION
+        {
+            static const AkUniqueID GROUP = 1275572957U;
+
+            namespace STATE
+            {
+                static const AkUniqueID INDOOR = 340398852U;
+                static const AkUniqueID NONE = 748895195U;
+                static const AkUniqueID OUTDOOR = 144697359U;
+            } // namespace STATE
+        } // namespace SCENE02_LOCATION
+
         namespace ST_MX_CONTEXT
         {
             static const AkUniqueID GROUP = 3782072948U;

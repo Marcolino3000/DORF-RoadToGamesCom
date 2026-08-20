@@ -1,5 +1,6 @@
 State Group	ID	Name			Wwise Object Path	Notes
 	1071146488	ST_MX_DX_LEVEL			\ST_MX\ST_MX_DX_LEVEL	
+	1275572957	SCENE02_location			\Default Work Unit\SCENE02_location	
 	2631721963	ST_MX_DX			\ST_MX\ST_MX_DX	
 	3782072948	ST_MX_Context			\ST_MX\ST_MX_Context	
 
@@ -7,6 +8,9 @@ State	ID	Name	State Group			Notes
 	748895195	None	ST_MX_DX_LEVEL			
 	844249216	DX_SAD	ST_MX_DX_LEVEL			
 	900128073	DX_Neutral	ST_MX_DX_LEVEL			
+	144697359	outdoor	SCENE02_location			
+	340398852	indoor	SCENE02_location			
+	748895195	None	SCENE02_location			
 	581119096	NODX	ST_MX_DX			
 	748895195	None	ST_MX_DX			
 	1836525785	DX	ST_MX_DX			

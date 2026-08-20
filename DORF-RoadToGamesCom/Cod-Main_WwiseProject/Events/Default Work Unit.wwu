@@ -298,6 +298,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{1AB77DDF-04DF-4E9C-8A5C-3548C3F5BCEC}" ShortID="772769147">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Train_Stop" ID="{D833D8A4-C0FE-4D21-9B13-367F73AC9B59}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
@@ -438,6 +448,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{374A0A66-CA47-4F22-9D83-98A7337BB070}" ShortID="721600906">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="41"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="AMB_Train_Start" ID="{79163D66-A3D4-4288-8C12-38454167002A}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
@@ -699,6 +719,64 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="HANDY" ID="{A0029079-77A0-4A41-95F0-FF31040DC2B9}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+					</ChildrenList>
+				</Folder>
+				<Folder Name="AMB" ID="{05091E25-7FD7-4604-933D-03D3EB2762D0}" ShortID="330687572">
+					<ChildrenList>
+						<Event Name="AMB_Train_Start" ID="{79163D66-A3D4-4288-8C12-38454167002A}">
+							<ChildrenList>
+								<Action Name="" ID="{C1E0CC0F-8930-45FF-9ADB-EE18A64CBD28}" ShortID="793586431">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Train_int-amb2" ID="{3AE77C38-AD88-4878-9144-36FFB7E74121}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{14FEBB68-5425-473C-90BD-7C3C93855376}" ShortID="186231092">
+									<PropertyList>
+										<Property Name="FadeInCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Train_INT_Amb" ID="{61563637-455E-4B2E-A75D-34F3BBF417DA}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+							</ChildrenList>
+						</Event>
+						<Event Name="AMB_Train_Stop" ID="{D833D8A4-C0FE-4D21-9B13-367F73AC9B59}">
+							<ChildrenList>
+								<Action Name="" ID="{80301B6E-7609-47BB-939A-1A44FB54013F}" ShortID="886407185">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Train_int-amb2" ID="{3AE77C38-AD88-4878-9144-36FFB7E74121}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{E25C8B6B-97A2-4C47-BC51-CFDB1ABE1B8D}" ShortID="507714575">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="2"/>
+										<Property Name="FadeOutCurve" Type="int16" Value="1"/>
+										<Property Name="FadeTime" Type="Real64" Value="2"/>
+										<Property Name="Scope" Type="int16" Value="1"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="Train_INT_Amb" ID="{61563637-455E-4B2E-A75D-34F3BBF417DA}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>

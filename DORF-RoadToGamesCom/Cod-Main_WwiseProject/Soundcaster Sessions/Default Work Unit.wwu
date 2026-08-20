@@ -54,6 +54,10 @@
 							<Position X="2" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="Train_int-amb2" ID="{3AE77C38-AD88-4878-9144-36FFB7E74121}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+							<Position X="2" Y="5"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -64,6 +68,10 @@
 						<Module>
 							<ObjectRef Name="MX_Scene 02_B_LOOP 01" ID="{6ECE4306-FAC0-4FEF-8BE9-85B519D09A8D}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
 							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Train_INT_Amb" ID="{61563637-455E-4B2E-A75D-34F3BBF417DA}" WorkUnitID="{5D17B0AD-A037-41DA-A608-42D4117BE0A6}"/>
+							<Position X="3" Y="5"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="MUS_DialogTraurig_Start" ID="{7C9ABD37-007A-4364-8079-95349B799B9F}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
