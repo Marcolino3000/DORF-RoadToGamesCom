@@ -282,6 +282,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{2D92C993-1AB3-4679-9A18-0D31244D6B73}" ShortID="85166801">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="MUS_Schlager_Start" ID="{AA70A239-103A-441C-B2A6-E893606E66D9}">
@@ -408,6 +418,16 @@
 										</Reference>
 									</ReferenceList>
 								</Action>
+								<Action Name="" ID="{BCD61D48-2B8A-45B0-8932-216AFC487BF3}" ShortID="546614099">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 							</ChildrenList>
 						</Event>
 						<Event Name="MUS_Sauerteig_Start_2C" ID="{D1DF8237-AE69-4285-B891-89F8E1ED53A8}">
@@ -525,6 +545,16 @@
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="MUS_SWITCH_GAMEPLAY" ID="{38683CBD-8671-4ADC-926C-8EFEA3077F87}" WorkUnitID="{6C5FC797-15DD-460F-90E9-38AA8309780D}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
+								<Action Name="" ID="{37319C32-A4F6-4CE3-A4DF-F878802331D5}" ShortID="972949990">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="NODX" ID="{45A061BB-2CA2-452B-85A5-AF3F93079E01}" WorkUnitID="{EFE9FC55-B4BE-46E5-B5D7-72850724DBFB}"/>
 										</Reference>
 									</ReferenceList>
 								</Action>
