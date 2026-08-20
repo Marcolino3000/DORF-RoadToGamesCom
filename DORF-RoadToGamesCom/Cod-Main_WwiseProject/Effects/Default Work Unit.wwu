@@ -27,6 +27,7 @@
 					<PropertyList>
 						<Property Name="Max" Type="Real32" Value="-20"/>
 						<Property Name="Min" Type="Real32" Value="-50"/>
+						<Property Name="ReleaseTime" Type="Real32" Value="2.5"/>
 					</PropertyList>
 					<ReferenceList>
 						<Reference Name="GameParameter">
