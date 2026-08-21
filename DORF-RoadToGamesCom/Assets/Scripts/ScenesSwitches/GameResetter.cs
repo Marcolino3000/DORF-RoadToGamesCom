@@ -1,4 +1,5 @@
 using System.Reflection;
+using Runtime.Scripts.Core;
 using Runtime.Scripts.Interactables;
 using Runtime.Scripts.PlayerInput;
 using SceneManagement;
@@ -38,6 +39,10 @@ namespace ScenesSwitches
         [Tooltip("Sits on the Global prefab as well. Left empty she is looked up once, on the first reset.")]
         [SerializeField] private PlayerController player;
 
+        [Header("Scripted sequences")]
+        [Tooltip("On the Global prefab as well. Left empty it is looked up once, on the first reset.")]
+        [SerializeField] private SequenceRunner sequenceRunner;
+
         private bool _resetRunning;
         private bool _startPoseKnown;
         private Vector3 _startLocalPosition;
@@ -66,6 +71,8 @@ namespace ScenesSwitches
             ResetInteractables();
 
             ResetSauerteig();
+
+            AbortRunningSequence();
 
             // The player character must not walk around while the screen fades out.
             PlayerController.EnableMovement(false);
@@ -166,10 +173,41 @@ namespace ScenesSwitches
             // drops the running move coroutine and zeroes the velocity
             player.MoveInDirection(Vector2.zero);
 
+            // MoveByClick keeps its own idea of whether the agent is on its way, and it is the one
+            // that tells everybody else when a walk has ended. Resetting the path behind its back
+            // leaves it waiting on a movement that can never end.
+            var moveByClick = player.GetComponent<MoveByClick>();
+
+            if (moveByClick != null)
+            {
+                moveByClick.CancelMovement();
+                return;
+            }
+
             var agent = player.GetComponent<NavMeshAgent>();
 
             if (agent != null && agent.enabled && agent.isOnNavMesh)
                 agent.ResetPath();
+        }
+
+        /// <summary>
+        /// A scripted sequence holds the mouse input while it walks Marlene around - the Raycaster
+        /// swallows every click as long as one is running. SequenceRunner rides on the Global prefab,
+        /// so a sequence the visitor walked out on keeps its coroutine, and its input lock, right
+        /// across the scene swap into the next play-through.
+        /// </summary>
+        private void AbortRunningSequence()
+        {
+            if (sequenceRunner == null)
+                sequenceRunner = FindFirstObjectByType<SequenceRunner>(FindObjectsInactive.Include);
+
+            if (sequenceRunner == null)
+            {
+                Debug.LogWarning("GameResetter: no SequenceRunner found, a running sequence keeps the input.");
+                return;
+            }
+
+            sequenceRunner.AbortSequence();
         }
 
         /// <summary>
