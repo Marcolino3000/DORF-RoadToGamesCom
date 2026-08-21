@@ -1093,7 +1093,7 @@ MonoBehaviour:
   blinkCount: 2
   fadeOutDuration: 0.15
   fadeInDuration: 0.15
-  pauseBetweenBlinks: 0.6
+  pauseBetweenBlinks: 0.3
   debugLogs: 1
 --- !u!1 &842933715
 GameObject:
@@ -1993,6 +1993,7 @@ GameObject:
   - component: {fileID: 1552280895}
   - component: {fileID: 1552280894}
   - component: {fileID: 1552280896}
+  - component: {fileID: 1552280897}
   m_Layer: 0
   m_Name: SceneTransitionManager
   m_TagString: Untagged
@@ -2056,6 +2057,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69e1810a6fc44d4ea44994c4bf484bcd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.DialogClickSkipDisabler
+--- !u!114 &1552280897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1552280893}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062a2baca504f314587deea850792c07, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: AK.Wwise.Unity.MonoBehaviour::AkGameObj
+  m_listeners:
+    initialListenerList: []
+    useDefaultListeners: 1
+  isEnvironmentAware: 1
+  isStaticObject: 0
+  usePositionOffsetData: 0
+  m_positionOffsetData:
+    KeepMe: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+  scalingFactor: 1
+  m_posOffsetData: {fileID: 0}
+  listenerMask: 1
 --- !u!1 &1700000010
 GameObject:
   m_ObjectHideFlags: 0

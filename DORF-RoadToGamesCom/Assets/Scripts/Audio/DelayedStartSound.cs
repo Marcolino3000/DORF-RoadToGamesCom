@@ -1,12 +1,16 @@
 using System.Collections;
+using Runtime.Scripts.Interactables;
 using ScenesSwitches;
+using UI;
 using UnityEngine;
 
 namespace Audio
 {
     /// <summary>
-    /// Spielt einen Sound eine feste Zeit nachdem der Startscreen verschwunden ist, und blinkt dazu
-    /// das Sprite im Child zweimal weg und wieder herein.
+    /// Erinnert den Visitor an sein Handy: eine feste Zeit nachdem der Startscreen verschwunden
+    /// ist, spielt ein Sound und das Sprite im Child blinkt zweimal weg und wieder herein. Das
+    /// wiederholt sich im festen Takt, bis das Handy zum ersten Mal geöffnet wird — danach nie
+    /// wieder, der Hinweis hat ja sein Ziel erreicht.
     ///
     /// Der Startscreen liegt über der bereits geladenen Szene 1, dieses Objekt existiert also
     /// schon, während der Visitor noch seine Sprache wählt. Gezählt wird ab
@@ -14,15 +18,19 @@ namespace Audio
     /// wenn es fertig ausgeblendet ist. Wer ab dem Ende des Ausblendens messen will, rechnet die
     /// Fade-Dauer des StartSplash auf <see cref="delaySeconds"/> drauf.
     ///
-    /// Kiosk-Reset lädt Szene 1 neu, also wird das Objekt neu gebaut und der Timer läuft wieder von
-    /// vorne. Läuft die Szene ohne Startscreen (Editor-Iteration, kein Startbild hinterlegt), holt
-    /// <see cref="Start"/> das nach, damit der Sound nicht ganz ausfällt.
+    /// Kiosk-Reset lädt Szene 1 neu, also wird das Objekt samt "Handy war offen"-Merker neu
+    /// gebaut und der Hinweis läuft für den nächsten Visitor wieder an. <see cref="OnSceneSetup"/>
+    /// setzt den Merker zusätzlich explizit zurück, damit das auch dann stimmt, wenn der Reset
+    /// später einmal ohne Szenenwechsel auskommt. Läuft die Szene ohne Startscreen
+    /// (Editor-Iteration, kein Startbild hinterlegt), holt <see cref="Start"/> den Anstoß nach.
     /// </summary>
-    public class DelayedStartSound : MonoBehaviour
+    public class DelayedStartSound : MonoBehaviour, ISceneSetupCallbackReceiver
     {
         [Header("Timing")]
-        [Tooltip("Sekunden zwischen dem Verschwinden des Startscreens und dem Sound.")]
+        [Tooltip("Sekunden zwischen dem Verschwinden des Startscreens und dem ersten Hinweis.")]
         [SerializeField] private float delaySeconds = 4f;
+        [Tooltip("Sekunden zwischen zwei Hinweisen, solange das Handy nicht geöffnet wurde.")]
+        [SerializeField] private float repeatIntervalSeconds = 10f;
 
         [Header("Sound — Wwise-Event oder AudioClip, je nachdem was gesetzt ist")]
         [SerializeField] private AK.Wwise.Event wwiseEvent;
@@ -33,7 +41,7 @@ namespace Audio
         [Header("Blinken")]
         [Tooltip("Optional. Bleibt das leer, wird der erste SpriteRenderer in den Children benutzt.")]
         [SerializeField] private SpriteRenderer blinkSprite;
-        [Tooltip("Wie oft das Sprite weg- und wieder hereinblendet.")]
+        [Tooltip("Wie oft das Sprite pro Hinweis weg- und wieder hereinblendet.")]
         [SerializeField] private int blinkCount = 2;
         [Tooltip("Sekunden für das Ausblenden auf Alpha 0.")]
         [SerializeField] private float fadeOutDuration = 0.15f;
@@ -44,9 +52,14 @@ namespace Audio
 
         [SerializeField] private bool debugLogs;
 
-        private Coroutine countdown;
+        private Coroutine reminders;
         private Coroutine blink;
-        private bool alreadyPlayed;
+
+        /// <summary>
+        /// Einmal true, bleibt es true: der Hinweis ist angekommen, auch wenn das Handy wieder zu
+        /// ist. Instanzfeld und kein static, damit der nächste Visitor bei null anfängt.
+        /// </summary>
+        private bool smartphoneWasOpened;
 
         // Das Sprite darf absichtlich halbtransparent sein — eingeblendet wird auf den Wert zurück,
         // der beim Start dran stand, nicht pauschal auf 1.
@@ -56,19 +69,18 @@ namespace Audio
         private void OnEnable()
         {
             StartSplash.OnHidden += HandleStartScreenHidden;
+            Smartphone.OnOpenStateChanged += HandleSmartphoneOpenStateChanged;
         }
 
         private void OnDisable()
         {
             StartSplash.OnHidden -= HandleStartScreenHidden;
+            Smartphone.OnOpenStateChanged -= HandleSmartphoneOpenStateChanged;
+
+            StopReminders();
 
             // Ein Abbruch mitten im Blinken darf das Sprite nicht unsichtbar zurücklassen.
-            if (blink != null)
-            {
-                StopCoroutine(blink);
-                blink = null;
-                SetAlpha(baseAlpha);
-            }
+            StopBlinking();
         }
 
         private void Start()
@@ -81,22 +93,52 @@ namespace Audio
                 HandleStartScreenHidden();
         }
 
-        private void HandleStartScreenHidden()
+        /// <summary>
+        /// Läuft bei jedem Szenenload und beim Inaktivitäts-Reset; SceneSetup findet das Objekt
+        /// über FindObjectsByType, es braucht also keine Verdrahtung. Fasst die laufenden Hinweise
+        /// nicht an — beim Szenenload ist hier noch keiner gestartet (Start läuft danach), und
+        /// beim Reset wird die Szene ohnehin neu gebaut.
+        /// </summary>
+        public void OnSceneSetup()
         {
-            if (alreadyPlayed || countdown != null)
-                return;
-
-            countdown = StartCoroutine(PlayAfterDelay());
+            smartphoneWasOpened = false;
+            StopBlinking();
         }
 
-        private IEnumerator PlayAfterDelay()
+        private void HandleStartScreenHidden()
+        {
+            if (reminders != null || smartphoneWasOpened)
+                return;
+
+            reminders = StartCoroutine(RemindUntilPhoneOpened());
+        }
+
+        private void HandleSmartphoneOpenStateChanged(bool open)
+        {
+            if (!open || smartphoneWasOpened)
+                return;
+
+            smartphoneWasOpened = true;
+            StopReminders();
+
+            if (debugLogs)
+                Debug.Log($"{nameof(DelayedStartSound)}: Handy geöffnet, keine weiteren Hinweise.", this);
+        }
+
+        private IEnumerator RemindUntilPhoneOpened()
         {
             yield return new WaitForSeconds(delaySeconds);
 
-            countdown = null;
-            alreadyPlayed = true;
+            // Der Takt zählt ab dem Abspielen, nicht ab dem Ende des Blinkens — bei einem Blink von
+            // unter einer Sekunde ist der Unterschied nicht zu sehen, aber der Abstand bleibt fest.
+            while (!smartphoneWasOpened)
+            {
+                Play();
 
-            Play();
+                yield return new WaitForSeconds(repeatIntervalSeconds);
+            }
+
+            reminders = null;
         }
 
         [ContextMenu("Play")]
@@ -131,7 +173,16 @@ namespace Audio
             if (!played)
                 Debug.LogWarning($"{nameof(DelayedStartSound)} auf {name}: weder Wwise-Event noch AudioClip zugewiesen.", this);
             else if (debugLogs)
-                Debug.Log($"{nameof(DelayedStartSound)}: Sound {delaySeconds}s nach dem Startscreen abgespielt.", this);
+                Debug.Log($"{nameof(DelayedStartSound)}: Hinweis abgespielt.", this);
+        }
+
+        private void StopReminders()
+        {
+            if (reminders == null)
+                return;
+
+            StopCoroutine(reminders);
+            reminders = null;
         }
 
         private void StartBlinking()
@@ -148,6 +199,18 @@ namespace Audio
                 StopCoroutine(blink);
 
             blink = StartCoroutine(BlinkRoutine());
+        }
+
+        private void StopBlinking()
+        {
+            if (blink != null)
+            {
+                StopCoroutine(blink);
+                blink = null;
+            }
+
+            if (baseAlphaKnown)
+                SetAlpha(baseAlpha);
         }
 
         private IEnumerator BlinkRoutine()
