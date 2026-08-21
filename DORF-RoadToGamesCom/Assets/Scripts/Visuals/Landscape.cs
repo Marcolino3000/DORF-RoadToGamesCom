@@ -60,6 +60,23 @@ namespace DefaultNamespace
 
         private Coroutine slowDownCoroutine;
 
+        // The authored scroll speed, kept so SpeedFactor still reads 1 at full pelt after
+        // SlowDown() has written scrollSpeed down. Captured before anything can brake.
+        private float fullScrollSpeed;
+
+        private void Awake()
+        {
+            fullScrollSpeed = scrollSpeed;
+        }
+
+        /// <summary>
+        /// Current scroll speed as a fraction of the authored one: 1 while the train runs, ramping
+        /// to 0 across <see cref="SlowDown"/>. Anything that moves *with* the train rather than
+        /// merely alongside it — Marlene rocking in her seat — takes its own speed from this
+        /// instead of watching for the brake itself.
+        /// </summary>
+        public float SpeedFactor => fullScrollSpeed > 0f ? scrollSpeed / fullScrollSpeed : 0f;
+
         private void Start()
         {
             ApplySortingOrder();
