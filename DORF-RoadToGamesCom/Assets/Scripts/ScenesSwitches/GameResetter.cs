@@ -3,6 +3,7 @@ using Runtime.Scripts.Interactables;
 using Runtime.Scripts.PlayerInput;
 using SceneManagement;
 using UnityEngine;
+using UnityEngine.AI;
 using UnityEngine.SceneManagement;
 
 namespace ScenesSwitches
@@ -33,7 +34,14 @@ namespace ScenesSwitches
                  "asset keeps whatever the finished play-through left on it, so it has to be written back.")]
         [SerializeField] private AwarenessLevel lockedAwarenessLevel = AwarenessLevel.Basic;
 
+        [Header("Marlene")]
+        [Tooltip("Sits on the Global prefab as well. Left empty she is looked up once, on the first reset.")]
+        [SerializeField] private PlayerController player;
+
         private bool _resetRunning;
+        private bool _startPoseKnown;
+        private Vector3 _startLocalPosition;
+        private Quaternion _startLocalRotation;
 
         /// <summary>
         /// Entry point for InputDispatcher.OnGameReset.
@@ -61,6 +69,8 @@ namespace ScenesSwitches
 
             // The player character must not walk around while the screen fades out.
             PlayerController.EnableMovement(false);
+
+            StopPlayer();
 
             RestartAtFirstScene();
         }
@@ -142,6 +152,108 @@ namespace ScenesSwitches
                 Debug.Log("GameResetter: Sauerteig locked again and jar hidden");
         }
 
+        /// <summary>
+        /// Cancels whatever Marlene was doing when the reset came in. The click-to-move NavMeshAgent
+        /// keeps its destination across the scene load and PlayerController's move coroutine keeps
+        /// running, so without this she walks off the start position again the moment movement is
+        /// switched back on.
+        /// </summary>
+        private void StopPlayer()
+        {
+            if (!FindPlayer())
+                return;
+
+            // drops the running move coroutine and zeroes the velocity
+            player.MoveInDirection(Vector2.zero);
+
+            var agent = player.GetComponent<NavMeshAgent>();
+
+            if (agent != null && agent.enabled && agent.isOnNavMesh)
+                agent.ResetPath();
+        }
+
+        /// <summary>
+        /// Puts Marlene back on the pose that stands in the Global prefab. She rides on that prefab,
+        /// which is DontDestroyOnLoad, so nothing about a scene load moves her on its own - the next
+        /// visitor would start wherever the last one left her.
+        ///
+        /// This runs once the first scene is back, not before the swap: the agent can only be warped
+        /// onto a NavMesh that is loaded, and the start position belongs to the first scene rather
+        /// than the one the visitor abandoned.
+        /// </summary>
+        private void MovePlayerToStart()
+        {
+            ReadStartPose();
+
+            if (!_startPoseKnown || !FindPlayer())
+                return;
+
+            var marlene = player.transform;
+            var agent = player.GetComponent<NavMeshAgent>();
+
+            var target = marlene.parent != null
+                ? marlene.parent.TransformPoint(_startLocalPosition)
+                : _startLocalPosition;
+
+            // Warp is what puts the agent's own idea of where it stands back in sync. Writing the
+            // transform alone leaves that behind and the agent pulls her back towards the old spot.
+            // It refuses positions its NavMesh does not cover, and then the transform has to do.
+            var warped = agent != null && agent.enabled && agent.Warp(target);
+
+            if (!warped)
+                marlene.localPosition = _startLocalPosition;
+
+            marlene.localRotation = _startLocalRotation;
+
+            var body = player.GetComponent<Rigidbody>();
+
+            if (body != null && !body.isKinematic)
+            {
+                body.linearVelocity = Vector3.zero;
+                body.angularVelocity = Vector3.zero;
+            }
+
+            if (debugLogs)
+                Debug.Log($"GameResetter: Marlene back at {marlene.localPosition}, warped: {warped}");
+        }
+
+        /// <summary>
+        /// Read out of the prefab asset itself - the same one the Bootstrapper spawns - so it is the
+        /// value that stands in Global, no matter what the finished play-through did to the live
+        /// object or how late this is called.
+        /// </summary>
+        private void ReadStartPose()
+        {
+            if (_startPoseKnown)
+                return;
+
+            var prefab = Resources.Load<GameObject>("Prefabs/Global");
+            var prefabPlayer = prefab != null ? prefab.GetComponentInChildren<PlayerController>(true) : null;
+
+            if (prefabPlayer == null)
+            {
+                Debug.LogWarning("GameResetter: no PlayerController under Resources/Prefabs/Global, " +
+                                 "Marlene keeps her position.");
+                return;
+            }
+
+            _startLocalPosition = prefabPlayer.transform.localPosition;
+            _startLocalRotation = prefabPlayer.transform.localRotation;
+            _startPoseKnown = true;
+        }
+
+        private bool FindPlayer()
+        {
+            if (player == null)
+                player = FindFirstObjectByType<PlayerController>(FindObjectsInactive.Include);
+
+            if (player != null)
+                return true;
+
+            Debug.LogWarning("GameResetter: no PlayerController found, Marlene keeps her position.");
+            return false;
+        }
+
         private void RestartAtFirstScene()
         {
             SceneManager.sceneLoaded += HandleFirstSceneLoaded;
@@ -154,6 +266,8 @@ namespace ScenesSwitches
         private void HandleFirstSceneLoaded(Scene scene, LoadSceneMode mode)
         {
             SceneManager.sceneLoaded -= HandleFirstSceneLoaded;
+
+            MovePlayerToStart();
 
             // StartSplash subscribes to sceneLoaded in Awake, so it has already put itself back up
             // by now and owns movement until it fades. Only when there is no start image at all —
