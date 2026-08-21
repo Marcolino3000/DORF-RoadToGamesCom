@@ -772,6 +772,7 @@ GameObject:
   m_Component:
   - component: {fileID: 27109656}
   - component: {fileID: 27109657}
+  - component: {fileID: 27109658}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1 (31)
   m_TagString: Untagged
@@ -852,6 +853,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &27109658
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 27109655}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.329586, z: 0.20000003}
+  m_Center: {x: -1.35, y: 24.664793, z: 0.0000038146973}
 --- !u!1 &39440552
 GameObject:
   m_ObjectHideFlags: 0
@@ -8053,6 +8075,7 @@ GameObject:
   m_Component:
   - component: {fileID: 141304560}
   - component: {fileID: 141304561}
+  - component: {fileID: 141304562}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1 (1)
   m_TagString: Untagged
@@ -8133,6 +8156,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &141304562
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141304559}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.329586, z: 0.20000003}
+  m_Center: {x: -1.55, y: 24.664793, z: -0.0000038146973}
 --- !u!1 &151234284
 GameObject:
   m_ObjectHideFlags: 0
@@ -8512,6 +8556,7 @@ GameObject:
   m_Component:
   - component: {fileID: 157356249}
   - component: {fileID: 157356250}
+  - component: {fileID: 157356251}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_holzstaemme_lay01_abs
   m_TagString: Untagged
@@ -8592,6 +8637,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &157356251
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 157356248}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.87, y: 20, z: 0.20000003}
+  m_Center: {x: 0, y: 8.491334, z: 0}
 --- !u!1 &158128780
 GameObject:
   m_ObjectHideFlags: 0
@@ -9940,6 +10006,7 @@ GameObject:
   m_Component:
   - component: {fileID: 184464439}
   - component: {fileID: 184464440}
+  - component: {fileID: 184464441}
   m_Layer: 0
   m_Name: mittleres Gras 1 (44)
   m_TagString: Untagged
@@ -10020,6 +10087,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &184464441
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 184464438}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3.82, z: 0.2}
+  m_Center: {x: 0, y: 1.9099995, z: -0.0000013113022}
 --- !u!1001 &185315403
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10362,6 +10450,7 @@ GameObject:
   m_Component:
   - component: {fileID: 192917836}
   - component: {fileID: 192917837}
+  - component: {fileID: 192917838}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1 (4)
   m_TagString: Untagged
@@ -10442,6 +10531,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &192917838
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 192917835}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.32958, z: 0.2}
+  m_Center: {x: 1.02, y: 24.66479, z: 0}
 --- !u!1 &194939794
 GameObject:
   m_ObjectHideFlags: 0
@@ -11638,6 +11748,7 @@ GameObject:
   m_Component:
   - component: {fileID: 221481676}
   - component: {fileID: 221481677}
+  - component: {fileID: 221481678}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_01_lay01_abs 1 (4)
   m_TagString: Untagged
@@ -11718,6 +11829,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &221481678
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221481675}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.88, z: 0.2}
+  m_Center: {x: -1.5, y: 24.94, z: 0}
 --- !u!1 &223651745
 GameObject:
   m_ObjectHideFlags: 0
@@ -17352,6 +17484,7 @@ GameObject:
   m_Component:
   - component: {fileID: 376747024}
   - component: {fileID: 376747025}
+  - component: {fileID: 376747026}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_04_lay01_abs (1)
   m_TagString: Untagged
@@ -17432,6 +17565,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &376747026
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 376747023}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 7.42, z: 0.2}
+  m_Center: {x: 0, y: 3.71, z: 0}
 --- !u!1 &377910839
 GameObject:
   m_ObjectHideFlags: 0
@@ -23013,6 +23167,7 @@ GameObject:
   m_Component:
   - component: {fileID: 388883260}
   - component: {fileID: 388883261}
+  - component: {fileID: 388883262}
   m_Layer: 0
   m_Name: mittleres Gras 1 (46)
   m_TagString: Untagged
@@ -23093,6 +23248,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &388883262
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388883259}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3.8199997, z: 0.19999999}
+  m_Center: {x: 0, y: 1.9099996, z: 0.0000007301569}
 --- !u!1 &389752322
 GameObject:
   m_ObjectHideFlags: 0
@@ -27427,6 +27603,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 364503681}
+  - {fileID: 1684446710}
   m_Father: {fileID: 1069369891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &466043256
@@ -28979,6 +29156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 496640803}
   - component: {fileID: 496640804}
+  - component: {fileID: 496640805}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_02_lay01_abs
   m_TagString: Untagged
@@ -29059,6 +29237,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &496640805
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496640802}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.67, y: 21.449999, z: 0.2}
+  m_Center: {x: 0, y: 10.724999, z: 0.00000047683716}
 --- !u!1 &496652183
 GameObject:
   m_ObjectHideFlags: 0
@@ -31088,6 +31287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 528114730}
   - component: {fileID: 528114731}
+  - component: {fileID: 528114732}
   m_Layer: 0
   m_Name: mittleres Gras 1 (76)
   m_TagString: Untagged
@@ -31168,6 +31368,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &528114732
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 528114729}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3.8199997, z: 0.19999999}
+  m_Center: {x: 0.0000038146973, y: 1.9099996, z: -0.0000014305115}
 --- !u!1 &531620434
 GameObject:
   m_ObjectHideFlags: 0
@@ -36750,6 +36971,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &638378749
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 638378750}
+  - component: {fileID: 638378751}
+  m_Layer: 0
+  m_Name: Collider for navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &638378750
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638378749}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1606810927}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &638378751
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 638378749}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 35.03, y: 20, z: 0.2}
+  m_Center: {x: 0, y: 10.1, z: 0}
 --- !u!1 &639460079
 GameObject:
   m_ObjectHideFlags: 0
@@ -39394,6 +39668,7 @@ GameObject:
   m_Component:
   - component: {fileID: 695527332}
   - component: {fileID: 695527333}
+  - component: {fileID: 695527334}
   m_Layer: 0
   m_Name: Hortensie 2 (16)
   m_TagString: Untagged
@@ -39474,6 +39749,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &695527334
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 695527331}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 6.66, z: 0.2}
+  m_Center: {x: 0, y: 3.33, z: 0}
 --- !u!1 &698047634
 GameObject:
   m_ObjectHideFlags: 0
@@ -45738,6 +46034,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1017827908}
+  - {fileID: 1619613255}
   m_Father: {fileID: 1069369891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &727532094
@@ -45978,6 +46275,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &733046756
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 733046757}
+  - component: {fileID: 733046758}
+  m_Layer: 0
+  m_Name: Collider for navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &733046757
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733046756}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2069970376}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &733046758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 733046756}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 25.8, y: 28.67, z: 5.8}
+  m_Center: {x: 0, y: 0, z: 1.15}
 --- !u!1 &733411619
 GameObject:
   m_ObjectHideFlags: 0
@@ -51581,6 +51931,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798036303}
   - component: {fileID: 798036304}
+  - component: {fileID: 798036305}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_01_lay01_abs
   m_TagString: Untagged
@@ -51661,6 +52012,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &798036305
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798036302}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 46.853024, z: 0.2}
+  m_Center: {x: -3.02, y: 23.426512, z: 0}
 --- !u!1 &798231561
 GameObject:
   m_ObjectHideFlags: 0
@@ -51671,6 +52043,7 @@ GameObject:
   m_Component:
   - component: {fileID: 798231562}
   - component: {fileID: 798231563}
+  - component: {fileID: 798231564}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_01_lay01_abs
   m_TagString: Untagged
@@ -51751,6 +52124,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &798231564
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798231561}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 9.95, z: 0.2}
+  m_Center: {x: 1.18, y: 4.975, z: 0}
 --- !u!1 &800761398
 GameObject:
   m_ObjectHideFlags: 0
@@ -52994,6 +53388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 828146502}
   - component: {fileID: 828146503}
+  - component: {fileID: 828146504}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_01_lay01_abs 1
   m_TagString: Untagged
@@ -53074,6 +53469,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &828146504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 828146501}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 11.49, y: 58.3, z: 46.4}
+  m_Center: {x: 0, y: 24.94, z: 0}
 --- !u!1 &830727544
 GameObject:
   m_ObjectHideFlags: 0
@@ -55518,6 +55934,7 @@ GameObject:
   m_Component:
   - component: {fileID: 914732450}
   - component: {fileID: 914732449}
+  - component: {fileID: 914732451}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_06_lay01_abs
   m_TagString: Untagged
@@ -55598,6 +56015,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 985317178}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &914732451
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 914732448}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 42.19, z: 0.2}
+  m_Center: {x: 0.02, y: 21.095, z: 0.0000019073486}
 --- !u!1 &916700515
 GameObject:
   m_ObjectHideFlags: 0
@@ -59718,6 +60156,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1001171208}
   - component: {fileID: 1001171209}
+  - component: {fileID: 1001171210}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_05_lay01_abs
   m_TagString: Untagged
@@ -59798,6 +60237,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1001171210
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001171207}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 11.050717, z: 0.2}
+  m_Center: {x: 0, y: 5.5253587, z: 0}
 --- !u!1 &1001356028
 GameObject:
   m_ObjectHideFlags: 0
@@ -65868,6 +66328,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1125654154}
   - component: {fileID: 1125654155}
+  - component: {fileID: 1125654156}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_03_lay01_abs
   m_TagString: Untagged
@@ -65948,6 +66409,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1125654156
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1125654153}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 27.16, z: 0.2}
+  m_Center: {x: 0.91, y: 13.58, z: 0}
 --- !u!1 &1130665316
 GameObject:
   m_ObjectHideFlags: 0
@@ -66138,6 +66620,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1138246848}
   - component: {fileID: 1138246849}
+  - component: {fileID: 1138246850}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_01_lay01_abs 1 (2)
   m_TagString: Untagged
@@ -66218,6 +66701,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1138246850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1138246847}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.88, z: 0.2}
+  m_Center: {x: -1.54, y: 24.94, z: 0}
 --- !u!4 &1145095685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2459043860723191969, guid: 103fff18e44c343b090b4928e416cd4a, type: 3}
@@ -66688,6 +67192,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1163979564}
   - component: {fileID: 1163979565}
+  - component: {fileID: 1163979566}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_03_lay01_abs
   m_TagString: Untagged
@@ -66768,6 +67273,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1163979566
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1163979563}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 20, z: 0.2}
+  m_Center: {x: 0.000015258789, y: 7.18, z: 0.0000038146973}
 --- !u!1 &1164703183
 GameObject:
   m_ObjectHideFlags: 0
@@ -69639,6 +70165,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1212445185}
   - component: {fileID: 1212445186}
+  - component: {fileID: 1212445187}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1 (5)
   m_TagString: Untagged
@@ -69719,6 +70246,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1212445187
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1212445184}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.329586, z: 0.20000003}
+  m_Center: {x: 1.66, y: 24.664793, z: 0}
 --- !u!1 &1212623525
 GameObject:
   m_ObjectHideFlags: 0
@@ -72107,6 +72655,59 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af10d5b363b08468082fb93188628d24, type: 3}
+--- !u!1 &1280563098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1280563099}
+  - component: {fileID: 1280563100}
+  m_Layer: 0
+  m_Name: Collider for navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1280563099
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280563098}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1600118691}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1280563100
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1280563098}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 7.38, y: 30, z: 0.2}
+  m_Center: {x: 0.96, y: 0, z: 0}
 --- !u!1 &1280796752
 GameObject:
   m_ObjectHideFlags: 0
@@ -72657,6 +73258,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288406356}
   - component: {fileID: 1288406357}
+  - component: {fileID: 1288406358}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_baumstumpf_03_lay01_abs
   m_TagString: Untagged
@@ -72737,6 +73339,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1288406358
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288406355}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2.55, y: 20, z: 0.2}
+  m_Center: {x: -1.08, y: 3.61, z: 0.0000038146973}
 --- !u!1 &1288651101
 GameObject:
   m_ObjectHideFlags: 0
@@ -72747,6 +73370,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1288651102}
   - component: {fileID: 1288651103}
+  - component: {fileID: 1288651104}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_05_lay01_abs (1)
   m_TagString: Untagged
@@ -72827,6 +73451,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1288651104
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1288651101}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 60.060005, z: 0.2}
+  m_Center: {x: 2.3, y: 30.030003, z: 0.0000019073486}
 --- !u!1 &1288932294
 GameObject:
   m_ObjectHideFlags: 0
@@ -75085,6 +75730,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1332434330}
   - component: {fileID: 1332434331}
+  - component: {fileID: 1332434332}
   m_Layer: 0
   m_Name: Zaun2 (1)
   m_TagString: Untagged
@@ -75165,6 +75811,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1332434332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1332434329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 15.01, y: 20, z: 0.20000029}
+  m_Center: {x: 0, y: -0.0000009536743, z: -0.000015258789}
 --- !u!1 &1332480712
 GameObject:
   m_ObjectHideFlags: 0
@@ -76141,7 +76808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.ExpressionTrigger
   serializationData:
-    SerializedFormat: 0
+    SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -84956,6 +85623,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1460104890}
   - component: {fileID: 1460104891}
+  - component: {fileID: 1460104892}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_baumstumpf_02_lay01_abs
   m_TagString: Untagged
@@ -85036,6 +85704,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1460104892
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1460104889}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 8.1, z: 0.2}
+  m_Center: {x: 1.42, y: 4.05, z: -0.0000076293945}
 --- !u!1 &1461359111
 GameObject:
   m_ObjectHideFlags: 0
@@ -86050,6 +86739,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1485141498}
   - component: {fileID: 1485141499}
+  - component: {fileID: 1485141500}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_07_lay01_abs
   m_TagString: Untagged
@@ -86130,6 +86820,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1485141500
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1485141497}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 10.92, z: 0.2}
+  m_Center: {x: -1.64, y: 5.46, z: 0}
 --- !u!1 &1487498474
 GameObject:
   m_ObjectHideFlags: 0
@@ -86702,6 +87413,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1501762800}
   - component: {fileID: 1501762801}
+  - component: {fileID: 1501762802}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1 (6)
   m_TagString: Untagged
@@ -86782,6 +87494,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1501762802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1501762799}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.329586, z: 0.20000003}
+  m_Center: {x: -1.38, y: 24.664793, z: 0}
 --- !u!1 &1501830054
 GameObject:
   m_ObjectHideFlags: 0
@@ -87655,6 +88388,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1533723703}
   - component: {fileID: 1533723704}
+  - component: {fileID: 1533723705}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_06_lay01_abs
   m_TagString: Untagged
@@ -87735,6 +88469,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1533723705
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533723702}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 33.21, z: 0.2}
+  m_Center: {x: -1.83, y: 16.605, z: 0}
 --- !u!1 &1535860154
 GameObject:
   m_ObjectHideFlags: 0
@@ -89360,6 +90115,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1576442020}
   - component: {fileID: 1576442021}
+  - component: {fileID: 1576442022}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_04_lay01_abs (1)
   m_TagString: Untagged
@@ -89440,6 +90196,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1576442022
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576442019}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 48.08, z: 0.2}
+  m_Center: {x: 1.5, y: 24.04, z: 0.0000038146973}
 --- !u!1 &1577243109
 GameObject:
   m_ObjectHideFlags: 0
@@ -90228,6 +91005,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1588931288}
   - component: {fileID: 1588931289}
+  - component: {fileID: 1588931290}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_04_lay01_abs
   m_TagString: Untagged
@@ -90308,6 +91086,52 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!61 &1588931290
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1588931287}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_CompositeOperation: 0
+  m_CompositeOrder: 0
+  m_Offset: {x: 1.59, y: 24.04}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0}
+    oldSize: {x: 32.11594, y: 48.08}
+    newSize: {x: 32.11594, y: 48.08}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Size: {x: 2, y: 48.08}
+  m_EdgeRadius: 0
 --- !u!1 &1590324126
 GameObject:
   m_ObjectHideFlags: 0
@@ -91046,6 +91870,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1595860319}
   - component: {fileID: 1595860320}
+  - component: {fileID: 1595860321}
   m_Layer: 0
   m_Name: Zaun1
   m_TagString: Untagged
@@ -91126,6 +91951,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1595860321
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1595860318}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 82.52831, y: 8.139999, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0.0000019073486}
 --- !u!1 &1599007550
 GameObject:
   m_ObjectHideFlags: 0
@@ -91189,6 +92035,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1582590651}
+  - {fileID: 1280563099}
   m_Father: {fileID: 1069369891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1600118692
@@ -91429,6 +92276,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 152030371}
+  - {fileID: 638378750}
   m_Father: {fileID: 1069369891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1608266016
@@ -91892,6 +92740,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1619613254
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1619613255}
+  - component: {fileID: 1619613256}
+  m_Layer: 0
+  m_Name: Collider for navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1619613255
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619613254}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 727532093}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1619613256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1619613254}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 17.68, z: 1}
+  m_Center: {x: -0.6, y: 7.35, z: 0}
 --- !u!1 &1621749826
 GameObject:
   m_ObjectHideFlags: 0
@@ -93865,6 +94766,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1675341924}
   - component: {fileID: 1675341925}
+  - component: {fileID: 1675341926}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_01_lay01_abs (1)
   m_TagString: Untagged
@@ -93945,6 +94847,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1675341926
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1675341923}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 20, z: 0.2}
+  m_Center: {x: 0, y: 4.975, z: -0.0000009536743}
 --- !u!1 &1679719708
 GameObject:
   m_ObjectHideFlags: 0
@@ -94262,6 +95185,59 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1684446709
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1684446710}
+  - component: {fileID: 1684446711}
+  m_Layer: 0
+  m_Name: Collider for navmesh
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1684446710
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684446709}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 466043255}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1684446711
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1684446709}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 8.33, y: 31.5, z: 0.2}
+  m_Center: {x: 0, y: 8.58, z: 0}
 --- !u!1001 &1684897843
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -96543,6 +97519,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1739700392}
   - component: {fileID: 1739700393}
+  - component: {fileID: 1739700394}
   m_Layer: 0
   m_Name: mittleres Gras 1 (17)
   m_TagString: Untagged
@@ -96623,6 +97600,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1739700394
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1739700391}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3.82, z: 0.2}
+  m_Center: {x: 0, y: 1.91, z: -0.0000019073486}
 --- !u!60 &1740341795
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -97899,6 +98897,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1778120344}
   - component: {fileID: 1778120345}
+  - component: {fileID: 1778120346}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_waldstein_04_lay01_abs
   m_TagString: Untagged
@@ -97979,6 +98978,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1778120346
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1778120343}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 7.42, z: 0.2}
+  m_Center: {x: 0, y: 3.71, z: 0}
 --- !u!1 &1779465024
 GameObject:
   m_ObjectHideFlags: 0
@@ -100110,6 +101130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1830240330}
   - component: {fileID: 1830240331}
+  - component: {fileID: 1830240332}
   m_Layer: 0
   m_Name: mittleres Gras 1 (18)
   m_TagString: Untagged
@@ -100190,6 +101211,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1830240332
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830240329}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 3.82, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 1.91, z: -0.0000019073486}
 --- !u!1001 &1830339695
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101298,6 +102340,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1853382650}
   - component: {fileID: 1853382649}
+  - component: {fileID: 1853382651}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_ladle_tuete_lay02_abs (129)
   m_TagString: Untagged
@@ -101378,6 +102421,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!65 &1853382651
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1853382648}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3, y: 4.050001, z: 0.20000005}
+  m_Center: {x: 0, y: 2.0250006, z: -6.520348e-15}
 --- !u!60 &1855063000
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -101755,6 +102819,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1861767933}
   - component: {fileID: 1861767934}
+  - component: {fileID: 1861767935}
   m_Layer: 0
   m_Name: mittleres Gras 1 (81)
   m_TagString: Untagged
@@ -101835,6 +102900,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1861767935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1861767932}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 14.08, z: 0.2}
+  m_Center: {x: 0, y: 1.91, z: -0.0000076293945}
 --- !u!1 &1865751728
 GameObject:
   m_ObjectHideFlags: 0
@@ -102888,6 +103974,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1890126756}
   - component: {fileID: 1890126757}
+  - component: {fileID: 1890126758}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_04_lay01_abs
   m_TagString: Untagged
@@ -102968,6 +104055,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1890126758
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1890126755}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 51.739994, z: 0.19999999}
+  m_Center: {x: -0.8, y: 25.869997, z: -0.0000076293945}
 --- !u!1001 &1890764704
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -106841,6 +107949,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1950898241}
   - component: {fileID: 1950898242}
+  - component: {fileID: 1950898243}
   m_Layer: 0
   m_Name: Hortensie 2 (15)
   m_TagString: Untagged
@@ -106921,6 +108030,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1950898243
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1950898240}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 6.66, z: 0.2}
+  m_Center: {x: -0.0000076293945, y: 3.33, z: 0}
 --- !u!1 &1953915914
 GameObject:
   m_ObjectHideFlags: 0
@@ -107021,6 +108151,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1955073031}
   - component: {fileID: 1955073032}
+  - component: {fileID: 1955073033}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_03_lay01_abs
   m_TagString: Untagged
@@ -107101,6 +108232,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1955073033
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955073030}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 50.227657, z: 0.2}
+  m_Center: {x: 2.19, y: 25.113829, z: 0}
 --- !u!1 &1955650730
 GameObject:
   m_ObjectHideFlags: 0
@@ -107491,6 +108643,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1958866596}
   - component: {fileID: 1958866597}
+  - component: {fileID: 1958866598}
   m_Layer: 0
   m_Name: mittleres Gras 1 (102)
   m_TagString: Untagged
@@ -107571,6 +108724,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1958866598
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1958866595}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 4, y: 3.82, z: 0.2}
+  m_Center: {x: 0, y: 1.91, z: -0.0000038146973}
 --- !u!1 &1960297026
 GameObject:
   m_ObjectHideFlags: 0
@@ -107851,6 +109025,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1962287865}
   - component: {fileID: 1962287866}
+  - component: {fileID: 1962287867}
   m_Layer: 0
   m_Name: Hortensie 2 (11)
   m_TagString: Untagged
@@ -107931,6 +109106,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &1962287867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1962287864}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 20, z: 0.2}
+  m_Center: {x: 0, y: 3.33, z: 0}
 --- !u!1 &1964318784
 GameObject:
   m_ObjectHideFlags: 0
@@ -111820,6 +113016,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2061574107}
   - component: {fileID: 2061574108}
+  - component: {fileID: 2061574109}
   m_Layer: 0
   m_Name: Zaun3 (1)
   m_TagString: Untagged
@@ -111900,6 +113097,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2061574109
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2061574106}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 41.16328, y: 20, z: 13.39}
+  m_Center: {x: -7.67, y: 0, z: 5.48}
 --- !u!1 &2061720308
 GameObject:
   m_ObjectHideFlags: 0
@@ -112709,6 +113927,7 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 1432234353}
+  - {fileID: 733046757}
   m_Father: {fileID: 1069369891}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2071659498
@@ -115057,6 +116276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2122581915}
   - component: {fileID: 2122581916}
+  - component: {fileID: 2122581917}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_02_lay01_abs 1
   m_TagString: Untagged
@@ -115137,6 +116357,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2122581917
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2122581914}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.329586, z: 0.20000003}
+  m_Center: {x: 1.26, y: 24.664793, z: 0.0000009536743}
 --- !u!1 &2123730462
 GameObject:
   m_ObjectHideFlags: 0
@@ -115499,6 +116740,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128329999}
   - component: {fileID: 2128330000}
+  - component: {fileID: 2128330001}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_fichte_02_lay01_abs (1)
   m_TagString: Untagged
@@ -115579,6 +116821,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2128330001
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2128329998}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 51.72, z: 0.2}
+  m_Center: {x: 2, y: 25.86, z: 0.00000047683716}
 --- !u!1 &2134213547
 GameObject:
   m_ObjectHideFlags: 0
@@ -115769,6 +117032,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2147193953}
   - component: {fileID: 2147193954}
+  - component: {fileID: 2147193955}
   m_Layer: 0
   m_Name: COD_00_reusable_asset_tanne_01_lay01_abs 1 (1)
   m_TagString: Untagged
@@ -115849,6 +117113,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &2147193955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2147193952}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 2, y: 49.88, z: 0.2}
+  m_Center: {x: -1.33, y: 24.94, z: 0}
 --- !u!1 &2147410194
 GameObject:
   m_ObjectHideFlags: 0
