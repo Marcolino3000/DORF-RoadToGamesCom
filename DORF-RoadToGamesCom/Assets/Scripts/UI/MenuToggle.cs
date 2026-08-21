@@ -66,7 +66,10 @@ namespace UI
             mainMenu.OnStartGame += HideAllMenus;
             mainMenu.OnResumeGame += HideAllMenus;
             mainMenu.OpenSettingsMenu += OpenSettings;
-            
+
+            // The journal's restart post-it: menus down first, then the restart it triggers itself.
+            journalMenu.OnRestartGame += HideAllMenus;
+
             settingsMenu.OnResume += HideAllMenus;
         }
 
