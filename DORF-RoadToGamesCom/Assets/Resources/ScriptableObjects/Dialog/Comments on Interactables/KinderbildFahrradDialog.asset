@@ -35,9 +35,9 @@ MonoBehaviour:
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
-  DialogLine: 'TODO: Text fuer KinderbildFahrrad eintragen'
-  DialogLineEn: 
-  TextPreview: TODO KinderbildFahrrad
+  DialogLine: "Spa\xDFig."
+  DialogLineEn: Fun.
+  TextPreview: "Spa\xDFig."
   AudioClip: {fileID: 8300000, guid: fa803c147fdce40929006f30f673a18b, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5

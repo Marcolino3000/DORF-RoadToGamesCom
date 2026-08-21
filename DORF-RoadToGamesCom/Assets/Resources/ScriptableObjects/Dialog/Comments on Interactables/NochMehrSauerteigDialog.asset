@@ -35,9 +35,9 @@ MonoBehaviour:
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
-  DialogLine: 'TODO: Text fuer NochMehrSauerteig eintragen'
-  DialogLineEn: 
-  TextPreview: TODO NochMehrSauerteig
+  DialogLine: NOCH mehr Sauerteig.
+  DialogLineEn: EVEN more sourdough.
+  TextPreview: NOCH mehr Sauert...
   AudioClip: {fileID: 8300000, guid: 93a148691ee5b4beebf9bbac3bf7dac4, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5

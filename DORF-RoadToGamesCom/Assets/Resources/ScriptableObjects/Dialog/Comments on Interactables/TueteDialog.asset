@@ -35,9 +35,9 @@ MonoBehaviour:
   customPreview: 0
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 388485b41120844eca5d0b4a8585948d, type: 2}
-  DialogLine: 'TODO: Text fuer Tuete eintragen'
-  DialogLineEn: 
-  TextPreview: TODO Tuete
+  DialogLine: "L\xC4DL lohnt sich."
+  DialogLineEn: "L\xC4DL. Totally worth it."
+  TextPreview: "L\xC4DL lohnt sich...."
   AudioClip: {fileID: 8300000, guid: ba7fdaa5c763c4eaeb93cd9a2264e2b6, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5
