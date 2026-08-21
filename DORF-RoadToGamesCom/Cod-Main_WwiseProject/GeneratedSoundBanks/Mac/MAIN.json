@@ -10,7 +10,7 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{DEF79AA5-9D5C-C069-BC7F-F3F021346D04}",
+    "Hash": "{AFD3600E-09E8-F9C3-C7C0-99F88CD2DB04}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
@@ -1246,9 +1246,7 @@
       "Name": "MUS_Scene2_Start",
       "ObjectPath": "\\Events\\Default Work Unit\\MX\\MUS_Scene2_Start",
       "GUID": "{A964252D-C827-4884-A10D-FEFE4E525345}",
-      "DurationType": "OneShot",
-      "DurationMin": "405.89066",
-      "DurationMax": "405.89066",
+      "DurationType": "Infinite",
       "MediaRefs": [
        {
         "Id": "73445872"
@@ -1673,6 +1671,6 @@
     ]
    }
   ],
-  "FileHash": "{473E954F-5BB4-C672-8D29-EEE091821BC0}"
+  "FileHash": "{66E03D31-599B-1C77-C651-C68AE3DF2B32}"
  }
 }
