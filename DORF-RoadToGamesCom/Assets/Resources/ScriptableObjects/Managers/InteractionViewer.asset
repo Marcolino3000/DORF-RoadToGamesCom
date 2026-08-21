@@ -997,6 +997,19 @@ MonoBehaviour:
           IsHardCondition: 1
       Name: SauerteigOverflowActivity
       HighPriority: 0
+  - Trigger:
+      TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 4106df1e165241929b14305d2435c1c7, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 1c187dbc54c34e07a4e09d54f30afd7c, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 4106df1e165241929b14305d2435c1c7, type: 2}
+        Conditions: []
+      Name: Radio
+      HighPriority: 0
   references:
     version: 2
     RefIds:
