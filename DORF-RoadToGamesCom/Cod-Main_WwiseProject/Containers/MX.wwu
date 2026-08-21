@@ -1815,69 +1815,76 @@
 												</Reference>
 											</ReferenceList>
 										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{C5AC4211-12AD-4492-BB18-3BCF748329E1}" ShortID="838311334">
+										<MusicPlaylistItem Name="" ID="{DF759EB4-FCA4-4C13-84FB-D3D3FB8B08C0}" ShortID="533156197">
 											<PropertyList>
-												<Property Name="LoopCount" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{5795A599-3D12-4AF0-8818-54FA1A0D3FEB}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Segment">
-													<ObjectRef Name="MX_Scene 02_B_LOOP 01" ID="{6ECE4306-FAC0-4FEF-8BE9-85B519D09A8D}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-												</Reference>
-											</ReferenceList>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{3402F13A-1E07-4BF8-88FA-6B47C8CE62D3}" ShortID="824614558">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Segment">
-													<ObjectRef Name="MX_Scene 02_C_T" ID="{2A04F44D-5391-4921-B2EC-00472A555D54}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-												</Reference>
-											</ReferenceList>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{6080A7D1-195C-4033-A0B5-5DD60CBE3D87}" ShortID="888886332">
-											<PropertyList>
-												<Property Name="LoopCount" Type="int16">
-													<ModifierList>
-														<ModifierInfo>
-															<Modifier Name="" ID="{04856C71-A703-4025-A836-458601B9D4D6}">
-																<PropertyList>
-																	<Property Name="Enabled" Type="bool" Value="True"/>
-																	<Property Name="Max" Type="Real64" Value="2"/>
-																</PropertyList>
-															</Modifier>
-														</ModifierInfo>
-													</ModifierList>
-												</Property>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Segment">
-													<ObjectRef Name="MX_Scene 02_D_LOOP" ID="{CE9BFD0D-6D9E-4F93-A53D-BEE385ED8337}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-												</Reference>
-											</ReferenceList>
-										</MusicPlaylistItem>
-										<MusicPlaylistItem Name="" ID="{1846DD72-B31A-4D4D-9018-5BF189511122}" ShortID="600892344">
-											<PropertyList>
-												<Property Name="PlaylistItemType" Type="int16" Value="1"/>
-											</PropertyList>
-											<ReferenceList>
-												<Reference Name="Segment">
-													<ObjectRef Name="MX_Scene 02_E_T" ID="{2593E3F0-7783-4305-8AEB-AD28427F3FFB}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
-												</Reference>
-											</ReferenceList>
+											<ChildrenList>
+												<MusicPlaylistItem Name="" ID="{C5AC4211-12AD-4492-BB18-3BCF748329E1}" ShortID="838311334">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{5795A599-3D12-4AF0-8818-54FA1A0D3FEB}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MX_Scene 02_B_LOOP 01" ID="{6ECE4306-FAC0-4FEF-8BE9-85B519D09A8D}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{3402F13A-1E07-4BF8-88FA-6B47C8CE62D3}" ShortID="824614558">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MX_Scene 02_C_T" ID="{2A04F44D-5391-4921-B2EC-00472A555D54}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{6080A7D1-195C-4033-A0B5-5DD60CBE3D87}" ShortID="888886332">
+													<PropertyList>
+														<Property Name="LoopCount" Type="int16">
+															<ModifierList>
+																<ModifierInfo>
+																	<Modifier Name="" ID="{04856C71-A703-4025-A836-458601B9D4D6}">
+																		<PropertyList>
+																			<Property Name="Enabled" Type="bool" Value="True"/>
+																			<Property Name="Max" Type="Real64" Value="1"/>
+																		</PropertyList>
+																	</Modifier>
+																</ModifierInfo>
+															</ModifierList>
+														</Property>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MX_Scene 02_D_LOOP" ID="{CE9BFD0D-6D9E-4F93-A53D-BEE385ED8337}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+												<MusicPlaylistItem Name="" ID="{1846DD72-B31A-4D4D-9018-5BF189511122}" ShortID="600892344">
+													<PropertyList>
+														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
+													</PropertyList>
+													<ReferenceList>
+														<Reference Name="Segment">
+															<ObjectRef Name="MX_Scene 02_E_T" ID="{2593E3F0-7783-4305-8AEB-AD28427F3FFB}" WorkUnitID="{24386CB4-9AC1-41C8-999F-1E99DFD843BE}"/>
+														</Reference>
+													</ReferenceList>
+												</MusicPlaylistItem>
+											</ChildrenList>
 										</MusicPlaylistItem>
 									</ChildrenList>
 								</MusicPlaylistItem>
