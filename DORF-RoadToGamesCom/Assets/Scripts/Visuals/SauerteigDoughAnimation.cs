@@ -5,8 +5,15 @@ using UnityEngine.UI;
 /// <summary>
 /// Flipbook that rides on the surface of the dough in the Sauerteig jar. All ten frames draw the
 /// blob on the same baseline and differ only in their upper edge, so playing them back moves the
-/// surface. The animation itself is never scaled - it only travels up and down with the top edge of
-/// the dough image, which is the one that keeps stretching.
+/// surface. The animation itself is never scaled.
+///
+/// Nothing here moves the Sauerteig upwards. The blob hangs off the *lower* edge of the dough, not
+/// its upper one, so the fill level rising underneath no longer carries the animation with it and
+/// the flipbook works the surface in place - park it on the first frame and it stands exactly where
+/// it stood before the run. <see cref="followDoughTop"/> puts the old behaviour back.
+///
+/// <see cref="pinDoughBottom"/> holds that lower edge itself where it started while
+/// <see cref="SauerteigStatusDisplay"/> scales the dough, so the base cannot drift either.
 /// </summary>
 [RequireComponent(typeof(Image))]
 public class SauerteigDoughAnimation : MonoBehaviour
@@ -19,14 +26,25 @@ public class SauerteigDoughAnimation : MonoBehaviour
     [SerializeField] private float scaleEpsilon = 0.0001f;
 
     [Header("References")]
-    [Tooltip("The dough image that stretches. Its top edge is what this animation follows. It is " +
-             "only ever read, never moved - its height belongs to SauerteigStatusDisplay.")]
+    [Tooltip("The dough image that stretches. Its top edge is what this animation follows. Its " +
+             "height belongs to SauerteigStatusDisplay and is never touched here - only its " +
+             "position is, and only while Pin Dough Top is on.")]
     [SerializeField] private RectTransform dough;
 
     [Header("Placement")]
-    [Tooltip("Distance from the top edge of the dough. The pivot sits on the bottom of the drawn " +
-             "blob, so 0 parks the animation on top of the dough and negative values sink it in.")]
+    [Tooltip("Distance from the top edge of the dough, read once on Awake to work out where the " +
+             "blob rests. The pivot sits on the bottom of the drawn blob, so 0 parks the animation " +
+             "on top of the dough and negative values sink it in.")]
     [SerializeField] private float verticalOffset = -64.1f;
+
+    [Tooltip("Rides the upper edge of the dough, so the animation climbs along as the fill level " +
+             "grows. Off by default - the blob is pinned to the lower edge instead and stays put.")]
+    [SerializeField] private bool followDoughTop;
+
+    [Tooltip("Keeps the lower edge of the dough where it stood on Awake while " +
+             "SauerteigStatusDisplay scales it, so the dough grows out of a fixed base and never " +
+             "slides as a whole.")]
+    [SerializeField] private bool pinDoughBottom = true;
 
     [Header("Preview")]
     [Tooltip("How often the preview runs through the ten frames.")]
@@ -42,6 +60,9 @@ public class SauerteigDoughAnimation : MonoBehaviour
     private Image image;
     private float lastScaleY;
     private float frameTimer;
+    private int direction = 1;
+    private float pinnedDoughBottom;
+    private float restingPlacement;
 
     private void Awake()
     {
@@ -62,49 +83,96 @@ public class SauerteigDoughAnimation : MonoBehaviour
         }
 
         lastScaleY = dough.localScale.y;
+        pinnedDoughBottom = DoughBottom();
+        restingPlacement = DoughTop() + verticalOffset;
 
         ShowFrame(0);
-        FollowDoughTop();
+        PlaceOnDough();
     }
 
     private void Update()
     {
+        if (pinDoughBottom)
+            HoldDoughBottom();
+
         var scaleY = dough.localScale.y;
         var delta = scaleY - lastScaleY;
         lastScaleY = scaleY;
 
-        FollowDoughTop();
-
         isPlaying = Mathf.Abs(delta) > scaleEpsilon;
 
-        if (!isPlaying)
-            return;
+        if (isPlaying)
+            // growing runs the rise forwards, shrinking plays it back down
+            direction = delta > 0 ? 1 : -1;
 
-        // growing runs the rise forwards, shrinking plays it back down
-        var direction = delta > 0 ? 1 : -1;
+        if (isPlaying || frameIndex != 0)
+            AdvanceFrames();
+        else
+            // parked on the first frame, so the next move starts on a whole frame
+            frameTimer = 0f;
 
+        PlaceOnDough();
+    }
+
+    private void AdvanceFrames()
+    {
         frameTimer += Time.deltaTime * framesPerSecond;
 
         while (frameTimer >= 1f)
         {
             frameTimer -= 1f;
             ShowFrame(frameIndex + direction);
+
+            // the dough came to rest mid-flipbook, so keep running in the last direction until
+            // the loop is back on the first frame and stop there
+            if (!isPlaying && frameIndex == 0)
+            {
+                frameTimer = 0f;
+                break;
+            }
         }
     }
 
     /// <summary>
-    /// Parks the animation on the upper edge of the dough. Both hang off StretchySauerteig, so they
-    /// share one anchored space and no world round trip is needed.
+    /// Keeps the lower edge of the dough on the height it started at, whatever its pivot and
+    /// current scale are. Only the position is written - the scale stays with
+    /// SauerteigStatusDisplay, and reading it is still what drives the flipbook.
     /// </summary>
-    private void FollowDoughTop()
+    private void HoldDoughBottom()
     {
-        var doughTop = dough.anchoredPosition.y
-                       + dough.rect.height * (1f - dough.pivot.y) * dough.localScale.y;
+        var position = dough.anchoredPosition;
+        position.y = pinnedDoughBottom + dough.rect.height * dough.pivot.y * dough.localScale.y;
+        dough.anchoredPosition = position;
+    }
 
+    /// <summary>
+    /// Puts the animation back on its placement. Both it and the dough hang off StretchySauerteig,
+    /// so they share one anchored space and no world round trip is needed. Pinned to the lower edge
+    /// of the dough it keeps the height it was authored at and only shifts if that edge shifts,
+    /// which is what stops the flipbook from travelling upwards.
+    /// </summary>
+    private void PlaceOnDough()
+    {
         var position = rectTransform.anchoredPosition;
-        position.y = doughTop + verticalOffset;
+
+        position.y = followDoughTop
+            ? DoughTop() + verticalOffset
+            : restingPlacement + DoughBottom() - pinnedDoughBottom;
+
         rectTransform.anchoredPosition = position;
     }
+
+    private float DoughTop()
+    {
+        return dough.anchoredPosition.y
+               + dough.rect.height * (1f - dough.pivot.y) * dough.localScale.y;
+    }
+
+    private float DoughBottom()
+    {
+        return dough.anchoredPosition.y - dough.rect.height * dough.pivot.y * dough.localScale.y;
+    }
+
 
     private void ShowFrame(int index)
     {
