@@ -13,6 +13,9 @@ namespace UI
         [SerializeField] private SettingsMenu settingsMenu;
         
         [SerializeField] private Raycaster raycaster;
+        [Tooltip("Sits on the Global prefab like this component, so it can be assigned here. " +
+                 "Left empty it is looked up once, in Setup.")]
+        [SerializeField] private CursorSetter cursorSetter;
 
         /// <summary>
         /// Raised when a menu comes up and when the last one goes away. Static because this lives
@@ -53,6 +56,15 @@ namespace UI
         
         private void Setup()
         {
+            // The Bootstrapper puts Global up before the first scene loads, so the CursorSetter on
+            // it is already there by Start.
+            if (cursorSetter == null)
+                cursorSetter = FindFirstObjectByType<CursorSetter>();
+
+            if (cursorSetter == null)
+                Debug.LogError($"{nameof(MenuToggle)} on '{name}' found no {nameof(CursorSetter)} - " +
+                               "a menu opened while hovering an interactable keeps that symbol.", this);
+
             mainMenu.Setup();
             journalMenu.Setup();
             mapMenu.Setup();
@@ -120,6 +132,16 @@ namespace UI
         private void SetMenusOpen(bool open)
         {
             raycaster.IsMenuOpen = open;
+
+            // The Raycaster stops looking at the mouse while a menu is up, so whatever symbol the
+            // last hover left standing - the hand, the door, the magnifier - would sit on the menu
+            // for as long as it is open. A menu only ever shows the standard cursor.
+            //
+            // Above the early return rather than below it: switching straight from one menu to the
+            // next does not change the open state, and the jar in the corner can have repainted the
+            // cursor in between.
+            if (open && cursorSetter != null)
+                cursorSetter.SetStandardCursor();
 
             if (menusOpen == open)
                 return;

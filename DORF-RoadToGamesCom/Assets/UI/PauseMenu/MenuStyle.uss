@@ -8,3 +8,11 @@ Label {
     -unity-text-align: upper-center;
     color: rgb(255, 255, 255);
 }
+
+/* The settings menu's subtitle switch. The Label rule above sizes its text to 36px, but the
+   checkmark box keeps the default 18px, which is close to invisible on the exhibition screen. */
+Toggle .unity-toggle__checkmark {
+    width: 36px;
+    height: 36px;
+    margin-left: 8px;
+}

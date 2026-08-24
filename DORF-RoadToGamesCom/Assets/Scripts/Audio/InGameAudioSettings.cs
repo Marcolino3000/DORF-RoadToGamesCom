@@ -1,5 +1,6 @@
     using System;
 using Runtime.Scripts.Interactables;
+using UI;
 using UnityEngine;
 
 namespace Audio
@@ -27,6 +28,14 @@ namespace Audio
 
         public int inactivityThresholdSeconds;
 
+        /// <summary>
+        /// Runtime state like the volumes, and it survives scene loads for the same reason — a
+        /// visitor who switches the subtitles off keeps them off while walking from room to room.
+        /// Unlike the volumes it *is* put back on the game reset (GameResetter.ResetSubtitles), so
+        /// the next visitor always starts with subtitles on.
+        /// </summary>
+        public bool subtitlesEnabled = true;
+
         [Header("Exhibition defaults")]
         [Tooltip("What the values above are seeded from once per launch. The inactivity timeout is " +
                  "additionally restored on every scene load and on the reset, the volumes are not. " +
@@ -36,12 +45,18 @@ namespace Audio
         [SerializeField, Range(0f, 1f)] private float defaultSfxVolume = 1f;
         [SerializeField, Range(0f, 1f)] private float defaultDialogVolume = 1f;
         [SerializeField] private int defaultInactivityThresholdSeconds = 180;
+        [SerializeField] private bool defaultSubtitlesEnabled = true;
 
         /// <summary>
         /// The authored timeout. Read this rather than <see cref="inactivityThresholdSeconds"/> when
         /// restoring, so it does not matter whether this object was reset first.
         /// </summary>
         public int DefaultInactivityThresholdSeconds => defaultInactivityThresholdSeconds;
+
+        /// <summary>
+        /// What the subtitles are put back to on the game reset. On for the exhibition.
+        /// </summary>
+        public bool DefaultSubtitlesEnabled => defaultSubtitlesEnabled;
 
         /// <summary>
         /// True from the first <see cref="ApplyLaunchDefaultsOnce"/> of the process on. Static, so a
@@ -80,6 +95,11 @@ namespace Audio
 
             inactivityThresholdSeconds = defaultInactivityThresholdSeconds;
 
+            // Re-applied, not reset: this method also runs on every scene load, and switching the
+            // subtitles back on when a visitor walks through a door would undo their choice. The
+            // reset to the default happens in GameResetter, which knows a play-through has ended.
+            SubtitleDisplay.Apply(subtitlesEnabled);
+
             // The values stay as they are, but the sound engine is fed again: RTPC values are global
             // engine state rather than ours, so this is what keeps Wwise on the current settings
             // after an engine or bank reload.
@@ -111,7 +131,9 @@ namespace Audio
             sfxVolume = defaultSfxVolume;
             dialogVolume = defaultDialogVolume;
             inactivityThresholdSeconds = defaultInactivityThresholdSeconds;
+            subtitlesEnabled = defaultSubtitlesEnabled;
 
+            SubtitleDisplay.Apply(subtitlesEnabled);
             UpdateWwiseRTPCs();
             OnDialogVolumeChanged?.Invoke(GetDialogVolume());
         }
@@ -140,6 +162,16 @@ namespace Audio
         {
             sfxVolume = value;
             UpdateWwiseRTPCs();
+        }
+
+        /// <summary>
+        /// The settings menu's subtitle switch. Writes the value and puts the subtitle container in
+        /// that state right away, so it also takes effect in the middle of a running dialog.
+        /// </summary>
+        public void SetSubtitlesEnabled(bool value)
+        {
+            subtitlesEnabled = value;
+            SubtitleDisplay.Apply(value);
         }
 
         public void SetDialogVolume(float value)

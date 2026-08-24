@@ -98,9 +98,17 @@ namespace UI
 
         public void OnPointerEnter(PointerEventData eventData)
         {
+            // Read before BlockWorldInput, which is what makes the flag ours: whoever already holds
+            // it is a menu or the phone, both of which cover the jar and show the standard cursor.
+            // Painting the inspect symbol on top of them is the one thing that gets past MenuToggle.
+            var blockedByOther = raycaster.IsMenuOpen && !raisedMenuFlag;
+
             pointerIsOver = true;
 
             BlockWorldInput();
+
+            if (blockedByOther)
+                return;
 
             cursorSetter.SetCursor(interactableState != null
                 ? interactableState.InteractionType

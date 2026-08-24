@@ -443,8 +443,22 @@ MonoBehaviour:
         DialogOptionToUnlock: {fileID: 0}
         TriggerType: 2
         TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
-        Conditions: []
+        Conditions:
+        - RecordedState:
+            rid: 4189240612524130620
+          IsHardCondition: 1
       Name: Gartentur
+      HighPriority: 0
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 3b34996ddeac467398b42b0c1d4072e0, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 08550f883af6941f89335b15056b69ed, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 4189240612524130621
+          IsHardCondition: 1
+      Name: Gartentuer nach Paul
       HighPriority: 0
   - Trigger:
       TriggerType: 0
@@ -822,6 +836,23 @@ MonoBehaviour:
           IsHardCondition: 0
       Name: 
       HighPriority: 0
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 13a983d598414fb3b1fbc6c5091e50d7, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 1
+        TriggeringInteractable: {fileID: 11400000, guid: ddc53cfdf069d42579ca66de8e3a08e9, type: 2}
+        Conditions:
+        - RecordedState:
+            rid: 4189240612524130597
+          IsHardCondition: 1
+        - RecordedState:
+            rid: 4189240612524130598
+          IsHardCondition: 1
+        - RecordedState:
+            rid: 4189240612524130599
+          IsHardCondition: 1
+      Name: PaulHatGeklopft
+      HighPriority: 0
   - Trigger:
       TriggerType: 2
       TriggeringInteractable: {fileID: 11400000, guid: ff5f3ad7940304bceb7599513a2003f2, type: 2}
@@ -1130,6 +1161,18 @@ MonoBehaviour:
       data:
         Owner: {fileID: 11400000, guid: 03757def55bf24c0e95bf8931edd6a79, type: 2}
         ThresholdReached: 0
+        IsRunning: 0
+    - rid: 4189240612524130620
+      type: {class: InteractionData/InteractionStateData, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 13a983d598414fb3b1fbc6c5091e50d7, type: 2}
+        ThresholdReached: 0
+        IsRunning: 0
+    - rid: 4189240612524130621
+      type: {class: InteractionData/InteractionStateData, ns: Runtime.Scripts.Core, asm: cod.interactionbuilder}
+      data:
+        Owner: {fileID: 11400000, guid: 13a983d598414fb3b1fbc6c5091e50d7, type: 2}
+        ThresholdReached: 1
         IsRunning: 0
     - rid: 4678523683922510021
       type: {class: Toggleable/ToggleableStateDate, ns: Runtime.Scripts.Interactables, asm: cod.interactionbuilder}

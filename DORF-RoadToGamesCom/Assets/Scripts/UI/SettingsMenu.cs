@@ -28,6 +28,7 @@ namespace UI
         private Slider musicVolume;
         private Slider sfxVolume;
         private Slider inactivityThreshold;
+        private Toggle subtitles;
         private Button resumeButton;
         
         private UIDocument uiDocument;
@@ -92,6 +93,7 @@ namespace UI
             musicVolume = root.Q<Slider>("musicVolume");
             sfxVolume = root.Q<Slider>("sfxVolume");
             inactivityThreshold = root.Q<Slider>("inactivityThreshold");
+            subtitles = root.Q<Toggle>("subtitlesToggle");
             
             resumeButton = root.Q<Button>("resumeButton");
         }
@@ -129,6 +131,16 @@ namespace UI
                     inputDispatcher.secondsUntilGameReset = (int)evt.newValue;
                 });
             
+            // Null-guarded, unlike the sliders above: a UXML that has not reimported yet would
+            // otherwise take the whole menu setup down with it and leave the kiosk without a
+            // Resume button. Same reason the seeding below checks.
+            if (subtitles != null)
+                subtitles.RegisterValueChangedCallback(
+                    evt =>
+                    {
+                        audioSettings.SetSubtitlesEnabled(evt.newValue);
+                    });
+
             resumeButton.clicked += () => { OnResume?.Invoke(); };
         }
         
@@ -172,6 +184,9 @@ namespace UI
             // timeout was something else — and the next nudge jumped the reset time to that default.
             if (inactivityThreshold != null && inputDispatcher != null)
                 inactivityThreshold.SetValueWithoutNotify(inputDispatcher.secondsUntilGameReset);
+
+            if (subtitles != null)
+                subtitles.SetValueWithoutNotify(audioSettings.subtitlesEnabled);
         }
         
         #endregion

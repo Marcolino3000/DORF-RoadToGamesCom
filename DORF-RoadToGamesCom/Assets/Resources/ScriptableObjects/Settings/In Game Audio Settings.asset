@@ -17,8 +17,10 @@ MonoBehaviour:
   sfxVolume: 1
   dialogVolume: 1
   inactivityThresholdSeconds: 206
+  subtitlesEnabled: 1
   defaultMasterVolume: 1
   defaultMusicVolume: 0.725
   defaultSfxVolume: 1
   defaultDialogVolume: 1
   defaultInactivityThresholdSeconds: 206
+  defaultSubtitlesEnabled: 1

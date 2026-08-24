@@ -1,4 +1,6 @@
+using System.Linq;
 using System.Reflection;
+using Audio;
 using Runtime.Scripts.Core;
 using Runtime.Scripts.Interactables;
 using Runtime.Scripts.PlayerInput;
@@ -35,6 +37,11 @@ namespace ScenesSwitches
         [Tooltip("Level the SauerteigAwarenessStatus asset carries before the jar is unlocked. The " +
                  "asset keeps whatever the finished play-through left on it, so it has to be written back.")]
         [SerializeField] private AwarenessLevel lockedAwarenessLevel = AwarenessLevel.Basic;
+
+        [Header("Subtitles")]
+        [Tooltip("The settings asset the subtitle switch lives on. Left empty it is loaded from " +
+                 "Resources once, on the first reset.")]
+        [SerializeField] private InGameAudioSettings audioSettings;
 
         [Header("Marlene")]
         [Tooltip("Sits on the Global prefab as well. Left empty she is looked up once, on the first reset.")]
@@ -78,6 +85,8 @@ namespace ScenesSwitches
             ResetInteractables();
 
             ResetSauerteig();
+
+            ResetSubtitles();
 
             // Ahead of EnableMovement(false): MovementDisabler answers the dialog's running-status
             // change by switching movement back on, so a dialog aborted afterwards would undo it.
@@ -170,6 +179,37 @@ namespace ScenesSwitches
 
             if (debugLogs)
                 Debug.Log("GameResetter: Sauerteig locked again and jar hidden");
+        }
+
+        /// <summary>
+        /// Puts the subtitles back on for the next visitor. The switch is a per-play-through choice
+        /// that lives on a ScriptableObject, so it survives every scene load - and in the Editor it
+        /// is written to disk, which would carry it into the next session as well.
+        ///
+        /// Deliberately not done in OnSceneSetup, where the reset timeout is restored: that runs on
+        /// every scene load and would switch the subtitles back on the moment a visitor who turned
+        /// them off walks through a door.
+        /// </summary>
+        private void ResetSubtitles()
+        {
+            if (audioSettings == null)
+                audioSettings = Resources
+                    .LoadAll<InGameAudioSettings>("ScriptableObjects/Settings")
+                    .FirstOrDefault();
+
+            if (audioSettings == null)
+            {
+                Debug.LogWarning("GameResetter: no InGameAudioSettings under " +
+                                 "Resources/ScriptableObjects/Settings, the subtitle setting stays " +
+                                 "as the last visitor left it.");
+                return;
+            }
+
+            // Applies to the subtitle container as well, so it is already correct behind the fade.
+            audioSettings.SetSubtitlesEnabled(audioSettings.DefaultSubtitlesEnabled);
+
+            if (debugLogs)
+                Debug.Log($"GameResetter: subtitles reset to {audioSettings.DefaultSubtitlesEnabled}");
         }
 
         /// <summary>

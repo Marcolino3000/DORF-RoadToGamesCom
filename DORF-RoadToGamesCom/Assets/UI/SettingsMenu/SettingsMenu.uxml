@@ -11,6 +11,7 @@
         <ui:Label text="Other Settings" name="otherSettings" style="-unity-text-align: upper-center; -unity-font-definition: url(&quot;project://database/Assets/Visuals/Fonts/Fancy-Regular.otf?fileID=12800000&amp;guid=37567676b964d4408b499bb1e061114a&amp;type=3#Fancy-Regular&quot;); -unity-font-style: bold; font-size: 58px;" />
         <ui:VisualElement name="container" style="flex-grow: 1; margin-top: 50px; margin-right: 650px; margin-bottom: 0; margin-left: 550px;">
             <ui:Slider label="Reset Time" name="inactivityThreshold" high-value="600" value="180" low-value="10" fill="true" />
+            <ui:Toggle label="Untertitel" name="subtitlesToggle" value="true" />
         </ui:VisualElement>
         <ui:Button text="Resume" name="resumeButton" />
     </ui:VisualElement>
