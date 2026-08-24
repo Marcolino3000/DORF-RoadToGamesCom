@@ -38,7 +38,8 @@ MonoBehaviour:
   DialogLine: Das riecht mindestens eine Woche alt.
   DialogLineEn: That smells at least a week old.
   TextPreview: Das riecht mindestens eine Woche alt.
-  AudioClip: {fileID: 8300000, guid: de68a698298c149609db0c1fff258001, type: 3}
+  AudioClip: {fileID: 8300000, guid: d537f71e83fde41d1b3963e0ed741c8c, type: 3}
+  ClipVolume: 1
   PauseAfter: 0.5
   Children: []
   FallThrough: 0
