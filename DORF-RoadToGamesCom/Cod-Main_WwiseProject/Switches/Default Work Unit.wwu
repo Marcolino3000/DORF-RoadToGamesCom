@@ -6,6 +6,15 @@
 				<SwitchGroup Name="MX_LAY_01" ID="{E31470A0-57BB-4DF2-AB02-837B8E930BB3}"/>
 				<SwitchGroup Name="MX_LAY_02" ID="{A41023DC-1A63-4A7A-B277-999BBA34C4C1}"/>
 				<SwitchGroup Name="MX_LAY_03" ID="{693D8F66-6B19-43E3-9D28-28AD062A2CFB}"/>
+				<SwitchGroup Name="Surface" ID="{68430E4C-494C-4B1B-A355-CFD86AE31BF0}">
+					<ChildrenList>
+						<Switch Name="Grass" ID="{B1A7964D-7330-4963-8F05-932ED184CB3F}"/>
+						<Switch Name="Grass_Leaves" ID="{298F6D1A-11B5-4000-9DCB-65084050CFAA}"/>
+						<Switch Name="Pebbles" ID="{8A54D5E5-E6A7-4B77-BAB9-98C9D75F471A}"/>
+						<Switch Name="Congrete_Asphalt" ID="{6040C9BA-DC9D-4243-9F64-DEA5C3DBC0F1}"/>
+						<Switch Name="Wood" ID="{6F28A47A-4D9C-4116-8213-673B0FFC611E}"/>
+					</ChildrenList>
+				</SwitchGroup>
 			</ChildrenList>
 		</WorkUnit>
 	</Switches>

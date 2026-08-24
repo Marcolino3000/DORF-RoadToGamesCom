@@ -8555,9 +8555,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2589033447177786605, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5108664372930118447}
-    - targetCorrespondingSourceObject: {fileID: 2589033447177786605, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 7753245565521891131}
     - targetCorrespondingSourceObject: {fileID: 3384056884880199686, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5329439205216209059}
@@ -8719,7 +8716,7 @@ MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2047475649783191184}
+  m_GameObject: {fileID: 4410089863099125070}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5075415cad12647e39dec28bc01ff04e, type: 3}
@@ -8728,7 +8725,25 @@ MonoBehaviour:
   stepEvent:
     idInternal: 0
     valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 8e9bb9361d1e2418fb71ac3ff620194b, type: 2}
+    WwiseObjectReference: {fileID: 11400000, guid: 93991186e0944fa2bc87db89c68a1e43, type: 2}
+  indoorSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 94a2096644734d9685ac06eadeefea01, type: 2}
+  outdoorSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ff9b8ba153cb489faa6e53758ee4c2fb, type: 2}
+  surfaceLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  probeUp: 0.25
+  probeDistance: 1.5
+  debugLogs: 0
 --- !u!114 &2898388513868393969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
@@ -10148,6 +10163,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 7433976083841653713, guid: d4932a53326b2a64eac5531d63a7554f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2241211357323447940}
+    - targetCorrespondingSourceObject: {fileID: 7433976083841653713, guid: d4932a53326b2a64eac5531d63a7554f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7753245565521891131}
   m_SourcePrefab: {fileID: 100100000, guid: d4932a53326b2a64eac5531d63a7554f, type: 3}
 --- !u!4 &3313471240661390637 stripped
 Transform:

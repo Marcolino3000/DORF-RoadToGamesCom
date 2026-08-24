@@ -63004,6 +63004,7 @@ GameObject:
   - component: {fileID: 1051846540}
   - component: {fileID: 1051846539}
   - component: {fileID: 1051846538}
+  - component: {fileID: 1077940786}
   m_Layer: 7
   m_Name: Treppe Plane
   m_TagString: Untagged
@@ -86898,6 +86899,7 @@ GameObject:
   - component: {fileID: 1491185788}
   - component: {fileID: 1491185787}
   - component: {fileID: 1491185786}
+  - component: {fileID: 1531739160}
   m_Layer: 7
   m_Name: Haus Plane
   m_TagString: Untagged
@@ -93293,6 +93295,7 @@ GameObject:
   - component: {fileID: 1640483178}
   - component: {fileID: 1640483177}
   - component: {fileID: 1640483176}
+  - component: {fileID: 782617159}
   m_Layer: 7
   m_Name: Terasse Plane
   m_TagString: Untagged
@@ -117987,7 +117990,7 @@ AudioSource:
   m_GameObject: {fileID: 1973947009}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: -3184569306143580629, guid: 39708bea6aa144f9bacffac7d9e55828, type: 2}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
   m_PlayOnAwake: 1
@@ -118075,6 +118078,45 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1077940786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1051846536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc11811596804b849d409efa644c7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Audio::FootstepSurfaceMarker
+  surface: 1
+--- !u!114 &782617159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1640483174}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc11811596804b849d409efa644c7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Audio::FootstepSurfaceMarker
+  surface: 1
+--- !u!114 &1531739160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1491185784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dc11811596804b849d409efa644c7db, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Audio::FootstepSurfaceMarker
+  surface: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
