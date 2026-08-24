@@ -3,6 +3,7 @@ using Runtime.Scripts.Core;
 using Runtime.Scripts.Interactables;
 using Runtime.Scripts.PlayerInput;
 using SceneManagement;
+using Tree;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.SceneManagement;
@@ -43,6 +44,12 @@ namespace ScenesSwitches
         [Tooltip("On the Global prefab as well. Left empty it is looked up once, on the first reset.")]
         [SerializeField] private SequenceRunner sequenceRunner;
 
+        [Header("Input state")]
+        [Tooltip("Both sit on the Global prefab too. Left empty they are looked up once, on the " +
+                 "first reset.")]
+        [SerializeField] private Raycaster raycaster;
+        [SerializeField] private DialogTreeRunner dialogTreeRunner;
+
         private bool _resetRunning;
         private bool _startPoseKnown;
         private Vector3 _startLocalPosition;
@@ -72,7 +79,13 @@ namespace ScenesSwitches
 
             ResetSauerteig();
 
+            // Ahead of EnableMovement(false): MovementDisabler answers the dialog's running-status
+            // change by switching movement back on, so a dialog aborted afterwards would undo it.
+            AbortRunningDialog();
+
             AbortRunningSequence();
+
+            ResetInputState();
 
             // The player character must not walk around while the screen fades out.
             PlayerController.EnableMovement(false);
@@ -211,13 +224,67 @@ namespace ScenesSwitches
         }
 
         /// <summary>
+        /// A dialog the visitor walked out on keeps running. DialogTreeRunner rides on the Global
+        /// prefab, so its coroutines, its subtitle line and its options all survive the scene swap,
+        /// and Raycaster.isDialogRunning stays up - which makes the Raycaster ignore the mouse for
+        /// the whole of the next visit. Reset is the runner's own teardown: it stops the coroutines,
+        /// hides the dialog UI and posts the running-status change everybody else listens for.
+        /// </summary>
+        private void AbortRunningDialog()
+        {
+            if (dialogTreeRunner == null)
+                dialogTreeRunner = FindFirstObjectByType<DialogTreeRunner>(FindObjectsInactive.Include);
+
+            if (dialogTreeRunner == null)
+            {
+                Debug.LogWarning("GameResetter: no DialogTreeRunner found, a running dialog keeps the input.");
+                return;
+            }
+
+            // Reset walks the receiver lists DialogBuilderHQ hands over in Start, and those stay null
+            // when a scene holds no dialog clients at all. A dialog that is running proves they are
+            // there - and without one there is nothing to abort anyway.
+            if (dialogTreeRunner.IsDialogRunning)
+                dialogTreeRunner.Reset();
+        }
+
+        /// <summary>
+        /// The Raycaster sits on the Global prefab and implements no ISceneSetupCallbackReceiver, so
+        /// SceneSetup.SetupScene() - the reset for everything else - never reaches it. What it keeps
+        /// are the flags that gate the mouse (a menu the visitor left open, a dialog that was
+        /// running) and the outline of whatever was hovered last; ResetState drops all of it and puts
+        /// the cursor back on its standard symbol.
+        /// </summary>
+        private void ResetInputState()
+        {
+            if (raycaster == null)
+                raycaster = FindFirstObjectByType<Raycaster>(FindObjectsInactive.Include);
+
+            if (raycaster == null)
+            {
+                Debug.LogWarning("GameResetter: no Raycaster found, a menu or dialog flag keeps the mouse.");
+                return;
+            }
+
+            raycaster.ResetState();
+        }
+
+        /// <summary>
         /// Puts Marlene back on the pose that stands in the Global prefab. She rides on that prefab,
         /// which is DontDestroyOnLoad, so nothing about a scene load moves her on its own - the next
         /// visitor would start wherever the last one left her.
         ///
-        /// This runs once the first scene is back, not before the swap: the agent can only be warped
-        /// onto a NavMesh that is loaded, and the start position belongs to the first scene rather
-        /// than the one the visitor abandoned.
+        /// The NavMeshAgent is the part that has to be convinced. It carries its own position and,
+        /// with updatePosition on, writes that back onto the transform every frame it spends on a
+        /// NavMesh - so setting the transform alone holds only until the next scene brings a NavMesh
+        /// with it. Warp is the usual way to resync the two, but it needs a loaded NavMesh to warp
+        /// onto and the first scene has none: the only NavMeshSurface in the game sits in Scene 2.
+        /// Switching the agent off throws its position away, and switching it back on seeds a fresh
+        /// one from the transform we just corrected, so Scene 2's NavMesh picks Marlene up at the
+        /// start pose rather than where the last play-through ended.
+        ///
+        /// This runs once the first scene is back, not before the swap: the start position belongs
+        /// to the first scene rather than to the one the visitor abandoned.
         /// </summary>
         private void MovePlayerToStart()
         {
@@ -228,31 +295,66 @@ namespace ScenesSwitches
 
             var marlene = player.transform;
             var agent = player.GetComponent<NavMeshAgent>();
-
-            var target = marlene.parent != null
-                ? marlene.parent.TransformPoint(_startLocalPosition)
-                : _startLocalPosition;
-
-            // Warp is what puts the agent's own idea of where it stands back in sync. Writing the
-            // transform alone leaves that behind and the agent pulls her back towards the old spot.
-            // It refuses positions its NavMesh does not cover, and then the transform has to do.
-            var warped = agent != null && agent.enabled && agent.Warp(target);
-
-            if (!warped)
-                marlene.localPosition = _startLocalPosition;
-
-            marlene.localRotation = _startLocalRotation;
-
             var body = player.GetComponent<Rigidbody>();
 
-            if (body != null && !body.isKinematic)
+            // Off and on again inside the same call: nothing runs in between, so MoveByClick never
+            // gets a frame in which it reads pathPending off a disabled agent.
+            var agentReseeded = agent != null && agent.enabled;
+
+            if (agentReseeded)
+                agent.enabled = false;
+
+            var bodyWasKinematic = false;
+            var bodyInterpolation = RigidbodyInterpolation.None;
+
+            if (body != null)
             {
-                body.linearVelocity = Vector3.zero;
-                body.angularVelocity = Vector3.zero;
+                bodyWasKinematic = body.isKinematic;
+                bodyInterpolation = body.interpolation;
+
+                // The Rigidbody is the second owner of this transform, and on its own it undoes the
+                // write: Marlene's body is non-kinematic and interpolated, so every frame Unity
+                // rewrites the transform from the body's own pose - and with
+                // Physics.autoSyncTransforms off project-wide (DynamicsManager) a bare transform
+                // write never reaches that pose to begin with. Kinematic and un-interpolated for
+                // the length of the teleport takes the body out of the argument.
+                body.interpolation = RigidbodyInterpolation.None;
+                body.isKinematic = true;
             }
 
-            if (debugLogs)
-                Debug.Log($"GameResetter: Marlene back at {marlene.localPosition}, warped: {warped}");
+            marlene.localPosition = _startLocalPosition;
+            marlene.localRotation = _startLocalRotation;
+
+            if (body != null)
+            {
+                // position/rotation, not MovePosition: this is a teleport, and MovePosition would
+                // have her walk the whole way back from where the last visitor left her.
+                body.position = marlene.position;
+                body.rotation = marlene.rotation;
+
+                body.isKinematic = bodyWasKinematic;
+                body.interpolation = bodyInterpolation;
+
+                if (!bodyWasKinematic)
+                {
+                    body.linearVelocity = Vector3.zero;
+                    body.angularVelocity = Vector3.zero;
+                }
+            }
+
+            // Only now the agent, so it seeds from the corrected transform.
+            if (agentReseeded)
+                agent.enabled = true;
+
+            // autoSyncTransforms is off, so without this the physics scene keeps the old pose until
+            // the next simulation step and anything raycasting in between finds Marlene where she was.
+            Physics.SyncTransforms();
+
+            // Left unconditional on purpose: a reset happens once per visitor, and this one line in
+            // the Editor log is what proves where Marlene actually ended up.
+            Debug.Log($"GameResetter: Marlene reset to local {marlene.localPosition} / " +
+                      $"world {marlene.position}, agent re-seeded: {agentReseeded}, " +
+                      $"body: {(body == null ? "none" : bodyWasKinematic ? "kinematic" : "dynamic")}");
         }
 
         /// <summary>

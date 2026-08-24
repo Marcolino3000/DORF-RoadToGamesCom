@@ -1,5 +1,6 @@
 using System;
 using SceneManagement;
+using ScenesSwitches;
 using UI;
 using UnityEngine;
 using UnityEngine.UIElements;
@@ -24,6 +25,12 @@ public class MainMenu : MonoBehaviour
 
     private UIDocument uiDocument;
     private VisualElement root;
+
+    /// <summary>
+    /// Looked up rather than serialized: GameResetter sits on the Global prefab and this menu lives
+    /// in the UI prefab nested inside it.
+    /// </summary>
+    private GameResetter gameResetter;
 
     public void Setup()
     {
@@ -80,10 +87,27 @@ public class MainMenu : MonoBehaviour
     /// The start screen is StartSplash, and it is already gone by the time this menu can be opened
     /// — so Start here always means "start over", never "leave the start screen". Going back to the
     /// first scene puts the start image up again, so the next visitor picks their language.
+    ///
+    /// It takes the kiosk reset to get there, not a bare scene load. ChangeScene only swaps the
+    /// scene: everything riding on the DontDestroyOnLoad Global prefab stays exactly as the last
+    /// play-through left it — Marlene's position, the Sauerteig, the cursor, the Raycaster's input
+    /// flags — and the interaction ScriptableObjects keep their counters on top of that. Same lever
+    /// JournalMenu's restart hint pulls.
     /// </summary>
     private void StartGame()
     {
         OnStartGame?.Invoke();
+
+        if (gameResetter == null)
+            gameResetter = FindFirstObjectByType<GameResetter>();
+
+        if (gameResetter != null)
+        {
+            gameResetter.ResetGame();
+            return;
+        }
+
+        Debug.LogWarning("MainMenu: no GameResetter found, restarting without resetting the game state.", this);
         SceneSwapManager.ChangeScene("Scene 1");
     }
 
