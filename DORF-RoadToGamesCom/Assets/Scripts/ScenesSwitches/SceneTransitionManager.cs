@@ -48,6 +48,12 @@ namespace ScenesSwitches
         [ContextMenu("Start Transition")]
         public void StartTransition()
         {
+            // From here the screen belongs to the ending. A phone that is open stays open and
+            // usable for the beat below, but whoever closes it does not get it back — the chat
+            // must not stand over the train window or the title. The lock is lifted again by
+            // Smartphone.OnSceneSetup, so the kiosk reset gives the next visitor a working phone.
+            smartphone.LockOpening();
+
             StartCoroutine(Transition());
         }
 

@@ -710,6 +710,19 @@ MonoBehaviour:
       HighPriority: 0
   - Trigger:
       TriggerType: 2
+      TriggeringInteractable: {fileID: 11400000, guid: 55a89210d8024d9494cb4e8ca60a6427, type: 2}
+      TriggeringDialogOption: {fileID: 0}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 039a949bb812402ba4a8c5c6c01ff972, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 2
+        TriggeringInteractable: {fileID: 11400000, guid: 55a89210d8024d9494cb4e8ca60a6427, type: 2}
+        Conditions: []
+      Name: Schokoriegel
+      HighPriority: 0
+  - Trigger:
+      TriggerType: 2
       TriggeringInteractable: {fileID: 11400000, guid: 44c62835661184c12aa2a5269232505d, type: 2}
       TriggeringDialogOption: {fileID: 0}
     Prerequisites:

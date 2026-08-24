@@ -87,6 +87,9 @@ namespace UI
         private readonly Dictionary<string, Texture2D> avatarsById = new();
         private Contact currentContact;
         private bool isOpen;
+        // Set the moment the Scene 2 transition starts. The phone can still be closed from then
+        // on, but nothing opens it again. Cleared in OnSceneSetup, so it never outlives a run.
+        private bool openingLocked;
 
         // The memo that is loaded — playing or paused. Null means nothing is loaded.
         private ContactMessage playingMessage;
@@ -246,12 +249,14 @@ namespace UI
         /// Runs on every scene load and on the inactivity reset (SceneSetup finds this through
         /// FindObjectsByType, so it needs no wiring). Without it a memo started just before the
         /// timeout keeps talking under the attract video and then fires the title sequence into
-        /// the reset that is already loading Scene 1.
+        /// the reset that is already loading Scene 1. It is also what lifts the opening lock the
+        /// Scene 2 transition puts on the phone.
         /// </summary>
         public void OnSceneSetup()
         {
             StopVoice();
             voiceChainFinished = false;
+            openingLocked = false;
             playedInRun.Clear();
             if (isOpen) Close();
         }
@@ -359,8 +364,20 @@ namespace UI
             else Open();
         }
 
+        /// <summary>
+        /// Locks the phone shut for the rest of the play-through: it still closes, but nothing
+        /// opens it again. <see cref="ScenesSwitches.SceneTransitionManager"/> calls this the
+        /// moment the Scene 2 transition starts — the chat must not stand over the train window
+        /// or the title, and a memo tapped there would talk on into the next scene.
+        /// </summary>
+        public void LockOpening() => openingLocked = true;
+
         public void Open()
         {
+            // Silently: the menu button stays on screen through the ending, and pressing it is
+            // not an error, it just does nothing any more.
+            if (openingLocked) return;
+
             SetVisible(true);
             SetWorldInputBlocked(true);
             // BindRoot ran in Start, while the start screen was still up and the visitor had not
