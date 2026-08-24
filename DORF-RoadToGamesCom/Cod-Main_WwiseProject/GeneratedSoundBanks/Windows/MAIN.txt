@@ -17,6 +17,7 @@ Event	ID	Name			Wwise Object Path	Notes
 	2061060223	MUS_Sauerteig_Start_2C			\Default Work Unit\MX\MUS_Sauerteig_Start_2C	
 	2248201771	AMB_Train_Announcement_Play			\Default Work Unit\AMB\AMB_Train_Announcement_Play	
 	2371375953	Door_House_Outside_Close			\Default Work Unit\Props\Door_House_Outside_Close	
+	2385628198	Footsteps			\Default Work Unit\Footsteps	
 	2535910433	AMB_Train_Start			\Default Work Unit\AMB\AMB_Train_Start	
 	2558363198	Dough_React_Steady_Stop			\Default Work Unit\Props\Dough\Dough_React_Steady_Stop	
 	2690086085	MUS_Schlager_Stop			\Default Work Unit\MX\MUS_Schlager_Stop	
@@ -32,6 +33,16 @@ Event	ID	Name			Wwise Object Path	Notes
 	4204145805	MUS_Scene1_Start			\Default Work Unit\MX\MUS_Scene1_Start	
 	4211178899	Smartphone_PutBack			\Default Work Unit\Props\Smartphone_PutBack	
 	4294454276	MUS_DialogTraurig_Start			\Default Work Unit\MX\MUS_DialogTraurig_Start	
+
+Switch Group	ID	Name			Wwise Object Path	Notes
+	1834394558	Surface			\Default Work Unit\Surface	
+
+Switch	ID	Name	Switch Group			Notes
+	655669156	Pebbles	Surface			
+	2031590784	Grass_Leaves	Surface			
+	2058049674	Wood	Surface			
+	2330560532	Congrete_Asphalt	Surface			
+	4248645337	Grass	Surface			
 
 State Group	ID	Name			Wwise Object Path	Notes
 	1071146488	ST_MX_DX_LEVEL			\ST_MX\ST_MX_DX_LEVEL	
@@ -66,8 +77,11 @@ Source plug-ins	ID	Name	Type		Wwise Object Path	Notes
 	954580968	Silence	Wwise Silence		\Containers\JOSHI\AMB\Scene02\Birds\New Silence\Silence	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	4824561	fts_grass_leaves-02_TS 	.cache\C4\{C44C31CC-9A1B-DC7E-67BE-86513F0077D5}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-02_TS 		4769
 	17809938	PROP_Smartphone_Putback-03_TS	.cache\2C\{2C23BE9C-9E9A-865D-2F53-D3D184120396}.wem		\Containers\Tristan\Props\PROP_Smartphone_Putback\PROP_Smartphone_Putback-03_TS		4474
+	28484877	fts_congrete-03_TS	.cache\DD\{DDC9A302-E0D3-0BF1-1B3E-4CA8EBDBF918}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-03_TS		5360
 	36562100	PROP_Smartphone_GetOut-02_TS	.cache\C1\{C1BCEE72-F015-A4C1-020D-5EBACF84C047}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-02_TS		5847
+	42395718	fts_congrete-02_TS	.cache\4A\{4A7ACA5D-D48B-FA66-BA5F-2FE90AA6DDE4}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-02_TS		5341
 	47533370	LAY 01	.cache\A3\{A3E3E30A-F61B-9FA4-4F46-998924C61DB0}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_LOOP\LAY 01		2246996
 	48143553	TRK_Scene 01_LAY 02	.cache\B8\{B8193E30-7D89-C48A-365F-380CD20A5FF3}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_LOOP\TRK_Scene 01_LAY 02		401388
 	49086049	WNDWWood_Log Cabin Wooden Window Creak 01	.cache\FE\{FEE5CC52-6D18-E280-773F-C1AAD70F2365}.wem		\Containers\JOSHI\AMB\Scene02\Creak\WNDWWood_Log Cabin Wooden Window Creak 01		12295
@@ -77,25 +91,40 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	68453811	LAY 01	.cache\A1\{A1EB104C-B441-8012-955C-24870122F45D}.wem		\Containers\MX\MX_Schlager\MX_Schlager_Seg\LAY 01		1309613
 	72473378	PROP_Door_Slam-01_TS	.cache\0C\{0C74032F-AD0B-BE94-7321-073BD8C9E419}.wem		\Containers\Tristan\Props\PROP_Door_Slam-01_TS		9367
 	73445872	LAY 01	.cache\37\{37FA1E86-2C4D-3EA5-32A4-C0A4EE39EE3E}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_B_LOOP 01\LAY 01		3407387
+	73494818	fts_grass_leaves-06_TS 	.cache\4C\{4CF6F339-E28C-E9E5-44F6-7D2E96B9340A}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-06_TS 		4808
 	102658884	PROP_Smartphone_Click-02_TS	.cache\39\{39386B50-5D11-7943-32BB-3D7E42A19D9D}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-02_TS		2850
 	104939962	Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1	.cache\02\{022EABB5-F365-73D5-9935-F50BF7AF20AB}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 1		93240
+	112593053	fts_pebbles-03_TS 	.cache\D8\{D84B0570-114F-1D60-638E-7597BDD90FC6}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-03_TS 		5782
+	133722877	fts_congrete-05_TS	.cache\D5\{D5301B90-DCE8-C17D-3B72-144C2649081D}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-05_TS		5250
+	148942910	Fts_Wood-02_TS	.cache\D9\{D9812146-1E05-4AEE-2F85-D382E5E533C8}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-02_TS		3645
 	157993530	TRK_Scene 01_LAY 03	.cache\15\{15CDEA33-CED5-992C-7EE2-4CA892FB2E71}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 03		2381050
+	162256529	fts_grass-05_TS	.cache\BF\{BF081DC3-0BDB-9EF9-A6DE-E55AC2850478}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-05_TS		5302
 	181891424	LAY 02	.cache\29\{290FF24D-4D59-1AAE-6542-84F6E7D159CC}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_D_LOOP\LAY 02		377292
 	191428205	LAY 02	.cache\CE\{CEA11772-C7F7-2585-6C9B-BAD27445F395}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_B_LOOP 01\LAY 02		989657
 	200231164	TRK_MX_Scene 00_Menu_Intro	.cache\FC\{FC57F4D2-3870-33EF-216A-A3B22BFF8FEA}.wem		\Containers\MX\MX_Scene 00_STARTSCREEN\MX_Scene_00_Menu_Intro\TRK_MX_Scene 00_Menu_Intro		216435
 	211809289	TRK_Scene 01_LAY 01	.cache\FB\{FB793A24-92E4-606B-F9C2-0A552BD28613}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_Intro\TRK_Scene 01_LAY 01		104032
+	219626413	fts_pebbles-01_TS 	.cache\D9\{D998F09A-DEA8-86EB-CB9E-7836135C4846}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-01_TS 		7232
+	219676172	Fts_Wood-04_TS	.cache\25\{25A40BA2-6F69-0254-DBB2-8B4F528797AE}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-04_TS		5144
 	225013524	PROP_Door_House_Outside_Close-03_TS	.cache\9A\{9A81A82A-713D-CDC8-BFCA-254A632B82A2}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Close\PROP_Door_House_Outside_Close-03_TS		13029
 	257248478	Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1	.cache\AF\{AF9B7EC1-A3DF-E63A-A88C-9C06230A3623}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 1		3842
 	260953661	LAY 02	.cache\66\{6604D68E-C211-200F-2D27-3592500714C9}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_A_Intro\LAY 02		285442
 	300077199	TRK_Scene 01_LAY 02	.cache\E7\{E7266B31-44CF-24C2-04C8-2C32F058E518}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 02		190067
 	306826646	PROP_Door_House_Inside_Close-01_TS	.cache\8E\{8E45E066-6D19-27BC-EBCE-A667B9520E58}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-01_TS		8351
+	317501531	fts_grass_leaves-01_TS 	.cache\D5\{D5D62C0E-13A7-C173-6CF4-84B3A370D9A0}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-01_TS 		5128
+	319404685	fts_pebbles-07_TS 	.cache\AB\{AB105E09-8F3E-5304-4A0D-F942992F6E09}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-07_TS 		5684
+	322079870	fts_pebbles-06_TS 	.cache\0A\{0AEEA4DF-32E2-B09D-F618-00BE6A7210EE}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-06_TS 		5650
 	329418304	LAY 01	.cache\B6\{B6996808-46CC-2606-3AEF-3A683721B6D1}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_A_Intro\LAY 01		1155113
+	360115210	fts_grass-02_TS 	.cache\4D\{4DCE6C0E-A7BD-F872-8BC7-5D90A875E0BD}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-02_TS 		5099
+	364937374	fts_congrete-04_TS	.cache\7C\{7C9C1D79-CA46-00BC-CED9-A9C823D2AA04}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-04_TS		4783
+	382480394	fts_grass_leaves-03_TS 	.cache\26\{26AD03B7-B0EB-B1F0-46A1-9BECDCE3F3EE}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-03_TS 		4909
 	400564186	Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3	.cache\22\{22A59D78-9FDF-71B6-DB98-B1E6587C4AEF}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 3		4816
 	404719519	PROP_Door_House_Outside_Open-01_TS	.cache\D3\{D3A5F9D8-2CB7-E341-9072-1E0A882EA829}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Open\PROP_Door_House_Outside_Open-01_TS		12851
 	415473060	PROP_Door_House_Outside_Open-02_TS	.cache\F6\{F6D6C300-7ED3-3CAB-B9C6-13C81DA8F3E1}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Open\PROP_Door_House_Outside_Open-02_TS		13100
 	417471246	PROP_Bike_Click-01_TS	.cache\89\{89670DAE-3205-C2BC-73B0-EBA40BB1D540}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-01_TS		17536
 	428562537	PROP_Bike_Click-04_TS	.cache\76\{7698403A-A171-B9AD-2524-AEA4CA7B1B21}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-04_TS		18207
 	428836299	LAY 01	.cache\06\{06B9CDCC-1E31-B8D6-9E98-92E76FEBA8F6}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_C_T\LAY 01		819315
+	440801318	fts_grass_leaves-04_TS 	.cache\61\{619B9C22-C134-B6E6-EAFF-EC8FE3F8AE89}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-04_TS 		5162
+	451410751	fts_congrete-01_TS	.cache\0F\{0FC87943-54D0-36AD-A376-B07F9CB1378C}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-01_TS		5831
 	458839438	Wind, Vegetation, Trees, Leaves, Rustling SND52155	.cache\E8\{E8A8112E-D5DF-B66C-C77F-8D02267F6471}.wem		\Containers\JOSHI\AMB\Scene02\Wind, Vegetation, Trees, Leaves, Rustling SND52155		371971
 	479635857	PROP_Dough_React_Shrink-01_TS	.cache\96\{960BC3A2-A377-0BAE-4C4C-C27266A0F7FB}.wem		\Containers\Tristan\Props\PROP_Dough_React_Shrink-01_TS		95129
 	483512497	PROP_Smartphone_Click-04_TS	.cache\2B\{2BFC39BC-5131-1F71-BB74-F27D18A0BA32}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-04_TS		2820
@@ -105,25 +134,34 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	505835402	TRK_Scene 01_LAY 01	.cache\DB\{DBD99F38-6EE4-DBD7-E4E4-C023BB2944EC}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 01		225514
 	507115265	Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510	.cache\96\{96CFCA2B-D314-57A0-1C68-64CDCD25B6A8}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510		100449
 	517659330	LAY 02	.cache\49\{4913F44B-793F-7B0F-C111-A721B8219345}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_E_T\LAY 02		75287
+	523890320	fts_grass-04_TS	.cache\5F\{5FBD09A6-D7BA-DC26-B357-AD625FBA9A6C}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-04_TS		4962
+	531846837	Fts_Wood-01_TS	.cache\24\{24CC3DCF-BA5D-C5BE-C21B-6CF48CFCF4F6}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-01_TS		5273
 	533745290	PROP_Door_House_Inside_Open-01_TS	.cache\B3\{B3C9598E-88CF-B81A-39F3-105C1BC7FC21}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-01_TS		7023
 	534685987	AMB_Train_Announcement-02_TS	.cache\4C\{4CC78363-12A0-14D7-B93C-BFE1E7A57E81}.wem		\Containers\Tristan\Voice\AMB_Train_Announcement-02_TS		40574
 	558568173	PROP_Dough_React_Grow-01_TS	.cache\54\{54C79EDF-FAEC-836C-73CC-BAECE6AD1E0E}.wem		\Containers\Tristan\Props\PROP_Dough_React_Grow-01_TS		105359
 	563776362	PROP_Bike_Click-02_TS	.cache\D1\{D1865306-E812-5CA6-EBE0-62D0F2A8586A}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-02_TS		18226
 	563789316	MX	.cache\0A\{0A337514-5A7A-1F31-BF48-0CF4042F8B40}.wem		\Containers\MX\MX_Schlager\Schlager OFF\MX		10818
+	564851041	fts_congrete-07_TS	.cache\08\{08E15D32-7B95-6859-5A19-221BADA81E39}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-07_TS		5055
+	579519660	fts_grass-06_TS	.cache\F8\{F8B642E3-C2A8-6308-35C8-7413BA1165CD}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-06_TS		4919
+	582729721	fts_grass_leaves-05_TS 	.cache\75\{7508D390-FCF6-01A1-F619-631066539403}.wem		\Containers\Tristan\Props\FTS\Fts_Grass_Leaves\fts_grass_leaves-05_TS 		4851
 	596546382	LAY 01	.cache\E7\{E7266B31-44CF-24C2-04C8-2C32F058E518}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_Intro\LAY 01		190067
 	617041906	WNDWWood_Log Cabin Wooden Window Creak 03	.cache\71\{71BC384B-6637-764B-D047-09D6079922BD}.wem		\Containers\JOSHI\AMB\Scene02\Creak\WNDWWood_Log Cabin Wooden Window Creak 03		15650
 	625184066	TRK_MX_MENU_Loop	.cache\14\{14B95E93-278E-D718-B567-98FB189D7101}.wem		\Containers\MX\MX_Scene 00_STARTSCREEN\MX_Scene_00_Menu_Loop\TRK_MX_MENU_Loop		1093398
+	632232345	fts_pebbles-08_TS 	.cache\DC\{DCBAEA8D-D4E3-00E6-981F-25C67938D979}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-08_TS 		5824
+	639021687	fts_grass-01_TS 	.cache\C5\{C59F0037-B970-86B6-188A-4D153DAAAFAD}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-01_TS 		5259
 	640226488	PROP_Smartphone_Click-03_TS	.cache\40\{4066F29B-F1B5-485E-9C5C-497411FCF328}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-03_TS		2833
 	640322252	MX	.cache\0B\{0B95FEC8-B320-C892-2CA0-9D64C88EF610}.wem		\Containers\MX\MX_Schlager\Schlager ON\MX		10428
 	640594093	LAY 01	.cache\10\{105F0E1F-5510-1664-A649-D333DC1C25FF}.wem		\Containers\MX\MX_Sauerteig\MX_Sauerteig_SEG\LAY 01		2549505
 	667562955	PROP_Door_House_Inside_Close-02_TS	.cache\B2\{B2F50C4A-2DB0-C4A8-922F-6C4AFD21FB69}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-02_TS		9122
 	705000866	Water, Plumbing, Water Running, Plastic Pipes 02 SND123822	.cache\A9\{A9C21496-62F9-2DCD-2ACE-97F3780F8008}.wem		\Containers\JOSHI\AMB\Scene02\Water, Plumbing, Water Running, Plastic Pipes 02 SND123822		67442
+	712733846	fts_congrete-06_TS	.cache\78\{78EC3FF0-4D59-0EAE-2862-DBB524DED6BA}.wem		\Containers\Tristan\Props\FTS\Fts_congrete\fts_congrete-06_TS		4971
 	717190081	Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2	.cache\D2\{D2C90AE3-7E5B-66B8-59A2-DE567FE073C5}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713 2		4131
 	727775960	TRK_Scene 01_LAY 01	.cache\17\{17F8A951-F8CF-9045-F128-A43E2DFE7EBA}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 01		2508661
 	735398847	Ambience, Room Tone, Bedroom A SND103923	.cache\D7\{D7BE143D-1E90-FD06-0C40-00E655237102}.wem		\Containers\JOSHI\AMB\Scene02\Ambience, Room Tone, Bedroom A SND103923		259653
 	776297993	LAY 02	.cache\96\{9629E882-6B8F-26F1-2A71-27433C82FAEE}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_Neutral_PL\MX_DIALOG_Neutral_LOOP\LAY 02		497341
 	800972600	LAY 01	.cache\BF\{BFF5BA4E-0DA6-1F7E-5DAB-770A0C5E50EA}.wem		\Containers\MX\MX_Dorffest\MX_Dorffest_Seg\LAY 01		340054
 	809434169	LAY 01	.cache\5D\{5D6405D5-2118-6419-B0F5-8A1587A01B08}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_E_T\LAY 01		299917
+	829171522	fts_grass-03_TS 	.cache\43\{433CF8C1-0032-318E-9780-6B67929BEDB3}.wem		\Containers\Tristan\Props\FTS\Fts_Grass\fts_grass-03_TS 		5006
 	837748890	PROP_Smartphone_GetOut-03_TS	.cache\0B\{0B316115-AB44-267E-9EA2-CAB0640EF06E}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-03_TS		5138
 	852356172	LAY 02	.cache\DB\{DBB3461C-AC6D-DE0E-4592-44BC47BAB3CE}.wem		\Containers\MX\MX_Sauerteig\MX_Sauerteig_SEG\LAY 02		650299
 	869974642	PROP_Door_House_Inside_Open-03_TS	.cache\E9\{E9C698C9-B047-4736-538B-1F2E311DD8DA}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-03_TS		6192
@@ -131,19 +169,25 @@ In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	882469003	PROP_Door_House_Inside_Open-02_TS	.cache\8A\{8ABAA319-6F8A-47B7-539D-3EA609784DBF}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Open\PROP_Door_House_Inside_Open-02_TS		7756
 	888694663	PROP_Smartphone_GetOut-01_TS	.cache\43\{43B14B89-2F67-410F-CEC0-9AA830434A4D}.wem		\Containers\Tristan\Props\PROP_Smartphone_GetOut\PROP_Smartphone_GetOut-01_TS		4102
 	904683675	PROP_Door_House_Outside_Close-02_TS	.cache\64\{64BE0DE5-A37E-B957-D0EA-CB07F94A53BA}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Close\PROP_Door_House_Outside_Close-02_TS		12994
+	909628270	fts_pebbles-05_TS 	.cache\A7\{A76CED57-B6FC-7C4B-3DA4-9CB34DB5B9D6}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-05_TS 		6314
 	910407773	PROP_Bike_Click-03_TS	.cache\A4\{A4E88F81-F143-3B14-8D45-5EA318907D72}.wem		\Containers\Tristan\Props\PROP_Bike_Click\PROP_Bike_Click-03_TS		17897
+	914964492	Fts_Wood-05_TS	.cache\44\{446257B8-9007-1378-31CC-DD0E9297CFEE}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-05_TS		4446
 	926741885	PROP_Smartphone_Putback-02_TS	.cache\ED\{ED61A933-11AC-B59E-696A-461D2674C158}.wem		\Containers\Tristan\Props\PROP_Smartphone_Putback\PROP_Smartphone_Putback-02_TS		5235
+	929031010	fts_pebbles-02_TS 	.cache\77\{77098B2A-0C1B-3B3A-3D0D-9C4F07D1BC18}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-02_TS 		5441
 	935716141	PROP_Door_House_Outside_Close-01_TS	.cache\17\{17795456-9F0A-FE98-0E1F-0F2FA9CE305F}.wem		\Containers\Tristan\Props\PROP_Door_House_Outside_Close\PROP_Door_House_Outside_Close-01_TS		12477
 	937429967	Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2	.cache\F6\{F678124B-F35A-7273-6E14-C2B6F894FA3E}.wem		\Containers\JOSHI\AMB\Scene02\Birds\Ambience, Forest, Spring Birds, Calm, Light Wind, Near Village SND158510 2		106855
 	938844291	PROP_Smartphone_Click-01_TS	.cache\26\{269AADD5-2AED-B131-6443-0E055E508975}.wem		\Containers\Tristan\Props\PROP_Smartphone_Click\PROP_Smartphone_Click-01_TS		2534
 	968318303	TRK_Scene 01_LAY 02	.cache\A3\{A3E3E30A-F61B-9FA4-4F46-998924C61DB0}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_LOOP\TRK_Scene 01_LAY 02		2246996
 	970529583	Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713	.cache\E2\{E23937EC-C699-083A-94BC-A9F2A02A7570}.wem		\Containers\JOSHI\AMB\Scene02\Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713		410687
+	972543697	Fts_Wood-06_TS	.cache\10\{107968CC-245E-638B-7DC3-A589CF0607AC}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-06_TS		1222
 	972905933	LAY 01	.cache\85\{8565D5C0-9ECC-168B-7775-A033BF874786}.wem		\Containers\MX\MX_Scene02\MX_Scene 02_D_LOOP\LAY 01		1792356
 	977082521	TRK_Scene 01_LAY 03	.cache\BC\{BCE48DA3-F4A3-F382-4969-8D16AFEFD56E}.wem		\Containers\MX\MX_Scene 01\MX_Scene 01_INTRO\TRK_Scene 01_LAY 03		220120
 	1016399115	PROP_Dough_React_Steady-01_TS	.cache\FB\{FB20DAA6-B202-F55C-4735-395B9B33B68F}.wem		\Containers\Tristan\Props\PROP_Dough_React_Steady-01_TS		80203
 	1039632174	PROP_Door_House_Inside_Close-03_TS	.cache\68\{68DDC0BA-9D6A-FE4E-C6DD-0C6E21F8FDE6}.wem		\Containers\Tristan\Props\PROP_Door_House_Inside_Close\PROP_Door_House_Inside_Close-03_TS		9055
 	1045615548	TRK_Scene 01_LAY 01	.cache\F8\{F8D7B987-020F-CB99-8C17-DB35570275C2}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_LOOP\TRK_Scene 01_LAY 01		979357
 	1046350458	TRK_Scene 01_LAY 02	.cache\6D\{6DB89FF9-266E-1C59-3146-0E72566DE13F}.wem		\Containers\MX\MX_DIALOG\MX_Dialog_traurig\MX_Dialog_traurig_Intro\TRK_Scene 01_LAY 02		44498
+	1065214656	fts_pebbles-04_TS 	.cache\45\{458BDDE5-6698-75C7-9EB4-8AC2989B73DA}.wem		\Containers\Tristan\Props\FTS\Fts_Pebbles\fts_pebbles-04_TS 		5936
+	1071489872	Fts_Wood-03_TS	.cache\F9\{F9CFEF1E-98C6-4C73-4965-3F8BFCFA67F1}.wem		\Containers\Tristan\Props\FTS\Fts_Wood\Fts_Wood-03_TS		3241
 
 Streamed Audio	ID	Name	Audio source file	Generated audio file	Wwise Object Path	Notes
 	97899667	Train_INT_Amb	.cache\2D\{2D88850A-3F3B-CDF9-D31A-742E54A80728}.wem	97899667.wem	\Containers\JOSHI\AMB\Train\Train_INT_Amb	

@@ -305,10 +305,48 @@
       "ObjectPath": "\\Switches\\Default Work Unit\\MX_LAY_03",
       "GUID": "{693D8F66-6B19-43E3-9D28-28AD062A2CFB}",
       "Switches": []
+     },
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{68430E4C-494C-4B1B-A355-CFD86AE31BF0}",
+      "Switches": [
+       {
+        "Id": "655669156",
+        "Name": "Pebbles",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Pebbles",
+        "GUID": "{8A54D5E5-E6A7-4B77-BAB9-98C9D75F471A}"
+       },
+       {
+        "Id": "2031590784",
+        "Name": "Grass_Leaves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass_Leaves",
+        "GUID": "{298F6D1A-11B5-4000-9DCB-65084050CFAA}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Wood",
+        "GUID": "{6F28A47A-4D9C-4116-8213-673B0FFC611E}"
+       },
+       {
+        "Id": "2330560532",
+        "Name": "Congrete_Asphalt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Congrete_Asphalt",
+        "GUID": "{6040C9BA-DC9D-4243-9F64-DEA5C3DBC0F1}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "GUID": "{B1A7964D-7330-4963-8F05-932ED184CB3F}"
+       }
+      ]
      }
     ]
    }
   ],
-  "FileHash": "{0C439DF5-9DD7-9A02-76B9-4E4F2939325D}"
+  "FileHash": "{B3680608-603F-AA5A-CA09-E6D8095AE236}"
  }
 }

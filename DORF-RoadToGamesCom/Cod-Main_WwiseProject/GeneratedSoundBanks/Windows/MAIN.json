@@ -10,11 +10,19 @@
     "Type": "User",
     "GUID": "{B19D08E1-C54F-413C-92F9-3EE56640B868}",
     "Language": "SFX",
-    "Hash": "{AFD3600E-09E8-F9C3-C7C0-99F88CD2DB04}",
+    "Hash": "{73595082-3D6B-BF7F-06CE-A99D207A4F3F}",
     "ObjectPath": "\\SoundBanks\\Default Work Unit\\MAIN",
     "ShortName": "MAIN",
     "Path": "MAIN.bnk",
     "Media": [
+     {
+      "Id": "4824561",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-02_TS .wav",
+      "CachePath": "C4/{C44C31CC-9A1B-DC7E-67BE-86513F0077D5}.wem"
+     },
      {
       "Id": "17809938",
       "Language": "SFX",
@@ -24,12 +32,28 @@
       "CachePath": "2C/{2C23BE9C-9E9A-865D-2F53-D3D184120396}.wem"
      },
      {
+      "Id": "28484877",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-03_TS.wav",
+      "CachePath": "DD/{DDC9A302-E0D3-0BF1-1B3E-4CA8EBDBF918}.wem"
+     },
+     {
       "Id": "36562100",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_GetOut\\PROP_Smartphone_GetOut-02_TS.wav",
       "CachePath": "C1/{C1BCEE72-F015-A4C1-020D-5EBACF84C047}.wem"
+     },
+     {
+      "Id": "42395718",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-02_TS.wav",
+      "CachePath": "4A/{4A7ACA5D-D48B-FA66-BA5F-2FE90AA6DDE4}.wem"
      },
      {
       "Id": "47533370",
@@ -104,6 +128,14 @@
       "CachePath": "37/{37FA1E86-2C4D-3EA5-32A4-C0A4EE39EE3E}.wem"
      },
      {
+      "Id": "73494818",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-06_TS .wav",
+      "CachePath": "4C/{4CF6F339-E28C-E9E5-44F6-7D2E96B9340A}.wem"
+     },
+     {
       "Id": "97899667",
       "Language": "SFX",
       "Streaming": "true",
@@ -129,12 +161,44 @@
       "CachePath": "02/{022EABB5-F365-73D5-9935-F50BF7AF20AB}.wem"
      },
      {
+      "Id": "112593053",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-03_TS .wav",
+      "CachePath": "D8/{D84B0570-114F-1D60-638E-7597BDD90FC6}.wem"
+     },
+     {
+      "Id": "133722877",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-05_TS.wav",
+      "CachePath": "D5/{D5301B90-DCE8-C17D-3B72-144C2649081D}.wem"
+     },
+     {
+      "Id": "148942910",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-02_TS.wav",
+      "CachePath": "D9/{D9812146-1E05-4AEE-2F85-D382E5E533C8}.wem"
+     },
+     {
       "Id": "157993530",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Music_Leon\\260806_CoD_Scene 01_LAY 03_LOOP_V01.wav",
       "CachePath": "15/{15CDEA33-CED5-992C-7EE2-4CA892FB2E71}.wem"
+     },
+     {
+      "Id": "162256529",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-05_TS.wav",
+      "CachePath": "BF/{BF081DC3-0BDB-9EF9-A6DE-E55AC2850478}.wem"
      },
      {
       "Id": "181891424",
@@ -167,6 +231,22 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260808_COD_DIALOG TRAURIG_LAY 01_INTRO_V03.wav",
       "CachePath": "FB/{FB793A24-92E4-606B-F9C2-0A552BD28613}.wem"
+     },
+     {
+      "Id": "219626413",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-01_TS .wav",
+      "CachePath": "D9/{D998F09A-DEA8-86EB-CB9E-7836135C4846}.wem"
+     },
+     {
+      "Id": "219676172",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-04_TS.wav",
+      "CachePath": "25/{25A40BA2-6F69-0254-DBB2-8B4F528797AE}.wem"
      },
      {
       "Id": "225013524",
@@ -209,12 +289,60 @@
       "CachePath": "8E/{8E45E066-6D19-27BC-EBCE-A667B9520E58}.wem"
      },
      {
+      "Id": "317501531",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-01_TS .wav",
+      "CachePath": "D5/{D5D62C0E-13A7-C173-6CF4-84B3A370D9A0}.wem"
+     },
+     {
+      "Id": "319404685",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-07_TS .wav",
+      "CachePath": "AB/{AB105E09-8F3E-5304-4A0D-F942992F6E09}.wem"
+     },
+     {
+      "Id": "322079870",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-06_TS .wav",
+      "CachePath": "0A/{0AEEA4DF-32E2-B09D-F618-00BE6A7210EE}.wem"
+     },
+     {
       "Id": "329418304",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "Music_Leon\\260809_CoD_Scene 02_LAY 01_A_INTRO_V01.wav",
       "CachePath": "B6/{B6996808-46CC-2606-3AEF-3A683721B6D1}.wem"
+     },
+     {
+      "Id": "360115210",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-02_TS .wav",
+      "CachePath": "4D/{4DCE6C0E-A7BD-F872-8BC7-5D90A875E0BD}.wem"
+     },
+     {
+      "Id": "364937374",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-04_TS.wav",
+      "CachePath": "7C/{7C9C1D79-CA46-00BC-CED9-A9C823D2AA04}.wem"
+     },
+     {
+      "Id": "382480394",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-03_TS .wav",
+      "CachePath": "26/{26AD03B7-B0EB-B1F0-46A1-9BECDCE3F3EE}.wem"
      },
      {
       "Id": "400564186",
@@ -263,6 +391,22 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260809_CoD_Scene 02_LAY 01_C_Transition zu D_V01.wav",
       "CachePath": "06/{06B9CDCC-1E31-B8D6-9E98-92E76FEBA8F6}.wem"
+     },
+     {
+      "Id": "440801318",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-04_TS .wav",
+      "CachePath": "61/{619B9C22-C134-B6E6-EAFF-EC8FE3F8AE89}.wem"
+     },
+     {
+      "Id": "451410751",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-01_TS.wav",
+      "CachePath": "0F/{0FC87943-54D0-36AD-A376-B07F9CB1378C}.wem"
      },
      {
       "Id": "458839438",
@@ -337,6 +481,22 @@
       "CachePath": "49/{4913F44B-793F-7B0F-C111-A721B8219345}.wem"
      },
      {
+      "Id": "523890320",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-04_TS.wav",
+      "CachePath": "5F/{5FBD09A6-D7BA-DC26-B357-AD625FBA9A6C}.wem"
+     },
+     {
+      "Id": "531846837",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-01_TS.wav",
+      "CachePath": "24/{24CC3DCF-BA5D-C5BE-C21B-6CF48CFCF4F6}.wem"
+     },
+     {
       "Id": "533745290",
       "Language": "SFX",
       "Streaming": "false",
@@ -386,6 +546,30 @@
       "CachePath": "2B/{2BCCB465-E960-1CF5-8CCF-74D7E8406156}.wem"
      },
      {
+      "Id": "564851041",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-07_TS.wav",
+      "CachePath": "08/{08E15D32-7B95-6859-5A19-221BADA81E39}.wem"
+     },
+     {
+      "Id": "579519660",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-06_TS.wav",
+      "CachePath": "F8/{F8B642E3-C2A8-6308-35C8-7413BA1165CD}.wem"
+     },
+     {
+      "Id": "582729721",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass_Leaves\\fts_grass_leaves-05_TS .wav",
+      "CachePath": "75/{7508D390-FCF6-01A1-F619-631066539403}.wem"
+     },
+     {
       "Id": "596546382",
       "Language": "SFX",
       "Streaming": "false",
@@ -408,6 +592,22 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260806_CoD_Scene 00_MENU Start_LOOP_V01.wav",
       "CachePath": "14/{14B95E93-278E-D718-B567-98FB189D7101}.wem"
+     },
+     {
+      "Id": "632232345",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-08_TS .wav",
+      "CachePath": "DC/{DCBAEA8D-D4E3-00E6-981F-25C67938D979}.wem"
+     },
+     {
+      "Id": "639021687",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-01_TS .wav",
+      "CachePath": "C5/{C59F0037-B970-86B6-188A-4D153DAAAFAD}.wem"
      },
      {
       "Id": "640226488",
@@ -448,6 +648,14 @@
       "Location": "Memory",
       "ShortName": "Water, Plumbing, Water Running, Plastic Pipes 02 SND123822.wav",
       "CachePath": "A9/{A9C21496-62F9-2DCD-2ACE-97F3780F8008}.wem"
+     },
+     {
+      "Id": "712733846",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_congrete\\fts_congrete-06_TS.wav",
+      "CachePath": "78/{78EC3FF0-4D59-0EAE-2862-DBB524DED6BA}.wem"
      },
      {
       "Id": "717190081",
@@ -496,6 +704,14 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260809_CoD_Scene 02_LAY 01_E_Transition back zu B_V01.wav",
       "CachePath": "5D/{5D6405D5-2118-6419-B0F5-8A1587A01B08}.wem"
+     },
+     {
+      "Id": "829171522",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Grass\\fts_grass-03_TS .wav",
+      "CachePath": "43/{433CF8C1-0032-318E-9780-6B67929BEDB3}.wem"
      },
      {
       "Id": "837748890",
@@ -554,6 +770,14 @@
       "CachePath": "64/{64BE0DE5-A37E-B957-D0EA-CB07F94A53BA}.wem"
      },
      {
+      "Id": "909628270",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-05_TS .wav",
+      "CachePath": "A7/{A76CED57-B6FC-7C4B-3DA4-9CB34DB5B9D6}.wem"
+     },
+     {
       "Id": "910407773",
       "Language": "SFX",
       "Streaming": "false",
@@ -562,12 +786,28 @@
       "CachePath": "A4/{A4E88F81-F143-3B14-8D45-5EA318907D72}.wem"
      },
      {
+      "Id": "914964492",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-05_TS.wav",
+      "CachePath": "44/{446257B8-9007-1378-31CC-DD0E9297CFEE}.wem"
+     },
+     {
       "Id": "926741885",
       "Language": "SFX",
       "Streaming": "false",
       "Location": "Memory",
       "ShortName": "PROP_Smartphone_Putback\\PROP_Smartphone_Putback-02_TS.wav",
       "CachePath": "ED/{ED61A933-11AC-B59E-696A-461D2674C158}.wem"
+     },
+     {
+      "Id": "929031010",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-02_TS .wav",
+      "CachePath": "77/{77098B2A-0C1B-3B3A-3D0D-9C4F07D1BC18}.wem"
      },
      {
       "Id": "935716141",
@@ -608,6 +848,14 @@
       "Location": "Memory",
       "ShortName": "Ambience, Birdsong, Various Birds, Forest, Near Village 01 SND159713.wav",
       "CachePath": "E2/{E23937EC-C699-083A-94BC-A9F2A02A7570}.wem"
+     },
+     {
+      "Id": "972543697",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-06_TS.wav",
+      "CachePath": "10/{107968CC-245E-638B-7DC3-A589CF0607AC}.wem"
      },
      {
       "Id": "972905933",
@@ -656,6 +904,22 @@
       "Location": "Memory",
       "ShortName": "Music_Leon\\260808_COD_DIALOG TRAURIG_LAY 02_INTRO_V03.wav",
       "CachePath": "6D/{6DB89FF9-266E-1C59-3146-0E72566DE13F}.wem"
+     },
+     {
+      "Id": "1065214656",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Pebbles\\fts_pebbles-04_TS .wav",
+      "CachePath": "45/{458BDDE5-6698-75C7-9EB4-8AC2989B73DA}.wem"
+     },
+     {
+      "Id": "1071489872",
+      "Language": "SFX",
+      "Streaming": "false",
+      "Location": "Memory",
+      "ShortName": "Fts_Wood\\Fts_Wood-03_TS.wav",
+      "CachePath": "F9/{F9CFEF1E-98C6-4C73-4965-3F8BFCFA67F1}.wem"
      }
     ],
     "Plugins": {
@@ -1047,6 +1311,167 @@
       "DurationType": "OneShot",
       "DurationMin": "0",
       "DurationMax": "0"
+     },
+     {
+      "Id": "2385628198",
+      "Name": "Footsteps",
+      "ObjectPath": "\\Events\\Default Work Unit\\Footsteps",
+      "GUID": "{7DB41D08-AA12-4A4C-9B38-8AEDC993EBED}",
+      "DurationType": "OneShot",
+      "DurationMin": "0.40419942",
+      "DurationMax": "0.45362794",
+      "SwitchContainers": [
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2031590784",
+         "GUID": "{298F6D1A-11B5-4000-9DCB-65084050CFAA}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "4824561"
+         },
+         {
+          "Id": "73494818"
+         },
+         {
+          "Id": "317501531"
+         },
+         {
+          "Id": "382480394"
+         },
+         {
+          "Id": "440801318"
+         },
+         {
+          "Id": "582729721"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "4248645337",
+         "GUID": "{B1A7964D-7330-4963-8F05-932ED184CB3F}",
+         "Default": "true"
+        },
+        "MediaRefs": [
+         {
+          "Id": "162256529"
+         },
+         {
+          "Id": "360115210"
+         },
+         {
+          "Id": "523890320"
+         },
+         {
+          "Id": "579519660"
+         },
+         {
+          "Id": "639021687"
+         },
+         {
+          "Id": "829171522"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2058049674",
+         "GUID": "{6F28A47A-4D9C-4116-8213-673B0FFC611E}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "148942910"
+         },
+         {
+          "Id": "219676172"
+         },
+         {
+          "Id": "531846837"
+         },
+         {
+          "Id": "914964492"
+         },
+         {
+          "Id": "972543697"
+         },
+         {
+          "Id": "1071489872"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "2330560532",
+         "GUID": "{6040C9BA-DC9D-4243-9F64-DEA5C3DBC0F1}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "28484877"
+         },
+         {
+          "Id": "42395718"
+         },
+         {
+          "Id": "133722877"
+         },
+         {
+          "Id": "364937374"
+         },
+         {
+          "Id": "451410751"
+         },
+         {
+          "Id": "564851041"
+         },
+         {
+          "Id": "712733846"
+         }
+        ]
+       },
+       {
+        "SwitchValue": {
+         "GroupType": "Switch",
+         "GroupId": "1834394558",
+         "Id": "655669156",
+         "GUID": "{8A54D5E5-E6A7-4B77-BAB9-98C9D75F471A}"
+        },
+        "MediaRefs": [
+         {
+          "Id": "112593053"
+         },
+         {
+          "Id": "219626413"
+         },
+         {
+          "Id": "319404685"
+         },
+         {
+          "Id": "322079870"
+         },
+         {
+          "Id": "632232345"
+         },
+         {
+          "Id": "909628270"
+         },
+         {
+          "Id": "929031010"
+         },
+         {
+          "Id": "1065214656"
+         }
+        ]
+       }
+      ]
      },
      {
       "Id": "3298014119",
@@ -1668,9 +2093,49 @@
        }
       ]
      }
+    ],
+    "SwitchGroups": [
+     {
+      "Id": "1834394558",
+      "Name": "Surface",
+      "ObjectPath": "\\Switches\\Default Work Unit\\Surface",
+      "GUID": "{68430E4C-494C-4B1B-A355-CFD86AE31BF0}",
+      "Switches": [
+       {
+        "Id": "655669156",
+        "Name": "Pebbles",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Pebbles",
+        "GUID": "{8A54D5E5-E6A7-4B77-BAB9-98C9D75F471A}"
+       },
+       {
+        "Id": "2031590784",
+        "Name": "Grass_Leaves",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass_Leaves",
+        "GUID": "{298F6D1A-11B5-4000-9DCB-65084050CFAA}"
+       },
+       {
+        "Id": "2058049674",
+        "Name": "Wood",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Wood",
+        "GUID": "{6F28A47A-4D9C-4116-8213-673B0FFC611E}"
+       },
+       {
+        "Id": "2330560532",
+        "Name": "Congrete_Asphalt",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Congrete_Asphalt",
+        "GUID": "{6040C9BA-DC9D-4243-9F64-DEA5C3DBC0F1}"
+       },
+       {
+        "Id": "4248645337",
+        "Name": "Grass",
+        "ObjectPath": "\\Switches\\Default Work Unit\\Surface\\Grass",
+        "GUID": "{B1A7964D-7330-4963-8F05-932ED184CB3F}"
+       }
+      ]
+     }
     ]
    }
   ],
-  "FileHash": "{C7573F13-F19F-DF67-8326-4ED84C6F1691}"
+  "FileHash": "{C351D973-07B5-54E6-A5A0-DE11C31885D5}"
  }
 }

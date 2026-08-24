@@ -30,6 +30,7 @@ namespace AK
         static const AkUniqueID DOUGH_REACT_SHRINK_STOP = 1822647189U;
         static const AkUniqueID DOUGH_REACT_STEADY_START = 1233864094U;
         static const AkUniqueID DOUGH_REACT_STEADY_STOP = 2558363198U;
+        static const AkUniqueID FOOTSTEPS = 2385628198U;
         static const AkUniqueID MUS_DIALOG_END = 3298014119U;
         static const AkUniqueID MUS_DIALOG_START = 797527444U;
         static const AkUniqueID MUS_DIALOGTRAURIG_START = 4294454276U;
@@ -129,6 +130,20 @@ namespace AK
             {
             } // namespace SWITCH
         } // namespace MX_LAY_03
+
+        namespace SURFACE
+        {
+            static const AkUniqueID GROUP = 1834394558U;
+
+            namespace SWITCH
+            {
+                static const AkUniqueID CONGRETE_ASPHALT = 2330560532U;
+                static const AkUniqueID GRASS = 4248645337U;
+                static const AkUniqueID GRASS_LEAVES = 2031590784U;
+                static const AkUniqueID PEBBLES = 655669156U;
+                static const AkUniqueID WOOD = 2058049674U;
+            } // namespace SWITCH
+        } // namespace SURFACE
 
     } // namespace SWITCHES
 
