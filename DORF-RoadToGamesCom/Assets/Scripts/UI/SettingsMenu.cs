@@ -133,17 +133,22 @@ namespace UI
         }
         
         /// <summary>
-        /// Runs on every scene load and on the inactivity reset. InGameAudioSettings restores its own
-        /// fields from the same callback, but the reset timeout also lives as a plain int on the
-        /// InputDispatcher — which sits on the DontDestroyOnLoad Global prefab and is therefore never
-        /// recreated. Read from the authored default rather than the restored field, so it does not
-        /// matter which of the two receivers ran first.
+        /// Runs on every scene load and on the inactivity reset. The volumes are left alone on
+        /// purpose — see InGameAudioSettings.OnSceneSetup; this used to restore them a second time,
+        /// so dropping it there alone would not have been enough.
+        ///
+        /// The reset timeout is restored, and it also lives as a plain int on the InputDispatcher —
+        /// which sits on the DontDestroyOnLoad Global prefab and is therefore never recreated. Read
+        /// from the authored default rather than from the settings object, so it does not matter
+        /// which of the two receivers ran first.
         /// </summary>
         public void OnSceneSetup()
         {
             if (audioSettings == null) return;
 
-            audioSettings.RestoreDefaults();
+            // No-op after the first scene of the session. Called here as well so the sliders below
+            // are seeded from the defaults even when this receiver runs before the settings object.
+            audioSettings.ApplyLaunchDefaultsOnce();
 
             if (inputDispatcher != null)
                 inputDispatcher.secondsUntilGameReset = audioSettings.DefaultInactivityThresholdSeconds;

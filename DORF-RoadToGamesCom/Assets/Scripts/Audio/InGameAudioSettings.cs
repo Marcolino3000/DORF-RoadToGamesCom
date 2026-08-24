@@ -11,7 +11,8 @@ namespace Audio
 
         // Runtime state. The settings menu writes straight into these, and because this is a
         // ScriptableObject they survive scene loads — and in the Editor they are written to disk.
-        // RestoreDefaults puts them back; never author intended values here.
+        // The volumes are seeded from the defaults below once per launch and then belong to
+        // whoever moved the sliders last; never author intended values here.
         [Range(0f, 1f)]
         public float masterVolume = 1f;
 
@@ -27,8 +28,9 @@ namespace Audio
         public int inactivityThresholdSeconds;
 
         [Header("Exhibition defaults")]
-        [Tooltip("What the values above are restored to on every scene load and on the inactivity " +
-                 "reset. These are the authored settings — edit these, not the runtime ones.")]
+        [Tooltip("What the values above are seeded from once per launch. The inactivity timeout is " +
+                 "additionally restored on every scene load and on the reset, the volumes are not. " +
+                 "These are the authored settings — edit these, not the runtime ones.")]
         [SerializeField, Range(0f, 1f)] private float defaultMasterVolume = 1f;
         [SerializeField, Range(0f, 1f)] private float defaultMusicVolume = 1f;
         [SerializeField, Range(0f, 1f)] private float defaultSfxVolume = 1f;
@@ -42,15 +44,66 @@ namespace Audio
         public int DefaultInactivityThresholdSeconds => defaultInactivityThresholdSeconds;
 
         /// <summary>
-        /// Runs on every scene load and on the inactivity reset. Without it a visitor who drags the
-        /// master volume to zero leaves the kiosk silent for everyone after them, all day — and the
-        /// game's opening beat is a voice message.
+        /// True from the first <see cref="ApplyLaunchDefaultsOnce"/> of the process on. Static, so a
+        /// build starts every run from the authored defaults while a running game — scene loads and
+        /// the inactivity reset included — never touches the volumes again.
+        /// </summary>
+        private static bool launchDefaultsApplied;
+
+        /// <summary>
+        /// Statics survive entering Play mode when domain reloading is switched off, which would
+        /// carry the last session's volumes into the next one. SubsystemRegistration runs before
+        /// every Play session either way.
+        /// </summary>
+        [RuntimeInitializeOnLoadMethod(RuntimeInitializeLoadType.SubsystemRegistration)]
+        private static void ResetLaunchDefaultsFlag()
+        {
+            launchDefaultsApplied = false;
+        }
+
+        /// <summary>
+        /// Runs on every scene load and on the inactivity reset.
+        ///
+        /// The volumes are deliberately *not* restored here: a level set at the kiosk has to hold
+        /// for the rest of the day, and resetting them mid-run would undo it on the next scene swap.
+        /// They are seeded from the defaults once per launch instead — which in a build is what the
+        /// asset ships with anyway, and in the Editor keeps the last play session's values (this is
+        /// a ScriptableObject, so they were written to disk) from becoming the next run's start.
+        ///
+        /// The inactivity timeout is not an audio setting and keeps the old rule: a visitor who
+        /// drags that slider must not be able to switch the kiosk's reset off for everyone after
+        /// them.
         /// </summary>
         public void OnSceneSetup()
         {
+            ApplyLaunchDefaultsOnce();
+
+            inactivityThresholdSeconds = defaultInactivityThresholdSeconds;
+
+            // The values stay as they are, but the sound engine is fed again: RTPC values are global
+            // engine state rather than ours, so this is what keeps Wwise on the current settings
+            // after an engine or bank reload.
+            UpdateWwiseRTPCs();
+            OnDialogVolumeChanged?.Invoke(GetDialogVolume());
+        }
+
+        /// <summary>
+        /// Seeds the runtime values from the authored defaults, once per application launch. Safe to
+        /// call from every scene-setup receiver, so it does not matter which of them runs first.
+        /// </summary>
+        public void ApplyLaunchDefaultsOnce()
+        {
+            if (launchDefaultsApplied)
+                return;
+
+            launchDefaultsApplied = true;
             RestoreDefaults();
         }
 
+        /// <summary>
+        /// Full manual reset to the authored values. Nothing in a running game calls this any more —
+        /// see <see cref="OnSceneSetup"/>.
+        /// </summary>
         public void RestoreDefaults()
         {
             masterVolume = defaultMasterVolume;
