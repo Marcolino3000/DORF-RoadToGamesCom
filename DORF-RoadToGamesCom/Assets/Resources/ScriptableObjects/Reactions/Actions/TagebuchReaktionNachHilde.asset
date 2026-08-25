@@ -14,12 +14,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Core.Reaction
   DialogTree: {fileID: 0}
   Interactable: {fileID: 11400000, guid: 0b524a0c0dbe44756b23523e0acca0f7, type: 2}
+  TriggerInteractableAfterReactionFinished: 0
   ObjectToMoveIn: {fileID: 0}
   ObjectToMoveOut: {fileID: 11400000, guid: 0b524a0c0dbe44756b23523e0acca0f7, type: 2}
   ObjectToMove: {fileID: 0}
   TargetPosition: {x: 0, y: 0, z: 0}
   CancelCurrentDialog: 0
-  DebugMessage: 
   ScriptedSequence: {fileID: 0}
   InteractableToShow: {fileID: 11400000, guid: 0b524a0c0dbe44756b23523e0acca0f7, type: 2}
-  InteractableDisappearsAutomatically: 0
+  InteractableDisappearsAutomatically: 1
+  SceneToLoad: 
