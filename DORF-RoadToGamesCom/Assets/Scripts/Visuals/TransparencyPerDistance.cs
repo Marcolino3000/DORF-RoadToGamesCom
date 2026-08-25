@@ -31,9 +31,31 @@ public class TransparencyPerDistance : MonoBehaviour
         if(triggerArea == null)
             triggerArea = gameObject.GetComponentInChildren<TriggerArea>();
         
-        colliderRadius = triggerArea.GetComponent<SphereCollider>().radius;
+        var triggerCollider = triggerArea.GetComponent<SphereCollider>();
+
+        if (triggerCollider != null)
+            colliderRadius = triggerCollider.radius;
+
+        triggerArea.OnPlayerEntered -= HandlePlayerEntered;
+        triggerArea.OnPlayerExited -= HandlePlayerExited;
+
         triggerArea.OnPlayerEntered += HandlePlayerEntered;
         triggerArea.OnPlayerExited += HandlePlayerExited;
+
+        // A play session that ended in the dead ring can have left this off on the asset.
+        if (collider != null)
+            collider.enabled = true;
+    }
+
+    // Rooms are switched by activating and deactivating them, so OnEnable runs again every time
+    // Marlene walks back in. Without this the handler list grows for the rest of the play-through.
+    private void OnDisable()
+    {
+        if (triggerArea == null)
+            return;
+
+        triggerArea.OnPlayerEntered -= HandlePlayerEntered;
+        triggerArea.OnPlayerExited -= HandlePlayerExited;
     }
 
     private void HandlePlayerExited()
@@ -88,14 +110,13 @@ public class TransparencyPerDistance : MonoBehaviour
         //         interactable.enabled = true;
         // }
         
-        if(collider != null)
-        {
-            if (alpha < colliderEnabledThreshold)
-                collider.enabled = false;
-
-            if (alpha > colliderEnabledThreshold)
-                collider.enabled = true;
-        }
+        // The collider is deliberately NOT driven from the alpha any more. It is the door's only
+        // clickable surface, and the fade band and the walk-up distance contradict each other: the
+        // trigger sphere reaches 2.90 units, the alpha drops under colliderEnabledThreshold beyond
+        // 2.61, and InteractionStarter parks Marlene 2.0 units from the interactable. Stopping
+        // anywhere in that ring switched the door off exactly while she stood in front of it - and
+        // the only code that could switch it back on is this method, which stops running the moment
+        // she leaves the trigger. Standing further away worked, standing close did not.
     }
     
 

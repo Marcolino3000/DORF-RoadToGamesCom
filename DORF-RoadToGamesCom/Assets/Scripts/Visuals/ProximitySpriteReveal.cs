@@ -77,7 +77,8 @@ public class ProximitySpriteReveal : MonoBehaviour
 
     private void HandlePlayerExited()
     {
-        player = null;
+        // The reference stays: it is only used to measure the distance, and holding on to it saves
+        // looking Marlene up again on every re-entry.
         playerIsNear = false;
     }
 
@@ -111,7 +112,21 @@ public class ProximitySpriteReveal : MonoBehaviour
 
     private float GetProximityAlpha()
     {
-        if (!playerIsNear || player == null || triggerCollider == null)
+        if (triggerCollider == null)
+            return farAlpha;
+
+        // Measured, not remembered. playerIsNear comes from OnTriggerEnter, and that event goes
+        // missing often enough: SequenceRunner switches Marlene's collider off for every scripted
+        // walk, and RoomManager deactivates whole rooms underneath her. The interaction collider
+        // below hangs off this value, and the only way back into the trigger is to click that very
+        // collider - so a single missed event used to leave the door dead for the rest of the
+        // play-through, with the collider being switched off again every frame.
+        // Outside the radius InverseLerp clamps to 1 and this returns farAlpha anyway, so the
+        // reading is the same as before wherever the event was correct.
+        if (player == null)
+            player = FindFirstObjectByType<PlayerController>();
+
+        if (player == null)
             return farAlpha;
 
         // measure horizontal distance only (ignore Y), matching the gameplay plane

@@ -22,6 +22,20 @@ namespace DefaultNamespace
             }
         }
 
+        /// <summary>
+        /// The Toggleables are assets and outlive the scene, this object does not. A handler left on
+        /// them fires into a destroyed DoorFader on the next visit, and whatever it touches first
+        /// throws - out of the Reaction that raised it, which is often a running ScriptedSequence.
+        /// </summary>
+        private void OnDestroy()
+        {
+            foreach (var toggle in doorToggles)
+            {
+                if (toggle != null)
+                    toggle.OnInteractionFeedback -= HandleDoorToggle;
+            }
+        }
+
         private void HandleDoorToggle()
         {
             if (fadeCoroutine != null)
