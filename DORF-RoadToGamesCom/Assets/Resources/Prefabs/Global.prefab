@@ -297,6 +297,7 @@ MonoBehaviour:
   mapMenu: {fileID: 4272406286714954694}
   settingsMenu: {fileID: 2462814331648706584}
   raycaster: {fileID: 5747816080230149823}
+  cursorSetter: {fileID: 0}
 --- !u!1 &1580583202949191194
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,6 +2013,11 @@ MonoBehaviour:
   sauerteigStatusDisplay: {fileID: 0}
   lockedActivity: 1
   lockedAwarenessLevel: 1
+  audioSettings: {fileID: 11400000, guid: 5685ad64b194a4618a4b1997bb6806c3, type: 2}
+  player: {fileID: 0}
+  sequenceRunner: {fileID: 0}
+  raycaster: {fileID: 0}
+  dialogTreeRunner: {fileID: 0}
 --- !u!1 &6514766490998521859
 GameObject:
   m_ObjectHideFlags: 0
@@ -2081,17 +2087,25 @@ MonoBehaviour:
   startingLanguage: 0
   germanButtonImage: {fileID: 0}
   englishButtonImage: {fileID: 0}
+  noSubtitlesButtonImage: {fileID: 0}
   buttonFrame: {fileID: 21300000, guid: 3fa0bf35b0eab42a8bb02f87726c1f4e, type: 3}
   buttonFrameGlow: {fileID: 21300000, guid: d0d9db7690b63424ba643976bcd7edff, type: 3}
   labelFont: {fileID: 11400000, guid: b921d71bfd04f4e19b06d52ed0238157, type: 2}
   labelFontSize: 64
   germanLabel: Deutsch
   englishLabel: English
+  noSubtitlesLabel: Off
   buttonSize: {x: 320, y: 120}
   buttonSpacing: 60
-  buttonBottomMargin: 140
+  buttonBottomMargin: 222
   buttonColor: {r: 0.09, g: 0.09, b: 0.11, a: 0.85}
   buttonTextColor: {r: 1, g: 1, b: 1, a: 1}
+  headingImage: {fileID: 0}
+  headingLabel: Subtitles
+  headingFontSize: 120
+  headingBold: 1
+  headingSpacing: 48
+  audioSettings: {fileID: 0}
 --- !u!1 &7498440266372536708
 GameObject:
   m_ObjectHideFlags: 0
@@ -7299,6 +7313,7 @@ MonoBehaviour:
   disableColliderDuringSequence: 1
   boxCollider: {fileID: 5387536864685530869}
   useProximityCheck: 0
+  waypointTimeout: 10
   isSequenceRunning: 0
   playerController: {fileID: 860814231863369485}
   Waypoints:
@@ -8710,40 +8725,6 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
---- !u!114 &7753245565521891131
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4410089863099125070}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5075415cad12647e39dec28bc01ff04e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AnimationSoundTrigger
-  stepEvent:
-    idInternal: 0
-    valueGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 93991186e0944fa2bc87db89c68a1e43, type: 2}
-  indoorSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: 94a2096644734d9685ac06eadeefea01, type: 2}
-  outdoorSwitch:
-    idInternal: 0
-    valueGuidInternal: 
-    groupIdInternal: 0
-    groupGuidInternal: 
-    WwiseObjectReference: {fileID: 11400000, guid: ff9b8ba153cb489faa6e53758ee4c2fb, type: 2}
-  surfaceLayers:
-    serializedVersion: 2
-    m_Bits: 128
-  probeUp: 0.25
-  probeDistance: 1.5
-  debugLogs: 0
 --- !u!114 &2898388513868393969 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 1710563624349036428, guid: ae810c491498a4bf0b3e1dced4c86654, type: 3}
@@ -10264,6 +10245,40 @@ SortingGroup:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_SortAtRoot: 0
+--- !u!114 &7753245565521891131
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4410089863099125070}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5075415cad12647e39dec28bc01ff04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AnimationSoundTrigger
+  stepEvent:
+    idInternal: 0
+    valueGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 93991186e0944fa2bc87db89c68a1e43, type: 2}
+  indoorSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: 94a2096644734d9685ac06eadeefea01, type: 2}
+  outdoorSwitch:
+    idInternal: 0
+    valueGuidInternal: 
+    groupIdInternal: 0
+    groupGuidInternal: 
+    WwiseObjectReference: {fileID: 11400000, guid: ff9b8ba153cb489faa6e53758ee4c2fb, type: 2}
+  surfaceLayers:
+    serializedVersion: 2
+    m_Bits: 128
+  probeUp: 0.25
+  probeDistance: 1.5
+  debugLogs: 0
 --- !u!95 &7605252354346719108 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 3716112053119254811, guid: d4932a53326b2a64eac5531d63a7554f, type: 3}

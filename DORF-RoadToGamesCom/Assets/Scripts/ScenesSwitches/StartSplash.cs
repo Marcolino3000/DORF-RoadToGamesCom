@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Audio;
 using Nodes;
 using Runtime.Scripts.PlayerInput;
 using TMPro;
@@ -16,9 +17,15 @@ namespace ScenesSwitches
     /// a language. Lives on the Global prefab, which the Bootstrapper spawns before the first scene
     /// loads, so the image is already up on frame one.
     ///
-    /// The language buttons are the only way past this screen: picking one is what sets
-    /// <see cref="Node.CurrentLanguage"/>, and that assignment is what builds the dialog paragraphs
-    /// for the play-through. No visitor can end up in a language they did not choose.
+    /// The three buttons under the "Subtitles" heading are the only way past this screen: picking
+    /// one is what sets <see cref="Node.CurrentLanguage"/>, and that assignment is what builds the
+    /// dialog paragraphs for the play-through. No visitor can end up in a language they did not
+    /// choose.
+    ///
+    /// The third button starts the game with the subtitles switched off and leaves the language at
+    /// <see cref="startingLanguage"/>: the spoken lines are German whichever button is pressed, and
+    /// the dialog options still have to be readable — they are a presenter of their own and stay on
+    /// screen when the subtitles go.
     ///
     /// The canvas is built in code: only the artwork has to be delivered. It comes as a stack of
     /// layers painted on one canvas — sky, clouds, landscape, dust, light — which are sized as a
@@ -87,11 +94,13 @@ namespace ScenesSwitches
         [SerializeField] private float lightPulseSeconds = 16f;
 
         [Header("Language")]
+        [Tooltip("What the game runs in until somebody picks — and what the subtitles off button leaves it at, because it expresses no preference.")]
         [SerializeField] private Language startingLanguage = Language.De;
         [Tooltip("Leave empty to get a plain plate with the label written on it instead.")]
         [SerializeField] private Sprite germanButtonImage;
         [SerializeField] private Sprite englishButtonImage;
-        [Tooltip("Empty hand drawn frame, same look as the main menu. Set this and both buttons get the frame with the label written into it, whatever the two sprites above say.")]
+        [SerializeField] private Sprite noSubtitlesButtonImage;
+        [Tooltip("Empty hand drawn frame, same look as the main menu. Set this and all three buttons get the frame with the label written into it, whatever the three sprites above say.")]
         [SerializeField] private Sprite buttonFrame;
         [Tooltip("The same frame with the glow painted around it. Fades in under the pointer.")]
         [SerializeField] private Sprite buttonFrameGlow;
@@ -100,14 +109,29 @@ namespace ScenesSwitches
         [SerializeField] private float labelFontSize = 64f;
         [SerializeField] private string germanLabel = "Deutsch";
         [SerializeField] private string englishLabel = "English";
+        [Tooltip("Third button: starts the game with the subtitles off. Keep it short — every button is exactly as wide as the frame sprite and the label does not shrink to fit.")]
+        [SerializeField] private string noSubtitlesLabel = "Off";
         [Tooltip("Only used for the plain plate — with a frame the button is exactly as big as the glow sprite, so the strokes stay sharp.")]
         [SerializeField] private Vector2 buttonSize = new(320f, 120f);
-        [Tooltip("Gap between the two buttons, in pixels.")]
+        [Tooltip("Gap between the buttons, in pixels.")]
         [SerializeField] private float buttonSpacing = 60f;
         [Tooltip("Distance from the bottom edge of the screen, in pixels.")]
         [SerializeField] private float buttonBottomMargin = 140f;
         [SerializeField] private Color buttonColor = new(0.09f, 0.09f, 0.11f, 0.85f);
         [SerializeField] private Color buttonTextColor = Color.white;
+
+        [Header("Subtitles")]
+        [Tooltip("Hand drawn lettering over the row of buttons, placed at its native size. Leave empty to get the word below written in the button font instead.")]
+        [SerializeField] private Sprite headingImage;
+        [Tooltip("The word over the buttons. Empty and with no lettering sprite: no heading at all.")]
+        [SerializeField] private string headingLabel = "Subtitles";
+        [SerializeField] private float headingFontSize = 80f;
+        [Tooltip("Faked by TextMeshPro when the font has no bold face of its own, which is what the labels below do without.")]
+        [SerializeField] private bool headingBold = true;
+        [Tooltip("Gap between the top of the buttons and the bottom of the heading, in pixels.")]
+        [SerializeField] private float headingSpacing = 48f;
+        [Tooltip("Where the pick of the subtitles off button is written. Left empty it is looked up once, from Resources/ScriptableObjects/Settings.")]
+        [SerializeField] private InGameAudioSettings audioSettings;
 
         /// <summary>
         /// True while the start image covers the screen. GameResetter reads this to stay out of the
@@ -357,7 +381,7 @@ namespace ScenesSwitches
             }
         }
 
-        private void SelectLanguage(Language language)
+        private void SelectLanguage(Language language, bool subtitles)
         {
             // The fade has already started: the visitor got their language, a second press must not
             // change it out from under the play-through that is starting.
@@ -368,10 +392,39 @@ namespace ScenesSwitches
             // start — also when the language matches what the previous visitor picked.
             Node.CurrentLanguage = language;
 
+            ApplySubtitles(subtitles);
+
             if (debugLogs)
-                Debug.Log($"StartSplash: starting the game in {language}");
+                Debug.Log($"StartSplash: starting the game in {language}, subtitles {(subtitles ? "on" : "off")}");
 
             Hide(instant: false);
+        }
+
+        /// <summary>
+        /// Writes the pick into the settings object, which also puts the subtitle container into the
+        /// state it asks for. Done on all three buttons rather than only on the one that switches
+        /// them off: GameResetter puts the subtitles back to the default before this screen comes up
+        /// again, but the first play-through of a session starts from whatever the asset was left
+        /// at — and in the Editor that is what the previous session wrote to disk.
+        /// </summary>
+        private void ApplySubtitles(bool enabled)
+        {
+            if (audioSettings == null)
+            {
+                var found = Resources.LoadAll<InGameAudioSettings>("ScriptableObjects/Settings");
+                if (found.Length > 0)
+                    audioSettings = found[0];
+            }
+
+            if (audioSettings == null)
+            {
+                Debug.LogWarning("StartSplash: no InGameAudioSettings under " +
+                                 "Resources/ScriptableObjects/Settings, the subtitles stay as the " +
+                                 "last visitor left them.", this);
+                return;
+            }
+
+            audioSettings.SetSubtitlesEnabled(enabled);
         }
 
         private IEnumerator FadeOutRoutine(float duration)
@@ -588,18 +641,89 @@ namespace ScenesSwitches
         {
             languageButtons.Clear();
 
-            // Offsets are in half-widths from the centre, so the pair stays centred whatever the
+            // Offsets are in whole widths from the centre, so the row stays centred whatever the
             // button size and spacing are set to.
-            languageButtons.Add(BuildLanguageButton(parent, "GermanButton", germanButtonImage, germanLabel, -0.5f, Language.De));
-            languageButtons.Add(BuildLanguageButton(parent, "EnglishButton", englishButtonImage, englishLabel, 0.5f, Language.En));
+            languageButtons.Add(BuildLanguageButton(parent, "GermanButton", germanButtonImage, germanLabel, -1f, Language.De, subtitles: true));
+            languageButtons.Add(BuildLanguageButton(parent, "EnglishButton", englishButtonImage, englishLabel, 0f, Language.En, subtitles: true));
+            languageButtons.Add(BuildLanguageButton(parent, "NoSubtitlesButton", noSubtitlesButtonImage, noSubtitlesLabel, 1f, startingLanguage, subtitles: false));
+
+            BuildSubtitlesHeading(parent);
 
             SetButtonsInteractable(false);
         }
 
-        private Button BuildLanguageButton(Transform parent, string name, Sprite sprite, string label, float side, Language language)
+        /// <summary>
+        /// The word over the row of buttons — what the three of them are a choice between. Anchored
+        /// off the same bottom edge and measured against the same button size, so it follows the row
+        /// wherever the margin and spacing put it.
+        /// </summary>
+        private void BuildSubtitlesHeading(Transform parent)
+        {
+            if (headingImage == null && string.IsNullOrWhiteSpace(headingLabel))
+                return;
+
+            var button = ButtonSize();
+
+            var go = new GameObject("SubtitlesHeading", typeof(RectTransform));
+
+            var rect = (RectTransform)go.transform;
+            rect.SetParent(parent, false);
+            rect.anchorMin = new Vector2(0.5f, 0f);
+            rect.anchorMax = new Vector2(0.5f, 0f);
+            rect.pivot = new Vector2(0.5f, 0f);
+            rect.anchoredPosition = new Vector2(0f, buttonBottomMargin + button.y + headingSpacing);
+
+            if (headingImage != null)
+            {
+                rect.sizeDelta = NativeSize(headingImage);
+
+                var image = go.AddComponent<Image>();
+                image.sprite = headingImage;
+
+                // The buttons underneath have to get the click, not the lettering.
+                image.raycastTarget = false;
+
+                return;
+            }
+
+            // As wide as the whole row, so the word is centred over the three buttons together
+            // instead of over the middle one.
+            rect.sizeDelta = new Vector2(3f * button.x + 2f * buttonSpacing, headingFontSize * 1.4f);
+
+            var text = go.AddComponent<TextMeshProUGUI>();
+            text.text = headingLabel;
+            text.color = buttonTextColor;
+            text.alignment = TextAlignmentOptions.Center;
+
+            // Fixed size like the button labels, for the same reason: the heading has to read at the
+            // size it was set to, not at whatever its own rect would allow.
+            text.enableAutoSizing = false;
+            text.fontSize = headingFontSize;
+
+            if (headingBold)
+                text.fontStyle = FontStyles.Bold;
+
+            if (labelFont != null)
+                text.font = labelFont;
+
+            text.raycastTarget = false;
+        }
+
+        /// <summary>
+        /// With a frame the button is exactly as big as the glow sprite, so the strokes stay sharp.
+        /// The heading is measured against this too.
+        /// </summary>
+        private Vector2 ButtonSize()
+        {
+            return buttonFrame != null
+                ? NativeSize(buttonFrameGlow != null ? buttonFrameGlow : buttonFrame)
+                : buttonSize;
+        }
+
+        private Button BuildLanguageButton(Transform parent, string name, Sprite sprite, string label, float side, Language language, bool subtitles)
         {
             var framed = buttonFrame != null;
-            var size = framed ? NativeSize(buttonFrameGlow != null ? buttonFrameGlow : buttonFrame) : buttonSize;
+            var size = ButtonSize();
 
             var go = new GameObject(name, typeof(RectTransform), typeof(CanvasRenderer), typeof(Image), typeof(Button));
 
@@ -648,7 +772,7 @@ namespace ScenesSwitches
                 button.targetGraphic = image;
             }
 
-            button.onClick.AddListener(() => SelectLanguage(language));
+            button.onClick.AddListener(() => SelectLanguage(language, subtitles));
 
             return button;
         }
