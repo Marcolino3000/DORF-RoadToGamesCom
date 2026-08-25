@@ -48,6 +48,12 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 578a24a1eebee43bc88b4f091283c90c, type: 3}
     - {fileID: 8300000, guid: 2274a1ad3cc824affbb523812fcf31e3, type: 3}
     - {fileID: 8300000, guid: 97e233643b4184092af872fc9e65c618, type: 3}
+    - {fileID: 8300000, guid: 018e7ac0ff21340229927a65be5b8205, type: 3}
+    - {fileID: 8300000, guid: f26880dfef9544546b0527cedc790732, type: 3}
+    - {fileID: 8300000, guid: 27ad16e97ca69402db14bf4c57ae56c3, type: 3}
+    - {fileID: 8300000, guid: 1afc50388ba84466593c1a33443cf225, type: 3}
+    - {fileID: 8300000, guid: 50c6d965c3b994a7ea9386691565bdf2, type: 3}
+    - {fileID: 8300000, guid: a855671e4444d4c33afc4ef4991e7cb0, type: 3}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -476,7 +482,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 32
+      Data: 38
     - Name: 
       Entry: 7
       Data: 
@@ -1956,6 +1962,246 @@ MonoBehaviour:
       Entry: 8
       Data: 
     - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 32
+    - Name: $v
+      Entry: 7
+      Data: 109|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 110|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 88
+    - Name: Sample
+      Entry: 3
+      Data: 1146
+    - Name: Type
+      Entry: 3
+      Data: 6
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 33
+    - Name: $v
+      Entry: 7
+      Data: 111|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 112|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 89
+    - Name: Sample
+      Entry: 3
+      Data: 847
+    - Name: Type
+      Entry: 3
+      Data: 6
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 34
+    - Name: $v
+      Entry: 7
+      Data: 113|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 114|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 90
+    - Name: Sample
+      Entry: 3
+      Data: 988
+    - Name: Type
+      Entry: 3
+      Data: 2
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 35
+    - Name: $v
+      Entry: 7
+      Data: 115|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 116|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 91
+    - Name: Sample
+      Entry: 3
+      Data: 2716
+    - Name: Type
+      Entry: 3
+      Data: 6
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 36
+    - Name: $v
+      Entry: 7
+      Data: 117|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 118|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 92
+    - Name: Sample
+      Entry: 3
+      Data: 1312
+    - Name: Type
+      Entry: 3
+      Data: 9
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 37
+    - Name: $v
+      Entry: 7
+      Data: 119|System.Collections.Generic.List`1[[MarkerManager+Marker, com.audioplayer]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 7
+      Data: 120|MarkerManager+Marker, com.audioplayer
+    - Name: Id
+      Entry: 3
+      Data: 93
+    - Name: Sample
+      Entry: 3
+      Data: 2084
+    - Name: Type
+      Entry: 3
+      Data: 8
+    - Name: CharacterToAnimate
+      Entry: 1
+      Data: Marlene
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
       Entry: 13
       Data: 
     - Name: 
@@ -1965,5 +2211,5 @@ MonoBehaviour:
   - Marlene
   - Paul
   - Hilde
-  lastPlayheadSample: 261921
-  nextId: 88
+  lastPlayheadSample: 100606
+  nextId: 94
