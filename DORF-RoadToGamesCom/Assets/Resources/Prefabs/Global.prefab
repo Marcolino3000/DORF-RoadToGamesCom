@@ -9243,6 +9243,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: 8dd0ce52eed7143b8843a27084d2fc5e, type: 2}
     - target: {fileID: 2062893418243403057, guid: 60f64bdf8e6e9415882c1841cb8eb32f, type: 3}
+      propertyPath: skipWithMouseClick
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2062893418243403057, guid: 60f64bdf8e6e9415882c1841cb8eb32f, type: 3}
       propertyPath: characterDataManager
       value: 
       objectReference: {fileID: 2572527190259587800}

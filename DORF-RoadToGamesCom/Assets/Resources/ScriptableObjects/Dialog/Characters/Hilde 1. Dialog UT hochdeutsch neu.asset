@@ -101,6 +101,37 @@ MonoBehaviour:
   RequiredNodes: []
   BlockerNodes: []
   PopularityValue: 0
+--- !u!114 &-8313832242160228745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: 3cde7ce8770344d07ae335bf2486873d
+  Position: {x: -161, y: 2229}
+  customPreview: 0
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
+  DialogLine: 
+  DialogLineEn: 
+  TextPreview: sequence door trigger
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0.5
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
 --- !u!114 &-8251307684216099777
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -962,7 +993,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
-  m_Name: "Na ja \u2013 ich muss..."
+  m_Name: 
   m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: ade58d372e81b4c0b96400007897f1ef
   Position: {x: -160.9999, y: 1976.4996}
@@ -1062,6 +1093,7 @@ MonoBehaviour:
   - {fileID: 1976496051577922561}
   - {fileID: -8251307684216099777}
   - {fileID: 6387356780758709701}
+  - {fileID: -8313832242160228745}
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 62b539070ac644f6eb8e8be906c4d929, type: 2}
 --- !u!114 &253161890010668870
@@ -1618,7 +1650,8 @@ MonoBehaviour:
   AudioClip: {fileID: 8300000, guid: 30bcdfafd55664ff4a97ac2536dab062, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5
-  Children: []
+  Children:
+  - {fileID: -8313832242160228745}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
