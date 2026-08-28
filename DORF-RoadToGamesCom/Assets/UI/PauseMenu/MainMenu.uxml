@@ -8,7 +8,7 @@
             <ui:Button text="RESTART" name="Start" enabled="true" class="startButton button" />
             <ui:Button text="RESUME" name="Resume" class="button resumeButton" />
             <ui:Button text="SETTINGS" name="Settings" class="button settingsButton" />
-            <ui:Button text="EXIT" name="Exit" class="button exitButton" />
+            <ui:Button text="EXIT" name="Exit" class="button exitButton" style="display: none; visibility: hidden;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

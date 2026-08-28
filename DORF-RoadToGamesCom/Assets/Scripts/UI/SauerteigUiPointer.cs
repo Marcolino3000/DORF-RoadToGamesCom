@@ -23,6 +23,10 @@ namespace UI
     ///   ground behind the jar stops answering the click and Marlene stays where she is. Same lever
     ///   the Smartphone pulls while it is open.
     ///
+    /// While a dialog runs the jar answers nothing at all - see <see cref="DialogBlocksJar"/>. The
+    /// Raycaster's own dialog gates cannot do that job here: they sit in front of the physics
+    /// raycast, and this click arrives through the EventSystem instead.
+    ///
     /// The click plays the comment itself, by calling Execute on the Reaction for the jar's current
     /// activity level. That deliberately skips InteractionHandler and InteractionViewer: the click
     /// does reach a live Interactable with a subscriber, but the trigger never comes out the other
@@ -49,6 +53,16 @@ namespace UI
         [Tooltip("Played when no entry above matches the current level.")]
         [SerializeField] private Reaction fallbackReaction;
 
+        [Header("Dialog")]
+        [Tooltip("While a dialog runs the jar plays no comment and shows no inspect symbol. The click " +
+                 "itself still reaches DialogTreeRunner, which is what skips to the next line - so " +
+                 "clicking the jar mid-sentence does the same as clicking anywhere else.")]
+        [SerializeField] private bool ignoreDuringDialog = true;
+        [Tooltip("Narrower version of the setting above: only a conversation with another character " +
+                 "counts, Marlene's own comments do not - the same split the Raycaster makes. Without " +
+                 "effect while the setting above is on.")]
+        [SerializeField] private bool ignoreDuringCharacterDialog = true;
+
         [Header("Settings")]
         [Tooltip("Used when no state asset is assigned.")]
         [SerializeField] private InteractionType fallbackInteractionType = InteractionType.Inspect;
@@ -68,6 +82,7 @@ namespace UI
         [Header("Debug")]
         [SerializeField] private bool pointerIsOver;
         [SerializeField] private bool raisedMenuFlag;
+        [SerializeField] private bool dialogBlocked;
 
         private void Awake()
         {
@@ -96,6 +111,17 @@ namespace UI
                                "Raycast Target on, otherwise it never sees the pointer.", this);
         }
 
+        /// <summary>
+        /// The Raycaster carries both flags for everybody: it sets them from
+        /// DialogTreeRunner.OnDialogRunningStatusChanged and clears them in ResetState, so a visitor
+        /// who walks away mid-dialog does not leave the jar mute for the next one.
+        /// isCharacterDialogRunning is a subset of isDialogRunning, hence the two separate toggles.
+        /// </summary>
+        private bool DialogBlocksJar =>
+            raycaster != null &&
+            ((ignoreDuringDialog && raycaster.isDialogRunning) ||
+             (ignoreDuringCharacterDialog && raycaster.isCharacterDialogRunning));
+
         public void OnPointerEnter(PointerEventData eventData)
         {
             // Read before BlockWorldInput, which is what makes the flag ours: whoever already holds
@@ -110,6 +136,11 @@ namespace UI
             if (blockedByOther)
                 return;
 
+            // A symbol on a jar that answers nothing is the one thing a kiosk visitor reads as a
+            // broken click, so the cursor stays standard for as long as the dialog does.
+            if (DialogBlocksJar)
+                return;
+
             cursorSetter.SetCursor(interactableState != null
                 ? interactableState.InteractionType
                 : fallbackInteractionType);
@@ -117,6 +148,16 @@ namespace UI
 
         public void OnPointerClick(PointerEventData eventData)
         {
+            // Both dialogs that reach here are worth stopping: one Marlene is having with somebody,
+            // and the jar's own comment, whose Reaction would otherwise cut itself off and restart.
+            if (DialogBlocksJar)
+            {
+                if (logClicks)
+                    Debug.Log($"{nameof(SauerteigUiPointer)}: click ignored, a dialog is running.", this);
+
+                return;
+            }
+
             var level = GetLevel();
             var reaction = GetReaction(level);
 
@@ -206,10 +247,39 @@ namespace UI
 
         private void Update()
         {
+            UpdateCursorForDialogState();
+
             if (!logClicks || !Input.GetMouseButtonDown(0))
                 return;
 
             LogClickReport();
+        }
+
+        /// <summary>
+        /// A dialog can start and end while the pointer rests on the jar, and neither raises a pointer
+        /// event - so the inspect symbol would stay up through a dialog that swallows the click, or
+        /// stay missing after one. The Raycaster cannot correct it either: hovering the jar holds
+        /// IsMenuOpen, and its Update returns on that flag before it ever looks at the cursor.
+        /// Only the change is written, so this does not fight whoever else owns the cursor meanwhile.
+        /// </summary>
+        private void UpdateCursorForDialogState()
+        {
+            var blocked = DialogBlocksJar;
+
+            if (blocked == dialogBlocked)
+                return;
+
+            dialogBlocked = blocked;
+
+            // Same read as OnPointerEnter: a menu or the phone on top of the jar owns the cursor.
+            if (!pointerIsOver || (raycaster.IsMenuOpen && !raisedMenuFlag))
+                return;
+
+            cursorSetter.SetCursor(blocked
+                ? InteractionType.None
+                : interactableState != null
+                    ? interactableState.InteractionType
+                    : fallbackInteractionType);
         }
 
         /// <summary>

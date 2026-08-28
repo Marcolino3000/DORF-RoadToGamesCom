@@ -953,6 +953,19 @@ MonoBehaviour:
       Name: Vase
       HighPriority: 0
   - Trigger:
+      TriggerType: 4
+      TriggeringInteractable: {fileID: 0}
+      TriggeringDialogOption: {fileID: 3120845766391220487, guid: 4bbb15ab7f96d4c5f8467318a439d8bc, type: 2}
+    Prerequisites:
+    - Record:
+        InteractionToExecute: {fileID: 11400000, guid: 142e4c3018f2d458caab1aae31e87e86, type: 2}
+        DialogOptionToUnlock: {fileID: 0}
+        TriggerType: 4
+        TriggeringInteractable: {fileID: 0}
+        Conditions: []
+      Name: SlamTheDoor
+      HighPriority: 0
+  - Trigger:
       TriggerType: 1
       TriggeringInteractable: {fileID: 11400000, guid: 69eecbeb3b3fb406482237d5e608525f, type: 2}
       TriggeringDialogOption: {fileID: 0}

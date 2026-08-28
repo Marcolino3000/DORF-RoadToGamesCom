@@ -548,9 +548,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9c0bd1f85e094e118b634ba4dd916b80, type: 3}
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.PlayerDialogOption
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
   Guid: 48bbb01b25fd6493aa9944052765da54
   Position: {x: 899.9999, y: 3365.5}
   customPreview: 1
@@ -569,8 +569,7 @@ MonoBehaviour:
   IsBondingOption: 0
   RequiredNodes: []
   BlockerNodes: []
-  answerType: 4
-  _popularityModifier: 0
+  PopularityValue: 0
 --- !u!114 &-849873840544271081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -666,6 +665,7 @@ MonoBehaviour:
   - {fileID: -7590506583836445822}
   - {fileID: 5211256606313165173}
   - {fileID: -4077077817702142517}
+  - {fileID: 3120845766391220487}
   Blackboard:
     CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
 --- !u!114 &66253715089037191
@@ -1639,7 +1639,8 @@ MonoBehaviour:
   AudioClip: {fileID: 8300000, guid: 8cf363dd1cebf423184ac13c131cd7da, type: 3}
   ClipVolume: 1
   PauseAfter: 0.5
-  Children: []
+  Children:
+  - {fileID: 3120845766391220487}
   FallThrough: 0
   IsAvailable: 1
   IsTrustOption: 0
@@ -1680,3 +1681,34 @@ MonoBehaviour:
   BlockerNodes: []
   answerType: 2
   _popularityModifier: -5
+--- !u!114 &3120845766391220487
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2818dd0c5b404dfe8aedaf83b49ab7b1, type: 3}
+  m_Name: Sequenz-Trigger
+  m_EditorClassIdentifier: cod.dialogbuilder::Nodes.Decorator.NpcDialogOption
+  Guid: c7f4a0d21e8b46f2ab3d9c5e70164b8d
+  Position: {x: 326.82742, y: 1340}
+  customPreview: 1
+  Blackboard:
+    CharacterData: {fileID: 11400000, guid: 67e6c4e2e200e4e43a4811bd56319965, type: 2}
+  DialogLine: 
+  DialogLineEn: 
+  TextPreview: "*T\xFCr schlie\xDFen*"
+  AudioClip: {fileID: 0}
+  ClipVolume: 1
+  PauseAfter: 0
+  Children: []
+  FallThrough: 0
+  IsAvailable: 1
+  IsTrustOption: 0
+  IsBondingOption: 0
+  RequiredNodes: []
+  BlockerNodes: []
+  PopularityValue: 0
