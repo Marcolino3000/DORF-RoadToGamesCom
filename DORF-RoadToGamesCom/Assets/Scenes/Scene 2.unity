@@ -80314,7 +80314,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::DefaultNamespace.ExpressionTrigger
   serializationData:
-    SerializedFormat: 2
+    SerializedFormat: 0
     SerializedBytes: 
     ReferencedUnityObjects: []
     SerializedBytesString: 
@@ -80647,7 +80647,7 @@ GameObject:
   - component: {fileID: 1375017530}
   - component: {fileID: 489129166}
   m_Layer: 0
-  m_Name: Wassernapf
+  m_Name: Futternapf
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
